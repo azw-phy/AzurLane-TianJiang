@@ -1,0 +1,38 @@
+﻿
+units = {
+	division= {	
+		name = "鸢尾步兵师"	
+		location = 9764
+		division_template = "鸢尾步兵师"
+		
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "鸢尾步兵师"	
+		location = 9764
+		division_template = "鸢尾步兵师"
+		
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "伊比利亚先头登陆师"	
+		location = 6927
+		division_template = "小编制步兵团"
+		
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "伊比利亚先头登陆师"	
+		location = 854
+		division_template = "小编制步兵团"
+		
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "伊比利亚先头登陆师"	
+		location = 854
+		division_template = "小编制步兵团"
+		
+		start_experience_factor = 0.3
+	}
+}

@@ -1,0 +1,12 @@
+DH1_decision_category = {
+	icon = category_gre_faction_management
+	picture = GFX_decision_dh1decision
+	priority = 100
+	visible = {
+		#has_completed_focus = DH1_beibeibeiqilexingnang
+	}
+	allowed = {
+		tag = DH1
+	}
+}
+

@@ -1,0 +1,287 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+TIX_DOH_tank_designer_organization = {
+	include = generic_heavy_tank_organization
+	icon = GFX_idea_porsche
+	allowed = {	
+		tag = DOH
+	}
+	available = {
+		owner = {
+			has_completed_focus = DOH_xuexitiexue
+			has_completed_focus = DOH_tiexueguwen
+			has_completed_focus = DOH_dulizizhudejungong
+		}
+	}
+}
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+DOH_jiangnan_shipyard_group_organization = {
+	include = generic_task_force_ship_organization
+	icon = GFX_idea_generic_naval_manufacturer_3
+	allowed = {	
+		tag = DOH
+	}
+	add_trait = {  
+		token = bulizaochuanchang_1
+		name = bulizaochuanchang_1
+		icon = GFX_idea_BLI_zaochuanchang1
+		special_trait_background = yes
+
+		position = { x=8 y=4 }  
+
+		available = {
+			FROM = { has_country_flag =  buligongyi1_get }
+		}
+		
+		equipment_bonus = {
+			reliability = 0.08 
+			armor_value = 0.05
+			maximum_speed = 0.03
+			naval_range = 0.1
+      	}
+
+		  production_bonus = {
+			production_resource_need_factor = -0.5
+		}
+
+		on_complete = {
+			FROM = { mio:DOH_jiangnan_shipyard_group_organization = {
+				add_mio_size = 1
+				add_mio_funds_gain_factor = 0.35
+			}
+			navy_experience = 200 }
+		}
+	}
+	add_trait = {  
+		token = bulizaochuanchang_2
+		name = bulizaochuanchang_2
+		icon = GFX_idea_BLI_zaochuanchang2
+		special_trait_background = yes
+
+		position = { x=9 y=4 }  
+
+		available = {
+			FROM = { has_country_flag =  buligongyi2_get }
+		}
+		
+		equipment_bonus = {
+			lg_attack = 0.15
+			hg_attack = 0.2
+			carrier_size = 1
+			torpedo_attack = 0.15
+			build_cost_ic = -0.1
+      	}
+
+		  production_bonus = {
+			production_resource_need_factor = -0.5
+		}
+
+		  on_complete = {
+			FROM = { mio:DOH_jiangnan_shipyard_group_organization = {
+				add_mio_size = 1
+				add_mio_funds_gain_factor = 0.35
+			}
+			navy_experience = 200 }
+		}
+	}
+	available = {
+		owner = { has_completed_focus = DOH_dulizizhudejungong }
+	}
+}
+
+DOH_dagu_shipyard_organization = {
+	include = generic_raider_ship_organization
+	icon = GFX_idea_generic_naval_manufacturer_3
+	allowed = {	
+		tag = DOH
+	}
+	add_trait = {  
+		token = bulizaochuanchang_1
+		name = bulizaochuanchang_1
+		icon = GFX_idea_BLI_zaochuanchang1
+		special_trait_background = yes
+
+		position = { x=8 y=4 }  
+
+		available = {
+			FROM = { has_country_flag =  buligongyi1_get }
+		}
+		
+		equipment_bonus = {
+			reliability = 0.08 
+			armor_value = 0.05
+			maximum_speed = 0.03
+			naval_range = 0.1
+      	}
+
+		  production_bonus = {
+			production_resource_need_factor = -0.5
+		}
+
+		on_complete = {
+			FROM = { mio:DOH_dagu_shipyard_organization = {
+				add_mio_size = 1
+				add_mio_funds_gain_factor = 0.35
+			}
+			navy_experience = 200 }
+		}
+	}
+	add_trait = {  
+		token = bulizaochuanchang_2
+		name = bulizaochuanchang_2
+		icon = GFX_idea_BLI_zaochuanchang2
+		special_trait_background = yes
+
+		position = { x=9 y=4 }  
+
+		available = {
+			FROM = { has_country_flag =  buligongyi2_get }
+		}
+		
+		equipment_bonus = {
+			lg_attack = 0.15
+			hg_attack = 0.2
+			carrier_size = 1
+			torpedo_attack = 0.15
+			build_cost_ic = -0.1
+      	}
+
+		  production_bonus = {
+			production_resource_need_factor = -0.5
+		}
+
+		  on_complete = {
+			FROM = { mio:DOH_dagu_shipyard_organization = {
+				add_mio_size = 1
+				add_mio_funds_gain_factor = 0.35
+			}
+			navy_experience = 200 }
+		}
+	}
+	available = {
+		owner = { has_completed_focus = DOH_dulizizhudejungong }
+	}
+}
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+DOH_camco_medium_organization = {
+	include = generic_medium_aircraft_organization
+	icon = GFX_idea_CHI_camco
+	allowed = {	
+		tag = DOH
+	}
+	available = {
+		owner = { has_completed_focus = DOH_dulizizhudejungong }
+	}
+}
+DOH_camco_fighter_organization = {
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_CHI_camco
+	allowed = {	
+		tag = DOH
+	}
+	available = {
+		owner = { has_completed_focus = DOH_dulizizhudejungong }
+	}
+}
+DOH_camco_cas_organization = {
+	include = generic_cas_aircraft_organization
+	icon = GFX_idea_CHI_camco
+	allowed = {	
+		tag = DOH
+	}
+	available = {
+		owner = { has_completed_focus = DOH_dulizizhudejungong }
+	}
+}
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+DOH_taiyuan_arsenal_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_generic_artillery_manufacturer_1
+	allowed = {
+				tag = DOH
+			}
+		available = {
+			owner = {
+				controls_state = 615
+				has_completed_focus = DOH_dulizizhudejungong
+			}
+		}
+}
+DOH_liaoning_arsenal_organization = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_generic_motorized_equipment_manufacturer_1
+	allowed = {
+				tag = DOH
+			}
+	available = {
+		owner = {
+			controls_state = 715
+			has_completed_focus = DOH_dulizizhudejungong
+		}
+	}
+}
+DOH_hanyan_arsenal_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_1
+	allowed = {
+				tag = DOH
+			}
+	available = {
+		owner = {
+			controls_state = 620
+			has_completed_focus = DOH_dulizizhudejungong
+		}
+	}
+}
+DOH_mukden_arsenal_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
+	allowed = {
+				tag = DOH
+			}
+	available = {
+		owner = {
+			controls_state = 716
+			has_completed_focus = DOH_dulizizhudejungong
+		}
+	}
+}

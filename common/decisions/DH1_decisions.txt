@@ -1,0 +1,106 @@
+DH1_decision_category = {
+	DH1_junken = {
+		icon = xingdong
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+		target_array = controlled_states
+		highlight_color_while_active = 1
+		
+		ai_will_do = {
+			factor = 5
+			
+		}
+		cost = 25
+		days_remove = 90
+		modifier = {
+			political_power_gain = -0.5
+		}
+		available = {
+			FROM = {
+				NOT = {
+					OR = {
+						has_state_category = large_city
+						has_state_category = megalopolis
+						has_state_category = metropolis
+					}
+				}
+			}
+			
+		}
+		
+		target_trigger = {
+			FROM = {
+				always = yes
+			}
+		}
+		
+		visible = {
+			FROM = {
+				NOT = {
+					OR = {
+						has_state_category = large_city
+						has_state_category = megalopolis
+						has_state_category = metropolis
+					}
+				}
+			}
+		}
+		complete_effect = {
+			add_manpower = -10000
+			FROM = {
+				add_manpower = 10000
+			}
+			
+		}
+		remove_effect = {
+			FROM = {
+				if = {
+					limit = {
+						NOT = {
+							check_variable = {
+								THIS.junkencishu = 1
+							} 
+						}
+					}
+					add_to_variable = {
+						THIS.junkencishu = 1
+					}
+				}
+				else = {
+					ETH_upgrade_state_category = yes
+					set_variable = {
+						THIS.junkencishu = 0
+					}
+				}
+			}
+		}
+	}
+	DH1_tuntian = {
+		icon = GFX_decision_xingdong
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = DH1_tuntian_trigger_tt
+			}
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		cost = 250
+		days_remove = 180
+		days_re_enable = 180
+		remove_effect = {
+			random_list = {
+				20 = {
+					country_event = DH1_event.501
+				}
+				70 = {
+					country_event = DH1_event.502
+				}
+				10 = {
+					country_event = DH1_event.503
+				}
+			}
+		}
+			
+	}
+}

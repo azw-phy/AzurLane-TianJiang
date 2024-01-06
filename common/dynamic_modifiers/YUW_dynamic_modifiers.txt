@@ -1,0 +1,83 @@
+###### STATE MODIFIERS #####
+
+YUW_youjidui_state = {
+	enable = { 
+		always = yes
+	}
+	icon = GFX_modifiers_generic_resistance
+	remove_trigger = {
+		or = {
+		not = { country_exists = YUW }
+		ROOT = {
+			has_state_flag = TIX_dikangyibeizhenya
+		}
+		controller = {
+		tag = YUW
+		}
+		}
+	}
+	resistance_target = 0.5
+	resistance_growth = 1
+	resistance_activity = 1.5
+	required_garrison_factor = 0.5
+	resistance_damage_to_garrison = 0.5
+	resistance_decay = -0.5
+	compliance_growth = -0.2
+	local_building_slots_factor = -0.1
+	state_resources_factor = -0.3
+}
+
+BFL_youjidui_state = {
+	enable = { 
+		always = yes
+	}
+	icon = GFX_modifiers_generic_resistance
+	remove_trigger = {
+		or = {
+		controller = {
+		not = { has_war_with = BFL }
+		not = { tag = TIX }
+		}
+		ROOT = {
+			has_state_flag = TIX_dikangyibeizhenya
+		}
+		}
+	}
+	resistance_target = 0.2
+	resistance_growth = 0.6
+	resistance_activity = 0.5
+	resistance_damage_to_garrison = 0.1
+	compliance_growth = -0.1
+	local_manpower = -0.5
+	local_building_slots_factor = -0.3
+	state_resources_factor = -0.3
+	local_non_core_supply_impact_factor = 0.15
+}
+
+BFL_sandachengfangxian_state = {
+	enable = { 
+		always = yes
+	}
+	icon = GFX_modifiers_generic_defense
+	army_core_attack_factor = 0.4
+	army_core_defence_factor = 0.4
+	local_non_core_supply_impact_factor = 0.3
+}
+
+TIX_attackyuw_state = {
+	enable = { 
+		always = yes
+	}
+	icon = GFX_modifiers_SOV_invaders_must_die
+	army_attack_factor = 0.3
+	army_defence_factor = 0.3
+}
+
+TIX_attackbfl_state = {
+	enable = { 
+		always = yes
+	}
+	icon = GFX_modifiers_SOV_invaders_must_die
+	army_attack_factor = 0.4
+	army_defence_factor = 0.4
+}

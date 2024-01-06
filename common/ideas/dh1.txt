@@ -1,0 +1,448 @@
+ideas = {
+	hidden_ideas = {
+		DH1_idea_dohzhiyuandh1 = {
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				industrial_capacity_factory = -0.5
+				political_power_factor = -0.5
+				custom_modifier_tooltip = az_hidden_ideas
+			}
+		}
+		DH1_idea_liangshigongji = {
+			allowed_civil_war = {
+				always = yes
+			} 
+			modifier = {
+				consumer_goods_factor = -0.8
+				weekly_manpower = 2000
+				custom_modifier_tooltip = az_hidden_ideas
+			}
+		}
+		DH1_tongyiyuyan = {
+			allowed_civil_war = {
+				always = yes
+			} 
+			modifier = {
+				compliance_growth = 0.2
+				research_speed_factor = 0.1
+				conscription = 0.01
+				non_core_manpower = 0.25
+				custom_modifier_tooltip = az_hidden_ideas
+			}
+		}
+		DH1_idea_tongyiyuyandezuli = {
+			allowed_civil_war = {
+				always = yes
+			} 
+			modifier = {
+				compliance_growth = -0.2
+				stability_factor = -0.15
+				political_power_gain = -0.5
+				custom_modifier_tooltip = az_hidden_ideas
+			}
+		}
+		DH1_kaifangyiminzhengce = {
+			allowed_civil_war = {
+				always = yes
+			} 
+			modifier = {
+				monthly_population = 10
+				weekly_manpower = 2500
+				custom_modifier_tooltip = az_hidden_ideas
+			}
+		}
+		DH1_shengchandianfengshan = {
+			allowed_civil_war = {
+				always = yes
+			} 
+			modifier = {
+				consumer_goods_factor = 0.2
+				industrial_capacity_factory = -0.25
+				custom_modifier_tooltip = az_hidden_ideas
+			}
+		}
+		DH1_kuodajunxuyunshu = {
+			allowed_civil_war = {
+				always = yes
+			}
+			cancel = {
+				has_war_with = DOH
+			}
+			modifier = {
+				local_resources_factor = 0.25
+				production_speed_arms_factory_factor = 0.1
+				supply_consumption_factor = -0.15
+				no_supply_grace = 5
+				custom_modifier_tooltip = DH1_kaizhanquxiao_ideatt
+				custom_modifier_tooltip = az_hidden_ideas
+			}
+		}
+	}
+	country = {
+		
+		DH1_idea_sixiangbing = {
+			picture = jap_supremacy_of_technology
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				war_support_factor = -0.5
+				stability_factor = -0.5
+				army_org_regain = -0.25
+			}
+		}
+		DH1_idea_qinfenhaoxue = {
+			picture = jap_supremacy_of_technology
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				research_speed_factor = 0.15
+			}
+		}
+		DH1_idea_baohunpei = {
+			picture = jap_supremacy_of_technology
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				weekly_manpower = 1000
+			}
+		}
+		DH1_zhonghaodongxi = {
+			picture = jap_supremacy_of_technology
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				opinion_gain_monthly_factor = 0.2
+				trade_opinion_factor = 0.25
+				conscription_factor = 0.1
+				monthly_population = 0.1
+			}
+		}
+		DH1_zhonghuaidongxi = {
+			picture = jap_supremacy_of_technology
+			allowed_civil_war = {
+				always = yes
+			}
+			research_bonus = {
+				synth_resources = 0.25
+			}
+			modifier = {
+				trade_opinion_factor = -0.25
+				research_speed_factor = 0.05
+				conscription_factor = -0.1
+				consumer_goods_factor = -0.2
+			}
+		}
+		DH1_ziligengshengdejundui = {
+			picture = jap_supremacy_of_technology
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.25
+				consumer_goods_factor = -0.3
+				army_org_factor = -0.1
+				army_morale_factor = -0.1
+				supply_consumption_factor = -0.33
+				no_supply_grace = 12
+			}
+		}
+		DH1_baozhangjunfei = {
+			picture = jap_supremacy_of_technology
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				army_org_factor = 0.1
+				army_morale_factor = 0.15
+				conscription = 0.02
+				experience_gain_army_factor = 0.1 
+				experience_gain_army_unit_factor = 0.15
+			}
+		}
+		DH1_idea_naire = {
+			picture = jap_supremacy_of_technology
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				
+					acclimatization_hot_climate_gain_factor = 0.50
+				
+			}
+		}
+		DH1_zousitongdao = {
+			picture = jap_supremacy_of_technology
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = -0.1
+				min_export = -0.2
+				production_lack_of_resource_penalty_factor = -0.25
+			}
+		}
+	}
+
+	political_advisor = {
+	
+	}	
+
+	army_chief = {
+
+	}
+
+	air_chief = {
+
+	}
+	
+	navy_chief = {
+
+	}
+
+	high_command = {
+
+	}
+	
+	
+
+	naval_manufacturer = { 
+		
+		designer = yes
+		
+		jiangnan_shipyard_group = {
+			picture = generic_naval_manufacturer_3
+
+			
+			allowed = {
+				tag = DH1
+			}
+
+			available = {
+				has_completed_focus = DOH_dulizizhudejungong
+			}
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			cost = 25
+						
+			traits = { coastal_defence_naval_manufacturer }
+			
+		}
+
+		dagu_shipyard = {
+			picture = generic_naval_manufacturer_3
+
+			
+			allowed = {
+				tag = DH1
+			}
+			available = {
+				has_completed_focus = DOH_dulizizhudejungong
+			}
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			cost = 25
+						
+			traits = { raiding_fleet_naval_manufacturer }
+			
+		}
+	}
+
+	materiel_manufacturer = { 
+		
+		designer = yes
+		
+		CHI_taiyuan_arsenal = {
+			picture = generic_artillery_manufacturer_1
+
+			
+			allowed = {
+				tag = DH1
+			}
+
+			available = {
+				controls_state = 615
+				has_completed_focus = DOH_dulizizhudejungong
+			}
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			cost = 25
+						
+			traits = { artillery_manufacturer }
+			
+		}
+
+		CHI_liaoning_arsenal = {
+			picture = generic_motorized_equipment_manufacturer_1
+			
+			allowed = {
+				tag = DH1
+			}
+
+			available = {
+				controls_state = 715
+				has_completed_focus = DOH_dulizizhudejungong
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+				
+			cost = 25
+				
+			traits = { motorized_equipment_manufacturer }
+			
+		}
+
+		CHI_hanyan_arsenal = {
+			picture = generic_infantry_equipment_manufacturer_1
+
+			
+			allowed = {
+				tag = DH1
+			}
+
+			available = {
+				controls_state = 620
+				has_completed_focus = DOH_dulizizhudejungong
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			cost = 25
+			
+			traits = { infantry_equipment_manufacturer }
+			
+		}
+		CHI_mukden_arsenal = {
+			picture = generic_infantry_equipment_manufacturer_2
+
+			
+			allowed = {
+				tag = DH1
+			}
+
+			available = {
+				controls_state = 716
+				has_completed_focus = DOH_dulizizhudejungong
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+
+			cost = 25	
+
+			traits = { infantry_equipment_manufacturer }
+			
+		}
+	
+	}
+
+	tank_manufacturer = {
+		
+		designer = yes
+		
+		TIX_DOH_tank_designer = {
+
+			picture = porsche
+			
+			allowed = {
+				tag = DH1
+			}
+			
+			available = {
+				has_completed_focus = DOH_xuexitiexue
+				has_completed_focus = DOH_tiexueguwen
+				has_completed_focus = DOH_dulizizhudejungong
+			}
+			
+			cost = 25
+			removal_cost = 10
+			
+			research_bonus = {
+				armor = 0.25
+			}
+			
+			
+		}
+	}
+	
+	aircraft_manufacturer = { #
+			
+		designer = yes		
+
+		CHI_camco_3 = {
+
+			picture = CHI_camco
+
+
+			allowed = {
+				tag = DH1
+			}
+			available = {
+				has_completed_focus = DOH_dulizizhudejungong
+			}
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = {
+				light_aircraft_manufacturer
+				medium_aircraft_manufacturer
+			}
+			
+						
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+	industrial_concern = {
+	
+		CHI_mining_commission = {
+
+			picture = generic_industrial_concern_3		
+
+			allowed = {
+				tag = DH1
+			}
+
+			cost = 150
+			
+			ai_will_do = {
+				factor = 1
+			}
+
+			modifier = {
+				local_resources_factor = 0.1
+			}
+		}
+	}
+
+}

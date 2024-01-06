@@ -1,0 +1,10 @@
+huj_yihui_category = {
+	icon = category_eng_imperial_conference
+	allowed = {
+		tag = HUJ	
+	}
+	visible = {
+		has_completed_focus = HUJ_jixuyihuizhi
+	}
+	priority = 100
+}
