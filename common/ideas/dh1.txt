@@ -1,5 +1,17 @@
 ideas = {
 	hidden_ideas = {
+		DH1_weicao = {
+			allowed_civil_war = {
+				always = yes
+			}
+			cancel = {
+				has_war_with = DOH
+			}
+			modifier = {
+				max_command_power = -100
+				
+			}
+		}
 		DH1_idea_dohzhiyuandh1 = {
 			allowed_civil_war = {
 				always = yes
@@ -174,6 +186,38 @@ ideas = {
 				experience_gain_army_unit_factor = 0.15
 			}
 		}
+		DH1_zongtizhan_idea = {
+			picture = jap_supremacy_of_technology
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				army_org_factor = 0.5
+				army_org_regain = 0.5
+			}
+		}
+
+		DH1_sahnefront_ns = {
+			name = DEN_sahnefront
+			removal_cost = -1
+			picture = DEN_sahnefront 
+
+			cancel = {
+				has_war_with = DH1
+			}
+
+ 			modifier = {
+				attrition = -0.05
+				supply_factor = 0.1
+				supply_combat_penalties_on_core_factor = -0.1
+				out_of_supply_factor = -0.1
+				supply_node_range = 0.1
+				supply_consumption_factor = -0.05
+				production_speed_buildings_factor = 0.025
+			}
+		}
+
 		DH1_idea_naire = {
 			picture = jap_supremacy_of_technology
 			allowed_civil_war = {

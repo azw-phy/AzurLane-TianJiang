@@ -397,3 +397,25 @@ country_event = {
 		add_political_power = -50
 	}
 }
+country_event = {
+	id = DH1_event.777
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		name = DH1_event.777.a
+		every_other_country = {
+			add_ai_strategy = {
+				type = diplo_action_desire
+				id = ROOT
+				target = market_access_rights
+				value = 99999
+			}
+			add_ai_strategy = {
+				type = diplo_action_acceptance
+				id = ROOT
+				target = market_access_rights
+				value = 99999
+			}
+		}
+	}
+}

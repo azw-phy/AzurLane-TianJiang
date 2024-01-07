@@ -1,0 +1,37 @@
+characters = {
+	DH1_79shi = {
+		name = DH1_79shi
+		portraits = { 
+			army = {
+				large="gfx/leaders/DOH/79shi.png"
+				small="gfx/interface/ideas/idea_79shi.png"
+			} 
+		}
+		advisor = {
+			cost = 50
+			slot = theorist
+			idea_token = DH1_79shi
+			
+			available = {
+				if = {
+					limit = { tag = DOH }
+					has_completed_focus = DOH_lujunsilingtiba
+					
+					}
+					
+				}
+			
+			traits = {
+				trait_DOH_79shi
+				trait_DOH_97shi
+				trait_DOH_JS9
+				trait_DOH_NZ75
+				trait_DOH_QBU88
+			}
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+}

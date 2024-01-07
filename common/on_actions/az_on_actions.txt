@@ -80,6 +80,7 @@ on_actions = {
 				recruit_character = meisui
 				#东煌国策
 				recruit_character = DOH_79shi
+				recruit_character = DH1_79shi
 				recruit_character = DOH_97shi
 				recruit_character = DOH_JS9
 				recruit_character = DOH_NZ75

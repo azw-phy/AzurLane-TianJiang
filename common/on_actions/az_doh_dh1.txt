@@ -1,0 +1,14 @@
+on_action = {
+	on_monthly = {
+		effect = {
+			DH1 = {
+				if = {
+					limit = {
+						has_country_flag = DH1_kaishiguojimaoyi
+					}
+					add_cic = 2000
+				}
+			}
+		}
+	}
+}
