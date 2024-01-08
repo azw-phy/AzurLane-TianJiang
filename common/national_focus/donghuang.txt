@@ -3885,7 +3885,7 @@
 	focus = {
 		id = DOH_chaogongzhidu
 		icon = GFX_focus_chi_one_china_policy
-		x = 57
+		x = 55
 		y = 2
 		offset = {
 			trigger = {
@@ -3923,6 +3923,72 @@
 		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 
+		}
+	}
+	focus = {
+		id = DOH_buzhanerqurenzhibing
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = DOH_chaogongzhidu }
+		relative_position_id = DOH_chaogongzhidu
+		x = 3
+		y = 1
+		cost = 10
+
+		available = {
+			OR = {
+				is_ally_with = BFL
+				BFL = { exists = no } 
+				AND = {
+					has_completed_focus = DOH_ninghaixiaxiyang
+					has_army_manpower = {
+						size > 3000000
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_threat = 5
+			annex_country = {
+				target = MON
+				transfer_troops = yes
+			}
+			add_state_core = 820
+			add_state_core = 330
+			add_state_core = 818
+			add_state_core = 817
+			add_state_core = 819
+
+			add_state_core = 329
+			add_state_core = 563
+			add_state_core = 561
+			add_state_core = 657
+			add_state_core = 560
+			add_state_core = 409
+			add_state_core = 408
+			add_state_core = 655
+
+			transfer_state = 329
+			transfer_state = 563
+			transfer_state = 561
+			transfer_state = 657
+			transfer_state = 560
+			transfer_state = 409
+			transfer_state = 408
+			transfer_state = 655
 		}
 	}
 	focus = {
@@ -3993,9 +4059,12 @@
 	focus = {
 		id = DOH_rishenzhidi
 		icon = GFX_aflag_CHY
-		prerequisite = { focus = DOH_ziguyilai }
+		prerequisite = { 
+			focus = DOH_ziguyilai
+			focus = DOH_chaogongzhidu
+		}
 		relative_position_id = DOH_ziguyilai
-		x = 0
+		x = 3
 		y = 1
 		cost = 5
 
@@ -4013,10 +4082,147 @@
 
 		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			create_wargoal = { target = CHY type = puppet_wargoal_focus } 
-			add_state_core = 537
-			add_state_core = 526
-			add_state_core = 645
+
+		}
+	}
+
+	focus = {
+		id = DOH_chongyingdechaogong
+		icon = GFX_aflag_CHY
+		prerequisite = { 
+			focus = DOH_rishenzhidi
+		}
+		prerequisite = {
+			focus = DOH_chaogongzhidu
+		}
+		relative_position_id = DOH_chaogongzhidu
+		x = -1
+		y = 2
+		cost = 5
+		available = {
+			has_subject = CHY
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+            every_military_industrial_organization = {
+                add_mio_size = 20
+            }
+            remove_opinion_modifier = {
+                target = DOH
+                modifier = CHY_dhtiaoxin
+            }
+			remove_opinion_modifier = {
+                target = CHY
+                modifier = CHY_dhtiaoxin
+            }
+            CHY = {
+                complete_national_focus = CHY_duidonghuangyouhao
+                complete_national_focus = CHY_donghuangyouhao
+            }
+			set_autonomy = {
+				target = CHY
+				autonomy_state = doh_fanshu
+			}
+            TAN = {
+                DOH_chy_advisor = {
+                    set_nationality = ROOT
+                }
+            }
+		}
+	}
+
+	focus = {
+		id = DOH_yuanzhengjundeweilai
+		icon = GFX_goal_generic_propaganda
+		prerequisite = {
+			focus = DOH_chaogongzhidu
+		}
+		relative_position_id = DOH_chaogongzhidu
+		x = 1
+		y = 2
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+			is_subject_of = DH1
+		}
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			DH1 = {
+				set_cosmetic_tag = DH1_future
+                every_character = {
+					limit = {
+						is_country_leader = yes
+					}
+					DH1 = {
+           			    add_country_leader_role = {
+                	    	Character = PREV
+	                	    Promote_leader = yes
+    	                	Country_leader = {
+        	                ideology = leninism
+            	            expire = "2000.1.1.1"
+	                	        traits = {
+    	                	        yfz
+        	                	}
+	        	            }
+    	        	    }
+        
+		                add_country_leader_role = {
+        		            Character = PREV
+	    	                Promote_leader = yes
+    	    	            Country_leader = {
+                		        ideology = fascism_ideology
+		                        expire = "2000.1.1.1"
+        		                traits = {
+		                            yfz
+        		                }
+                		    }
+                		}
+        
+		                add_country_leader_role = {
+        		            Character = DOH_haerbin
+                		    Promote_leader = yes
+		                    Country_leader = {
+        	                ideology = liberalism
+            	            expire = "2000.1.1.1"
+                	        traits = {
+                    	        yfz
+	                        }
+    	                }
+        	        }
+				}
+			}
+            every_character = {
+                limit = { 
+                    is_country_leader = yes 
+                }
+                add_country_leader_trait = yfz
+            }
+            }
+			set_autonomy = {
+				target = DH1
+				autonomy_state = doh_fanshu
+			}
 		}
 	}
 	focus = {
@@ -4024,7 +4230,7 @@
 		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = DOH_ziguyilai }
 		relative_position_id = DOH_ziguyilai
-		x = 3
+		x = 0
 		y = 1
 		cost = 5
 

@@ -1,4 +1,35 @@
 characters = {
+	DOH_chy_advisor = {
+        name = DOH_chy_advisor
+        portraits = { 
+            army = {
+				large="gfx/leaders/CHY/xianghe.png"
+				small="gfx/interface/ideas/idea_xianghe.png"
+			}
+        }
+        advisor = {
+            cost = 100
+            slot = theorist
+            idea_token = chy_advisor
+
+            available = {
+				if = {
+					limit = { tag = DOH }
+					is_ally_with = CHY
+					}
+			}
+
+            traits = {
+                trait_aidang
+                trait_xianghe
+                trait_longfeng
+                trait_nengdai
+            }
+            ai_will_do = {
+                factor = 50
+            }
+        }
+    }
 	DH1_79shi = {
 		name = DH1_79shi
 		portraits = { 

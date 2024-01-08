@@ -1,0 +1,50 @@
+autonomy_state = {
+	id = doh_fanshu
+	default = no
+	is_puppet = no
+	min_freedom_level = 0.9
+	manpower_influence = 0.5
+	use_overlord_color = yes
+	rule = {
+		can_not_declare_war = no
+		can_decline_call_to_war = no
+		can_be_spymaster = no
+		contributes_operatives = yes
+		can_send_volunteers = yes
+		can_puppet = yes
+	}
+	
+	modifier = {
+		can_master_build_for_us = 1
+		# research_sharing_per_country_bonus_factor = 20
+        # license_subject_master_purchase_cost = -1
+        # license_tech_difference_speed = 0
+        faction_trade_opinion_factor = 0.5
+		research_speed_factor = 0.2
+
+		opinion_gain_monthly_same_ideology_factor = 0.2
+
+		cic_to_overlord_factor = 0.1
+		mic_to_overlord_factor = 0.2
+	}
+	
+	ai_subject_wants_higher = {
+		factor = 0.0
+	}
+	
+	ai_overlord_wants_lower = {
+		factor = 0.0
+	}
+
+	allowed = {
+		#has_dlc = "La Resistance"
+		OVERLORD = { original_tag = DOH }
+	}
+
+    can_take_level = {
+		always = no
+	}
+	can_lose_level = {
+		always = no
+	}
+}

@@ -1740,7 +1740,9 @@
 			factor = 11
 		}
 		available = {
-			always = no
+			has_completed_focus = DH1_xiananyang
+			has_completed_focus = DH1_nanyacidalu
+			has_completed_focus = DH1_fuchifeizhoufanzhimingdouzheng
 		}
 		
 		cancel_if_invalid = yes
@@ -1751,7 +1753,9 @@
 
 		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-
+			every_owned_state = {
+				add_core_of = DH1
+			}
 		}
 	}
 

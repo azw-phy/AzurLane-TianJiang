@@ -3,12 +3,13 @@ autonomy_state = {
 	default = yes
 	is_puppet = yes
 	min_freedom_level = 0.01
-	manpower_influence = 1.2
+	manpower_influence = 1.0
 	rule = {
 		can_not_declare_war = yes
 		can_decline_call_to_war = no
 		can_be_spymaster = no
 	}
+	use_overlord_color = yes
 	
 	modifier = {
 		autonomy_manpower_share = 1.0

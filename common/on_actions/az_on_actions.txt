@@ -88,6 +88,7 @@ on_actions = {
 				recruit_character = DOH_naerxun
 				recruit_character = DOH_xifeng
 				recruit_character = DOH_beifeng
+				recruit_character = DOH_chy_advisor
 				#魔王
 				recruit_character = ailier
 				recruit_character = biexibu
