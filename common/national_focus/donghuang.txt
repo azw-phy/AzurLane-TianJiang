@@ -3989,6 +3989,16 @@
 			transfer_state = 409
 			transfer_state = 408
 			transfer_state = 655
+			BFL = {
+                remove_state_core = 329
+			    remove_state_core = 563
+			    remove_state_core = 561
+			    remove_state_core = 657
+			    remove_state_core = 560
+			    remove_state_core = 409
+			    remove_state_core = 408
+			    remove_state_core = 655
+            }
 		}
 	}
 	focus = {
@@ -4082,7 +4092,10 @@
 
 		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-
+			create_wargoal = {
+				target = CHY
+				type = puppet_wargoal_focus
+			}			
 		}
 	}
 
@@ -4164,6 +4177,7 @@
 
 		available = {
 			is_subject_of = DH1
+			date > 1942.1.1
 		}
 
 		#search_filters = { FOCUS_FILTER_STABILITY }

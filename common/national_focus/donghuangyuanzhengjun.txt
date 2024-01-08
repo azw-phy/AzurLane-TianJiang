@@ -1742,7 +1742,7 @@
 		available = {
 			has_completed_focus = DH1_xiananyang
 			has_completed_focus = DH1_nanyacidalu
-			has_completed_focus = DH1_fuchifeizhoufanzhimingdouzheng
+			#has_completed_focus = DH1_fuchifeizhoufanzhimingdouzheng
 		}
 		
 		cancel_if_invalid = yes
@@ -2137,10 +2137,6 @@
 			factor = 11
 		}
 		available = {
-			OR = {
-				is_ai = no
-				DOH = { has_completed_focus = DOH_ninghaixiaxiyang }
-			}
 			has_army_manpower = { size > 1000000 }
 		}
 		
@@ -2190,7 +2186,7 @@
 
 	focus = {
 		id = DH1_xiananyang
-		icon = GFX_goal_generic_position_armies
+		icon = GFX_focus_ninghai
 		x = 0
 		y = 1
 		cost = 10
@@ -2202,7 +2198,17 @@
 			factor = 11
 		}
 		available = {
-			always = no
+			OR = {
+				is_ai = no
+				DOH = { has_completed_focus = DOH_ninghaixiaxiyang }
+			}
+			has_navy_size = {
+				size > 49
+			}
+			has_navy_size = {
+				size > 4
+				type = capital_ship
+			}
 		}
 		
 		cancel_if_invalid = yes
@@ -2213,7 +2219,47 @@
 
 		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			custom_effect_tooltip = "还没做完"
+			annex_country = {
+				target = INS
+				transfer_troops = yes
+			}
+			annex_country = {
+				target = PHI
+				transfer_troops = yes
+			}
+            transfer_state = 738
+            transfer_state = 668
+            transfer_state = 721
+            transfer_state = 667
+            transfer_state = 335
+            transfer_state = 672
+            transfer_state = 733
+            transfer_state = 711
+            transfer_state = 523
+            transfer_state = 737
+            transfer_state = 634
+            transfer_state = 673
+            transfer_state = 334
+            transfer_state = 333
+            transfer_state = 669
+            transfer_state = 640
+            transfer_state = 288
+            transfer_state = 671
+    		transfer_state = 670
+	    	transfer_state = 741
+		    transfer_state = 286
+			transfer_state = 868
+    		transfer_state = 869
+	    	transfer_state = 289
+		    transfer_state = 724
+            transfer_state = 336
+            transfer_state = 623
+            transfer_state = 327
+            transfer_state = 626
+            transfer_state = 628
+            transfer_state = 625
+            transfer_state = 627
+            transfer_state = 624
 		}
 	}
 
