@@ -1,0 +1,105 @@
+DOH_DH1_decision_category = {
+	DOH_DH1_zhongshilujun_add = {
+		icon = generic_tank
+		visible = {
+			tag = DOH
+			is_ai = no
+		}
+		allowed = {
+			tag = DOH
+			is_ai = no
+			NOT = {
+				has_country_flag = DOH_DH1_xiadalezhishi
+			}
+		}
+		cost = 100
+		days_remove = 10
+		remove_effect = {
+			DH1 = { add_ideas = DH1_AI_zhongshilujun }
+			set_country_flag = DOH_DH1_xiadalezhishi
+		}
+	}
+	DOH_DH1_zhongshihaijun_add = {
+		icon = generic_tank
+		visible = {
+			tag = DOH
+			is_ai = no
+		}
+		allowed = {
+			tag = DOH
+			is_ai = no
+			NOT = {
+				has_country_flag = DOH_DH1_xiadalezhishi
+			}
+		}
+		cost = 100
+		days_remove = 10
+		remove_effect = {
+			DH1 = { add_ideas = DH1_AI_zhongshihaijun }
+			set_country_flag = DOH_DH1_xiadalezhishi
+		}
+	}
+	DOH_DH1_zhongshikongjun_add = {
+		icon = generic_tank
+		visible = {
+			tag = DOH
+			is_ai = no
+		}
+		allowed = {
+			tag = DOH
+			is_ai = no
+			NOT = {
+				has_country_flag = DOH_DH1_xiadalezhishi
+			}
+		}
+		cost = 100
+		days_remove = 10
+		remove_effect = {
+			DH1 = { add_ideas = DH1_AI_zhongshikongjun }
+			set_country_flag = DOH_DH1_xiadalezhishi
+		}
+	}
+	DOH_DH1_xiuyangshengxi_add = {
+		icon = generic_tank
+		visible = {
+			tag = DOH
+			is_ai = no
+		}
+		allowed = {
+			tag = DOH
+			is_ai = no
+			NOT = {
+				has_country_flag = DOH_DH1_xiadalezhishi
+			}
+		}
+		cost = 100
+		days_remove = 10
+		remove_effect = {
+			DH1 = { add_ideas = DH1_AI_xiuyangshengxi }
+			set_country_flag = DOH_DH1_xiadalezhishi
+		}
+	}
+	DOH_DH1_rm = {
+		icon = generic_tank
+		visible = {
+			tag = DOH
+			is_ai = no
+		}
+		allowed = {
+			tag = DOH
+			is_ai = no
+			has_country_flag = DOH_DH1_xiadalezhishi
+		}
+		cost = 0
+		days_remove = 10
+		remove_effect = {
+			DH1 = {
+				remove_ideas = DH1_AI_xiuyangshengxi
+				remove_ideas = DH1_AI_zhongshihaijun
+				remove_ideas = DH1_AI_zhongshikongjun
+				remove_ideas = DH1_AI_zhongshilujun
+			}
+			clr_country_flag = DOH_DH1_xiadalezhishi
+		}
+	}
+}

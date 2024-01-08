@@ -3066,7 +3066,7 @@
 		x = 0
 		y = 1
 		cost = 5
-		prerequisite = { focus = DOH_xianfazhiren }
+#		prerequisite = { focus = DOH_xianfazhiren }
 		relative_position_id = DOH_xianfazhiren
 		ai_will_do = {
 			factor = 15
@@ -3847,6 +3847,9 @@
 			}
 			x = -7
 		}
+		mutually_exclusive = {
+			focus = DOH_chaogongzhidu
+		}
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -3863,6 +3866,9 @@
 			has_completed_focus = DOH_bilanhangxian
 			has_completed_focus = DOH_aoranzili
 			}
+			NOT = {
+				country_exists = DH1
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -3874,6 +3880,49 @@
 		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			add_ideas = DOH_gfgt
+		}
+	}
+	focus = {
+		id = DOH_chaogongzhidu
+		icon = GFX_focus_chi_one_china_policy
+		x = 57
+		y = 2
+		offset = {
+			trigger = {
+				has_global_flag = MOD_azurlane_sairenzhizai
+			}
+			x = -7
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		mutually_exclusive = {
+			focus = DOH_ziguyilai
+		}
+		available = {
+			has_completed_focus = DOH_dulizizhudejungong
+			has_completed_focus = DOH_huanxingjulong 
+			#has_completed_focus = DOH_weishejunfa
+			has_completed_focus = DOH_donghuangdeshidai
+			or = {
+			has_completed_focus = DOH_gongchanlianmeng
+			has_completed_focus = DOH_chisezhongzhou
+			has_completed_focus = DOH_bilanhangxian
+			has_completed_focus = DOH_aoranzili
+			}
+			country_exists = DH1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+
 		}
 	}
 	focus = {

@@ -1125,7 +1125,7 @@
 		icon = GFX_goal_generic_position_armies
 		x = -4
 		y = 1
-		cost = 7
+		cost = 2
 		relative_position_id = DH1_jiaqianglianluo
 		prerequisite = {
 			focus = DH1_jiaqianglianluo
@@ -1154,7 +1154,7 @@
 		icon = GFX_goal_generic_position_armies
 		x = 4
 		y = 1
-		cost = 7
+		cost = 2
 		relative_position_id = DH1_jiaqianglianluo
 		prerequisite = {
 			focus = DH1_jiaqianglianluo
@@ -1198,8 +1198,9 @@
 					DOH.xinrenjingtidu_value > 9
 				}
 			}
-			or = {
+			OR = {
 				DOH = { has_war = yes surrender_progress > 0.5 }
+				DOH = { has_war = yes date > 1937.6.1 }
 				threat > 0.5
 				DH1 = {
 					has_war = yes
@@ -1331,6 +1332,13 @@
 				type = transport_plane_equipment_1
 				amount = 100
 				producer = DOH
+			}
+			hidden_effect = {
+				country_event = {
+					id = DH1_event.778
+					days = 30
+					random_days = 2
+				}
 			}
 		}
 	}
@@ -1534,7 +1542,7 @@
 			factor = 11
 		}
 		available = {
-
+			has_country_flag = DH1_jieshoushouling
 		}
 		
 		cancel_if_invalid = yes
@@ -1564,7 +1572,7 @@
 			focus = DH1_jugongjincusierhouyi
 		}
 		ai_will_do = {
-			factor = 11
+			factor = 0
 		}
 		available = {
 
@@ -1689,11 +1697,11 @@
 	}
 
 	focus = {
-		id = DH1_zongtizhan
+		id = DH1_jieshouwzhidao
 		icon = GFX_goal_generic_position_armies
 		x = 0
-		y = 2
-		cost = 10
+		y = 1
+		cost = 4
 		relative_position_id = DH1_jugongjincusierhouyi
 		prerequisite = {
 			focus = DH1_jugongjincusierhouyi
@@ -1713,7 +1721,37 @@
 
 		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			add_ideas = DH1_zongtizhan_idea
+			DH1_xinrenjingtidu_up_10 = yes
+			custom_effect_tooltip = DH1_jieshouwzhidao_tooltip
+		}
+	}
+
+	focus = {
+		id = DH1_yuanzhengjundeweilai
+		icon = GFX_goal_generic_position_armies
+		x = 0
+		y = 4
+		cost = 7
+		relative_position_id = DH1_jugongjincusierhouyi
+		prerequisite = {
+			focus = DH1_jieshouwzhidao
+		}
+		ai_will_do = {
+			factor = 11
+		}
+		available = {
+			always = no
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+
 		}
 	}
 
@@ -1774,17 +1812,27 @@
 		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			DH1_xinrenjingtidu_down_10 = yes
+			add_political_power = -100
+			DOH = {
+				country_event = {
+					id = DH1_event.779
+					days = 10
+				}
+			}
 		}
 	}
+
 	focus = {
-		id = DH1_huguozhanzheng
+		id = DH1_xinanshibian
 		icon = GFX_goal_generic_position_armies
 		x = 0
-		y = 3
+		y = 4
 		cost = 5
 		relative_position_id = DH1_jiangzaiwaijunmingyousuobushou
 		prerequisite = {
-			focus = DH1_qinjunce
+			focus = DH1_junzhengfu
+			focus = DH1_linglizhongyang
+			focus = DH1_qiuzhuchongying
 		}
 		ai_will_do = {
 			factor = 11
@@ -1804,18 +1852,33 @@
 			declare_war_on = {
 				target = DOH
 			}
-			
+			activate_mission = DH1_xinanshibian
+			custom_effect_tooltip = DH1_xinanzhibiankaida
+			if = {
+				limit = {
+					has_country_flag = DH1_qiuzhuchongying_flag
+				}
+				add_to_faction = CHY
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 40000 }
+				add_equipment_to_stockpile = { type = support_equipment amount = 6000 }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 2000 }
+			}
 		}
 	}
+
 	focus = {
-		id = DH1_junzhengfu
+		id = DH1_linglizhongyang
 		icon = GFX_goal_generic_position_armies
-		x = 0
-		y = 4
+		x = 2
+		y = 3
 		cost = 5
 		relative_position_id = DH1_jiangzaiwaijunmingyousuobushou
 		prerequisite = {
-			focus = DH1_huguozhanzheng
+			focus = DH1_qinjunce
+		}
+		mutually_exclusive = {
+			focus = DH1_junzhengfu
+			focus = DH1_qiuzhuchongying
 		}
 		ai_will_do = {
 			factor = 11
@@ -1833,13 +1896,109 @@
 		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			DH1_xinrenjingtidu_down_10 = yes
+			set_country_flag = DH1_linglizhongyang_flag
+			custom_effect_tooltip = DH1_linglizhongyang_tooltip
+		}
+	}
+
+	focus = {
+		id = DH1_junzhengfu
+		icon = GFX_goal_generic_position_armies
+		x = 0
+		y = 3
+		cost = 5
+		relative_position_id = DH1_jiangzaiwaijunmingyousuobushou
+		prerequisite = {
+			focus = DH1_qinjunce
+		}
+		mutually_exclusive = {
+			focus = DH1_qiuzhuchongying
+			focus = DH1_linglizhongyang
+		}
+		ai_will_do = {
+			factor = 11
+		}
+		available = {
+			
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			DH1_xinrenjingtidu_down_10 = yes
+			set_country_flag = DH1_junzhengfu_flag
+			custom_effect_tooltip = DH1_junzhengfu_tooltip
+		}
+	}
+	focus = {
+		id = DH1_qiuzhuchongying
+		icon = GFX_goal_generic_position_armies
+		x = -2
+		y = 3
+		cost = 5
+		relative_position_id = DH1_jiangzaiwaijunmingyousuobushou
+		prerequisite = {
+			focus = DH1_qinjunce
+		}
+		mutually_exclusive = {
+			focus = DH1_junzhengfu
+			focus = DH1_linglizhongyang
+		}
+		ai_will_do = {
+			factor = 11
+		}
+		available = {
+			
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			DH1_xinrenjingtidu_down_10 = yes
+			set_country_flag = DH1_qiuzhuchongying_flag
+			custom_effect_tooltip = DH1_qiuzhuchongying_tooltip
+		}
+	}
+
+	focus = {
+		id = DH1_zongtizhan
+		icon = GFX_goal_generic_position_armies
+		x = 35
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 11
+		}
+		available = {
+			has_completed_focus = DH1_gengduoyaoqiu
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = DH1_zongtizhan_idea
 		}
 	}
 	focus = {
 		id = DH1_yuanzhengkaishi
 		icon = GFX_goal_generic_position_armies
 		x = 0
-		y = 2
+		y = 1
 		cost = 10
 		relative_position_id = DH1_zongtizhan
 		prerequisite = {
@@ -1864,5 +2023,398 @@
 			set_technology = { guerrilla_tactics_for_doh = 1 popup = no }
 		}
 	}
-	
+
+	focus = {
+		id = DH1_jingong
+		icon = GFX_goal_generic_position_armies
+		x = 4
+		y = 1
+		cost = 10
+		relative_position_id = DH1_yuanzhengkaishi
+		prerequisite = {
+			focus = DH1_yuanzhengkaishi
+		}
+		ai_will_do = {
+			factor = 11
+		}
+		available = {
+			OR = {
+				has_completed_focus = DH1_jieshouwzhidao
+				has_completed_focus = DH1_linglizhongyang
+				has_completed_focus = DH1_qiuzhuchongying
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = DH1_qinsuanzhimingzhe
+		icon = GFX_goal_generic_position_armies
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = DH1_jingong
+		prerequisite = {
+			focus = DH1_jingong
+		}
+		ai_will_do = {
+			factor = 11
+		}
+		available = {
+			threat > 0.9
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = DH1_qingsuanzhimingzhe_idea
+		}
+	}
+
+	focus = {
+		id = DH1_nanyacidalu
+		icon = GFX_goal_generic_position_armies
+		x = 2
+		y = 1
+		cost = 10
+		relative_position_id = DH1_qinsuanzhimingzhe
+		prerequisite = {
+			focus = DH1_qinsuanzhimingzhe
+		}
+		ai_will_do = {
+			factor = 11
+		}
+		available = {
+			OR = {
+				is_ai = no
+				DOH = { has_completed_focus = DOH_ninghaixiaxiyang }
+			}
+			has_army_manpower = { size > 1500000 }
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			custom_effect_tooltip = DH1_nanyacidalu_mission_tooltip
+		}
+	}
+
+	focus = {
+		id = DH1_zhongnanbandao
+		icon = GFX_goal_generic_position_armies
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = DH1_qinsuanzhimingzhe
+		prerequisite = {
+			focus = DH1_qinsuanzhimingzhe
+		}
+		ai_will_do = {
+			factor = 11
+		}
+		available = {
+			OR = {
+				is_ai = no
+				DOH = { has_completed_focus = DOH_ninghaixiaxiyang }
+			}
+			has_army_manpower = { size > 1000000 }
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			custom_effect_tooltip = DH1_zhongnanbandao_mission_tooltip
+		}
+	}
+
+	focus = {
+		id = DH1_fuchifeizhoufanzhimingdouzheng
+		icon = GFX_goal_generic_position_armies
+		x = -3
+		y = 1
+		cost = 10
+		relative_position_id = DH1_qinsuanzhimingzhe
+		prerequisite = {
+			focus = DH1_qinsuanzhimingzhe
+		}
+		prerequisite = {
+			focus = DH1_yuanjiao
+		}
+		ai_will_do = {
+			factor = 11
+		}
+		available = {
+			always = no
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			custom_effect_tooltip = "还没做完"
+		}
+	}
+
+	focus = {
+		id = DH1_xiananyang
+		icon = GFX_goal_generic_position_armies
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = DH1_zhongnanbandao
+		prerequisite = {
+			focus = DH1_zhongnanbandao
+		}
+		ai_will_do = {
+			factor = 11
+		}
+		available = {
+			always = no
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			custom_effect_tooltip = "还没做完"
+		}
+	}
+
+	focus = {
+		id = DH1_yuanjiao
+		icon = GFX_goal_generic_position_armies
+		x = -4
+		y = 1
+		cost = 10
+		relative_position_id = DH1_yuanzhengkaishi
+		prerequisite = {
+			focus = DH1_yuanzhengkaishi
+		}
+		ai_will_do = {
+			factor = 11
+		}
+		available = {
+			
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = DH1_qianshuguojixieyi
+		icon = GFX_goal_generic_position_armies
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = DH1_yuanjiao
+		prerequisite = {
+			focus = DH1_yuanjiao
+		}
+		ai_will_do = {
+			factor = 11
+		}
+		available = {
+			always = no
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			custom_effect_tooltip = "还没做完"
+		}
+	}
+
+	focus = {
+		id = DH1_tiexuezhuangjiajishu
+		icon = GFX_goal_generic_position_armies
+		x = -3
+		y = 1
+		cost = 10
+		relative_position_id = DH1_qianshuguojixieyi
+		prerequisite = {
+			focus = DH1_qianshuguojixieyi
+		}
+		ai_will_do = {
+			factor = 11
+		}
+		available = {
+			
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = DH1_baiyinghangkonggongye
+		icon = GFX_goal_generic_position_armies
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = DH1_qianshuguojixieyi
+		prerequisite = {
+			focus = DH1_qianshuguojixieyi
+		}
+		ai_will_do = {
+			factor = 11
+		}
+		available = {
+			
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = DH1_beiliandazongshenzuozhan
+		icon = GFX_goal_generic_position_armies
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = DH1_qianshuguojixieyi
+		prerequisite = {
+			focus = DH1_qianshuguojixieyi
+		}
+		ai_will_do = {
+			factor = 11
+		}
+		available = {
+			
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = DH1_laizidongfangdezhichi
+		icon = GFX_goal_generic_position_armies
+		x = 3
+		y = 1
+		cost = 10
+		relative_position_id = DH1_qianshuguojixieyi
+		prerequisite = {
+			focus = DH1_qianshuguojixieyi
+		}
+		ai_will_do = {
+			factor = 11
+		}
+		available = {
+			
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = DH1_chukoushiyouhexiangjiao
+		icon = GFX_goal_generic_position_armies
+		x = -4
+		y = 3
+		cost = 10
+		relative_position_id = DH1_yuanjiao
+		prerequisite = {
+			focus = DH1_yuanjiao
+		}
+		prerequisite = {
+			focus = DH1_guojimaoyi
+		}
+		ai_will_do = {
+			factor = 11
+		}
+		available = {
+			has_completed_focus = DH1_zhongnanbandao
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = DOH_ndhhsygs
+		}
+	}
 }

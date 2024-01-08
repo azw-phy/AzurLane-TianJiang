@@ -362,7 +362,8 @@
  DOH_jsgc_desc:0"种田太快乐，我们停不下来了！"
  DOH_zyck_desc:0"将多余的资源出口以获得大量收益。"
  DOH_gfgt:0"光复故土"
-
+ DOH_chaogongzhidu:"重建朝贡制度"
+ DOH_chaogongzhidu_desc:"重建朝贡制度"
  #ng
  DOH_yixian:0"逸仙"
  DOH_ninghai:0"宁海"

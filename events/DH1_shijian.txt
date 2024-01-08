@@ -419,3 +419,44 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = DH1_event.778
+	title = DH1_event.778.t
+	desc = DH1_event.778.d
+	picture = GFX_aze_hit
+	is_triggered_only = yes	
+	option = {
+		name = DH1_event.778.a
+		ai_chance = {
+			base = 5
+		}
+		set_country_flag = DH1_jieshoushouling
+	}
+}
+country_event = {
+	id = DH1_event.779
+	title = DH1_event.779.t
+	desc = DH1_event.779.d
+	picture = GFX_aze_hit
+	is_triggered_only = yes	
+	option = {
+		name = DH1_event.779.a
+		ai_chance = {
+			base = 5
+		}
+		hidden_effect = {
+			add_ai_strategy = {
+				type = prepare_for_war
+				id = DH1
+				value = 50
+			}
+			DH1 = {
+				add_ai_strategy = {
+					type = prepare_for_war
+					id = DOH
+					value = 50
+				}
+			}
+		}
+	}
+}
