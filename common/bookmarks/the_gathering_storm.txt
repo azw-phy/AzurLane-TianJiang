@@ -174,6 +174,18 @@ bookmarks = {
 			}
 			
 		}
+		"DH1"={
+			minor = yes
+			history = "SIREN_DH1_DESC"
+			ideology = democratic
+			ideas = {	
+				
+			}
+			focuses = {
+				
+			}
+			
+		}
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }
