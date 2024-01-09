@@ -8,7 +8,7 @@ ideas = {
 				has_war_with = DOH
 			}
 			modifier = {
-				max_command_power = -100
+				max_command_power = -5
 				
 			}
 		}
@@ -94,15 +94,23 @@ ideas = {
 		}
 	}
 	country = {
-		DH1_AI_zhongshilujun = {
+		DH1_AI_zhongshijingong = {
 			picture = jap_supremacy_of_technology
 			allowed_civil_war = {
 				always = yes
 			}
 			modifier = {
 				ai_focus_aggressive_factor = 100
-				ai_focus_defense_factor = 100
-				ai_focus_defense_factor = 100
+				ai_focus_military_advancements_factor = 100
+			}
+		}
+		DH1_AI_zhongshifangyu = {
+			picture = jap_supremacy_of_technology
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				ai_focus_aggressive_factor = 100
 				ai_focus_military_advancements_factor = 100
 			}
 		}

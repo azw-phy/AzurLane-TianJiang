@@ -1487,7 +1487,7 @@
 			focus = DH1_ludilianjie
 		}
 		ai_will_do = {
-			factor = 11
+			factor = 20
 		}
 		available = {
 			controls_state = 640
@@ -1539,7 +1539,7 @@
 			focus = DH1_kuozhankongzhongluxian
 		}
 		ai_will_do = {
-			factor = 11
+			factor = 20
 		}
 		available = {
 			has_country_flag = DH1_jieshoushouling
@@ -1669,7 +1669,7 @@
 			focus = DH1_jiangzaiwaijunmingyousuobushou
 		}
 		ai_will_do = {
-			factor = 11
+			factor = 20
 		}
 		available = {
 			
@@ -1707,7 +1707,7 @@
 			focus = DH1_jugongjincusierhouyi
 		}
 		ai_will_do = {
-			factor = 11
+			factor = 20
 		}
 		available = {
 			
@@ -1740,6 +1740,7 @@
 			factor = 11
 		}
 		available = {
+			always = no
 			has_completed_focus = DH1_xiananyang
 			has_completed_focus = DH1_nanyacidalu
 			#has_completed_focus = DH1_fuchifeizhoufanzhimingdouzheng
@@ -1753,6 +1754,7 @@
 
 		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
+			custom_effect_tooltip = "还没做完"
 			every_owned_state = {
 				add_core_of = DH1
 			}
@@ -2108,7 +2110,7 @@
 				is_ai = no
 				DOH = { has_completed_focus = DOH_ninghaixiaxiyang }
 			}
-			has_army_manpower = { size > 1500000 }
+			has_army_manpower = { size > 150000 }
 		}
 		
 		cancel_if_invalid = yes
@@ -2137,7 +2139,7 @@
 			factor = 11
 		}
 		available = {
-			has_army_manpower = { size > 1000000 }
+			has_army_manpower = { size > 100000 }
 		}
 		
 		cancel_if_invalid = yes
@@ -2203,11 +2205,7 @@
 				DOH = { has_completed_focus = DOH_ninghaixiaxiyang }
 			}
 			has_navy_size = {
-				size > 49
-			}
-			has_navy_size = {
-				size > 4
-				type = capital_ship
+				size > 19
 			}
 		}
 		

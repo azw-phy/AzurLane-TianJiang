@@ -1,11 +1,11 @@
 DOH_DH1_decision_category = {
-	DOH_DH1_zhongshilujun_add = {
+	DOH_DH1_zhongshijingong_add = {
 		icon = generic_tank
 		visible = {
 			tag = DOH
 			is_ai = no
 		}
-		allowed = {
+		available = {
 			tag = DOH
 			is_ai = no
 			NOT = {
@@ -15,7 +15,27 @@ DOH_DH1_decision_category = {
 		cost = 100
 		days_remove = 10
 		remove_effect = {
-			DH1 = { add_ideas = DH1_AI_zhongshilujun }
+			DH1 = { add_ideas = DH1_AI_zhongshijingong }
+			set_country_flag = DOH_DH1_xiadalezhishi
+		}
+	}
+	DOH_DH1_zhongshifangyu_add = {
+		icon = generic_tank
+		visible = {
+			tag = DOH
+			is_ai = no
+		}
+		available = {
+			tag = DOH
+			is_ai = no
+			NOT = {
+				has_country_flag = DOH_DH1_xiadalezhishi
+			}
+		}
+		cost = 100
+		days_remove = 10
+		remove_effect = {
+			DH1 = { add_ideas = DH1_AI_zhongshifangyu }
 			set_country_flag = DOH_DH1_xiadalezhishi
 		}
 	}
@@ -25,7 +45,7 @@ DOH_DH1_decision_category = {
 			tag = DOH
 			is_ai = no
 		}
-		allowed = {
+		available = {
 			tag = DOH
 			is_ai = no
 			NOT = {
@@ -45,7 +65,7 @@ DOH_DH1_decision_category = {
 			tag = DOH
 			is_ai = no
 		}
-		allowed = {
+		available = {
 			tag = DOH
 			is_ai = no
 			NOT = {
@@ -65,7 +85,7 @@ DOH_DH1_decision_category = {
 			tag = DOH
 			is_ai = no
 		}
-		allowed = {
+		available = {
 			tag = DOH
 			is_ai = no
 			NOT = {
@@ -85,7 +105,7 @@ DOH_DH1_decision_category = {
 			tag = DOH
 			is_ai = no
 		}
-		allowed = {
+		available = {
 			tag = DOH
 			is_ai = no
 			has_country_flag = DOH_DH1_xiadalezhishi

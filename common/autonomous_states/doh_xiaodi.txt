@@ -32,7 +32,9 @@ autonomy_state = {
 
 	allowed = {
 		#has_dlc = "La Resistance"
-		OVERLORD = { original_tag = DOH }
-		OVERLORD = { original_tag = DH1 }
+		OR = {
+			OVERLORD = { original_tag = DOH }
+			OVERLORD = { original_tag = DH1 }
+		}
 	}
 }
