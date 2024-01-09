@@ -117,7 +117,8 @@ DOH_DH1_decision_category = {
 				remove_ideas = DH1_AI_xiuyangshengxi
 				remove_ideas = DH1_AI_zhongshihaijun
 				remove_ideas = DH1_AI_zhongshikongjun
-				remove_ideas = DH1_AI_zhongshilujun
+				remove_ideas = DH1_AI_zhongshijingong
+				remove_ideas = DH1_AI_zhongshifangyu
 			}
 			clr_country_flag = DOH_DH1_xiadalezhishi
 		}

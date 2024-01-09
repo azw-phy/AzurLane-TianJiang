@@ -210,6 +210,7 @@
  #任务
  DH1_yuanzheng_mission:"远征"
  DH1_yuanzheng_decision_category:"远征决议"
+ DH1_yuanzheng_decision_category_desc:"感谢模组：NSB边境冲突"
  DH1_yuanzheng_mission_desc:"为了东煌的荣耀，战斗吧！"
  DH1_zhongnanbandao_mission_tooltip:"允许向中南半岛远征。"
  DH1_zhongnanbandao_decision:"进攻中南半岛"
@@ -301,42 +302,55 @@
  #人物
  DH1_79shi:"东煌顾问团"
  ##远征相关
- DH1_yuanzheng_border_conflict.1.t:"东煌远征军在我国边境发起挑衅"
- DH1_yuanzheng_border_conflict.1.desc:"作为维持我国与[DH1.GetNameDef]边境现状的工作，我军的一个工作组日前被派往冲突地区查看该地的界标。而就在他们临近边境线时，这个工作组却突然遭到了当地东煌远征军哨兵的攻击。\n\n尽管我们已就此提出了正式的外交抗议，但东煌大使却坚称，这个工作组是被我们派来挪动界标以谋取宣称更多领土的。\n\n东煌人向我方保证，他们会尊重双方边境现状，但绝不会容忍任何对当前界线的“篡改”。若是我方企图如此，那他们必将以武力相回敬。\n\n这次事件或许实际上意味着，我们在上述地区我方领土的行动已经不再那么自由了。"
- DH1_yuanzheng_border_conflict.1.a:"真是岂有此理！"
- DH1_yuanzheng_border_conflict.2.t:"东煌远征军取得冲突地区之战胜利"
- DH1_yuanzheng_border_conflict.2.desc:"[FROM.GetNameDef]和东煌两国的军队日前围绕着冲突地区所爆发的边境冲突落下帷幕，[FROM.GetNameDef]军队据说目前已经全线撤退。在占据了地区周遭若干颇具战略地位的山头后，东煌远征军现已开始构筑阵地，巩固现有的态势。\n\n战斗当中，东煌远征军还缴获了若干[FROM.GetNameDef]的坦克，后者现已被运往东京，以展开进一步的测试和评估。"
- DH1_yuanzheng_border_conflict.2.a:"我们已经体面地解决了争端。"
- DH1_yuanzheng_border_conflict.2.b:"我们必须为此准备适当的回应。"
- DH1_yuanzheng_border_conflict.3.t:"东煌远征军在冲突地区之战落败"
- DH1_yuanzheng_border_conflict.3.desc:"[FROM.GetNameDef]和东煌两国的军队日前围绕着冲突地区所爆发的边境冲突落下帷幕，东煌驻莫斯科大使现已呼吁两国停火。\n\n战斗当中，东煌远征军数次对[FROM.GetNameDef]阵地的猛攻均以伤亡惨烈的失败告终，这不由得引起了东煌军方对本国军队战斗力的担忧。"
- DH1_yuanzheng_border_conflict.3.a:"光荣战败总胜过怯懦避战。"
- DH1_yuanzheng_border_conflict.3.b:"我军此战表现出色。"
- DH1_yuanzheng_border_conflict.4.t:"冲突地区之战陷入僵局"
- DH1_yuanzheng_border_conflict.4.desc:"在双方均撤出争议地段以重新补给和集结后，东煌和[FROM.GetNameDef]两国的军队围绕着冲突地区所爆发的边境冲突暂且偃旗息鼓。也许是意识到继续进攻亦无济于事，东煌军方现已要求停火谈判，以期恢复边境态势。"
- DH1_yuanzheng_border_conflict.4.a:"我们至少得到了宝贵的经验。"
- DH1_yuanzheng_border_conflict.5.t:"冲突地区之战冲突升级"
- DH1_yuanzheng_border_conflict.5.desc:"东煌和[FROM.GetNameDef]两国的军队围绕着冲突地区所爆发的战斗仍在进行。也许是为了打破战场的僵局，这个大地区下辖其他各地的东煌远征军均已开始与[FROM.GetNameDef]军队交战。而情报表明，东煌人很有可能会很快从其帝国的其他地域征调新军，以增援此次战事。"
- DH1_yuanzheng_border_conflict.5.a:"我们必须坚守战线。"
- DH1_yuanzheng_border_conflict.6.t:"冲突地区之战冲突升级"
- DH1_yuanzheng_border_conflict.6.desc:"[FROM.GetAdjective]和[DH1.GetAdjective]两国的军队围绕着冲突地区所爆发的战斗仍在进行。也许是为了打破战场的僵局，这个大地区下辖其他各地的[FROM.GetAdjective]军队均已开始与[DH1.GetAdjective]军队交战。而情报表明，[FROM.GetNameDef]很有可能会很快从其国家的其他地域征调新军，以增援此次战事。"
- DH1_yuanzheng_border_conflict.6.a:"我们必须准备进攻！"
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+ az_NSB_border_conflict_decision_category_desc:0 "我们的邻国占据了我们需要的土地。我们在与官员和记者进行“谈判”的同时发起这场非正式冲突，国际社会将不会介入。"
+ az_NSB_border_conflict_initiate_incident:0 "在毗邻[From.From.GetName]的边境制造事端"
+ az_NSB_border_conflict_incident_warning_defender:0 "[From.From.GetName]和[From.GetNameDef]双方边境发生事端"
+ az_NSB_border_conflict_incident_warning_defender_desc:0 "§W将部队移动到§H[From.From.GetName]§!§!"
+ az_NSB_border_conflict_escalation_warning_defender:0 "[From.From.GetName]和[From.GetNameDef]双方边境发生事端"
+ az_NSB_border_conflict_escalation_warning_defender_desc:0 "§W将部队驻扎在§H[From.From.GetName]§!\n§H[From.GetNameDef]§!的事端可升级为§H边境冲突§!§!。"
+ escalation_possible_tooltip_for_defender:0 "§H[From.GetNameDef]§!可将事端升级为§H边境冲突§!。\n若我方在该地区未部署部队则会立即失败\n"
+ effects_if_border_conflict_is_lost:0 "§H将在边境冲突失败时生效§!：\n"
+ from_cannot_escalate:0 "§H[From.GetNameDef]§!已不能将事端升级为§H边境冲突§!。\n\n"
+ az_NSB_escalate_incident_to_border_conflict:0 "将和[From.GetName]的事端升级为边境冲突"
+ az_NSB_border_incident_forgotten:0 "[From.From.GetName]的事端已经淡化"
+ az_NSB_border_incident_delay_until_new_incident_120:0 "无法在§H60§!日内再向§H[From.GetName]§!挑起事端。\n"
+ az_NSB_border_incident_delay_until_new_incident_180:0 "无法在§H180§!日内再向§H[From.GetName]§!挑起事端。\n"
+ az_NSB_border_conflict_time_until_cancelled:0 "未在[From.From.GetName]取得进展"
+ az_NSB_border_conflict_back_out_of_conflict:0 "从冲突中撤退"
+ az_NSB_border_conflict_escalate_conflict:0 "加剧冲突"
+ az_NSB_border_conflict_escalate_to_war:0 "升级为战争"
+ defensive_border_conflict_won:0 "边境冲突的防御方获胜"
+ not_initiated_border_incident_with_FROM:0 "尚未与[From.GetNameDef]挑起边境事端"
+ not_initiated_border_incident_with_ROOT:0 "尚未与[Root.GetNameDef]挑起边境事端"
+ at_least_one_division_in_state:0 "在该地区至少驻扎§H1§!个师"
+ in_45_days:0 "在45日内：\n"
+ border_incident_active:0 "各地区没有正在进行的边境冲突"
+ az_NSB_border_conflict_won_attacker.1.t:0 "[their_state.GetName]传来有利的谈判结果"
+ az_NSB_border_conflict_won_attacker.1.desc:0 "在[our_state.GetName]和[their_state.GetName]边境地区的紧张谈判有了结果，我国与[their_country.GetLeader]达成了明显有利的协议。随后，[their_country.GetAdjective]官员迁出，我国人民接管了对该地区的控制。"
+ az_NSB_border_conflict_won_attacker.1.a:0 "我们与邻国达成了有利的协议！这里没什么可看的了！"
+ az_NSB_border_conflict_won_defender.1.t:0 "[their_state.GetName]大捷"
+ az_NSB_border_conflict_won_defender.1.desc:0 "日前在[our_state.GetName]和[their_state.GetName]交界地区发生的冲突最终以我军完胜[their_country.GetLeader]军队而告捷。[their_country.GetAdjective]军队现已被击退，而我方则顺势攻占了此争议地区。"
+ az_NSB_border_conflict_won_defender.1.a:0 "我们展现了自身的实力！"
+ az_NSB_border_conflict_lost_attacker.1.t:0 "[our_state.GetName]兵败"
+ az_NSB_border_conflict_lost_attacker.1.desc:0 "[their_country.GetLeader]领导的官员与我们达成了一项协议，我们非正式地同意让他们接管我们在[our_state.GetName]和[their_state.GetName]交界地区的人道主义援助工作。我们的官员慷慨地留下了食物和设备，并进行重整，以备我们将来继续在那里开展救援工作。"
+ az_NSB_border_conflict_lost_attacker.1.a:0 "我们必须尽快进行谈判、贿赂和反击！"
+ az_NSB_border_conflict_lost_defender.1.t:0 "[our_state.GetName]兵败"
+ az_NSB_border_conflict_lost_defender.1.desc:0 "日前[their_country.GetLeader]麾下的军队从[our_state.GetName]和[their_state.GetName]的争议地区击退了我军。所幸我军转进途中秩序井然，正在重整以备未来的再战。"
+ az_NSB_border_conflict_lost_defender.1.a:0 "我们必须尽快进行谈判、贿赂和反击！"
+ az_NSB_border_conflict_canceled_attacker.1.t:0 "[their_state.GetName]谈判陷入僵局"
+ az_NSB_border_conflict_canceled_attacker.1.desc:0 "我们对[our_state.GetName]-[their_state.GetName]地区人民的救济援助已经停止，因为我们显然无法与这个邻国达成共识。官员们报告说，[their_country.GetAdjective]代表们固执己见。目前，我们无法进一步扩大我们的人道主义事务；但他们也无法完全终止我们在这里的援助工作。"
+ az_NSB_border_conflict_canceled_attacker.1.a:0 "我们将卷土重来，再启和平谈判。"
+ az_NSB_border_conflict_canceled_defender.1.t:0 "[their_state.GetName]困局"
+ az_NSB_border_conflict_canceled_defender.1.desc:0 "由于双方均无力击退对方，日前在[our_state.GetName]和[their_state.GetName]交界地区的战斗已经陷入了僵局，敌我两军均未取得任何较大进展。侦察兵报告称[their_country.GetAdjective]的士兵正在其战线一侧构筑防御工事，看起来相比于进攻，他们更希望维持现状。"
+ az_NSB_border_conflict_canceled_defender.1.a:0 "我们还会回来的。"
+ az_NSB_border_incident_defender_warning.1.t:0 "[From.GetNameDefCap]进犯我方边境"
+ az_NSB_border_incident_defender_warning.1.desc:0 "昨日早些时候，我们发现[their_country.GetAdjective]的士兵正自[attacker_state.GetName]出击越境侵入[defender_state.GetName]。而在当日晚间，更多的[their_country.GetAdjective]部队业已开抵此地区，并在我方领土内构筑防御阵地。\n\n在此之后，[their_country.GetLeader]麾下的军队与我方在整条边境线上爆发了一系列的边境冲突以及交火。\n\n至此，形势已然十分明显，[their_country.GetAdjective]军队进犯我方疆界且拒不撤退。我们必须尽快组织力量进行反击，阻止其进一步的侵略。"
+ az_NSB_border_incident_defender_warning.1.a:0 "全军立即动员！"
+ az_NSB_border_conflict_escalate_to_war.1.t:0 "[From.GetNameDefCap]备战动员"
+ az_NSB_border_conflict_escalate_to_war.1.desc:0 "侦察兵报告称，[From.GetAdjective]的军队目前正在其[their_state.GetName]地区集结，意欲采取大规模军事行动进犯我[our_state.GetName]疆界。根据[From.GetLeader]调配的物资判断，其意图似在扩大局势，这已不再是一场局限于争议边境的边界冲突了。\n\n全面战争已迫在眉睫。"
+ az_NSB_border_conflict_escalate_to_war.1.a:0 "做好狭路相逢的准备！"
+ az_NSB_negative_opinion:0 "§R会影响与该国及其保障独立国的关系§!\n"
+ az_NSB_buildings_damaged:0 "地区受到的破坏。\n"
+ border_threat:0 "边境调整"
+ border_conflict_started:0 "无视边境"
+ border_conflict_started_overlord:0 "边境侮辱"
