@@ -1,0 +1,129 @@
+DH1_zhongnanbandao = {
+	allowed = {
+		original_tag = DH1
+	}
+	enable = {
+		has_completed_focus = DH1_zhongnanbandao
+	}
+	abort = {
+		DH1 = {
+			controls_state = VIN.core_states
+			controls_state = BRM.core_states
+			controls_state = LAO.core_states
+			controls_state = SIA.core_states
+			controls_state = MAL.core_states
+		}
+	}
+    ai_strategy = {
+		type = front_unit_request
+		tag = "VIN"			
+		value = 200
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = "HUJ"
+		value = 200
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = "YUW"
+		value = 200
+	}
+    ai_strategy = {
+		type = front_unit_request
+		tag = "BRM"			
+		value = 200
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = "LAO"			
+		value = 200
+	}
+    ai_strategy = {
+		type = front_unit_request
+		tag = "SIA"			
+		value = 200
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = "MAL"			
+		value = 200
+	}
+	ai_strategy = {
+		type = ignore
+		id = "DOH"		
+		value = 1000
+	}
+}
+DH1_nanyacidalu = {
+	allowed = {
+		original_tag = DH1
+	}
+	enable = {
+		has_completed_focus = DH1_nanyacidalu
+	}
+	abort = {
+		DH1 = {
+			controls_state = RAJ.core_states
+			controls_state = BAN.core_states
+			controls_state = PAK.core_states
+		}
+	}
+    ai_strategy = {
+		type = front_unit_request
+		tag = "RAJ"			
+		value = 200
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = "HUJ"
+		value = 200
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = "BAN"
+		value = 200
+	}
+    ai_strategy = {
+		type = front_unit_request
+		tag = "PAK"			
+		value = 200
+	}
+	ai_strategy = {
+		type = ignore
+		id = "DOH"		
+		value = 1000
+	}
+}
+DH1_xinanshibian = {
+	allowed = {
+		original_tag = DH1
+	}
+	enable = {
+		has_completed_focus = DH1_xinanshibian
+	}
+	abort = {
+		has_country_flag = DH1_xinanshibian_success
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = "DOH"			
+		value = 200
+	}
+}
+DOH_you_should_be_prepared_for_war = {
+    allowed = {
+		original_tag = DOH
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+        type = force_build_armies
+        value = 1000
+    }
+}

@@ -11,6 +11,7 @@ dingzhenai_unit_production = {
 			original_tag =  DOH 
 			original_tag =  BLI 
 			original_tag =  SIR 
+			original_tag =  DH1
 		}
 	}
 	enable = {

@@ -16,7 +16,7 @@ DH1_yuanzheng_decision_category = {
 					OR = {
 						AND = {
 							OR = {
-								PREV = { has_completed_focus = DH1_zhongnanbandao }
+								DH1 = { has_completed_focus = DH1_zhongnanbandao }
 								is_debug = yes
 							}
 							OR = {
@@ -29,7 +29,7 @@ DH1_yuanzheng_decision_category = {
 						}
 						AND = {
 							OR = {
-								PREV = { has_completed_focus = DH1_nanyacidalu }
+								DH1 = { has_completed_focus = DH1_nanyacidalu }
 								is_debug = yes
 							}
 							OR = {
@@ -62,7 +62,7 @@ DH1_yuanzheng_decision_category = {
 					OR = {
 						AND = {
 							OR = {
-								PREV = { has_completed_focus = DH1_zhongnanbandao }
+								DH1 = { has_completed_focus = DH1_zhongnanbandao }
 								is_debug = yes
 							}
 							OR = {
@@ -75,7 +75,7 @@ DH1_yuanzheng_decision_category = {
 						}
 						AND = {
 							OR = {
-								PREV = { has_completed_focus = DH1_nanyacidalu }
+								DH1 = { has_completed_focus = DH1_nanyacidalu }
 								is_debug = yes
 							}
 							OR = {
@@ -163,13 +163,13 @@ DH1_yuanzheng_decision_category = {
 			}
 		}
 		ai_will_do = { 
-			base = 0.2
+			base = 20
 			
-			modifier = {
-				ROOT = { strength_ratio = { tag = FROM ratio < 0.5 } }
+			# modifier = {
+			# 	ROOT = { strength_ratio = { tag = FROM ratio < 0.5 } }
 				
-				factor = 0
-			}
+			# 	factor = 0
+			# }
 		}
 
 		cost = 30

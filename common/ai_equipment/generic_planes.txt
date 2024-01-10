@@ -3,7 +3,7 @@
 generic_fighter = {
 	category = air
 
-	blocked_for = {GER ENG USA BYG HUJ CHY DOH TIX BFL SAD YUW BLI WEX SIR SR1 SR2 SR3 SR4}
+	blocked_for = {GER ENG USA BYG HUJ CHY DOH TIX BFL SAD YUW BLI WEX SIR SR1 SR2 SR3 SR4 DH1}
 
 	available_for = {}
 
@@ -152,7 +152,7 @@ generic_fighter = {
 generic_cas = {
 	category = air
 
-	blocked_for = {GER ENG USA BYG HUJ CHY DOH TIX BFL SAD YUW BLI WEX SIR SR1 SR2 SR3 SR4}
+	blocked_for = {GER ENG USA BYG HUJ CHY DOH TIX BFL SAD YUW BLI WEX SIR SR1 SR2 SR3 SR4  DH1}
 
 	available_for = {}
 
@@ -238,7 +238,7 @@ generic_cas = {
 generic_naval_bomber = {
 	category = air
 
-	blocked_for = {GER ENG USA BYG HUJ CHY DOH TIX BFL SAD YUW BLI WEX SIR SR1 SR2 SR3 SR4}
+	blocked_for = {GER ENG USA BYG HUJ CHY DOH TIX BFL SAD YUW BLI WEX SIR SR1 SR2 SR3 SR4 DH1}
 
 	available_for = {}
 
@@ -322,7 +322,7 @@ generic_cv_fighter = {
 	category = air
 
 	#blocked_for = {  ENG USA FRA JAP } #Why
-	blocked_for = {GER ENG USA BYG HUJ CHY DOH TIX BFL SAD YUW BLI WEX SIR SR1 SR2 SR3 SR4}
+	blocked_for = {GER ENG USA BYG HUJ CHY DOH TIX BFL SAD YUW BLI WEX SIR SR1 SR2 SR3 SR4 DH1}
 
 	available_for = {}
 
@@ -471,7 +471,7 @@ generic_cv_cas = {
 	category = air
 
 	#blocked_for = { ENG USA FRA JAP }
-	blocked_for = {GER ENG USA BYG HUJ CHY DOH TIX BFL SAD YUW BLI WEX SIR SR1 SR2 SR3 SR4}
+	blocked_for = {GER ENG USA BYG HUJ CHY DOH TIX BFL SAD YUW BLI WEX SIR SR1 SR2 SR3 SR4 DH1}
 
 	available_for = {}
 
@@ -570,7 +570,7 @@ generic_cv_naval_bomber = {
 	category = air
 
 	#blocked_for = {  ENG USA FRA JAP }
-	blocked_for = {GER ENG USA BYG HUJ CHY DOH TIX BFL SAD YUW BLI WEX SIR SR1 SR2 SR3 SR4}
+	blocked_for = {GER ENG USA BYG HUJ CHY DOH TIX BFL SAD YUW BLI WEX SIR SR1 SR2 SR3 SR4 DH1}
 
 	available_for = {}
 
@@ -671,7 +671,7 @@ generic_cv_naval_bomber = {
 generic_tactical_bomber = {
 	category = air
 
-	blocked_for = {GER ENG USA BYG HUJ CHY DOH TIX BFL SAD YUW BLI WEX SIR SR1 SR2 SR3 SR4}
+	blocked_for = {GER ENG USA BYG HUJ CHY DOH TIX BFL SAD YUW BLI WEX SIR SR1 SR2 SR3 SR4 DH1}
 
 	available_for = {}
 
@@ -831,7 +831,7 @@ generic_tactical_bomber = {
 generic_heavy_fighter = {
 	category = air
 
-	blocked_for = {GER ENG USA BYG HUJ CHY DOH TIX BFL SAD YUW BLI WEX SIR SR1 SR2 SR3 SR4}
+	blocked_for = {GER ENG USA BYG HUJ CHY DOH TIX BFL SAD YUW BLI WEX SIR SR1 SR2 SR3 SR4 DH1}
 
 	available_for = {}
 
@@ -930,7 +930,7 @@ generic_heavy_fighter = {
 
 generic_scout_plane = {
 	category = air
-	blocked_for = { BYG HUJ CHY DOH TIX BFL SAD YUW BLI WEX SIR SR1 SR2 SR3 SR4 }
+	blocked_for = { BYG HUJ CHY DOH TIX BFL SAD YUW BLI WEX SIR SR1 SR2 SR3 SR4  DH1}
 	available_for = {}
 
 	roles = {
@@ -1032,7 +1032,7 @@ generic_scout_plane = {
 generic_strategic_bomber = {
 	category = air
 
-	blocked_for = {GER ENG USA BYG HUJ CHY DOH TIX BFL SAD YUW BLI WEX SIR SR1 SR2 SR3 SR4}
+	blocked_for = {GER ENG USA BYG HUJ CHY DOH TIX BFL SAD YUW BLI WEX SIR SR1 SR2 SR3 SR4 DH1}
 
 	available_for = {}
 
@@ -1161,7 +1161,7 @@ generic_strategic_bomber = {
 generic_maritime_patrol = {
 	category = air
 
-	blocked_for = {GER ENG USA BYG HUJ CHY DOH TIX BFL SAD YUW BLI WEX SIR SR1 SR2 SR3 SR4}
+	blocked_for = {GER ENG USA BYG HUJ CHY DOH TIX BFL SAD YUW BLI WEX SIR SR1 SR2 SR3 SR4 DH1}
 
 	available_for = {}
 

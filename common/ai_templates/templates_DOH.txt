@@ -1,6 +1,6 @@
 armor_default = {
 	available_for = {
-        DOH
+        DOH DH1
 	}
 	roles = {
 		armor
@@ -134,7 +134,7 @@ armor_default = {
 
 garrison_default = {
 	available_for = {	
-    DOH
+    DOH DH1
 	}
 	roles = {
 		garrison
@@ -172,7 +172,7 @@ garrison_default = {
 
 infantry_DOH = {
 	available_for = {
-		DOH
+		DOH DH1
 	}
 	roles = {
 		infantry

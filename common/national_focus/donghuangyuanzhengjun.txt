@@ -117,7 +117,7 @@
 		relative_position_id = DH1_querentongshuai
 		x = -2
 		y = 0
-		cost = 15
+		cost = 10
 		
 		ai_will_do = {
 			factor = 5
@@ -199,7 +199,7 @@
 		}
 		x = -8
 		y = 1
-		cost = 7
+		cost = 4
 		
 		ai_will_do = {
 			factor = 5
@@ -232,7 +232,7 @@
 		}
 		x = 2
 		y = 1
-		cost = 7
+		cost = 4
 		
 		ai_will_do = {
 			factor = 1
@@ -268,7 +268,7 @@
 		}
 		x = 0
 		y = 1
-		cost = 10
+		cost = 4
 		
 		ai_will_do = {
 			factor = 1
@@ -319,7 +319,7 @@
 		}
 		x = 0
 		y = 2
-		cost = 7
+		cost = 4
 		
 		ai_will_do = {
 			factor = 1
@@ -356,7 +356,7 @@
 		}
 		x = -2
 		y = 1
-		cost = 7
+		cost = 4
 		
 		ai_will_do = {
 			factor = 5
@@ -385,7 +385,7 @@
 		}
 		x = 0
 		y = 1
-		cost = 7
+		cost = 4
 		
 		ai_will_do = {
 			factor = 4
@@ -415,7 +415,7 @@
 		}
 		x = -1
 		y = 1
-		cost = 7
+		cost = 4
 		
 		ai_will_do = {
 			factor = 6
@@ -447,7 +447,7 @@
 		}
 		x = 1
 		y = 1
-		cost = 7
+		cost = 4
 		
 		ai_will_do = {
 			factor = 5
@@ -476,7 +476,7 @@
 		}
 		x = 0
 		y = 1
-		cost = 7
+		cost = 4
 		
 		ai_will_do = {
 			factor = 9
@@ -506,7 +506,7 @@
 		}
 		x = 0
 		y = 1
-		cost = 10
+		cost = 4
 		
 		ai_will_do = {
 			factor = 5
@@ -544,7 +544,7 @@
 		}
 		x = -4
 		y = 1
-		cost = 20
+		cost = 10
 		
 		ai_will_do = {
 			factor = 7
@@ -736,7 +736,7 @@
 		}
 		x = 8
 		y = 1
-		cost = 7
+		cost = 4
 		
 		ai_will_do = {
 			factor = 5
@@ -772,7 +772,7 @@
 		}
 		x = -4
 		y = 1
-		cost = 15
+		cost = 10
 		
 		ai_will_do = {
 			factor = 8
@@ -814,7 +814,7 @@
 		}
 		x = 0
 		y = 2
-		cost = 5
+		cost = 3
 		
 		ai_will_do = {
 			factor = 8
@@ -888,7 +888,7 @@
 		}
 		x = 1
 		y = 1
-		cost = 5
+		cost = 3
 		
 		ai_will_do = {
 			factor = 8
@@ -922,7 +922,7 @@
 		}
 		x = -2
 		y = 1
-		cost = 7
+		cost = 4
 		
 		ai_will_do = {
 			factor = 5
@@ -960,7 +960,7 @@
 		}
 		x = 0
 		y = 1
-		cost = 7
+		cost = 4
 		
 		ai_will_do = {
 			factor = 5
@@ -995,7 +995,7 @@
 		}
 		x = 0
 		y = 1
-		cost = 7
+		cost = 4
 		
 		ai_will_do = {
 			factor = 5
@@ -1030,7 +1030,7 @@
 		}
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		
 		ai_will_do = {
 			factor = 5
@@ -1066,7 +1066,7 @@
 		}
 		x = -1
 		y = 1
-		cost = 5
+		cost = 3
 		
 		ai_will_do = {
 			factor = 5
@@ -1099,10 +1099,10 @@
 		icon = GFX_goal_generic_position_armies
 		x = 20
 		y = 0
-		cost = 7
+		cost = 2
 		
 		ai_will_do = {
-			factor = 5
+			factor = 10
 		}
 		available = {
 			
@@ -1183,13 +1183,13 @@
 		icon = GFX_goal_generic_position_armies
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = DH1_jiaqianglianluo
 		prerequisite = {
 			focus = DH1_jiaqianglianluo
 		}
 		ai_will_do = {
-			factor = 10
+			factor = 20
 		}
 		available = {
 			custom_trigger_tooltip = {
@@ -1227,13 +1227,13 @@
 		icon = GFX_goal_generic_position_armies
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		relative_position_id = DH1_gengduoyaoqiu
 		prerequisite = {
 			focus = DH1_gengduoyaoqiu
 		}
 		ai_will_do = {
-			factor = 6
+			factor = 10
 		}
 		available = {
 			custom_trigger_tooltip = {
@@ -1287,13 +1287,13 @@
 		icon = GFX_goal_generic_position_armies
 		x = -4
 		y = 1
-		cost = 5
+		cost = 3
 		relative_position_id = DH1_gengduoyaoqiu
 		prerequisite = {
 			focus = DH1_gengduoyaoqiu
 		}
 		ai_will_do = {
-			factor = 6
+			factor = 15
 		}
 		available = {
 			custom_trigger_tooltip = {
@@ -1348,13 +1348,13 @@
 		icon = GFX_goal_generic_position_armies
 		x = 4
 		y = 1
-		cost = 5
+		cost = 3
 		relative_position_id = DH1_gengduoyaoqiu
 		prerequisite = {
 			focus = DH1_gengduoyaoqiu
 		}
 		ai_will_do = {
-			factor = 6
+			factor = 10
 		}
 		available = {
 			custom_trigger_tooltip = {
@@ -1404,7 +1404,7 @@
 		icon = GFX_goal_generic_position_armies
 		x = 0
 		y = 2
-		cost = 10
+		cost = 5
 		relative_position_id = DH1_kuozhanhaiyunluxian
 		prerequisite = {
 			focus = DH1_kuozhanhaiyunluxian
@@ -1443,7 +1443,7 @@
 		icon = GFX_goal_generic_position_armies
 		x = -2
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = DH1_ludilianjie
 		prerequisite = {
 			focus = DH1_ludilianjie
@@ -1481,7 +1481,7 @@
 		icon = GFX_goal_generic_position_armies
 		x = 2
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = DH1_ludilianjie
 		prerequisite = {
 			focus = DH1_ludilianjie
@@ -1603,7 +1603,7 @@
 			focus = DH1_ludilianjie
 		}
 		ai_will_do = {
-			factor = 11
+			factor = 10
 		}
 		available = {
 
@@ -1636,7 +1636,7 @@
 			focus = DH1_xiangbentuzhengbing
 		}
 		ai_will_do = {
-			factor = 11
+			factor = 10
 		}
 		available = {
 
@@ -1803,7 +1803,7 @@
 			focus = DH1_jiangzaiwaijunmingyousuobushou
 		}
 		ai_will_do = {
-			factor = 11
+			factor = 0
 		}
 		available = {
 			
@@ -1981,9 +1981,9 @@
 		icon = GFX_goal_generic_position_armies
 		x = 35
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
-			factor = 11
+			factor = 20
 		}
 		available = {
 			has_completed_focus = DH1_gengduoyaoqiu
@@ -2005,13 +2005,13 @@
 		icon = GFX_goal_generic_position_armies
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = DH1_zongtizhan
 		prerequisite = {
 			focus = DH1_zongtizhan
 		}
 		ai_will_do = {
-			factor = 11
+			factor = 20
 		}
 		available = {
 			
@@ -2041,7 +2041,7 @@
 			focus = DH1_yuanzhengkaishi
 		}
 		ai_will_do = {
-			factor = 11
+			factor = 20
 		}
 		available = {
 			OR = {
@@ -2068,16 +2068,16 @@
 		icon = GFX_goal_generic_position_armies
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = DH1_jingong
 		prerequisite = {
 			focus = DH1_jingong
 		}
 		ai_will_do = {
-			factor = 11
+			factor = 20
 		}
 		available = {
-			threat > 0.9
+			threat > 0.3
 		}
 		
 		cancel_if_invalid = yes
@@ -2097,20 +2097,20 @@
 		icon = GFX_goal_generic_position_armies
 		x = 2
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = DH1_qinsuanzhimingzhe
 		prerequisite = {
 			focus = DH1_qinsuanzhimingzhe
 		}
 		ai_will_do = {
-			factor = 11
+			factor = 20
 		}
 		available = {
 			OR = {
 				is_ai = no
 				DOH = { has_completed_focus = DOH_ninghaixiaxiyang }
 			}
-			has_army_manpower = { size > 150000 }
+			has_army_manpower = { size > 100000 }
 		}
 		
 		cancel_if_invalid = yes
@@ -2130,16 +2130,16 @@
 		icon = GFX_goal_generic_position_armies
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = DH1_qinsuanzhimingzhe
 		prerequisite = {
 			focus = DH1_qinsuanzhimingzhe
 		}
 		ai_will_do = {
-			factor = 11
+			factor = 20
 		}
 		available = {
-			has_army_manpower = { size > 100000 }
+			has_army_manpower = { size > 50000 }
 		}
 		
 		cancel_if_invalid = yes
@@ -2266,13 +2266,13 @@
 		icon = GFX_goal_generic_position_armies
 		x = -4
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = DH1_yuanzhengkaishi
 		prerequisite = {
 			focus = DH1_yuanzhengkaishi
 		}
 		ai_will_do = {
-			factor = 11
+			factor = 6
 		}
 		available = {
 			
@@ -2439,7 +2439,7 @@
 		icon = GFX_goal_generic_position_armies
 		x = -4
 		y = 3
-		cost = 10
+		cost = 5
 		relative_position_id = DH1_yuanjiao
 		prerequisite = {
 			focus = DH1_yuanjiao
@@ -2448,7 +2448,7 @@
 			focus = DH1_guojimaoyi
 		}
 		ai_will_do = {
-			factor = 11
+			factor = 6
 		}
 		available = {
 			has_completed_focus = DH1_zhongnanbandao

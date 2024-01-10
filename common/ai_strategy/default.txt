@@ -24,6 +24,7 @@ default_unit_production = { #If adding country-unique ones, bear in mind that th
 				original_tag = HUJ
 				original_tag = BLI
 				original_tag = SIR
+				original_tag = DH1
 			}
 		}
 	}

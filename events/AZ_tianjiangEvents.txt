@@ -7323,7 +7323,17 @@ country_event = {
 			factor = 100
 		}
 	}
-	
+	option = {
+		name = "不用控制台是看不见这个事件的"
+		trigger = { 
+		tag = DH1
+		}
+		add_ideas = DOH_fkAIbuff
+		set_country_flag = yihuode_AIBUFF
+		ai_chance = {
+			factor = 100
+		}
+	}
 	option = {
 		name = "不用控制台是看不见这个事件的"
 		trigger = { 
