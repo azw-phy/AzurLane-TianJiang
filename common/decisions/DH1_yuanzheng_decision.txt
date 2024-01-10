@@ -25,6 +25,7 @@ DH1_yuanzheng_decision_category = {
 								is_core_of = LAO
 								is_core_of = SIA
 								is_core_of = MAL
+								is_core_of = CAM
 							}
 						}
 						AND = {
@@ -71,6 +72,7 @@ DH1_yuanzheng_decision_category = {
 								is_core_of = LAO
 								is_core_of = SIA
 								is_core_of = MAL
+								is_core_of = CAM
 							}
 						}
 						AND = {
