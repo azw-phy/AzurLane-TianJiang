@@ -354,3 +354,8 @@
  border_threat:0 "边境调整"
  border_conflict_started:0 "无视边境"
  border_conflict_started_overlord:0 "边境侮辱"
+
+ DOH_DH1_kaishiyuanzheng:"开始远征"
+ DOH_DH1_kaishiyuanzheng_desc:"将军！请下命令吧！"
+ DOH_DH1_kaishiyuanzheng_tooltip:"远征军将会出发"
+ DOH_DH1_kaishiyuanzheng_flag:"远征军将会出发"

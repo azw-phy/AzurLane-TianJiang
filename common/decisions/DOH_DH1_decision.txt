@@ -1,9 +1,36 @@
 DOH_DH1_decision_category = {
+	DOH_DH1_kaishiyuanzheng = {
+		icon = generic_tank
+		visible = {
+			tag = DOH
+			is_ai = no
+		}
+		available = {
+			tag = DOH
+			is_ai = no
+			DH1 = {
+				NOT = {
+					has_country_flag = DOH_DH1_kaishiyuanzheng_flag
+				}
+			}
+		}
+		cost = 100
+		days_remove = 10
+		remove_effect = {
+			custom_effect_tooltip = DOH_DH1_kaishiyuanzheng_tooltip
+			hidden_effect = {
+				DH1 = { set_country_flag = DOH_DH1_kaishiyuanzheng_flag }				
+			}
+		}
+	}
 	DOH_DH1_zhongshijingong_add = {
 		icon = generic_tank
 		visible = {
 			tag = DOH
 			is_ai = no
+			DH1 = {
+				has_completed_focus = DH1_jieshouwzhidao
+			}
 		}
 		available = {
 			tag = DOH
@@ -24,6 +51,9 @@ DOH_DH1_decision_category = {
 		visible = {
 			tag = DOH
 			is_ai = no
+			DH1 = {
+				has_completed_focus = DH1_jieshouwzhidao
+			}
 		}
 		available = {
 			tag = DOH
@@ -44,6 +74,9 @@ DOH_DH1_decision_category = {
 		visible = {
 			tag = DOH
 			is_ai = no
+			DH1 = {
+				has_completed_focus = DH1_jieshouwzhidao
+			}
 		}
 		available = {
 			tag = DOH
@@ -64,6 +97,9 @@ DOH_DH1_decision_category = {
 		visible = {
 			tag = DOH
 			is_ai = no
+			DH1 = {
+				has_completed_focus = DH1_jieshouwzhidao
+			}
 		}
 		available = {
 			tag = DOH
@@ -84,6 +120,9 @@ DOH_DH1_decision_category = {
 		visible = {
 			tag = DOH
 			is_ai = no
+			DH1 = {
+				has_completed_focus = DH1_jieshouwzhidao
+			}
 		}
 		available = {
 			tag = DOH
@@ -104,6 +143,9 @@ DOH_DH1_decision_category = {
 		visible = {
 			tag = DOH
 			is_ai = no
+			DH1 = {
+				has_completed_focus = DH1_jieshouwzhidao
+			}
 		}
 		available = {
 			tag = DOH

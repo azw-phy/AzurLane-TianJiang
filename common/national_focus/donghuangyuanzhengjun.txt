@@ -2224,17 +2224,24 @@
 		prerequisite = {
 			focus = DH1_zhongnanbandao
 		}
-		ai_will_do = {
-			factor = 11
+		ai_will_do = { 
+			base = 0
+			
+			modifier = {
+				DH1  = {
+					has_country_flag = DOH_DH1_kaishiyuanzheng_flag
+				}
+				add = 20
+			}
 		}
 		available = {
 			OR = {
 				is_ai = no
 				DOH = { has_completed_focus = DOH_ninghaixiaxiyang }
 			}
-			has_navy_size = {
-				size > 19
-			}
+			# has_navy_size = {
+			# 	size > 19
+			# }
 		}
 		
 		cancel_if_invalid = yes

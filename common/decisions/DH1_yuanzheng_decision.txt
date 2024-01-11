@@ -120,13 +120,14 @@ DH1_yuanzheng_decision_category = {
 			}
 		}
 		ai_will_do = { 
-			base = 20
+			base = 0
 			
-			# modifier = {
-			# 	ROOT = { strength_ratio = { tag = FROM ratio < 0.5 } }
-				
-			# 	factor = 0
-			# }
+			modifier = {
+				DH1  = {
+					has_country_flag = DOH_DH1_kaishiyuanzheng_flag
+				}
+				add = 20
+			}
 		}
 
 		cost = 30
