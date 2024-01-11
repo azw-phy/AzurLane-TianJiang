@@ -4176,8 +4176,8 @@
 		available_if_capitulated = no
 
 		available = {
-			is_subject_of = DH1
-			date > 1942.1.1
+			has_subject = DH1
+			date > 1943.1.1
 		}
 
 		#search_filters = { FOCUS_FILTER_STABILITY }

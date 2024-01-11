@@ -268,8 +268,8 @@ ideas = {
 			}
 			
 			modifier = {
-				army_org_factor = 0.5
-				army_org_regain = 0.5
+				army_org_factor = 0.25
+				army_org_regain = 0.25
 			}
 		}
 		DH1_qingsuanzhimingzhe_idea = {
@@ -283,23 +283,23 @@ ideas = {
 
 			targeted_modifier = {
 				tag = YUW
-				attack_bonus_against = 1
-				defense_bonus_against = 1
+				attack_bonus_against = 0.5
+				defense_bonus_against = 0.5
 			}
 			targeted_modifier = {
 				tag = RAJ
-				attack_bonus_against = 1
-				defense_bonus_against = 1
+				attack_bonus_against = 0.5
+				defense_bonus_against = 0.5
 			}
 			targeted_modifier = {
 				tag = CHY
-				attack_bonus_against = 1
-				defense_bonus_against = 1
+				attack_bonus_against = 0.5
+				defense_bonus_against = 0.5
 			}
 			targeted_modifier = {
 				tag = HUJ
-				attack_bonus_against = 1
-				defense_bonus_against = 1
+				attack_bonus_against = 0.5
+				defense_bonus_against = 0.5
 			}
 		}
 		DH1_sahnefront_ns = {
