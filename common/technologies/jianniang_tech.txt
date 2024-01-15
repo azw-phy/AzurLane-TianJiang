@@ -510,16 +510,26 @@ technologies = {
 	shipgirltech_jizaijianniang_1 = {    
         research_cost = 2
         start_year = 1936
-		show_effect_as_desc = yes
 		dependencies = {
            shipgirltech_jichulilun = 1
         }
 
 		enable_equipments = {
-			jizaijianniang_equipment_fighter
-			jizaijianniang_equipment_nav_bomber
-			jizaijianniang_equipment_cas
+			jizaijianniang_plane
+			jizaijianniang_fighter
+			jizaijianniang_cas
+			jizaijianniang_nb
 		}
+		# enable_equipment_modules = {
+		# 	az_fighter_weapon
+		# 	az_cas_weapon
+		# 	az_nav_bomber_weapon
+		# }
+		# enable_subunits = {
+		# 	jizaijianniang_fighter
+		# 	jizaijianniang_cas
+		# 	jizaijianniang_naval_bomber
+		# }
 		
 		path = {
 			leads_to_tech = shipgirltech_jizaijianniang_2

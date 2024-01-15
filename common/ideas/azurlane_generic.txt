@@ -306,7 +306,7 @@ ideas = {
 				always = yes
 			}
 			equipment_bonus = {
-				jizaijianniang_equipment = {
+				jizaijianniang_equipment_airframe = {
 					build_cost_ic = 9
 					instant = yes
 				}
@@ -354,7 +354,7 @@ ideas = {
 					build_cost_ic = 9
 					instant = yes
 				}
-				jizaijianniang_equipment = {
+				jizaijianniang_equipment_airframe = {
 				instant = yes
 				build_cost_ic = 9
 			}

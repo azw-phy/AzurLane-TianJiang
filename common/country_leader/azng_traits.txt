@@ -717,7 +717,7 @@ leader_traits = {
 				instant = yes
 				build_cost_ic = -0.2
 			}
-			jizaijianniang_equipment = {
+			jizaijianniang_equipment_airframe = {
 				instant = yes
 				build_cost_ic = -0.2
 			}

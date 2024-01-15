@@ -3,7 +3,7 @@ guiTypes = {
 		name = "carrier_air_wing_composition_window"
 		position = { x=-200 y=-100 }
 		orientation = center
-		size = {width=350 height=410}
+		size = {width=350 height=610}
 		moveable = yes
 		fade_time = 20
 		fade_type = linear
@@ -50,7 +50,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "entries"
 			position = {x=15 y=60}
-			size = {width=310 height=270} 
+			size = {width=310 height=470} 
 			
 			background = {
 				name = "Background"
@@ -70,20 +70,20 @@ guiTypes = {
 		iconType = {
 			name ="summary_bg"
 			spriteType = "GFX_generic_text_bg_60"
-			position = { x=60 y=359 } 
+			position = { x=60 y=559 } 
 			alwaystransparent = yes  
 		}
  
 		iconType = {
 			name ="carrier_capacity_icon"
 			spriteType = "GFX_MODIFIER_CARRIER_CAPACITY_PENALTY_REDUCTION"
-			position = { x=25 y=364 }  
+			position = { x=25 y=564 }  
 			alwaystransparent = yes 
 		}
 		 
 		instantTextboxType = {
 			name = "summary"
-			position = {x=42 y=364} 
+			position = {x=42 y=564} 
 			font = "hoi_18mbs"
 			text = "0/100"
 			maxWidth = 100
@@ -93,7 +93,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "confirm"
-			position = { x = 185 y = 355} 
+			position = { x = 185 y = 555} 
 			quadTextureSprite ="GFX_button_123x34"
 			buttonText = "OK"
 			buttonFont = "hoi_16mbs"
