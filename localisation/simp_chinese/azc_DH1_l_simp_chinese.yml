@@ -202,7 +202,8 @@
  DH1_decision_category:"远征军的征途"
  DH1_decision_category_desc:"我们已经踏上征途，为了东煌的荣耀，战斗吧！\n\n东煌中央对我们的[DH1_xinrenjingtidu]"
  DH1_junken:"军垦-[FROM.getname]"
- DH1_junken_desc:"我们可以派遣士兵开垦非城市的地区，促进该地区发展。\n§C◆提示◆§!一个地区军垦§Y2次§!即可升级\n§Y[FROM.getname]§!已经开垦§Y[?THIS.junkencishu]§!次"
+ DH1_junken_desc:"我们可以派遣士兵开垦非城市的地区，促进该地区发展。\n§C◆提示◆§!一个地区军垦§Y2次§!即可升级\n§Y[FROM.getname]§!已经开垦§Y[?FROM.junkencishu]§!次"
+ DH1_junken_tt:"§Y[FROM.getname]§!已经开垦§Y[?FROM.junkencishu]§!次"
  DH1_tuntian:"屯田"
  DH1_tuntian_desc:"为了稳定的军资供应，我们必须安排好生产计划，组织一切力量进行生产。"
  DH1_tuntian_trigger_tt:"屯田结束后180天可再次屯田"
@@ -299,6 +300,17 @@
  DH1_event.779.t:"远征军公开指责逸仙"
  DH1_event.779.d:"远征军在媒体上表示，逸仙Stank tones, fun of foolish talk（奇谈怪论，满嘴放屁），并宣称将脱离中央的指挥。"
  DH1_event.779.a:"反了，反了！赘婿噬主了！"
+ DH1_event.701.t:"远征军脱离控制"
+ DH1_event.701.d:"[DH1.getleader]表示[DOH.getleader]昏庸无能，代表远征军方面宣布不再受[DOH.getleader]的控制。"
+ DH1_event.701.a:"叛徒！叛徒！"
+ DH1_event.8.t:"战争的抉择"
+ DH1_event.8.d:"我们实质上已经脱离了东煌的控制，成为一个独立的主权国家，但是我们仍处于战争当中，要和敌国撇清关系，说明自己是被东煌中央所迫而参战的吗？"
+ DH1_event.8.a:"立刻停止一切战争！"
+ DH1_event.8.b:"我们和东煌仍是盟友"
+ DH1_event.9.t:"东煌远征军的密电"
+ DH1_event.9.d:"东煌的叛徒、我的盟友[DH1.Getleader]给我们发来密电，表示她们已经准备好对东煌作战了，要求我们立刻给予她们一切支持。"
+ DH1_event.9.a:"好噢"
+
  #人物
  DH1_79shi:"东煌顾问团"
  ##远征相关

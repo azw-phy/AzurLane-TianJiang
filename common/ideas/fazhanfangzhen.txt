@@ -1,10 +1,48 @@
 ideas = {
 	fangzhen = {
+		zengjiajunfei = {
+			cost = 300
+			removal_cost = 0
+			picture = NOR_printing_money
+			
+			ai_will_do = {
+				factor = 1
+				modifier = {
+				factor = 300
+				OR = {
+				    tag = YUW
+				    tag = BFL
+				    tag = TIX
+				    tag = BYG
+				    tag = DOH
+					}
+				has_war = yes
+				}
+				modifier = {
+					factor = 300
+					OR = {
+						tag = CHY
+						}
+					has_war_with = BYG
+				}
+			} 
+			modifier = {
+				military_industrial_organization_funds_gain = 0.5
+				land_doctrine_cost_factor = -0.1
+				air_doctrine_cost_factor = -0.1
+				naval_doctrine_cost_factor = -0.75
+				materiel_manufacturer_cost_factor = -0.75
+				tank_manufacturer_cost_factor = -0.75
+				naval_manufacturer_cost_factor = -0.75
+				aircraft_manufacturer_cost_factor = -0.75
+			}
+		}
 		fazhanlujun = {
 			cost = 300
 			removal_cost = 0
 			picture = generic_infantry_equipment_manufacturer_2
-			
+			available = { always = no }
+			visible = { always = no  }
 			ai_will_do = {
 				factor = 1
 				modifier = {
@@ -59,7 +97,8 @@ ideas = {
 			cost = 300
 			removal_cost = 0
 			picture = generic_naval_manufacturer_1
-			
+			available = { always = no }
+			visible = { always = no  }
 			ai_will_do = {
 				factor = 1
 				
@@ -108,7 +147,8 @@ ideas = {
 			cost = 300
 			removal_cost = 0
 			picture = generic_air_manufacturer_1
-			
+			available = { always = no }
+			visible = { always = no  }
 			ai_will_do = {
 				factor = 1
 				

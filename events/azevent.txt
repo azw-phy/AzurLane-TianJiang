@@ -905,9 +905,8 @@ country_event = {
 	trigger = {	
 		NOT = { has_country_flag = fzfz_sanjunfazhan }
 		AND = {
-			has_idea = fazhanhaijun
-			has_idea = fazhanlujun
-			has_idea = fazhankongjun
+			has_idea = zengjiajunfei
+			has_idea = keyancezhong_junshi
 		}
 	}
 	option = {
@@ -927,9 +926,8 @@ country_event = {
 		has_country_flag = fzfz_sanjunfazhan 
 		NOT = {
 			AND = {
-			has_idea = fazhanhaijun
-			has_idea = fazhanlujun
-			has_idea = fazhankongjun
+				has_idea = zengjiajunfei
+				has_idea = keyancezhong_junshi
 			}
 		}
 	}

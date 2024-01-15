@@ -8,7 +8,7 @@
  gengxinshuoming_text1:0"  碧蓝MOD虽然没有所谓的制作组，大部分内容也是出于兴趣爱好，由本人独自完成，但在MOD两年多的制作期间中也有许多玩家帮助过制作碧蓝MOD。特此感谢所有帮助过我的朋友以及各位玩家的支持：\n-下划线人Merlin_制作的鸢尾国策和部分国家政治线以及相关决议事件\n-Kuku酱制作的各国全新AI，北联倒车线以及一些杂项内容和部分适配\n-卡萝制作的图签与成就系统以及塞壬孤勇模式\n-Milek238帮助导出的碧蓝航线舰娘模型 \n-核弹哥159753帮忙制作的塞壬刷兵机制\n还有以下玩家的帮助：彼方酥、xs、安全坞、青竹丹枫、工蜂、YorkCIty、时空輓、滑稽君、Shiokaze、为什么的N次方、塔恩、hellshake矢野、Soren、NASA、卢本伟航线（格里芬窑子）、黎塞留、文攻武卫、鷺沢、玉碎瓦全、月明星稀……以及所有支持碧蓝MOD的玩家们。\n同时感谢SS、塔恩、pipboyddd、苍云先生、159753给予的关键的技术帮助。"
  gengxinshuoming_to_gonglue_btn_text:"本国攻略"
  gengxinshuoming_to_gonglue_btn_text_tt:"点击查看[ROOT.Getname]的背景介绍及玩法攻略"
- gengxinshuoming_text3:0"碧蓝MOD虽然没有所谓的制作组，大部分内容也是出于兴趣爱好，由本人独自完成，但在MOD两年多的制作期间中也有许多玩家帮助过制作碧蓝MOD。特此感谢所有帮助过我的朋友以及各位玩家的支持：\n-下划线人Merlin_制作的鸢尾国策和部分国家政治线以及相关决议事件\n-Kuku酱制作的各国全新AI，北联倒车线以及一些杂项内容和部分适配\n-卡萝制作的图签与成就系统以及塞壬孤勇模式\n-Milek238帮助导出的碧蓝航线舰娘模型 \n-核弹哥159753帮忙制作的塞壬刷兵机制\n还有以下玩家的帮助：彼方酥、xs、安全坞、青竹丹枫、工蜂、YorkCIty、时空輓、滑稽君、Shiokaze、为什么的N次方、塔恩、hellshake矢野、Soren、NASA、卢本伟航线（格里芬窑子）、黎塞留、文攻武卫、鷺沢、玉碎瓦全、月明星稀……以及所有支持碧蓝MOD的玩家们。\n同时感谢SS、塔恩、pipboyddd、苍云先生、159753给予的关键的技术帮助。"
+ gengxinshuoming_text3:0"碧蓝MOD虽然没有所谓的制作组，大部分内容也是出于兴趣爱好，由本人独自完成，但在MOD两年多的制作期间中也有许多玩家帮助过制作碧蓝MOD。特此感谢所有帮助过我的朋友以及各位玩家的支持：\n-下划线人Merlin_制作的鸢尾国策和部分国家政治线以及相关决议事件\n-Kuku酱制作的各国全新AI，北联倒车线以及一些杂项内容和部分适配\n-卡萝制作的图签与成就系统以及塞壬孤勇模式\n-Milek238帮助导出的碧蓝航线舰娘模型 \n-核弹哥159753帮忙制作的塞壬刷兵机制\n还有以下玩家的帮助：刘维尔超算符、彼方酥、xs、安全坞、青竹丹枫、工蜂、YorkCIty、时空輓、滑稽君、Shiokaze、为什么的N次方、塔恩、hellshake矢野、Soren、NASA、卢本伟航线（格里芬窑子）、黎塞留、文攻武卫、鷺沢、玉碎瓦全、月明星稀……以及所有支持碧蓝MOD的玩家们。\n同时感谢SS、塔恩、pipboyddd、苍云先生、159753给予的关键的技术帮助。"
 
  wanfagonglue_title1:0"[ROOT.Getname]背景介绍及攻略"
  wanfagonglue_text1:"[wanfagonglue_text1_sl]"
@@ -79,7 +79,7 @@
  modoption_title7:"[modoption_title7]" 
  modoption_title7_on:"丁真AI-§C开启§!"
  modoption_title7_off:"丁真AI-§Y关闭§!"
- modoption_text7:0"易赢丁真，鉴定为：我初试你的MOD\n纯真又简单的AI，适合初次体验MOD的玩家，目前尚未做完，难度无变化。"
+ modoption_text7:0"易赢丁真，鉴定为：我初试你的MOD\n纯真又简单的AI，适合初次体验MOD的玩家。"
  modoption_sirennandu_title:0"[modoption_sirennandu_title][modoption_sirennandu_zhengfeng]" 
  modoption_sirennandu_title_0:0"当前模式：默认难度"
  modoption_sirennandu_title_1:0"当前模式：§Y挑战§!难度"

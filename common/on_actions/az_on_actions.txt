@@ -116,8 +116,15 @@ on_actions = {
 				recruit_character = xiaoshengdiyage
 				#其他
 				recruit_character = dingzhen
-			}   
-
+			}
+			#科研经费侧重
+			every_country = {
+				add_ideas = keyancezhong_none
+			}
+			#工作制度
+			every_country = {
+				add_ideas = gongzuozhidu_3
+			}
 			every_country = {
 				#舰娘筛选条件
 				set_country_flag = leader_shaixuan_lujunjiangling
@@ -127,7 +134,7 @@ on_actions = {
 				set_country_flag = leader_shaixuan_xunyang
 				set_country_flag = leader_shaixuan_quzhu
 				set_country_flag = leader_shaixuan_qianting 
-				
+
 				#资源转化动态变量
 				add_dynamic_modifier = {
 					modifier = az_ziyuanzhuanhua_amount

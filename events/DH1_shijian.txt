@@ -460,3 +460,56 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = DH1_event.701
+	title = DH1_event.701.t
+	desc = DH1_event.701.d
+	picture = aze_qiye2
+	is_triggered_only = yes	
+	option = {
+		name = DH1_event.701.a
+		ai_chance = {
+			base = 5
+		}
+	}
+}
+country_event = {
+	id = DH1_event.8
+	title = DH1_event.8.t
+	desc = DH1_event.8.d
+	picture = GFX_aze_diannao
+	is_triggered_only = yes	
+	option = {
+		name = DH1_event.8.a
+		ai_chance = {
+			factor = 10
+		}
+		leave_faction = yes
+		every_other_country = {
+			limit = { has_war_with = DH1 }
+			white_peace = FROM
+		}
+		
+	}
+	option = {
+		name = DH1_event.8.b
+		ai_chance = {
+			factor = 0
+		}
+		add_war_support = 0.1
+	}
+}
+country_event = {
+	id = DH1_event.9
+	title = DH1_event.9.t
+	desc = DH1_event.9.d
+	picture = GFX_aze_xiaotiancheng_nice
+	is_triggered_only = yes	
+	option = {
+		name = DH1_event.9.a
+		ai_chance = {
+			factor = 10
+		}
+		add_to_faction = DH1
+	}
+}

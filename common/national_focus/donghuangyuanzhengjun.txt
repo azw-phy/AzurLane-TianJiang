@@ -611,10 +611,10 @@
 			factor = 5
 		}
 		available = {
-			date < 1939.01.01
+			#date < 1939.01.01
 		}
 		bypass = {
-			date > 1938.12.31
+			#date > 1938.12.31
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1002,7 +1002,14 @@
 		}
 		available = {
 			capital_scope = {
-				has_state_category = city
+				NOT = {
+					OR = {
+						has_state_category = rural
+						has_state_category = town
+						has_state_category = large_town
+					}
+				}
+				
 			}
 		}
 		
@@ -1099,7 +1106,7 @@
 		icon = GFX_goal_generic_position_armies
 		x = 20
 		y = 0
-		cost = 2
+		cost = 5
 		
 		ai_will_do = {
 			factor = 10
@@ -1125,7 +1132,7 @@
 		icon = GFX_goal_generic_position_armies
 		x = -4
 		y = 1
-		cost = 2
+		cost = 5
 		relative_position_id = DH1_jiaqianglianluo
 		prerequisite = {
 			focus = DH1_jiaqianglianluo
@@ -1154,7 +1161,7 @@
 		icon = GFX_goal_generic_position_armies
 		x = 4
 		y = 1
-		cost = 2
+		cost = 5
 		relative_position_id = DH1_jiaqianglianluo
 		prerequisite = {
 			focus = DH1_jiaqianglianluo
@@ -1786,9 +1793,18 @@
 
 		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			set_autonomy = {
-				target = THIS
-				autonomy_state = autonomy_free
+			DOH = {
+				country_event = DH1_event.701
+				set_autonomy = {
+					target = DH1
+					autonomy_state = autonomy_free
+				}
+			}
+			DH1 = {
+				if = {
+					limit = { has_war = yes }
+					country_event = DH1_event.8
+				}
 			}
 		}
 	}
@@ -1855,16 +1871,13 @@
 
 		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			declare_war_on = {
-				target = DOH
-			}
-			activate_mission = DH1_xinanshibian
+			effect_tooltip = { activate_mission = DH1_xinanshibian }
 			custom_effect_tooltip = DH1_xinanzhibiankaida
 			if = {
 				limit = {
 					has_country_flag = DH1_qiuzhuchongying_flag
 				}
-				add_to_faction = CHY
+				CHY = { country_event = DH1_event.9 }
 				add_equipment_to_stockpile = { type = infantry_equipment amount = 40000 }
 				add_equipment_to_stockpile = { type = support_equipment amount = 6000 }
 				add_equipment_to_stockpile = { type = artillery_equipment amount = 2000 }
@@ -1959,7 +1972,7 @@
 			factor = 11
 		}
 		available = {
-			
+			NOT = { has_war_with = CHY }
 		}
 		
 		cancel_if_invalid = yes

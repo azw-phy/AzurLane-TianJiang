@@ -11,11 +11,14 @@ DH1_decision_category = {
 			
 		}
 		cost = 15
-		days_remove = 90
+		days_remove = 60
 		modifier = {
 			political_power_gain = -0.25
 		}
 		available = {
+			ROOT = {
+				has_manpower > 9999
+			}
 			FROM = {
 				NOT = {
 					OR = {
@@ -34,7 +37,7 @@ DH1_decision_category = {
 			}
 		}
 		
-		visible = {
+		visible = { 
 			FROM = {
 				NOT = {
 					OR = {
@@ -49,30 +52,26 @@ DH1_decision_category = {
 			add_manpower = -10000
 			FROM = {
 				add_manpower = 10000
+				add_to_variable = {
+					THIS.junkencishu = 1
+				}
 			}
-			
 		}
 		remove_effect = {
 			FROM = {
 				if = {
 					limit = {
-						NOT = {
-							check_variable = {
-								THIS.junkencishu = 1
-							} 
-						}
+						check_variable = {
+							THIS.junkencishu = 2
+						} 
 					}
-					add_to_variable = {
-						THIS.junkencishu = 1
-					}
-				}
-				else = {
 					ETH_upgrade_state_category = yes
 					set_variable = {
 						THIS.junkencishu = 0
 					}
 				}
 			}
+			ROOT = { hidden_effect = { scoped_sound_effect = AZ_wancheng_sound } }
 		}
 	}
 	DH1_tuntian = {
@@ -103,6 +102,24 @@ DH1_decision_category = {
 		}
 			
 	}
+	DH1_xinanshibian_zhunbei = {
+		icon = generic_tank
+		allowed = {
+			tag = DH1
+		}
+		visible = {
+			has_completed_focus = DH1_xinanshibian
+			country_exists = DOH
+		}
+		fire_only_once = yes
+		complete_effect = {
+			declare_war_on = {
+				target = DOH
+				type = civil_war
+			}
+			activate_mission = DH1_xinanshibian
+		}
+	}
 	DH1_xinanshibian = {
 		icon = generic_tank
 		allowed = {
@@ -114,7 +131,12 @@ DH1_decision_category = {
 			country_exists = DOH
 		}
 		available = {
-			controls_state = 605
+			OR = {
+				controls_state = 605
+				any_allied_country = {
+					controls_state = 605
+				}
+			}
 		}
 		days_mission_timeout = 180
 		is_good = no
@@ -128,7 +150,10 @@ DH1_decision_category = {
 						target = DOH
 						transfer_troops = yes
 					}
-					load_focus_tree = DOH_focus
+					load_focus_tree = { 
+						tree = DOH_focus
+						keep_completed = yes
+					}
 					every_state = {
 						limit = {
 							is_core_of = DOH
@@ -154,7 +179,10 @@ DH1_decision_category = {
 					annex_country = {
 						target = DOH
 					}
-					load_focus_tree = DOH_focus
+					load_focus_tree = { 
+						tree = DOH_focus
+						keep_completed = yes
+					}
 					every_state = {
 						limit = {
 							is_core_of = DOH

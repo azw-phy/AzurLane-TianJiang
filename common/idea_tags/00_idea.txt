@@ -54,7 +54,8 @@ idea_categories = {
 		slot = naval_manufacturer
 		slot = aircraft_manufacturer
 		slot = materiel_manufacturer
-		
+		slot = gongzuozhidu
+		slot = keyancezhong
 		ledger = civilian
 		
 		cost = 150
@@ -65,7 +66,7 @@ idea_categories = {
 	research_production = {
 		slot = industrial_concern
 		slot = industrial_concern
-		character_slot = theorist
+		slot = industrial_concern
 		character_slot = theorist
 		character_slot = theorist
 		character_slot = theorist
