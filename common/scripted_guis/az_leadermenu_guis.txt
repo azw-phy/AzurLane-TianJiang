@@ -45,7 +45,9 @@ scripted_gui = {
 			az_single_leader_xiujia_click_enabled = {
 				NOT = { has_character_flag = xiujia_doing }
 				is_assigned = no
-			
+				check_variable = {
+					ROOT.wz_sl > var:THIS.xiujia_leader_wuzi_cost
+				}
 				#always = NO 
 			}  
 			az_single_leader_qianghua_click_enabled = {
@@ -591,49 +593,49 @@ scripted_gui = {
 					log = "xiujia_leader_amount=[?xiujia_leader_amount]"
 					random_list = {
 						10 = { 
-							unit_leader_event = { id = getzhg_event.2601 days = 10 random_days = 30 }
+							unit_leader_event = { id = getzhg_event.2601 days = 60 random_days = 60 }
 						}
 						10 = { 
-							unit_leader_event = { id = getzhg_event.2602 days = 30 random_days = 30 }
+							unit_leader_event = { id = getzhg_event.2602 days = 90 random_days = 60 }
 						}
 						10 = { 
-							unit_leader_event = { id = getzhg_event.2603 days = 50 random_days = 50 }
+							unit_leader_event = { id = getzhg_event.2603 days = 120 random_days = 60 }
 						}
 						10 = { 
-							unit_leader_event = { id = getzhg_event.2604 days = 30 random_days = 30 }
+							unit_leader_event = { id = getzhg_event.2604 days = 90 random_days = 60 }
 						}
 						10 = { 
-							unit_leader_event = { id = getzhg_event.2606 days = 30 random_days = 30 }
+							unit_leader_event = { id = getzhg_event.2606 days = 90 random_days = 30 }
 						}
 						10 = { 
-							unit_leader_event = { id = getzhg_event.2607 days = 20 random_days = 20 }
+							unit_leader_event = { id = getzhg_event.2607 days = 60 random_days = 30 }
 						}
 						10 = { 
-							unit_leader_event = { id = getzhg_event.2608 days = 10 random_days = 15 }
+							unit_leader_event = { id = getzhg_event.2608 days = 60 random_days = 30 }
 						}
 						10 = { 
-							unit_leader_event = { id = getzhg_event.2609 days = 40 random_days = 40 }
+							unit_leader_event = { id = getzhg_event.2609 days = 90 random_days = 90 }
 						}
 						10 = { 
-							unit_leader_event = { id = getzhg_event.2610 days = 50 random_days = 40 }
+							unit_leader_event = { id = getzhg_event.2610 days = 60 random_days = 60 }
 						}
 						10 = { 
-							unit_leader_event = { id = getzhg_event.2611 days = 30 random_days = 30 }
+							unit_leader_event = { id = getzhg_event.2611 days = 120 random_days = 90 }
 						}
 						10 = { 
-							unit_leader_event = { id = getzhg_event.2612 days = 60 random_days = 50 }
+							unit_leader_event = { id = getzhg_event.2612 days = 60 random_days = 60 }
 						}
 						10 = { 
-							unit_leader_event = { id = getzhg_event.2613 days = 30 random_days = 30 }
+							unit_leader_event = { id = getzhg_event.2613 days = 90 random_days = 90 }
 						}
 						10 = { 
-							unit_leader_event = { id = getzhg_event.2614 days = 30 random_days = 30 }
+							unit_leader_event = { id = getzhg_event.2614 days = 90 random_days = 60 }
 						}
 						10 = { 
-							unit_leader_event = { id = getzhg_event.2615 days = 30 random_days = 50}
+							unit_leader_event = { id = getzhg_event.2615 days = 60 random_days = 60 }
 						}
-						3 = { 
-							unit_leader_event = { id = getzhg_event.2616 days = 50 random_days = 50}
+						1 = { 
+							unit_leader_event = { id = getzhg_event.2616 days = 150 random_days = 150}
 						}
 					}
 					

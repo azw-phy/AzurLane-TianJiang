@@ -227,9 +227,11 @@
  tansuodui2_effect_tooltip:0"一定会找到许多好东西吧！（不会重复到同一个探索结果）"
  xunzhao_mfk:0"寻找魔方矿"
  xunzhao_mfk_desc:0"我们的科学家发现，心智魔方的原料是可以挖掘出来的，不过想找到这种稀有的资源需要花费些功夫。"
+ faxianmofangkuang:"发现魔方矿"
  kaicai_mfk:0"开采魔方矿"
  kaicai_mfk_desc:0"魔方矿的开采不是一件易事，需要多种程序的精炼提取。开采魔方矿需要花费大量的人力物力。"
  kaicai_mfk_completed:0"进入下一步——注入心智工作\n另外我们还开采到了一个完整的心智魔方，获得 §C1§!£GFX_small_xzmf!"
+ az_kaicaimofangkuang_modifier:"魔方矿开采中"
  zhuru_mfk:0"注入心智"
  zhuru_mfk_desc:0"这是制作心智魔方的最后一步！我们已经有了魔方，但还需要注入心智，这个过程较为玄学，我也不知道怎么解释。"
  zhuru_mfk_completed:0"随机获得 §C5-8§!£GFX_small_xzmf!\n魔方矿使用殆尽，可以寻找新的魔方矿了。" 
@@ -245,7 +247,7 @@
  mf_ziyuanzhuanhua_desc:0"这种高密度的神奇物体可以通过一些手段转化成各种各样的资源。"
  mf_mofangjichuang:0"魔方机床"
  mf_mofangjichuang_desc:0"心智魔方有着强大的动力，把魔方和生产机床结合在一起可以极大地提高生产效率。"
- mf_mofangjichuang_tooltip:0"§C◆提示◆§!效果持续时间由军工厂数量决定\n基础持续天数§Y360天§!，每个军工厂会§R减少1.5天§!，当前军工厂[?num_of_military_factories]个\n§g（因为技术原因，无法做到直接显示最终天数，所以请你自己算个大概吧=w=）§!\n工厂产出§C+25%§!，效率增长§C+10%§!"
+ mf_mofangjichuang_tooltip:0"§C◆提示◆§!效果持续时间由军工厂数量决定\n基础持续天数§Y365天§!，每个军工厂会§R减少1天§!，该BUFF至少可以持续§C30天§!\n\n§g（PS:因为技术原因，无法做到直接显示最终天数，所以请你自己算个大概吧=w=）§!\n\n"
  mf_chushoumofang:0"在黑市出售魔方"
  mf_chushoumofang_pingheng:"§Y供需平衡§!"
  mf_chushoumofang_fuyu:"§O富余§!§C[?global.market_xzmf]§!个"
@@ -253,9 +255,9 @@
  mf_chushoumofang_desc:0"心智魔方是个宝贝，拥有着无穷的力量，如果让不法分子拿到了它那会造成无法预计的结果，所以碧蓝联合国明令禁止将魔方出售给非舰娘组织。但是我们可以在黑市上出售，那些大老板应该只是拿魔方当做收藏品吧，大概……"
  mf_chushoumofang_tooltip:0"§C◆提示◆§!黑市无法用舰娘货币结算，所以会§Y随机获得各种等价物品§!\n如果短期内出售过多魔方，魔方就会§R贬值§!哦~"
  mf_zhinenggaizaojianchuan:0"智能改造舰船"
- mf_zhinenggaizaojianchuan_desc:0"利用心智魔方来代替需要改造的战舰设备，可以极大地提高改造速度。"
+ mf_zhinenggaizaojianchuan_desc:0""
  mf_mofangjianzaojianchuan:0"魔方建造舰船"
- mf_mofangjianzaojianchuan_desc:0"魔方最适合用来造船了，这也是魔方利用率最高的一个用途。"
+ mf_mofangjianzaojianchuan_desc:0"魔方最适合用来造船了，还可以利用心智魔方来代替需要改造的战舰设备，可以极大地提高改造速度，这是魔方利用率最高的一种用法。"
 
 
  

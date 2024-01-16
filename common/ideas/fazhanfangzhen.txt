@@ -27,14 +27,16 @@ ideas = {
 				}
 			} 
 			modifier = {
-				military_industrial_organization_funds_gain = 0.5
-				land_doctrine_cost_factor = -0.1
-				air_doctrine_cost_factor = -0.1
-				naval_doctrine_cost_factor = -0.75
+				political_power_cost = 0.5
+				military_industrial_organization_funds_gain = 1
+				land_doctrine_cost_factor = -0.15
+				air_doctrine_cost_factor = -0.15
+				naval_doctrine_cost_factor = -0.15
 				materiel_manufacturer_cost_factor = -0.75
 				tank_manufacturer_cost_factor = -0.75
 				naval_manufacturer_cost_factor = -0.75
 				aircraft_manufacturer_cost_factor = -0.75
+				production_factory_efficiency_gain_factor = 0.15
 			}
 		}
 		fazhanlujun = {

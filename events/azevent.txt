@@ -3095,6 +3095,7 @@ country_event = {
 	trigger = {
 		AND = {
 			has_country_flag = az_autooption_automofang_on
+			NOT = { has_country_flag = xunzhao_mfk_doing } 
 			NOT = { has_country_flag = faxianmofangkuang } 
 		}
 		
@@ -3108,9 +3109,10 @@ country_event = {
 	hidden = yes
 	trigger = {
 		AND = {
-			num_of_civilian_factories_available_for_projects > 9
+			num_of_civilian_factories_available_for_projects > var:az_kaicaimofangkuang_modifier_var
 			has_country_flag = az_autooption_automofang_on
 			has_country_flag = faxianmofangkuang	
+			NOT = { has_country_flag = kaicai_mfk_doing }
 			NOT = { has_country_flag = kaicaimofangkuang }
 		}
 		
@@ -3165,6 +3167,38 @@ country_event = {
 	}
 	immediate = {
 		ROOT = { activate_decision = tansuodui2 }
+	}
+}
+country_event = {
+	id = azevent.106
+	hidden = yes
+	trigger = {
+		AND = {
+			has_country_flag = az_autooption_mofangjiexi_on
+			NOT = { has_idea = TY_mofangjiexi }
+			check_variable = {
+				xzmf_sl > 1
+			}
+		}
+	}
+	immediate = {
+		ROOT = { activate_decision = mf_mofangjiexi }
+	}
+}
+country_event = {
+	id = azevent.107
+	hidden = yes
+	trigger = {
+		AND = {
+			has_country_flag = az_autooption_mofangjichuang_on
+			NOT = { has_idea = TY_mfjichuang }
+			check_variable = {
+				xzmf_sl > 2
+			}
+		}
+	}
+	immediate = {
+		ROOT = { activate_decision = mf_mofangjichuang }
 	}
 }
 country_event = {

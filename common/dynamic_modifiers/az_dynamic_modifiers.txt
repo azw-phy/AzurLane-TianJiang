@@ -49,3 +49,9 @@ az_caijun = {
 	custom_modifier_tooltip = az_hidden_ideas
 	custom_modifier_tooltip = az_kexiaochu_ideas
 }
+az_kaicaimofangkuang_modifier = {
+	enable = { 
+		always = yes
+    }
+	civilian_factory_use = az_kaicaimofangkuang_modifier_var
+}
