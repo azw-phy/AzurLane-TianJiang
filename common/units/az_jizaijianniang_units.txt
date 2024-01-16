@@ -23,7 +23,7 @@ sub_units = {
 		carrier_air_wing_size = 10
 		land_air_wing_size = 100
 	}
-	jizaijianniang_naval_bomber = {
+	jizaijianniang_nb = {
 		sprite = light_plane
 		priority = 1
 		active = yes

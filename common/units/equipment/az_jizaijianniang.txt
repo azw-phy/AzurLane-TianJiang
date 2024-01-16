@@ -7,8 +7,7 @@ equipments = {
 		carrier_capable = yes
 		default_carrier_composition_weight = 1
 		picture = GFX_shipgirltech_jizaijianniang_medium
-		type = fighter
-		ai_type = cv_fighter
+		type = scout_plane
 		type_override = fixed_main_weapon_slot
 		allowed_types = {
 			fighter
