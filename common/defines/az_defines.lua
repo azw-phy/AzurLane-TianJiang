@@ -21,7 +21,7 @@ NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 10
 
 NDefines.NCountry.BASE_MAX_COMMAND_POWER = 400			
 NDefines.NCountry.BASE_COMMAND_POWER_GAIN = 0.6	
-
+NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 35
 --下划线
 NDefines.NDiplomacy.PEACE_SCORE_SCALE_FACTOR = 2.25							--战胜国从战败国那里获得的战争分倍数
 NDefines.NDiplomacy.PEACE_SCORE_DISTRIBUTION = { 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2 }		--可获得分数的和谈轮数

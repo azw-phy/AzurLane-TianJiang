@@ -590,8 +590,15 @@ country_event = {
 	is_triggered_only = yes	
 	option = {
 		name = azevent.20.a
-		set_country_flag = faxianmofangkuang
-		custom_effect_tooltip = "开启“开采魔方矿”决议"
+		unlock_decision_tooltip = kaicai_mfk
+	}
+	option = {
+		name = azevent.20.b
+		trigger = {
+			num_of_civilian_factories_available_for_projects > 9
+		}
+		unlock_decision_tooltip = kaicai_mfk
+		activate_decision = kaicai_mfk
 	}
 }
 country_event = {
@@ -3080,5 +3087,106 @@ country_event = {
 			country_event = { id = azevent.101 days = 12410 }
 		}
 		
+	}
+}
+country_event = {
+	id = azevent.10301
+	hidden = yes
+	trigger = {
+		AND = {
+			has_country_flag = az_autooption_automofang_on
+			NOT = { has_country_flag = faxianmofangkuang } 
+		}
+		
+	}
+	immediate = {
+		ROOT = { activate_decision = xunzhao_mfk  }
+	}
+}
+country_event = {
+	id = azevent.10302
+	hidden = yes
+	trigger = {
+		AND = {
+			num_of_civilian_factories_available_for_projects > 9
+			has_country_flag = az_autooption_automofang_on
+			has_country_flag = faxianmofangkuang	
+			NOT = { has_country_flag = kaicaimofangkuang }
+		}
+		
+	}
+	immediate = {
+		ROOT = { activate_decision = kaicai_mfk  }
+	}
+}
+country_event = {
+	id = azevent.10303
+	hidden = yes
+	trigger = {
+		AND = {
+			has_country_flag = az_autooption_automofang_on
+			has_country_flag = kaicaimofangkuang
+		}
+		
+	}
+	immediate = {
+		ROOT = { activate_decision = zhuru_mfk  }
+	}
+}
+country_event = {
+	id = azevent.104
+	hidden = yes
+	trigger = {
+		AND = {
+			has_country_flag = az_autooption_autotansuodui1_on
+			NOT = { has_country_flag = tansuodui_doing }
+			#has_country_flag = kaicaimofangkuang
+			has_political_power > 0
+			#NOT = { has_decision = tansuodui1 }
+		}
+		
+	}
+	immediate = {
+		ROOT = { activate_decision = tansuodui }
+	}
+}
+country_event = {
+	id = azevent.105
+	hidden = yes
+	trigger = {
+		AND = {
+			has_country_flag = az_autooption_autotansuodui2_on
+			NOT = { has_country_flag = tansuodui2_doing }
+			#has_country_flag = kaicaimofangkuang
+			has_political_power > 0
+			#NOT = { has_decision = tansuodui2 }
+		}
+		
+	}
+	immediate = {
+		ROOT = { activate_decision = tansuodui2 }
+	}
+}
+country_event = {
+	id = azevent.666
+	title = azevent.666.t
+	desc = azevent.666.d
+	picture = GFX_aze_zaixianwendang
+	trigger = {
+		NOT = { has_country_flag = zaixianwendangtip }
+	}
+	immediate = {
+		set_country_flag = zaixianwendangtip
+	}
+	mean_time_to_happen = {
+		days = 40
+	}
+	option = {
+		name = azevent.666.a
+		add_political_power = 1
+	}
+	option = {
+		name = azevent.666.b
+		add_war_support = 0.001
 	}
 }

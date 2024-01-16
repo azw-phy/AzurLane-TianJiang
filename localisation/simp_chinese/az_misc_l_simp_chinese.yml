@@ -181,3 +181,14 @@
  TJ_guojiqimin_desc:0"当这个国家的国际声誉重新达到正数后，可以移除这个DEBUFF。"
  beibishile_tj:"声誉过低，被世人唾弃"
  
+#
+az_autooption_decision_button_text:"§b自动决议§!"
+az_autooption_decision_button_tooltip:"设置特殊行动决议里自动进行的决议"
+az_autooption_off_btn_tt:"当前为§C开启§!状态，再次点击§R关闭§!"
+az_autooption_on_btn_tt:"当前为§R关闭§!状态，再次点击§C开启§!"
+az_autooption_1_txt:"自动挖魔方"
+az_autooption_1_tt:"自动循环进行“§Y寻找魔方矿-开采魔方矿-注入心智§!”决议"
+az_autooption_2_txt:"自动派出探索队"
+az_autooption_2_tt:"自动进行§Y派出探索队§!决议，政治点数小于0时不会自动进行"
+az_autooption_3_txt:"自动大规模派出探索队"
+az_autooption_3_tt:"自动进行§Y大规模派出探索队§!决议，政治点数小于0时不会自动进行"

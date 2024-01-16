@@ -1,7 +1,10 @@
 guiTypes = {
+	
+	
+	
 	containerWindowType = {
 		name = "jh_store_main_window"
-		position = { x = 256 y = 280 } 
+		position = { x = -356 y = 80 }	
 		show_position = { x = 540 y = 80 }
 		moveable = yes
 		show_animation_type = decelerated

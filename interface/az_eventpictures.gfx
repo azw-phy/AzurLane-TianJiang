@@ -1,5 +1,9 @@
 spriteTypes = {
 	spriteType = {
+		name = "GFX_aze_zaixianwendang"
+		texturefile = "gfx/event_pictures/aze_zaixianwendang.png"
+	}
+	spriteType = {
 		name = "GFX_aze_cy1"
 		texturefile = "gfx/event_pictures/aze_cy1.png"
 	}
@@ -18,6 +22,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_aze_diannao"
 		texturefile = "gfx/event_pictures/aze_diannao.png"
+	}
+	spriteType = {
+		name = "GFX_aze_kan"
+		texturefile = "gfx/event_pictures/aze_kan.png"
 	}
 	spriteType = {
 		name = "GFX_aze_dai"
