@@ -320,8 +320,8 @@ generic_jianniang_organization = {
 			}
 			has_mio_size > 12
 		}
-		equipment_bonus = {
-			supply_consumption = -0.18
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.3
 		}
 	}
 	trait = {
@@ -380,10 +380,6 @@ generic_jianniang_organization = {
 			air_attack = 0.25                      
 			breakthrough = 0.2
 			defense = 2.0
-			max_strength = 0.20
-			initiative = 0.5  
-			default_morale = 0.2
-			max_organisation = 10
 			hardness = 0.25
 		}
 		production_bonus = {

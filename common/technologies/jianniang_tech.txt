@@ -208,18 +208,12 @@ technologies = {
 			custom_effect_tooltip =  az_tech_zhinenghuajianzhuang_tooltip
 		}
 		
-		# category_shipgirl = {
-		# 	soft_attack = 0.20
-		# 	hard_attack = 0.20           
-		# 	air_attack = 0.25                      
-		# 	breakthrough = 0.2
-		# 	defense = 2.0
-		# 	max_strength = 0.20
-		# 	initiative = 0.5  
-		# 	default_morale = 0.2
-		# 	max_organisation = 10
-		# 	hardness = 0.25
-		# }
+		category_shipgirl = {
+			max_strength = 0.20
+			initiative = 0.5  
+			default_morale = 0.2
+			max_organisation = 10
+		}
 
 		fight_shipgirl_tuji = {
 			supply_consumption = -0.015
@@ -477,17 +471,17 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		# shipgirl_brigade_zhanlie = {
+		shipgirl_brigade_zhanlie = {
 
-		# 	supply_consumption = -0.18
+			supply_consumption = -0.18
 
-		# }
+		}
 		
-		# fight_shipgirl_fankong = {
+		fight_shipgirl_fankong = {
 
-		# 	supply_consumption = -0.06
+			supply_consumption = -0.06
 
-		# }
+		}
 		
 		on_research_complete = {
 			custom_effect_tooltip =  az_tech_tehua_tooltip
