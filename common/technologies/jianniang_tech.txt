@@ -152,13 +152,13 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		shipgirl_brigade_quzhu = {
-			maximum_speed = 0.50
-		}
+		# shipgirl_brigade_quzhu = {
+		# 	maximum_speed = 0.50
+		# }
 		
-		fight_shipgirl_tuji = {
-			maximum_speed = 0.50
-		}
+		# fight_shipgirl_tuji = {
+		# 	maximum_speed = 0.50
+		# }
 		
 		on_research_complete = {
 			custom_effect_tooltip =  az_tech_tehua_tooltip
@@ -208,18 +208,18 @@ technologies = {
 			custom_effect_tooltip =  az_tech_zhinenghuajianzhuang_tooltip
 		}
 		
-		category_shipgirl = {
-			soft_attack = 0.20
-			hard_attack = 0.20           
-			air_attack = 0.25                      
-			breakthrough = 0.2
-			defense = 2.0
-			max_strength = 0.20
-			initiative = 0.5  
-			default_morale = 0.2
-			max_organisation = 10
-			hardness = 0.25
-		}
+		# category_shipgirl = {
+		# 	soft_attack = 0.20
+		# 	hard_attack = 0.20           
+		# 	air_attack = 0.25                      
+		# 	breakthrough = 0.2
+		# 	defense = 2.0
+		# 	max_strength = 0.20
+		# 	initiative = 0.5  
+		# 	default_morale = 0.2
+		# 	max_organisation = 10
+		# 	hardness = 0.25
+		# }
 
 		fight_shipgirl_tuji = {
 			supply_consumption = -0.015
@@ -243,16 +243,16 @@ technologies = {
 			supply_consumption = -0.18
 		}
 		
-		category_flyingenterprise = {
-			air_range = 5.00
-			air_agility = 1.0
-			air_attack = 1.0
-			air_defence= 0.5
-			naval_strike_attack = 1.00	
-			naval_strike_targetting = 1.00
-			air_ground_attack = 1.00
-			maximum_speed = 2
-		}
+		# category_flyingenterprise = {
+		# 	air_range = 5.00
+		# 	air_agility = 1.0
+		# 	air_attack = 1.0
+		# 	air_defence= 0.5
+		# 	naval_strike_attack = 1.00	
+		# 	naval_strike_targetting = 1.00
+		# 	air_ground_attack = 1.00
+		# 	maximum_speed = 2
+		# }
 		
 		dependencies = {
            shipgirltech_quzhupao_3 = 1
@@ -364,13 +364,13 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		shipgirl_brigade_xunyang = {
-			air_attack = 1.0
-		}
+		# shipgirl_brigade_xunyang = {
+		# 	air_attack = 1.0
+		# }
 		
-		shipgirl_para = {
-			air_attack = 1.0
-		}
+		# shipgirl_para = {
+		# 	air_attack = 1.0
+		# }
 		
 		on_research_complete = {
 			custom_effect_tooltip =  az_tech_tehua_tooltip
@@ -477,17 +477,17 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		shipgirl_brigade_zhanlie = {
+		# shipgirl_brigade_zhanlie = {
 
-			supply_consumption = -0.18
+		# 	supply_consumption = -0.18
 
-		}
+		# }
 		
-		fight_shipgirl_fankong = {
+		# fight_shipgirl_fankong = {
 
-			supply_consumption = -0.06
+		# 	supply_consumption = -0.06
 
-		}
+		# }
 		
 		on_research_complete = {
 			custom_effect_tooltip =  az_tech_tehua_tooltip
@@ -572,9 +572,9 @@ technologies = {
 			custom_effect_tooltip =  az_tech_jizaijianniang_2_tooltip
 		}
 		
-		category_flyingenterprise = {
-			air_range = 1.00		
-		}
+		# category_flyingenterprise = {
+		# 	air_range = 1.00		
+		# }
 		
 		folder = {
             name = shipgirltech_folder 
@@ -598,9 +598,9 @@ technologies = {
            shipgirltech_jizaijianniang_2 = 1
         }
 		
-		category_flyingenterprise = {
-			air_range = 2.00		
-		}
+		# category_flyingenterprise = {
+		# 	air_range = 2.00		
+		# }
 		
 		path = {
 			leads_to_tech = shipgirltech_zhinenghuajianzhuang
