@@ -153,7 +153,8 @@ script_enum_equipment_bonus_type = {
 	jizaijianniang_fighterplane 
 	jizaijianniang_casplane 
 	jizaijianniang_nbplane 
-
+	fight_shipgirl
+	
 	quzhupao_equipment
 	quzhupao_equipment_1 
 	quzhupao_equipment_2

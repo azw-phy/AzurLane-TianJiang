@@ -1,10 +1,10 @@
 autonomy_state = {
 	id = BFL_chenyuanguo
-	icon = #不知道怎么加进来
+	#icon = #不知道怎么加进来
 	default = yes
 	is_puppet = yes
 	min_freedom_level = 0.0
-	manpower_influence = 1.2
+	manpower_influence = 1.0
 	rule = {
 		can_not_declare_war = yes
 		can_decline_call_to_war = no

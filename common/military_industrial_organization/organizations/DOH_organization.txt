@@ -6,7 +6,40 @@
  #  #  # #  # # #   # 
  #  #  # #  # # # ## 
 
- #################### 
+ ####################
+
+ DOH_baotoudiyijixiechang_organization = {
+	include = generic_tank_refurbishment_plant_organization
+	icon = GFX_idea_generic_tank_manufacturer_3
+	allowed = {
+		tag = DOH
+	}
+	available = {
+		owner = {
+			controls_state = 621
+			has_completed_focus = DOH_dulizizhudejungong
+			has_completed_focus = DOH_donghuanggongyetixi
+		}
+	}
+	add_trait = {  
+		token = gongyejituan
+		name = gongyejituan
+		icon = GFX_generic_mio_department_icon_facilities
+		special_trait_background = yes
+
+		position = { x=9 y=0 }  
+
+		available = {
+			FROM = {
+				is_ally_with = CHY
+			}
+		}
+		
+		equipment_bonus = {
+			reliability = 0.15
+      	}
+	}
+}
 
 TIX_DOH_tank_designer_organization = {
 	include = generic_heavy_tank_organization
@@ -32,12 +65,470 @@ TIX_DOH_tank_designer_organization = {
 ##  #  # ### #    ##  
  
 #####################
+DOH_dalianzaochuan_organization = {
+	include = generic_battle_line_ship_organization
+	icon = GFX_idea_generic_navy_bonus
+	allowed = {	
+		tag = DOH
+	}
+
+	add_trait = {
+		token = bulizaochuanchang_1
+		name = bulizaochuanchang_1
+		icon = GFX_idea_BLI_zaochuanchang1
+		special_trait_background = yes
+
+		position = { x=8 y=4 }  
+
+		available = {
+			FROM = { has_country_flag =  buligongyi1_get }
+		}
+		
+		equipment_bonus = {
+			reliability = 0.08 
+			armor_value = 0.05
+			maximum_speed = 0.03
+			naval_range = 0.1
+      		}
+		
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+	
+		on_complete = {
+			FROM = { mio:DOH_dalianzaochuan_organization = {
+				add_mio_size = 1
+				add_mio_funds_gain_factor = 0.35
+			}
+			navy_experience = 200 }
+		}
+	}
+
+	add_trait = {  
+		token = bulizaochuanchang_2
+		name = bulizaochuanchang_2
+		icon = GFX_idea_BLI_zaochuanchang2
+		special_trait_background = yes
+
+		position = { x=9 y=4 }  
+
+		available = {
+			FROM = { has_country_flag =  buligongyi2_get }
+		}
+		
+		equipment_bonus = {
+			lg_attack = 0.15
+			hg_attack = 0.2
+			carrier_size = 1
+			torpedo_attack = 0.15
+			build_cost_ic = -0.1
+  	    	}
+			production_bonus = {
+				production_resource_need_factor = -0.55
+			}
+		  on_complete = {
+			FROM = { mio:DOH_dalianzaochuan_organization = {
+				add_mio_size = 1
+				add_mio_funds_gain_factor = 0.35
+			}
+			navy_experience = 200 }
+		}
+	}
+
+	add_trait = {  
+		token = jishujiaoliu_wuhai
+		name = jishujiaoliu_wuhai
+		icon = GFX_idea_kure_naval_arsenal
+		special_trait_background = yes
+
+		position = { x=9 y=0 }  
+
+		available = {
+			FROM = {
+				has_country_flag = chy_jungongyuanzhu_flag
+			}
+		}
+		equipment_bonus = {
+			build_cost_ic = -0.05
+			reliability = 0.15
+      	}
+	}
+	add_trait = {
+		token = jishugaijing
+		name = jishugaijing
+		icon = GFX_generic_mio_trait_icon_unique
+		special_trait_background = yes
+
+		position = { x=7 y=4 }  
+
+		available = {
+			FROM = {
+				num_of_naval_factories > 90
+				has_tech = keyantech_daodan
+			}
+		}
+		
+		equipment_bonus = {
+			naval_light_gun_hit_chance_factor = 0.2
+			naval_heavy_gun_hit_chance_factor = 0.2
+      	}
+	}
+
+	available = {
+		owner = {
+			AND = {
+				num_of_factories > 225
+				num_of_naval_factories > 60
+				has_completed_focus = DOH_zaochuanjishugexin
+			}
+			controls_state = 745
+			has_completed_focus = DOH_dulizizhudejungong
+		}
+	}
+}
+DOH_hudong_organization = {
+	include = generic_escort_ship_organization
+	icon = GFX_idea_escort_effort_focus
+	allowed = {	
+		tag = DOH
+	}
+	add_trait = {
+		token = jishugaijing
+		name = jishugaijing
+		icon = GFX_generic_mio_trait_icon_unique
+		special_trait_background = yes
+
+		position = { x=9 y=2 }  
+
+		available = {
+			FROM = {
+				num_of_naval_factories > 60
+			}
+		}
+		equipment_bonus = {
+			build_cost_ic = 0.15
+			maximum_speed = 0.05
+			reliability = 0.05
+			max_strength = 0.25
+		}
+		production_bonus = {
+			production_capacity_factor = 0.05
+		}
+	}
+	add_trait = {  
+		token = bulizaochuanchang_1
+		name = bulizaochuanchang_1
+		icon = GFX_idea_BLI_zaochuanchang1
+		special_trait_background = yes
+
+		position = { x=8 y=4 }  
+
+		available = {
+			FROM = { has_country_flag =  buligongyi1_get }
+		}
+		
+		equipment_bonus = {
+			reliability = 0.08 
+			armor_value = 0.05
+			maximum_speed = 0.03
+			naval_range = 0.1
+      		}
+			  production_bonus = {
+				production_resource_need_factor = -0.55
+			}
+		on_complete = {
+			FROM = { mio:DOH_hudong_organization = {
+				add_mio_size = 1
+				add_mio_funds_gain_factor = 0.35
+			}
+			navy_experience = 200 }
+		}
+	}
+
+	add_trait = {  
+		token = bulizaochuanchang_2
+		name = bulizaochuanchang_2
+		icon = GFX_idea_BLI_zaochuanchang2
+		special_trait_background = yes
+
+		position = { x=9 y=4 }  
+
+		available = {
+			FROM = { has_country_flag =  buligongyi2_get }
+		}
+		
+		equipment_bonus = {
+			lg_attack = 0.15
+			hg_attack = 0.2
+			carrier_size = 1
+			torpedo_attack = 0.15
+			build_cost_ic = -0.1
+  	    	}
+			  production_bonus = {
+				production_resource_need_factor = -0.55
+			}
+		  on_complete = {
+			FROM = { mio:DOH_hudong_organization = {
+				add_mio_size = 1
+				add_mio_funds_gain_factor = 0.35
+			}
+			navy_experience = 200 }
+		}
+	}
+
+	add_trait = {  
+		token = gongyejituan
+		name = gongyejituan
+		icon = GFX_generic_mio_department_icon_facilities
+		special_trait_background = yes
+
+		position = { x=9 y=0 }  
+
+		available = {
+			FROM = { 
+				OR = {
+					has_completed_focus =  CHY_gongyejituan 
+					has_country_flag = chy_jungongyuanzhu_flag
+					is_ally_with = CHY
+				}
+			}
+		}
+		
+		equipment_bonus = {
+			reliability = 0.15
+      	}
+	}
+	add_trait = {  
+		token = jishujiaoliu_wuhe
+		name = jishujiaoliu_wuhe
+		icon = GFX_idea_maizuru_naval_arsenal
+		special_trait_background = yes
+
+		position = { x=9 y=0 }  
+
+		available = {
+			FROM = {
+				has_country_flag = chy_jungongyuanzhu_flag
+			}
+		}
+		equipment_bonus = {
+			build_cost_ic = -0.05
+			reliability = 0.15
+      	}
+		production_bonus = {
+			production_capacity_factor = 0.10
+		}
+	}
+	add_trait = {
+		token = jishugaijing
+		name = jishugaijing
+		icon = GFX_generic_mio_trait_icon_unique
+		special_trait_background = yes
+
+		position = { x=7 y=4 }  
+
+		available = {
+			FROM = {
+				num_of_naval_factories > 60
+			}
+		}
+		production_bonus = {
+			production_capacity_factor = 0.10
+		}
+	}
+
+	available = {
+		owner = {
+			OR = {
+				is_ai = yes
+				AND = {
+					num_of_factories > 100
+					num_of_naval_factories > 4
+				}
+			}
+			controls_state = 613
+			has_completed_focus = DOH_dulizizhudejungong
+		}
+	}
+}
+
+## 武昌造船厂
+
+DOH_wuchangzaochuanchang_organization = {
+	include = generic_submarine_organization
+	icon = GFX_idea_generic_sea_focused_navy
+	allowed = {	
+		tag = DOH
+	}
+
+	add_trait = {  
+		token = jishujiaoliu_zuoshibao
+		name = jishujiaoliu_zuoshibao
+		icon = GFX_idea_sasebo_naval_arsenal
+		special_trait_background = yes
+
+		position = { x=9 y=0 }  
+
+		available = {
+			FROM = {
+				has_country_flag = chy_jungongyuanzhu_flag
+			}
+		}
+		equipment_bonus = {
+			build_cost_ic = 0.10
+			reliability = 0.15
+      	}
+		production_bonus = {
+			production_capacity_factor = 0.05
+		}
+	}
+	add_trait = {
+		token = jishugaijing
+		name = jishugaijing
+		icon = GFX_generic_mio_trait_icon_unique
+		special_trait_background = yes
+
+		position = { x=9 y=2 }  
+
+		available = {
+			FROM = {
+				num_of_naval_factories > 120
+			}
+		}
+		equipment_bonus = {
+			maximum_speed = 0.15
+			reliability = 0.15
+		}
+		production_bonus = {
+			production_capacity_factor = 0.10
+		}
+	}
+
+	add_trait = {  
+		token = bulizaochuanchang_1
+		name = bulizaochuanchang_1
+		icon = GFX_idea_BLI_zaochuanchang1
+		special_trait_background = yes
+
+		position = { x=8 y=4 }  
+
+		available = {
+			FROM = { has_country_flag =  buligongyi1_get }
+		}
+		
+		equipment_bonus = {
+			reliability = 0.08 
+			armor_value = 0.05
+			maximum_speed = 0.03
+			naval_range = 0.1
+      		}
+			  production_bonus = {
+				production_resource_need_factor = -0.55
+			}
+		on_complete = {
+			FROM = { mio:DOH_wuchangzaochuanchang_organization = {
+				add_mio_size = 1
+				add_mio_funds_gain_factor = 0.35
+			}
+			navy_experience = 200 }
+		}
+	}
+
+	add_trait = {  
+		token = bulizaochuanchang_2
+		name = bulizaochuanchang_2
+		icon = GFX_idea_BLI_zaochuanchang2
+		special_trait_background = yes
+
+		position = { x=9 y=4 }  
+
+		available = {
+			FROM = { has_country_flag =  buligongyi2_get }
+		}
+		
+		equipment_bonus = {
+			lg_attack = 0.15
+			hg_attack = 0.2
+			carrier_size = 1
+			torpedo_attack = 0.15
+			build_cost_ic = -0.1
+  	    	}
+			  production_bonus = {
+				production_resource_need_factor = -0.55
+			}
+		  on_complete = {
+			FROM = { mio:DOH_wuchangzaochuanchang_organization = {
+				add_mio_size = 1
+				add_mio_funds_gain_factor = 0.35
+			}
+			navy_experience = 200 }
+		}
+	}
+
+	available = {
+		owner = {
+			OR = {
+				is_ai = yes
+				AND = {
+					num_of_factories > 300
+					num_of_naval_factories > 20	 
+				}
+			}
+			controls_state = 620
+			has_completed_focus = DOH_dulizizhudejungong
+		}
+	}
+}
 
 DOH_jiangnan_shipyard_group_organization = {
 	include = generic_task_force_ship_organization
 	icon = GFX_idea_generic_naval_manufacturer_3
 	allowed = {	
 		tag = DOH
+	}
+	add_trait = {  
+		token = jishujiaoliu_hengxuhe
+		name = jishujiaoliu_hengxuhe
+		icon = GFX_idea_yokosuka_naval_arsenal
+		special_trait_background = yes
+
+		position = { x=9 y=0 }  
+
+		available = {
+			FROM = {
+				has_country_flag = chy_jungongyuanzhu_flag
+			}
+		}
+		equipment_bonus = {
+			build_cost_ic = 0.05
+			max_strength = 0.10
+			maximum_speed = 0.10
+      	}
+		production_bonus = {
+			production_capacity_factor = 0.05
+		}
+	}
+	add_trait = {
+		token = jishugaijing
+		name = jishugaijing
+		icon = GFX_generic_mio_trait_icon_unique
+		special_trait_background = yes
+
+		position = { x=9 y=2 }  
+
+		available = {
+			FROM = {
+				num_of_naval_factories > 120
+			}
+		}
+		equipment_bonus = {
+			maximum_speed = 0.05
+			reliability = 0.05
+			max_strength = 0.15
+		}
+		production_bonus = {
+			production_capacity_factor = 0.05
+		}
 	}
 	add_trait = {  
 		token = bulizaochuanchang_1
@@ -112,6 +603,47 @@ DOH_dagu_shipyard_organization = {
 	icon = GFX_idea_generic_naval_manufacturer_3
 	allowed = {	
 		tag = DOH
+	}
+	add_trait = {  
+		token = jishujiaoliu_zuoshibao
+		name = jishujiaoliu_zuoshibao
+		icon = GFX_idea_sasebo_naval_arsenal
+		special_trait_background = yes
+
+		position = { x=9 y=0 }  
+
+		available = {
+			FROM = {
+				has_country_flag = chy_jungongyuanzhu_flag
+			}
+		}
+		equipment_bonus = {
+			build_cost_ic = 0.10
+			reliability = 0.15
+			surface_visibility = -0.1
+			surface_detection = 0.1
+      	}
+	}
+	add_trait = {
+		token = jishugaijing
+		name = jishugaijing
+		icon = GFX_generic_mio_trait_icon_unique
+		special_trait_background = yes
+
+		position = { x=9 y=2 }  
+
+		available = {
+			FROM = {
+				num_of_naval_factories > 120
+			}
+		}
+		equipment_bonus = {
+			build_cost_ic = 0.2
+			maximum_speed = 0.15
+			reliability = 0.15
+			surface_visibility = -0.2
+			surface_detection = 0.2
+		}
 	}
 	add_trait = {  
 		token = bulizaochuanchang_1

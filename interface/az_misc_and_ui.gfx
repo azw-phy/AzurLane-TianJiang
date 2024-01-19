@@ -55,7 +55,7 @@ spriteTypes = {
 	corneredTileSpriteType = {
 		name = "GFX_az_xmp_bg"
 		size= { x=192 y=192 }
-		textureFile = "gfx//interface//azurlane//az_xmp_bg.dds"
+		textureFile = "gfx/interface/azurlane/az_xmp_bg.dds"
 		borderSize = { x=64 y=64 }
 		tilingCenter = yes
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
@@ -63,7 +63,7 @@ spriteTypes = {
 	corneredTileSpriteType = {
 		name = "GFX_az_nothing_bg" 
 		size= { x=192 y=192 }
-		textureFile = "gfx//interface//azurlane//az_nothing_bg.png"
+		textureFile = "gfx/interface/azurlane/az_nothing_bg.png"
 		borderSize = { x=64 y=64 }
 		tilingCenter = yes
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"

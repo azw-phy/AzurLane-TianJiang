@@ -13,19 +13,19 @@ CHY_osaka_army_arsenal_organization = {
 	icon = GFX_idea_osaka_army_arsenal
 	allowed = {	
 		OR = {
-		tag = CHY
-		tag = DOH
+			tag = CHY
+			tag = DOH
 		}
 	}
 	available = {
-		owner = {
-		OR = {
-			original_tag= CHY
-			has_country_flag = chy_jungongyuanzhu_flag
+		FROM = {
+			OR = {
+				original_tag= CHY
+				has_country_flag = chy_jungongyuanzhu_flag
+			}
 		}
 	}
-	}
-	add_trait = {  
+	add_trait = {
 		token = gongyejituan
 		name = gongyejituan
 		icon = GFX_generic_mio_department_icon_facilities
@@ -74,19 +74,8 @@ CHY_osaka_army_arsenal_organization = {
 CHY_kure_naval_arsenal_organization = {
 	include = generic_battle_line_ship_organization
 	icon = GFX_idea_kure_naval_arsenal
-	allowed = {	
-		OR = {
+	allowed = {
 		tag = CHY
-		tag = DOH
-		}
-	}
-	available = {
-		owner = {
-		OR = {
-			original_tag= CHY
-			has_country_flag = chy_jungongyuanzhu_flag
-		}
-	}
 	}
 	add_trait = {  
 		token = gongyejituan
@@ -184,19 +173,8 @@ CHY_kure_naval_arsenal_organization = {
 CHY_yokosuka_naval_arsenal_organization = {
 	include = generic_task_force_ship_organization
 	icon = GFX_idea_yokosuka_naval_arsenal
-	allowed = {	
-		OR = {
+	allowed = {
 		tag = CHY
-		tag = DOH
-		}
-	}
-	available = {
-		owner = {
-		OR = {
-			original_tag= CHY
-			has_country_flag = chy_jungongyuanzhu_flag
-		}
-	}
 	}
 	add_trait = {  
 		token = gongyejituan
@@ -294,19 +272,8 @@ CHY_maizuru_naval_arsenal_organization = {
 	include = generic_escort_ship_organization
 	icon = GFX_idea_maizuru_naval_arsenal
 	
-	allowed = {	
-		OR = {
+	allowed = {
 		tag = CHY
-		tag = DOH
-		}
-	}
-	available = {
-		owner = {
-		OR = {
-			original_tag= CHY
-			has_country_flag = chy_jungongyuanzhu_flag
-		}
-	}
 	}
 	add_trait = {  
 		token = gongyejituan
@@ -403,19 +370,8 @@ CHY_maizuru_naval_arsenal_organization = {
 CHY_sasebo_naval_arsenal_organization = {
 	include = generic_raider_ship_organization
 	icon = GFX_idea_sasebo_naval_arsenal
-	allowed = {	
-		OR = {
+	allowed = {
 		tag = CHY
-		tag = DOH
-		}
-	}
-	available = {
-		owner = {
-		OR = {
-			original_tag= CHY
-			has_country_flag = chy_jungongyuanzhu_flag
-		}
-	}
 	}
 	add_trait = {  
 		token = gongyejituan
@@ -547,7 +503,12 @@ CHY_mitsubishi_organization = {
 		position = { x=9 y=0 }  
 
 		available = {
-			FROM = { has_completed_focus =  CHY_gongyejituan }
+			FROM = {
+				OR = {
+					has_completed_focus =  CHY_gongyejituan
+					has_country_flag = chy_jungongyuanzhu_flag
+				}
+			}
 		}
 		
 		equipment_bonus = {
@@ -597,7 +558,12 @@ CHY_aichi_organization = {
 		position = { x=9 y=3 }  
 
 		available = {
-			FROM = { has_completed_focus =  CHY_gongyejituan }
+			FROM = {
+				OR = {
+					has_completed_focus =  CHY_gongyejituan
+					has_country_flag = chy_jungongyuanzhu_flag
+				}
+			}
 		}
 		
 		equipment_bonus = {
@@ -643,7 +609,12 @@ CHY_nakajima_organization = {
 		position = { x=9 y=0 }  
 
 		available = {
-			FROM = { has_completed_focus =  CHY_gongyejituan }
+			FROM = {
+				OR = {
+					has_completed_focus =  CHY_gongyejituan
+					has_country_flag = chy_jungongyuanzhu_flag
+				}
+			}
 		}
 		
 		equipment_bonus = {
@@ -689,7 +660,12 @@ CHY_yokosuka_organization = {
 		position = { x=9 y=0 }  
 
 		available = {
-			FROM = { has_completed_focus =  CHY_gongyejituan }
+			FROM = {
+				OR = {
+					has_completed_focus =  CHY_gongyejituan
+					has_country_flag = chy_jungongyuanzhu_flag
+				}
+			}
 		}
 		
 		equipment_bonus = {
@@ -725,19 +701,8 @@ CHY_yokosuka_organization = {
 CHY_tokyo_arsenal_organization = {
 	include = generic_infantry_equipment_organization
 	icon = GFX_idea_tokyo_arsenal
-	allowed = {	
-		OR = {
+	allowed = {
 		tag = CHY
-		tag = DOH
-		}
-	}
-	available = {
-		owner = {
-		OR = {
-			original_tag= CHY
-			has_country_flag = chy_jungongyuanzhu_flag
-		}
-	}
 	}
 	add_trait = {  
 		token = gongyejituan
@@ -794,7 +759,12 @@ CHY_osaka_army_arsenal_artillery_organization = {
 		position = { x=9 y=0 }  
 
 		available = {
-			FROM = { has_completed_focus =  CHY_gongyejituan }
+			FROM = {
+				OR = {
+					has_completed_focus =  CHY_gongyejituan
+					has_country_flag = chy_jungongyuanzhu_flag
+				}
+			}
 		}
 		
 		equipment_bonus = {
@@ -819,17 +789,17 @@ CHY_nissan_organization = {
 	icon = GFX_idea_nissan
 	allowed = {	
 		OR = {
-		tag = CHY
-		tag = DOH
+			tag = CHY
+			tag = DOH
 		}
 	}
 	available = {
-		owner = {
-		OR = {
-			original_tag= CHY
-			has_country_flag = chy_jungongyuanzhu_flag
+		FROM = {
+			OR = {
+				original_tag= CHY
+				has_country_flag = chy_jungongyuanzhu_flag
+			}
 		}
-	}
 	}
 	add_trait = {  
 		token = gongyejituan
@@ -840,7 +810,12 @@ CHY_nissan_organization = {
 		position = { x=9 y=0 }  
 
 		available = {
-			FROM = { has_completed_focus =  CHY_gongyejituan }
+			FROM = {
+				OR = {
+					has_completed_focus =  CHY_gongyejituan
+					has_country_flag = chy_jungongyuanzhu_flag
+				}
+			}
 		}
 		
 		equipment_bonus = {

@@ -1,6 +1,6 @@
 DOH_DH1_decision_category = {
 	DOH_DH1_kaishiyuanzheng = {
-		icon = generic_tank
+		icon = idea_hun_treaty_of_trianon
 		visible = {
 			tag = DOH
 			is_ai = no
@@ -24,7 +24,7 @@ DOH_DH1_decision_category = {
 		}
 	}
 	DOH_DH1_zhongshijingong_add = {
-		icon = generic_tank
+		icon = idea_hun_treaty_of_trianon
 		visible = {
 			tag = DOH
 			is_ai = no
@@ -47,7 +47,7 @@ DOH_DH1_decision_category = {
 		}
 	}
 	DOH_DH1_zhongshifangyu_add = {
-		icon = generic_tank
+		icon = idea_hun_treaty_of_trianon
 		visible = {
 			tag = DOH
 			is_ai = no
@@ -70,7 +70,7 @@ DOH_DH1_decision_category = {
 		}
 	}
 	DOH_DH1_zhongshihaijun_add = {
-		icon = generic_tank
+		icon = idea_hun_treaty_of_trianon
 		visible = {
 			tag = DOH
 			is_ai = no
@@ -93,7 +93,7 @@ DOH_DH1_decision_category = {
 		}
 	}
 	DOH_DH1_zhongshikongjun_add = {
-		icon = generic_tank
+		icon = idea_hun_treaty_of_trianon
 		visible = {
 			tag = DOH
 			is_ai = no
@@ -116,7 +116,7 @@ DOH_DH1_decision_category = {
 		}
 	}
 	DOH_DH1_xiuyangshengxi_add = {
-		icon = generic_tank
+		icon = idea_hun_treaty_of_trianon
 		visible = {
 			tag = DOH
 			is_ai = no
@@ -139,7 +139,7 @@ DOH_DH1_decision_category = {
 		}
 	}
 	DOH_DH1_rm = {
-		icon = generic_tank
+		icon = idea_hun_treaty_of_trianon
 		visible = {
 			tag = DOH
 			is_ai = no

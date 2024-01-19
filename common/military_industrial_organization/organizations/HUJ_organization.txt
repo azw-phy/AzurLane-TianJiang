@@ -224,7 +224,7 @@ HUJ_cammell_laird_organization = {
 		icon = GFX_idea_BLI_zaochuanchang1
 		special_trait_background = yes
 
-		position = { x=9 y=3.5 }  
+		position = { x=9 y = 4 }  
 
 		available = {
 			FROM = { has_country_flag =  buligongyi1_get }

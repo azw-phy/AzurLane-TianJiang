@@ -1,5 +1,5 @@
 generic_jianniang_organization = {
-	icon = GFX_idea_generic_tank_manufacturer_1
+	icon = GFX_shipgirltech_jichulilun_medium
 	allowed = {
 		always = yes
 	}
@@ -11,7 +11,7 @@ generic_jianniang_organization = {
 	ai_will_do = {
 		base = 1
 	}
-	#background = 
+	background = generic_jianniang_organization
 	equipment_type = {
 		quzhupao_equipment
 		xunyangpao_equipment

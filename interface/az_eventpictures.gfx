@@ -7,14 +7,14 @@ spriteTypes = {
 		name = "GFX_aze_cy1"
 		texturefile = "gfx/event_pictures/aze_cy1.png"
 	}
-	spriteType = {
-		name = "GFX_aze_cy2"
-		texturefile = "gfx/event_pictures/aze_cy2.png"
-	}
-	spriteType = {
-		name = "GFX_aze_cy2"
-		texturefile = "gfx/event_pictures/aze_cy2.png"
-	}
+	# spriteType = {
+	# 	name = "GFX_aze_cy2"
+	# 	texturefile = "gfx/event_pictures/aze_cy2.png"
+	# }
+	# spriteType = {
+	# 	name = "GFX_aze_cy2"
+	# 	texturefile = "gfx/event_pictures/aze_cy2.png"
+	# }
 	spriteType = {
 		name = "GFX_az_dohchy1"
 		texturefile = "gfx/event_pictures/az_dohchy1.png"
@@ -329,7 +329,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_aze_tankexueyuan"
-		texturefile = "gfx/event_pictures/aze_tankexueyuan.png"
+		texturefile = "gfx/event_pictures/aze_haijunxueyuan.png"
 	}
 	spriteType = {
 		name = "GFX_aze_lisailiu"

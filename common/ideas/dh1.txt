@@ -95,33 +95,33 @@ ideas = {
 	}
 	country = {
 		DH1_AI_zhongshijingong = {
-			picture = jap_supremacy_of_technology
+			picture = idea_generic_agrarian_reform
 			allowed_civil_war = {
 				always = yes
 			}
 			modifier = {
-				ai_focus_aggressive_factor = 100
-				ai_focus_military_advancements_factor = 100
+				ai_focus_aggressive_factor = 1
+				ai_focus_military_advancements_factor = 1
 			}
 		}
 		DH1_AI_zhongshifangyu = {
-			picture = jap_supremacy_of_technology
+			picture = idea_generic_agrarian_reform
 			allowed_civil_war = {
 				always = yes
 			}
 			modifier = {
-				ai_focus_aggressive_factor = 100
-				ai_focus_military_advancements_factor = 100
+				ai_focus_aggressive_factor = 1
+				ai_focus_military_advancements_factor = 1
 			}
 		}
 		DH1_AI_zhongshihaijun = {
-			picture = jap_supremacy_of_technology
+			picture = idea_generic_agrarian_reform
 			allowed_civil_war = {
 				always = yes
 			}
 			modifier = {
-				ai_focus_naval_factor = 100
-				ai_focus_naval_air_factor = 100
+				ai_focus_naval_factor = 1
+				ai_focus_naval_air_factor = 1
 				industrial_capacity_dockyard = 0.1
 			}
 			equipment_bonus = {
@@ -148,21 +148,21 @@ ideas = {
 			}
 		}
 		DH1_AI_zhongshikongjun = {
-			picture = jap_supremacy_of_technology
+			picture = idea_generic_agrarian_reform
 			allowed_civil_war = {
 				always = yes
 			}
 			modifier = {
-				ai_focus_aviation_factor = 100
+				ai_focus_aviation_factor = 1
 			}
 		}
 		DH1_AI_xiuyangshengxi = {
-			picture = jap_supremacy_of_technology
+			picture = idea_generic_agrarian_reform
 			allowed_civil_war = {
 				always = yes
 			}
 			modifier = {
-				ai_focus_peaceful_factor = 100
+				ai_focus_peaceful_factor = 1
 				ai_join_ally_desire_factor = -100
 				production_speed_buildings_factor = 0.15
 				political_power_gain = 0.5
@@ -171,7 +171,7 @@ ideas = {
 		}
 
 		DH1_idea_sixiangbing = {
-			picture = jap_supremacy_of_technology
+			picture = idea_generic_agrarian_reform
 			allowed_civil_war = {
 				always = yes
 			}
@@ -205,7 +205,7 @@ ideas = {
 			}
 		}
 		DH1_zhonghaodongxi = {
-			picture = jap_supremacy_of_technology
+			picture = generic_agrarian_society
 			allowed_civil_war = {
 				always = yes
 			}
@@ -218,7 +218,7 @@ ideas = {
 			}
 		}
 		DH1_zhonghuaidongxi = {
-			picture = jap_supremacy_of_technology
+			picture = generic_agrarian_society
 			allowed_civil_war = {
 				always = yes
 			}
@@ -233,7 +233,7 @@ ideas = {
 			}
 		}
 		DH1_ziligengshengdejundui = {
-			picture = jap_supremacy_of_technology
+			picture = generic_goods_red_bonus
 			allowed_civil_war = {
 				always = yes
 			}
@@ -248,7 +248,7 @@ ideas = {
 			}
 		}
 		DH1_baozhangjunfei = {
-			picture = jap_supremacy_of_technology
+			picture = generic_infantry_bonus
 			allowed_civil_war = {
 				always = yes
 			}
@@ -262,7 +262,7 @@ ideas = {
 			}
 		}
 		DH1_zongtizhan_idea = {
-			picture = jap_supremacy_of_technology
+			picture = generic_intel_bonus
 			allowed_civil_war = {
 				always = yes
 			}
@@ -275,7 +275,7 @@ ideas = {
 		DH1_qingsuanzhimingzhe_idea = {
 			name = DH1_qinsuanzhimingzhe_idea
 			removal_cost = -1
-			picture = jap_supremacy_of_technology 
+			picture = generic_victors_of_ww1 
 
 			cancel = {
 				has_war_with = DH1
@@ -336,7 +336,7 @@ ideas = {
 			}
 		}
 		DH1_zousitongdao = {
-			picture = jap_supremacy_of_technology
+			picture = generic_railroads
 			allowed_civil_war = {
 				always = yes
 			}

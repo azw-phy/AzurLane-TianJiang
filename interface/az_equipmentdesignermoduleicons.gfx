@@ -63,10 +63,10 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/xzmf_anti_air_icn.dds"
 	}
 
-	spriteType = {
-		name = "GFX_SMI_ship_airplane_launcher_xzmf"
-		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/xzmf_airplane_launcher_icn.dds"
-	}
+	# spriteType = {
+	# 	name = "GFX_SMI_ship_airplane_launcher_xzmf"
+	# 	textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/xzmf_airplane_launcher_icn.dds"
+	# }
 
 	spriteType = {
 		name = "GFX_SMI_ship_deck_space_xzmf"
