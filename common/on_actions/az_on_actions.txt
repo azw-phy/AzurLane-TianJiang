@@ -125,6 +125,13 @@ on_actions = {
 			every_country = {
 				add_ideas = gongzuozhidu_3
 			}
+			#魔方挖矿基础工厂数量
+			every_country = {
+				set_variable = {
+					az_kaicaimofangkuang_modifier_var = 10
+				}
+			}
+			
 			every_country = {
 				#舰娘筛选条件
 				set_country_flag = leader_shaixuan_lujunjiangling
@@ -139,6 +146,7 @@ on_actions = {
 				add_dynamic_modifier = {
 					modifier = az_ziyuanzhuanhua_amount
 				}
+				
 				#舰娘休假
 				add_dynamic_modifier = {
 					modifier = az_jianniangxiujia_modifier

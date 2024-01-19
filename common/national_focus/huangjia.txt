@@ -1903,9 +1903,469 @@ focus = {
 		}
 	}
 	focus = {
+		id = HUJ_weicengshexiangdedaolu
+		icon = GFX_goal_generic_position_armies
+		x = -9
+		y = 0
+		cost = 10
+		relative_position_id = HUJ_jixuyihuizhi
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			always = no
+		}
+		mutually_exclusive = {
+			focus = HUJ_daposhufu
+			focus = HUJ_jixuyihuizhi
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HUJ_yaoqiuxiudingquanlifaan
+		icon = GFX_goal_generic_position_armies
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = HUJ_weicengshexiangdedaolu
+		prerequisite = {
+			focus = HUJ_weicengshexiangdedaolu
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HUJ_nvpugongzuozhidu
+		icon = GFX_goal_generic_position_armies
+		x = -2
+		y = 1
+		cost = 10
+		relative_position_id = HUJ_yaoqiuxiudingquanlifaan
+		prerequisite = {
+			focus = HUJ_yaoqiuxiudingquanlifaan
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HUJ_nvpucanzhengquanli
+		icon = GFX_goal_generic_position_armies
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = HUJ_yaoqiuxiudingquanlifaan
+		prerequisite = {
+			focus = HUJ_yaoqiuxiudingquanlifaan
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HUJ_nvpushoujiaoyuquan
+		icon = GFX_goal_generic_position_armies
+		x = 2
+		y = 1
+		cost = 10
+		relative_position_id = HUJ_yaoqiuxiudingquanlifaan
+		prerequisite = {
+			focus = HUJ_yaoqiuxiudingquanlifaan
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HUJ_chenglinvpugonghui
+		icon = GFX_goal_generic_position_armies
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = HUJ_nvpucanzhengquanli
+		prerequisite = {
+			focus = HUJ_nvpucanzhengquanli
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HUJ_mimixingdong
+		icon = GFX_goal_generic_position_armies
+		x = -2
+		y = 2
+		cost = 10
+		relative_position_id = HUJ_chenglinvpugonghui
+
+		prerequisite = {
+			focus = HUJ_jiaruneigeyihui
+		}
+		mutually_exclusive = {
+			focus = HUJ_anfunvwang
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HUJ_nvpubigong
+		icon = GFX_goal_generic_position_armies
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = HUJ_mimixingdong
+		prerequisite = {
+			focus = HUJ_mimixingdong
+		}
+	
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HUJ_huangshidemingyun
+		icon = GFX_goal_generic_position_armies
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = HUJ_nvpubigong
+		prerequisite = {
+			focus = HUJ_nvpubigong
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HUJ_jiaruneigeyihui
+		icon = GFX_goal_generic_position_armies
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = HUJ_chenglinvpugonghui
+		prerequisite = {
+			focus = HUJ_chenglinvpugonghui
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HUJ_anfunvwang
+		icon = GFX_goal_generic_position_armies
+		x = 2
+		y = 2
+		cost = 10
+		relative_position_id = HUJ_chenglinvpugonghui
+
+		prerequisite = {
+			focus = HUJ_jiaruneigeyihui
+		}
+		mutually_exclusive = {
+			focus = HUJ_mimixingdong
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HUJ_yunvwangtuoxie
+		icon = GFX_goal_generic_position_armies
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = HUJ_anfunvwang
+		prerequisite = {
+			focus = HUJ_anfunvwang
+		}
+	
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HUJ_huoquzizhu
+		icon = GFX_goal_generic_position_armies
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = HUJ_yunvwangtuoxie
+		prerequisite = {
+			focus = HUJ_yunvwangtuoxie
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HUJ_nvpulianmeng
+		icon = GFX_goal_generic_position_armies
+		x = 0
+		y = 3
+		cost = 10
+		relative_position_id = HUJ_jiaruneigeyihui
+		prerequisite = {
+			focus = HUJ_nvpubigong
+			focus = HUJ_yunvwangtuoxie
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HUJ_xinsichao
+		icon = GFX_goal_generic_position_armies
+		x = -5
+		y = 1
+		cost = 10
+		relative_position_id = HUJ_weicengshexiangdedaolu
+		prerequisite = {
+			focus = HUJ_weicengshexiangdedaolu
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HUJ_kuodasixiangchuanbo
+		icon = GFX_goal_generic_position_armies
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = HUJ_xinsichao
+		prerequisite = {
+			focus = HUJ_xinsichao
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
 		id = HUJ_jixuyihuizhi
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		x = 46
+		x = 45
 		y = 0
 		offset = {
 			x = -12
@@ -1914,7 +2374,7 @@ focus = {
 			}
 		}
 		cost = 10
-		mutually_exclusive = { focus = HUJ_daposhufu focus = HUJ_zhuanzhuyuzhimindishiwu }
+		mutually_exclusive = { focus = HUJ_weicengshexiangdedaolu focus = HUJ_daposhufu focus = HUJ_zhuanzhuyuzhimindishiwu }
 		ai_will_do = {
 			factor = 5
 			modifier = {
@@ -1935,13 +2395,12 @@ focus = {
 		completion_reward = {
 			add_political_power = 100
 			add_stability = 0.1
-			custom_effect_tooltip = HUJ_jixuyihuizhi_tooltip
 		}
 	}
 	focus = {
 		id = HUJ_youyakebushihuaping
 		icon = GFX_goal_generic_demand_territory
-		x = -5
+		x = 0
 		y = 1
 		offset = {
 			trigger = {
@@ -1950,7 +2409,7 @@ focus = {
 			x = 2
 		}
 		cost = 5
-		prerequisite = { focus = HUJ_jixuyihuizhi  focus = HUJ_zhuanzhuyuzhimindishiwu }
+		prerequisite = { focus = HUJ_jixuyihuizhi }
 		relative_position_id = HUJ_jixuyihuizhi
 		ai_will_do = {
 			factor = 3
@@ -2267,10 +2726,10 @@ focus = {
 	focus = {
 		id = HUJ_hongchawaijiao
 		icon = GFX_goal_generic_improve_relations
-		x = 2
-		y = 1
+		x = -2
+		y = 5
 		cost = 10
-		prerequisite = { focus = HUJ_jixuyihuizhi }
+		prerequisite = { focus = HUJ_jiaruneigeyihui focus = HUJ_jixuyihuizhi }
 		relative_position_id = HUJ_jixuyihuizhi
 		ai_will_do = {
 			factor = 3
@@ -2308,7 +2767,7 @@ focus = {
 	focus = {
 		id = HUJ_baohuyunhe
 		icon = GFX_focus_generic_coastal_fort
-		x = 1
+		x = -1
 		y = 1
 		cost = 5
 		prerequisite = { focus = HUJ_hongchawaijiao }
@@ -2477,7 +2936,7 @@ focus = {
 	focus = {
 		id = HUJ_jieguandanmaizhimindi
 		icon = GFX_focus_generic_concessions
-		x = 3
+		x = -3
 		y = 1
 		cost = 2
 		prerequisite = { focus = HUJ_hongchawaijiao }
@@ -2598,7 +3057,7 @@ focus = {
 	focus = {
 		id = HUJ_bangzhuyuanwei
 		icon = GFX_fflag_YUW
-		x = -3
+		x = 3
 		y = 1
 		offset = {
 			trigger = {
@@ -2641,7 +3100,7 @@ focus = {
 	focus = {
 		id = HUJ_biandepengyou
 		icon = GFX_fflag_BYG
-		x = -1
+		x = 1
 		y = 1
 		offset = {
 			trigger = {
@@ -2681,11 +3140,11 @@ focus = {
 	focus = {
 		id = HUJ_lianhesading
 		icon = GFX_fflag_SAD
-		x = 1
+		x = -1
 		y = 1
 		cost = 3
-		prerequisite = { focus = HUJ_junminpingdeng focus = HUJ_wangquanzhizun }
-		relative_position_id = HUJ_junminpingdeng
+		prerequisite = { focus = HUJ_nvwangrongguang }
+		relative_position_id = HUJ_nvwangrongguang
 		mutually_exclusive = { focus = HUJ_xiangtiexueshihao }
 		ai_will_do = {
 			factor = 3
@@ -2711,11 +3170,11 @@ focus = {
 	focus = {
 		id = HUJ_xiangtiexueshihao 
 		icon = GFX_fflag_TIX
-		x = 3
+		x = 1
 		y = 1
 		cost = 3
-		prerequisite = { focus = HUJ_junminpingdeng focus = HUJ_wangquanzhizun }
-		relative_position_id = HUJ_junminpingdeng
+		prerequisite = { focus = HUJ_nvwangrongguang }
+		relative_position_id = HUJ_nvwangrongguang
 		mutually_exclusive = { focus = HUJ_lianhesading }
 		ai_will_do = {
 			factor = 3
@@ -2766,7 +3225,7 @@ focus = {
 	focus = {
 		id = HUJ_bilanhangxiankeyanzu
 		icon = GFX_goal_generic_scientific_exchange
-		x = 1
+		x = -1
 		y = 1
 		cost = 5
 		prerequisite = { focus = HUJ_bangzhuyuanwei }
@@ -2866,11 +3325,11 @@ focus = {
 	focus = {
 		id = HUJ_daposhufu
 		icon = GFX_focus_yilishabai
-		x = 10
+		x = 11
 		y = 0
 		cost = 5
 		relative_position_id = HUJ_jixuyihuizhi
-		mutually_exclusive = { focus = HUJ_jixuyihuizhi focus = HUJ_zhuanzhuyuzhimindishiwu }
+		mutually_exclusive = { focus = HUJ_weicengshexiangdedaolu focus = HUJ_jixuyihuizhi focus = HUJ_zhuanzhuyuzhimindishiwu }
 
 		ai_will_do = {
 			factor = 0
@@ -2894,7 +3353,7 @@ focus = {
 		id = HUJ_nvwanghuweijun
 		icon = GFX_focus_yanzhan
 		x = -1
-		y = 1
+		y = 2
 		cost = 3
 		relative_position_id = HUJ_daposhufu
 		prerequisite = { focus = HUJ_daposhufu }
@@ -2927,11 +3386,11 @@ focus = {
 	focus = {
 		id = HUJ_gaizaoyanzhan
 		icon = GFX_focus_yanzhangai
-		x = -1
+		x = -3
 		y = 1
 		cost = 3
-		relative_position_id = HUJ_nvwanghuweijun
-		prerequisite = { focus = HUJ_nvwanghuweijun }
+		relative_position_id = HUJ_daposhufu
+		prerequisite = { focus = HUJ_daposhufu }
 
 
 		ai_will_do = {
@@ -2963,78 +3422,17 @@ focus = {
 			navy_experience = 40
 		}
 	}
-	focus = {
-		id = HUJ_nvwangqinzheng
-		icon = GFX_focus_eng_imperial_federation
-		x = 0
-		y = 2
-		cost = 5
-		relative_position_id = HUJ_daposhufu
-		prerequisite = { focus = HUJ_nvwanghuweijun }
-		prerequisite = { focus = HUJ_zhongyonghuangshi }
-
-		ai_will_do = {
-			factor = 10
-		}
-
-
 	
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-
-
-		#search_filters = { FOCUS_FILTER_STABILITY }
-		completion_reward = {
-			news_event = aznews.40
-			set_politics = {
-				ruling_party = neutrality
-			}
-			add_popularity = { ideology = neutrality popularity = 0.1 }
-		}
-	}
-	focus = {
-		id = HUJ_jinchidewang
-		icon = GFX_focus_yilishabai2
-		x = 0
-		y = 1
-		cost = 5
-		relative_position_id = HUJ_nvwangqinzheng
-		prerequisite = { focus = HUJ_nvwangqinzheng }
-
-		ai_will_do = {
-			factor = 10
-		}
-
-
-		available = { 
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-
-
-		#search_filters = { FOCUS_FILTER_STABILITY }
-		completion_reward = {
-			HUJ_yilishabai = {
-				add_country_leader_trait = rgnw
-			}
-			remove_ideas = HUJ_yilishabainvwang
-		}
-	}
 	focus = {
 		id = HUJ_junminpingdeng
 		icon = GFX_focus_generic_diplomatic_treaty
-		x = -2
-		y = 1
+		x = 0
+		y = 2
 		cost = 7
-		relative_position_id = HUJ_jinchidewang
-		prerequisite = { focus = HUJ_jinchidewang }
-		prerequisite = { focus = HUJ_gaizaoyanzhan }
-		mutually_exclusive = { focus = HUJ_wangquanzhizun }
+		relative_position_id = HUJ_nvwanghuweijun
+		prerequisite = { focus = HUJ_nvwanghuweijun }
+		prerequisite = { focus = HUJ_nvwangqinzheng }
+		#mutually_exclusive = { focus = HUJ_wangquanzhizun }
 
 		ai_will_do = {
 			factor = 10
@@ -3057,7 +3455,7 @@ focus = {
 	focus = {
 		id = HUJ_nvwangdeguwu
 		icon = GFX_focus_rom_royal_dictatorship
-		x = -1
+		x = 0
 		y = 1
 		cost = 7
 		relative_position_id = HUJ_junminpingdeng
@@ -3103,13 +3501,13 @@ focus = {
 	focus = {
 		id = HUJ_wangquanzhizun
 		icon = GFX_focus_generic_home_defense
-		x = 2
-		y = 1
+		x = 0
+		y = 2
 		cost = 7
-		relative_position_id = HUJ_jinchidewang
-		prerequisite = { focus = HUJ_jinchidewang }
-		prerequisite = { focus = HUJ_huangjiadezhanshi }
-		mutually_exclusive = { focus = HUJ_junminpingdeng }
+		relative_position_id = HUJ_zhongyonghuangshi
+		prerequisite = { focus = HUJ_zhongyonghuangshi }
+		prerequisite = { focus = HUJ_nvwangqinzheng }
+		#mutually_exclusive = { focus = HUJ_junminpingdeng }
 
 		ai_will_do = {
 			factor = 10
@@ -3133,7 +3531,7 @@ focus = {
 	focus = {
 		id = HUJ_wanguolaichao
 		icon = GFX_focus_generic_monarchy_2
-		x = 1
+		x = 0
 		y = 1
 		cost = 7
 		relative_position_id = HUJ_wangquanzhizun
@@ -3163,7 +3561,7 @@ focus = {
 		id = HUJ_zhongyonghuangshi
 		icon = GFX_focus_qiaozhiwushi
 		x = 1
-		y = 1
+		y = 2
 		cost = 10
 		relative_position_id = HUJ_daposhufu
 		prerequisite = { focus = HUJ_daposhufu }
@@ -3197,11 +3595,11 @@ focus = {
 	focus = {
 		id = HUJ_huangjiadezhanshi
 		icon = GFX_focus_generic_little_entente
-		x = 1
+		x = 3
 		y = 1
 		cost = 7
-		relative_position_id = HUJ_zhongyonghuangshi
-		prerequisite = { focus = HUJ_zhongyonghuangshi }
+		relative_position_id = HUJ_daposhufu
+		prerequisite = { focus = HUJ_daposhufu }
 
 		ai_will_do = {
 			factor = 10
@@ -4190,7 +4588,7 @@ focus = {
 	focus = {
 		id = HUJ_zhongzhisuijingzhengce
 		icon = GFX_focus_generic_strike_at_democracy1
-		x = 6
+		x = 0
 		y = 1
 		relative_position_id = HUJ_tongzhibabuliedianhuj
 		continue_if_invalid = yes
@@ -4466,11 +4864,14 @@ focus = {
 	focus = {
 		id = HUJ_zhuanzhuyuzhimindishiwu
 		icon = GFX_goal_tripartite_pact
-		x = -12
-		y = 0
+		x = 5
+		y = 4
 		cost = 10
 		relative_position_id = HUJ_jixuyihuizhi
-		mutually_exclusive = { focus = HUJ_jixuyihuizhi focus = HUJ_daposhufu }
+		prerequisite = {
+			focus = HUJ_jixuyihuizhi
+			focus = HUJ_daposhufu
+		}
 		ai_will_do = {
 			factor = 5
 			modifier = {
@@ -4493,12 +4894,12 @@ focus = {
 	focus = {
 		id = HUJ_baochichuantong
 		icon = GFX_focus_generic_improve_the_administration
-		x = -2
-		y = 1
+		x = 3
+		y = 3
 		cost = 5
-		prerequisite = { focus = HUJ_zhuanzhuyuzhimindishiwu }
-		relative_position_id = HUJ_zhuanzhuyuzhimindishiwu
-		mutually_exclusive = { focus = HUJ_qinzishangzhen }
+		prerequisite = { focus = HUJ_jixuyihuizhi }
+		relative_position_id = HUJ_jixuyihuizhi
+		mutually_exclusive = { focus = HUJ_nvwangqinzheng }
 		ai_will_do = {
 			factor = 20
 		}
@@ -4515,25 +4916,38 @@ focus = {
 	}
 	
 	focus = {
-		id = HUJ_qinzishangzhen
-		icon = GFX_focus_yilishabai
-		x = 2
-		y = 1
+		id = HUJ_nvwangqinzheng
+		icon = GFX_focus_eng_imperial_federation
+		x = 4
+		y = 0
 		cost = 5
-		prerequisite = { focus = HUJ_zhuanzhuyuzhimindishiwu }
-		relative_position_id = HUJ_zhuanzhuyuzhimindishiwu
+		prerequisite = { focus = HUJ_jixuyihuizhi focus = HUJ_nvwanghuweijun focus = HUJ_zhongyonghuangshi }
+		relative_position_id = HUJ_baochichuantong
 		mutually_exclusive = { focus = HUJ_baochichuantong }
 		ai_will_do = {
-			factor = 20
+			factor = 10
 		}
-		allow_branch = {
-			has_global_flag = MOD_azurlane_tianjiangjianniang
-		}
+
+
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
 
 		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			add_stability = 0.2
-			add_war_support = 0.2
+			news_event = aznews.40
+			if = {
+				limit = {
+					has_completed_focus = HUJ_daposhufu
+				}
+				set_politics = {
+					ruling_party = neutrality
+				}
+			}
+		
 			add_country_leader_role = {
 				Character = HUJ_yilishabai
 				Promote_leader = yes
@@ -4545,13 +4959,14 @@ focus = {
 					}
 				}
 			}
+			add_popularity = { ideology = neutrality popularity = 0.1 }
 		}
 	}
 	
 	focus = {
 		id = HUJ_kaihuashiming
 		icon = GFX_focus_manjiu
-		x = -2
+		x = 0
 		y = 1
 		cost = 8
 		prerequisite = { focus = HUJ_baochichuantong  focus = HUJ_qinzishangzhen }
@@ -4572,11 +4987,11 @@ focus = {
 	focus = {
 		id = HUJ_weijiyishi
 		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
-		x = 2
+		x = 0
 		y = 1
 		cost = 10
-		prerequisite = { focus = HUJ_baochichuantong  focus = HUJ_qinzishangzhen }
-		relative_position_id = HUJ_baochichuantong
+		prerequisite = { focus = HUJ_zhuanzhuyuzhimindishiwu }
+		relative_position_id = HUJ_zhuanzhuyuzhimindishiwu
 		ai_will_do = {
 			factor = 20
 		}
@@ -4593,11 +5008,11 @@ focus = {
 	focus = {
 		id = HUJ_nvwangrongguang
 		icon = GFX_focus_yilishabai2
-		x = 2
+		x = -1
 		y = 1
 		cost = 10
-		prerequisite = { focus = HUJ_baochichuantong  focus = HUJ_qinzishangzhen }
-		relative_position_id = HUJ_qinzishangzhen
+		prerequisite = { focus = HUJ_wanguolaichao focus = HUJ_nvwangdeguwu }
+		relative_position_id = HUJ_wanguolaichao
 		ai_will_do = {
 			factor = 20
 		}
@@ -4607,6 +5022,9 @@ focus = {
 
 		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
+			HUJ_yilishabai = {
+				add_country_leader_trait = rgnw
+			}
 			if = {
 			limit = {
 			has_country_leader = {
@@ -4631,8 +5049,8 @@ focus = {
 		y = 1
 		cost = 10
 		prerequisite = { focus = HUJ_weijiyishi }
-		prerequisite = { focus = HUJ_nvwangrongguang }
-		prerequisite = { focus = HUJ_kaihuashiming }
+		#prerequisite = { focus = HUJ_nvwangrongguang }
+		#prerequisite = { focus = HUJ_kaihuashiming }
 		relative_position_id = HUJ_weijiyishi
 		available = {
 			is_puppet = no

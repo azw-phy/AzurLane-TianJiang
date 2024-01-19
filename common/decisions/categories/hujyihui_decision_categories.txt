@@ -4,7 +4,13 @@ huj_yihui_category = {
 		tag = HUJ	
 	}
 	visible = {
-		has_completed_focus = HUJ_jixuyihuizhi
+		NOT = { 
+			OR = {
+				has_completed_focus =  HUJ_nvwangqinzheng
+				has_completed_focus =  HUJ_jiaruneigeyihui
+			}
+		}
+		#has_completed_focus = HUJ_jixuyihuizhi
 	}
 	priority = 100
 }
