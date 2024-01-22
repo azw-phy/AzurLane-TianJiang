@@ -514,6 +514,11 @@ technologies = {
 			jizaijianniang_cas
 			jizaijianniang_nb
 		}
+		enable_equipment_modules = {
+			az_fighter_weapon_1
+			az_cas_weapon_1
+			az_nav_bomber_weapon_1
+		}
 		# enable_equipment_modules = {
 		# 	az_fighter_weapon
 		# 	az_cas_weapon

@@ -1,3 +1,7 @@
+HUJ_nvpu_communism = {
+	color = rgb { 176 48 96 }
+	color_ui = rgb { 176 48 96 }
+}
 YUWgonghheguo = {
 	color = rgb { 100 149 237 }
 	color_ui = rgb { 100 149 237 }

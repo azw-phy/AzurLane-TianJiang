@@ -1,4 +1,33 @@
 spriteTypes = {	
+	#特工
+	SpriteType = {
+		name = "GFX_portrait_xiefeierde"
+		texturefile = "gfx/leaders/zhihuiguan/xiefeierde.png"
+	}
+	SpriteType = {
+		name = "GFX_portrait_aluona"
+		texturefile = "gfx/leaders/zhihuiguan/aluona.png"
+	}
+	SpriteType = {
+		name = "GFX_portrait_xincai"
+		texturefile = "gfx/leaders/zhihuiguan/xincai.png"
+	}
+	SpriteType = {
+		name = "GFX_portrait_mili"
+		texturefile = "gfx/leaders/zhihuiguan/mili.png"
+	}
+	SpriteType = {
+		name = "GFX_portrait_meiyou"
+		texturefile = "gfx/leaders/zhihuiguan/meiyou.png"
+	}
+	SpriteType = {
+		name = "GFX_portrait_baizi"
+		texturefile = "gfx/leaders/zhihuiguan/baizi.png"
+	}
+	SpriteType = {
+		name = "GFX_portrait_youxiang"
+		texturefile = "gfx/leaders/zhihuiguan/youxiang.png"
+	}
 	spriteType = {
         name = "GFX_leader_xiaoguanchazhe"
         texturefile = "gfx/leaders/SIR/xiaoguanchazhe.png"

@@ -348,3 +348,147 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = HUJ_event.8
+	title = HUJ_event.8.t
+	desc = HUJ_event.8.d
+	picture = GFX_aze_dai
+	is_triggered_only = yes
+	option = {
+		name = HUJ_event.8.a
+		ai_chance = {
+			factor = 5
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+	}
+
+}
+country_event = {
+	id = HUJ_event.9
+	title = HUJ_event.9.t
+	desc = HUJ_event.9.d
+	picture = GFX_aze_chaijun_nice
+	is_triggered_only = yes
+	option = {
+		name = HUJ_event.9.a
+		ai_chance = {
+			factor = 5
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+		add_stability = -0.15
+	}
+}
+country_event = {
+	id = HUJ_event.10
+	title = HUJ_event.10.t
+	desc = HUJ_event.10.d
+	picture = GFX_aze_chaijun_nice
+	is_triggered_only = yes
+	option = {
+		name = HUJ_event.10.a
+		ai_chance = {
+			factor = 5
+		}
+		remove_ideas = HUJ_yilishabainvwang
+		hidden_effect = {
+			HUJ_yilishabai = {
+				set_nationality = MAL
+			}
+		}
+		set_autonomy = {
+			target = MAL
+			autonomy_state = autonomy_dominion
+		}
+		MAL = {
+			hidden_effect = {
+				set_politics = {
+					ruling_party = neutrality
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 1
+				}
+			}
+			country_event = { id = HUJ_event.1001 days = 5 }
+		}
+			
+	}
+	option = {
+		name = HUJ_event.10.b
+		ai_chance = {
+			factor = 5
+		}
+		remove_ideas = HUJ_yilishabainvwang
+		add_ideas = HUJ_yilishabainvwang_sading
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+	}
+	option = {
+		name = HUJ_event.10.c
+		ai_chance = {
+			factor = 5
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.25
+		}
+		remove_ideas = HUJ_yilishabainvwang
+		add_ideas = HUJ_yilishabainvwang_shumin
+		add_stability = 0.2
+		add_war_support = 0.25
+		add_political_power = 150
+		guojishengyu_up_5 = yes
+	}
+}
+
+country_event = {
+	id = HUJ_event.1001
+	title = HUJ_event.1001.t
+	desc = HUJ_event.1001.d
+	picture = GFX_aze_chaijun_nice
+	is_triggered_only = yes
+	option = {
+		name = HUJ_event.1001.d
+		ai_chance = {
+			factor = 5
+		}
+		add_country_leader_role = {
+			character = HUJ_yilishabai
+			promote_leader = yes
+			country_leader = {
+				ideology = despotism
+				expire = "1965.1.1.1"
+				traits = { }
+			}
+		}
+		promote_character = {
+			character = HUJ_yilishabai
+			ideology = despotism
+		}
+		annex_country = {
+			target = RAJ
+			transfer_troops = yes
+		}
+		every_state = {
+			limit = {
+				is_core_of = RAJ
+			}
+			add_core_of = MAL
+		}
+		set_party_name = { 
+			ideology = communism
+			long_name = HUJ_nvwangzhimindi_party_name
+			name = HUJ_nvwangzhimindi_party_name
+		}
+		add_ideas = HUJ_yilishabainvwang
+		set_cosmetic_tag = HUJ_nvwangzhimindi_tag_name
+	}
+}

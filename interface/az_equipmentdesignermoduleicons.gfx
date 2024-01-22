@@ -110,6 +110,31 @@ spriteTypes = {
 		name = "GFX_SMI_ship_armor_thin_xzmf"
 		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/xzmf_armor_thin_icn.dds"
 	}
+	spriteType = {
+		name = "GFX_EMI_az_fighter_weapon"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_heavy_mg_4_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_az_nav_bomber_weapon"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_az_torpedo_icon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_az_cas_weapon"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_bomb_lock_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_az_fighter_weapon_1"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_az_fighter_wepon_1_icon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_az_nav_bomber_weapon_1"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_az_torpedo_icon.png"
+		legacy_lazy_load = no
+	}
 }
 
 

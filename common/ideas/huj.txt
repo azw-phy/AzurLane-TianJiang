@@ -1,5 +1,42 @@
 ideas = {
+	hidden_ideas = {
+		HUJ_kuodasixiangchuanbo = {
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			modifier = {
+				communism_drift = 0.15
+				political_power_cost = 0.5
+				custom_modifier_tooltip = az_hidden_ideas
+			}
+		}
+	}
 	country = {	
+		HUJ_idea_nvpukangyizhong = {
+			picture = chi_wargaming_division
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			modifier = {
+				consumer_goods_factor = 0.1
+				political_power_cost = 0.5
+				communism_drift = 0.1
+			}
+		
+		}
+		HUJ_idea_ziyousixiang = {
+			picture = generic_research_bonus
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		
+		}
 		HUJ_yilishabainvwang = {
 			picture = HUJ_yilishabai
 			allowed_civil_war = {
@@ -58,6 +95,32 @@ ideas = {
 				compliance_growth = 0.2
 				non_core_manpower = 0.15
 				consumer_goods_factor = -0.15
+			}
+		}
+		HUJ_yilishabainvwang_shumin = {
+			picture = HUJ_yilishabai
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				communism_drift = 0.05
+				compliance_growth = 0.1
+				stability_weekly = 0.01
+			}
+		}
+		HUJ_yilishabainvwang_sading = {
+			picture = HUJ_yilishabai
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				operative_slot = 1
+				political_power_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = SAD
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
 			}
 		}
 		HUJ_nwhwj = {

@@ -12,6 +12,7 @@
  HUJ_nvpushoujiaoyuquan_desc:"女仆们每天接受的就是服侍主人的教育，她们有资格学习先进的知识。"
  HUJ_chenglinvpugonghui:"成立女仆工会"
  HUJ_chenglinvpugonghui_desc:"在不断的努力下，全国的女仆们都有了先进的思想和反抗的意识，现在该成立一个属于女仆的组织了！"
+ HUJ_communism_party_name:"女仆工会"
  HUJ_mimixingdong:"秘密行动"
  HUJ_mimixingdong_desc:"有些事情是没法通过谈判得到的，这是最后手段。"
  HUJ_nvpubigong:"女仆逼宫"
@@ -28,8 +29,11 @@
  HUJ_huoquzizhu_desc:"女王会支持我们的一切工作，皇家的资助将会给我们带来很大帮助。"
  HUJ_nvpulianmeng:"不列颠女仆联盟"
  HUJ_nvpulianmeng_desc:"一个焕然一新的不列颠诞生了！"
- HUJ_xinsichao:"新思潮"
- HUJ_xinsichao_desc:"我们要通过传单、演讲、游行等各种方式让全国女仆和工人接触到先进思想。"
+ HUJ_nvpu_communism:"不列颠女仆联盟"
+ HUJ_nvwangzhimindi_tag_name:"伊丽莎白女王直辖地"
+ HUJ_nvwangzhimindi_party_name:"伊丽莎白女王皇室"
+ HUJ_kuodasixiangchuanbo:"扩大思想传播"
+ HUJ_kuodasixiangchuanbo_desc:"我们要通过传单、演讲、游行等各种方式让全国女仆和工人接触到先进思想。"
  HUJ_baodayuanwei:0"暴打鸢尾（以下尚未完成）"
  HUJ_baodayuanwei_desc:0"臭鸢尾，不知道为什么，就是想揍你！"
  HUJ_baohuyunhe:0"保护运河"
@@ -252,6 +256,19 @@
  HUJ_event.7.t:0"接管伊拉克和墨西哥的油田"
  HUJ_event.7.d:0"我们了解到，位于伊拉克和墨西哥的油田是“我们”协助开发的，现在轮到我们去接管他们的所有权了。"
  HUJ_event.7.a:0"接管油田"
+ HUJ_event.8.t:"一本积灰的书"
+ HUJ_event.8.d:"皇家女仆贝尔法斯特在日常打扫中，发现了一本积灰的老书，这本书上写满了对于当前世界上的不公和解决办法，深深地触动了贝尔法斯特。"
+ HUJ_event.8.a:"给舰娘们一点小小的康米震撼"
+ HUJ_event.9.t:"皇宫中的枪声"  
+ HUJ_event.9.d:"[GetYear]年[GetMonth]的一天平静的早晨，特工谢菲尔德手持微缩舰炮闯入了伊丽莎白女王的卧室。“砰”的一声枪响，伊丽莎白被窝里的一大堆指挥猫被吓得四处逃窜，女王本人也被惊醒。谢菲尔德以女王终日撸猫，不理朝政为由，要求给予女仆们更多的权力，以便更好的治理国家。\n“女王大人，和这样的虫豸呆在一起，怎能治理好国家呢！就请交给我们女仆们吧。”谢菲尔德如此谏言。而女王也被迫同意了她们的要求。"
+ HUJ_event.9.a:"国家就交给女仆们吧"
+ HUJ_event.10.t:"伊丽莎白女王等候安排"
+ HUJ_event.10.d:"因为女王过于懒惰，还经常喜欢干涉工作，女仆们索性就把伊丽莎白女王赶下了领导的位置，现在该如何安排女王呢，女仆们给出了3个建议。\n一是将女王派到亚洲去，让女王呆在物产丰富的殖民地，那里气候适宜，也不用担心女王干涉我们的工作，同时还能压制那些想要独立的殖民地总督。\n二是让女王去撒丁帝国“休假”，虽然我们和撒丁帝国关系紧张，但她们皇室之间还是比较和气的，将女王安置在撒丁帝国也能免受不列颠岛上反女王势力的侵扰，也是一种变相的保护措施。\n三是直接将女王贬为庶民，摘掉她高傲的女王光环，这样能更好的彰显女仆工会的决心，让我们受到全世界受压迫人民的赞扬。"
+ HUJ_event.10.a:"让女王去殖民地维稳"
+ HUJ_event.10.b:"让女王去撒丁帝国避难"
+ HUJ_event.10.c:"将伊丽莎白贬为庶民"
+ HUJ_event.1001.t:"不列颠的荣光女王、亚洲的璀璨明珠、如闪电般的三军统帅伊丽莎白女王今日抵达了她的殖民地"
+ HUJ_event.1001.d:"好好好"
 
  #决议#
  huj_yihui_category:0"皇家议会"
@@ -300,6 +317,10 @@
  HUJ_yilishabainvwang_zszt_desc:0"告诉你别不服气听见没有，我们女王就是至高无上的存在，你们不准有任何异议！" 
  HUJ_yilishabainvwang_nwdbw:0"女王的博爱"
  HUJ_yilishabainvwang_nwdbw_desc:0"女王只是一位天真的烧酒哦！她和你们一样，都是普通人。"  
+ HUJ_yilishabainvwang_shumin:"庶民伊丽莎白"
+ HUJ_yilishabainvwang_shumin_desc:"伊丽莎白女王已经是一个普通的舰娘了，她和我们所有人一样。"
+ HUJ_yilishabainvwang_sading:"女王的秘密情报" 
+ HUJ_yilishabainvwang_sading_desc:"伊丽莎白女王在撒丁帝国打探到了许多消息，她将这些情报全部传达给了我们。"
  HUJ_hsjg:0"皇室军官"
  HUJ_hsjg_desc:0"我们的军队内，高层军官全部是皇室成员，她们有着很高的军事素养。"
  HUJ_hjnpd:0"皇家女仆队"
@@ -354,6 +375,9 @@
  HUJ_khlz_desc:0"炮弹管够，炸就完事儿了，！"
  HUJ_cxrbl:0"重现日不落"
  HUJ_cxrbl_desc:0"现在我们的士兵受到鼓舞，她们都准备好重现日不落的版图了。"
+ HUJ_idea_nvpukangyizhong:"女仆抗议中"
+ HUJ_idea_ziyousixiang:"自由思想"
+ HUJ_idea_ziyousixiang_desc:"女仆们天马行空的鬼点子都会得到重视和实践。"
  #内阁#
  HUJ_hude:0"胡德"
  HUJ_beierfasite:0"贝尔法斯特"
@@ -370,6 +394,10 @@
  #科研联盟#
  HUJ_bilanhangxian:0"碧蓝航线科研合作组"
  HUJ_bilanhangxian_desc:0"碧蓝航线是代表了全人类的组织，碧蓝航线里的国家进行着全方面的科研合作。"
+ HUJ_triat_nvpugonghuilingxiu:"女仆工会领袖"
+ HUJ_triat_nvpugonghuilingxiu_desc:"女仆工会领袖"
+ HUJ_xiefeierde:"谢菲尔德"
+
  
  
  

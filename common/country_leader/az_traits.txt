@@ -1,4 +1,13 @@
 leader_traits = {
+	HUJ_triat_nvpugonghuilingxiu = {
+		random = no
+		communism_acceptance = 25
+		democratic_acceptance = 15
+		communism_drift = 0.05
+		political_power_factor = 0.05
+		production_factory_max_efficiency_factor = 0.05
+		production_factory_efficiency_gain_factor = 0.1
+	}
 	#塞壬神选者
 	sairenshenxuanzhe = {
 		random = no
