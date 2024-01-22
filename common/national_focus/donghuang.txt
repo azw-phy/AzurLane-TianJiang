@@ -1159,7 +1159,13 @@
 					level = 3
 					instant_build = yes
 				}
-			}				
+			}	
+			hidden_effect = {
+				set_victory_points = {
+					province = 1047
+					value = 40
+				}
+			}			
 		}
 	}
 	focus = {
@@ -1485,7 +1491,15 @@
 			army_experience = 50
 			navy_experience = 50
 			air_experience = 50
-			
+			hidden_effect = {
+				set_victory_points = {
+					province = 1070
+					value = 20
+				}
+			}
+			591 = {
+				set_state_category = large_city
+			}
 		}
 	}	
 	
@@ -2576,6 +2590,85 @@
 		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			DOH_dongfangguguo_dengji = yes
+			597 = {
+				set_state_category = city
+			}
+			614 = {
+				set_state_category = city
+			}
+			598 = {
+				set_state_category = city
+			}
+			620 = {
+				set_state_category = large_city
+			}
+			602 = {
+				set_state_category = city
+			}
+			607 = {
+				set_state_category = city
+			}
+			615 = {
+				set_state_category = city
+			}
+			hidden_effect = {
+				set_victory_points = {
+					province = 1519
+					value = 20
+				}
+				set_victory_points = {
+					province = 1069
+					value = 20
+				}
+				set_victory_points = {
+					province = 7097
+					value = 20
+				}
+				set_victory_points = {
+					province = 1319
+					value = 20
+				}
+				set_victory_points = {
+					province = 10404
+					value = 10
+				}
+				set_victory_points = {
+					province = 7137
+					value = 20
+				}
+				set_victory_points = {
+					province = 3992
+					value = 20
+				}
+				set_victory_points = {
+					province = 7222
+					value = 20
+				}
+				set_victory_points = {
+					province = 4619
+					value = 40
+				}
+				set_victory_points = {
+					province = 7101
+					value = 20
+				}
+				set_victory_points = {
+					province = 9958
+					value = 20
+				}
+				set_victory_points = {
+					province = 5033
+					value = 20
+				}
+				set_victory_points = {
+					province = 7186
+					value = 30
+				}
+				set_victory_points = {
+					province = 12068
+					value = 20
+				}
+			}
 		}
 	}
 	focus = {
@@ -2621,6 +2714,23 @@
 				level = 2
 				start_province = 7014 
 				target_province = 9843 
+				}
+			}
+			613 = {
+				set_state_category = megalopolis
+			}
+			hidden_effect = {
+				set_victory_points = {
+					province = 11913
+					value = 50
+				}
+				set_victory_points = {
+					province = 10076
+					value = 20
+				}
+				set_victory_points = {
+					province = 7014
+					value = 40
 				}
 			}
 		}
@@ -2672,6 +2782,19 @@
 				target_province = 9843
 				}
 			}
+			605 = {
+				set_state_category = metropolis
+			}
+			hidden_effect = {
+				set_victory_points = {
+				province = 6999
+				value = 40
+			}
+			set_victory_points = {
+				province = 4925
+				value = 40
+			}
+			}
 		}
 	}
 	focus = {
@@ -2721,6 +2844,19 @@
 					level = 8
 					province = 10068
 					instant_build = yes
+				}
+			}
+			608 = {
+				set_state_category = megalopolis
+			}
+			hidden_effect = {
+				set_victory_points = {
+					province = 9843
+					value = 50
+				}
+				set_victory_points = {
+					province = 10068
+					value = 20
 				}
 			}
 		}
@@ -2849,6 +2985,39 @@
 				target_province = 1778
 				}
 			}
+			744 = {
+				set_state_category = metropolis
+			}
+			hidden_effect = {
+				set_victory_points = {
+					province = 7418
+					value = 30
+				}
+				set_victory_points = {
+					province = 2022
+					value = 20
+				}
+				set_victory_points = {
+					province = 12732
+					value = 20
+				}
+				set_victory_points = {
+					province = 4709
+					value = 20
+				}
+				set_victory_points = {
+					province = 4823
+					value = 10
+				}
+				set_victory_points = {
+					province = 8049
+					value = 10
+				}
+				set_victory_points = {
+					province = 2015
+					value = 20
+				}
+			}
 		}
 	}
 	focus = {
@@ -2949,6 +3118,35 @@
 				level = 1
 				start_province = 9897
 				target_province = 11771
+			}
+			hidden_effect = {
+				set_victory_points = {
+					province = 11771
+					value = 20
+				}
+				set_victory_points = {
+					province = 1150
+					value = 20
+				}
+				set_victory_points = {
+					province = 10433
+					value = 20
+				}
+			}
+			745 = {
+				set_state_category = metropolis
+			}
+			328 = {
+				set_state_category = large_town
+			}
+			716 = {
+				set_state_category = large_town
+			}
+			714 = {
+				set_state_category = rural
+			}
+			717 = {
+				set_state_category = rural
 			}
 		}
 	}
@@ -3369,6 +3567,37 @@
 			    add_political_power = -200
 			    navy_experience = 100
 			}
+			743 = {
+				set_state_category = megalopolis
+			}
+			592 = {
+				set_state_category = megalopolis
+			}
+			596 = {
+				set_state_category = metropolis
+			}
+			hidden_effect = {
+				set_victory_points = {
+					province = 10000
+					value = 20
+				}
+				set_victory_points = {
+					province = 7191
+					value = 20
+				}
+				set_victory_points = {
+					province = 9974
+					value = 20
+				}
+				set_victory_points = {
+					province = 4196
+					value = 20
+				}
+				set_victory_points = {
+					province = 7071
+					value = 20
+				}
+			}
 		}
 	}
 	focus = {
@@ -3556,7 +3785,7 @@
 					add_to_faction = DOH
 				}
 			}
-			else_if = {
+			else = {
 				set_global_flag = DOH_created_gongchanlianmeng
 				create_faction = "共产联盟"
 			}
