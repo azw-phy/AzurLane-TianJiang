@@ -1,4 +1,7 @@
 ﻿l_simp_chinese:
+ DH1_zhiyuanjun_idea:"东煌志愿军"
+ DH1_yuanjiao_idea:"远交"
+ DH1_weilai:"火力限制解除"
  DH1_querentongshuai:"确认统帅"
  DH1_querentongshuai_desc:"国不能一日无君，军也不能一日无帅，我们的远征军必须有一个新的将领，我们需要请求中央为我们派来一名统帅，或是由我们提名。"
  DH1_lvyouzhinan:"旅游指南"
@@ -140,7 +143,7 @@
  DH1_junzhengfu_tooltip:"§C目标将会是：§!建立一个全新的东煌"
  DH1_linglizhongyang_tooltip:"§C目标将会是：§!在西南建立一个新的中央政府，领导东煌"
  DH1_yuanzhengjundeweilai:"远征军的未来"
- DH1_yuanzhengjundeweilai_desc:"远征军的历史使命已经完成。未来将会转型成为生产建设兵团。"
+ DH1_yuanzhengjundeweilai_desc:"远征军的历史使命已经完成，是时候考虑远征军的未来了。"
  DH1_chukoushiyouhexiangjiao:"出口石油和橡胶"
  DH1_chukoushiyouhexiangjiao_desc:"石油运出去，东煌富起来！"
  DH1_qianshuguojixieyi:"签署国际协议"

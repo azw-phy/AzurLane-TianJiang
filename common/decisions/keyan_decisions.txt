@@ -634,7 +634,7 @@ keyan_category = {
 			NOT = { tag = YUW } 
 			is_ai = no
 			NOT = { has_tech = keyantech_jupao }
-			has_global_flag = BYG_jupaotech_get
+			has_global_flag = YUW_jupaotech_get
 		}
 		available = {
 			NOT = { has_tech = keyantech_jupao }
@@ -672,7 +672,7 @@ keyan_category = {
 			NOT = { tag = BYG } 
 			is_ai = no
 			NOT = { has_tech = keyantech_jupao }
-			has_global_flag = BYG_jupaotech_get
+			has_global_flag = YUW_jupaotech_get
 		}
 		available = {
 			NOT = { has_tech = keyantech_jupao }
