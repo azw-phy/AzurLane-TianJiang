@@ -3657,7 +3657,7 @@ focus_tree = {
 			}
 			else = {
 				custom_effect_tooltip = "获得旧鸢尾国全部核心，并成为普罗旺斯和朗格多克的控制者与拥有者。"
-				custom_effect_tooltip = "六个先遣师登陆旧鸢尾国南部沿海"
+				#custom_effect_tooltip = "六个先遣师登陆旧鸢尾国南部沿海"
 				if = {
 				limit = {
 				or = {
@@ -3668,7 +3668,7 @@ focus_tree = {
 				add_ideas = YUW_zmyj
 				}
 				hidden_effect = {
-					load_oob = "YUW_ouzhouxiongji" 
+					#load_oob = "YUW_ouzhouxiongji" 
 					735 = { add_core_of = YUW }
 					21 = { add_core_of = YUW }
 					22 = { add_core_of = YUW }
