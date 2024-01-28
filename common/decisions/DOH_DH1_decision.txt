@@ -4,6 +4,11 @@ DOH_DH1_decision_category = {
 		visible = {
 			tag = DOH
 			is_ai = no
+			DH1 = {
+				NOT = {
+					has_country_flag = DOH_DH1_kaishiyuanzheng_flag
+				}
+			}
 		}
 		available = {
 			tag = DOH
@@ -14,8 +19,8 @@ DOH_DH1_decision_category = {
 				}
 			}
 		}
-		cost = 100
-		days_remove = 10
+		cost = 0
+		days_remove = 1
 		remove_effect = {
 			custom_effect_tooltip = DOH_DH1_kaishiyuanzheng_tooltip
 			hidden_effect = {

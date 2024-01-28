@@ -398,6 +398,157 @@ country_event = {
 	}
 }
 country_event = {
+	id = DH1_event.7
+	title = DH1_event.7.t
+	desc = DH1_event.7.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = DH1_event.7.aa
+		trigger = {
+			DH1 = {
+				controls_state = 640
+			}
+		}
+		DH1 = {
+			set_capital = {
+				state = 640
+			}
+		}
+		hidden_effect = {
+			set_victory_points = {
+				province = 1492
+				value = 20
+			}
+		}
+	}
+	option = {
+		name = DH1_event.7.ab
+		trigger = {
+			DH1 = {
+				controls_state = 439
+			}
+		}
+		DH1 = {
+			set_capital = {
+				state = 439
+			}
+		}
+	}
+	option = {
+		name = DH1_event.7.ac
+		trigger = {
+			DH1 = {
+				controls_state = 289
+			}
+		}
+		DH1 = {
+			set_capital = {
+				state = 289
+			}
+		}
+	}
+	option = {
+		name = DH1_event.7.next
+		country_event = DH1_event.72
+	}
+}
+country_event = {
+	id = DH1_event.72
+	title = DH1_event.7.t
+	desc = DH1_event.7.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	
+	option = {
+		name = DH1_event.7.ad
+		trigger = {
+			DH1 = {
+				controls_state = 286
+			}
+		}
+		DH1 = {
+			set_capital = {
+				state = 286
+			}
+		}
+	}
+	option = {
+		name = DH1_event.7.ae
+		trigger = {
+			DH1 = {
+				controls_state = 671
+			}
+		}
+		DH1 = {
+			set_capital = {
+				state = 671
+			}
+		}
+	}
+	option = {
+		name = DH1_event.7.af
+		trigger = {
+			DH1 = {
+				controls_state = 327
+			}
+		}
+		DH1 = {
+			set_capital = {
+				state = 327
+			}
+		}
+	}
+	option = {
+		name = DH1_event.7.next
+		country_event = DH1_event.73
+	}
+}
+country_event = {
+	id = DH1_event.73
+	title = DH1_event.7.t
+	desc = DH1_event.7.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	
+	option = {
+		name = DH1_event.7.ag
+		trigger = {
+			DH1 = {
+				controls_state = 525
+			}
+		}
+		DH1 = {
+			set_capital = {
+				state = 525
+			}
+		}
+	}
+	option = {
+		name = DH1_event.7.ah
+		trigger = {
+			DH1 = {
+				controls_state = 333
+			}
+		}
+		DH1 = {
+			set_capital = {
+				state = 333
+			}
+		}
+		hidden_effect = {
+			set_victory_points = {
+				province = 7371
+				value = 20
+			}
+		}
+	}
+	option = {
+		name = DH1_event.7.next
+		country_event = DH1_event.7
+	}
+}
+country_event = {
 	id = DH1_event.777
 	hidden = yes
 	is_triggered_only = yes

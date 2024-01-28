@@ -222,20 +222,23 @@ BYG_norfolk_naval_yard_organization = {
 			maximum_speed = 0.03
 			naval_range = 0.1
       	}
-
-		  production_bonus = {
-			production_resource_need_factor = -0.5
+		production_bonus = {
+			production_resource_need_factor = -0.55
 		}
-
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
 		on_complete = {
-			FROM = { mio:BYG_norfolk_naval_yard_organization = {
+			ROOT = {
 				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.35
 			}
-			navy_experience = 200 }
+			FROM = {
+				navy_experience = 200
+			}
 		}
 	}
-	add_trait = {  
+
+	add_trait = {
 		token = bulizaochuanchang_2
 		name = bulizaochuanchang_2
 		icon = GFX_idea_BLI_zaochuanchang2
@@ -253,19 +256,20 @@ BYG_norfolk_naval_yard_organization = {
 			carrier_size = 1
 			torpedo_attack = 0.15
 			build_cost_ic = -0.1
-      	}
-
-		  production_bonus = {
-			production_resource_need_factor = -0.5
+  	    }
+		production_bonus = {
+			production_resource_need_factor = -0.55
 		}
-
-		  on_complete = {
-			FROM = { 
-				mio:BYG_norfolk_naval_yard_organization = {
-					add_mio_size = 1
-					add_mio_funds_gain_factor = 0.35
-				}
-				navy_experience = 200 }
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
+				add_mio_size = 1
+			}
+			FROM = {
+				navy_experience = 200
+			}
 		}
 	}
 }
@@ -294,20 +298,23 @@ BYG_electric_boat_company_organization = {
 			maximum_speed = 0.03
 			naval_range = 0.1
       	}
-
-		  production_bonus = {
-			production_resource_need_factor = -0.5
+		production_bonus = {
+			production_resource_need_factor = -0.55
 		}
-
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
 		on_complete = {
-			FROM = { mio:BYG_electric_boat_company_organization = {
+			ROOT = {
 				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.35
 			}
-			navy_experience = 200 }
+			FROM = {
+				navy_experience = 200
+			}
 		}
 	}
-	add_trait = {  
+
+	add_trait = {
 		token = bulizaochuanchang_2
 		name = bulizaochuanchang_2
 		icon = GFX_idea_BLI_zaochuanchang2
@@ -325,18 +332,20 @@ BYG_electric_boat_company_organization = {
 			carrier_size = 1
 			torpedo_attack = 0.15
 			build_cost_ic = -0.1
-      	}
-
-		  production_bonus = {
-			production_resource_need_factor = -0.5
+  	    }
+		production_bonus = {
+			production_resource_need_factor = -0.55
 		}
-
-		  on_complete = {
-			FROM = { mio:BYG_electric_boat_company_organization = {
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
 				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.35
 			}
-			navy_experience = 200 }
+			FROM = {
+				navy_experience = 200
+			}
 		}
 	}
 }
@@ -365,20 +374,23 @@ BYG_brooklyn_naval_yard_organization = {
 			maximum_speed = 0.03
 			naval_range = 0.1
       	}
-
-		  production_bonus = {
-			production_resource_need_factor = -0.5
+		production_bonus = {
+			production_resource_need_factor = -0.55
 		}
-
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
 		on_complete = {
-			FROM = { mio:BYG_brooklyn_naval_yard_organization = {
+			ROOT = {
 				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.35
 			}
-			navy_experience = 200 }
+			FROM = {
+				navy_experience = 200
+			}
 		}
 	}
-	add_trait = {  
+
+	add_trait = {
 		token = bulizaochuanchang_2
 		name = bulizaochuanchang_2
 		icon = GFX_idea_BLI_zaochuanchang2
@@ -396,19 +408,20 @@ BYG_brooklyn_naval_yard_organization = {
 			carrier_size = 1
 			torpedo_attack = 0.15
 			build_cost_ic = -0.1
-      	}
-
-		  production_bonus = {
-			production_resource_need_factor = -0.5
+  	    }
+		production_bonus = {
+			production_resource_need_factor = -0.55
 		}
-
-		  on_complete = {
-			FROM = { 
-				mio:BYG_brooklyn_naval_yard_organization = {
-					add_mio_size = 1
-					add_mio_funds_gain_factor = 0.35
-				}
-				navy_experience = 200 }
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
+				add_mio_size = 1
+			}
+			FROM = {
+				navy_experience = 200
+			}
 		}
 	}
 }
@@ -437,20 +450,23 @@ BYG_newport_news_shipbuilding_organization = {
 			maximum_speed = 0.03
 			naval_range = 0.1
       	}
-
-		  production_bonus = {
-			production_resource_need_factor = -0.5
+		production_bonus = {
+			production_resource_need_factor = -0.55
 		}
-
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
 		on_complete = {
-			FROM = { mio:BYG_newport_news_shipbuilding_organization = {
+			ROOT = {
 				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.35
 			}
-			navy_experience = 200 }
+			FROM = {
+				navy_experience = 200
+			}
 		}
 	}
-	add_trait = {  
+
+	add_trait = {
 		token = bulizaochuanchang_2
 		name = bulizaochuanchang_2
 		icon = GFX_idea_BLI_zaochuanchang2
@@ -468,18 +484,20 @@ BYG_newport_news_shipbuilding_organization = {
 			carrier_size = 1
 			torpedo_attack = 0.15
 			build_cost_ic = -0.1
-      	}
-
-		  production_bonus = {
-			production_resource_need_factor = -0.5
+  	    }
+		production_bonus = {
+			production_resource_need_factor = -0.55
 		}
-
-		  on_complete = {
-			FROM = { mio:BYG_newport_news_shipbuilding_organization = {
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
 				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.35
 			}
-			navy_experience = 200 }
+			FROM = {
+				navy_experience = 200
+			}
 		}
 	}
 }

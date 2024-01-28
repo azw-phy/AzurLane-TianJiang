@@ -1767,6 +1767,9 @@
 				can_force_government = yes
 			}
 			add_ideas = DH1_weilai
+			DOH = {
+				country_event = DH1_event.7
+			}
 		}
 	}
 
@@ -2270,82 +2273,85 @@
 
 		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			annex_country = {
-				target = INS
-				transfer_troops = yes
+			custom_effect_tooltip = DH1_xiananyang_tooltip
+			hidden_effect = {
+				annex_country = {
+					target = INS
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = PHI
+					transfer_troops = yes
+				}
+				
+				transfer_state = 738
+				transfer_state = 668
+				transfer_state = 721
+				transfer_state = 667
+				transfer_state = 335
+				transfer_state = 672
+				transfer_state = 733
+				transfer_state = 711
+				transfer_state = 523
+				transfer_state = 737
+				transfer_state = 634
+				transfer_state = 673
+				transfer_state = 334
+				transfer_state = 333
+				transfer_state = 669
+				transfer_state = 640
+				transfer_state = 288
+				transfer_state = 671
+				transfer_state = 670
+				transfer_state = 741
+				transfer_state = 286
+				transfer_state = 868
+				transfer_state = 869
+				transfer_state = 289
+				transfer_state = 724
+				transfer_state = 336
+				transfer_state = 623
+				transfer_state = 327
+				transfer_state = 626
+				transfer_state = 628
+				transfer_state = 625
+				transfer_state = 627
+				transfer_state = 624
+	
+				add_state_core = 738
+				add_state_core = 668
+				add_state_core = 721
+				add_state_core = 667
+				add_state_core = 335
+				add_state_core = 672
+				add_state_core = 733
+				add_state_core = 711
+				add_state_core = 523
+				add_state_core = 737
+				add_state_core = 634
+				add_state_core = 673
+				add_state_core = 334
+				add_state_core = 333
+				add_state_core = 669
+				add_state_core = 640
+				add_state_core = 288
+				add_state_core = 671
+				add_state_core = 670
+				add_state_core = 741
+				add_state_core = 286
+				add_state_core = 868
+				add_state_core = 869
+				add_state_core = 289
+				add_state_core = 724
+				add_state_core = 336
+				add_state_core = 623
+				add_state_core = 327
+				add_state_core = 626
+				add_state_core = 628
+				add_state_core = 625
+				add_state_core = 627
+				add_state_core = 624
 			}
-			annex_country = {
-				target = PHI
-				transfer_troops = yes
-			}
-			
-            transfer_state = 738
-            transfer_state = 668
-            transfer_state = 721
-            transfer_state = 667
-            transfer_state = 335
-            transfer_state = 672
-            transfer_state = 733
-            transfer_state = 711
-            transfer_state = 523
-            transfer_state = 737
-            transfer_state = 634
-            transfer_state = 673
-            transfer_state = 334
-            transfer_state = 333
-            transfer_state = 669
-            transfer_state = 640
-            transfer_state = 288
-            transfer_state = 671
-    		transfer_state = 670
-	    	transfer_state = 741
-		    transfer_state = 286
-			transfer_state = 868
-    		transfer_state = 869
-	    	transfer_state = 289
-		    transfer_state = 724
-            transfer_state = 336
-            transfer_state = 623
-            transfer_state = 327
-            transfer_state = 626
-            transfer_state = 628
-            transfer_state = 625
-            transfer_state = 627
-            transfer_state = 624
-
-			add_state_core = 738
-            add_state_core = 668
-            add_state_core = 721
-            add_state_core = 667
-            add_state_core = 335
-            add_state_core = 672
-            add_state_core = 733
-            add_state_core = 711
-            add_state_core = 523
-            add_state_core = 737
-            add_state_core = 634
-            add_state_core = 673
-            add_state_core = 334
-            add_state_core = 333
-            add_state_core = 669
-            add_state_core = 640
-            add_state_core = 288
-            add_state_core = 671
-    		add_state_core = 670
-	    	add_state_core = 741
-		    add_state_core = 286
-			add_state_core = 868
-    		add_state_core = 869
-	    	add_state_core = 289
-		    add_state_core = 724
-            add_state_core = 336
-            add_state_core = 623
-            add_state_core = 327
-            add_state_core = 626
-            add_state_core = 628
-            add_state_core = 625
-            add_state_core = 627
-            add_state_core = 624
 		}
 	}
 

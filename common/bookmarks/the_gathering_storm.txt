@@ -179,10 +179,13 @@ bookmarks = {
 			history = "SIREN_DH1_DESC"
 			ideology = democratic
 			ideas = {	
-				
+				DH1_zongtizhan_idea
+				DH1_zousitongdao
 			}
 			focuses = {
-				
+				DH1_junkenhetuntian
+				DH1_jingong
+				DH1_xinanshibian
 			}
 			
 		}

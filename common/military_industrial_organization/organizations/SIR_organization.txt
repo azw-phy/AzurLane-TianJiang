@@ -69,20 +69,23 @@ SIR_carrier_organization = {
 			maximum_speed = 0.03
 			naval_range = 0.1
       	}
-
-		  production_bonus = {
-			production_resource_need_factor = -0.5
+		production_bonus = {
+			production_resource_need_factor = -0.55
 		}
-
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
 		on_complete = {
-			FROM = { mio:SIR_carrier_organization = {
+			ROOT = {
 				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.35
 			}
-			navy_experience = 200 }
+			FROM = {
+				navy_experience = 200
+			}
 		}
 	}
-	add_trait = {  
+
+	add_trait = {
 		token = bulizaochuanchang_2
 		name = bulizaochuanchang_2
 		icon = GFX_idea_BLI_zaochuanchang2
@@ -100,18 +103,20 @@ SIR_carrier_organization = {
 			carrier_size = 1
 			torpedo_attack = 0.15
 			build_cost_ic = -0.1
-      	}
-
-		  production_bonus = {
-			production_resource_need_factor = -0.5
+  	    }
+		production_bonus = {
+			production_resource_need_factor = -0.55
 		}
-
-		  on_complete = {
-			FROM = { mio:SIR_carrier_organization = {
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
 				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.35
 			}
-			navy_experience = 200 }
+			FROM = {
+				navy_experience = 200
+			}
 		}
 	}
 }
@@ -146,20 +151,23 @@ SIR_BB_organization = {
 			maximum_speed = 0.03
 			naval_range = 0.1
       	}
-
-		  production_bonus = {
-			production_resource_need_factor = -0.5
+		production_bonus = {
+			production_resource_need_factor = -0.55
 		}
-
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
 		on_complete = {
-			FROM = { mio:SIR_BB_organization = {
+			ROOT = {
 				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.35
 			}
-			navy_experience = 200 }
+			FROM = {
+				navy_experience = 200
+			}
 		}
 	}
-	add_trait = {  
+
+	add_trait = {
 		token = bulizaochuanchang_2
 		name = bulizaochuanchang_2
 		icon = GFX_idea_BLI_zaochuanchang2
@@ -177,18 +185,20 @@ SIR_BB_organization = {
 			carrier_size = 1
 			torpedo_attack = 0.15
 			build_cost_ic = -0.1
-      	}
-
-		  production_bonus = {
-			production_resource_need_factor = -0.5
+  	    }
+		production_bonus = {
+			production_resource_need_factor = -0.55
 		}
-
-		  on_complete = {
-			FROM = { mio:SIR_BB_organization = {
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
 				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.35
 			}
-			navy_experience = 200 }
+			FROM = {
+				navy_experience = 200
+			}
 		}
 	}
 }
@@ -223,20 +233,23 @@ SIR_SL_organization = {
 			maximum_speed = 0.03
 			naval_range = 0.1
       	}
-
-		  production_bonus = {
-			production_resource_need_factor = -0.5
+		production_bonus = {
+			production_resource_need_factor = -0.55
 		}
-
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
 		on_complete = {
-			FROM = { mio:SIR_SL_organization = {
+			ROOT = {
 				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.35
 			}
-			navy_experience = 200 }
+			FROM = {
+				navy_experience = 200
+			}
 		}
 	}
-	add_trait = {  
+
+	add_trait = {
 		token = bulizaochuanchang_2
 		name = bulizaochuanchang_2
 		icon = GFX_idea_BLI_zaochuanchang2
@@ -254,18 +267,20 @@ SIR_SL_organization = {
 			carrier_size = 1
 			torpedo_attack = 0.15
 			build_cost_ic = -0.1
-      	}
-
-		  production_bonus = {
-			production_resource_need_factor = -0.5
+  	    }
+		production_bonus = {
+			production_resource_need_factor = -0.55
 		}
-
-		  on_complete = {
-			FROM = { mio:SIR_SL_organization = {
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
 				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.35
 			}
-			navy_experience = 200 }
+			FROM = {
+				navy_experience = 200
+			}
 		}
 	}
 }
@@ -300,20 +315,23 @@ SIR_SM_organization = {
 			maximum_speed = 0.03
 			naval_range = 0.1
       	}
-
-		  production_bonus = {
-			production_resource_need_factor = -0.5
+		production_bonus = {
+			production_resource_need_factor = -0.55
 		}
-
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
 		on_complete = {
-			FROM = { mio:SIR_SM_organization = {
+			ROOT = {
 				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.35
 			}
-			navy_experience = 200 }
+			FROM = {
+				navy_experience = 200
+			}
 		}
 	}
-	add_trait = {  
+
+	add_trait = {
 		token = bulizaochuanchang_2
 		name = bulizaochuanchang_2
 		icon = GFX_idea_BLI_zaochuanchang2
@@ -331,18 +349,20 @@ SIR_SM_organization = {
 			carrier_size = 1
 			torpedo_attack = 0.15
 			build_cost_ic = -0.1
-      	}
-
-		  production_bonus = {
-			production_resource_need_factor = -0.5
+  	    }
+		production_bonus = {
+			production_resource_need_factor = -0.55
 		}
-
-		  on_complete = {
-			FROM = { mio:SIR_SM_organization = {
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
 				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.35
 			}
-			navy_experience = 200 }
+			FROM = {
+				navy_experience = 200
+			}
 		}
 	}
 }

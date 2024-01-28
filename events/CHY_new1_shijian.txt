@@ -496,6 +496,9 @@ country_event = {
 		transfer_state = 717
 		transfer_state = 328
 		transfer_state = 524
+		CHY = {
+			country_event = CHY_new1_shijian.1301
+		}
 	}
 	option = {
 		name = CHY_new1_shijian.13.b

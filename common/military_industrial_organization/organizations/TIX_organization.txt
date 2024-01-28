@@ -146,20 +146,23 @@ TIX_germaniawerft_organization = {
 			maximum_speed = 0.03
 			naval_range = 0.1
       	}
-
-		  production_bonus = {
-			production_resource_need_factor = -0.5
+		production_bonus = {
+			production_resource_need_factor = -0.55
 		}
-
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
 		on_complete = {
-			FROM = { mio:TIX_germaniawerft_organization = {
+			ROOT = {
 				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.35
 			}
-				navy_experience = 200 }
+			FROM = {
+				navy_experience = 200
+			}
 		}
 	}
-	add_trait = {  
+
+	add_trait = {
 		token = bulizaochuanchang_2
 		name = bulizaochuanchang_2
 		icon = GFX_idea_BLI_zaochuanchang2
@@ -177,18 +180,20 @@ TIX_germaniawerft_organization = {
 			carrier_size = 1
 			torpedo_attack = 0.15
 			build_cost_ic = -0.1
-      	}
-
-		  production_bonus = {
-			production_resource_need_factor = -0.5
+  	    }
+		production_bonus = {
+			production_resource_need_factor = -0.55
 		}
-
-		  on_complete = {
-			FROM = { mio:TIX_germaniawerft_organization = {
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
 				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.35
 			}
-				navy_experience = 200 }
+			FROM = {
+				navy_experience = 200
+			}
 		}
 	}
 }
@@ -219,20 +224,23 @@ TIX_blohm_und_voss_organization = {
 			maximum_speed = 0.03
 			naval_range = 0.1
       	}
-
-		  production_bonus = {
-			production_resource_need_factor = -0.5
+		production_bonus = {
+			production_resource_need_factor = -0.55
 		}
-
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
 		on_complete = {
-			FROM = { mio:TIX_blohm_und_voss_organization = {
+			ROOT = {
 				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.35
 			}
-				navy_experience = 200 }
+			FROM = {
+				navy_experience = 200
+			}
 		}
 	}
-	add_trait = {  
+
+	add_trait = {
 		token = bulizaochuanchang_2
 		name = bulizaochuanchang_2
 		icon = GFX_idea_BLI_zaochuanchang2
@@ -250,18 +258,20 @@ TIX_blohm_und_voss_organization = {
 			carrier_size = 1
 			torpedo_attack = 0.15
 			build_cost_ic = -0.1
-      	}
-
-		  production_bonus = {
-			production_resource_need_factor = -0.5
+  	    }
+		production_bonus = {
+			production_resource_need_factor = -0.55
 		}
-
-		  on_complete = {
-			FROM = { mio:TIX_blohm_und_voss_organization = {
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
 				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.35
 			}
-				navy_experience = 200 }
+			FROM = {
+				navy_experience = 200
+			}
 		}
 	}
 }

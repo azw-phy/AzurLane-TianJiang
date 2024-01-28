@@ -1179,5 +1179,5 @@ ideas = {
 			
 			traits = { electronics_concern }
 		}
-		
+	}
 }

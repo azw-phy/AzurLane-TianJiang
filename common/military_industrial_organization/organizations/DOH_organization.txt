@@ -72,7 +72,7 @@ DOH_dalianzaochuan_organization = {
 		tag = DOH
 	}
 
-	add_trait = {
+	add_trait = {  
 		token = bulizaochuanchang_1
 		name = bulizaochuanchang_1
 		icon = GFX_idea_BLI_zaochuanchang1
@@ -89,22 +89,24 @@ DOH_dalianzaochuan_organization = {
 			armor_value = 0.05
 			maximum_speed = 0.03
 			naval_range = 0.1
-      		}
-		
+      	}
 		production_bonus = {
 			production_resource_need_factor = -0.55
 		}
-	
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
 		on_complete = {
-			FROM = { mio:DOH_dalianzaochuan_organization = {
+			ROOT = {
 				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.35
 			}
-			navy_experience = 200 }
+			FROM = {
+				navy_experience = 200
+			}
 		}
 	}
 
-	add_trait = {  
+	add_trait = {
 		token = bulizaochuanchang_2
 		name = bulizaochuanchang_2
 		icon = GFX_idea_BLI_zaochuanchang2
@@ -122,16 +124,20 @@ DOH_dalianzaochuan_organization = {
 			carrier_size = 1
 			torpedo_attack = 0.15
 			build_cost_ic = -0.1
-  	    	}
-			production_bonus = {
-				production_resource_need_factor = -0.55
-			}
-		  on_complete = {
-			FROM = { mio:DOH_dalianzaochuan_organization = {
+  	    }
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
 				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.35
 			}
-			navy_experience = 200 }
+			FROM = {
+				navy_experience = 200
+			}
 		}
 	}
 
@@ -232,20 +238,24 @@ DOH_hudong_organization = {
 			armor_value = 0.05
 			maximum_speed = 0.03
 			naval_range = 0.1
-      		}
-			  production_bonus = {
-				production_resource_need_factor = -0.55
-			}
+      	}
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
 		on_complete = {
-			FROM = { mio:DOH_hudong_organization = {
+			ROOT = {
 				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.35
 			}
-			navy_experience = 200 }
+			FROM = {
+				navy_experience = 200
+			}
 		}
 	}
 
-	add_trait = {  
+	add_trait = {
 		token = bulizaochuanchang_2
 		name = bulizaochuanchang_2
 		icon = GFX_idea_BLI_zaochuanchang2
@@ -263,41 +273,23 @@ DOH_hudong_organization = {
 			carrier_size = 1
 			torpedo_attack = 0.15
 			build_cost_ic = -0.1
-  	    	}
-			  production_bonus = {
-				production_resource_need_factor = -0.55
-			}
-		  on_complete = {
-			FROM = { mio:DOH_hudong_organization = {
+  	    }
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
 				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.35
 			}
-			navy_experience = 200 }
+			FROM = {
+				navy_experience = 200
+			}
 		}
 	}
 
-	add_trait = {  
-		token = gongyejituan
-		name = gongyejituan
-		icon = GFX_generic_mio_department_icon_facilities
-		special_trait_background = yes
-
-		position = { x=9 y=0 }  
-
-		available = {
-			FROM = { 
-				OR = {
-					has_completed_focus =  CHY_gongyejituan 
-					has_country_flag = chy_jungongyuanzhu_flag
-					is_ally_with = CHY
-				}
-			}
-		}
-		
-		equipment_bonus = {
-			reliability = 0.15
-      	}
-	}
 	add_trait = {  
 		token = jishujiaoliu_wuhe
 		name = jishujiaoliu_wuhe
@@ -319,24 +311,6 @@ DOH_hudong_organization = {
 			production_capacity_factor = 0.10
 		}
 	}
-	add_trait = {
-		token = jishugaijing
-		name = jishugaijing
-		icon = GFX_generic_mio_trait_icon_unique
-		special_trait_background = yes
-
-		position = { x=7 y=4 }  
-
-		available = {
-			FROM = {
-				num_of_naval_factories > 60
-			}
-		}
-		production_bonus = {
-			production_capacity_factor = 0.10
-		}
-	}
-
 	available = {
 		owner = {
 			OR = {
@@ -421,20 +395,24 @@ DOH_wuchangzaochuanchang_organization = {
 			armor_value = 0.05
 			maximum_speed = 0.03
 			naval_range = 0.1
-      		}
-			  production_bonus = {
-				production_resource_need_factor = -0.55
-			}
+      	}
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
 		on_complete = {
-			FROM = { mio:DOH_wuchangzaochuanchang_organization = {
+			ROOT = {
 				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.35
 			}
-			navy_experience = 200 }
+			FROM = {
+				navy_experience = 200
+			}
 		}
 	}
 
-	add_trait = {  
+	add_trait = {
 		token = bulizaochuanchang_2
 		name = bulizaochuanchang_2
 		icon = GFX_idea_BLI_zaochuanchang2
@@ -452,16 +430,20 @@ DOH_wuchangzaochuanchang_organization = {
 			carrier_size = 1
 			torpedo_attack = 0.15
 			build_cost_ic = -0.1
-  	    	}
-			  production_bonus = {
-				production_resource_need_factor = -0.55
-			}
-		  on_complete = {
-			FROM = { mio:DOH_wuchangzaochuanchang_organization = {
+  	    }
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
 				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.35
 			}
-			navy_experience = 200 }
+			FROM = {
+				navy_experience = 200
+			}
 		}
 	}
 
@@ -548,20 +530,23 @@ DOH_jiangnan_shipyard_group_organization = {
 			maximum_speed = 0.03
 			naval_range = 0.1
       	}
-
-		  production_bonus = {
-			production_resource_need_factor = -0.5
+		production_bonus = {
+			production_resource_need_factor = -0.55
 		}
-
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
 		on_complete = {
-			FROM = { mio:DOH_jiangnan_shipyard_group_organization = {
+			ROOT = {
 				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.35
 			}
-			navy_experience = 200 }
+			FROM = {
+				navy_experience = 200
+			}
 		}
 	}
-	add_trait = {  
+
+	add_trait = {
 		token = bulizaochuanchang_2
 		name = bulizaochuanchang_2
 		icon = GFX_idea_BLI_zaochuanchang2
@@ -579,18 +564,20 @@ DOH_jiangnan_shipyard_group_organization = {
 			carrier_size = 1
 			torpedo_attack = 0.15
 			build_cost_ic = -0.1
-      	}
-
-		  production_bonus = {
-			production_resource_need_factor = -0.5
+  	    }
+		production_bonus = {
+			production_resource_need_factor = -0.55
 		}
-
-		  on_complete = {
-			FROM = { mio:DOH_jiangnan_shipyard_group_organization = {
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
 				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.35
 			}
-			navy_experience = 200 }
+			FROM = {
+				navy_experience = 200
+			}
 		}
 	}
 	available = {
@@ -663,20 +650,23 @@ DOH_dagu_shipyard_organization = {
 			maximum_speed = 0.03
 			naval_range = 0.1
       	}
-
-		  production_bonus = {
-			production_resource_need_factor = -0.5
+		production_bonus = {
+			production_resource_need_factor = -0.55
 		}
-
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
 		on_complete = {
-			FROM = { mio:DOH_dagu_shipyard_organization = {
+			ROOT = {
 				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.35
 			}
-			navy_experience = 200 }
+			FROM = {
+				navy_experience = 200
+			}
 		}
 	}
-	add_trait = {  
+
+	add_trait = {
 		token = bulizaochuanchang_2
 		name = bulizaochuanchang_2
 		icon = GFX_idea_BLI_zaochuanchang2
@@ -694,18 +684,20 @@ DOH_dagu_shipyard_organization = {
 			carrier_size = 1
 			torpedo_attack = 0.15
 			build_cost_ic = -0.1
-      	}
-
-		  production_bonus = {
-			production_resource_need_factor = -0.5
+  	    }
+		production_bonus = {
+			production_resource_need_factor = -0.55
 		}
-
-		  on_complete = {
-			FROM = { mio:DOH_dagu_shipyard_organization = {
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
 				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.35
 			}
-			navy_experience = 200 }
+			FROM = {
+				navy_experience = 200
+			}
 		}
 	}
 	available = {

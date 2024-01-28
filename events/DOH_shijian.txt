@@ -474,6 +474,9 @@ country_event = {
 		transfer_state = 527
 		transfer_state = 525
 		white_peace = CHY
+		CHY = {
+			country_event = CHY_new1_shijian.1301
+		}
 	}
 }
 country_event = {

@@ -123,20 +123,23 @@ SAD_crda_organization = {
 			maximum_speed = 0.03
 			naval_range = 0.1
       	}
-
-		  production_bonus = {
-			production_resource_need_factor = -0.5
+		production_bonus = {
+			production_resource_need_factor = -0.55
 		}
-
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
 		on_complete = {
-			FROM = { mio:SAD_crda_organization = {
+			ROOT = {
 				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.35
 			}
-				navy_experience = 200 }
+			FROM = {
+				navy_experience = 200
+			}
 		}
 	}
-	add_trait = {  
+
+	add_trait = {
 		token = bulizaochuanchang_2
 		name = bulizaochuanchang_2
 		icon = GFX_idea_BLI_zaochuanchang2
@@ -154,18 +157,20 @@ SAD_crda_organization = {
 			carrier_size = 1
 			torpedo_attack = 0.15
 			build_cost_ic = -0.1
-      	}
-
-		  production_bonus = {
-			production_resource_need_factor = -0.5
+  	    }
+		production_bonus = {
+			production_resource_need_factor = -0.55
 		}
-
-		  on_complete = {
-			FROM = { mio:SAD_crda_organization = {
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
 				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.35
 			}
-				navy_experience = 200 }
+			FROM = {
+				navy_experience = 200
+			}
 		}
 	}
 
@@ -326,7 +331,7 @@ SAD_navalmeccanica_organization = {
 		icon = GFX_idea_BLI_zaochuanchang1
 		special_trait_background = yes
 
-		position = { x=8 y=2 }  
+		position = { x=8 y=4 }  
 
 		available = {
 			FROM = { has_country_flag =  buligongyi1_get }
@@ -338,26 +343,29 @@ SAD_navalmeccanica_organization = {
 			maximum_speed = 0.03
 			naval_range = 0.1
       	}
-
-		  production_bonus = {
-			production_resource_need_factor = -0.5
+		production_bonus = {
+			production_resource_need_factor = -0.55
 		}
-
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
 		on_complete = {
-			FROM = { mio:SAD_navalmeccanica_organization = {
+			ROOT = {
 				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.35
 			}
-				navy_experience = 200 }
+			FROM = {
+				navy_experience = 200
+			}
 		}
 	}
-	add_trait = {  
+
+	add_trait = {
 		token = bulizaochuanchang_2
 		name = bulizaochuanchang_2
 		icon = GFX_idea_BLI_zaochuanchang2
 		special_trait_background = yes
 
-		position = { x=9 y=2 }  
+		position = { x=9 y=4 }  
 
 		available = {
 			FROM = { has_country_flag =  buligongyi2_get }
@@ -369,18 +377,20 @@ SAD_navalmeccanica_organization = {
 			carrier_size = 1
 			torpedo_attack = 0.15
 			build_cost_ic = -0.1
-      	}
-
-		  production_bonus = {
-			production_resource_need_factor = -0.5
+  	    }
+		production_bonus = {
+			production_resource_need_factor = -0.55
 		}
-
-		  on_complete = {
-			FROM = { mio:SAD_navalmeccanica_organization = {
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
 				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.35
 			}
-				navy_experience = 200 }
+			FROM = {
+				navy_experience = 200
+			}
 		}
 	}
 } 
@@ -434,20 +444,23 @@ SAD_cantiere_navale_di_ancona_organization = {
 			maximum_speed = 0.03
 			naval_range = 0.1
       	}
-
-		  production_bonus = {
-			production_resource_need_factor = -0.5
+		production_bonus = {
+			production_resource_need_factor = -0.55
 		}
-
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
 		on_complete = {
-			FROM = { mio:SAD_cantiere_navale_di_ancona_organization = {
+			ROOT = {
 				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.35
 			}
-				navy_experience = 200 }
+			FROM = {
+				navy_experience = 200
+			}
 		}
 	}
-	add_trait = {  
+
+	add_trait = {
 		token = bulizaochuanchang_2
 		name = bulizaochuanchang_2
 		icon = GFX_idea_BLI_zaochuanchang2
@@ -465,18 +478,20 @@ SAD_cantiere_navale_di_ancona_organization = {
 			carrier_size = 1
 			torpedo_attack = 0.15
 			build_cost_ic = -0.1
-      	}
-
-		  production_bonus = {
-			production_resource_need_factor = -0.5
+  	    }
+		production_bonus = {
+			production_resource_need_factor = -0.55
 		}
-
-		  on_complete = {
-			FROM = { mio:SAD_cantiere_navale_di_ancona_organization = {
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
 				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.35
 			}
-				navy_experience = 200 }
+			FROM = {
+				navy_experience = 200
+			}
 		}
 	}
 }
@@ -530,20 +545,23 @@ SAD_cantieri_navali_tosi_organization = {
 			maximum_speed = 0.03
 			naval_range = 0.1
       	}
-
-		  production_bonus = {
-			production_resource_need_factor = -0.5
+		production_bonus = {
+			production_resource_need_factor = -0.55
 		}
-
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
 		on_complete = {
-			FROM = { mio:SAD_cantieri_navali_tosi_organization = {
+			ROOT = {
 				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.35
 			}
-				navy_experience = 200 }
+			FROM = {
+				navy_experience = 200
+			}
 		}
 	}
-	add_trait = {  
+
+	add_trait = {
 		token = bulizaochuanchang_2
 		name = bulizaochuanchang_2
 		icon = GFX_idea_BLI_zaochuanchang2
@@ -561,18 +579,20 @@ SAD_cantieri_navali_tosi_organization = {
 			carrier_size = 1
 			torpedo_attack = 0.15
 			build_cost_ic = -0.1
-      	}
-
-		  production_bonus = {
-			production_resource_need_factor = -0.5
+  	    }
+		production_bonus = {
+			production_resource_need_factor = -0.55
 		}
-
-		  on_complete = {
-			FROM = { mio:SAD_cantieri_navali_tosi_organization = {
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
 				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.35
 			}
-				navy_experience = 200 }
+			FROM = {
+				navy_experience = 200
+			}
 		}
 	}
 }

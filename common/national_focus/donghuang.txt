@@ -1845,22 +1845,28 @@
 			factor = 3
 		}
 
-
-
-
-
-
-
-
 		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			every_army_leader = {
-				limit = { is_field_marshal = NO }
-				add_skill_level = 1
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				every_army_leader = {
+					limit = { is_field_marshal = NO }
+					add_skill_level = 1
+				}
+				every_army_leader = {
+					limit = { is_field_marshal = yes }
+					add_skill_level = 2
+				}
 			}
-			every_army_leader = {
-				limit = { is_field_marshal = yes }
-				add_skill_level = 2
+			if = {
+				limit = {
+					is_ai = no
+				}
+				every_army_leader = {
+					add_skill_level = 2
+				}
 			}
 			custom_effect_tooltip = "招募西风和北风"
 			hidden_effect = {
@@ -2077,7 +2083,7 @@
 		icon = GFX_goal_generic_navy_battleship
 		x = 0
 		y = 1
-		cost = 15
+		cost = 7
 		prerequisite = { focus = DOH_haijunjianshe }
 		relative_position_id = DOH_haijunjianshe
 		ai_will_do = {
@@ -2569,7 +2575,7 @@
 	focus = {
 		id = DOH_donghuangdeshidai
 		icon = GFX_focus_donghuang
-		x = 49 
+		x = 52
 		y = 0
 		cost = 5
 
@@ -3017,6 +3023,14 @@
 					province = 2015
 					value = 20
 				}
+				set_victory_points = {
+					province = 4823
+					value = 10
+				}
+				set_victory_points = {
+					province = 8127
+					value = 20
+				}
 			}
 		}
 	}
@@ -3267,7 +3281,7 @@
 		x = 0
 		y = 1
 		cost = 5
-#		prerequisite = { focus = DOH_xianfazhiren }
+		prerequisite = { focus = DOH_xianfazhiren }
 		relative_position_id = DOH_xianfazhiren
 		ai_will_do = {
 			factor = 15
@@ -4361,18 +4375,21 @@
 
 		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-            remove_opinion_modifier = {
-                target = DOH
-                modifier = CHY_dhtiaoxin
-            }
-			remove_opinion_modifier = {
-                target = CHY
-                modifier = CHY_dhtiaoxin
-            }
-            CHY = {
-                complete_national_focus = CHY_duidonghuangyouhao
-                complete_national_focus = CHY_donghuangyouhao
-            }
+            hidden_effect = {
+				remove_opinion_modifier = {
+					target = DOH
+					modifier = CHY_dhtiaoxin
+				}
+				remove_opinion_modifier = {
+					target = CHY
+					modifier = CHY_dhtiaoxin
+				}
+				CHY = {
+					complete_national_focus = CHY_duidonghuangyouhao
+					complete_national_focus = CHY_donghuangyouhao
+				}
+			}
+			custom_effect_tooltip = doh_chongying_focus
 			set_autonomy = {
 				target = CHY
 				autonomy_state = doh_fanshu
@@ -4411,60 +4428,65 @@
 
 		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			DH1 = {
-				set_cosmetic_tag = DH1_future
-                every_character = {
-					limit = {
-						is_country_leader = yes
-					}
-					DH1 = {
-           			    add_country_leader_role = {
-                	    	Character = PREV
-	                	    Promote_leader = yes
-    	                	Country_leader = {
-        	                ideology = leninism
-            	            expire = "2000.1.1.1"
-	                	        traits = {
-    	                	        yfz
-        	                	}
-	        	            }
-    	        	    }
-        
-		                add_country_leader_role = {
-        		            Character = PREV
-	    	                Promote_leader = yes
-    	    	            Country_leader = {
-                		        ideology = fascism_ideology
-		                        expire = "2000.1.1.1"
-        		                traits = {
-		                            yfz
-        		                }
-                		    }
-                		}
-        
-		                add_country_leader_role = {
-        		            Character = DOH_haerbin
-                		    Promote_leader = yes
-		                    Country_leader = {
-        	                ideology = liberalism
-            	            expire = "2000.1.1.1"
-                	        traits = {
-                    	        yfz
-	                        }
-    	                }
-        	        }
-				}
-			}
-            every_character = {
-                limit = { 
-                    is_country_leader = yes 
-                }
-                add_country_leader_trait = yfz
-            }
-            }
 			set_autonomy = {
 				target = DH1
 				autonomy_state = doh_fanshu
+			}
+			DH1 = {
+				set_cosmetic_tag = DH1_future
+			}
+			custom_effect_tooltip = doh_weilai_focus
+			hidden_effect = {				
+				DH1 = {
+					every_character = {
+						limit = {
+							is_country_leader = yes
+						}
+						DH1 = {
+							   add_country_leader_role = {
+								Character = PREV
+								Promote_leader = yes
+								Country_leader = {
+								ideology = leninism
+								expire = "2000.1.1.1"
+									traits = {
+										yfz
+									}
+								}
+							}
+			
+							add_country_leader_role = {
+								Character = PREV
+								Promote_leader = yes
+								Country_leader = {
+									ideology = fascism_ideology
+									expire = "2000.1.1.1"
+									traits = {
+										yfz
+									}
+								}
+							}
+			
+							add_country_leader_role = {
+								Character = PREV
+								Promote_leader = yes
+								Country_leader = {
+								ideology = liberalism
+								expire = "2000.1.1.1"
+								traits = {
+									yfz
+								}
+							}
+						}
+					}
+				}
+				every_character = {
+					limit = { 
+						is_country_leader = yes 
+					}
+					add_country_leader_trait = yfz
+					}
+				}
 			}
 		}
 	}

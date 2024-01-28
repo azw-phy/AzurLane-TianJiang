@@ -5,7 +5,7 @@ tags={
 	"Balance"
 	"Events"
 }
-name="AzurLane碧蓝航线：天降舰娘"
+name="AzurLane碧蓝航线：天降舰娘（dev）"
 dependencies={
 	"52 Chinese Localisation"
 	"50 Construction Slots"
