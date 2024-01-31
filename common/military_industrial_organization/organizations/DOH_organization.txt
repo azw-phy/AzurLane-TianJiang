@@ -22,22 +22,28 @@
 		}
 	}
 	add_trait = {  
-		token = gongyejituan
-		name = gongyejituan
-		icon = GFX_generic_mio_department_icon_facilities
+		token = jishugaijing
+		name = jishugaijing
+		icon = GFX_generic_mio_trait_icon_unique
 		special_trait_background = yes
 
 		position = { x=9 y=0 }  
 
 		available = {
 			FROM = {
-				is_ally_with = CHY
+				OR = {
+					is_ally_with = CHY
+					has_country_flag = chy_jungongyuanzhu_flag
+				}
 			}
 		}
 		
 		equipment_bonus = {
 			reliability = 0.15
       	}
+		production_bonus = {
+			production_resource_need_factor = -0.3
+		}
 	}
 }
 
@@ -151,7 +157,10 @@ DOH_dalianzaochuan_organization = {
 
 		available = {
 			FROM = {
-				has_country_flag = chy_jungongyuanzhu_flag
+				OR = {
+					is_ally_with = CHY
+					has_country_flag = chy_jungongyuanzhu_flag
+				}
 			}
 		}
 		equipment_bonus = {
@@ -300,7 +309,10 @@ DOH_hudong_organization = {
 
 		available = {
 			FROM = {
-				has_country_flag = chy_jungongyuanzhu_flag
+				OR = {
+					is_ally_with = CHY
+					has_country_flag = chy_jungongyuanzhu_flag
+				}
 			}
 		}
 		equipment_bonus = {
@@ -345,7 +357,10 @@ DOH_wuchangzaochuanchang_organization = {
 
 		available = {
 			FROM = {
-				has_country_flag = chy_jungongyuanzhu_flag
+				OR = {
+					is_ally_with = CHY
+					has_country_flag = chy_jungongyuanzhu_flag
+				}
 			}
 		}
 		equipment_bonus = {
@@ -464,7 +479,7 @@ DOH_wuchangzaochuanchang_organization = {
 
 DOH_jiangnan_shipyard_group_organization = {
 	include = generic_task_force_ship_organization
-	icon = GFX_idea_generic_naval_manufacturer_3
+	icon = GFX_idea_generic_naval_manufacturer_1
 	allowed = {	
 		tag = DOH
 	}
@@ -478,7 +493,10 @@ DOH_jiangnan_shipyard_group_organization = {
 
 		available = {
 			FROM = {
-				has_country_flag = chy_jungongyuanzhu_flag
+				OR = {
+					is_ally_with = CHY
+					has_country_flag = chy_jungongyuanzhu_flag
+				}
 			}
 		}
 		equipment_bonus = {
@@ -601,7 +619,10 @@ DOH_dagu_shipyard_organization = {
 
 		available = {
 			FROM = {
-				has_country_flag = chy_jungongyuanzhu_flag
+				OR = {
+					is_ally_with = CHY
+					has_country_flag = chy_jungongyuanzhu_flag
+				}
 			}
 		}
 		equipment_bonus = {

@@ -21,7 +21,10 @@ CHY_osaka_army_arsenal_organization = {
 		FROM = {
 			OR = {
 				original_tag= CHY
-				has_country_flag = chy_jungongyuanzhu_flag
+				OR = {
+					is_ally_with = CHY
+					has_country_flag = chy_jungongyuanzhu_flag
+				}
 			}
 		}
 	}
@@ -37,7 +40,10 @@ CHY_osaka_army_arsenal_organization = {
 			FROM = { 
 				OR = {
 					has_completed_focus =  CHY_gongyejituan 
-					has_country_flag = chy_jungongyuanzhu_flag
+					OR = {
+						is_ally_with = CHY
+						has_country_flag = chy_jungongyuanzhu_flag
+					}
 				}
 			}
 		}
@@ -509,7 +515,10 @@ CHY_mitsubishi_organization = {
 		owner = {
 		OR = {
 			original_tag= CHY
-			has_country_flag = chy_jungongyuanzhu_flag
+			OR = {
+				is_ally_with = CHY
+				has_country_flag = chy_jungongyuanzhu_flag
+			}
 		}
 	}
 	}
@@ -525,7 +534,10 @@ CHY_mitsubishi_organization = {
 			FROM = {
 				OR = {
 					has_completed_focus =  CHY_gongyejituan
-					has_country_flag = chy_jungongyuanzhu_flag
+					OR = {
+						is_ally_with = CHY
+						has_country_flag = chy_jungongyuanzhu_flag
+					}
 				}
 			}
 		}
@@ -564,7 +576,10 @@ CHY_aichi_organization = {
 		owner = {
 		OR = {
 			original_tag= CHY
-			has_country_flag = chy_jungongyuanzhu_flag
+			OR = {
+				is_ally_with = CHY
+				has_country_flag = chy_jungongyuanzhu_flag
+			}
 		}
 	}
 	}
@@ -580,7 +595,10 @@ CHY_aichi_organization = {
 			FROM = {
 				OR = {
 					has_completed_focus =  CHY_gongyejituan
-					has_country_flag = chy_jungongyuanzhu_flag
+					OR = {
+						is_ally_with = CHY
+						has_country_flag = chy_jungongyuanzhu_flag
+					}
 				}
 			}
 		}
@@ -615,7 +633,10 @@ CHY_nakajima_organization = {
 		owner = {
 		OR = {
 			original_tag= CHY
-			has_country_flag = chy_jungongyuanzhu_flag
+			OR = {
+				is_ally_with = CHY
+				has_country_flag = chy_jungongyuanzhu_flag
+			}
 		}
 	}
 	}
@@ -631,7 +652,10 @@ CHY_nakajima_organization = {
 			FROM = {
 				OR = {
 					has_completed_focus =  CHY_gongyejituan
-					has_country_flag = chy_jungongyuanzhu_flag
+					OR = {
+						is_ally_with = CHY
+						has_country_flag = chy_jungongyuanzhu_flag
+					}
 				}
 			}
 		}
@@ -666,7 +690,10 @@ CHY_yokosuka_organization = {
 		owner = {
 		OR = {
 			original_tag= CHY
-			has_country_flag = chy_jungongyuanzhu_flag
+			OR = {
+				is_ally_with = CHY
+				has_country_flag = chy_jungongyuanzhu_flag
+			}
 		}
 	}
 	}
@@ -682,7 +709,10 @@ CHY_yokosuka_organization = {
 			FROM = {
 				OR = {
 					has_completed_focus =  CHY_gongyejituan
-					has_country_flag = chy_jungongyuanzhu_flag
+					OR = {
+						is_ally_with = CHY
+						has_country_flag = chy_jungongyuanzhu_flag
+					}
 				}
 			}
 		}
@@ -765,7 +795,10 @@ CHY_osaka_army_arsenal_artillery_organization = {
 		owner = {
 		OR = {
 			original_tag= CHY
-			has_country_flag = chy_jungongyuanzhu_flag
+			OR = {
+				is_ally_with = CHY
+				has_country_flag = chy_jungongyuanzhu_flag
+			}
 		}
 	}
 	}
@@ -781,7 +814,10 @@ CHY_osaka_army_arsenal_artillery_organization = {
 			FROM = {
 				OR = {
 					has_completed_focus =  CHY_gongyejituan
-					has_country_flag = chy_jungongyuanzhu_flag
+					OR = {
+						is_ally_with = CHY
+						has_country_flag = chy_jungongyuanzhu_flag
+					}
 				}
 			}
 		}
@@ -816,7 +852,10 @@ CHY_nissan_organization = {
 		FROM = {
 			OR = {
 				original_tag= CHY
-				has_country_flag = chy_jungongyuanzhu_flag
+				OR = {
+					is_ally_with = CHY
+					has_country_flag = chy_jungongyuanzhu_flag
+				}
 			}
 		}
 	}
@@ -832,7 +871,10 @@ CHY_nissan_organization = {
 			FROM = {
 				OR = {
 					has_completed_focus =  CHY_gongyejituan
-					has_country_flag = chy_jungongyuanzhu_flag
+					OR = {
+						is_ally_with = CHY
+						has_country_flag = chy_jungongyuanzhu_flag
+					}
 				}
 			}
 		}

@@ -230,9 +230,7 @@ DOH_decision_category = {
 				is_debug = yes			
 				AND = {
 					has_completed_focus = DOH_huanxingjulong
-					NOT = {
-						country_exists = DH1
-					}
+					has_completed_focus = DOH_ninghaixiaxiyang
 				}
 			}
 		}
@@ -259,51 +257,51 @@ DOH_decision_category = {
 			}
 		}
 	}
-	DOH_chaoxianbandao_yuanzhengjun = {
-		icon = xingdong
-		ai_will_do = {
-			factor = 5
-		}
-		visible = {
-			OR = {
-				is_debug = yes			
-				AND = {
-					has_completed_focus = DOH_huanxingjulong
-					country_exists = DH1
-				}
-			}
-		}
-		available = {
-			owns_state = 527
-			owns_state = 525
-		}
-		cost = 25
-		fire_only_once = yes
-		days_remove = 5
-		complete_effect = {
-			DH1 = {
-				add_state_core = 527
-				transfer_state = 527
-				add_state_core = 525
-				transfer_state = 525
-			}
-			hidden_effect = {
-				set_victory_points = {
-					province = 4052
-					value = 15
-				}
-				set_victory_points = {
-					province = 7125
-					value = 20
-				}
-			}
-		}
-	}
+	# DOH_chaoxianbandao_yuanzhengjun = {
+	# 	icon = xingdong
+	# 	ai_will_do = {
+	# 		factor = 5
+	# 	}
+	# 	visible = {
+	# 		OR = {
+	# 			is_debug = yes
+	# 			AND = {
+	# 				has_completed_focus = DOH_huanxingjulong
+	# 				country_exists = DH1
+	# 			}
+	# 		}
+	# 	}
+	# 	available = {
+	# 		owns_state = 527
+	# 		owns_state = 525
+	# 	}
+	# 	cost = 25
+	# 	fire_only_once = yes
+	# 	days_remove = 5
+	# 	complete_effect = {
+	# 		DH1 = {
+	# 			add_state_core = 527
+	# 			transfer_state = 527
+	# 			add_state_core = 525
+	# 			transfer_state = 525
+	# 		}
+	# 		hidden_effect = {
+	# 			set_victory_points = {
+	# 				province = 4052
+	# 				value = 15
+	# 			}
+	# 			set_victory_points = {
+	# 				province = 7125
+	# 				value = 20
+	# 			}
+	# 		}
+	# 	}
+	# }
 	DOH_gongyehua_visable = {
 		icon = xingdong
 		cost = 0
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 		visible = {
 			NOT = {
@@ -318,7 +316,7 @@ DOH_decision_category = {
 		icon = xingdong
 		cost = 0
 		ai_will_do = {
-			factor = 1
+			factor = 5
 		}
 		visible = {
 			has_country_flag = DOH_xianshigongyehuajueyi

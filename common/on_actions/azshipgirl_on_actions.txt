@@ -301,11 +301,11 @@ on_actions = {
 							tag = GXC
 							tag = YUN
 							tag = XSM
+							tag = TIB
 						}
 					}
 				}
 				ROOT = {
-					
 					country_event = DOH_event.28
 				}
 			}
