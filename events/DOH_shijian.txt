@@ -843,3 +843,36 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = DOH_event.30
+	title = DOH_event.30.t
+	desc = DOH_event.30.d
+	picture = GFX_aze_kan
+	is_triggered_only = yes
+	option = {
+		name = DOH_event.30.a
+		ai_chance = {
+			factor = 9
+		}
+		custom_effect_tooltip = available_political_advisor
+		show_ideas_tooltip = gelideli
+		set_country_flag = DOH_yaoqinggelideli
+		hidden_effect = {
+			country_event = { id = DOH_event.3001 days = 90 }
+		}
+	}
+}
+country_event = {
+	id = DOH_event.3001
+	title = DOH_event.3001.t
+	desc = DOH_event.3001.d
+	picture = GFX_report_event_generic_sign_treaty2
+	is_triggered_only = yes
+	option = {
+		name = DOH_event.3001.a
+		ai_chance = {
+			factor = 9
+		}
+		add_offsite_building = { type = industrial_complex level = 5 }
+	}
+}

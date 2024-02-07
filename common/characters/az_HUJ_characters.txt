@@ -63,9 +63,21 @@ characters={
 			}
 		}
 		
-		country_leader={
-			ideology= fascism_ideology
-			expire="2000.1.1.1"
+		advisor = {
+			cost = 50
+			slot = high_command
+			idea_token = qiaozhiwushi
+			traits = { trait_qiaozhiwushi }
+			available = {
+				has_completed_focus = HUJ_zhongyonghuangshi
+			}
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					has_government = neutrality
+					add = 10
+				}
+			}
 		}
 		
 		field_marshal = {

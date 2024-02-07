@@ -1905,9 +1905,9 @@ focus = {
 	focus = {
 		id = HUJ_weicengshexiangdedaolu
 		icon = GFX_goal_generic_position_armies
-		x = -9
+		x = -19
 		y = 0
-		cost = 7
+		cost = 5
 		relative_position_id = HUJ_jixuyihuizhi
 		ai_will_do = {
 			factor = 5
@@ -1936,7 +1936,7 @@ focus = {
 		icon = GFX_goal_generic_position_armies
 		x = 0
 		y = 1
-		cost = 10
+		cost = 7
 		relative_position_id = HUJ_weicengshexiangdedaolu
 		prerequisite = {
 			focus = HUJ_weicengshexiangdedaolu
@@ -1957,6 +1957,7 @@ focus = {
 		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			add_political_power = 150
+			add_stability = -0.05
 			add_popularity = {
 				ideology = communism
 				popularity = 0.1
@@ -1978,7 +1979,7 @@ focus = {
 			focus = HUJ_yaoqiuxiudingquanlifaan
 		}
 		ai_will_do = {
-			factor = 5
+			factor = 8
 		}
 		available = {
 			
@@ -1993,11 +1994,12 @@ focus = {
 		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			add_ideas = gongzuozhidu_4
+			add_ideas = BFL_jjdgr
 			add_popularity = {
 				ideology = communism
-				popularity = 0.05
+				popularity = 0.1
 			}
-			add_stability = 0.05
+			add_stability = 0.1
 		}
 	}
 	focus = {
@@ -2025,6 +2027,15 @@ focus = {
 
 		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
+			add_country_leader_role = {
+				character = HUJ_beierfasite
+				promote_leader = yes
+				country_leader = {
+					ideology = marxism
+					expire = "1965.1.1.1"
+					traits = { nzdc }
+				}
+			}
 			add_political_power = 100
 			add_popularity = {
 				ideology = communism
@@ -2067,7 +2078,7 @@ focus = {
 		icon = GFX_goal_generic_position_armies
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = HUJ_nvpucanzhengquanli
 		prerequisite = {
 			focus = HUJ_nvpucanzhengquanli
@@ -2076,7 +2087,7 @@ focus = {
 			factor = 5
 		}
 		available = {
-			communism > 0.5
+			#communism > 0.5
 		}
 		
 		cancel_if_invalid = yes
@@ -2087,7 +2098,13 @@ focus = {
 
 		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			set_party_name = { 
+			add_ideas = gongzuozhidu_nvpugonghui
+			add_trait = {
+				character = HUJ_beierfasite
+				ideology = marxism
+				trait = HUJ_triat_nvpugonghuilingxiu
+			}
+			set_party_name = {
 				ideology = communism
 				long_name = HUJ_communism_party_name
 				name = HUJ_communism_party_name
@@ -2135,6 +2152,7 @@ focus = {
 
 		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
+			add_ideas = HUJ_idea_junqingliuchunvpuzu
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = -500
@@ -2214,7 +2232,7 @@ focus = {
 		icon = GFX_goal_generic_position_armies
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = HUJ_chenglinvpugonghui
 		prerequisite = {
 			focus = HUJ_chenglinvpugonghui
@@ -2234,39 +2252,19 @@ focus = {
 
 		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			
+			add_political_power = 200
 			if = {
 				limit = { has_government = democratic }
-				add_country_leader_role = {
+				promote_character = {
 					character = HUJ_beierfasite
-					promote_leader = yes
-					country_leader = {
-						ideology = liberalism
-						expire = "1965.1.1.1"
-						traits = { HUJ_triat_nvpugonghuilingxiu nzdc }
-					}
-				}
-				hidden_effect = {
-					add_country_leader_role = {
-						character = HUJ_beierfasite
-						promote_leader = yes
-						country_leader = {
-							ideology = marxism
-							expire = "1965.1.1.1"
-							traits = { HUJ_triat_nvpugonghuilingxiu }
-						}
-					}
+					ideology = liberalism
 				}
 			}
-			else = {
-				add_country_leader_role = {
+			if = {
+				limit = { has_government = communism }
+				promote_character = {
 					character = HUJ_beierfasite
-					promote_leader = yes
-					country_leader = {
-						ideology = marxism
-						expire = "1965.1.1.1"
-						traits = { HUJ_triat_nvpugonghuilingxiu nzdc }
-					}
+					ideology = marxism
 				}
 			}
 		}
@@ -2387,6 +2385,318 @@ focus = {
 		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			set_cosmetic_tag = HUJ_nvpu_communism
+			if = {
+				limit = {
+					is_in_faction = no
+				}
+				create_faction = nvpuguoji
+			}
+			
+			add_ideas = HUJ_idea_nvpuguoji
+		}
+	}
+	focus = {
+		id = HUJ_waijiaoxipai
+		icon = GFX_goal_generic_improve_relations
+		x = 5
+		y = 1
+		cost = 10
+		prerequisite = { focus = HUJ_jiaruneigeyihui }
+		relative_position_id = HUJ_jiaruneigeyihui
+		mutually_exclusive = {
+			focus = HUJ_hongchawaijiao
+		}
+		available = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 5			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = 100
+			
+		}
+	}
+	focus = {
+		id = HUJ_shengdixunli
+		icon = GFX_goal_generic_improve_relations
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = HUJ_waijiaoxipai }
+		relative_position_id = HUJ_waijiaoxipai
+		ai_will_do = {
+			factor = 5			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = 100
+			
+		}
+	}
+	focus = {
+		id = HUJ_yubeilianlunzhan
+		icon = GFX_goal_generic_improve_relations
+		x = -1
+		y = 1
+		cost = 10
+		prerequisite = { focus = HUJ_shengdixunli }
+		relative_position_id = HUJ_shengdixunli
+		mutually_exclusive = {
+			focus = HUJ_qiutongcunyi
+		}
+		ai_will_do = {
+			factor = 5			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = 100
+			
+		}
+	}
+	focus = {
+		id = HUJ_jieshoubeilianmanjiu
+		icon = GFX_goal_generic_improve_relations
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = HUJ_yubeilianlunzhan }
+		relative_position_id = HUJ_yubeilianlunzhan
+		ai_will_do = {
+			factor = 5			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = 100
+			
+		}
+	}
+	focus = {
+		id = HUJ_qiutongcunyi
+		icon = GFX_goal_generic_improve_relations
+		x = 1
+		y = 1
+		cost = 10
+		prerequisite = { focus = HUJ_shengdixunli }
+		relative_position_id = HUJ_shengdixunli
+		mutually_exclusive = {
+			focus = HUJ_yubeilianlunzhan
+		}
+		ai_will_do = {
+			factor = 5			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = 100
+			
+		}
+	}
+	focus = {
+		id = HUJ_gongtongjinbu
+		icon = GFX_goal_generic_improve_relations
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = HUJ_qiutongcunyi }
+		relative_position_id = HUJ_qiutongcunyi
+		ai_will_do = {
+			factor = 5			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = 100
+			
+		}
+	}
+	focus = {
+		id = HUJ_jujiaoyazhou
+		icon = GFX_goal_generic_improve_relations
+		x = 4
+		y = 1
+		cost = 10
+		prerequisite = { focus = HUJ_waijiaoxipai focus = HUJ_hongchawaijiao }
+		relative_position_id = HUJ_waijiaoxipai
+		ai_will_do = {
+			factor = 5			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = 100
+			
+		}
+	}
+	focus = {
+		id = HUJ_duizhiminzhezuihoutongdie
+		icon = GFX_goal_generic_improve_relations
+		x = -1
+		y = 1
+		cost = 10
+		prerequisite = { focus = HUJ_jujiaoyazhou }
+		prerequisite = { focus = HUJ_waijiaoxipai }
+		relative_position_id = HUJ_jujiaoyazhou
+		ai_will_do = {
+			factor = 5			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = 100
+			
+		}
+	}
+	focus = {
+		id = HUJ_quyuzizhizhidu
+		icon = GFX_goal_generic_improve_relations
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = HUJ_duizhiminzhezuihoutongdie }
+		relative_position_id = HUJ_duizhiminzhezuihoutongdie
+		ai_will_do = {
+			factor = 5			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = 100
+			
+		}
+	}
+	focus = {
+		id = HUJ_donghuanggongluyujianqiaohangxiang
+		icon = GFX_goal_generic_improve_relations
+		x = 1
+		y = 1
+		cost = 10
+		prerequisite = { focus = HUJ_jujiaoyazhou }
+		prerequisite = { focus = HUJ_waijiaoxipai }
+		relative_position_id = HUJ_jujiaoyazhou
+		ai_will_do = {
+			factor = 5			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = 100
+			
+		}
+	}
+	focus = {
+		id = HUJ_xianggangwenti
+		icon = GFX_goal_generic_improve_relations
+		x = -1
+		y = 2
+		cost = 10
+		prerequisite = { focus = HUJ_donghuanggongluyujianqiaohangxiang }
+		relative_position_id = HUJ_donghuanggongluyujianqiaohangxiang
+		ai_will_do = {
+			factor = 5			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = 100
+			
+		}
+	}
+	focus = {
+		id = HUJ_huangjiazhiyuanjunguantuan
+		icon = GFX_goal_generic_improve_relations
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = HUJ_donghuanggongluyujianqiaohangxiang }
+		relative_position_id = HUJ_donghuanggongluyujianqiaohangxiang
+		ai_will_do = {
+			factor = 5			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+
+		#search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = 100
+			DOH = { 
+				country_event = { id = HUJ_event.11 days = 15 } 
+			}
 		}
 	}
 	focus = {
@@ -2425,10 +2735,10 @@ focus = {
 	focus = {
 		id = HUJ_jixuyihuizhi
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		x = 45
+		x = 60
 		y = 0
 		offset = {
-			x = -12
+			x = -2
 			trigger = {
 				has_global_flag = MOD_azurlane_sairenzhizai
 			}
@@ -2831,6 +3141,9 @@ focus = {
 		y = 1
 		cost = 5
 		prerequisite = { focus = HUJ_hongchawaijiao }
+		mutually_exclusive = {
+			focus = HUJ_waijiaoxipai
+		}
         allow_branch = {
 			has_global_flag = MOD_azurlane_tianjiangjianniang
 		}
@@ -3438,6 +3751,12 @@ focus = {
 				long_name = "女王护卫军"
 				name = "女王护卫军" 
 			}
+			show_ideas_tooltip = yanzhan
+			add_trait = {
+				character = HUJ_yanzhan
+				slot = navy_chief
+				trait = trait_yanzhan_nvwanghuweijun
+		   }
 			add_ideas = HUJ_nwhwj
 			add_popularity = { ideology = fascism popularity = 0.15 }
 			add_popularity = { ideology = democratic popularity = -0.1 }
@@ -3492,7 +3811,7 @@ focus = {
 		relative_position_id = HUJ_nvwanghuweijun
 		prerequisite = { focus = HUJ_nvwanghuweijun }
 		prerequisite = { focus = HUJ_nvwangqinzheng }
-		#mutually_exclusive = { focus = HUJ_wangquanzhizun }
+		mutually_exclusive = { focus = HUJ_wangquanzhizun }
 
 		ai_will_do = {
 			factor = 10
@@ -3567,7 +3886,7 @@ focus = {
 		relative_position_id = HUJ_zhongyonghuangshi
 		prerequisite = { focus = HUJ_zhongyonghuangshi }
 		prerequisite = { focus = HUJ_nvwangqinzheng }
-		#mutually_exclusive = { focus = HUJ_junminpingdeng }
+		mutually_exclusive = { focus = HUJ_junminpingdeng }
 
 		ai_will_do = {
 			factor = 10
@@ -3640,13 +3959,13 @@ focus = {
 
 		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			add_ideas = HUJ_weiershi
 			random_unit_leader = {
 				limit = { has_id = 01002 }
 				add_planning = 1
 				add_logistics = 1
 				add_unit_leader_trait = politically_connected
 			}
+			
 			add_political_power = 50
 			add_popularity = { ideology = neutrality popularity = 0.15 }
 			add_popularity = { ideology = democratic popularity = -0.1 }

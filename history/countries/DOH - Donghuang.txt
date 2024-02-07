@@ -45,7 +45,12 @@ recruit_character = DOH_zhenhai
 recruit_character = DOH_haerbin
 recruit_character = DOH_huajia
 recruit_character = DOH_dingan
-
+recruit_character = DOH_feiyun
+recruit_character = DOH_huanchang
+recruit_character = DOH_huben
+recruit_character = DOH_jian
+recruit_character = DOH_longwu
+recruit_character = DOH_gelideli
 set_stability = 0.5
 
 set_war_support = 0.3

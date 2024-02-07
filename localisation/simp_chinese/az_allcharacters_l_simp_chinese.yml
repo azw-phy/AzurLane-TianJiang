@@ -257,6 +257,8 @@
  DOH_yingrui:0"应瑞"
  DOH_naerxun:0"纳尔逊"
  DOH_nvzaoshen:0"女灶神"
+ DOH_gelideli:0"格里德利"
+ gelideli_desc:"作为一名白鹰记者，格里德利有一个好，就是全世界任何地方，她跑的比任何国家的记者都快！"
  DOH_xiaochicheng:0"小赤城"
  DOH_79shi:0"79式"
  DOH_97shi:0"97式"
@@ -270,7 +272,12 @@
  DOH_haiqi:"海圻"
  DOH_haerbin:"哈尔滨"
  DOH_huajia:"华甲"
+ DOH_feiyun:"飞云"
  DOH_dingan:"定安"
+ DOH_huanchang:"寰昌"
+ DOH_huben:"虎贲"
+ DOH_jian:"济安"
+ DOH_longwu:"龙武"
  
  #重樱
  CHY_changmen:0"长门"

@@ -309,6 +309,11 @@ TIX_template_design = {
 	}
 	
 	ai_strategy = {
+		type = railway_gun_divisions_ratio
+		value = 1
+	}
+	
+	ai_strategy = {
 		type = template_prio
 		id = infantry
 		value = 10
@@ -556,6 +561,12 @@ TIX_war_with_BFL = {
 	}
 	abort = {
 	    BFL = { has_capitulated = yes }
+	}
+	
+	ai_strategy = {
+		type = front_armor_score #部署坦克
+		id = BFL
+		value = 300
 	}
 	
 	ai_strategy = {
@@ -893,9 +904,14 @@ TIX_war_YUW = {
 		value = 200
 	}
 	ai_strategy = {
-		type = conquer		
-		id = "YUW"			
-		value = 100
+		type = front_armor_score #部署坦克
+		id = HOL
+		value = 200
+	}
+	ai_strategy = {
+		type = front_armor_score #部署坦克
+		id = BEL
+		value = 200
 	}
     ai_strategy = {
 		type = declare_war
@@ -942,6 +958,11 @@ TIX_war_YUW_no_ai = {
 		YUW = { is_ai = no }
 	}
 	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = front_armor_score #部署坦克
+		id = YUW
+		value = 300
+	}
 	ai_strategy = {
 		type = front_unit_request
 		tag = YUW			
@@ -1886,6 +1907,42 @@ TIX_donthelpnor = {
 		type = ignore
 		id = "D04"
 		value = 1000
+	}
+
+}
+
+
+TIX_hold_up_in_bfl = { #We got this far but there are bigger targets to worry about for a while
+	allowed = {
+		original_tag = TIX
+	}
+
+	enable = {
+		date > 1941.8.1
+		date < 1944.1.1
+		is_historical_focus_on = yes
+		BFL = { has_capitulated = no }
+		BFL = { is_ai = yes }
+		or = {
+		YUW = { is_ai = yes }
+		YUW = { has_capitulated = yes }
+		}
+		NOT = {
+			has_idea = TY_fengkuangai
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_control
+
+		tag = BFL
+
+		ratio = 0.1
+
+		priority = 100
+		ordertype = front
+		execution_type = careful
 	}
 
 }

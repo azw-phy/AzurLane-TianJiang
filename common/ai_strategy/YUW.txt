@@ -20,6 +20,10 @@ SGZ_start = {
 	}
 	abort_when_not_enabled = yes
 	ai_strategy = {
+		type = railway_gun_divisions_ratio
+		value = 1
+	}
+	ai_strategy = {
 		type = role_ratio	#模板倾向
 		id = infantry
 		value = 100
@@ -191,7 +195,11 @@ YUW_fangyutiexue = {
 	}
 	
 	abort_when_not_enabled = yes
-	
+	ai_strategy = {
+		type = front_armor_score #部署坦克
+		id = TIX
+		value = 300
+	}
 	ai_strategy = {
 		type = antagonize
 		id = "TIX"			
@@ -397,7 +405,11 @@ YUW_zhenduibfl = {
 	}
 	
 	abort_when_not_enabled = yes
-	
+	ai_strategy = {
+		type = front_armor_score #部署坦克
+		id = BFL
+		value = 300
+	}
 	ai_strategy = {
 		type = invade
 		id = BFL

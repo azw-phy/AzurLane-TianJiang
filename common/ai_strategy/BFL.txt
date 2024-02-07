@@ -108,6 +108,11 @@ BFL_unit_production_air = {
 	}
 	
 	#Air unit factors
+	
+	ai_strategy = {
+		type = railway_gun_divisions_ratio
+		value = 1
+	}
 	ai_strategy = {
 		type = unit_ratio
 		id = fighter
@@ -430,7 +435,11 @@ TIX_enemy = {
 			TIX = { is_subject_of = BFL }
 		}
 	}
-	
+	ai_strategy = {
+		type = front_armor_score #部署坦克
+		id = TIX
+		value = 300
+	}
 	ai_strategy = {
 		type = antagonize
 		id = "TIX"			
@@ -483,7 +492,11 @@ YUW_enemy = {
 		has_war_with = YUW
 	}
 	abort_when_not_enabled = yes
-	
+	ai_strategy = {
+		type = front_armor_score #部署坦克
+		id = YUW
+		value = 200
+	}
 	ai_strategy = {
 		type = antagonize
 		id = "YUW"			

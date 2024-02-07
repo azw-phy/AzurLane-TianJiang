@@ -371,7 +371,7 @@ characters={
 			cost = 100
 			slot = theorist
 			idea_token = xiaochicheng 
-			available = {
+			visible = {
 				if = {
 					limit = { tag = DOH }
 					has_completed_focus = DOH_youbuxiaochicheng
@@ -395,7 +395,7 @@ characters={
 			cost = 100
 			slot = political_advisor
 			idea_token = nvzaoshen
-			available = {
+			visible = {
 				if = {
 					limit = { tag = DOH }
 					has_completed_focus = DOH_baiyinggongchengshi
@@ -406,6 +406,52 @@ characters={
 			ai_will_do = {
 				factor = 15
 			}
+		}
+	}
+	DOH_gelideli = {
+		name = DOH_gelideli
+		portraits={
+			army = {
+				large = "gfx/leaders/DOH/gelideli.png"
+				small="gfx/interface/ideas/idea_gelideli.png"
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			desc = gelideli_desc
+			idea_token = gelideli
+			visible = {
+				if = {
+					limit = { tag = DOH }
+					has_country_flag = DOH_yaoqinggelideli
+				}
+			}
+			traits = { trait_gelideli }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		corps_commander = {
+			visible = {
+				if = {
+					limit = { tag = DOH }
+					has_country_flag = DOH_yaoqinggelideli
+				}
+				NOT = { has_character_flag = xiujia_doing } 
+				OR = {
+					NOT = { tag = TAN }
+					is_ai = no
+				}
+			}
+			
+			traits = { quzhu_army }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
 		}
 	}
 	DOH_kelong = {
@@ -914,6 +960,131 @@ characters={
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
+		}
+	}
+	DOH_longwu = {
+		name = DOH_longwu
+		portraits = { 
+			army = {
+				large="gfx/leaders/DOH/longwu.png"
+				small="gfx/interface/ideas/idea_longwu.png"
+			} 
+		}
+
+		corps_commander = {
+			visible = { 
+				NOT = { has_character_flag = xiujia_doing } 
+				OR = {
+					NOT = { tag = TAN }
+					is_ai = no
+				}
+			}
+			traits = { quzhu_army }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	DOH_feiyun = {
+		name = DOH_feiyun
+		portraits = { 
+			army = {
+				large="gfx/leaders/DOH/feiyun.png"
+				small="gfx/interface/ideas/idea_feiyun.png"
+			} 
+		}
+
+		corps_commander = {
+			visible = { 
+				NOT = { has_character_flag = xiujia_doing } 
+				OR = {
+					NOT = { tag = TAN }
+					is_ai = no
+				}
+			}
+			traits = { quzhu_army }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	DOH_jian = {
+		name = DOH_jian
+		portraits = { 
+			army = {
+				large="gfx/leaders/DOH/jian.png"
+				small="gfx/interface/ideas/idea_jian.png"
+			} 
+		}
+
+		corps_commander = {
+			visible = { 
+				NOT = { has_character_flag = xiujia_doing } 
+				OR = {
+					NOT = { tag = TAN }
+					is_ai = no
+				}
+			}
+			traits = { xunyang_army }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	DOH_huben = {
+		name = DOH_huben
+		portraits = { 
+			army = {
+				large="gfx/leaders/DOH/huben.png"
+				small="gfx/interface/ideas/idea_huben.png"
+			} 
+		}
+
+		corps_commander = {
+			visible = { 
+				NOT = { has_character_flag = xiujia_doing } 
+				OR = {
+					NOT = { tag = TAN }
+					is_ai = no
+				}
+			}
+			traits = { quzhu_army }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	DOH_huanchang = {
+		name = DOH_huanchang
+		portraits = { 
+			army = {
+				large="gfx/leaders/DOH/huanchang.png"
+				small="gfx/interface/ideas/idea_huanchang.png"
+			} 
+		}
+
+		corps_commander = {
+			visible = { 
+				NOT = { has_character_flag = xiujia_doing } 
+				OR = {
+					NOT = { tag = TAN }
+					is_ai = no
+				}
+			}
+			traits = { zhanlie_army }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
 		}
 	}
 }

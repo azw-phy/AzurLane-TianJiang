@@ -1183,7 +1183,7 @@ CHY_hold_up_in_china = { #We got this far but there are bigger targets to worry 
 	}
 
 	enable = {
-		date > 1938.2.1
+		date > 1937.10.1
 		date < 1944.1.1
 		is_historical_focus_on = yes
 		DOH = { has_capitulated = no }
@@ -1200,7 +1200,7 @@ CHY_hold_up_in_china = { #We got this far but there are bigger targets to worry 
 
 		tag = DOH
 
-		ratio = 0.25
+		ratio = 0.1
 
 		priority = 100
 		ordertype = front

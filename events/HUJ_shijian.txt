@@ -492,3 +492,53 @@ country_event = {
 		set_cosmetic_tag = HUJ_nvwangzhimindi_tag_name
 	}
 }
+country_event = {
+	id = HUJ_event.11
+	title = HUJ_event.11.t
+	desc = HUJ_event.11.d
+	picture = GFX_aze_chaijun_nice
+	trigger = {
+		tag = DOH
+		OR = {
+			AND = {
+				has_war_with = CHY
+				NOT = { has_war_with = HUJ }
+				surrender_progress > 0.1
+			}
+			AND = {
+				is_ai = no
+				has_war = yes
+				NOT = { has_war_with = HUJ }
+				date > 1941.6.1
+			}
+		}
+	}
+	fire_only_once = yes
+	option = {
+		name = HUJ_event.11.a
+		ai_chance = {
+			factor = 5
+		}
+		HUJ = {
+			HUJ_ouruola = {
+				set_nationality = DOH
+			}
+			HUJ_ouruola = {
+				set_character_name = HUJ_ouruola_name1
+			}
+		}
+		
+	}
+	option = {
+		name = HUJ_event.11.b
+		ai_chance = {
+			factor = 0
+		}
+		HUJ = {
+			HUJ_ouruola = {
+				set_nationality = DOH
+			}
+		}
+		add_political_power = 25
+	}
+}

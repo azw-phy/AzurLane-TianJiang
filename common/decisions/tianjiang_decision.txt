@@ -67,7 +67,6 @@ BFL_neiwu = {
 			or = {
 			any_country = {
 			has_war_with = BFL
-			is_major = yes
 			}
 			is_ai = yes
 			}

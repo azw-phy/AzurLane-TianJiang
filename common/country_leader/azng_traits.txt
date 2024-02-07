@@ -642,6 +642,27 @@ leader_traits = {
 		army_artillery_attack_factor = 0.15
 		navy_capital_ship_attack_factor = 0.2
 	}
+	trait_yanzhan_nvwanghuweijun = {
+		random = no
+		fascism_drift = 0.2
+		conscription = 0.005
+		resistance_target = -0.1
+		required_garrison_factor = -0.25
+		army_core_attack_factor = 0.1
+		army_core_defence_factor = 0.1
+	}
+	trait_qiaozhiwushi = {
+		random = no
+		neutrality_drift = 0.2
+		motorized_attack_factor = 0.1
+		motorized_defence_factor = 0.1
+		mechanized_attack_factor = 0.1
+		mechanized_defence_factor = 0.1
+		cavalry_attack_factor = 0.1
+		cavalry_defence_factor = 0.1
+		planning_speed = 0.15
+		max_planning = 0.1
+	}
 	trait_kewei = {
 		random = no
 		army_defence_factor = 0.05
@@ -953,6 +974,14 @@ leader_traits = {
 		trade_opinion_factor = 0.25
 		mobilization_laws_cost_factor = -0.5
 		stability_factor = 0.1
+		political_power_factor = 0.05
+	}
+	trait_gelideli = {
+		random = no
+		opinion_gain_monthly_factor = 0.25
+		trade_opinion_factor = 0.2
+		army_speed_factor = 0.05
+		naval_speed_factor = 0.05
 		political_power_factor = 0.05
 	}
 }

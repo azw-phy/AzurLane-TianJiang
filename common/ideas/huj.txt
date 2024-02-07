@@ -12,7 +12,34 @@ ideas = {
 			}
 		}
 	}
-	country = {	
+	country = {
+		HUJ_idea_nvpuguoji = {
+			picture = chi_wargaming_division
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			modifier = {
+				justify_war_goal_time = -0.25
+				compliance_growth = 0.05
+				non_core_manpower = 0.1
+				mobilization_speed = 0.25
+				send_volunteer_factor = 2
+			}
+		}
+		HUJ_idea_junqingliuchunvpuzu = {
+			picture = chi_wargaming_division
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			modifier = {
+				operative_slot = 1
+				agency_upgrade_time = -0.25
+				crypto_strength = 1
+				decryption_power = 1
+			}
+		}
 		HUJ_idea_nvpukangyizhong = {
 			picture = chi_wargaming_division
 			allowed_civil_war = {
