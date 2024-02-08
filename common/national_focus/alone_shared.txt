@@ -158,7 +158,7 @@
 				category = naval_equipment
 				category = synth_resources
 				category = excavation_tech
-				category = tech_mountaineers
+				category = mountaineers_tech
 			}
 			custom_effect_tooltip = AL_tech_get
 			AL_tech_get = yes
@@ -464,9 +464,6 @@
 			add_ideas = AL_defend_1
 			hidden_effect = {
 		    every_owned_state = {
-			    limit = {
-					is_border = yes
-				}
 		        add_building_construction = {
                     type = bunker
                     level = 3
