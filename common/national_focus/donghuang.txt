@@ -1159,7 +1159,10 @@
 					level = 3
 					instant_build = yes
 				}
-			}	
+			}
+			592 = {
+				set_state_category = megalopolis
+			}
 			hidden_effect = {
 				set_victory_points = {
 					province = 1047
@@ -1223,7 +1226,7 @@
 			615 = {
 				add_resource = {
 					type = steel
-					amount = 10
+					amount = 50
 				}
 			}
 		}
@@ -2536,9 +2539,6 @@
 				category = industry
 			}
 			custom_effect_tooltip = DOH_baiyinggongchengshi_effect_tooltip
-			hidden_effect = {
-				country_event = { id = DOH_event.30 days = 150 }
-			}
 		}
 	}
 	#
@@ -2580,7 +2580,7 @@
 		icon = GFX_focus_donghuang
 		x = 52
 		y = 0
-		cost = 5
+		cost = 7
 
 		ai_will_do = {
 			factor = 6
@@ -2600,25 +2600,25 @@
 		completion_reward = {
 			DOH_dongfangguguo_dengji = yes
 			597 = {
-				set_state_category = city
+				set_state_category = large_city
 			}
 			614 = {
-				set_state_category = city
+				set_state_category = large_city
 			}
 			598 = {
-				set_state_category = city
+				set_state_category = large_city
 			}
 			620 = {
 				set_state_category = large_city
 			}
 			602 = {
-				set_state_category = city
+				set_state_category = large_city
 			}
 			607 = {
-				set_state_category = city
+				set_state_category = large_city
 			}
 			615 = {
-				set_state_category = city
+				set_state_category = large_city
 			}
 			hidden_effect = {
 				set_victory_points = {
@@ -2676,6 +2676,10 @@
 				set_victory_points = {
 					province = 12068
 					value = 20
+				}
+				set_victory_points = {
+					province = 4504
+					value = 10
 				}
 			}
 		}
@@ -3154,10 +3158,10 @@
 				set_state_category = metropolis
 			}
 			328 = {
-				set_state_category = large_town
+				set_state_category = large_city
 			}
 			716 = {
-				set_state_category = large_town
+				set_state_category = large_city
 			}
 			714 = {
 				set_state_category = rural
@@ -3538,7 +3542,6 @@
 			factor = 1
 		}
 		available = {
-			has_political_power > 200
 			has_navy_size = { size > 199 }
 			has_navy_size = {
 				size > 19
@@ -3587,9 +3590,7 @@
 			743 = {
 				set_state_category = megalopolis
 			}
-			592 = {
-				set_state_category = megalopolis
-			}
+			
 			596 = {
 				set_state_category = metropolis
 			}
@@ -4352,9 +4353,7 @@
 		id = DOH_chongyingdechaogong
 		icon = GFX_aflag_CHY
 		prerequisite = { 
-			focus = DOH_rishenzhidi
-		}
-		prerequisite = {
+			focus = DOH_ziguyilai
 			focus = DOH_chaogongzhidu
 		}
 		relative_position_id = DOH_chaogongzhidu
@@ -4393,9 +4392,22 @@
 				}
 			}
 			custom_effect_tooltip = doh_chongying_focus
-			set_autonomy = {
-				target = CHY
-				autonomy_state = doh_fanshu
+			526 = {
+				add_core_of = DOH
+				remove_core_of = CHY
+				transfer_state_to = DOH
+			}
+			537 = {
+				add_core_of = DOH
+				remove_core_of = CHY
+				transfer_state_to = DOH
+			}
+			if = {
+				limit = { DOH = { has_completed_focus = DOH_chaogongzhidu } }
+				set_autonomy = {
+					target = CHY
+					autonomy_state = doh_fanshu
+				}
 			}
             TAN = {
                 DOH_chy_advisor = {
