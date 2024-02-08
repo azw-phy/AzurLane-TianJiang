@@ -1735,6 +1735,145 @@ news_event = {
 			not_shijianniangguojia_trigger = yes
 		}
 	}
+} 
+news_event = {
+	id = aznews.42
+	title = SAD_event.news1.t
+	desc = SAD_event.news1.d
+	picture = GFX_az_sad1
+	major = yes
+	is_triggered_only = YES
+	option = {
+		name = SAD_event.news1.a
+		trigger = {
+			NOT = { tag = SAD }
+		}
+	}
+	option = {
+		name = SAD_event.news1.b
+		trigger = {
+			tag = SAD
+		}
+	}
+}
+news_event = {
+	id = aznews.43
+	title = BYG_event.news1.t
+	desc = BYG_event.news1.d
+	picture = GFX_az_huayuan
+	major = yes
+	is_triggered_only = YES
+	option = {
+		name = BYG_event.news1.a
+		trigger = {
+			tag = BYG
+		}
+		add_political_power = 50
+		hidden_effect = {
+			country_event = {
+				id = BYG_event.6
+				days = 120
+			}
+		}
+	}
+	option = {
+		name = BYG_event.news1.b
+		trigger = {
+			NOT = { tag = BYG }
+		}
+	}
+}
+news_event = {
+	id = aznews.44
+	title = aznews.44.t
+	desc = aznews.44.d
+	picture = GFX_az_mowang
+	major = yes 
+	trigger = {
+		not = {
+			has_global_flag = mowangruqin
+		}
+		OR = {
+			date > 1940.1.1
+			any_country = {
+				tag = SIR
+				OR = {
+					has_idea = SIR_buff3
+					has_idea = SIR_buff4
+					has_idea = SIR_buff5
+				}
+				
+			}
+		}
+	}
+	immediate = {
+		set_global_flag = mowangruqin
+		hidden_effect = {
+			if = {
+				limit = { has_global_flag = MOD_azurlane_sairenzhizai }
+				TAN = {
+					ailier = {
+						set_nationality = SIR
+					}
+					biexibu = {
+						set_nationality = SIR
+					}
+					peikela = {
+						set_nationality = SIR
+					}
+					dajiaxi = {
+						set_nationality = SR2
+					}
+					xiaojiaxi = {
+						set_nationality = SR2
+					}
+					maou = {
+						set_nationality = SR3
+					}
+					sataniya = {
+						set_nationality = SR3
+					}
+					xieshenjiang = {
+						set_nationality = SR3
+					}
+				}
+			}
+			if = {
+				limit = { has_global_flag = MOD_azurlane_tianjiangjianniang }
+				TAN = {
+					ailier = {
+						set_nationality = SIR
+					}
+					biexibu = {
+						set_nationality = SIR
+					}
+					peikela = {
+						set_nationality = SIR
+					}
+					dajiaxi = {
+						set_nationality = SIR
+					}
+					xiaojiaxi = {
+						set_nationality = SIR
+					}
+					maou = {
+						set_nationality = SIR
+					}
+					sataniya = {
+						set_nationality = SIR
+					}
+					xieshenjiang = {
+						set_nationality = SIR
+					}
+				}
+			}
+		}
+		
+	}
+	option = {
+		name = aznews.44.a
+		
+	}
 }
 news_event = {
 	id = aznews.1001
