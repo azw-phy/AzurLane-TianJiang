@@ -1,0 +1,24 @@
+DOH_donghuangshiwu_idea = {
+    icon = GFX_idea_DOH_xdh
+    enable = { always = yes }
+	party_popularity_stability_factor = 1
+	stability_factor = -1
+	consumer_goods_factor = var:DOH_xiaofeipingyinxiang
+	local_resources_factor = DOH_touzi_effect
+	production_speed_buildings_factor = DOH_touzi_effect
+	research_speed_factor = DOH_keyanjinfei_effect
+	industrial_capacity_factory = DOH_junshijinfei_effect
+	industrial_capacity_dockyard = DOH_junshijinfei_effect
+
+	boost_ideology_mission_factor = DOH_gonggongkaizhi_effect
+	intel_network_gain_factor = DOH_gonggongkaizhi_effect
+	intelligence_agency_defense = DOH_gonggongkaizhi_effect
+	industry_free_repair_factor = DOH_gonggongkaizhi_effect
+	land_reinforce_rate = DOH_gonggongkaizhi_effect_2
+	repair_speed_factor = DOH_gonggongkaizhi_effect
+	stability_weekly_factor = DOH_gonggongkaizhi_effect_3
+
+	min_export = DOH_shichang_effect
+	trade_opinion_factor = DOH_shichang_effect
+	research_speed_factor = DOH_shichang_effect
+}

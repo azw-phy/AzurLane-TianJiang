@@ -36,6 +36,36 @@ ideas = {
 		}
 	}
 	country = {
+		DOH_tongyizhanxian_c_idea = {
+			picture = GFX_idea_DOH_xdh
+			modifier = {
+				communism_drift = 0.03
+				democratic_drift = -0.01
+				fascism_drift = -0.01
+				neutrality_drift = -0.01
+				stability_weekly = 0.001
+			}
+		}
+		DOH_tongyizhanxian_d_idea = {
+			picture = GFX_idea_DOH_xdh
+			modifier = {
+				communism_drift = -0.01
+				democratic_drift = 0.03
+				fascism_drift = -0.01
+				neutrality_drift = -0.01
+				stability_weekly = 0.001
+			}
+		}
+		DOH_tongyizhanxian_f_idea = {
+			picture = GFX_idea_DOH_xdh
+			modifier = {
+				communism_drift = -0.01
+				democratic_drift = -0.01
+				fascism_drift = 0.03
+				neutrality_drift = -0.01
+				stability_weekly = 0.001
+			}
+		}
 		DOH_sirenjingbeidui = {
 			picture = saf_ossewabrandwag
 			modifier = {

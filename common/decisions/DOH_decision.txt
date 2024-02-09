@@ -1,4 +1,428 @@
 DOH_decision_category = {
+	DOH_decision_add_touzi = {
+		icon = xingdong
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			OR = {
+				is_debug = yes
+				has_completed_focus = DOH_jinjigaige
+			}
+		}
+		cost = 10
+		days_remove = 2
+		days_re_enable = 2
+		complete_effect = {
+			custom_effect_tooltip = "增加1点投资"
+			add_to_variable = {
+				var:DOH_touzi = 1
+			}
+			if = {
+				limit = { has_completed_focus = DOH_renminwansui }
+				add_popularity = {
+					ideology = communism
+					popularity = DOH_zhichiduchengfa
+				}
+			}
+			if = {
+				limit = { has_completed_focus = DOH_yinruwaizi }
+				add_popularity = {
+					ideology = democratic
+					popularity = DOH_zhichiduchengfa
+				}
+			}
+			if = {
+				limit = { has_completed_focus = DOH_yixianwansui }
+				add_popularity = {
+					ideology = fascism
+					popularity = DOH_zhichiduchengfa
+				}
+			}
+		}
+	}
+	DOH_decision_rm_touzi = {
+		icon = xingdong
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			OR = {
+				is_debug = yes
+				AND = {
+					check_variable = {
+						var:DOH_touzi > 0
+					}
+					has_completed_focus = DOH_jinjigaige
+				}
+			}
+		}
+		cost = 10
+		days_remove = 2
+		days_re_enable = 2
+		complete_effect = {
+			custom_effect_tooltip = "减少1点投资"
+			add_to_variable = {
+				var:DOH_touzi = -1
+			}
+			if = {
+				limit = { has_completed_focus = DOH_renminwansui }
+				add_popularity = {
+					ideology = communism
+					popularity = DOH_zhichiduchengfa
+				}
+			}
+			if = {
+				limit = { has_completed_focus = DOH_yinruwaizi }
+				add_popularity = {
+					ideology = democratic
+					popularity = DOH_zhichiduchengfa
+				}
+			}
+			if = {
+				limit = { has_completed_focus = DOH_yixianwansui }
+				add_popularity = {
+					ideology = fascism
+					popularity = DOH_zhichiduchengfa
+				}
+			}
+		}
+	}
+	DOH_decision_add_gonggongkaizhi = {
+		icon = xingdong
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			OR = {
+				is_debug = yes
+				has_completed_focus = DOH_shehuibaozhang
+			}
+		}
+		cost = 10
+		days_remove = 2
+		days_re_enable = 2
+		complete_effect = {
+			custom_effect_tooltip = "增加1点公共开支"
+			add_to_variable = {
+				var:DOH_gonggongkaizhi = 1
+			}
+			if = {
+				limit = { has_completed_focus = DOH_renminwansui }
+				add_popularity = {
+					ideology = communism
+					popularity = DOH_zhichiduchengfa
+				}
+			}
+			if = {
+				limit = { has_completed_focus = DOH_yinruwaizi }
+				add_popularity = {
+					ideology = democratic
+					popularity = DOH_zhichiduchengfa
+				}
+			}
+			if = {
+				limit = { has_completed_focus = DOH_yixianwansui }
+				add_popularity = {
+					ideology = fascism
+					popularity = DOH_zhichiduchengfa
+				}
+			}
+		}
+	}
+	DOH_decision_rm_gonggongkaizhi = {
+		icon = xingdong
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			OR = {
+				is_debug = yes
+				AND = {
+					check_variable = {
+						var:DOH_gonggongkaizhi > 0
+					}
+					has_completed_focus = DOH_shehuibaozhang
+				}
+			}
+		}
+		cost = 10
+		days_remove = 2
+		days_re_enable = 2
+		complete_effect = {
+			custom_effect_tooltip = "减少1点公共开支"
+			add_to_variable = {
+				var:DOH_gonggongkaizhi = -1
+			}
+			if = {
+				limit = { has_completed_focus = DOH_renminwansui }
+				add_popularity = {
+					ideology = communism
+					popularity = DOH_zhichiduchengfa
+				}
+			}
+			if = {
+				limit = { has_completed_focus = DOH_yinruwaizi }
+				add_popularity = {
+					ideology = democratic
+					popularity = DOH_zhichiduchengfa
+				}
+			}
+			if = {
+				limit = { has_completed_focus = DOH_yixianwansui }
+				add_popularity = {
+					ideology = fascism
+					popularity = DOH_zhichiduchengfa
+				}
+			}
+		}
+	}
+	DOH_decision_add_keyanjinfei = {
+		icon = xingdong
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			OR = {
+				is_debug = yes
+				has_completed_focus = DOH_rencaiyinjin
+			}
+		}
+		cost = 10
+		days_remove = 2
+		days_re_enable = 2
+		complete_effect = {
+			custom_effect_tooltip = "增加1点额外科研经费"
+			add_to_variable = {
+				var:DOH_keyanjinfei = 1
+			}
+		}
+	}
+	DOH_decision_rm_keyanjinfei = {
+		icon = xingdong
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			OR = {
+				is_debug = yes
+				AND = {
+					check_variable = {
+						var:DOH_keyanjinfei > 0
+					}
+					has_completed_focus = DOH_rencaiyinjin
+				}
+			}
+		}
+		cost = 10
+		days_remove = 2
+		days_re_enable = 2
+		complete_effect = {
+			custom_effect_tooltip = "减少1点额外科研经费"
+			add_to_variable = {
+				var:DOH_keyanjinfei = -1
+			}
+			if = {
+				limit = { has_completed_focus = DOH_renminwansui }
+				add_popularity = {
+					ideology = communism
+					popularity = DOH_zhichiduchengfa
+				}
+			}
+			if = {
+				limit = { has_completed_focus = DOH_yinruwaizi }
+				add_popularity = {
+					ideology = democratic
+					popularity = DOH_zhichiduchengfa
+				}
+			}
+			if = {
+				limit = { has_completed_focus = DOH_yixianwansui }
+				add_popularity = {
+					ideology = fascism
+					popularity = DOH_zhichiduchengfa
+				}
+			}
+		}
+	}
+	DOH_decision_add_junshijinfei = {
+		icon = xingdong
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			OR = {
+				is_debug = yes
+				has_completed_focus = DOH_jinjigaige
+			}
+		}
+		cost = 10
+		days_remove = 2
+		days_re_enable = 2
+		complete_effect = {
+			custom_effect_tooltip = "增加1点额外军事经费"
+			add_to_variable = {
+				var:DOH_junshijinfei = 1
+			}
+			if = {
+				limit = { has_completed_focus = DOH_renminwansui }
+				add_popularity = {
+					ideology = communism
+					popularity = DOH_zhichiduchengfa
+				}
+			}
+			if = {
+				limit = { has_completed_focus = DOH_yinruwaizi }
+				add_popularity = {
+					ideology = democratic
+					popularity = DOH_zhichiduchengfa
+				}
+			}
+			if = {
+				limit = { has_completed_focus = DOH_yixianwansui }
+				add_popularity = {
+					ideology = fascism
+					popularity = DOH_zhichiduchengfa
+				}
+			}
+		}
+	}
+	DOH_decision_rm_junshijinfei = {
+		icon = xingdong
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			OR = {
+				is_debug = yes
+				AND = {
+					check_variable = {
+						var:DOH_junshijinfei > 0
+					}
+					has_completed_focus = DOH_jinjigaige
+				}
+			}
+		}
+		cost = 10
+		days_remove = 2
+		days_re_enable = 2
+		complete_effect = {
+			custom_effect_tooltip = "减少1点额外军事经费"
+			add_to_variable = {
+				var:DOH_junshijinfei = -1
+			}
+			if = {
+				limit = { has_completed_focus = DOH_renminwansui }
+				add_popularity = {
+					ideology = communism
+					popularity = DOH_zhichiduchengfa
+				}
+			}
+			if = {
+				limit = { has_completed_focus = DOH_yinruwaizi }
+				add_popularity = {
+					ideology = democratic
+					popularity = DOH_zhichiduchengfa
+				}
+			}
+			if = {
+				limit = { has_completed_focus = DOH_yixianwansui }
+				add_popularity = {
+					ideology = fascism
+					popularity = DOH_zhichiduchengfa
+				}
+			}
+		}
+	}
+	DOH_decision_add_shichang = {
+		icon = xingdong
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			OR = {
+				is_debug = yes
+				has_completed_focus = DOH_shichanghuanjishu
+			}
+		}
+		cost = 10
+		days_remove = 2
+		days_re_enable = 2
+		complete_effect = {
+			custom_effect_tooltip = "增加1点市场开放程度"
+			add_to_variable = {
+				var:DOH_shichang = 1
+			}
+			if = {
+				limit = { has_completed_focus = DOH_renminwansui }
+				add_popularity = {
+					ideology = communism
+					popularity = DOH_zhichiduchengfa
+				}
+			}
+			if = {
+				limit = { has_completed_focus = DOH_yinruwaizi }
+				add_popularity = {
+					ideology = democratic
+					popularity = DOH_zhichiduchengfa
+				}
+			}
+			if = {
+				limit = { has_completed_focus = DOH_yixianwansui }
+				add_popularity = {
+					ideology = fascism
+					popularity = DOH_zhichiduchengfa
+				}
+			}
+		}
+	}
+	DOH_decision_rm_shichang = {
+		icon = xingdong
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			OR = {
+				is_debug = yes
+				AND = {
+					check_variable = {
+						var:DOH_shichang > 0
+					}
+					has_completed_focus = DOH_shichanghuanjishu
+				}
+			}
+		}
+		cost = 10
+		days_remove = 2
+		days_re_enable = 2
+		complete_effect = {
+			custom_effect_tooltip = "减少1点市场开放程度"
+			add_to_variable = {
+				var:DOH_shichang = -1
+			}
+			if = {
+				limit = { has_completed_focus = DOH_renminwansui }
+				add_popularity = {
+					ideology = communism
+					popularity = DOH_zhichiduchengfa
+				}
+			}
+			if = {
+				limit = { has_completed_focus = DOH_yinruwaizi }
+				add_popularity = {
+					ideology = democratic
+					popularity = DOH_zhichiduchengfa
+				}
+			}
+			if = {
+				limit = { has_completed_focus = DOH_yixianwansui }
+				add_popularity = {
+					ideology = fascism
+					popularity = DOH_zhichiduchengfa
+				}
+			}
+		}
+	}
 	DOH_CHY_tanpan = {
 		icon = xingdong
 		ai_will_do = {
@@ -297,6 +721,22 @@ DOH_decision_category = {
 	# 		}
 	# 	}
 	# }
+	DOH_debug = {
+		icon = xingdong
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			is_debug = yes
+			is_ai = no
+		}
+		complete_effect = {
+			add_dynamic_modifier = {
+				modifier = DOH_donghuangshiwu_idea
+			}
+		}
+	}
 	DOH_gongyehua_visable = {
 		icon = xingdong
 		cost = 0
@@ -306,6 +746,10 @@ DOH_decision_category = {
 		visible = {
 			NOT = {
 				has_country_flag = DOH_xianshigongyehuajueyi
+			}
+			OR = {
+				has_country_flag = DOH_xiandaihua_flag
+				is_debug = yes
 			}
 		}
 		complete_effect = {

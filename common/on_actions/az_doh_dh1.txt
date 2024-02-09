@@ -1,4 +1,122 @@
 on_actions = {
+	on_startup = {
+		effect = {
+			DOH = {
+				set_variable = {
+					var = DOH_touzi
+					value = 0
+					tooltip = "投资"
+				}
+				set_variable = {
+					var = DOH_touzi_effect
+					value = 0
+					tooltip = "投资影响"
+				}
+				set_variable = {
+					var = DOH_keyanjinfei
+					value = 0
+					tooltip = "额外科研经费"
+				}
+				set_variable = {
+					var = DOH_keyanjinfei_effect
+					value = 0
+					tooltip = "额外科研经费影响"
+				}
+				set_variable = {
+					var = DOH_junshijinfei
+					value = 0
+					tooltip = "额外军事经费"
+				}
+				set_variable = {
+					var = DOH_junshijinfei_effect
+					value = 0
+					tooltip = "额外军事经费影响"
+				}
+				set_variable = {
+					var = DOH_gonggongkaizhi
+					value = 0
+					tooltip = "公共开支"
+				}
+				set_variable = {
+					var = DOH_gonggongkaizhi_effect
+					value = 0
+					tooltip = "公共开支影响"
+				}
+				set_variable = {
+					var = DOH_shichang
+					value = 0
+					tooltip = "市场开放程度"
+				}
+				set_variable = {
+					var = DOH_shichang_effect
+					value = 0
+					tooltip = "市场开放程度影响"
+				}
+				set_variable = {
+					var = DOH_guimoxiaoyin
+					value = 0
+					tooltip = "规模效应"
+				}
+				set_variable = {
+					var = DOH_guimoxiaoyin_effect
+					value = 0
+					tooltip = "规模效应影响"
+				}
+				set_variable = {
+					var = DOH_zongjikaizhi
+					value = 0
+					tooltip = "总计开支"
+				}
+				set_variable = {
+					var = DOH_xiaofeipingyinxiang
+					value = 0
+					tooltip = "对消费品系数影响"
+				}
+				set_variable = {
+					var = DOH_xiaofeipingyinxiang_factor
+					value = 0.08
+					tooltip = "对消费品系数影响系数"
+				}
+				set_variable = {
+					var = DOH_zhichiduchengfa
+					value = -0.03
+					tooltip = "异议"
+				}
+			}
+		}
+	}
+	on_weekly = {
+		effect = {
+			set_variable = {
+				var = DOH_zongjikaizhi
+				value = 0
+			}
+			set_variable = {
+				var = DOH_xiaofeipingyinxiang
+				value = 0
+			}
+			add_to_variable = { var:DOH_zongjikaizhi = var:DOH_touzi }
+			add_to_variable = { var:DOH_zongjikaizhi = var:DOH_keyanjinfei }
+			add_to_variable = { var:DOH_zongjikaizhi = var:DOH_junshijinfei }
+			add_to_variable = { var:DOH_zongjikaizhi = var:DOH_gonggongkaizhi }
+			set_variable = { var:DOH_xiaofeipingyinxiang = var:DOH_zongjikaizhi }
+			multiply_variable = { var:DOH_xiaofeipingyinxiang = var:DOH_xiaofeipingyinxiang_factor }
+			set_variable = { var:DOH_touzi_effect = var:DOH_touzi }
+			multiply_variable = { var:DOH_touzi_effect = 0.05 }
+			set_variable = { var:DOH_keyanjinfei_effect = var:DOH_keyanjinfei }
+			multiply_variable = { var:DOH_keyanjinfei_effect = 0.03 }
+			set_variable = { var:DOH_junshijinfei_effect = var:DOH_junshijinfei }
+			multiply_variable = { var:DOH_junshijinfei_effect = 0.03 }
+			set_variable = { var:DOH_gonggongkaizhi_effect = var:DOH_gonggongkaizhi }
+			multiply_variable = { var:DOH_gonggongkaizhi_effect = 0.05 }
+			set_variable = { var:DOH_gonggongkaizhi_effect_2 = var:DOH_gonggongkaizhi }
+			multiply_variable = { var:DOH_gonggongkaizhi_effect_2 = 0.02 }
+			set_variable = { var:DOH_gonggongkaizhi_effect_3 = var:DOH_gonggongkaizhi }
+			multiply_variable = { var:DOH_gonggongkaizhi_effect_3 = 0.001 }
+			set_variable = { var:DOH_shichang_effect = var:DOH_shichang }
+			multiply_variable = { var:DOH_shichang_effect = 0.03 }
+		}
+	}
 	on_monthly = {
 		effect = {
 			if = {
