@@ -175,7 +175,7 @@ on_actions = {
 					extra_xiaofeiping = DOH.stability
 				}
 				multiply_variable = {
-					extra_xiaofeiping = 0.2
+					extra_xiaofeiping = -0.2
 				}
 			}
 			## 工业目标
