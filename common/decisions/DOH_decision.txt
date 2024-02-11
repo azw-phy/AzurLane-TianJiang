@@ -196,6 +196,27 @@ DOH_decision_category = {
 			add_to_variable = {
 				var:DOH_keyanjinfei = 1
 			}
+			if = {
+				limit = { has_completed_focus = DOH_renminwansui }
+				add_popularity = {
+					ideology = communism
+					popularity = DOH_zhichiduchengfa_effect
+				}
+			}
+			if = {
+				limit = { has_completed_focus = DOH_yinruwaizi }
+				add_popularity = {
+					ideology = democratic
+					popularity = DOH_zhichiduchengfa_effect
+				}
+			}
+			if = {
+				limit = { has_completed_focus = DOH_yixianwansui }
+				add_popularity = {
+					ideology = fascism
+					popularity = DOH_zhichiduchengfa_effect
+				}
+			}
 		}
 	}
 	DOH_decision_rm_keyanjinfei = {

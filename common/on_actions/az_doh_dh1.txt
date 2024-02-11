@@ -107,11 +107,11 @@ on_actions = {
 			set_variable = { var:DOH_xiaofeipingyinxiang = var:DOH_zongjikaizhi }
 			multiply_variable = { var:DOH_xiaofeipingyinxiang = var:DOH_xiaofeipingyinxiang_factor }
 			set_variable = { var:DOH_touzi_effect = var:DOH_touzi }
-			multiply_variable = { var:DOH_touzi_effect = 0.05 }
+			multiply_variable = { var:DOH_touzi_effect = 0.02 }
 			set_variable = { var:DOH_keyanjinfei_effect = var:DOH_keyanjinfei }
-			multiply_variable = { var:DOH_keyanjinfei_effect = 0.03 }
+			multiply_variable = { var:DOH_keyanjinfei_effect = 0.02 }
 			set_variable = { var:DOH_junshijinfei_effect = var:DOH_junshijinfei }
-			multiply_variable = { var:DOH_junshijinfei_effect = 0.03 }
+			multiply_variable = { var:DOH_junshijinfei_effect = 0.02 }
 			set_variable = { var:DOH_gonggongkaizhi_effect = var:DOH_gonggongkaizhi }
 			multiply_variable = { var:DOH_gonggongkaizhi_effect = 0.05 }
 			set_variable = { var:DOH_gonggongkaizhi_effect_m = var:DOH_gonggongkaizhi_effect }
