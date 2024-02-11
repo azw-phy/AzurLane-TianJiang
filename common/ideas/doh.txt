@@ -474,7 +474,7 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				production_speed_buildings_factor = 0.2
+				production_speed_buildings_factor = 0.1
 				global_building_slots_factor = 0.35
 			}
 		}
@@ -827,7 +827,7 @@ ideas = {
 			
 			modifier = {
 				global_building_slots_factor = 0.25
-				production_speed_buildings_factor = 0.2
+				production_speed_buildings_factor = 0.1
 				production_speed_infrastructure_factor = 0.3
 			}
 		}
