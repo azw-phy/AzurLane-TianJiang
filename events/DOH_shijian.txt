@@ -876,3 +876,48 @@ country_event = {
 		add_offsite_building = { type = industrial_complex level = 5 }
 	}
 }
+
+add_namespace = DOH_loong_event
+country_event = {
+	id = DOH_loong_event.1001
+	title = DOH_loong_event.1001.t
+	desc = DOH_loong_event.1001.d
+	is_triggered_only = yes
+	option = {
+		name = DOH_loong_event.1001.a
+		ai_chance = {
+			factor = 9
+		}
+		custom_effect_tooltip = DOH_loong_event.1001.at
+		add_timed_idea = {
+			idea = TY_msgj
+			days = 120
+		}
+		add_stability = 0.05
+		add_to_variable = {
+			var = wz_sl
+			value = 10000
+		}
+		add_cic = 1000
+		multiply_variable = {
+			var:DOH_zhichiduchengfa = 0.5
+		}
+	}
+}
+country_event = {
+	id = DOH_loong_event.1002
+	title = DOH_loong_event.1002.t
+	desc = DOH_loong_event.1002.d
+	is_triggered_only = yes
+	option = {
+		name = DOH_loong_event.1002.a
+		ai_chance = {
+			factor = 9
+		}
+		custom_effect_tooltip = DOH_loong_event.1002.at
+		add_stability = -0.05
+		multiply_variable = {
+			var:DOH_zhichiduchengfa = 2
+		}
+	}
+}

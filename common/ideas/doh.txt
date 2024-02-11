@@ -36,6 +36,13 @@ ideas = {
 		}
 	}
 	country = {
+		DOH_ziligengsheng_idea = {
+			picture = GFX_idea_DOH_xdh
+			modifier = {
+				min_export = -0.4
+				political_power_factor = 0.25
+			}
+		}
 		DOH_tongyizhanxian_c_idea = {
 			picture = GFX_idea_DOH_xdh
 			modifier = {
@@ -796,8 +803,8 @@ ideas = {
 			}
 			
 			modifier = {
-				research_speed_factor = 0.08
-				political_power_factor = 0.05
+				research_speed_factor = 0.16
+				political_power_factor = 0.12
 			}
 		}
 		DOH_nbjs = {
@@ -854,8 +861,8 @@ ideas = {
 			}
 			
 			modifier = {
-				no_supply_grace = 12
-				consumer_goods_factor = -0.2
+				no_supply_grace = 24
+				consumer_goods_factor = -0.6
 			}
 		}
 		DOH_gfgt = {

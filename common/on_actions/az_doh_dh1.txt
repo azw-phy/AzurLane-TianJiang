@@ -79,8 +79,13 @@ on_actions = {
 				}
 				set_variable = {
 					var = DOH_zhichiduchengfa
-					value = -0.03
-					tooltip = "异议"
+					value = -3
+					tooltip = "异议（原始）"
+				}
+				set_variable = {
+					var = extra_xiaofeiping
+					value = 0
+					tooltip = "额外消费品系数修正"
 				}
 			}
 		}
@@ -109,12 +114,97 @@ on_actions = {
 			multiply_variable = { var:DOH_junshijinfei_effect = 0.03 }
 			set_variable = { var:DOH_gonggongkaizhi_effect = var:DOH_gonggongkaizhi }
 			multiply_variable = { var:DOH_gonggongkaizhi_effect = 0.05 }
+			set_variable = { var:DOH_gonggongkaizhi_effect_m = var:DOH_gonggongkaizhi_effect }
+			multiply_variable = { var:DOH_gonggongkaizhi_effect_m = -1 }
 			set_variable = { var:DOH_gonggongkaizhi_effect_2 = var:DOH_gonggongkaizhi }
 			multiply_variable = { var:DOH_gonggongkaizhi_effect_2 = 0.02 }
 			set_variable = { var:DOH_gonggongkaizhi_effect_3 = var:DOH_gonggongkaizhi }
 			multiply_variable = { var:DOH_gonggongkaizhi_effect_3 = 0.001 }
 			set_variable = { var:DOH_shichang_effect = var:DOH_shichang }
 			multiply_variable = { var:DOH_shichang_effect = 0.03 }
+			set_variable = {
+				var = DOH_xiaofeipingyinxiang_factor
+				value = 0.08
+			}
+			set_variable = {
+				var:DOH_zhichiduchengfa_effect = DOH_zhichiduchengfa
+			}
+			multiply_variable = { var:DOH_zhichiduchengfa_effect = 0.01 }
+			if = {
+				limit = {
+					DOH = {
+						has_completed_focus = DOH_donghuanggongyetixi
+					}
+				}
+				set_variable = {
+					var = DOH_guimoxiaoyin
+					value = DOH.num_of_civilian_factories
+				}
+				multiply_variable = { var:DOH_guimoxiaoyin = 0.01 }
+				set_variable = {
+					var = DOH_guimoxiaoyin_effect
+					value = DOH_guimoxiaoyin
+				}
+				multiply_variable = { var:DOH_guimoxiaoyin_effect = 0.05 }
+				set_variable = {
+					var = DOH_guimoxiaoyin_effect_2
+					value = DOH_guimoxiaoyin_2
+				}
+				multiply_variable = { var:DOH_guimoxiaoyin_effect_2 = 0.01 }
+				if = {
+					limit = {
+						check_variable = {
+							DOH_guimoxiaoyin_effect_2 > 0.03 # 大于300民用厂
+						}
+					}
+					add_to_variable = {
+						var = DOH_xiaofeipingyinxiang_factor
+						value = DOH_guimoxiaoyin_effect_2
+					}
+					add_to_variable = {
+						var = DOH_xiaofeipingyinxiang_factor
+						value = -0.03
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = DOH_heqishengcai
+				}
+				set_variable = {
+					extra_xiaofeiping = DOH.stability
+				}
+				multiply_variable = {
+					extra_xiaofeiping = 0.2
+				}
+			}
+			## 工业目标
+			set_variable = {
+				var:DOH_gongyeguihua_doing_goal_display = 1.1
+			}
+			if = {
+				limit = {
+					check_variable = {
+						DOH.num_of_factories < 1000
+					}
+				}
+				set_variable = {
+					var:DOH_gongyeguihua_doing_goal_display = 1000
+				}
+				subtract_from_variable = {
+					var:DOH_gongyeguihua_doing_goal_display = DOH.num_of_factories
+				}
+				multiply_variable = {
+					var:DOH_gongyeguihua_doing_goal_display = 0.001
+				}
+				add_to_variable = {
+					var:DOH_gongyeguihua_doing_goal_display = 1.1
+				}
+			}
+			multiply_variable = {
+				var:DOH_gongyeguihua_doing_goal_display = DOH.num_of_factories
+			}
+			round_variable = var:DOH_gongyeguihua_doing_goal_display
 		}
 	}
 	on_monthly = {

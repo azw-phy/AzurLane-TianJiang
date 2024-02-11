@@ -342,7 +342,12 @@ DOH_decision_category = {
 		visible = {
 			OR = {
 				is_debug = yes
-				has_completed_focus = DOH_shichanghuanjishu
+				AND = {
+					check_variable = {
+						var:DOH_shichang < 15
+					}
+					has_completed_focus = DOH_shichanghuanjishu
+				}
 			}
 		}
 		cost = 10
@@ -421,6 +426,78 @@ DOH_decision_category = {
 					popularity = DOH_zhichiduchengfa
 				}
 			}
+		}
+	}
+	DOH_gongyeguihua_decision = {
+		icon = xingdong
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			OR = {
+				is_debug = yes
+				AND = {
+					has_completed_focus = DOH_huanxingjulong
+					NOT = {
+						has_country_flag = DOH_gongyeguihua_doing
+					}
+				}
+			}
+		}
+		cost = 35
+		days_remove = 10
+		remove_effect = {
+			activate_mission = DOH_gongyeguihua_mission
+			set_country_flag = DOH_gongyeguihua_doing
+			set_variable = {
+				var:DOH_gongyeguihua_doing_goal = 1.1
+			}
+			if = {
+				limit = {
+					check_variable = {
+						DOH.num_of_factories < 1000
+					}
+				}
+				set_variable = {
+					var:DOH_gongyeguihua_doing_goal = 1000
+				}
+				subtract_from_variable = {
+					var:DOH_gongyeguihua_doing_goal = DOH.num_of_factories
+				}
+				multiply_variable = {
+					var:DOH_gongyeguihua_doing_goal = 0.001
+				}
+				add_to_variable = {
+					var:DOH_gongyeguihua_doing_goal = 1.1
+				}
+			}
+			multiply_variable = {
+				var:DOH_gongyeguihua_doing_goal = DOH.num_of_factories
+			}
+			round_variable = var:DOH_gongyeguihua_doing_goal
+		}
+	}
+	DOH_gongyeguihua_mission = {
+		icon = xingdong
+		activation = {
+			always = no
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = DOH_gongyeguihua_mission_tooltip
+				check_variable = {
+					DOH.num_of_factories > var:DOH_gongyeguihua_doing_goal
+				}
+			}
+		}
+
+		is_good = no
+		days_mission_timeout = 350
+		complete_effect = {
+			country_event = DOH_loong_event.1001
+		}
+		timeout_effect = {
+			country_event = DOH_loong_event.1002
 		}
 	}
 	DOH_CHY_tanpan = {
