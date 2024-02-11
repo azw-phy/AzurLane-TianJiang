@@ -760,7 +760,7 @@ focus_tree = {
         x = 16
         y = 0
 
-        cost = 2
+        cost = 4
 
         ai_will_do = {
             factor = 5
@@ -782,7 +782,7 @@ focus_tree = {
         prerequisite = { focus = DOH_zhengyankaishijie }
         relative_position_id = DOH_zhengyankaishijie
     
-        cost = 2
+        cost = 4
 
         ai_will_do = {
             factor = 0
@@ -4124,72 +4124,6 @@ focus_tree = {
 			671 = { add_core_of = ROOT }
 			286 = { add_core_of = ROOT }
 			741 = { add_core_of = ROOT }
-		}
-	}	
-	focus = {
-		id = DOH_zhengyankaishijie
-		icon = GFX_goal_generic_demand_territory
-		x = 16
-		y = 0
-
-		cost = 6
-
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				date > 1936.6.1
-				add = 50
-			}
-		}
-
-		#search_filters = { FOCUS_FILTER_STABILITY }
-		completion_reward = {	
-			add_political_power = 200
-		}
-	}
-	focus = {
-		id = DOH_shiyichangji
-		icon = GFX_goal_generic_intelligence_exchange
-		x = 0
-		y = 1
-		prerequisite = { focus = DOH_zhengyankaishijie }
-		relative_position_id = DOH_zhengyankaishijie
-	
-		cost = 5
-
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				date > 1938.6.1
-				add = 10
-			}
-			modifier = {
-				AND = {
-					date > 1938.1.1
-					check_variable = {
-						var = affect_from_huj
-						value = affect_from_tix
-						compare = greater_than
-					}
-				}
-				add = 10
-			}
-			modifier = {
-				AND = {
-					date > 1938.1.1
-					check_variable = {
-						var = affect_from_bfl
-						value = affect_from_tix
-						compare = greater_than
-					}
-				}
-				add = 10
-			}
-		}
-
-		completion_reward = {	
-			add_political_power = -50
-			add_offsite_building = { type = industrial_complex level = 2 }
 		}
 	}
 	focus = {
