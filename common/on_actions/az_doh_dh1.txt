@@ -185,11 +185,11 @@ on_actions = {
 			if = {
 				limit = {
 					check_variable = {
-						DOH.num_of_factories < 1000
+						DOH.num_of_factories < 450
 					}
 				}
 				set_variable = {
-					var:DOH_gongyeguihua_doing_goal_display = 1000
+					var:DOH_gongyeguihua_doing_goal_display = 450
 				}
 				subtract_from_variable = {
 					var:DOH_gongyeguihua_doing_goal_display = DOH.num_of_factories
