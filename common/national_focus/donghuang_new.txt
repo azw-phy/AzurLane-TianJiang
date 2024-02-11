@@ -395,7 +395,7 @@ focus_tree = {
     }
     focus = {
         id = DOH_tiexueguwen
-        icon = GFX_focus_ger_oppose_hitler
+        icon = GFX_fflag_TIX
         x = -2
         y = 1
         cost = 7
@@ -431,7 +431,7 @@ focus_tree = {
     }
     focus = {
         id = DOH_huangjiaguwen
-        icon = GFX_goal_generic_navy_doctrines_tactics
+        icon = GFX_fflag_HUJ
         x = 2
         y = 1
         cost = 7
@@ -1574,7 +1574,7 @@ focus_tree = {
 
 		
 		completion_reward = {
-
+			#custom_effect_tooltip = DOH_hailufuhe_tooltip
 		}
 	}
 	focus = {
@@ -1960,7 +1960,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DOH_feitianmeng
-		icon = GFX_fflag_DOH
+		icon = GFX_focus_rocketry_shine
 		x = -1
 		y = 1
 		prerequisite = { focus = DOH_guangronghemengxiangdeyuanzheng }
@@ -1970,10 +1970,17 @@ focus_tree = {
 		ai_will_do = {
 			factor = 15
 		}
-
+		available = {
+			num_of_factories > 3000
+			has_tech = advanced_rocket_engines
+			756 = {
+				rocket_site > 0
+			}
+			has_country_flag = DOH_feitianmeng_flag
+		}
 		
 		completion_reward = {
-
+			add_ideas = DOH_feitianmeng_idea
 		}
 	}
 	focus = {
@@ -2996,10 +3003,10 @@ focus_tree = {
 				set_state_category = large_city
 			}
 			714 = {
-				set_state_category = rural
+				set_state_category = large_city
 			}
 			717 = {
-				set_state_category = rural
+				set_state_category = large_city
 			}
 		}
 	}
@@ -3108,6 +3115,10 @@ focus_tree = {
 			591 = {
 				add_resource = {
 					type = oil
+					amount = 35
+				}
+				add_resource = {
+					type = rubber
 					amount = 35
 				}
 			}

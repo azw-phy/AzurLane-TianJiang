@@ -36,6 +36,18 @@ ideas = {
 		}
 	}
 	country = {
+		DOH_feitianmeng_idea = {
+			picture = GFX_idea_DOH_xdh
+			modifier = {
+				civilian_intel_factor = 5
+				army_intel_factor = 5
+				navy_intel_factor = 5
+				air_intel_factor = 5
+				naval_detection = 1
+				navy_submarine_detection_factor = 0.05
+				air_detection = 1
+			}
+		}
 		DOH_ziligengsheng_idea = {
 			picture = GFX_idea_DOH_xdh
 			modifier = {
