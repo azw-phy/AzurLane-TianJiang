@@ -76,6 +76,27 @@ country_event = {
 				}
 				promote_leader = yes
 			}
+			add_country_leader_role = {
+				country_leader = {
+				expire = "1999.1.1"
+				ideology = leninism
+				}
+				promote_leader = yes
+			}
+			add_country_leader_role = {
+				country_leader = {
+				expire = "1999.1.1"
+				ideology = fascism_ideology
+				}
+				promote_leader = yes
+			}
+			add_country_leader_role = {
+				country_leader = {
+				expire = "1999.1.1"
+				ideology = liberalism
+				}
+				promote_leader = yes
+			}
 		}
 	}
 }
@@ -100,6 +121,27 @@ country_event = {
 				country_leader = {
 				expire = "1999.1.1"
 				ideology = despotism
+				}
+				promote_leader = yes
+			}
+			add_country_leader_role = {
+				country_leader = {
+				expire = "1999.1.1"
+				ideology = leninism
+				}
+				promote_leader = yes
+			}
+			add_country_leader_role = {
+				country_leader = {
+				expire = "1999.1.1"
+				ideology = fascism_ideology
+				}
+				promote_leader = yes
+			}
+			add_country_leader_role = {
+				country_leader = {
+				expire = "1999.1.1"
+				ideology = liberalism
 				}
 				promote_leader = yes
 			}
@@ -130,9 +172,28 @@ country_event = {
 				}
 				promote_leader = yes
 			}
-		}
-		
-		
+			add_country_leader_role = {
+				country_leader = {
+				expire = "1999.1.1"
+				ideology = leninism
+				}
+				promote_leader = yes
+			}
+			add_country_leader_role = {
+				country_leader = {
+				expire = "1999.1.1"
+				ideology = fascism_ideology
+				}
+				promote_leader = yes
+			}
+			add_country_leader_role = {
+				country_leader = {
+				expire = "1999.1.1"
+				ideology = liberalism
+				}
+				promote_leader = yes
+			}
+		}		
 	}
 }
 country_event = {
