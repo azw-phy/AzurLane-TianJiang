@@ -873,7 +873,7 @@ focus_tree = {
         y = 1
         prerequisite = { focus = DOH_yubeilianjiaoliu }
         relative_position_id = DOH_yubeilianjiaoliu
-        cost = 10
+        cost = 6
 
         ai_will_do = {
             factor = 10
@@ -1000,7 +1000,7 @@ focus_tree = {
 
         prerequisite = { focus = DOH_yubeilianjiaoliu }
         relative_position_id = DOH_yubeilianjiaoliu
-        cost = 10
+        cost = 6
 
         ai_will_do = {
             factor = 10
@@ -1085,7 +1085,7 @@ focus_tree = {
         y = 1
         prerequisite = { focus = DOH_yuhuangjiajiaoliu }
         relative_position_id = DOH_yuhuangjiajiaoliu
-        cost = 10
+        cost = 6
 
         ai_will_do = {
             factor = 10
@@ -1107,7 +1107,7 @@ focus_tree = {
         y = 1
         prerequisite = { focus = DOH_yuhuangjiajiaoliu }
         relative_position_id = DOH_yuhuangjiajiaoliu
-        cost = 7
+        cost = 6
 
         ai_will_do = {
             factor = 10
@@ -1153,7 +1153,7 @@ focus_tree = {
         icon = GFX_focus_generic_little_entente
         x = -2
         y = 1
-        cost = 5
+        cost = 4
         relative_position_id = DOH_kuodayixianquanli
         prerequisite = { focus = DOH_kuodayixianquanli }
 
@@ -1176,7 +1176,7 @@ focus_tree = {
         icon = GFX_focus_generic_little_entente
         x = 2
         y = 1
-        cost = 5
+        cost = 4
         relative_position_id = DOH_kuodayixianquanli
         prerequisite = { focus = DOH_kuodayixianquanli }
 
@@ -1194,7 +1194,7 @@ focus_tree = {
         icon = GFX_goal_generic_scientific_exchange
         x = 0
         y = 1
-        cost = 10
+        cost = 7
         relative_position_id = DOH_kuodayixianquanli
         prerequisite = { focus = DOH_kuodayixianquanli }
 
@@ -1220,7 +1220,7 @@ focus_tree = {
         y = 3
         prerequisite = { focus = DOH_renminwansui focus = DOH_yinruwaizi }
         relative_position_id = DOH_xuexizhilv
-        cost = 10
+        cost = 7
 
         ai_will_do = {
             factor = 10
@@ -1286,6 +1286,20 @@ focus_tree = {
             add = 100
             }
         }
+		available = {
+			date > 1937.12.1
+			controls_state = 609
+			controls_state = 611
+			controls_state = 610
+			controls_state = 612
+			controls_state = 715
+			controls_state = 716
+			controls_state = 745
+			controls_state = 328
+			controls_state = 717
+			controls_state = 714
+			controls_state = 761
+		}
         completion_reward = {
 			DOH_dongfangguguo_dengji = yes
 			add_political_power = 300
