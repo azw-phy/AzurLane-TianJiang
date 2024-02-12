@@ -184,7 +184,7 @@ DOH_ai_behavior = {
 		text = "DOH_zouxiang_historical"
 		desc = "DOH_zouxiang_historical_desc"
 		allow_achievements = yes
-	}	
+	}
 }
 BYG_ai_behavior = {
 	name = "BYG_AI_BEHAVIOR"

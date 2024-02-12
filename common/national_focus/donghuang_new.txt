@@ -1356,6 +1356,9 @@ focus_tree = {
         relative_position_id = DOH_tongyizhanxian
         x = 0
         y = 1
+		ai_will_do = {
+            factor = 10
+        }
 		available = {
 			OR = {
 				AND = {
@@ -1389,6 +1392,9 @@ focus_tree = {
         relative_position_id = DOH_heqishengcai
         x = 0
         y = 1
+		ai_will_do = {
+            factor = 10
+        }
 		available = {
 			OR = {
 				AND = {
@@ -1443,7 +1449,7 @@ focus_tree = {
 		}
         cost = 5
         ai_will_do = {
-            factor = 10
+            factor = 0
         }
         completion_reward = {
             custom_effect_tooltip = DOH_shichanghuanjishu_tooltip
@@ -1492,6 +1498,9 @@ focus_tree = {
         cost = 5
         prerequisite = { focus = DOH_dongfangliming }
         relative_position_id = DOH_dongfangliming
+		ai_will_do = {
+            factor = 15
+        }
         x = 4
         y = 1
         completion_reward = {
@@ -1509,6 +1518,9 @@ focus_tree = {
         relative_position_id = DOH_xiandaihuazhimeng
         x = -1
         y = 1
+		ai_will_do = {
+            factor = 5
+        }
         completion_reward = {
 			add_timed_idea = {
 				idea = DOH_jsgc
@@ -1552,6 +1564,9 @@ focus_tree = {
         relative_position_id = DOH_xiandaihuazhimeng
         x = 1
         y = 1
+		ai_will_do = {
+            factor = 15
+        }
         completion_reward = {
 			add_research_slot = 1
 			custom_effect_tooltip = DOH_rencaiyinjin_tooltip
@@ -1566,6 +1581,9 @@ focus_tree = {
         relative_position_id = DOH_xiandaihuazhimeng
         x = 0
         y = 2
+		ai_will_do = {
+            factor = 10
+        }
 		available = {
 			num_of_factories > 320
 		}
@@ -2359,7 +2377,7 @@ focus_tree = {
 			}
 			ic_ratio = {
 				tag = CHY
-				ratio > 6
+				ratio > 5
 			}
 		}
 		ai_will_do = {
@@ -3356,7 +3374,7 @@ focus_tree = {
 		relative_position_id = DOH_fangfanjinlin
 		mutually_exclusive = { focus = DOH_beijingfangxian }
 		available = {
-			has_completed_focus = DOH_huanxingjulong
+			has_completed_focus = DOH_dongfangliming
 		}
 		ai_will_do = {
 			factor = 1
