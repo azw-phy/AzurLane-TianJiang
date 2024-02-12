@@ -639,7 +639,7 @@ focus_tree = {
             add_tech_bonus = {
                 name = "玄学建造"
                 bonus = 2
-                uses = 1
+                uses = 2
                 ahead_reduction = 3
                 category = naval_equipment
             }
@@ -2024,9 +2024,12 @@ focus_tree = {
 			factor = 15
 		}
 
+		available = {
+			always = no
+		}
 		
 		completion_reward = {
-
+			custom_effect_tooltip = "还没做完"
 		}
 	}
 	focus = {
