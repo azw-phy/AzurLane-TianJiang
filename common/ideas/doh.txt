@@ -826,7 +826,7 @@ ideas = {
 			}
 			
 			modifier = {
-				global_building_slots_factor = 0.25
+				global_building_slots_factor = 0.4
 				production_speed_buildings_factor = 0.15
 				production_speed_infrastructure_factor = 0.3
 			}
@@ -874,7 +874,7 @@ ideas = {
 			
 			modifier = {
 				no_supply_grace = 24
-				consumer_goods_factor = -0.6
+				consumer_goods_factor = -0.3
 			}
 		}
 		DOH_gfgt = {

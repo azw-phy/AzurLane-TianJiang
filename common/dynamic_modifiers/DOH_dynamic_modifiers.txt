@@ -10,10 +10,9 @@ DOH_donghuangshiwu_idea = {
 	industrial_capacity_factory = DOH_junshijinfei_effect
 	industrial_capacity_dockyard = DOH_junshijinfei_effect
 
-	political_power_factor = DOH_gonggongkaizhi_effect_3
 	boost_ideology_mission_factor = DOH_gonggongkaizhi_effect
 	intel_network_gain_factor = DOH_gonggongkaizhi_effect
-	naval_morale = DOH_gonggongkaizhi_effect
+	naval_morale_factor = DOH_gonggongkaizhi_effect
 	intelligence_agency_defense = DOH_gonggongkaizhi_effect
 	industry_free_repair_factor = DOH_gonggongkaizhi_effect
 	line_change_production_efficiency_factor = DOH_gonggongkaizhi_effect
