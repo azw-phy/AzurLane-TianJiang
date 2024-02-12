@@ -1,5 +1,7 @@
 ﻿l_simp_chinese:
+  DOH_focus: "东煌国策数"
   DOH_tongyizhanxian_tooltip: "获得为期180天的§Y统一战线§!。其效果为：执政党支持率和稳定度提升。\n启用§C统一战线系统§!。"
+  DOH_tongyizhanxian_tooltip_2: "获得为期180天的§Y统一战线§!。其效果为：执政党支持率和稳定度提升。"
   DOH_xiandaihua_tooltip: "允许进行：§C东煌式现代化§!"
   DOH_jinjigaige_tooltip: "启用§C东煌特色经济系统§!"
   DOH_shichanghuanjishu_tooltip: "§C东煌特色经济系统§!追加§C对外开放市场机制§!"

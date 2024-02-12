@@ -902,7 +902,7 @@ country_event = {
 		multiply_variable = {
 			var:DOH_zhichiduchengfa = 0.5
 		}
-		custom_effect_tooltip = DOH_tongyizhanxian_tooltip
+		custom_effect_tooltip = DOH_tongyizhanxian_tooltip_2
 		hidden_effect = {
 			if = {
 				limit = { has_completed_focus = DOH_renminwansui }
