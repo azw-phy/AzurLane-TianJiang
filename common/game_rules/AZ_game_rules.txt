@@ -187,23 +187,51 @@ DOH_ai_behavior = {
 	}
 	option = {
 		name = DOH_red_focus_1
-		text = "DOH_zouxiang_historical"
-		desc = "DOH_zouxiang_historical_desc"
+		text = "DOH_zouxiang_red_1"
+		desc = "DOH_zouxiang_red_1_desc"
 		allow_achievements = yes
 	}
 	option = {
 		name = DOH_red_focus_2
-		text = "DOH_zouxiang_historical"
-		desc = "DOH_zouxiang_historical_desc"
+		text = "DOH_zouxiang_red_2"
+		desc = "DOH_zouxiang_red_2_desc"
 		allow_achievements = yes
 	}
 	option = {
 		name = DOH_blue_focus
-		text = "DOH_zouxiang_historical"
-		desc = "DOH_zouxiang_historical_desc"
+		text = "DOH_zouxiang_blue"
+		desc = "DOH_zouxiang_blue_desc"
 		allow_achievements = yes
 	}
 }
+DH1_ai_behavior = {
+	name = "DH1_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DH1_historical
+		text = DH1_historical_text
+		desc = DH1_historical_desc
+	}
+	option = {
+		name = DH1_panluan_2
+		text = DH1_panluan_2_text
+		desc = DH1_panluan_2_desc
+		allow_achievements = yes
+	}
+	option = {
+		name = DH1_panluan_1
+		text = DH1_panluan_1_text
+		desc = DH1_panluan_1_desc
+		allow_achievements = yes
+	}
+	option = {
+		name = DH1_panluan_3
+		text = DH1_panluan_3_text
+		desc = DH1_panluan_3_desc
+		allow_achievements = yes
+	}
+}
+
 BYG_ai_behavior = {
 	name = "BYG_AI_BEHAVIOR"
 	group = "RULE_GROUP_AI_BEHAVIOR"

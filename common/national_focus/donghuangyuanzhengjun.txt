@@ -1579,6 +1579,27 @@
 		}
 		ai_will_do = {
 			factor = 0
+			modifier = {
+				has_game_rule = {
+					rule = DH1_ai_behavior
+					option = DH1_panluan_1
+				}
+				add = 100
+			}
+			modifier = {
+				has_game_rule = {
+					rule = DH1_ai_behavior
+					option = DH1_panluan_2
+				}
+				add = 100
+			}
+			modifier = {
+				has_game_rule = {
+					rule = DH1_ai_behavior
+					option = DH1_panluan_3
+				}
+				add = 100
+			}
 		}
 		available = {
 
@@ -1676,6 +1697,13 @@
 		}
 		ai_will_do = {
 			factor = 20
+			modifier = {
+				has_game_rule = {
+					rule = DH1_ai_behavior
+					option = DH1_historical
+				}
+				add = 100
+			}
 		}
 		available = {
 			
@@ -1906,7 +1934,14 @@
 			focus = DH1_qiuzhuchongying
 		}
 		ai_will_do = {
-			factor = 11
+			factor = 0
+			modifier = {
+				has_game_rule = {
+					rule = DH1_ai_behavior
+					option = DH1_panluan_3
+				}
+				add = 100
+			}
 		}
 		available = {
 			
@@ -1941,7 +1976,14 @@
 			focus = DH1_linglizhongyang
 		}
 		ai_will_do = {
-			factor = 11
+			factor = 0
+			modifier = {
+				has_game_rule = {
+					rule = DH1_ai_behavior
+					option = DH1_panluan_2
+				}
+				add = 100
+			}
 		}
 		available = {
 			
@@ -1975,7 +2017,14 @@
 			focus = DH1_linglizhongyang
 		}
 		ai_will_do = {
-			factor = 11
+			factor = 0
+			modifier = {
+				has_game_rule = {
+					rule = DH1_ai_behavior
+					option = DH1_panluan_1
+				}
+				add = 100
+			}
 		}
 		available = {
 			NOT = { has_war_with = CHY }
