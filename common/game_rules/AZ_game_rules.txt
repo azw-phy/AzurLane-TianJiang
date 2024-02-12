@@ -185,6 +185,24 @@ DOH_ai_behavior = {
 		desc = "DOH_zouxiang_historical_desc"
 		allow_achievements = yes
 	}
+	option = {
+		name = DOH_red_focus_1
+		text = "DOH_zouxiang_historical"
+		desc = "DOH_zouxiang_historical_desc"
+		allow_achievements = yes
+	}
+	option = {
+		name = DOH_red_focus_2
+		text = "DOH_zouxiang_historical"
+		desc = "DOH_zouxiang_historical_desc"
+		allow_achievements = yes
+	}
+	option = {
+		name = DOH_blue_focus
+		text = "DOH_zouxiang_historical"
+		desc = "DOH_zouxiang_historical_desc"
+		allow_achievements = yes
+	}
 }
 BYG_ai_behavior = {
 	name = "BYG_AI_BEHAVIOR"
