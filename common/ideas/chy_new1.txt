@@ -686,13 +686,13 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag = DOH
-				attack_bonus_against = 0.4
-				defense_bonus_against = 0.4
+				attack_bonus_against = 0.3
+				defense_bonus_against = 0.3
 			}
 			modifier = {
 				breakthrough_factor = 0.1
 				org_loss_when_moving = -0.15
-				supply_consumption_factor = -0.15
+				supply_consumption_factor = -0.1
 				required_garrison_factor = -0.2
 			}
 		}
@@ -703,8 +703,8 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag = DOH
-				attack_bonus_against = 0.2
-				defense_bonus_against = 0.2
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
 			}
 			modifier = {
 				org_loss_when_moving = -0.05
@@ -718,11 +718,11 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag = DOH
-				attack_bonus_against = 0.1
-				defense_bonus_against = 0.1
+				attack_bonus_against = -0.5
+				defense_bonus_against = -0.5
 			}
 			modifier = {
-				supply_consumption_factor = 0.1
+				supply_consumption_factor = 0.25
 				resistance_growth = 2
 			}
 		}

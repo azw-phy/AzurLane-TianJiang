@@ -1123,8 +1123,9 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag = BFL
-				attack_bonus_against = 0.2
-				defense_bonus_against = 0.2
+				attack_bonus_against = 1
+				defense_bonus_against = 1
+				breakthrough_bonus_against = 0.3
 			}
 		}
 		CHY_rimuxishan = {
@@ -1875,8 +1876,8 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				political_power_factor = -0.2
-				stability_weekly = -0.003
+				political_power_factor = -0.3
+				stability_weekly = -0.005
 				war_support_weekly = -0.005
 			}
 		}
@@ -1988,7 +1989,7 @@ ideas = {
 				war_support_factor = 0.3
 				consumer_goods_factor = -0.4
 				min_export = -0.2
-				stability_weekly = -0.006
+				stability_weekly = -0.007
 				war_support_weekly = -0.026
 				conscription = 0.05
 				production_speed_buildings_factor = 0.4
@@ -2303,6 +2304,128 @@ ideas = {
 				tag = DH1
 				attack_bonus_against = 2
 				defense_bonus_against = 2
+			}
+		}
+		
+		BFL_fanfxs_time = {
+			picture = FRA_scw_intervention_nationalists_focus
+			allowed_civil_war = {
+				always = yes
+			}
+			targeted_modifier = {
+				tag = TIX
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+			targeted_modifier = {
+				tag = SAD
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+			targeted_modifier = {
+				tag = CHY
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+		}
+		
+		BFL_fanfxs = {
+			picture = FRA_scw_intervention_nationalists_focus
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				democratic_drift =	0.5
+				communism_drift = -0.25
+			}
+			targeted_modifier = {
+				tag = TIX
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = SAD
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = CHY
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+		}
+		
+		BFL_fanzbzy = {
+			picture = FRA_scw_intervention_nationalists_focus
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				communism_drift = 0.1
+				democratic_drift = -0.2
+			}
+			targeted_modifier = {
+				tag = BYG
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = HUJ
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = YUW
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+		}
+		
+		BFL_fanzbzy_time = {
+			picture = FRA_scw_intervention_nationalists_focus
+			allowed_civil_war = {
+				always = yes
+			}
+			targeted_modifier = {
+				tag = BYG
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+			targeted_modifier = {
+				tag = HUJ
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+			targeted_modifier = {
+				tag = YUW
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+		}
+		
+		BFL_xiangxinshidaiqianjin = {
+			picture = SOV_soviet_railways
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				subversive_activites_upkeep = -0.5
+				drift_defence_factor = 1
+				consumer_goods_expected_value = -0.05
+				mobilization_laws_cost_factor = -0.5
+				trade_laws_cost_factor  = -0.5
+				economy_cost_factor = -0.5
+			}
+		}
+		
+		BFL_dasaochudeyingxing = {
+			picture = anti_soviet_pact
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = -0.2
+				stability_factor = -0.1
 			}
 		}
 		

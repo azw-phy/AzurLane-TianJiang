@@ -75,7 +75,7 @@
 		y = 1
 		prerequisite = { focus = BFL_xiayigewunianjihua }
 		relative_position_id = BFL_xiayigewunianjihua
-		cost = 10
+		cost = 6
 
 		ai_will_do = {
 			factor = 5
@@ -197,6 +197,9 @@
 		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			add_research_slot = 1
+			custom_effect_tooltip = unlock_propaganda_campaign_tt
+			unlock_decision_tooltip = SOV_propaganda_knowledge
+			custom_effect_tooltip = propaganda_campaign_requirement_tt
 		}
 	}
 	focus = {
@@ -334,7 +337,10 @@
 		prerequisite = { focus = BFL_mingongjianshe }
 		relative_position_id = BFL_mingongjianshe
 		available = {
+			or = {
 			has_completed_focus = BFL_yubilanhangxianhezuo
+			has_completed_focus = BFL_6
+			}
 		}
 		cost = 6
 
@@ -362,7 +368,7 @@
 		y = 1
 		prerequisite = { focus = BFL_xiayigewunianjihua }
 		relative_position_id = BFL_xiayigewunianjihua
-		cost = 7
+		cost = 6
 
 		ai_will_do = {
 			factor = 30
@@ -398,7 +404,7 @@
 		available = {
 			has_completed_focus = BFL_fazhanbubing
 		}
-		cost = 6
+		cost = 5
 
 		ai_will_do = {
 			factor = 30
@@ -416,7 +422,7 @@
 		y = 1
 		prerequisite = { focus = BFL_yinruwaizi focus = BFL_buqiangshengchan }
 		relative_position_id = BFL_yinruwaizi
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 30
@@ -560,6 +566,9 @@
 					instant_build = yes
 				}
 			}
+			custom_effect_tooltip = unlock_propaganda_campaign_tt
+			unlock_decision_tooltip = SOV_propaganda_high_yield
+			custom_effect_tooltip = propaganda_campaign_requirement_tt
 		}
 	}
 	focus = {
@@ -569,7 +578,7 @@
 		y = 1
 		prerequisite = { focus = BFL_jihuangwenti }
 		relative_position_id = BFL_jihuangwenti
-		cost = 6
+		cost = 5
 
 		ai_will_do = {
 			factor = 30
@@ -592,7 +601,7 @@
 		y = 1
 		prerequisite = { focus = BFL_jihuangwenti }
 		relative_position_id = BFL_jihuangwenti
-		cost = 5
+		cost = 4
 
 		ai_will_do = {
 			factor = 30
@@ -732,7 +741,7 @@
 		x = -1
 		y = 2
 
-		cost = 4
+		cost = 5
 
 		ai_will_do = {
 			factor = 20
@@ -742,6 +751,9 @@
 		completion_reward = {
 			army_experience = 50
 			add_war_support = 0.15
+			custom_effect_tooltip = unlock_propaganda_campaign_tt
+			unlock_decision_tooltip = SOV_propaganda_for_the_motherland
+			custom_effect_tooltip = propaganda_campaign_requirement_tt
 		}
 	}
 	focus = {
@@ -762,6 +774,9 @@
 		completion_reward = {
 			army_experience = 50
 			add_ideas = BFL_wwdzs
+			custom_effect_tooltip = unlock_propaganda_campaign_tt
+			unlock_decision_tooltip = SOV_propaganda_heroes_forward
+			custom_effect_tooltip = propaganda_campaign_requirement_tt
 		}
 	}
 	focus = {
@@ -783,6 +798,9 @@
 		completion_reward = {
 			army_experience = 50
 			BFL_lujunjianshe_dengji = yes
+			custom_effect_tooltip = unlock_propaganda_campaign_tt
+			unlock_decision_tooltip = SOV_propaganda_death_to_invaders
+			custom_effect_tooltip = propaganda_campaign_requirement_tt
 		}
 	}
 	focus = {
@@ -808,20 +826,6 @@
 				category = infantry_weapons
 				category = motorized_equipment
 				category = artillery 
-			}
-			if = {
-			limit = { is_ai = yes }
-			army_experience = 1000
-			set_technology = { interwar_antitank = 1 }
-			set_technology = { tech_engineers = 1 }
-			set_technology = { tech_engineers2 = 1 }  
-			set_technology = { antitank1 = 1 }
-			set_technology = { antitank2 = 1 } 
-			set_technology = { antitank3 = 1 }  
-			set_technology = { armor_tech_1 = 1 }
-			set_technology = { armor_tech_2 = 1 }
-			set_technology = { radio = 1 } 
-			set_technology = { radio_detection = 1 }
 			}
 		}
 	}
@@ -1011,6 +1015,9 @@
 				uses = 2
 				category = land_doctrine
 			}
+			custom_effect_tooltip = unlock_propaganda_campaign_tt
+			unlock_decision_tooltip = SOV_propaganda_glory_to_partisans
+			custom_effect_tooltip = propaganda_campaign_requirement_tt
 		}
 	}
 	focus = {
@@ -1142,7 +1149,7 @@
 				is_ai = yes
 			} }
 		}
-		cost = 5
+		cost = 6
 
 		ai_will_do = {
 			factor = 20
@@ -1342,6 +1349,9 @@
 					}	
 				}
 			}
+			custom_effect_tooltip = unlock_propaganda_campaign_tt
+			unlock_decision_tooltip = SOV_propaganda_fight_to_the_last
+			custom_effect_tooltip = propaganda_campaign_requirement_tt
 		}
 	}
 	focus = {
@@ -1370,6 +1380,9 @@
 			BFL_lujunjianshe_dengji = yes
 			TY_lujunliluntupo = yes
 			set_technology = { masterful_blitz_for_bfl = 1 popup = no }
+			custom_effect_tooltip = unlock_propaganda_campaign_tt
+			unlock_decision_tooltip = SOV_propaganda_victory_at_hand
+			custom_effect_tooltip = propaganda_campaign_requirement_tt
 		}
 	}
 	focus = {
@@ -1684,7 +1697,9 @@
 		
 		cost = 10
 		mutually_exclusive = { focus = BFL_xiangyouzhuan }
-
+		allow_branch = {
+			has_global_flag = MOD_azurlane_sairen
+		}
 		ai_will_do = {
 			factor = 40
 		}
@@ -2280,10 +2295,10 @@
 	focus = {  
 		id = BFL_dongfangdeweixie
 		icon = GFX_goal_generic_military_sphere
-		x = 10
+		x = 11
 		y = 1
-		prerequisite = { focus = BFL_qiangyingluxian }
-		relative_position_id = BFL_qiangyingluxian
+		prerequisite = { focus = BFL_1 }
+		relative_position_id = BFL_1
 		allow_branch = {
 			has_global_flag = MOD_azurlane_tianjiangjianniang
 		}
@@ -2403,10 +2418,10 @@
 	focus = {  
 		id = BFL_weisheyilang
 		icon = GFX_focus_generic_attack_iran
-		x = 5
+		x = 15
 		y = 1
-		prerequisite = { focus = BFL_qiangyingluxian }
-		relative_position_id = BFL_qiangyingluxian
+		prerequisite = { focus = BFL_1 }
+		relative_position_id = BFL_1
 		allow_branch = {
 			has_global_flag = MOD_azurlane_tianjiangjianniang
 		}
@@ -2518,10 +2533,10 @@
 	focus = {  
 		id = BFL_lingpixijing
 		icon = GFX_goal_molotov_ribbentrop_pact
-		x = -5
+		x = -6
 		y = 1
-		prerequisite = { focus = BFL_qiangyingluxian }
-		relative_position_id = BFL_qiangyingluxian
+		prerequisite = { focus = BFL_1 }
+		relative_position_id = BFL_1
 		cost = 3
 		allow_branch = {
 			has_global_flag = MOD_azurlane_tianjiangjianniang
@@ -2760,6 +2775,8 @@
 		mutually_exclusive = {focus = BFL_xianfazhiren}
 		available = {
 			not = {has_completed_focus = BFL_yubilanhangxianhezuo}
+			not = {has_completed_focus = BFL_6}
+			not = { has_global_flag = yaertahuiyi_chenggong }
 			or = {
 			date > 1943.3.1
 			not = {country_exists = TIX}
@@ -2838,10 +2855,10 @@
 	focus = {  
 		id = BFL_xiangxikuozhang
 		icon = GFX_focus_YUG_pan_slavic_congress
-		x = -11
+		x = 6
 		y = 1
-		prerequisite = { focus = BFL_qiangyingluxian }
-		relative_position_id = BFL_qiangyingluxian
+		prerequisite = { focus = BFL_1 }
+		relative_position_id = BFL_1
 		cost = 5
 		allow_branch = {
 			has_global_flag = MOD_azurlane_tianjiangjianniang
@@ -3569,15 +3586,16 @@
 	focus = {  
 		id = BFL_xiangyouzhuan
 		icon = GFX_goal_generic_war_with_comintern
-		x = 56
+		x = 12
 		y = 0
-		mutually_exclusive = { focus = BFL_beiliandejianshizhe }
+		relative_position_id = BFL_12
+		mutually_exclusive = { focus = BFL_12 }
 		available = {
 			not = { has_completed_focus = BFL_kongjunjianshe }
 			not = { has_completed_focus = BFL_lujunjianshe }
 			not = { has_completed_focus = BFL_wanchengdiergewunianjihua }
 			not = { has_completed_focus = BFL_zhongshihaijun }
-			not = { has_completed_focus = BFL_beiliandejianshizhe }
+			not = { has_completed_focus = BFL_12 }
 			
 		}
 		allow_branch = {
@@ -3585,12 +3603,12 @@
 			not = { has_completed_focus = BFL_lujunjianshe }
 			not = { has_completed_focus = BFL_wanchengdiergewunianjihua }
 			not = { has_completed_focus = BFL_zhongshihaijun }
-			not = { has_completed_focus = BFL_beiliandejianshizhe }
+			not = { has_completed_focus = BFL_12 }
 		}
 		cost = 1
 
 		ai_will_do = {
-			factor = 90
+			factor = 10
 		}
 
 		offset = {
@@ -3605,9 +3623,902 @@
 			add_popularity = { ideology = democratic popularity = 0.2 }
 			add_popularity = { ideology = fascism popularity = 0.1 }
 			add_popularity = { ideology = communism popularity = -0.3 }
-			hidden_effect = {
 			load_focus_tree = bfl_apocrypha_focus
+		}
+	}
+	###############################################################################################3
+	focus = {
+		id = BFL_1
+		icon = GFX_goal_support_communism
+		x = 60
+		y = 4
+		#prerequisite = { focus = BFL_cezhongduidizhiyuan }
+		#relative_position_id = BFL_cezhongduidizhiyuan
+		cost = 4
+		allow_branch = {
+			has_global_flag = MOD_azurlane_tianjiangjianniang
+		}
+		available = {
+			has_completed_focus = BFL_24
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			set_rule = {
+				can_create_factions = yes
+			}
+			if = {
+				limit = {
+					AND = {
+						has_global_flag = DOH_created_gongchanlianmeng
+						DOH = { is_faction_leader = yes }
+					}
+				}
+				DOH = {
+					add_to_faction = DOH
+				}
+			}
+			else_if = {
+				set_global_flag = BFL_created_gongchanlianmeng
+				create_faction = "共产联盟"
+			}
+			swap_ideas = {
+				remove_idea = BFL_luxianwenti
+				add_idea = BFL_luxianwenti_zizhu
 			}
 		}
 	}
+	focus = {
+		id = BFL_2
+		icon = GFX_goal_generic_forceful_treaty
+		x = -11
+		y = 1
+		prerequisite = { focus = BFL_1 }
+		relative_position_id = BFL_1
+		cost = 4
+		allow_branch = {
+			has_global_flag = MOD_azurlane_tianjiangjianniang
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			add_ideas = SOV_smersh
+			custom_effect_tooltip = unlock_propaganda_campaign_tt
+			unlock_decision_tooltip = SOV_propaganda_treacherous_enemy
+			custom_effect_tooltip = propaganda_campaign_requirement_tt
+		}
+	}
+	focus = {
+		id = BFL_3
+		icon = GFX_goal_generic_military_deal
+		x = -1
+		y = 1
+		prerequisite = { focus = BFL_2 }
+		relative_position_id = BFL_2
+		cost = 4
+		allow_branch = {
+			has_global_flag = MOD_azurlane_tianjiangjianniang
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			add_ideas = SOV_nkvd_nsb
+		}
+	}
+	focus = {
+		id = BFL_4
+		icon = GFX_focus_manjiu
+		x = 1
+		y = 1
+		prerequisite = { focus = BFL_2 }
+		relative_position_id = BFL_2
+		cost = 4
+		allow_branch = {
+			has_global_flag = MOD_azurlane_tianjiangjianniang
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.15
+			add_war_support = 0.05
+			add_manpower =  -10000
+		}
+	}
+	focus = {
+		id = BFL_5
+		icon = GFX_goal_generic_war_with_comintern
+		x = 1
+		y = 1
+		prerequisite = { focus = BFL_3 }
+		prerequisite = { focus = BFL_4 }
+		relative_position_id = BFL_3
+		cost = 4
+		allow_branch = {
+			has_global_flag = MOD_azurlane_tianjiangjianniang
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 100
+			custom_effect_tooltip = unlock_propaganda_campaign_tt
+			unlock_decision_tooltip = SOV_propaganda_do_not_blab
+			custom_effect_tooltip = propaganda_campaign_requirement_tt
+		}
+	}
+	focus = {
+		id = BFL_6
+		icon = GFX_goal_support_democracy
+		x = -1
+		y = 1
+		prerequisite = { focus = BFL_1 }
+		relative_position_id = BFL_1
+		mutually_exclusive = { focus = BFL_7 }
+		cost = 5
+		allow_branch = {
+			has_global_flag = MOD_azurlane_tianjiangjianniang
+		}
+		available = {
+			not = { has_completed_focus = BFL_14 }
+			has_government = communism
+			not = { has_war_with = HUJ }
+			HUJ = {
+			is_faction_leader = yes
+			}
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+			YUW = { has_government = fascism }
+			TIX = { has_government = fascism }
+			add = 100
+			}
+		}
+		completion_reward = {
+			guojishengyu_up_5 = yes
+			custom_effect_tooltip = "所有碧蓝航线成员国与我们的关系都会变好"
+			every_other_country = {
+				limit = { is_in_faction_with = HUJ }
+				add_opinion_modifier = {
+					target = BFL
+					modifier = BFL_yubilanhangxianhezuo
+				}
+			}
+			add_offsite_building = { type = industrial_complex level = 8 }
+			every_other_country = {
+				limit = {
+					is_major = yes
+					OR = {
+						has_government = democratic
+						has_government = communism
+					}
+					NOT = { has_war_with = ROOT }
+				}
+				add_opinion_modifier = { target = SOV modifier = SOV_anti_fascist_policies_good } 
+			}
+
+			every_other_country = {
+				limit = {
+					is_major = yes
+					has_government = fascism
+				}
+				add_opinion_modifier = { target = SOV modifier = SOV_anti_fascist_policies_bad } 
+			}
+		}
+	}
+	focus = {
+		id = BFL_7
+		icon = GFX_goal_generic_demand_territory
+		x = 1
+		y = 1
+		prerequisite = { focus = BFL_1 }
+		relative_position_id = BFL_1
+		mutually_exclusive = { focus = BFL_6 }
+		cost = 5
+		allow_branch = {
+			has_global_flag = MOD_azurlane_tianjiangjianniang
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+			YUW = { has_government = fascism }
+			factor = 0.1
+			}
+		}
+		completion_reward = {
+			guojishengyu_up_3 = yes
+			add_ideas = BFL_dlzq
+			add_political_power = 100
+			every_other_country = {
+				limit = {
+					is_major = yes
+					OR = {
+						has_government = fascism
+						has_government = communism
+					}
+					NOT = { has_war_with = ROOT }
+				}
+				add_opinion_modifier = { target = SOV modifier = SOV_anti_capitalist_policies_good } 
+			}
+
+			every_other_country = {
+				limit = {
+					is_major = yes
+					has_government = democratic
+				}
+				add_opinion_modifier = { target = SOV modifier = SOV_anti_capitalist_policies_bad } 
+			}
+		}
+	}
+	
+	focus = {
+		id = BFL_8
+		icon = GFX_goal_generic_propaganda
+		x = 1
+		y = 1
+		prerequisite = { focus = BFL_6 focus = BFL_7 }
+		relative_position_id = BFL_6
+		cost = 5
+		allow_branch = {
+			has_global_flag = MOD_azurlane_tianjiangjianniang
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			unlock_decision_category_tooltip = SOV_propaganda_campaigns
+			add_ideas = BFL_zxdrm	
+		}
+	}
+	
+	focus = {
+		id = BFL_9
+		icon = GFX_goal_generic_improve_relations
+		x = -1
+		y = 1
+		prerequisite = { focus = BFL_6 }
+		relative_position_id = BFL_6
+		cost = 6
+		allow_branch = {
+			has_global_flag = MOD_azurlane_tianjiangjianniang
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_stability = 0.15
+			add_popularity = { ideology = democratic popularity = 0.25 }
+			add_ideas = BFL_fanfxs
+			if = {
+				limit = {
+					has_government = communism
+				}
+				custom_effect_tooltip = unlock_propaganda_campaign_tt
+				unlock_decision_tooltip = SOV_propaganda_anti_fascism
+				custom_effect_tooltip = propaganda_campaign_requirement_tt
+			}
+		}
+	}
+	
+	focus = {
+		id = BFL_10
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		x = 1
+		y = 1
+		prerequisite = { focus = BFL_7 }
+		relative_position_id = BFL_7
+		cost = 5
+		allow_branch = {
+			has_global_flag = MOD_azurlane_tianjiangjianniang
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+			not = { TIX = { has_government = fascism } }
+			factor = 100
+			}
+		}
+		completion_reward = {
+			add_war_support = 0.25
+			add_popularity = { ideology = democratic popularity = -0.1 }
+			add_popularity = { ideology = fascism popularity = -0.1 }
+			add_popularity = { ideology = neutrality popularity = -0.1 }
+			add_ideas = BFL_fanzbzy
+			if = {
+				limit = {
+					has_government = communism
+				}
+				custom_effect_tooltip = unlock_propaganda_campaign_tt
+				unlock_decision_tooltip = SOV_propaganda_anti_capitalism
+				custom_effect_tooltip = propaganda_campaign_requirement_tt
+			}
+		}
+	}
+	
+	focus = {
+		id = BFL_11
+		icon = GFX_focus_SOV_international_union_of_soviet_republics
+		x = 0
+		y = 1
+		prerequisite = { focus = BFL_8 }
+		prerequisite = { focus = BFL_9  focus = BFL_10 }
+		relative_position_id = BFL_8
+		cost = 5
+		allow_branch = {
+			has_global_flag = MOD_azurlane_tianjiangjianniang
+		}
+		available = {
+			date > 1943.1.1
+			is_subject = no
+			has_government = communism
+			is_faction_leader = yes
+			has_war = no
+			has_global_flag = yaertahuiyi_chenggong
+			or = {
+			TIX = {
+			or = {
+			is_subject = yes
+			exists = no
+			}
+			}
+			}
+			CHY = {
+			not = { has_government = fascism }
+			}
+			SAD = {
+			OR = {
+			not = { has_government = fascism }
+			exists = no
+			}
+			}
+			not = { country_exists = WEX }
+			BYG = {
+			is_subject = no
+			has_government = democratic
+			}
+			HUJ = {
+			is_subject = no
+			has_government = democratic
+			}
+			OR = {
+			HUJ = { is_faction_leader = yes }
+			BYG = { is_faction_leader = yes }
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			custom_effect_tooltip = "未来将制作白鹰与北联的冷战国策树"
+			custom_effect_tooltip = unlock_propaganda_campaign_tt
+			unlock_decision_tooltip = SOV_propaganda_rebuild_to_glory
+			unlock_decision_tooltip = SOV_propaganda_happy_life
+			custom_effect_tooltip = propaganda_campaign_requirement_tt
+		}
+	}
+	
+	focus = {
+		id = BFL_12
+		icon = GFX_goal_support_communism
+		x = 40
+		y = 0
+		mutually_exclusive = { focus = BFL_xiangyouzhuan }
+		#prerequisite = { focus = BFL_7 }
+		#relative_position_id = BFL_xiangyouzhuan
+		cost = 5
+		allow_branch = {
+			has_global_flag = MOD_azurlane_tianjiangjianniang
+		}
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			country_event = az_tianjiang.243
+			add_political_power = 75
+			hidden_effect = {
+			add_dynamic_modifier = { modifier = BFL_the_politburo_good_dynamic_modifier }
+			}
+			mark_focus_tree_layout_dirty = yes
+			custom_effect_tooltip = BFL_the_centre_ns_tt
+			hidden_effect = {
+			if = {
+			limit = { is_ai = yes }
+			army_experience = 1000
+			set_technology = { interwar_antitank = 1 }
+			set_technology = { tech_engineers = 1 }
+			set_technology = { tech_engineers2 = 1 }  
+			set_technology = { antitank1 = 1 }
+			set_technology = { antitank2 = 1 } 
+			set_technology = { antitank3 = 1 }  
+			set_technology = { armor_tech_1 = 1 }
+			set_technology = { armor_tech_2 = 1 }
+			set_technology = { radio = 1 } 
+			set_technology = { radio_detection = 1 }
+			}
+			}
+		}
+	}
+	
+	focus = {
+		id = BFL_13
+		icon = GFX_focus_SOV_socialism_in_one_country
+		x = -4
+		y = 1
+		mutually_exclusive = { focus = BFL_14 }
+		prerequisite = { focus = BFL_12 }
+		relative_position_id = BFL_12
+		cost = 5
+		allow_branch = {
+			has_global_flag = MOD_azurlane_tianjiangjianniang
+		}
+		ai_will_do = {
+			factor = 60
+		}
+		completion_reward = {
+			country_event = az_tianjiang.244
+			add_political_power = 50
+			add_stability = 0.05
+			add_to_variable = { BFL_the_politburo_political_power_factor = 0.25 }
+			add_to_variable = { BFL_the_politburo_drift_defence_factor = 0.15 } 
+			custom_effect_tooltip = BFL_socialism_in_one_country_ns_tt
+		}
+	}
+	
+	focus = {
+		id = BFL_14
+		icon = GFX_goal_support_fourth_int
+		x = 4
+		y = 1
+		mutually_exclusive = { focus = BFL_13 }
+		prerequisite = { focus = BFL_12 }
+		relative_position_id = BFL_12
+		cost = 5
+		allow_branch = {
+			has_global_flag = MOD_azurlane_tianjiangjianniang
+		}
+		available = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = BFL_15
+		icon = GFX_focus_prc_agrarian_socialism
+		x = -1
+		y = 1
+		prerequisite = { focus = BFL_13 }
+		relative_position_id = BFL_13
+		cost = 4
+		allow_branch = {
+			has_global_flag = MOD_azurlane_tianjiangjianniang
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+			add_to_variable = { BFL_the_politburo_global_building_slots_factor = 0.05 }
+			add_to_variable = { BFL_the_politburo_good_consumer_goods_factor = -0.15 }
+			add_to_variable = { BFL_the_politburo_production_speed_buildings_factor = 0.05 }
+			custom_effect_tooltip = BFL_15_tt
+		}
+	}
+	
+	focus = {
+		id = BFL_16
+		icon = GFX_focus_luoxiya
+		x = 1
+		y = 1
+		prerequisite = { focus = BFL_13 }
+		relative_position_id = BFL_13
+		cost = 4
+		allow_branch = {
+			has_global_flag = MOD_azurlane_tianjiangjianniang
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 25
+			add_to_variable = { BFL_the_politburo_political_power_factor = 0.15 }
+			add_to_variable = { BFL_the_politburo_drift_defence_factor = 0.25 } 
+			add_to_variable = { BFL_the_politburo_defensive_war_stability_factor = 0.3 }
+			custom_effect_tooltip = BFL_16_tt
+		}
+	}
+	
+	focus = {
+		id = BFL_17
+		icon = GFX_focus_por_workers_of_iberia
+		x = 0
+		y = 1
+		prerequisite = { focus = BFL_15 }
+		relative_position_id = BFL_15
+		cost = 4
+		allow_branch = {
+			has_global_flag = MOD_azurlane_tianjiangjianniang
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.15
+			add_to_variable = { BFL_the_politburo_opinion_gain_monthly_same_ideology_factor = 0.25 }
+			custom_effect_tooltip = BFL_17_tt
+		}
+	}
+	
+	focus = {
+		id = BFL_18
+		icon = GFX_focus_generic_workers_and_farmers_rise
+		x = 0
+		y = 1
+		prerequisite = { focus = BFL_16 }
+		relative_position_id = BFL_16
+		cost = 4
+		allow_branch = {
+			has_global_flag = MOD_azurlane_tianjiangjianniang
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_war_support = 0.1
+			add_to_variable = { BFL_the_politburo_mobilization_laws_cost_factor = -0.25 }
+			add_to_variable = { BFL_the_politburo_drift_defence_factor = 0.1 }
+			add_to_variable = { BFL_the_politburo_defensive_war_stability_factor = 0.2 }
+			custom_effect_tooltip = BFL_18_tt
+		}
+	}
+	
+	focus = {
+		id = BFL_19
+		icon = GFX_focus_SOV_military_purge
+		x = 1
+		y = 1
+		prerequisite = { focus = BFL_17 }
+		prerequisite = { focus = BFL_18 }
+		relative_position_id = BFL_17
+		cost = 6
+		allow_branch = {
+			has_global_flag = MOD_azurlane_tianjiangjianniang
+		}
+		select_effect = {
+			set_country_flag = SOV_paranoia_do_not_cancel_focus_flag #This focus cannot be canceled
+		}
+		bypass = {
+			has_country_flag = BFL_dqxchaoshi_1
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			 country_event = az_tianjiang.245
+			set_country_flag = BFL_dqxchaoshi_1
+			clr_country_flag = SOV_paranoia_do_not_cancel_focus_flag
+		}
+	}
+	
+	focus = {
+		id = BFL_20
+		icon = GFX_focus_SOV_organization_centralization_discipline
+		x = -1
+		y = 1
+		prerequisite = { focus = BFL_19 }
+		relative_position_id = BFL_19
+		cost = 4
+		allow_branch = {
+			has_global_flag = MOD_azurlane_tianjiangjianniang
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_to_variable = { BFL_the_politburo_political_power_factor = 0.1 }
+			add_to_variable = { BFL_the_politburo_political_advisor_cost_factor = -0.25 }
+			custom_effect_tooltip = BFL_20_tt
+		}
+	}
+	
+	focus = {
+		id = BFL_21
+		icon = GFX_focus_qimiaomaotou
+		x = 1
+		y = 1
+		prerequisite = { focus = BFL_19 }
+		relative_position_id = BFL_19
+		cost = 4
+		allow_branch = {
+			has_global_flag = MOD_azurlane_tianjiangjianniang
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_stability = 0.15
+			add_war_support = 0.25
+			add_to_variable = { BFL_the_politburo_max_surrender_limit_offset = 0.05 }
+			custom_effect_tooltip = BFL_21_tt
+		}
+	}
+	
+	focus = {
+		id = BFL_22
+		icon = GFX_goal_generic_cavalry
+		x = 0
+		y = 1
+		prerequisite = { focus = BFL_20 }
+		relative_position_id = BFL_20
+		cost = 4
+		allow_branch = {
+			has_global_flag = MOD_azurlane_tianjiangjianniang
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_ideas = SOV_war_heroes_ns
+			add_to_variable = { BFL_land_reinforce_rate = 0.04 }
+			add_to_variable = { BFL_coordination_bonus = 0.15 }
+			add_to_variable = { BFL_land_doctrine_cost = -0.15 }
+			add_to_variable = { BFL_experience_gain = 0.3 }
+			custom_effect_tooltip = BFL_22_tt
+		}
+	}
+	
+	focus = {
+		id = BFL_23
+		icon = GFX_focus_manjiu
+		x = 0
+		y = 1
+		prerequisite = { focus = BFL_21 }
+		relative_position_id = BFL_21
+		cost = 4
+		allow_branch = {
+			has_global_flag = MOD_azurlane_tianjiangjianniang
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.15
+			add_war_support = 0.1
+		}
+	}
+	
+	focus = {
+		id = BFL_24
+		icon = GFX_focus_SOV_military_purge
+		x = 1
+		y = 1
+		prerequisite = { focus = BFL_22 }
+		prerequisite = { focus = BFL_23 }
+		relative_position_id = BFL_22
+		cost = 6
+		allow_branch = {
+			has_global_flag = MOD_azurlane_tianjiangjianniang
+		}
+		select_effect = {
+			set_country_flag = SOV_paranoia_do_not_cancel_focus_flag #This focus cannot be canceled
+		}
+		available = {
+			not = { has_idea = BFL_dasaochudeyingxing }
+		}
+		bypass = {
+			has_country_flag = BFL_dqxchaoshi_2
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = az_tianjiang.246
+			set_country_flag = BFL_dqxchaoshi_2
+			clr_country_flag = SOV_paranoia_do_not_cancel_focus_flag
+		}
+	}
+	
+	focus = {
+		id = BFL_25
+		icon = GFX_focus_luoxiya
+		x = -1
+		y = 1
+		prerequisite = { focus = BFL_24 }
+		relative_position_id = BFL_24
+		mutually_exclusive = { focus = BFL_26 }
+		cost = 5
+		allow_branch = {
+			has_global_flag = MOD_azurlane_tianjiangjianniang
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_to_variable = { BFL_army_attack = 0.05 }
+			add_to_variable = { BFL_army_defence = 0.05 }
+			add_to_variable = { BFL_army_org = 0.1 }
+			add_to_variable = { BFL_army_morale = 0.1 }
+			custom_effect_tooltip = BFL_25_tt
+		}
+	}
+	
+	focus = {
+		id = BFL_26
+		icon = GFX_focus_luoxiya2
+		x = 1
+		y = 1
+		prerequisite = { focus = BFL_24 }
+		relative_position_id = BFL_24
+		mutually_exclusive = { focus = BFL_25 }
+		cost = 5
+		allow_branch = {
+			has_global_flag = MOD_azurlane_tianjiangjianniang
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_stability = 0.15
+			add_to_variable = { BFL_the_politburo_global_building_slots_factor = 0.1 }
+			add_to_variable = { BFL_the_politburo_good_consumer_goods_factor = -0.15 }
+			add_to_variable = { BFL_the_politburo_production_speed_buildings_factor = 0.1 }
+			custom_effect_tooltip = BFL_26_tt
+		}
+	}
+	
+	focus = {
+		id = BFL_27
+		icon = GFX_focus_generic_workers
+		x = -1
+		y = 1
+		prerequisite = { focus = BFL_25 }
+		relative_position_id = BFL_25
+		cost = 5
+		allow_branch = {
+			has_global_flag = MOD_azurlane_tianjiangjianniang
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 75
+			add_to_variable = { BFL_army_attack = 0.15 }
+			add_to_variable = { BFL_army_defence = 0.15 }
+			add_to_variable = { BFL_army_org = 0.1 }
+			add_to_variable = { BFL_army_morale = 0.1 }
+			add_to_variable = { BFL_army_speed = 0.1 }
+			custom_effect_tooltip = BFL_27_tt
+		}
+	}
+	
+	focus = {
+		id = BFL_28
+		icon = GFX_focus_SOV_the_last_purge
+		x = 1
+		y = 1
+		prerequisite = { focus = BFL_25 focus = BFL_26 }
+		relative_position_id = BFL_25
+		cost = 6
+		allow_branch = {
+			has_global_flag = MOD_azurlane_tianjiangjianniang
+		}
+		available = {
+			not = { has_idea = BFL_dasaochudeyingxing }
+		}
+		select_effect = {
+			set_country_flag = SOV_paranoia_do_not_cancel_focus_flag #This focus cannot be canceled
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = az_tianjiang.247
+			clr_country_flag = SOV_paranoia_do_not_cancel_focus_flag
+		}
+	}
+	
+	focus = {
+		id = BFL_29
+		icon = GFX_focus_generic_soviet_politics
+		x = 1
+		y = 1
+		prerequisite = { focus = BFL_26 }
+		relative_position_id = BFL_26
+		cost = 5
+		allow_branch = {
+			has_global_flag = MOD_azurlane_tianjiangjianniang
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_to_variable = { BFL_army_attack = 0.05 }
+			add_to_variable = { BFL_army_defence = 0.05 }
+			add_to_variable = { BFL_experience_loss = -0.15 }
+			add_to_variable = { BFL_max_planning = 0.1 }
+			add_to_variable = { BFL_the_politburo_production_speed_buildings_factor = 0.1 }
+			custom_effect_tooltip = BFL_29_tt
+		}
+	}
+	
+	focus = {
+		id = BFL_30
+		icon = GFX_focus_YUG_pan_slavic_congress
+		x = -1
+		y = 1
+		prerequisite = { focus = BFL_28 }
+		prerequisite = { focus = BFL_27 }
+		relative_position_id = BFL_28
+		mutually_exclusive = { focus = BFL_31 }
+		cost = 5
+		allow_branch = {
+			has_global_flag = MOD_azurlane_tianjiangjianniang
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_country_leader_trait = stalin_great_commander
+		}
+	}
+	
+	focus = {
+		id = BFL_31
+		icon = GFX_goal_generic_soviet_construction
+		x = 1
+		y = 1
+		prerequisite = { focus = BFL_28 }
+		prerequisite = { focus = BFL_29 }
+		relative_position_id = BFL_28
+		mutually_exclusive = { focus = BFL_30 }
+		cost = 5
+		allow_branch = {
+			has_global_flag = MOD_azurlane_tianjiangjianniang
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_country_leader_trait = stalin_architect_of_communism
+		}
+	}
+	
+	focus = {
+		id = BFL_32
+		icon = GFX_focus_generic_join_comintern
+		x = 1
+		y = 1
+		prerequisite = { focus = BFL_30 focus = BFL_31 }
+		relative_position_id = BFL_30
+		cost = 5
+		allow_branch = {
+			has_global_flag = MOD_azurlane_tianjiangjianniang
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_ideas = BFL_xiangxinshidaiqianjin
+			add_country_leader_trait = trait_psh_beijiefengmang
+		}
+	}
+	
 }

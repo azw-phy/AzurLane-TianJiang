@@ -314,7 +314,7 @@ SAD_hold_africa = {
 	ai_strategy = {
 		type = area_priority
 		id = africa
-		value = 200
+		value = 1
 	}
 	ai_strategy = {
         type = area_priority
@@ -324,14 +324,8 @@ SAD_hold_africa = {
     ai_strategy = {
         type = area_priority 
         id = europe
-        value = 10
+        value = 50
     }
-
-    ai_strategy = {
-		type = front_unit_request
-		area = africa
-		value = 60
-	}
 
 	ai_strategy = {
 		type = front_unit_request

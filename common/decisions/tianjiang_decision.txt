@@ -1,3 +1,79 @@
+BFL_fanduipaiyinmou = {
+	BFL_yinmoujituandexingdong = {
+		icon = SOV_the_workers_dictatorship
+		priority = 100
+		activation	= {
+			always = no
+		}
+		complete_effect = {
+			add_popularity = { ideology = communism popularity = 0.2 }
+		}
+		is_good = no
+		available = {
+			has_completed_focus = BFL_24
+		}
+		days_mission_timeout = 180
+		timeout_effect = {
+			custom_effect_tooltip = BFL_yinmoujituandexingdong_tt
+			hidden_effect = {
+			add_political_power = -50
+			add_popularity = { ideology = democratic popularity = 0.03 }
+			add_popularity = { ideology = fascism popularity = 0.02 }
+			}
+		}
+	}
+	BFL_diyicidaqingxi_time = {
+		icon = SOV_the_military_conspiracy
+		priority = 200
+		is_good = no
+		activation	= {
+			always = no
+		}
+		complete_effect = {
+			add_stability = 0.05
+		}
+		available = {
+			has_completed_focus = BFL_19
+		}
+		days_mission_timeout = 365
+		timeout_effect = {
+			custom_effect_tooltip = BFL_diyicidaqingxi_time_tt
+			activate_mission = BFL_diercidaqingxi_time
+			set_country_flag = BFL_dqxchaoshi_1
+			add_political_power = -500
+			add_war_support = -0.5
+			add_stability = -0.5
+			add_popularity = { ideology = communism popularity = 0.3 }
+		}
+	}
+	
+	BFL_diercidaqingxi_time = {
+		icon = SOV_the_military_conspiracy
+		priority = 200
+		is_good = no
+		activation	= {
+			always = no
+		}
+		complete_effect = {
+			add_stability = 0.05
+		}
+		available = {
+			has_completed_focus = BFL_24
+		}
+		days_mission_timeout = 365
+		timeout_effect = {
+			custom_effect_tooltip = BFL_diercidaqingxi_time_tt
+			set_country_flag = BFL_dqxchaoshi_2
+			add_political_power = -500
+			add_war_support = -0.5
+			add_stability = -0.5
+			add_popularity = { ideology = communism popularity = 0.3 }
+		}
+	}
+
+
+}
+
 BFL_neiwu = {
 	BFL_junduigaige = {
 		icon = generic_form_nation
@@ -35,7 +111,7 @@ BFL_neiwu = {
 			has_country_flag = bflgaige1
 			has_completed_focus = BFL_junduizhengwei
 			or = {
-			has_army_experience > 300
+			has_army_experience > 200
 			is_ai = yes
 			}
 		}
@@ -49,7 +125,7 @@ BFL_neiwu = {
 		days_remove = 120
 		fire_only_once = yes
 		complete_effect = { 
-			army_experience = -300
+			army_experience = -200
 		}
 		remove_effect = {
 			set_country_flag = bflgaige2
@@ -71,7 +147,7 @@ BFL_neiwu = {
 			is_ai = yes
 			}
 			or = {
-			has_army_experience > 600
+			has_army_experience > 300
 			is_ai = yes
 			}
 		}
@@ -82,18 +158,18 @@ BFL_neiwu = {
 			factor = 1
 			modifier = {
 			or = {
-			date > 1941.1.1
+			date > 1940.12.1
 			TIX = { is_ai = no }
 			YUW = { is_ai = no }
 			}
 			factor = 10000
 			}
 		}
-		cost = 150
+		cost = 200
 		days_remove = 365
 		fire_only_once = yes
 		complete_effect = { 
-			army_experience = -600
+			army_experience = -300
 		}
 		remove_effect = {
 			swap_ideas = {
@@ -114,7 +190,7 @@ BFL_neiwu = {
 		visible = {
 			NOT = { has_completed_focus = BFL_qiyonggaigepai }
 		}
-		cost = 50
+		cost = 100
 		days_remove = 180
 		fire_only_once = yes
 		modifier = {
@@ -133,7 +209,6 @@ BFL_neiwu = {
 	BFL_gyexiandaihua2 = {
 		icon = generic_factory
 		available = {
-			has_completed_focus = BFL_gongrenfuli
 			or = {
 			is_ai = yes
 			num_of_controlled_factories > 120
@@ -146,7 +221,7 @@ BFL_neiwu = {
 		visible = {
 			NOT = { has_completed_focus = BFL_qiyonggaigepai }
 		}
-		cost = 50
+		cost = 100
 		days_remove = 180
 		fire_only_once = yes
 		modifier = {
@@ -165,8 +240,7 @@ BFL_neiwu = {
 	BFL_gyexiandaihua3 = {
 		icon = AL_gongye_BFL
 		available = {
-			has_completed_focus = BFL_zhongzhiyumi
-			has_completed_focus = BFL_jinkouliangshi
+			not = { has_idea = BFL_swjq }
 			or = {
 			is_ai = yes
 			num_of_controlled_factories > 240
@@ -179,7 +253,7 @@ BFL_neiwu = {
 		visible = {
 			NOT = { has_completed_focus = BFL_qiyonggaigepai }
 		}
-		cost = 50
+		cost = 200
 		days_remove = 180
 		fire_only_once = yes
 		modifier = {
@@ -1563,6 +1637,7 @@ BFL_weiguozz = {
 			has_war_with = BFL
 			is_major = yes
 			}
+			has_defensive_war = yes
 			not = { has_country_flag = BFL_baoweicg }
 			not = { has_country_flag = BFL_baoweisb }
 		}
@@ -2047,7 +2122,7 @@ YUW_fangong = {
 			#has_completed_focus = YUW_zhianshike
 		}
 		available = {
-			date > 1941.6.1
+			date > 1941.3.1
 			is_in_faction_with = BYG
 			has_completed_focus = YUW_changluguixiang
 			any_country = {
@@ -2069,7 +2144,7 @@ YUW_fangong = {
 		ai_will_do = {
 			factor = 0
 			modifier = {
-			date > 1942.6.1
+			date > 1942.3.1
 			add = 100
 			}
 		}
@@ -2106,7 +2181,7 @@ YUW_fangong = {
 			#has_completed_focus = YUW_zhianshike
 		}
 		available = {
-			date > 1941.6.1
+			date > 1941.2.1
 			is_in_faction_with = BYG
 			has_completed_focus = YUW_changluguixiang
 			controls_state = 1
@@ -2124,7 +2199,7 @@ YUW_fangong = {
 		ai_will_do = {
 			factor = 0
 			modifier = {
-			date > 1942.6.1
+			date > 1942.2.1
 			add = 100
 			}
 		}

@@ -161,3 +161,10 @@ TIX_zhenyadikangstate = {
 	}
 	priority = 190
 }
+BFL_fanduipaiyinmou = {
+	icon = SOV_civil_war
+	allowed = {
+	original_tag = BFL
+	}
+	priority = 999
+}	

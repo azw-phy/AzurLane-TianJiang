@@ -166,6 +166,15 @@ leader_traits = {
 		army_morale_factor = 0.15
 		attrition = -0.1
 	}
+	#罗西亚 北结锋芒
+	trait_psh_beijiefengmang = { 
+		random = no
+		army_armor_attack_factor = 0.15
+		army_core_attack_factor = 0.25
+		army_core_defence_factor = 0.25
+		breakthrough_factor = 0.15
+		attrition = -0.1
+	}
 
 
 

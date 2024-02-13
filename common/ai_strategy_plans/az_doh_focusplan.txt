@@ -16,7 +16,7 @@ DOH_historical = {
 		}
 	}
 	abort = {
-		has_completed_focus = DOH_shikejingjie
+		has_completed_focus = DOH_baochiweishe
 	}
 
 	ai_national_focuses = {
@@ -86,6 +86,8 @@ DOH_historical = {
 		DOH_yuanyanghaijun
 		DOH_yunshujiandui
 		
+		DOH_aoranzili
+		DOH_baochiweishe
 		# #1936
 		# DOH_junshigaige #49
 		# DOH_weishejunfa #49

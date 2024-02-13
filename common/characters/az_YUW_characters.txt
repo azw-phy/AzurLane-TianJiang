@@ -80,6 +80,8 @@ characters={
 			slot = political_advisor
 			idea_token = rangbaer
 			available = {
+				if = {
+					limit = { tag = YUW }
 				or = {
 					has_completed_focus = YUW_weixixingdong1
 					has_completed_focus = YUW_rangbaerdemingling
@@ -95,12 +97,13 @@ characters={
 				not = {
 					has_completed_focus = YUW_zhangkongjiaoting
 				}
+				}
 			}
 			traits = { YUW_fc }
 	
 
 			ai_will_do = {
-				factor = 15
+				factor = 0
 			}
 		}
 
@@ -176,7 +179,7 @@ characters={
 			slot = high_command
 			idea_token = aerjiliya
 			allowed = {
-				original_tag = YUW
+				
 			}
 			available = {
 				
@@ -223,15 +226,18 @@ characters={
 			slot = political_advisor
 			idea_token = dunkerque
 			available = {
+				if = {
+					limit = { tag = YUW }
 				OR = {
 					has_completed_focus = YUW_zhengquzhendezhichi
 					has_completed_focus = YUW_tuanjieweixixingdong
+				}
 				}
 			}
 			traits = { wddttz silent_workhorse }
 
 			ai_will_do = {
-				factor = 0.1
+				factor = 0
 				modifier = {
 					add = 100
 					has_completed_focus = YUW_tuanjieweixixingdong	
@@ -269,7 +275,7 @@ characters={
 			slot = high_command
 			idea_token = edu
 			allowed = {
-				original_tag = YUW
+				
 			}
 			available = {
 				
@@ -736,7 +742,7 @@ characters={
 			slot = army_chief
 			idea_token = buqu
 			allowed = {
-				original_tag = YUW
+				
 			}
 			available = {
 				
@@ -780,7 +786,7 @@ characters={
 			slot = high_command
 			idea_token = kebu
 			allowed = {
-				original_tag = YUW
+				
 			}
 			available = {
 				
@@ -848,7 +854,7 @@ characters={
 			slot = high_command
 			idea_token = xiafei
 			allowed = {
-				original_tag = YUW
+				
 			}
 			available = {
 				

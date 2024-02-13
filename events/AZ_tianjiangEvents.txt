@@ -2601,17 +2601,18 @@ country_event = {
 	trigger = {
 		date > 1941.6.1
 		tag = HUJ
+		controls_state = 126
 		has_war_with = TIX
 		HUJ = {	is_in_faction_with = BYG }
 		not = { has_war_with = BFL }
-		surrender_progress < 0.1
+		surrender_progress < 0.3
 		TIX = {
 		surrender_progress > 0.1
 		has_war_with = BYG
 		}
 		BFL = {
 		has_war_with = TIX
-		surrender_progress < 0.2
+		surrender_progress < 0.3
 		}
 	}
 	mean_time_to_happen = {
@@ -2629,7 +2630,7 @@ country_event = {
 		country_event = { id = az_tianjiang.84 days = 1 }
 		}
 		hidden_effect = {
-		country_event = { id = az_tianjiang.86 days = 31 }
+		country_event = { id = az_tianjiang.86 days = 11 }
 		}
 		ai_chance = {
 			factor = 100
@@ -2791,7 +2792,7 @@ country_event = {
 		surrender_progress < 0.2
 		}
 		HUJ = {
-		surrender_progress < 0.1
+		surrender_progress < 0.3
 		}
 		BYG = {
 		surrender_progress < 0.1
@@ -2821,6 +2822,7 @@ country_event = {
 		TIX_z23 = {
 			set_nationality = TIX
 		}
+		set_cosmetic_tag = TIX
 		TIX = {
 		add_country_leader_role = {
 				Character = TIX_z23
@@ -7937,6 +7939,10 @@ country_event = {
 		}
 		tag = TIX
 		has_government = fascism
+		OR = {
+		date > 1942.2.1
+		is_ai = no
+		}
 	}
 	fire_only_once = yes
 	option = {
@@ -8867,6 +8873,135 @@ country_event = {
 			var = tix_bsmmanyiduzhi
 			value = -15
 		}
+		BFL = {
+		country_event = az_tianjiang.242
+		}
+		HUJ = {
+		country_event = az_tianjiang.242
+		}
+		BYG = {
+		country_event = az_tianjiang.242
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = az_tianjiang.242
+	title = "女武神行动"
+	desc = "铁血内部发生了针对俾斯麦的刺杀行动，虽然刺客失败了，但这也预示着属于我们的胜利即将到来！"
+	picture = GFX_aze_txluoen2
+	is_triggered_only = yes
+	option = {
+		name = "向柏林进发！"
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = az_tianjiang.243
+	title = "萨悠丝退居二线"
+	desc = az_tianjiang.243.d
+	picture = GFX_aze_txluoen2
+	is_triggered_only = yes
+	option = {
+		name = "恭喜罗西亚同志！"
+		activate_mission = BFL_yinmoujituandexingdong
+		BFL_luoxiya = {
+			add_country_leader_role = {
+				country_leader = {
+					expire = "4999.1.1"
+					ideology = stalinism
+					traits = {
+						 msdj
+					}
+				}
+				promote_leader = yes
+				}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = az_tianjiang.244
+	title = "罗西亚的计划"
+	desc = "不能放任阴谋集团肆意行动，罗西亚必须展开行动。"
+	picture = GFX_aze_txluoen2
+	is_triggered_only = yes
+	option = {
+		name = "新名单，新名单"
+		activate_mission = BFL_diyicidaqingxi_time
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = az_tianjiang.245
+	title = "第一次北联大扫除"
+	desc = "我们的第一次大扫除主要针对有歪想法的同志，在矫正她们的过程中，罗西亚也得到了成长。"
+	picture = GFX_aze_txluoen2
+	is_triggered_only = yes
+	option = {
+		name = "很好"
+		activate_mission = BFL_diercidaqingxi_time
+		add_political_power = 200
+		add_stability = 0.2
+		add_war_support = 0.2
+		swap_ruler_traits = {
+			remove = msdj
+			add =  cm
+		}
+		add_timed_idea = { idea = BFL_dasaochudeyingxing days = 180 }
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = az_tianjiang.246
+	title = "第二次北联大扫除"
+	desc = "第二次大扫除成功抓捕了关键蛮啾，在大记忆恢复术的帮助下，我们成功锁定了阴谋集团的核心成员。"
+	picture = GFX_aze_txluoen2
+	is_triggered_only = yes
+	option = {
+		name = "非常好"
+		custom_effect_tooltip = BFL_yinmoujituantingzhihuiodong
+		add_political_power = 200
+		add_stability = 0.2
+		add_war_support = 0.2
+		add_to_variable = { BFL_the_politburo_operative_slot = 1 }
+		add_to_variable = { BFL_the_politburo_economy_cost_factor = -0.25 }
+		add_to_variable = { BFL_the_politburo_mobilization_speed = 0.25 }
+		custom_effect_tooltip = BFL_246_tt
+		add_timed_idea = { idea = BFL_dasaochudeyingxing days = 180 }
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = az_tianjiang.247
+	title = "第三次北联大扫除"
+	desc = "我们成功逮捕了阴谋集团的核心舰娘：阿尔汉格尔斯克，听说她还有一位同伙，但萨悠丝却示意罗西亚及时收手。目前阿尔汉格尔斯克已被送去进行思想改造。"
+	picture = GFX_aze_txluoen2
+	is_triggered_only = yes
+	option = {
+		name = "总之，我们不用再担心会被背后捅刀了"
+		add_political_power = 300
+		add_stability = 0.3
+		add_war_support = 0.3
+		add_timed_idea = { idea = BFL_dasaochudeyingxing days = 180 }
 		ai_chance = {
 			factor = 100
 		}

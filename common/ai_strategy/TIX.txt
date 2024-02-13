@@ -811,50 +811,7 @@ make_sure_poland_is_ganked_before_we_move = {
 		}
 	}
 	abort = {
-		OR = {
-			POL = { has_capitulated = yes }
-			not = { country_exists = POL }
-			date > 1940.1.1
-			has_war_with = HOL
-			has_war_with = BEL
-			has_war_with = LUX
-		}
-	}
-
-	ai_strategy = {
-		type = ignore
-		id = "HOL"			
-		value = 300
-	}
-	ai_strategy = {
-		type = ignore
-		id = "BEL"			
-		value = 300
-	}
-	ai_strategy = {
-		type = ignore
-		id = "LUX"			
-		value = 300
-	}
-	ai_strategy = {
-		type = declare_war
-		id = "POL"
-		value = 2000 
-	}
-	ai_strategy = {
-		type = front_unit_request
-		tag = POL		
-		value = 2000
-	}
-	ai_strategy = {
-		type = conquer		
-		id = "POL"			
-		value = 100
-	}
-	ai_strategy = {
-		type = front_unit_request
-		tag = YUW		
-		value = 500
+		date > 1940.1.1
 	}
 
 	ai_strategy = {
@@ -862,7 +819,7 @@ make_sure_poland_is_ganked_before_we_move = {
 
 		tag = POL
 
-		ratio = 0.25
+		ratio = 0.1
 
 		priority = 100
 		ordertype = front
@@ -875,9 +832,9 @@ make_sure_poland_is_ganked_before_we_move = {
 
 		state = 28 # close up maginot line
 
-		ratio = 0.25
+		ratio = 0.1
 
-		priority = 300
+		priority = 100
 		ordertype = front
 		execution_type = careful
 	}

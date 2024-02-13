@@ -16,25 +16,22 @@ HUJ_historical_new = {
 		}
 	}
 	abort = {
-		has_completed_focus = HUJ_tongzhibabuliedianhuj
+		has_completed_focus = HUJ_qinjianjieyue
 	}
 
 	ai_national_focuses = {
 		#政治线
-		HUJ_zhuanzhuyuzhimindishiwu
+		HUJ_jixuyihuizhi
 		HUJ_baochichuantong
-		HUJ_qinzishangzhen
-		HUJ_kaihuashiming
+		HUJ_zhuanzhuyuzhimindishiwu
 		HUJ_weijiyishi
-		HUJ_nvwangrongguang
 		HUJ_jianshezhimindi
 		#女仆线
 		HUJ_nvpuxunlian
 		HUJ_neiwunvpu
 		HUJ_nvpucanting
-		HUJ_neiwuweizhu
-		HUJ_nvpukeyanzu
 		HUJ_tegongnvpu
+		HUJ_tegongweizhu
 		#战争线
 		HUJ_zhunbeibukebimianzhizhan
 		HUJ_oulubaquanjueqi
@@ -60,9 +57,9 @@ HUJ_historical_new = {
 		HUJ_hongzhaxueshuo
 		HUJ_huangjialieying
 		#结束
+		HUJ_tongzhibabuliedianhuj
 		HUJ_youyakebushihuaping
 		HUJ_qinjianjieyue
-		HUJ_tongzhibabuliedianhuj
 	}
 
 	research = {
