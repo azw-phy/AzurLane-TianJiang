@@ -29,3 +29,45 @@ DOH_donghuangshiwu_idea = {
 	industrial_capacity_dockyard = DOH_guimoxiaoyin_effect
 	consumer_goods_factor = extra_xiaofeiping
 }
+DOH_fake_add_touzi = {
+	icon = GFX_idea_DOH_xdh
+    enable = { always = yes }
+	consumer_goods_factor = var:DOH_xiaofeipingyinxiang_factor
+	production_speed_buildings_factor = 0.04
+	local_resources_factor = 0.04
+}
+DOH_fake_add_gonggongkaizhi = {
+	icon = GFX_idea_DOH_xdh
+    enable = { always = yes }
+	consumer_goods_factor = var:DOH_xiaofeipingyinxiang_factor
+	
+	boost_ideology_mission_factor = 0.05
+	intel_network_gain_factor = 0.05
+	naval_morale_factor = 0.05
+	intelligence_agency_defense = 0.05
+	industry_free_repair_factor = 0.05
+	line_change_production_efficiency_factor = 0.05
+	industry_air_damage_factor = -0.05
+	land_reinforce_rate = 0.01
+	repair_speed_factor = 0.05
+	stability_weekly_factor = 0.001
+}
+DOH_fake_add_keyanjinfen = {
+	icon = GFX_idea_DOH_xdh
+    enable = { always = yes }
+	consumer_goods_factor = var:DOH_xiaofeipingyinxiang_factor
+	research_speed_factor = 0.035
+}
+DOH_fake_add_junshijinfei = {
+	icon = GFX_idea_DOH_xdh
+    enable = { always = yes }
+	consumer_goods_factor = var:DOH_xiaofeipingyinxiang_factor
+	industrial_capacity_factory = 0.035
+	industrial_capacity_dockyard = 0.035
+}
+DOH_fake_add_shichangkaifang = {
+	icon = GFX_idea_DOH_xdh
+    enable = { always = yes }
+	min_export = 0.03
+	research_speed_factor = 0.03
+}

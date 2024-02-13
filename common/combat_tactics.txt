@@ -1023,6 +1023,31 @@ tactic_guerrilla_tactics_for_doh = {
 	attacker_movement_speed = -0.25
 }
 
+tactic_human_wave_tactics_for_doh = { 
+	only_show_for = DOH
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+		OR = {
+			hardness > 0.1
+			skill_advantage > 1
+			has_trait = trickster
+		}
+	}
+	
+	active = no
+	
+	base =  { factor = 4 }
+	picture = tactic_human_wave_tactics
+	
+	countered_by = tactic_backhand_blow
+	combat_width = 0.5
+	attacker_movement_speed = 0.5
+	attacker = 0.35
+	defender = -0.05
+}
+
 tactic_barrage_for_BYG = {
 
     only_show_for = BYG

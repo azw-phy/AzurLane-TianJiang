@@ -48,6 +48,32 @@ ideas = {
 				air_detection = 1
 			}
 		}
+		DOH_chijiaoyisheng_idea = {
+			picture = GFX_idea_DOH_xdh
+			modifier = {
+				monthly_population = 0.005
+			}
+			equipment_bonus = {
+				support_equipment = {
+					build_cost_ic = -0.25
+					reliability = -0.10
+				}
+			}
+		}
+		DOH_donghuangyikedaxue_idea = {
+			picture = GFX_idea_DOH_xdh
+			modifier = {
+				monthly_population = 0.010
+				research_speed_factor = -0.10
+				experience_loss_factor = -0.50
+			}
+			equipment_bonus = {
+				support_equipment = {
+					build_cost_ic = -0.10
+					reliability = 0.20
+				}
+			}
+		}
 		DOH_ziligengsheng_idea = {
 			picture = GFX_idea_DOH_xdh
 			modifier = {

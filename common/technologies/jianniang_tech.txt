@@ -1542,6 +1542,17 @@ technologies = {
 	}
 	guerrilla_tactics_for_doh = {
 		enable_tactic = tactic_guerrilla_tactics_for_doh
+		
+		doctrine = yes
+		research_cost = 1
+
+		#set at gamestart
+		allow = {
+			always = no
+		}
+	}
+	human_wave_tactics_for_doh = {
+		enable_tactic = tactic_human_wave_tactics_for_doh
 
 		doctrine = yes
 		research_cost = 1

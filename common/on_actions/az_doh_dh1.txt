@@ -1,6 +1,45 @@
 on_actions = {
 	on_startup = {
 		effect = {
+			592 = {
+				set_state_flag = DOH_guocehejueyikaifa
+			}
+			591 = {
+				set_state_flag = DOH_guocehejueyikaifa
+			}
+			744 = {
+				set_state_flag = DOH_guocehejueyikaifa
+			}
+			745 = {
+				set_state_flag = DOH_guocehejueyikaifa
+			}
+			328 = {
+				set_state_flag = DOH_guocehejueyikaifa
+			}
+			716 = {
+				set_state_flag = DOH_guocehejueyikaifa
+			}
+			714 = {
+				set_state_flag = DOH_guocehejueyikaifa
+			}
+			717 = {
+				set_state_flag = DOH_guocehejueyikaifa
+			}
+			608 = {
+				set_state_flag = DOH_guocehejueyikaifa
+			}
+			605 = {
+				set_state_flag = DOH_guocehejueyikaifa
+			}
+			613 = {
+				set_state_flag = DOH_guocehejueyikaifa
+			}
+			743 = {
+				set_state_flag = DOH_guocehejueyikaifa
+			}
+			596 = {
+				set_state_flag = DOH_guocehejueyikaifa
+			}
 			DOH = {
 				set_variable = {
 					var = DOH_touzi
@@ -109,15 +148,15 @@ on_actions = {
 			set_variable = { var:DOH_touzi_effect = var:DOH_touzi }
 			multiply_variable = { var:DOH_touzi_effect = 0.04 }
 			set_variable = { var:DOH_keyanjinfei_effect = var:DOH_keyanjinfei }
-			multiply_variable = { var:DOH_keyanjinfei_effect = 0.02 }
+			multiply_variable = { var:DOH_keyanjinfei_effect = 0.035 }
 			set_variable = { var:DOH_junshijinfei_effect = var:DOH_junshijinfei }
-			multiply_variable = { var:DOH_junshijinfei_effect = 0.02 }
+			multiply_variable = { var:DOH_junshijinfei_effect = 0.035 }
 			set_variable = { var:DOH_gonggongkaizhi_effect = var:DOH_gonggongkaizhi }
 			multiply_variable = { var:DOH_gonggongkaizhi_effect = 0.05 }
 			set_variable = { var:DOH_gonggongkaizhi_effect_m = var:DOH_gonggongkaizhi_effect }
 			multiply_variable = { var:DOH_gonggongkaizhi_effect_m = -1 }
 			set_variable = { var:DOH_gonggongkaizhi_effect_2 = var:DOH_gonggongkaizhi }
-			multiply_variable = { var:DOH_gonggongkaizhi_effect_2 = 0.02 }
+			multiply_variable = { var:DOH_gonggongkaizhi_effect_2 = 0.01 }
 			set_variable = { var:DOH_gonggongkaizhi_effect_3 = var:DOH_gonggongkaizhi }
 			multiply_variable = { var:DOH_gonggongkaizhi_effect_3 = 0.001 }
 			set_variable = { var:DOH_shichang_effect = var:DOH_shichang }

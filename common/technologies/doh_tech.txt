@@ -1,0 +1,66 @@
+technologies = {
+	DOH_chijiaoyisheng_tech = {
+		field_hospital = {
+			casualty_trickleback = 0.20
+			experience_loss_factor = -0.3
+		}
+		infantry = {
+			casualty_trickleback = 0.01
+			experience_loss_factor = -0.015
+		}
+		bicycle_battalion = {
+			casualty_trickleback = 0.01
+			experience_loss_factor = -0.015
+		}
+		paratrooper = {
+			casualty_trickleback = 0.01
+			experience_loss_factor = -0.015
+		}
+		marine = {
+			casualty_trickleback = 0.01
+			experience_loss_factor = -0.015
+		}
+		marine_commando = {
+			casualty_trickleback = 0.01
+			experience_loss_factor = -0.015
+		}
+		penal_battalion = {
+			casualty_trickleback = 0.01
+			experience_loss_factor = -0.015
+		}
+		irregular_infantry = {
+			casualty_trickleback = 0.01
+			experience_loss_factor = -0.015
+		}
+		militia = {
+			casualty_trickleback = 0.01
+			experience_loss_factor = -0.015
+		}
+		motorized = {
+			casualty_trickleback = 0.01
+			experience_loss_factor = -0.015
+		}
+		mechanized = {
+			casualty_trickleback = 0.01
+			experience_loss_factor = -0.015
+		}
+		cavalry = {
+			casualty_trickleback = 0.01
+			experience_loss_factor = -0.015
+		}
+		camelry = {
+			casualty_trickleback = 0.01
+			experience_loss_factor = -0.015
+		}
+		amphibious_mechanized = {
+			casualty_trickleback = 0.01
+			experience_loss_factor = -0.015
+		}
+	}
+	DOH_donghuangyikedaxue_tech = {
+		field_hospital = {
+			casualty_trickleback = 0.20
+			experience_loss_factor = -0.3
+		}
+	}
+}

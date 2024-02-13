@@ -956,7 +956,7 @@ country_event = {
 			if = {
 				limit = { has_completed_focus = DOH_kuodayixianquanli }
 				add_timed_idea = {
-					idea = DOH_tongyizhanxian_d_idea
+					idea = DOH_tongyizhanxian_f_idea
 					days = 180
 				}
 			}
