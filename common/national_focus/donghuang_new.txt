@@ -345,9 +345,6 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		available = {
-			has_completed_focus = DOH_dulizizhudejungong
-		}
 		completion_reward = {
 			set_technology = {
 				electronic_mechanical_engineering = 1				
