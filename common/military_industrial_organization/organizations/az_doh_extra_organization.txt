@@ -1,5 +1,5 @@
 az_DOH_railway_organization = {
-	icon = GFX_shipgirltech_jichulilun_medium
+	icon = GFX_idea_generic_railroads
 	allowed = {
 		tag = DOH
 	}

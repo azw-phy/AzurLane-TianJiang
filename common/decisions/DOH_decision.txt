@@ -853,7 +853,7 @@ DOH_decision_category = {
 	# 		}
 	# 	}
 	# }
-	DOH_debug = {
+	DOH_debug_1 = {
 		icon = xingdong
 		cost = 0
 		ai_will_do = {
@@ -866,6 +866,71 @@ DOH_decision_category = {
 		complete_effect = {
 			add_dynamic_modifier = {
 				modifier = DOH_donghuangshiwu_idea
+			}
+		}
+	}
+	DOH_debug_2 = {
+		icon = xingdong
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			is_debug = yes
+			is_ai = no
+		}
+		complete_effect = {
+			every_owned_state = {
+				add_building_construction = {
+					type = nuclear_reactor
+					level = 1
+				}
+			}
+		}
+	}
+	DOH_debug_3 = {
+		icon = xingdong
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			is_debug = yes
+			is_ai = no
+		}
+		complete_effect = {
+			DOH = {
+				annex_country = {
+					target = XSM
+				}
+				annex_country = {
+					target = SHX
+				}
+				annex_country = {
+					target = TIB
+				}
+				annex_country = {
+					target = SIK
+				}
+				annex_country = {
+					target = YUN
+				}
+				annex_country = {
+					target = GXC
+				}
+				transfer_state = 609
+				transfer_state = 611
+				transfer_state = 610
+				transfer_state = 612
+				transfer_state = 715
+				transfer_state = 716
+				transfer_state = 745
+				transfer_state = 328
+				transfer_state = 717
+				transfer_state = 714
+				transfer_state = 761
+				transfer_state = 527
+				transfer_state = 525
 			}
 		}
 	}
@@ -1086,6 +1151,7 @@ DOH_decision_category = {
 	}
 	DOH_feitianmeng_zhunbei = {
 		icon = xingdong
+		fire_only_once = yes
 		visible = {
 			OR = {
 				is_debug = yes

@@ -1,8 +1,8 @@
 technologies = {
 	DOH_chijiaoyisheng_tech = {
 		field_hospital = {
-			casualty_trickleback = 0.20
-			experience_loss_factor = -0.3
+			casualty_trickleback = 0.1
+			experience_loss_factor = -0.15
 		}
 		infantry = {
 			casualty_trickleback = 0.01
@@ -59,8 +59,8 @@ technologies = {
 	}
 	DOH_donghuangyikedaxue_tech = {
 		field_hospital = {
-			casualty_trickleback = 0.20
-			experience_loss_factor = -0.3
+			casualty_trickleback = 0.1
+			experience_loss_factor = -0.15
 		}
 	}
 }

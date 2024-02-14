@@ -71,8 +71,14 @@ DOH_fake_add_shichangkaifang = {
 	min_export = 0.03
 	research_speed_factor = 0.03
 }
-
-DOH_hedianzhan = {
-	icon = GFX_focus_wonderweapons
-	consumer_goods_factor = var:DOH_hedianzhan
+DOH_hedian_modifier = {
+	icon = GFX_nuclear_reactor_medium
+	consumer_goods_factor = var:DOH_hedian_counter
+}
+DOH_hedian_state_modifier = {
+	icon = GFX_modifiers_generic_military_plans
+	local_building_slots = 1
+	local_org_regain = 0.2
+	local_resources = 0.5
+	local_supplies = 0.3
 }

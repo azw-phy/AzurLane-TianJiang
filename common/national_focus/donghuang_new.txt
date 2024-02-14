@@ -438,7 +438,28 @@ focus_tree = {
 			has_tech = nuclear_reactor
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = DOH_hedian_modifier_desc
+			custom_effect_tooltip = DOH_hedian_focus_tooltip
+			effect_tooltip = {
+				add_dynamic_modifier = {
+					modifier = DOH_hedian_state_modifier
+				}
+			}
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = DOH_hedian_modifier
+				}
+				every_owned_state = {
+					if = {
+						limit = {
+							nuclear_reactor > 0
+						}
+						add_dynamic_modifier = {
+							modifier = DOH_hedian_state_modifier
+						}
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -2027,6 +2048,22 @@ focus_tree = {
 					province = 8127
 					value = 20
 				}
+				set_victory_points = {
+					province = 5100
+					value = 10
+				}
+				set_victory_points = {
+					province = 12820
+					value = 20
+				}
+				set_victory_points = {
+					province = 5057
+					value = 10
+				}
+				set_victory_points = {
+					province = 2028
+					value = 20
+				}
 			}
 		}
 	}
@@ -2372,8 +2409,8 @@ focus_tree = {
 	focus = {
 		id = DOH_ziguyilai
 		icon = GFX_focus_chi_one_china_policy
-		x = 41
-		y = 6
+		x = 40
+		y = 5
 		mutually_exclusive = {
 			focus = DOH_chaogongzhidu
 		}
@@ -2640,6 +2677,9 @@ focus_tree = {
 			ic_ratio = {
 				tag = CHY
 				ratio > 5
+			}
+			DOH = {
+				is_ai = no
 			}
 		}
 		ai_will_do = {
@@ -3862,8 +3902,8 @@ focus_tree = {
 	focus = {
 		id = DOH_guguodejueze
 		icon = GFX_goal_generic_demand_territory
-		x = 41
-		y = 2
+		x = 40
+		y = 0
 
 		cost = 7
 
@@ -3876,6 +3916,7 @@ focus_tree = {
 		}
 
 		available = {
+			date > 1938.12.1
 			not = {has_war_with = CHY}
 			NOT = {
 				OR = {
@@ -4009,6 +4050,7 @@ focus_tree = {
 		mutually_exclusive = { focus = DOH_chisezhongzhou focus = DOH_bilanhangxian focus = DOH_aoranzili }
 		cost = 1
 		available = {
+			date > 1938.12.1
 			has_war = no
 			has_completed_focus = DOH_renminwansui
 			NOT = { has_completed_focus = DOH_aoranzili }
@@ -4127,6 +4169,7 @@ focus_tree = {
 		mutually_exclusive = { focus = DOH_gongchanlianmeng focus = DOH_bilanhangxian focus = DOH_aoranzili }
 		cost = 1
 		available = {
+			date > 1938.12.1
 			has_war = no
 			has_completed_focus = DOH_ducuyixian
 			custom_trigger_tooltip = {
@@ -4243,6 +4286,7 @@ focus_tree = {
 		mutually_exclusive = { focus = DOH_chisezhongzhou focus = DOH_gongchanlianmeng focus = DOH_aoranzili }
 		cost = 1
 		available = {
+			date > 1938.12.1
 			has_war = no
 			has_completed_focus = DOH_yinruwaizi
 			NOT = { has_completed_focus = DOH_aoranzili }

@@ -19,7 +19,12 @@
   DOH_tiedaogongye: "铁路工业"
   DOH_tiedaogongye_desc: "发展铁路工业，大量制造机车车辆。"
   DOH_liangdanyixing: "核工业"
-  DOH_liangdanyixing_desc: "核工业"
+  DOH_liangdanyixing_desc: "在研究中我们发现原子能武器有极大的威力。但这也意味着我们可以驯服原子能，使其成为改造自然的重要力量。"
+  DOH_hedian_state_modifier: "充足的能源供应"
+  DOH_hedian_state_modifier_desc: "充足的能源供应"
+  DOH_hedian_modifier: "东煌核工业"
+  DOH_hedian_modifier_desc: "由于§Y能源供应充足§!，每座核反应堆提供额外的§Y2%§!消费品系数减免。"
+  DOH_hedian_focus_tooltip: "§C拥有核反应堆的地区：§!"
   DOH_tongyizhanxian_tooltip: "获得为期180天的§Y统一战线§!。其效果为：执政党支持率和稳定度提升。\n启用§C统一战线系统§!。"
   DOH_tongyizhanxian_tooltip_2: "获得为期180天的§Y统一战线§!。其效果为：执政党支持率和稳定度提升。"
   DOH_xiandaihua_tooltip: "允许进行：§C东煌式现代化§!"
@@ -423,9 +428,9 @@
   DOH_chijiaoyisheng_tooltip: "所有徒步步兵、骑兵、摩托化和机械化步兵将学会一定的§Y战地医疗知识§!。"
   DOH_chijiaoyisheng_tech: "赤脚医生"
   DOH_dashijiyoujizhan: "大师级游击战"
-  DOH_dashijiyoujizhan_desc: "在与军阀战斗的过程中我们积累的很多游击战的经验，必能活用于与重樱侵略者战斗的过程中。"
+  DOH_dashijiyoujizhan_desc: "在与军阀战斗的过程中我们积累的很多游击战的经验，必能活用于与侵略者战斗的过程中。"
   DOH_donghuangyikedaxue: "东煌医科大学"
-  DOH_donghuangyikedaxue_desc: "东煌医科大学"
+  DOH_donghuangyikedaxue_desc: "恪守天职，健康所系。\n效忠祖国，富贵不移。\n投我木桃，报之琼瑶。\n掌握本领，服务同胞。"
   DOH_donghuangyikedaxue_tech: "东煌医科大学"
   DOH_dhzztx: "东煌指战体系"
   DOH_dhzztx_desc: "具有东煌特色的指战员体系。"
@@ -717,12 +722,17 @@
   DOH_nibuchu_name: "尼布楚"
   DOH_tangnuwulianghai_name: "唐努乌梁海"
   DOH_wuliyasutai_name: "乌里雅苏台"
-  
-  
-  
-  
-  
-  
+  VICTORY_POINTS_12043: "唐山"
+  VICTORY_POINTS_5100: "张掖"
+  VICTORY_POINTS_4525: "包头"
+  VICTORY_POINTS_12820: "敦煌"
+  VICTORY_POINTS_12432: "大同"
+  VICTORY_POINTS_5057: "武威"
+  VICTORY_POINTS_2028: "酒泉"
+  VICTORY_POINTS_4205: "威海"
+  VICTORY_POINTS_11931: "洛阳"
+  VICTORY_POINTS_7656: "开封"
+  VICTORY_POINTS_9781: "鞍山"
   
   
   
