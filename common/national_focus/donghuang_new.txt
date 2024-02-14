@@ -358,7 +358,8 @@ focus_tree = {
 		completion_reward = {
 			set_technology = {
 				electronic_mechanical_engineering = 1				
-				mechanical_computing = 1				
+				mechanical_computing = 1
+				popup = no
 			}
 		}
 	}
@@ -380,6 +381,7 @@ focus_tree = {
 				has_completed_focus = DOH_gaodengxuefu
 				has_country_flag = shikongchuansuo_get
 			}
+			has_full_control_of_state = 756
 		}
 		completion_reward = {
 			add_timed_idea = {
@@ -448,7 +450,6 @@ focus_tree = {
 			has_tech = nuclear_reactor
 		}
 		completion_reward = {
-			custom_effect_tooltip = DOH_hedian_modifier_desc
 			custom_effect_tooltip = DOH_hedian_focus_tooltip
 			effect_tooltip = {
 				add_dynamic_modifier = {
@@ -470,6 +471,7 @@ focus_tree = {
 					}
 				}
 			}
+			custom_effect_tooltip = DOH_hedian_modifier_desc
 		}
 	}
 	focus = {
@@ -1883,7 +1885,7 @@ focus_tree = {
 	focus = {
 		id = DOH_hailufuhe
 		icon = GFX_focus_SWE_coastal_support
-		x = 6
+		x = 7
 		y = 3
 		prerequisite = { focus = DOH_huanxingjulong }
 		prerequisite = { focus = DOH_nanhaidezhuren }
@@ -1902,7 +1904,7 @@ focus_tree = {
 	focus = {
 		id = DOH_sichouzhilu
 		icon = GFX_goal_generic_propaganda
-		x = -2
+		x = -3
 		y = 1
 		cost = 5
 		prerequisite = { focus = DOH_hailufuhe }
@@ -2084,7 +2086,7 @@ focus_tree = {
 	focus = {
 		id = DOH_yuanyanghaijun
 		icon = GFX_goal_generic_navy_cruiser
-		x = 0
+		x = -1
 		y = 1
 		cost = 2
 		relative_position_id = DOH_hailufuhe
@@ -2101,7 +2103,7 @@ focus_tree = {
 	focus = {
 		id = DOH_yunshujiandui
 		icon = GFX_focus_generic_refit_civilian_ships
-		x = 2
+		x = 1
 		y = 1
 		cost = 2
 		relative_position_id = DOH_hailufuhe
@@ -2119,7 +2121,7 @@ focus_tree = {
 	focus = {
 		id = DOH_ninghaixiaxiyang
 		icon = GFX_focus_ninghai
-		x = 1
+		x = 0
 		y = 2
 		cost = 10
 		relative_position_id = DOH_hailufuhe
@@ -2400,7 +2402,7 @@ focus_tree = {
 	focus = {
 		id = DOH_weilenvhuang
 		icon = GFX_focus_hol_the_foundations_of_defense
-		x = 3
+		x = 4
 		y = 1
 		prerequisite = { focus = DOH_huanxingjulong }
 		relative_position_id = DOH_huanxingjulong
