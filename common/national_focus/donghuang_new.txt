@@ -3217,13 +3217,21 @@ focus_tree = {
 			}
 			hidden_effect = {
 				set_victory_points = {
-				province = 6999
-				value = 40
-			}
-			set_victory_points = {
-				province = 4925
-				value = 40
-			}
+					province = 6999
+					value = 40
+				}
+				set_victory_points = {
+					province = 4925
+					value = 40
+				}
+				set_victory_points = {
+					province = 1367
+					value = 15
+				}
+				set_victory_points = {
+					province = 12141
+					value = 10
+				}
 			}
 		}
 	}
