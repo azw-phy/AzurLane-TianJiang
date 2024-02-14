@@ -316,6 +316,16 @@ focus_tree = {
             every_military_industrial_organization = {
                 add_mio_size = 5
             }
+			hidden_effect = {
+				set_victory_points = {
+					province = 4525
+					value = 20
+				}
+				set_victory_points = {
+					province = 12432
+					value = 20
+				}
+			}
         }
     }
     focus = {
@@ -2034,7 +2044,7 @@ focus_tree = {
 				}
 				set_victory_points = {
 					province = 8049
-					value = 10
+					value = 15
 				}
 				set_victory_points = {
 					province = 2015
@@ -2054,7 +2064,7 @@ focus_tree = {
 				}
 				set_victory_points = {
 					province = 12820
-					value = 20
+					value = 15
 				}
 				set_victory_points = {
 					province = 5057
@@ -2063,6 +2073,10 @@ focus_tree = {
 				set_victory_points = {
 					province = 2028
 					value = 20
+				}
+				set_victory_points = {
+					province = 12820
+					value = 10
 				}
 			}
 		}
@@ -2183,6 +2197,26 @@ focus_tree = {
 					province = 7071
 					value = 20
 				}
+				set_victory_points = {
+					province = 9938
+					value = 20
+				}
+				set_victory_points = {
+					province = 7182
+					value = 20
+				}
+				set_victory_points = {
+					province = 1055
+					value = 20
+				}
+				set_victory_points = {
+					province = 4205
+					value = 20
+				}
+				set_victory_points = {
+					province = 1200
+					value = 20
+				}
 			}
 		}
 	}
@@ -2289,7 +2323,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DOH_guangronghemengxiangdeyuanzheng
-		icon = GFX_focus_focus_fra_revolution_utmost_shine
+		icon = GFX_focus_focus_fra_revolution_utmost
 		x = 0
 		y = 2
 		prerequisite = { focus = DOH_donghuangdeshidai }
@@ -2315,7 +2349,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DOH_feitianmeng
-		icon = GFX_focus_rocketry_shine
+		icon = GFX_focus_rocketry
 		x = -1
 		y = 1
 		prerequisite = { focus = DOH_guangronghemengxiangdeyuanzheng }
@@ -2993,6 +3027,10 @@ focus_tree = {
 			}
 			hidden_effect = {
 				set_victory_points = {
+					province = 12055
+					value = 20
+				}
+				set_victory_points = {
 					province = 1519
 					value = 20
 				}
@@ -3010,7 +3048,7 @@ focus_tree = {
 				}
 				set_victory_points = {
 					province = 10404
-					value = 10
+					value = 15
 				}
 				set_victory_points = {
 					province = 7137
@@ -3050,7 +3088,15 @@ focus_tree = {
 				}
 				set_victory_points = {
 					province = 4504
-					value = 10
+					value = 15
+				}
+				set_victory_points = {
+					province = 7656
+					value = 15
+				}
+				set_victory_points = {
+					province = 11931
+					value = 15
 				}
 			}
 		}
@@ -3195,13 +3241,7 @@ focus_tree = {
 		available = {
 			has_full_control_of_state = 608
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 
-
-
-		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			add_war_support = 0.15
 			add_stability = 0.1
@@ -3240,6 +3280,18 @@ focus_tree = {
 				}
 				set_victory_points = {
 					province = 10068
+					value = 20
+				}
+				set_victory_points = {
+					province = 12043
+					value = 20
+				}
+				set_victory_points = {
+					province = 7109
+					value = 20
+				}
+				set_victory_points = {
+					province = 11801
 					value = 20
 				}
 			}
@@ -3351,11 +3403,39 @@ focus_tree = {
 				}
 				set_victory_points = {
 					province = 1150
-					value = 20
+					value = 30
 				}
 				set_victory_points = {
 					province = 10433
+					value = 30
+				}
+				set_victory_points = {
+					province = 916
+					value = 10
+				}
+				set_victory_points = {
+					province = 9803
+					value = 10
+				}
+				set_victory_points = {
+					province = 11808
+					value = 10
+				}
+				set_victory_points = {
+					province = 9885
 					value = 20
+				}
+				set_victory_points = {
+					province = 3895
+					value = 15
+				}
+				set_victory_points = {
+					province = 9781
+					value = 20
+				}
+				set_victory_points = {
+					province = 11836
+					value = 10
 				}
 			}
 			745 = {
