@@ -1,0 +1,168 @@
+az_DOH_railway_organization = {
+	icon = GFX_shipgirltech_jichulilun_medium
+	allowed = {
+		tag = DOH
+	}
+	available = {
+		DOH = {
+			has_completed_focus = DOH_tiedaogongye
+		}
+	}
+	equipment_type = {
+		train_equipment
+		railway_gun_equipment
+		az_equipment_liechepao
+		support_equipment
+	}
+	research_bonus = 1
+	research_categories = {
+		train_tech
+	}
+	initial_trait = {
+		token = DOH_train_init
+		name = DOH_train_init
+		equipment_bonus = {
+			build_cost_ic = -0.05
+			reliability = 0.15
+		}
+		limit_to_equipment_type = {
+			train_equipment
+			railway_gun_equipment
+			az_equipment_liechepao
+		}
+		production_bonus = {
+			production_resource_need_factor = -1
+			production_resource_penalty_factor = -1
+		}
+	}
+	trait = {
+		token = DOH_train_speed_1
+		name = DOH_train_speed_1
+		position = { x = 4 y = 0 }
+		icon = GFX_generic_mio_trait_icon_unique
+		limit_to_equipment_type = {
+			train_equipment
+			railway_gun_equipment
+			az_equipment_liechepao
+		}
+		available = {
+			DOH = {
+				num_of_factories > 600
+			}
+			has_mio_size > 15
+		}
+		equipment_bonus = {
+			maximum_speed = 1.5
+			armor_value = 0.5
+			air_attack = 0.5
+		}
+		on_complete = {
+			DOH = {
+				remove_ideas = DOH_donghuangzhongche_idea_0
+				add_ideas = DOH_donghuangzhongche_idea_1
+			}
+		}
+	}
+	trait = {
+		token = DOH_train_speed_2
+		name = DOH_train_speed_2
+		position = { x = 0 y = 1 }
+		icon = GFX_generic_mio_trait_icon_unique
+		parent = {
+			traits = {
+				DOH_train_speed_1
+			}
+		}
+		limit_to_equipment_type = {
+			train_equipment
+			railway_gun_equipment
+			az_equipment_liechepao
+		}
+		relative_position_id = DOH_train_speed_1
+		available = {
+			DOH = {
+				num_of_factories > 800
+			}
+			has_mio_size > 25
+		}
+		equipment_bonus = {
+			maximum_speed = 1
+			armor_value = 0.5
+			air_attack = 0.5
+		}
+		on_complete = {
+			DOH = {
+				remove_ideas = DOH_donghuangzhongche_idea_1
+				add_ideas = DOH_donghuangzhongche_idea_2
+			}
+		}
+	}
+	trait = {
+		token = DOH_train_speed_3
+		name = DOH_train_speed_3
+		position = { x = 0 y = 1 }
+		icon = GFX_generic_mio_trait_icon_unique
+		relative_position_id = DOH_train_speed_2
+		limit_to_equipment_type = {
+			train_equipment
+			railway_gun_equipment
+			az_equipment_liechepao
+		}
+		parent = {
+			traits = {
+				DOH_train_speed_2
+			}
+		}
+		available = {
+			DOH = {
+				num_of_factories > 1000
+			}
+			has_mio_size > 35
+		}
+		equipment_bonus = {
+			maximum_speed = 2
+			armor_value = 0.5
+			air_attack = 0.5
+		}
+		on_complete = {
+			DOH = {
+				remove_ideas = DOH_donghuangzhongche_idea_2
+				add_ideas = DOH_donghuangzhongche_idea_3
+			}
+		}
+	}
+	trait = {
+		token = DOH_train_speed_4
+		name = DOH_train_speed_4
+		position = { x = 0 y = 1 }
+		icon = GFX_generic_mio_trait_icon_unique
+		relative_position_id = DOH_train_speed_3
+		limit_to_equipment_type = {
+			train_equipment
+			railway_gun_equipment
+			az_equipment_liechepao
+		}
+		parent = {
+			traits = {
+				DOH_train_speed_3
+			}
+		}
+		available = {
+			DOH = {
+				num_of_factories > 1600
+			}
+			has_mio_size > 45
+		}
+		equipment_bonus = {
+			maximum_speed = 3
+			armor_value = 0.5
+			air_attack = 0.5
+		}
+		on_complete = {
+			DOH = {
+				remove_ideas = DOH_donghuangzhongche_idea_3
+				add_ideas = DOH_donghuangzhongche_idea_4
+			}
+		}
+	}
+}

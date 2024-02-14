@@ -244,6 +244,13 @@ on_actions = {
 				var:DOH_gongyeguihua_doing_goal_display = DOH.num_of_factories
 			}
 			round_variable = var:DOH_gongyeguihua_doing_goal_display
+			# 核电站
+			# set_variable = {
+			# 	var:DOH_hedianzhan = -0.01
+			# }
+			# multiply_variable = {
+			# 	var:DOH_hedianzhan = num_of_nuclare_reactor
+			# }
 		}
 	}
 	on_monthly = {

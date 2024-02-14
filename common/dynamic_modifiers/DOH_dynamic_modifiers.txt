@@ -71,3 +71,8 @@ DOH_fake_add_shichangkaifang = {
 	min_export = 0.03
 	research_speed_factor = 0.03
 }
+
+DOH_hedianzhan = {
+	icon = GFX_focus_wonderweapons
+	consumer_goods_factor = var:DOH_hedianzhan
+}

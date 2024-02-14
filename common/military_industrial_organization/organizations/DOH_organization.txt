@@ -17,7 +17,10 @@
 	available = {
 		owner = {
 			controls_state = 621
-			has_completed_focus = DOH_dulizizhudejungong
+			OR = {
+				has_completed_focus = DOH_xindonghuang
+				has_completed_focus = DOH_yixianwansui
+			}
 			has_completed_focus = DOH_donghuanggongyetixi
 		}
 	}
@@ -57,7 +60,10 @@ TIX_DOH_tank_designer_organization = {
 		owner = {
 			has_completed_focus = DOH_xuexitiexue
 			has_completed_focus = DOH_tiexueguwen
-			has_completed_focus = DOH_dulizizhudejungong
+			OR = {
+				has_completed_focus = DOH_xindonghuang
+				has_completed_focus = DOH_yixianwansui
+			}
 		}
 	}
 }
@@ -197,7 +203,10 @@ DOH_dalianzaochuan_organization = {
 				has_completed_focus = DOH_zaochuanjishugexin
 			}
 			controls_state = 745
-			has_completed_focus = DOH_dulizizhudejungong
+			OR = {
+				has_completed_focus = DOH_xindonghuang
+				has_completed_focus = DOH_yixianwansui
+			}
 		}
 	}
 }
@@ -333,7 +342,10 @@ DOH_hudong_organization = {
 				}
 			}
 			controls_state = 613
-			has_completed_focus = DOH_dulizizhudejungong
+			OR = {
+				has_completed_focus = DOH_xindonghuang
+				has_completed_focus = DOH_yixianwansui
+			}
 		}
 	}
 }
@@ -472,7 +484,10 @@ DOH_wuchangzaochuanchang_organization = {
 				}
 			}
 			controls_state = 620
-			has_completed_focus = DOH_dulizizhudejungong
+			OR = {
+				has_completed_focus = DOH_xindonghuang
+				has_completed_focus = DOH_yixianwansui
+			}
 		}
 	}
 }
@@ -599,7 +614,10 @@ DOH_jiangnan_shipyard_group_organization = {
 		}
 	}
 	available = {
-		owner = { has_completed_focus = DOH_dulizizhudejungong }
+		owner = { OR = {
+				has_completed_focus = DOH_xindonghuang
+				has_completed_focus = DOH_yixianwansui
+			} }
 	}
 }
 
@@ -722,7 +740,10 @@ DOH_dagu_shipyard_organization = {
 		}
 	}
 	available = {
-		owner = { has_completed_focus = DOH_dulizizhudejungong }
+		owner = { OR = {
+				has_completed_focus = DOH_xindonghuang
+				has_completed_focus = DOH_yixianwansui
+			} }
 	}
 }
 
@@ -743,7 +764,10 @@ DOH_camco_medium_organization = {
 		tag = DOH
 	}
 	available = {
-		owner = { has_completed_focus = DOH_dulizizhudejungong }
+		owner = { OR = {
+				has_completed_focus = DOH_xindonghuang
+				has_completed_focus = DOH_yixianwansui
+			} }
 	}
 }
 DOH_camco_fighter_organization = {
@@ -753,7 +777,10 @@ DOH_camco_fighter_organization = {
 		tag = DOH
 	}
 	available = {
-		owner = { has_completed_focus = DOH_dulizizhudejungong }
+		owner = { OR = {
+				has_completed_focus = DOH_xindonghuang
+				has_completed_focus = DOH_yixianwansui
+			} }
 	}
 }
 DOH_camco_cas_organization = {
@@ -763,7 +790,10 @@ DOH_camco_cas_organization = {
 		tag = DOH
 	}
 	available = {
-		owner = { has_completed_focus = DOH_dulizizhudejungong }
+		owner = { OR = {
+				has_completed_focus = DOH_xindonghuang
+				has_completed_focus = DOH_yixianwansui
+			} }
 	}
 }
 
@@ -787,7 +817,10 @@ DOH_taiyuan_arsenal_organization = {
 		available = {
 			owner = {
 				controls_state = 615
-				has_completed_focus = DOH_dulizizhudejungong
+				OR = {
+				has_completed_focus = DOH_xindonghuang
+				has_completed_focus = DOH_yixianwansui
+			}
 			}
 		}
 }
@@ -800,7 +833,10 @@ DOH_liaoning_arsenal_organization = {
 	available = {
 		owner = {
 			controls_state = 715
-			has_completed_focus = DOH_dulizizhudejungong
+			OR = {
+				has_completed_focus = DOH_xindonghuang
+				has_completed_focus = DOH_yixianwansui
+			}
 		}
 	}
 }
@@ -813,7 +849,10 @@ DOH_hanyan_arsenal_organization = {
 	available = {
 		owner = {
 			controls_state = 620
-			has_completed_focus = DOH_dulizizhudejungong
+			OR = {
+				has_completed_focus = DOH_xindonghuang
+				has_completed_focus = DOH_yixianwansui
+			}
 		}
 	}
 }
@@ -826,7 +865,10 @@ DOH_mukden_arsenal_organization = {
 	available = {
 		owner = {
 			controls_state = 716
-			has_completed_focus = DOH_dulizizhudejungong
+			OR = {
+				has_completed_focus = DOH_xindonghuang
+				has_completed_focus = DOH_yixianwansui
+			}
 		}
 	}
 }
