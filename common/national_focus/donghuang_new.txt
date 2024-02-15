@@ -319,7 +319,7 @@ focus_tree = {
 			hidden_effect = {
 				set_victory_points = {
 					province = 4525
-					value = 20
+					value = 15
 				}
 				set_victory_points = {
 					province = 12432
@@ -2205,7 +2205,7 @@ focus_tree = {
 				}
 				set_victory_points = {
 					province = 7182
-					value = 20
+					value = 10
 				}
 				set_victory_points = {
 					province = 1055
@@ -2213,11 +2213,11 @@ focus_tree = {
 				}
 				set_victory_points = {
 					province = 4205
-					value = 20
+					value = 10
 				}
 				set_victory_points = {
 					province = 1200
-					value = 20
+					value = 10
 				}
 			}
 		}
@@ -3283,6 +3283,11 @@ focus_tree = {
 			608 = {
 				set_state_category = megalopolis
 			}
+			add_resource = {
+				type = steel
+				amount = 100
+				state = 609
+			}
 			hidden_effect = {
 				set_victory_points = {
 					province = 9843
@@ -3294,7 +3299,7 @@ focus_tree = {
 				}
 				set_victory_points = {
 					province = 12043
-					value = 20
+					value = 15
 				}
 				set_victory_points = {
 					province = 7109
@@ -3302,7 +3307,7 @@ focus_tree = {
 				}
 				set_victory_points = {
 					province = 11801
-					value = 20
+					value = 10
 				}
 			}
 		}
@@ -3421,7 +3426,7 @@ focus_tree = {
 				}
 				set_victory_points = {
 					province = 916
-					value = 10
+					value = 5
 				}
 				set_victory_points = {
 					province = 9803
@@ -3429,23 +3434,23 @@ focus_tree = {
 				}
 				set_victory_points = {
 					province = 11808
-					value = 10
+					value = 5
 				}
 				set_victory_points = {
 					province = 9885
-					value = 20
-				}
-				set_victory_points = {
-					province = 3895
 					value = 15
 				}
 				set_victory_points = {
+					province = 3895
+					value = 5
+				}
+				set_victory_points = {
 					province = 9781
-					value = 20
+					value = 15
 				}
 				set_victory_points = {
 					province = 11836
-					value = 10
+					value = 5
 				}
 			}
 			745 = {

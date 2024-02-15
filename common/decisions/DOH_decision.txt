@@ -934,6 +934,43 @@ DOH_decision_category = {
 			}
 		}
 	}
+	DOH_debug_4 = {
+		icon = xingdong
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			is_debug = yes
+			is_ai = no
+		}
+		complete_effect = {
+			complete_national_focus = DOH_dulizizhudejungong
+			complete_national_focus = DOH_donghuangdeshidai
+			complete_national_focus = DOH_nanhaidezhuren
+			complete_national_focus = DOH_heijinsansheng
+			complete_national_focus = DOH_sichouzhilu
+			complete_national_focus = DOH_qianniandidu
+			complete_national_focus = DOH_dashanghai
+			complete_national_focus = DOH_tianfuzhiguo
+			complete_national_focus = DOH_ninghaixiaxiyang
+		}
+	}
+	DOH_debug_5 = {
+		icon = xingdong
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			is_debug = yes
+			is_ai = no
+		}
+		complete_effect = {
+			complete_national_focus = DOH_donghuanggongyetixi
+			add_offsite_building = { type = industrial_complex level = 500 }
+		}
+	}
 	DOH_gongyehua_visable = {
 		icon = xingdong
 		cost = 0
