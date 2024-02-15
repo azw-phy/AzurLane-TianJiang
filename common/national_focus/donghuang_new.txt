@@ -222,6 +222,10 @@ focus_tree = {
 			add_political_power = -50
 			set_technology = { guerrilla_tactics_for_doh = 1 popup = no }
 			set_technology = { human_wave_tactics_for_doh = 1 popup = no }
+			set_technology = {
+				DOH_dashijiyoujizhan_tech = 1
+			}
+			custom_effect_tooltip = DOH_dashijiyoujizhan_tooltip
 		}
 	}
     focus = {
@@ -890,6 +894,11 @@ focus_tree = {
 
         completion_reward = {
             TY_haijunliluntupo = yes
+			every_navy_leader = {
+				add_skill_level = 2
+				add_maneuver = 2
+				add_coordination = 2
+			}
             add_tech_bonus = {
                 name = "玄学建造"
                 bonus = 2
@@ -1118,7 +1127,7 @@ focus_tree = {
     focus = {
         id = DOH_yubeilianjiaoliu
         icon = GFX_fflag_BFL
-        x = -3
+        x = -2
         y = 1
         prerequisite = { focus = DOH_xuexizhilv }
         relative_position_id = DOH_xuexizhilv
@@ -1285,6 +1294,7 @@ focus_tree = {
                 ruling_party = communism
             }
             add_ideas = DOH_rmws
+            add_popularity = { ideology = communism popularity = 0.2 }
         }
     }
     focus = {
@@ -1330,7 +1340,7 @@ focus_tree = {
     focus = {
         id = DOH_yuhuangjiajiaoliu
         icon = GFX_fflag_HUJ
-        x = 3
+        x = 2
         y = 1
         prerequisite = { focus = DOH_xuexizhilv }
         relative_position_id = DOH_xuexizhilv
@@ -1408,11 +1418,11 @@ focus_tree = {
             }
         }
 
-        available = {
-            NOT = {
-                has_idea = DOH_qxfdp
-            }
-        }
+        # available = {
+        #     NOT = {
+        #         has_idea = DOH_qxfdp
+        #     }
+        # }
 
         completion_reward = {
             add_ideas = DOH_dhgm    
@@ -1477,7 +1487,7 @@ focus_tree = {
         }
 
         completion_reward = {
-            add_popularity = { ideology = fascism popularity = 0.15 }
+            add_popularity = { ideology = fascism popularity = 0.1 }
 
             add_country_leader_trait = mjyx
 			add_political_power = 200
@@ -1564,7 +1574,6 @@ focus_tree = {
 			date > 1937.12.1
 		}
         completion_reward = {
-			DOH_dongfangguguo_dengji = yes
 			add_political_power = 300
 			add_stability = -1
 			add_dynamic_modifier = {
@@ -1853,6 +1862,7 @@ focus_tree = {
         completion_reward = {
 			add_ideas = DOH_dhgytx
 			custom_effect_tooltip = DOH_donghuanggongyetixi_tooltip
+			DOH_dongfangguguo_dengji = yes
         }
     }
 	focus = {
@@ -2327,7 +2337,7 @@ focus_tree = {
 		id = DOH_guangronghemengxiangdeyuanzheng
 		icon = GFX_focus_focus_fra_revolution_utmost
 		x = 0
-		y = 2
+		y = 4
 		prerequisite = { focus = DOH_donghuangdeshidai }
 		relative_position_id = DOH_donghuangdeshidai
 		cost = 5
@@ -2745,15 +2755,6 @@ focus_tree = {
 			factor = 1
 		}
 
-
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-
-
-		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
             hidden_effect = {
 				remove_opinion_modifier = {
@@ -2779,6 +2780,9 @@ focus_tree = {
 				add_core_of = DOH
 				remove_core_of = CHY
 				transfer_state_to = DOH
+			}
+			526 = {
+				set_state_name = DOH_liuqiu_name
 			}
 			if = {
 				limit = { DOH = { has_completed_focus = DOH_chaogongzhidu } }
@@ -4041,7 +4045,7 @@ focus_tree = {
 		id = DOH_aoranzili
 		icon = GFX_goal_generic_demand_territory
 		relative_position_id = DOH_guguodejueze
-		x = 8
+		x = 6
 		y = 1
 
 		cost = 3
@@ -4089,7 +4093,7 @@ focus_tree = {
 		relative_position_id = DOH_aoranzili
 		prerequisite = { focus = DOH_aoranzili focus = DOH_bilanhangxian }
 		mutually_exclusive = { focus = DOH_jijikuozhang }
-		x = -2
+		x = -1
 		y = 1
 
 		cost = 3
@@ -4115,7 +4119,7 @@ focus_tree = {
 		relative_position_id = DOH_aoranzili
 		prerequisite = { focus = DOH_aoranzili }
 		mutually_exclusive = { focus = DOH_baochiweishe }
-		x = 2
+		x = 1
 		y = 1
 
 		cost = 3

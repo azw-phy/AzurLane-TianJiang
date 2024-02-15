@@ -63,4 +63,58 @@ technologies = {
 			experience_loss_factor = -0.15
 		}
 	}
+	DOH_dashijiyoujizhan_tech = {
+		infantry = {
+			reliability_factor = 0.0025
+			equipment_capture_factor = 0.0025
+		}
+		bicycle_battalion = {
+			reliability_factor = 0.0025
+			equipment_capture_factor = 0.0025
+		}
+		paratrooper = {
+			reliability_factor = 0.0025
+			equipment_capture_factor = 0.0025
+		}
+		marine = {
+			reliability_factor = 0.0025
+			equipment_capture_factor = 0.0025
+		}
+		marine_commando = {
+			reliability_factor = 0.0025
+			equipment_capture_factor = 0.0025
+		}
+		penal_battalion = {
+			reliability_factor = 0.0025
+			equipment_capture_factor = 0.0025
+		}
+		irregular_infantry = {
+			reliability_factor = 0.0025
+			equipment_capture_factor = 0.0025
+		}
+		militia = {
+			reliability_factor = 0.0025
+			equipment_capture_factor = 0.0025
+		}
+		motorized = {
+			reliability_factor = 0.0025
+			equipment_capture_factor = 0.0025
+		}
+		mechanized = {
+			reliability_factor = 0.0025
+			equipment_capture_factor = 0.0025
+		}
+		cavalry = {
+			reliability_factor = 0.0025
+			equipment_capture_factor = 0.0025
+		}
+		camelry = {
+			reliability_factor = 0.0025
+			equipment_capture_factor = 0.0025
+		}
+		amphibious_mechanized = {
+			reliability_factor = 0.0025
+			equipment_capture_factor = 0.0025
+		}
+	}
 }

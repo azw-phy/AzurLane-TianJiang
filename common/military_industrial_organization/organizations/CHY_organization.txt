@@ -843,10 +843,11 @@ CHY_nissan_organization = {
 	include = generic_motorized_mechanized_organization 
 	icon = GFX_idea_nissan
 	allowed = {	
-		OR = {
-			tag = CHY
-			tag = DOH
-		}
+		# OR = {
+		# 	tag = CHY
+		# 	tag = DOH
+		# }
+		tag = CHY
 	}
 	available = {
 		FROM = {
