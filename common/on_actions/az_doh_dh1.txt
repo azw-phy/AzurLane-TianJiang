@@ -161,6 +161,8 @@ on_actions = {
 			multiply_variable = { var:DOH_gonggongkaizhi_effect_3 = 0.001 }
 			set_variable = { var:DOH_shichang_effect = var:DOH_shichang }
 			multiply_variable = { var:DOH_shichang_effect = 0.03 }
+			set_variable = { var:DOH_shichang_effect_m = var:DOH_shichang_effect }
+			multiply_variable = { var:DOH_shichang_effect_m = -1 }
 			set_variable = {
 				var = DOH_xiaofeipingyinxiang_factor
 				value = 0.08

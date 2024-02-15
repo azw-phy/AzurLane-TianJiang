@@ -28,6 +28,7 @@ DOH_donghuangshiwu_idea = {
 	industrial_capacity_factory = DOH_guimoxiaoyin_effect
 	industrial_capacity_dockyard = DOH_guimoxiaoyin_effect
 	consumer_goods_factor = extra_xiaofeiping
+	consumer_goods_factor = DOH_shichang_effect_m
 }
 DOH_fake_add_touzi = {
 	icon = GFX_idea_DOH_xdh
@@ -70,6 +71,7 @@ DOH_fake_add_shichangkaifang = {
     enable = { always = yes }
 	min_export = 0.03
 	research_speed_factor = 0.03
+	consumer_goods_factor = -0.03
 }
 DOH_hedian_modifier = {
 	icon = GFX_nuclear_reactor_medium
