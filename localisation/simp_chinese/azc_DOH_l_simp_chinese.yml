@@ -663,7 +663,7 @@
   
   #东煌决议#
   DOH_decision_category: "东煌事务"
-  DOH_decision_category_desc: "东煌有其特殊性，这意味着东煌必须走自己的道路。\n\n§C东煌特色经济体系§!\n§Y投资§!：[?DOH_touzi]\n§Y公共开支§!：[?DOH_gonggongkaizhi]\n§Y额外科研经费§!：[?DOH_keyanjinfei]\n§Y额外军事经费§!：[?DOH_junshijinfei]\n------------\n§Y总计开支§!：[?DOH_zongjikaizhi]\n§Y对消费品系数的影响因子§![?DOH_xiaofeipingyinxiang_factor]\n§Y对消费品系数影响§!：[?DOH_xiaofeipingyinxiang]\n------------\n§Y市场开放程度§!：[?DOH_shichang]\n§Y规模效应§!：[?DOH_guimoxiaoyin]\n§Y规模效应带来的额外产能§!：[?DOH_guimoxiaoyin_effect]\n\n§C东煌核工业§!\n由于§Y能源供应充足§!，每座核反应堆提供额外的§Y2%§!消费品系数减免。\n§Y当前效果§!：[?DOH_hedian_counter]\n\n§C统一战线§!\n§Y内部分歧导致的政策支持率惩罚§!：[?DOH_zhichiduchengfa]%\n"
+  DOH_decision_category_desc: "东煌有其特殊性，这意味着东煌必须走自己的道路。\n\n§C东煌特色经济体系§!\n§Y投资§!：[?DOH_touzi]\n§Y公共开支§!：[?DOH_gonggongkaizhi]\n§Y额外科研经费§!：[?DOH_keyanjinfei]\n§Y额外军事经费§!：[?DOH_junshijinfei]\n------------\n§Y总计开支§!：[?DOH_zongjikaizhi]\n------------\n§Y市场开放程度§!：[?DOH_shichang]\n§Y规模效应§!：[?DOH_guimoxiaoyin]\n§Y规模效应带来的额外产能§!：[?DOH_guimoxiaoyin_effect]\n------------\n§Y对消费品系数的影响因子§![?DOH_xiaofeipingyinxiang_factor]\n§Y最终消费品系数§!：[?DOH_xiaofeipingyinxiang]\n\n§C东煌核工业§!\n§g由于能源供应充足，每座核反应堆提供额外的2%消费品系数减免。§!\n§Y当前效果§!：[?DOH_hedian_counter]\n\n§C统一战线§!\n§Y内部分歧导致的政策支持率惩罚§!：[?DOH_zhichiduchengfa]%\n§Y稳定度对消费品系数的额外修正§!：[?extra_xiaofeiping]\n"
   DOH_gongyeguihua_decision: "制定工业规划"
   DOH_gongyeguihua_decision_desc: "我们向全国人民许诺一年内经济发展目标，如果达成将能减轻内部分歧，增强人民的信心。\n当前预期目标：超过[?DOH_gongyeguihua_doing_goal_display]工业"
   DOH_gongyeguihua_mission: "工业规划进行中"
