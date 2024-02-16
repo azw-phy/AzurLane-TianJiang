@@ -11,8 +11,7 @@ DOH_decision_category = {
 			}
 		}
 		cost = 10
-		days_remove = 2
-		days_re_enable = 2
+		
 		complete_effect = {
 			custom_effect_tooltip = "增加1点投资"
 			effect_tooltip = {
@@ -63,8 +62,7 @@ DOH_decision_category = {
 			}
 		}
 		cost = 10
-		days_remove = 2
-		days_re_enable = 2
+		
 		complete_effect = {
 			custom_effect_tooltip = "减少1点投资"
 			effect_tooltip = {
@@ -110,8 +108,7 @@ DOH_decision_category = {
 			}
 		}
 		cost = 10
-		days_remove = 2
-		days_re_enable = 2
+		
 		complete_effect = {
 			custom_effect_tooltip = "增加1点公共开支"
 			effect_tooltip = {
@@ -162,8 +159,7 @@ DOH_decision_category = {
 			}
 		}
 		cost = 10
-		days_remove = 2
-		days_re_enable = 2
+		
 		complete_effect = {
 			custom_effect_tooltip = "减少1点公共开支"
 			effect_tooltip = {
@@ -209,8 +205,7 @@ DOH_decision_category = {
 			}
 		}
 		cost = 10
-		days_remove = 2
-		days_re_enable = 2
+		
 		complete_effect = {
 			custom_effect_tooltip = "增加1点额外科研经费"
 			effect_tooltip = {
@@ -261,8 +256,7 @@ DOH_decision_category = {
 			}
 		}
 		cost = 10
-		days_remove = 2
-		days_re_enable = 2
+		
 		complete_effect = {
 			custom_effect_tooltip = "减少1点额外科研经费"
 			effect_tooltip = {
@@ -308,8 +302,7 @@ DOH_decision_category = {
 			}
 		}
 		cost = 10
-		days_remove = 2
-		days_re_enable = 2
+		
 		complete_effect = {
 			custom_effect_tooltip = "增加1点额外军事经费"
 			effect_tooltip = {
@@ -360,8 +353,7 @@ DOH_decision_category = {
 			}
 		}
 		cost = 10
-		days_remove = 2
-		days_re_enable = 2
+		
 		complete_effect = {
 			custom_effect_tooltip = "减少1点额外军事经费"
 			effect_tooltip = {
@@ -412,8 +404,7 @@ DOH_decision_category = {
 			}
 		}
 		cost = 10
-		days_remove = 2
-		days_re_enable = 2
+		
 		complete_effect = {
 			custom_effect_tooltip = "增加1点市场开放程度"
 			effect_tooltip = {
@@ -464,8 +455,7 @@ DOH_decision_category = {
 			}
 		}
 		cost = 10
-		days_remove = 2
-		days_re_enable = 2
+		
 		complete_effect = {
 			custom_effect_tooltip = "减少1点市场开放程度"
 			effect_tooltip = {
