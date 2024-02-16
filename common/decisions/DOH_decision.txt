@@ -1040,7 +1040,7 @@ DOH_decision_category = {
 				OR = {
 					AND = {
 						PREV = {
-							num_of_factories > 1000
+							num_of_factories > 1200
 						}
 					}
 					is_debug = yes
@@ -1087,7 +1087,7 @@ DOH_decision_category = {
 			FROM = {
 				OR = {
 					PREV = {
-						num_of_factories > 800
+						num_of_factories > 1000
 					}
 					is_debug = yes
 				}
@@ -1132,7 +1132,7 @@ DOH_decision_category = {
 			FROM = {
 				OR = {
 					PREV = {
-						num_of_factories > 600
+						num_of_factories > 800
 					}
 					is_debug = yes
 				}
@@ -1177,7 +1177,7 @@ DOH_decision_category = {
 			FROM = {
 				OR = {
 					PREV = {
-						num_of_factories > 400
+						num_of_factories > 600
 					}
 					is_debug = yes
 				}

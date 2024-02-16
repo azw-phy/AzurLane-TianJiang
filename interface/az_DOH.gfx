@@ -1,0 +1,6 @@
+spriteTypes = {
+    SpriteType = {
+		name = "GFX_idea_rockets_DOH"
+		texturefile = "gfx/interface/technologies/experimental_rockets.dds"
+	}
+}

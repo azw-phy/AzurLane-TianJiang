@@ -43,7 +43,7 @@ ideas = {
 	}
 	country = {
 		DOH_dongfeng_idea_0 = {
-			picture = GFX_focus_rocketry
+			picture = rockets_DOH
 			modifier = {
 				rocket_attack_factor = 0.2
 			}
@@ -53,10 +53,19 @@ ideas = {
 					air_defence = 0.5
 					air_agility = 1
 				}
+				rocket_artillery_equipment = {
+					soft_attack = 0.10
+					maximum_speed = 0.5
+				}
+				motorized_rocket_equipment = {
+					soft_attack = 0.20
+					maximum_speed = 0.5
+					fuel_consumption_factor = -0.1
+				}
 			}
 		}
 		DOH_dongfeng_idea_1 = {
-			picture = GFX_focus_rocketry
+			picture = rockets_DOH
 			modifier = {
 				rocket_attack_factor = 2
 			}
@@ -66,6 +75,15 @@ ideas = {
 					air_agility = 3
 					maximum_speed = 5
 					air_defence = 2
+				}
+				rocket_artillery_equipment = {
+					soft_attack = 0.20
+					maximum_speed = 0.5
+				}
+				motorized_rocket_equipment = {
+					soft_attack = 0.30
+					maximum_speed = 0.5
+					fuel_consumption_factor = -0.2
 				}
 			}
 		}
@@ -113,7 +131,7 @@ ideas = {
 		}
 		
 		DOH_feitianmeng_idea = {
-			picture = GFX_idea_DOH_xdh
+			picture = GFX_experimental_rockets_medium
 			modifier = {
 				civilian_intel_factor = 5
 				army_intel_factor = 5
@@ -125,7 +143,7 @@ ideas = {
 			}
 		}
 		DOH_chijiaoyisheng_idea = {
-			picture = GFX_idea_DOH_xdh
+			picture = prc_the_long_march
 			modifier = {
 				monthly_population = 0.005
 			}
@@ -137,7 +155,7 @@ ideas = {
 			}
 		}
 		DOH_donghuangyikedaxue_idea = {
-			picture = GFX_idea_DOH_xdh
+			picture = jap_supremacy_of_technology
 			modifier = {
 				monthly_population = 0.010
 				research_speed_factor = -0.10

@@ -421,14 +421,15 @@ focus_tree = {
                 category = nuclear
             }
 			756 = {
-				add_extra_state_shared_building_slots = 10
+				set_state_category = large_city
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = rocket_site
-					level = 7
+					level = 5
 				}
 				add_building_construction = {
 					type = nuclear_reactor
-					level = 3
+					level = 1
 				}
 			}
 		}
@@ -1435,7 +1436,7 @@ focus_tree = {
     focus = {
         id = DOH_xianzibingfa
         icon = GFX_focus_generic_little_entente
-        x = -2
+        x = -3
         y = 1
         cost = 4
         relative_position_id = DOH_kuodayixianquanli
@@ -1458,7 +1459,7 @@ focus_tree = {
     focus = {
         id = DOH_zhangkongsanjun
         icon = GFX_focus_generic_little_entente
-        x = 2
+        x = 3
         y = 1
         cost = 4
         relative_position_id = DOH_kuodayixianquanli
@@ -1759,7 +1760,6 @@ focus_tree = {
         }
         completion_reward = {
 			add_war_support = 0.15
-			add_ideas = DOH_nbjs
 			add_stability = 0.2
             custom_effect_tooltip = DOH_shehuibaozhang_tooltip
         }
@@ -1780,6 +1780,7 @@ focus_tree = {
 			add_stability = 0.2
 			custom_effect_tooltip = DOH_xiandaihua_tooltip
 			set_country_flag = DOH_xiandaihua_flag
+			add_ideas = DOH_nbjs
         }
     }
 	focus = {
@@ -2833,57 +2834,60 @@ focus_tree = {
 				set_cosmetic_tag = DH1_future
 			}
 			custom_effect_tooltip = doh_weilai_focus
-			hidden_effect = {				
+			hidden_effect = {
 				DH1 = {
-					every_character = {
-						limit = {
-							is_country_leader = yes
-						}
-						DH1 = {
-							   add_country_leader_role = {
-								Character = PREV
-								Promote_leader = yes
-								Country_leader = {
-								ideology = leninism
-								expire = "2000.1.1.1"
-									traits = {
-										yfz
-									}
-								}
-							}
-			
-							add_country_leader_role = {
-								Character = PREV
-								Promote_leader = yes
-								Country_leader = {
-									ideology = fascism_ideology
-									expire = "2000.1.1.1"
-									traits = {
-										yfz
-									}
-								}
-							}
-			
-							add_country_leader_role = {
-								Character = PREV
-								Promote_leader = yes
-								Country_leader = {
-								ideology = liberalism
-								expire = "2000.1.1.1"
-								traits = {
-									yfz
-								}
-							}
-						}
-					}
-				}
-				every_character = {
-					limit = { 
-						is_country_leader = yes 
-					}
 					add_country_leader_trait = yfz
-					}
-				}
+				}				
+				# DH1 = {
+				# 	every_character = {
+				# 		limit = {
+				# 			is_country_leader = yes
+				# 		}
+				# 		DH1 = {
+				# 			   add_country_leader_role = {
+				# 				Character = PREV
+				# 				Promote_leader = yes
+				# 				Country_leader = {
+				# 				ideology = leninism
+				# 				expire = "2000.1.1.1"
+				# 					traits = {
+				# 						yfz
+				# 					}
+				# 				}
+				# 			}
+			
+				# 			add_country_leader_role = {
+				# 				Character = PREV
+				# 				Promote_leader = yes
+				# 				Country_leader = {
+				# 					ideology = fascism_ideology
+				# 					expire = "2000.1.1.1"
+				# 					traits = {
+				# 						yfz
+				# 					}
+				# 				}
+				# 			}
+			
+				# 			add_country_leader_role = {
+				# 				Character = PREV
+				# 				Promote_leader = yes
+				# 				Country_leader = {
+				# 				ideology = liberalism
+				# 				expire = "2000.1.1.1"
+				# 				traits = {
+				# 					yfz
+				# 				}
+				# 			}
+				# 		}
+				# 	}
+				# }
+				# every_character = {
+				# 	limit = { 
+				# 		is_country_leader = yes 
+				# 	}
+				# 	add_country_leader_trait = yfz
+				# 	}
+				# }
 			}
 		}
 	}

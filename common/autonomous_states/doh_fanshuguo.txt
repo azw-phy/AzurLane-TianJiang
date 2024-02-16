@@ -24,7 +24,7 @@ autonomy_state = {
 
 		opinion_gain_monthly_same_ideology_factor = 0.2
 
-		cic_to_overlord_factor = 0.1
+		cic_to_overlord_factor = 0.2
 		mic_to_overlord_factor = 0.2
 	}
 	
