@@ -982,7 +982,7 @@ ideas = {
 			
 			modifier = {
 				no_supply_grace = 24
-				consumer_goods_factor = -0.3
+				consumer_goods_factor = -0.15
 			}
 		}
 		DOH_gfgt = {

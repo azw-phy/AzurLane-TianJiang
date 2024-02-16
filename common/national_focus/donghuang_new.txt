@@ -3185,13 +3185,6 @@ focus_tree = {
 		available = {
 			has_full_control_of_state = 605
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-
-
-		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			add_ideas = DOH_czdswgy
 			605 = {
