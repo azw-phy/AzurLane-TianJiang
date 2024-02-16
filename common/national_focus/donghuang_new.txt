@@ -461,9 +461,9 @@ focus_tree = {
 				}
 			}
 			hidden_effect = {
-				add_dynamic_modifier = {
-					modifier = DOH_hedian_modifier
-				}
+				# add_dynamic_modifier = {
+				# 	modifier = DOH_hedian_modifier
+				# }
 				every_owned_state = {
 					if = {
 						limit = {
