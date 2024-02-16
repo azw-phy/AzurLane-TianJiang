@@ -247,6 +247,18 @@ on_actions = {
 			}
 			round_variable = var:DOH_gongyeguihua_doing_goal_display
 			##核电站
+			DOH = {
+				every_owned_state = {
+					if = {
+						limit = {
+							nuclear_reactor > 0
+						}
+						add_dynamic_modifier = {
+							modifier = DOH_hedian_state_modifier
+						}
+					}
+				}
+			}
 			set_variable = {
 				var:DOH_hedian_counter = 0
 			}
