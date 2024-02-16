@@ -556,9 +556,11 @@ DOH_decision_category = {
 		days_mission_timeout = 350
 		complete_effect = {
 			country_event = DOH_loong_event.1001
+			clr_country_flag = DOH_gongyeguihua_doing
 		}
 		timeout_effect = {
 			country_event = DOH_loong_event.1002
+			clr_country_flag = DOH_gongyeguihua_doing
 		}
 	}
 	DOH_CHY_tanpan = {
@@ -975,6 +977,20 @@ DOH_decision_category = {
 		complete_effect = {
 			complete_national_focus = DOH_donghuanggongyetixi
 			add_offsite_building = { type = industrial_complex level = 500 }
+		}
+	}
+	DOH_debug_6 = {
+		icon = xingdong
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			is_debug = yes
+			is_ai = no
+		}
+		complete_effect = {
+			clr_country_flag = DOH_gongyeguihua_doing
 		}
 	}
 	DOH_gongyehua_visable = {
