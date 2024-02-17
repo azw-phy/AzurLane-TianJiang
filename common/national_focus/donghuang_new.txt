@@ -274,6 +274,7 @@ focus_tree = {
                 uses = 1
                 category = industry
             }
+			hidden_effect = { country_event = { id = DOH_event.30 days = 150 } }
             custom_effect_tooltip = DOH_baiyinggongchengshi_effect_tooltip
         }
     }
