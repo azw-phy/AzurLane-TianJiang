@@ -58,6 +58,12 @@ leader_traits = {
 			army_artillery_attack_factor = 0.1
 			supply_consumption_factor = 0.05
 		}
+		corps_commander_modifier = {
+			max_commander_army_size = 4
+		}
+		field_marshal_modifier = {
+			max_army_group_size = -1
+		}
 		attack_skill = 1
 		new_commander_weight = {
 			factor = 0
@@ -136,10 +142,10 @@ leader_traits = {
 			special_forces_defence_factor = 0.1
 		}
 		corps_commander_modifier = {
-			max_commander_army_size = 6
+			max_commander_army_size = 8
 		}
 		field_marshal_modifier = {
-			max_army_group_size = 1
+			#max_army_group_size = 1
 		}
 		new_commander_weight = {
 			factor = 0
@@ -213,10 +219,10 @@ leader_traits = {
 			}
 		}
 		corps_commander_modifier = {
-			max_commander_army_size = -9
+			#max_commander_army_size = -9
 		}
 		field_marshal_modifier = {
-			max_army_group_size = -2
+			max_army_group_size = -3
 		}
 		override_effect_tooltip = xunyang_army_trait_tooltip
 		new_commander_weight = {
@@ -283,10 +289,10 @@ leader_traits = {
 			}
 		}
 		corps_commander_modifier = {
-			max_commander_army_size = -14
+			max_commander_army_size = -4
 		}
 		field_marshal_modifier = {
-			max_army_group_size = -3
+			max_army_group_size = -4
 		}
 		override_effect_tooltip = quzhu_army_trait_tooltip
 		new_commander_weight = {
@@ -622,7 +628,7 @@ leader_traits = {
 			max_commander_army_size = -14
 		}
 		field_marshal_modifier = {
-			max_army_group_size = -3
+			#max_army_group_size = -3
 		}
 		new_commander_weight = {
 			factor = 0

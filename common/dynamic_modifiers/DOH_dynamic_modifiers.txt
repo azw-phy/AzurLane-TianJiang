@@ -90,3 +90,16 @@ DOH_hedian_state_modifier = {
 	local_resources = 0.5
 	local_supplies = 0.3
 }
+DOH_guomuyixian = {
+	icon = GFX_idea_DOH_guomuyixian
+	enable = { always = yes }
+	political_power_gain = 0.5
+	research_speed_factor = DOH_guomuyixian_var_research_speed_factor
+	max_command_power = DOH_guomuyixian_var_max_command_power
+	army_morale_factor = DOH_guomuyixian_var_army_morale_factor
+	land_reinforce_rate = DOH_guomuyixian_var_land_reinforce_rate
+	planning_speed = DOH_guomuyixian_var_planning_speed
+	political_power_factor = DOH_guomuyixian_var_political_power_factor
+	army_attack_factor = DOH_guomuyixian_var_army_attack_factor
+	army_defence_factor = DOH_guomuyixian_var_army_defence_factor
+}

@@ -485,6 +485,12 @@
   DOH_chaogongzhidu_desc: "逸仙认为，较之帝国主义的挟武力胁迫屈服、建立殖民地，宗藩关系不诉诸武力即可使对方诚服更显文明。"
   doh_chongying_focus: "[CHY.getname]对东煌表示友好。"
   doh_weilai_focus: "[DH1.getleader]获得特质§Y引风者§!。"
+  DOH_guomuyixian:"国母逸仙"
+  DOH_guomuyixian_desc:"作为东煌之国母，逸仙拥有无可匹敌的能力！"
+  DOH_guomuyixian_add_tt: "§Y$DOH_guomuyixian$§!追加效果："
+  DOH_ducuyixian_tt:"$DOH_guomuyixian_add_tt$\n科研速度：§G+15%§!\n最大指挥点数提高：§G+50§!\n\n"
+  DOH_zhangkongsanjun_tt:"$DOH_guomuyixian_add_tt$\n陆军师组织度恢复速度：§G+8%§!\n增援率：§G+10%§!\n计划速度：§G+10%§!\n\n"
+  DOH_yixianwansui_tt:"$DOH_guomuyixian_add_tt$\n政治点数：§G+10%§!\n陆军师攻击：§G+5%§!\n陆军师防御：§G+5%§!\n\n"
   #ng
   DOH_yixian: "逸仙"
   DOH_ninghai: "宁海"

@@ -678,4 +678,8 @@ spriteTypes = {
 		name = "GFX_idea_SAD_sading"
 		texturefile = "gfx/interface/ideas/idea_SAD_sading.png"
 	}
+	spriteType = {
+		name = "GFX_idea_DOH_guomuyixian"
+		texturefile = "gfx/interface/ideas/idea_DOH_guomuyixian.png"
+	}
 }

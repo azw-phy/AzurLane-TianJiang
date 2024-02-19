@@ -1,7 +1,7 @@
 DOH_decision_category = {
 	icon = category_gre_faction_management
 	picture = GFX_focus_chi_one_china_policy
-	priority = 1000
+	priority = 100
 	visible = {
 		tag = DOH
 	}
