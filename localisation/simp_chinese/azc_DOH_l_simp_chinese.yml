@@ -1,5 +1,7 @@
 ﻿l_simp_chinese:
   DOH_focus: "东煌国策树"
+  DOH_dongfangliming_tooltip: "§R正在游玩天降舰娘§!且§C击退了重樱侵略者§!"
+  DOH_blue_tianchaoshangguo_tooltip: "§C如果§!完成国策§Y引入外资§!，追加效果："
   DOH_special_force: "多样化精英部队"
   DOH_special_force_desc: "我军常规部队根本不足以应对即将到来的风暴。必须创新。"
   DOH_enable_gongyeguihua_tooltip: "启用§Y工业规划§!决议"

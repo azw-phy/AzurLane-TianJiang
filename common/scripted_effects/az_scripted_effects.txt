@@ -223,7 +223,9 @@ DOH_dongfangguguo_dengji = {
 			add_idea = DOH_dfgg5
 		}
 	}
-	else = { add_ideas = DOH_dfgg1}
+	else = {
+		
+	}
 }
 DOH_baojiaweiguo_dengji = {
 	if = {

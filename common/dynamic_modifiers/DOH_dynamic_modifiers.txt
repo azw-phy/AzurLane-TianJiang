@@ -6,7 +6,11 @@ DOH_donghuangshiwu_idea = {
 	consumer_goods_factor = var:DOH_xiaofeipingyinxiang
 	local_resources_factor = DOH_touzi_effect
 	production_speed_buildings_factor = DOH_touzi_effect
+	cic_construction_boost = DOH_touzi_effect
+
 	research_speed_factor = DOH_keyanjinfei_effect
+	political_power_factor = DOH_keyanjinfei_effect
+	
 	industrial_capacity_factory = DOH_junshijinfei_effect
 	industrial_capacity_dockyard = DOH_junshijinfei_effect
 
@@ -15,10 +19,12 @@ DOH_donghuangshiwu_idea = {
 	naval_morale_factor = DOH_gonggongkaizhi_effect
 	intelligence_agency_defense = DOH_gonggongkaizhi_effect
 	industry_free_repair_factor = DOH_gonggongkaizhi_effect
+	enemy_operative_detection_chance_factor = DOH_gonggongkaizhi_effect
 	encryption_factor = DOH_gonggongkaizhi_effect
 	decryption_factor = DOH_gonggongkaizhi_effect
 	line_change_production_efficiency_factor = DOH_gonggongkaizhi_effect
 	industry_air_damage_factor = DOH_gonggongkaizhi_effect_m
+	own_operative_detection_chance_factor = DOH_gonggongkaizhi_effect_m
 	land_reinforce_rate = DOH_gonggongkaizhi_effect_2
 	repair_speed_factor = DOH_gonggongkaizhi_effect
 	stability_weekly_factor = DOH_gonggongkaizhi_effect_3
@@ -31,6 +37,7 @@ DOH_donghuangshiwu_idea = {
 	industrial_capacity_dockyard = DOH_guimoxiaoyin_effect
 	consumer_goods_factor = extra_xiaofeiping
 	consumer_goods_factor = DOH_shichang_effect_m
+	trade_opinion_factor = DOH_shichang_effect_m
 
 	consumer_goods_factor = var:DOH_hedian_counter
 }
@@ -40,6 +47,7 @@ DOH_fake_add_touzi = {
 	consumer_goods_factor = var:DOH_xiaofeipingyinxiang_factor
 	production_speed_buildings_factor = 0.04
 	local_resources_factor = 0.04
+	cic_construction_boost = 0.04
 }
 DOH_fake_add_gonggongkaizhi = {
 	icon = GFX_idea_DOH_xdh
@@ -55,6 +63,8 @@ DOH_fake_add_gonggongkaizhi = {
 	industry_free_repair_factor = 0.05
 	line_change_production_efficiency_factor = 0.05
 	industry_air_damage_factor = -0.05
+	own_operative_detection_chance_factor = -0.05
+	enemy_operative_detection_chance_factor = 0.05
 	land_reinforce_rate = 0.01
 	repair_speed_factor = 0.05
 	stability_weekly_factor = 0.001
@@ -64,6 +74,7 @@ DOH_fake_add_keyanjinfen = {
     enable = { always = yes }
 	consumer_goods_factor = var:DOH_xiaofeipingyinxiang_factor
 	research_speed_factor = 0.035
+	political_power_factor = 0.035
 }
 DOH_fake_add_junshijinfei = {
 	icon = GFX_idea_DOH_xdh
@@ -78,6 +89,7 @@ DOH_fake_add_shichangkaifang = {
 	min_export = 0.03
 	research_speed_factor = 0.03
 	consumer_goods_factor = -0.03
+	trade_opinion_factor = 0.03
 }
 # DOH_hedian_modifier = {
 # 	icon = GFX_nuclear_reactor_medium

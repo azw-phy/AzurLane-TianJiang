@@ -46,6 +46,8 @@ ideas = {
 			picture = rockets_DOH
 			modifier = {
 				rocket_attack_factor = 0.2
+				static_anti_air_hit_chance_factor = 0.5
+				static_anti_air_damage_factor = 0.5
 			}
 			equipment_bonus = {
 				guided_missile_equipment = {
@@ -68,6 +70,8 @@ ideas = {
 			picture = rockets_DOH
 			modifier = {
 				rocket_attack_factor = 2
+				static_anti_air_hit_chance_factor = 1
+				static_anti_air_damage_factor = 1
 			}
 			equipment_bonus = {
 				guided_missile_equipment = {
