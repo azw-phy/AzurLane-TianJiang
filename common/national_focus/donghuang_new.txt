@@ -22,7 +22,9 @@ focus_tree = {
         x = 31
         y = 2
         cost = 3
-
+		prerequisite = {
+			focus = DOH_zhengyankaishijie
+		}
         ai_will_do = {
             factor = 10
         }
@@ -187,8 +189,10 @@ focus_tree = {
 			set_technology = {
 				tech_field_hospital = 1
 			}
-			set_technology = {
-				DOH_chijiaoyisheng_tech = 1
+			hidden_effect = {
+				set_technology = {
+					DOH_chijiaoyisheng_tech = 1
+				}
 			}
 			custom_effect_tooltip = DOH_donghuangyikedaxue_tooltip
 		}
@@ -222,10 +226,12 @@ focus_tree = {
 			add_political_power = -50
 			set_technology = { guerrilla_tactics_for_doh = 1 popup = no }
 			set_technology = { human_wave_tactics_for_doh = 1 popup = no }
-			set_technology = {
-				DOH_dashijiyoujizhan_tech = 1
-			}
 			custom_effect_tooltip = DOH_dashijiyoujizhan_tooltip
+			hidden_effect = {
+				set_technology = {
+					DOH_dashijiyoujizhan_tech = 1
+				}
+			}
 		}
 	}
     focus = {
@@ -1042,7 +1048,7 @@ focus_tree = {
     focus = {
         id = DOH_zhengyankaishijie
         icon = GFX_goal_generic_demand_territory
-        x = 16
+        x = 31
         y = 0
 
         cost = 4
@@ -1062,10 +1068,10 @@ focus_tree = {
     focus = {
         id = DOH_shiyichangji
         icon = GFX_goal_generic_intelligence_exchange
-        x = 0
+        x = 16
         y = 1
         prerequisite = { focus = DOH_zhengyankaishijie }
-        relative_position_id = DOH_zhengyankaishijie
+        
     
         cost = 4
 
@@ -1732,11 +1738,11 @@ focus_tree = {
 			add_ideas = DOH_jdws
 			custom_effect_tooltip = DOH_blue_tianchaoshangguo_tooltip
 			effect_tooltip = {
+				add_research_slot = 1
 				swap_ideas = {
 					remove_idea = DOH_tgyh
 					add_idea = DOH_tcsg
 				}
-				add_research_slot = 1
 			}
 			if = {
 				limit = {
@@ -1775,11 +1781,11 @@ focus_tree = {
 			add_ideas = DOH_wlzs
 			custom_effect_tooltip = DOH_blue_tianchaoshangguo_tooltip
 			effect_tooltip = {
+				add_research_slot = 1
 				swap_ideas = {
 					remove_idea = DOH_tgyh
 					add_idea = DOH_tcsg
 				}
-				add_research_slot = 1
 			}
 			if = {
 				limit = {
@@ -2730,6 +2736,9 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = DOH_chaogongzhidu
 		}
+		prerequisite = {
+			focus = DOH_zhengyankaishijie
+		}
 		cost = 1
 		ai_will_do = {
 			factor = 10
@@ -2743,7 +2752,7 @@ focus_tree = {
 			NOT = {
 				country_exists = DH1
 			}
-			date > 1943.1.1
+			date > 1942.1.1
 		}
 
 		cancel_if_invalid = yes
@@ -2770,13 +2779,16 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = DOH_ziguyilai
 		}
+		prerequisite = {
+			focus = DOH_zhengyankaishijie
+		}
 		available = {
 			has_completed_focus = DOH_dulizizhudejungong
 			has_completed_focus = DOH_huanxingjulong 
 			#has_completed_focus = DOH_weishejunfa
 			has_completed_focus = DOH_donghuangdeshidai
 			country_exists = DH1
-			date > 1943.1.1
+			date > 1942.1.1
 		}
 
 		cancel_if_invalid = yes
@@ -4489,5 +4501,14 @@ focus_tree = {
 				}
 			}
 		}
+	}
+	focus = {
+		id = DOH_junmingronghe
+		icon = GFX_goal_generic_demand_territory
+		relative_position_id = DOH_special_force
+		cost = 1
+		x = 0
+		y = 2
+		completion_reward = { }
 	}
 }

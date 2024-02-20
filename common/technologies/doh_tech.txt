@@ -117,4 +117,9 @@ technologies = {
 			equipment_capture_factor = 0.0025
 		}
 	}
+	doh_civ_tech = {
+		enable_equipments = {
+			doh_civ_equipment_1
+		}
+	}
 }

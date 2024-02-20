@@ -1,0 +1,64 @@
+equipments = {
+	#archetype
+	doh_civ_equipment = {
+		year = 1936
+
+		is_archetype = yes
+		is_buildable = no
+		active = no
+		type = infantry
+		picture = archetype_train
+		group_by = archetype
+
+		interface_category = interface_category_land
+
+		reliability = 1
+		lend_lease_cost = 20
+
+		build_cost_ic = 8
+		resources = {
+			steel = 2
+		}
+	}
+	doh_civ_equipment_1 = {
+		year = 1936
+		archetype = doh_civ_equipment
+		priority = 10
+		reliability = 1
+		build_cost_ic = 8
+		resources = {
+			steel = 2
+		}
+	}
+
+	doh_civ_naval_equipment = {
+		year = 1936
+
+		is_archetype = yes
+		is_buildable = no
+		active = no
+		type = infantry
+		picture = archetype_train
+		group_by = archetype
+
+		interface_category = interface_category_other_ships
+
+		reliability = 1
+		lend_lease_cost = 20
+
+		build_cost_ic = 8
+		resources = {
+			steel = 2
+		}
+	}
+	doh_civ_naval_equipment_1 = {
+		year = 1936
+		archetype = doh_civ_naval_equipment
+		priority = 10
+		reliability = 1
+		build_cost_ic = 8
+		resources = {
+			steel = 2
+		}
+	}
+}
