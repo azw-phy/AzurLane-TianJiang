@@ -6,7 +6,7 @@ az_mio_policy_land_cutting_corners = {
 			has_mio_equipment_type = xunyangpao_equipment
 			has_mio_equipment_type = zhanliepao_equipment
 			has_mio_equipment_type = jizaijianniang_equipment_airframe
-			has_mio_equipment_type = az_equipment_liechepao
+			#has_mio_equipment_type = az_equipment_liechepao
 		} 
 	 }
 	available = { has_mio_size > 5 }

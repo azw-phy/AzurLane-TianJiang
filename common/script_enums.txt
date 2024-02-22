@@ -184,7 +184,8 @@ script_enum_equipment_bonus_type = {
 	jupao_ap_equipment
 	jupao_ap_equipment_1
 
-	
+	doh_civ_equipment
+	doh_civ_equipment_1
 
 	convoy
 	train

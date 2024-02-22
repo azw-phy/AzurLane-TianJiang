@@ -1,5 +1,10 @@
 ideas = {
 	hidden_ideas = {
+		DOH_stop_cic = {
+			modifier = {
+				cic_construction_boost_factor = -2
+			}
+		}
 		DOH_jiuquanshiyanjidi = {
 			modifier = {
 				civilian_factory_use = 12
@@ -103,33 +108,29 @@ ideas = {
 			modifier = {
 				supply_node_range = 0.2
 				repair_speed_rail_way_factor = 0.5
-				supply_factor = 0.1
 			}
 		}
 		DOH_donghuangzhongche_idea_2 = {
 			picture = generic_railroads
 			modifier = {
-				supply_node_range = 0.4
+				supply_node_range = 0.25
 				repair_speed_rail_way_factor = 0.8
-				supply_factor = 0.2
 				supply_consumption_factor = -0.05
 			}
 		}
 		DOH_donghuangzhongche_idea_3 = {
 			picture = generic_railroads
 			modifier = {
-				supply_node_range = 0.8
+				supply_node_range = 0.3
 				repair_speed_rail_way_factor = 1.0
-				supply_factor = 0.4
 				supply_consumption_factor = -0.10
 			}
 		}
 		DOH_donghuangzhongche_idea_4 = {
 			picture = generic_railroads
 			modifier = {
-				supply_node_range = 1.6
+				supply_node_range = 0.32
 				repair_speed_rail_way_factor = 1.0
-				supply_factor = 0.8
 				supply_consumption_factor = -0.15
 			}
 		}
@@ -889,16 +890,16 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			equipment_bonus = {
-				convoy = {
-					build_cost_ic = -0.25
-					instant = yes
-					maximum_speed = 0.20
-					surface_visibility = -0.25
-					lg_attack = 1
-					anti_air_attack = 1
-				}
-			}		
+			# equipment_bonus = {
+			# 	convoy = {
+			# 		build_cost_ic = -0.25
+			# 		instant = yes
+			# 		maximum_speed = 0.20
+			# 		surface_visibility = -0.25
+			# 		lg_attack = 1
+			# 		anti_air_attack = 1
+			# 	}
+			# }
 			modifier = {
 				air_escort_efficiency = 0.1
 				convoy_retreat_speed = 0.2

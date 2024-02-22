@@ -4,19 +4,31 @@ az_DOH_railway_organization = {
 		tag = DOH
 	}
 	available = {
-		DOH = {
-			has_completed_focus = DOH_tiedaogongye
-		}
+		
 	}
 	equipment_type = {
+		doh_civ_equipment
+		convoy
 		train_equipment
 		railway_gun_equipment
 		az_equipment_liechepao
 		support_equipment
 	}
-	research_bonus = 1
+	research_bonus = 0.30
 	research_categories = {
 		train_tech
+	}
+	tree_header_text = {
+		text = DOH_donghuangyunshuchuandui_title
+		x = 1
+	}
+	tree_header_text = {
+		text = DOH_donghuangminyonggongye_title
+		x = 4
+	}
+	tree_header_text = {
+		text = DOH_donghuangzhongche_title
+		x = 7
 	}
 	initial_trait = {
 		token = DOH_train_init
@@ -31,14 +43,104 @@ az_DOH_railway_organization = {
 			az_equipment_liechepao
 		}
 		production_bonus = {
+			production_resource_need_factor = -0.5
+			production_resource_penalty_factor = -0.5
+		}
+	}
+	trait = {
+		token = DOH_wuzhuangyunshuchuan_trait
+		name = DOH_wuzhuangyunshuchuan_trait
+		position = { x = 1 y = 0 }
+		icon = GFX_generic_mio_trait_icon_unique
+		limit_to_equipment_type = {
+			convoy
+		}
+		equipment_bonus = {
+			maximum_speed = 0.20
+			surface_visibility = -0.25
+			lg_attack = 1
+			anti_air_attack = 1
+		}
+		available = {
+			DOH = {
+				has_completed_focus = DOH_yunshujiandui
+			}
+		}
+	}
+	trait = {
+		token = DOH_yunshujiandui_trait
+		name = DOH_yunshujiandui_trait
+		parent = {
+			traits = { DOH_wuzhuangyunshuchuan_trait }
+		}
+		icon = GFX_generic_mio_trait_icon_unique
+		relative_position_id = DOH_wuzhuangyunshuchuan_trait
+		position = { x = 0 y = 1}
+		limit_to_equipment_type = {
+			convoy
+		}
+		production_bonus = {
+			production_cost_factor = -0.1
+		}
+	}
+	trait = {
+		token = DOH_minyonggongye_trait_1
+		name = DOH_minyonggongye_trait_1
+		icon = GFX_generic_mio_trait_icon_unique
+		position = { x = 3 y = 0 }
+		limit_to_equipment_type = {
+			doh_civ_equipment
+		}
+		available = {
+			has_mio_size > 25
+		}
+		production_bonus = {
+			production_cost_factor = -0.05
+			production_efficiency_gain_factor = 0.05
+		}
+	}
+	trait = {
+		token = DOH_minyonggongye_trait_2
+		name = DOH_minyonggongye_trait_2
+		icon = GFX_generic_mio_trait_icon_unique
+		position = { x = 5 y = 0 }
+		limit_to_equipment_type = {
+			doh_civ_equipment
+		}
+		available = {
+			has_mio_size > 35
+		}
+		production_bonus = {
+			production_resource_need_factor = -0.75
+		}
+	}
+	trait = {
+		token = DOH_zhiyuanzhuangbei_trait
+		name = DOH_zhiyuanzhuangbei_trait
+		icon = GFX_generic_mio_trait_icon_unique
+		position = { x = 4 y = 1 }
+		limit_to_equipment_type = {
+			support_equipment
+		}
+		parent = {
+			traits = {
+				DOH_minyonggongye_trait_1
+				DOH_minyonggongye_trait_2
+			}
+			num_parents_needed = 2
+		}
+		available = {
+			has_mio_size > 45
+		}
+		production_bonus = {
+			production_cost_factor = -0.1
 			production_resource_need_factor = -1
-			production_resource_penalty_factor = -1
 		}
 	}
 	trait = {
 		token = DOH_train_speed_1
 		name = DOH_train_speed_1
-		position = { x = 4 y = 0 }
+		position = { x = 7 y = 0 }
 		icon = GFX_generic_mio_trait_icon_unique
 		limit_to_equipment_type = {
 			train_equipment
@@ -48,8 +150,9 @@ az_DOH_railway_organization = {
 		available = {
 			DOH = {
 				num_of_factories > 600
+				has_completed_focus = DOH_tiedaogongye
 			}
-			has_mio_size > 15
+			has_mio_size > 45
 		}
 		equipment_bonus = {
 			maximum_speed = 1.5
@@ -83,7 +186,7 @@ az_DOH_railway_organization = {
 			DOH = {
 				num_of_factories > 800
 			}
-			has_mio_size > 25
+			has_mio_size > 75
 		}
 		equipment_bonus = {
 			maximum_speed = 1
@@ -117,7 +220,7 @@ az_DOH_railway_organization = {
 			DOH = {
 				num_of_factories > 1000
 			}
-			has_mio_size > 35
+			has_mio_size > 105
 		}
 		equipment_bonus = {
 			maximum_speed = 2
@@ -151,7 +254,7 @@ az_DOH_railway_organization = {
 			DOH = {
 				num_of_factories > 1600
 			}
-			has_mio_size > 45
+			has_mio_size > 135
 		}
 		equipment_bonus = {
 			maximum_speed = 3

@@ -1,12 +1,46 @@
 DOH_decision_category = {
 	icon = category_gre_faction_management
 	picture = GFX_focus_chi_one_china_policy
-	priority = 100
+	priority = 1000
 	visible = {
 		tag = DOH
 	}
 	allowed = {
 		tag = DOH
+	}
+	available = {
+		
+	}
+}
+DOH_industry_decision_category = {
+	icon = category_gre_faction_management
+	picture = GFX_focus_chi_one_china_policy
+	priority = 999
+	visible = {
+		OR = {
+			AND = {
+				tag = DOH
+				is_debug = yes
+			}
+			has_completed_focus = DOH_junmingronghe
+			has_equipment = {
+				doh_civ_equipment_1 > 1
+			}
+			# has_equipment = {
+			# 	doh_civ_naval_equipment_1 > 1
+			# }
+		}
+	}
+	allowed = {
+		OR = {
+			tag = DOH
+			has_equipment = {
+				doh_civ_equipment_1 > 1
+			}
+			# has_equipment = {
+			# 	doh_civ_naval_equipment_1 > 1
+			# }
+		}
 	}
 	available = {
 		

@@ -120,6 +120,7 @@ technologies = {
 	doh_civ_tech = {
 		enable_equipments = {
 			doh_civ_equipment_1
+			#doh_civ_naval_equipment_1
 		}
 	}
 }

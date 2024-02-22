@@ -980,3 +980,20 @@ country_event = {
 		}
 	}
 }
+# country_event = {
+# 	id = DOH_loong_event.1003
+# 	hidden = yes
+# 	is_triggered_only = yes
+# 	immediate = {
+# 		add_dynamic_modifier = {
+# 			modifier = DOH_nciv_to_ship_dynamic_modifier
+# 		}
+# 		add_equipment_to_stockpile = {
+# 			type = doh_civ_naval_equipment_1
+# 			amount = FROM.num_nciv_equipment_clr
+# 		}
+# 	}
+# 	option = {
+
+# 	}
+# }

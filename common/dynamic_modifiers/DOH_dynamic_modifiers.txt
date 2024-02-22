@@ -115,3 +115,7 @@ DOH_guomuyixian = {
 	army_attack_factor = DOH_guomuyixian_var_army_attack_factor
 	army_defence_factor = DOH_guomuyixian_var_army_defence_factor
 }
+# DOH_nciv_to_ship_dynamic_modifier = {
+# 	icon = GFX_decision_xingdong2
+# 	industrial_capacity_dockyard = FROM.nciv_to_ship_dynamic_pre_day
+# }

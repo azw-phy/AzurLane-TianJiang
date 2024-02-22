@@ -11,7 +11,9 @@ DOH_decision_category = {
 			}
 		}
 		cost = 10
-		
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+		}
 		complete_effect = {
 			custom_effect_tooltip = "增加1点投资"
 			effect_tooltip = {
@@ -108,7 +110,9 @@ DOH_decision_category = {
 			}
 		}
 		cost = 10
-		
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+		}
 		complete_effect = {
 			custom_effect_tooltip = "增加1点公共开支"
 			effect_tooltip = {
@@ -205,7 +209,9 @@ DOH_decision_category = {
 			}
 		}
 		cost = 10
-		
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+		}
 		complete_effect = {
 			custom_effect_tooltip = "增加1点额外科研经费"
 			effect_tooltip = {
@@ -294,6 +300,9 @@ DOH_decision_category = {
 		icon = xingdong
 		ai_will_do = {
 			factor = 0
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
 		}
 		visible = {
 			OR = {
@@ -993,6 +1002,22 @@ DOH_decision_category = {
 			clr_country_flag = DOH_gongyeguihua_doing
 		}
 	}
+	DOH_debug_7 = {
+		icon = xingdong
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			is_debug = yes
+			is_ai = no
+		}
+		complete_effect = {
+			set_technology = {
+				doh_civ_tech = 1
+			}
+		}
+	}
 	DOH_gongyehua_visable = {
 		icon = xingdong
 		cost = 0
@@ -1239,4 +1264,410 @@ DOH_decision_category = {
 			custom_effect_tooltip = "运载火箭研制成功"
 		}
 	}
+}
+DOH_industry_decision_category = {
+	DOH_civ_to_arm_industry_decision = {
+		icon = xingdong
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			OR = {
+				is_debug = yes
+				has_completed_focus = DOH_jinjigaige
+			}
+		}
+		cost = 10
+		available = {
+			has_equipment = {
+				doh_civ_equipment_1 > 719
+			}
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = doh_civ_equipment_1
+				amount = -720
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
+			}
+			add_timed_idea = {
+				idea = DOH_czdswgy
+				days = 10
+			}
+		}
+	}
+	DOH_civ_to_com_industry_decision = {
+		icon = xingdong
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			OR = {
+				is_debug = yes
+				has_completed_focus = DOH_jinjigaige
+			}
+		}
+		cost = 10
+		available = {
+			has_equipment = {
+				doh_civ_equipment_1 > 1079
+			}
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = doh_civ_equipment_1
+				amount = -1080
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+			add_timed_idea = {
+				idea = DOH_czdswgy
+				days = 10
+			}
+		}
+	}
+	DOH_civ_to_naval_industry_decision = {
+		icon = xingdong
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			OR = {
+				is_debug = yes
+				has_completed_focus = DOH_jinjigaige
+			}
+		}
+		cost = 10
+		available = {
+			has_equipment = {
+				doh_civ_equipment_1 > 639
+			}
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = doh_civ_equipment_1
+				amount = -640
+			}
+			add_offsite_building = {
+				type = dockyard
+				level = 1
+			}
+			add_timed_idea = {
+				idea = DOH_czdswgy
+				days = 10
+			}
+		}
+	}
+	DOH_civ_to_cic_industry_decision = {
+		icon = xingdong
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			OR = {
+				is_debug = yes
+				has_completed_focus = DOH_jinjigaige
+			}
+		}
+		cost = 10
+		available = {
+			has_equipment = {
+				doh_civ_equipment_1 > 999
+			}
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = doh_civ_equipment_1
+				amount = -1000
+			}
+			add_cic = 10000
+			add_timed_idea = {
+				idea = DOH_czdswgy
+				days = 10
+			}
+		}
+	}
+
+	# DOH_nciv_to_naval_industry_decision = {
+	# 	icon = xingdong
+	# 	ai_will_do = {
+	# 		factor = 0
+	# 	}
+	# 	visible = {
+	# 		OR = {
+	# 			is_debug = yes
+	# 			has_completed_focus = DOH_jinjigaige
+	# 		}
+	# 	}
+	# 	cost = 10
+	# 	available = {
+	# 		has_equipment = {
+	# 			doh_civ_naval_equipment_1 > 63
+	# 		}
+	# 	}
+	# 	complete_effect = {
+	# 		add_equipment_to_stockpile = {
+	# 			type = doh_civ_naval_equipment_1
+	# 			amount = -64
+	# 		}
+	# 		add_offsite_building = {
+	# 			type = dockyard
+	# 			level = 1
+	# 		}
+	# 		add_timed_idea = {
+	# 			idea = DOH_czdswgy
+	# 			days = 10
+	# 		}
+	# 	}
+	# }
+	# DOH_nciv_to_cic_industry_decision = {
+	# 	icon = xingdong
+	# 	ai_will_do = {
+	# 		factor = 0
+	# 	}
+	# 	visible = {
+	# 		OR = {
+	# 			is_debug = yes
+	# 			has_completed_focus = DOH_jinjigaige
+	# 		}
+	# 	}
+	# 	cost = 10
+	# 	available = {
+	# 		has_equipment = {
+	# 			doh_civ_naval_equipment_1 > 99
+	# 		}
+	# 	}
+	# 	complete_effect = {
+	# 		add_equipment_to_stockpile = {
+	# 			type = doh_civ_naval_equipment_1
+	# 			amount = -100
+	# 		}
+	# 		add_cic = 10000
+	# 		add_timed_idea = {
+	# 			idea = DOH_czdswgy
+	# 			days = 10
+	# 		}
+	# 	}
+	# }
+	# DOH_nciv_to_convoy_industry_decision = {
+	# 	icon = xingdong
+	# 	ai_will_do = {
+	# 		factor = 0
+	# 	}
+	# 	visible = {
+	# 		OR = {
+	# 			is_debug = yes
+	# 			has_completed_focus = DOH_jinjigaige
+	# 		}
+	# 	}
+	# 	cost = 10
+	# 	available = {
+	# 		has_equipment = {
+	# 			doh_civ_naval_equipment_1 > 69
+	# 		}
+	# 	}
+	# 	complete_effect = {
+	# 		add_equipment_to_stockpile = {
+	# 			type = doh_civ_naval_equipment_1
+	# 			amount = -70
+	# 		}
+	# 		add_equipment_to_stockpile = {
+	# 			type = convoy_1
+	# 			amount = 100
+	# 		}
+	# 		add_timed_idea = {
+	# 			idea = DOH_czdswgy
+	# 			days = 10
+	# 		}
+	# 	}
+	# }
+
+	# DOH_nciv_to_ship_industry_decision = {
+	# 	icon = xingdong
+	# 	ai_will_do = {
+	# 		factor = 0
+	# 	}
+	# 	visible = {
+	# 		OR = {
+	# 			is_debug = yes
+	# 			has_completed_focus = DOH_jinjigaige
+	# 		}
+	# 	}
+	# 	cost = 10
+	# 	available = {
+	# 		has_equipment = {
+	# 			doh_civ_naval_equipment_1 > 1599
+	# 		}
+	# 	}
+	# 	days_remove = 40
+	# 	complete_effect = {
+	# 		add_equipment_to_stockpile = {
+	# 			type = doh_civ_naval_equipment_1
+	# 			amount = -1600
+	# 		}
+	# 	}
+	# }
+	DOH_auto_civ_to_com_arm_industry_decision = {
+		icon = xingdong
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			OR = {
+				is_debug = yes
+				has_completed_focus = DOH_jinjigaige
+				NOT = {
+					has_country_flag = DOH_auto_conv_com_arm
+				}
+			}
+		}
+		cost = 10
+		available = {
+			has_equipment = {
+				doh_civ_equipment_1 > 0
+			}
+		}
+		complete_effect = {
+			set_country_flag = DOH_auto_conv_com_arm
+		}
+	}
+	DOH_disable_auto_civ_to_com_arm_industry_decision = {
+		icon = xingdong
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			OR = {
+				is_debug = yes
+				has_completed_focus = DOH_jinjigaige
+				has_country_flag = DOH_auto_conv_com_arm
+			}
+		}
+		cost = 10
+		available = {
+			has_country_flag = DOH_auto_conv_com_arm
+		}
+		complete_effect = {
+			clr_country_flag = DOH_auto_conv_com_arm
+		}
+	}
+	
+	# DOH_cic_to_civ_industry_decision = {
+	# 	icon = xingdong
+	# 	ai_will_do = {
+	# 		factor = 0
+	# 	}
+	# 	visible = {
+	# 		OR = {
+	# 			is_debug = yes
+	# 			has_completed_focus = DOH_jinjigaige
+	# 		}
+	# 	}
+	# 	cost = 10
+	# 	available = {
+			
+	# 	}
+	# 	complete_effect = {
+	# 		add_cic = -1000
+	# 		add_equipment_to_stockpile = {
+	# 			type = doh_civ_equipment_1
+	# 			amount = 1000
+	# 		}
+	# 	}
+	# }
+	# DOH_auto_cic_to_civ_industry_decision = {
+	# 	icon = xingdong
+	# 	ai_will_do = {
+	# 		factor = 0
+	# 	}
+	# 	visible = {
+	# 		OR = {
+	# 			is_debug = yes
+	# 			has_completed_focus = DOH_jinjigaige
+	# 			NOT = {
+	# 				has_country_flag = DOH_auto_conv_cic_civ
+	# 			}
+	# 		}
+	# 	}
+	# 	cost = 10
+	# 	available = {
+	# 		OR = {
+	# 			has_rule = can_access_market
+	# 			num_subjects > 0
+	# 		}
+	# 	}
+	# 	complete_effect = {
+	# 		set_country_flag = DOH_auto_conv_cic_civ
+	# 		add_ideas = DOH_stop_cic
+	# 	}
+	# }
+	# DOH_disable_auto_cic_to_civ_industry_decision = {
+	# 	icon = xingdong
+	# 	ai_will_do = {
+	# 		factor = 0
+	# 	}
+	# 	visible = {
+	# 		OR = {
+	# 			is_debug = yes
+	# 			has_completed_focus = DOH_jinjigaige
+	# 			has_country_flag = DOH_auto_conv_cic_civ
+	# 		}
+	# 	}
+	# 	cost = 10
+	# 	available = {
+	# 		has_country_flag = DOH_auto_conv_cic_civ
+	# 	}
+	# 	complete_effect = {
+	# 		clr_country_flag = DOH_auto_conv_cic_civ
+	# 		remove_ideas = DOH_stop_cic
+	# 	}
+	# }
+	# DOH_nciv_to_ship_industry_decision = {
+	# 	icon = xingdong
+	# 	ai_will_do = {
+	# 		factor = 0
+	# 	}
+	# 	cost = 10
+	# 	visible = {
+	# 		OR = {
+	# 			is_debug = yes
+	# 			NOT = {
+	# 				has_dynamic_modifier = {
+	# 					modifier = DOH_nciv_to_ship_dynamic_modifier
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	days_remove = 11
+	# 	complete_effect = {
+	# 		set_variable = {
+	# 			var:FROM.nciv_to_ship_dynamic_pre_day = var:num_equipment@doh_civ_naval_equipment_1
+	# 		}
+	# 		divide_variable = {
+	# 			var:FROM.nciv_to_ship_dynamic_pre_day = 40
+	# 		}
+	# 		divide_variable = {
+	# 			var:FROM.nciv_to_ship_dynamic_pre_day = num_of_naval_factories
+	# 		}
+	# 		set_variable = {
+	# 			var:FROM.num_nciv_equipment_clr = var:num_equipment@doh_civ_naval_equipment_1
+	# 		}
+	# 		multiply_variable = {
+	# 			var:FROM.num_nciv_equipment_clr = -1
+	# 		}
+	# 		country_event = {
+	# 			id = DOH_loong_event.1003
+	# 			days = 2
+	# 		}
+	# 	}
+	# 	remove_effect = {
+	# 		remove_dynamic_modifier = {
+	# 			modifier = DOH_nciv_to_ship_dynamic_modifier
+	# 		}
+	# 	}
+	# }
 }

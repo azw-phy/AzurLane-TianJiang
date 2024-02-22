@@ -462,6 +462,22 @@ characters={
 				small="gfx/interface/ideas/idea_kelong.png"
 			}
 		}
+		corps_commander = {
+			visible = {
+				if = {
+					limit = {
+						tag = DOH
+					}
+					has_completed_focus = DOH_tiexueguwen
+				}
+			}
+			traits = { trickster career_officer xunyang_army }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 3
+		}
 		advisor = {
 			cost = 100
 			slot = high_command

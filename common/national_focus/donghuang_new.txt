@@ -503,7 +503,7 @@ focus_tree = {
 			num_of_factories > 200
 		}
 		completion_reward = {
-			custom_effect_tooltip = az_DOH_railway_organization_tooltip
+			custom_effect_tooltip = az_DOH_railway_organization_tooltip_1
 			add_ideas = DOH_donghuangzhongche_idea_0
 		}
 	}
@@ -647,16 +647,18 @@ focus_tree = {
 
         completion_reward = {
             add_ideas = DOH_txjszd
-            create_corps_commander = {
-                name = "科隆"
-                picture = "kelong_donghuang.png"
-                traits = { trickster career_officer xunyang_army }
-                skill = 4
-                attack_skill = 4
-                defense_skill = 4
-                planning_skill = 2
-                logistics_skill = 3
-            }
+            effect_tooltip = {
+				create_corps_commander = {
+					name = "科隆"
+					picture = "kelong_donghuang.png"
+					traits = { trickster career_officer xunyang_army }
+					skill = 4
+					attack_skill = 4
+					defense_skill = 4
+					planning_skill = 2
+					logistics_skill = 3
+				}
+			}
         }
     }
     focus = {
@@ -1065,6 +1067,44 @@ focus_tree = {
             add_political_power = 200
         }
     }
+	focus = {
+		id = DOH_lishidejingcheng
+		icon = GFX_goal_generic_national_unity
+		cost = 3
+		relative_position_id = DOH_zhengyankaishijie
+		x = -4
+		y = 1
+		prerequisite = {
+			focus = DOH_zhengyankaishijie
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = DOH_gerendefendou
+		icon = GFX_goal_generic_demand_territory
+		cost = 3
+		relative_position_id = DOH_zhengyankaishijie
+		x = 4
+		y = 1
+		prerequisite = {
+			focus = DOH_zhengyankaishijie
+		}
+		completion_reward = {
+			every_character = {
+				limit = {
+					is_country_leader = yes
+					OR = {
+						is_army_leader = yes
+						is_navy_leader = yes
+					}
+				}
+				add_skill_level = 3
+			}
+			add_political_power = 20
+		}
+	}
     focus = {
         id = DOH_shiyichangji
         icon = GFX_goal_generic_intelligence_exchange
@@ -2190,12 +2230,12 @@ focus_tree = {
 	focus = {
 		id = DOH_sichouzhilu
 		icon = GFX_goal_generic_propaganda
-		x = -3
-		y = 1
+		x = 4
+		y = 2
 		cost = 5
 		prerequisite = { focus = DOH_hailufuhe }
 		prerequisite = { focus = DOH_donghuangdeshidai }
-		relative_position_id = DOH_hailufuhe
+		relative_position_id = DOH_donghuangdeshidai
 		ai_will_do = {
 			factor = 10
 		}
@@ -2399,9 +2439,11 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = DOH_hailufuhe
+			focus = DOH_junmingronghe_jishugaijing
 		}
 		completion_reward = {
 			add_ideas = DOH_ysjd
+			custom_effect_tooltip = az_DOH_railway_organization_tooltip_3
 		}
 	}
 	focus = {
@@ -2509,6 +2551,30 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = DOH_yidaiyilu
+		icon = GFX_fflag_DOH
+		cost = 1
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = DOH_ninghaixiaxiyang
+		}
+		prerequisite = {
+			focus = DOH_sichouzhilu
+		}
+		available = {
+			num_of_factories > 2000
+			always = no
+		}
+		prerequisite = {
+			focus = DOH_junmingronghe_duiwaishuchu
+		}
+		relative_position_id = DOH_ninghaixiaxiyang
+		completion_reward = {
+			custom_effect_tooltip = DOH_yidaiyilu_tooltip
+		}
+	}
+	focus = {
 		id = DOH_gaodengxuefu
 		icon = GFX_focus_generic_university_1
 		x = -4
@@ -2613,7 +2679,7 @@ focus_tree = {
 		id = DOH_guangronghemengxiangdeyuanzheng
 		icon = GFX_focus_focus_fra_revolution_utmost
 		x = 0
-		y = 4
+		y = 6
 		prerequisite = { focus = DOH_donghuangdeshidai }
 		relative_position_id = DOH_donghuangdeshidai
 		cost = 5
@@ -2621,7 +2687,7 @@ focus_tree = {
 		# 	num_of_factories > 1000
 		# }
 		available = {
-			num_of_factories > 1600
+			num_of_factories > 2600
 		}
 		ai_will_do = {
 			factor = 15
@@ -2648,7 +2714,7 @@ focus_tree = {
 			factor = 15
 		}
 		available = {
-			num_of_factories > 3000
+			num_of_factories > 3600
 			has_tech = advanced_rocket_engines
 			756 = {
 				rocket_site > 0
@@ -3386,7 +3452,7 @@ focus_tree = {
 		id = DOH_dashanghai
 		icon = GFX_goal_generic_propaganda
 		x = -4
-		y = 1
+		y = 2
 		cost = 5
 		prerequisite = { focus = DOH_donghuangdeshidai }
 		relative_position_id = DOH_donghuangdeshidai
@@ -3450,7 +3516,7 @@ focus_tree = {
 		id = DOH_tianfuzhiguo
 		icon = GFX_goal_generic_propaganda
 		x = -2
-		y = 1
+		y = 2
 		cost = 5
 		prerequisite = { focus = DOH_donghuangdeshidai }
 		relative_position_id = DOH_donghuangdeshidai
@@ -3513,7 +3579,7 @@ focus_tree = {
 		id = DOH_qianniandidu
 		icon = GFX_goal_generic_propaganda
 		x = 0
-		y = 1
+		y = 2
 		cost = 5
 		prerequisite = { focus = DOH_donghuangdeshidai }
 		relative_position_id = DOH_donghuangdeshidai
@@ -3588,7 +3654,7 @@ focus_tree = {
 		id = DOH_heijinsansheng
 		icon = GFX_goal_generic_propaganda
 		x = 2
-		y = 1
+		y = 2
 		cost = 5
 		prerequisite = { focus = DOH_donghuangdeshidai }
 		relative_position_id = DOH_donghuangdeshidai
@@ -4504,11 +4570,89 @@ focus_tree = {
 	}
 	focus = {
 		id = DOH_junmingronghe
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_generic_construct_civilian
 		relative_position_id = DOH_special_force
+		prerequisite = {
+			focus = DOH_huanxingjulong
+		}
+		prerequisite = {
+			focus = DOH_nanhaidezhuren
+		}
+		prerequisite = {
+			focus = DOH_special_force
+		}
+		available = {
+			num_of_factories > 1000
+		}
 		cost = 1
 		x = 0
 		y = 2
-		completion_reward = { }
+		completion_reward = {
+			custom_effect_tooltip = DOH_junmingronghe_tooltip
+			unlock_decision_category_tooltip = DOH_industry_decision_category
+			hidden_effect = {
+				set_technology = {
+					doh_civ_tech = 1
+					popup = no
+				}
+			}
+		}
+	}
+	focus = {
+		id = DOH_junmingronghe_jishugaijing
+		icon = GFX_focus_SOV_merge_plants
+		relative_position_id = DOH_junmingronghe
+		prerequisite = {
+			focus = DOH_junmingronghe
+		}
+		available = {
+			has_completed_focus = DOH_liangdanyixing
+		}
+		cost = 1
+		x = 0
+		y = 2
+		completion_reward = {
+			custom_effect_tooltip = az_DOH_railway_organization_tooltip_2
+		}
+	}
+
+	focus = {
+		id = DOH_junmingronghe_duiwaishuchu
+		icon = GFX_goal_generic_demand_territory
+		relative_position_id = DOH_junmingronghe_jishugaijing
+		prerequisite = {
+			focus = DOH_junmingronghe_jishugaijing
+		}
+		available = {
+			num_of_factories > 1600
+		}
+		cost = 1
+		x = -5
+		y = 2
+		completion_reward = {
+			custom_effect_tooltip = DOH_junmingronghe_duiwaishuchu_tooltip
+		}
+	}
+	focus = {
+		id = DOH_junmingronghe_fushuguo
+		icon = GFX_goal_generic_demand_territory
+		relative_position_id = DOH_junmingronghe_jishugaijing
+		prerequisite = {
+			focus = DOH_junmingronghe_jishugaijing
+		}
+		available = {
+			num_subjects > 0
+			OR = {
+				has_completed_focus = DOH_ziguyilai
+				has_completed_focus = DOH_chaogongzhidu
+			}
+			always = no
+		}
+		cost = 1
+		x = 0
+		y = 2
+		completion_reward = {
+			custom_effect_tooltip = "（还没做完）"
+		}
 	}
 }
