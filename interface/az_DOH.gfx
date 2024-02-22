@@ -5,10 +5,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_doh_civ_equipment_medium"
-		texturefile = "gfx/interface/technologies/support_equipment_1.dds"
+		texturefile = "gfx/interface/technologies/doh_civ_equipment.png"
 	}
-	SpriteType = {
-		name = "GFX_doh_civ_naval_equipment_medium"
-		texturefile = "gfx/interface/technologies/support_equipment_1.dds"
-	}
+	# SpriteType = {
+	# 	name = "GFX_doh_civ_naval_equipment_medium"
+	# 	texturefile = "gfx/interface/technologies/support_equipment_1.dds"
+	# }
 }
