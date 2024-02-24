@@ -1961,6 +1961,9 @@ focus_tree = {
 					has_completed_focus = DOH_yixianwansui
 					fascism > 0.5
 				}
+				hidden_trigger = {
+					is_ai = yes
+				}
 			}
 		}
         completion_reward = {
@@ -1970,6 +1973,40 @@ focus_tree = {
 				value = 10000
 			}
 			add_stability = 0.2
+			hidden_effect = {
+				if = {
+					limit = {
+						is_ai = yes
+					}
+					if = {
+						limit = {
+							has_completed_focus = DOH_yixianwansui
+						}
+						add_popularity = {
+							ideology = fascism
+							popularity = 20
+						}
+					}
+					if = {
+						limit = {
+							has_completed_focus = DOH_yinruwaizi
+						}
+						add_popularity = {
+							ideology = democratic
+							popularity = 20
+						}
+					}
+					if = {
+						limit = {
+							has_completed_focus = DOH_renminwansui
+						}
+						add_popularity = {
+							ideology = communism
+							popularity = 20
+						}
+					}
+				}
+			}
         }
     }
     focus = {
@@ -1997,6 +2034,9 @@ focus_tree = {
 					has_completed_focus = DOH_yixianwansui
 					fascism > 0.8
 				}
+				hidden_trigger = {
+					is_ai = yes
+				}
 			}
 		}
         completion_reward = {
@@ -2005,6 +2045,40 @@ focus_tree = {
 			custom_effect_tooltip = DOH_heqinhaiyan_tooltip
 			multiply_variable = {
 				var:DOH_zhichiduchengfa = 0.5
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						is_ai = yes
+					}
+					if = {
+						limit = {
+							has_completed_focus = DOH_yixianwansui
+						}
+						add_popularity = {
+							ideology = fascism
+							popularity = 20
+						}
+					}
+					if = {
+						limit = {
+							has_completed_focus = DOH_yinruwaizi
+						}
+						add_popularity = {
+							ideology = democratic
+							popularity = 20
+						}
+					}
+					if = {
+						limit = {
+							has_completed_focus = DOH_renminwansui
+						}
+						add_popularity = {
+							ideology = communism
+							popularity = 20
+						}
+					}
+				}
 			}
         }
     }
@@ -4624,6 +4698,7 @@ focus_tree = {
 			focus = DOH_junmingronghe_jishugaijing
 		}
 		available = {
+			always = no
 			num_of_factories > 1600
 		}
 		cost = 1
@@ -4641,6 +4716,7 @@ focus_tree = {
 			focus = DOH_junmingronghe_jishugaijing
 		}
 		available = {
+			always = no
 			num_subjects > 0
 			OR = {
 				has_completed_focus = DOH_ziguyilai
