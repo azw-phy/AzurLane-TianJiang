@@ -1519,9 +1519,11 @@ DOH_industry_decision_category = {
 		visible = {
 			OR = {
 				is_debug = yes
-				has_completed_focus = DOH_jinjigaige
-				NOT = {
-					has_country_flag = DOH_auto_conv_com_arm
+				AND = {
+					has_completed_focus = DOH_jinjigaige
+					NOT = {
+						has_country_flag = DOH_auto_conv_com_arm
+					}
 				}
 			}
 		}
@@ -1543,8 +1545,10 @@ DOH_industry_decision_category = {
 		visible = {
 			OR = {
 				is_debug = yes
-				has_completed_focus = DOH_jinjigaige
-				has_country_flag = DOH_auto_conv_com_arm
+				AND = {
+					has_completed_focus = DOH_jinjigaige
+					has_country_flag = DOH_auto_conv_com_arm
+				}
 			}
 		}
 		cost = 10

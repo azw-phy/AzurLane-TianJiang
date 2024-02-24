@@ -458,8 +458,18 @@ leader_traits = {
 			wounded_chance_factor = 0.1
 		}
 		sub_unit_modifiers = {
-			jizaijianniang = {
+			jizaijianniang_fighter = {
 				air_attack_factor = 0.1
+				air_mission_efficiency = 0.15
+				air_agility_factor = 0.1
+			}
+			jizaijianniang_cas = {
+				naval_strike_attack_factor = 0.1
+				air_mission_efficiency = 0.15
+				air_agility_factor = 0.1
+			}
+			jizaijianniang_nb = {
+				naval_strike_attack_factor = 0.1
 				air_mission_efficiency = 0.15
 				air_agility_factor = 0.1
 			}
