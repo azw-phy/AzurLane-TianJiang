@@ -2057,7 +2057,7 @@ focus_tree = {
 						}
 						add_popularity = {
 							ideology = fascism
-							popularity = 20
+							popularity = 30
 						}
 					}
 					if = {
@@ -2066,7 +2066,7 @@ focus_tree = {
 						}
 						add_popularity = {
 							ideology = democratic
-							popularity = 20
+							popularity = 30
 						}
 					}
 					if = {
@@ -2075,7 +2075,7 @@ focus_tree = {
 						}
 						add_popularity = {
 							ideology = communism
-							popularity = 20
+							popularity = 30
 						}
 					}
 				}
