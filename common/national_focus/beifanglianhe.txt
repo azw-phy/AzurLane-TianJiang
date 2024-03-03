@@ -1698,7 +1698,7 @@
 		cost = 10
 		mutually_exclusive = { focus = BFL_xiangyouzhuan }
 		allow_branch = {
-			has_global_flag = MOD_azurlane_sairen
+			has_global_flag = MOD_azurlane_sairenzhizai
 		}
 		ai_will_do = {
 			factor = 40
