@@ -800,3 +800,5 @@
   DOH_minyonggongye_trait_1: "流水线生产"
   DOH_minyonggongye_trait_2: "废料再利用"
   DOH_zhiyuanzhuangbei_trait: "民用资源回收"
+  ##东煌事务GUI
+  az_doh_touzi_text: "§Y投资§!：[?DOH_touzi]"
