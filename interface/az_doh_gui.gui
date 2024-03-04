@@ -52,6 +52,7 @@ guiTypes = {
 				quadTextureSprite ="GFX_add_5" 
 				buttonFont = "vic_18"
 				#buttonText = "az_doh_gui_button1_text"
+				pdx_disabled_tooltip = az_doh_gui_touzi_add_one_tooltip_disabled
 				pdx_tooltip = "az_doh_gui_touzi_add_one_tooltip"
 				clicksound = click_default
 			}
@@ -109,6 +110,7 @@ guiTypes = {
 				buttonFont = "vic_18"
 				#buttonText = "az_doh_gui_button1_text"
 				pdx_tooltip = "az_doh_gui_gonggongkaizhi_add_one_tooltip"
+				pdx_disabled_tooltip = az_doh_gui_gonggongkaizhi_add_one_tooltip_disabled
 				clicksound = click_default
 			}
 			buttonType = {
@@ -164,6 +166,7 @@ guiTypes = {
 				buttonFont = "vic_18"
 				#buttonText = "az_doh_gui_button1_text"
 				pdx_tooltip = "az_doh_gui_keyanjinfei_add_one_tooltip"
+				pdx_disabled_tooltip = az_doh_gui_keyanjinfei_add_one_tooltip_disabled
 				clicksound = click_default
 			}
 			buttonType = {
@@ -219,6 +222,7 @@ guiTypes = {
 				buttonFont = "vic_18"
 				#buttonText = "az_doh_gui_button1_text"
 				pdx_tooltip = "az_doh_gui_junshijinfei_add_one_tooltip"
+				pdx_disabled_tooltip = az_doh_gui_junshijinfei_add_one_tooltip_disabled
 				clicksound = click_default
 			}
 			buttonType = {
