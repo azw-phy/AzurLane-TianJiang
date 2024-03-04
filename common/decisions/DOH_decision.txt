@@ -1458,6 +1458,11 @@ DOH_decision_debug_category = {
 			complete_national_focus = DOH_dashanghai
 			complete_national_focus = DOH_tianfuzhiguo
 			complete_national_focus = DOH_ninghaixiaxiyang
+			complete_national_focus = DOH_jinjigaige
+			complete_national_focus = DOH_dongfangdexiaoxuesheng
+			complete_national_focus = DOH_rencaiyinjin
+			complete_national_focus = DOH_donghuanggongyetixi
+			complete_national_focus = DOH_shichanghuanjishu
 		}
 	}
 	DOH_debug_5 = {
