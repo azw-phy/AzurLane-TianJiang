@@ -1,6 +1,7 @@
 DOH_decision_category = {
 	icon = category_gre_faction_management
 	picture = GFX_focus_chi_one_china_policy
+	scripted_gui = az_doh_gui_decision_window_guis 
 	priority = 1000
 	visible = {
 		tag = DOH

@@ -1,0 +1,36 @@
+guiTypes = {
+	containerWindowType = {
+		name = "az_doh_gui_decision_window"
+		buttonType = {
+			name = "az_doh_gui_button1"
+			position = { x = 420 y = -30 }
+			quadTextureSprite ="GFX_az_smallbutton2" 
+			buttonFont = "vic_18"
+			buttonText = "az_doh_gui_button1_text"
+			pdx_tooltip = "az_doh_gui_button1_tooltip"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "az_doh_gui_button2"
+			position = { x = 120 y = -30 }
+			quadTextureSprite ="GFX_az_smallbutton2" 
+			buttonFont = "vic_18"
+			buttonText = "az_doh_gui_button2_text"
+			pdx_tooltip = "az_doh_gui_button2_tooltip"
+			clicksound = click_default
+		}
+		instantTextboxType = {
+			name = "az_doh_gui_txt"
+			orientation = UPPER_LEFT
+			position = { x = 140 y = -30 }
+			font = "hoi_20b"
+			text = "az_doh_gui_txt"
+			maxWidth = 300
+			maxHeight = 40
+			format = left
+			fixedsize=yes
+			pdx_tooltip = "az_doh_gui_txt_tt"
+		}
+		
+	}
+}
