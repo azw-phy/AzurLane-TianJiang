@@ -7,9 +7,64 @@ scripted_gui = {
 		visible = {
 			always = yes
 		}
+		triggers = {
+			az_doh_gui_touzi_add_one_click_enabled = {
+				has_completed_focus = DOH_jinjigaige
+				num_of_civilian_factories_available_for_projects > 5
+			}
+			az_doh_gui_touzi_add_5_click_enabled = {
+				has_completed_focus = DOH_jinjigaige
+				num_of_civilian_factories_available_for_projects > 15
+			}
+			az_doh_gui_touzi_subtract_one_click_enabled = {
+				has_completed_focus = DOH_jinjigaige
+				check_variable = {
+					var:DOH_touzi > 0
+				}
+			}
+			az_doh_gui_touzi_subtract_5_click_enabled = {
+				has_completed_focus = DOH_jinjigaige
+				check_variable = {
+					var:DOH_touzi > 4
+				}
+			}
+		}
 		effects = {
-			aaz_doh_gui_button1_click = {
-				
+			az_doh_gui_touzi_add_one_click = {
+				add_to_variable = {
+					var:DOH_touzi = 1
+				}
+				DOH_mofifier_effect = yes
+				DOH_zhichilvchengfa_effect = yes
+			}
+			az_doh_gui_touzi_add_5_click = {
+				add_to_variable = {
+					var:DOH_touzi = 5
+				}
+				DOH_mofifier_effect = yes
+				DOH_zhichilvchengfa_effect = yes
+				DOH_zhichilvchengfa_effect = yes
+				DOH_zhichilvchengfa_effect = yes
+				DOH_zhichilvchengfa_effect = yes
+				DOH_zhichilvchengfa_effect = yes
+			}
+			az_doh_gui_touzi_subtract_one_click = {
+				add_to_variable = {
+					var:DOH_touzi = -1
+				}
+				DOH_mofifier_effect = yes
+				DOH_zhichilvchengfa_effect = yes
+			}
+			az_doh_gui_touzi_subtract_5_click = {
+				add_to_variable = {
+					var:DOH_touzi = -5
+				}
+				DOH_mofifier_effect = yes
+				DOH_zhichilvchengfa_effect = yes
+				DOH_zhichilvchengfa_effect = yes
+				DOH_zhichilvchengfa_effect = yes
+				DOH_zhichilvchengfa_effect = yes
+				DOH_zhichilvchengfa_effect = yes
 			}
 		}
 	}

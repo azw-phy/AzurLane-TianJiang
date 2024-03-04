@@ -1,510 +1,18 @@
 DOH_decision_category = {
-	DOH_decision_add_touzi = {
+	DOH_display_fake_decision = {
 		icon = xingdong
 		ai_will_do = {
 			factor = 0
 		}
 		visible = {
-			OR = {
-				is_debug = yes
-				has_completed_focus = DOH_jinjigaige
-			}
-		}
-		cost = 10
-		available = {
-			num_of_civilian_factories_available_for_projects > 0
-		}
-		complete_effect = {
-			custom_effect_tooltip = "增加1点投资"
-			effect_tooltip = {
-				add_dynamic_modifier = {
-					modifier = DOH_fake_add_touzi
-				}
-			}
-			add_to_variable = {
-				var:DOH_touzi = 1
-			}
-			DOH_mofifier_effect = yes
-			if = {
-				limit = { has_completed_focus = DOH_renminwansui }
-				add_popularity = {
-					ideology = communism
-					popularity = DOH_zhichiduchengfa_effect
-				}
-			}
-			if = {
-				limit = { has_completed_focus = DOH_yinruwaizi }
-				add_popularity = {
-					ideology = democratic
-					popularity = DOH_zhichiduchengfa_effect
-				}
-			}
-			if = {
-				limit = { has_completed_focus = DOH_yixianwansui }
-				add_popularity = {
-					ideology = fascism
-					popularity = DOH_zhichiduchengfa_effect
-				}
-			}
-		}
-	}
-	DOH_decision_rm_touzi = {
-		icon = xingdong
-		ai_will_do = {
-			factor = 0
-		}
-		visible = {
-			OR = {
-				is_debug = yes
-				AND = {
-					check_variable = {
-						var:DOH_touzi > 0
-					}
-					has_completed_focus = DOH_jinjigaige
-				}
-			}
-		}
-		cost = 10
-		
-		complete_effect = {
-			custom_effect_tooltip = "减少1点投资"
-			effect_tooltip = {
-				remove_dynamic_modifier = {
-					modifier = DOH_fake_add_touzi
-				}
-			}
-			add_to_variable = {
-				var:DOH_touzi = -1
-			}
-			DOH_mofifier_effect = yes
-			if = {
-				limit = { has_completed_focus = DOH_renminwansui }
-				add_popularity = {
-					ideology = communism
-					popularity = DOH_zhichiduchengfa_effect
-				}
-			}
-			if = {
-				limit = { has_completed_focus = DOH_yinruwaizi }
-				add_popularity = {
-					ideology = democratic
-					popularity = DOH_zhichiduchengfa_effect
-				}
-			}
-			if = {
-				limit = { has_completed_focus = DOH_yixianwansui }
-				add_popularity = {
-					ideology = fascism
-					popularity = DOH_zhichiduchengfa_effect
-				}
-			}
-		}
-	}
-	DOH_decision_add_gonggongkaizhi = {
-		icon = xingdong
-		ai_will_do = {
-			factor = 0
-		}
-		visible = {
-			OR = {
-				is_debug = yes
-				has_completed_focus = DOH_shehuibaozhang
-			}
-		}
-		cost = 10
-		available = {
-			num_of_civilian_factories_available_for_projects > 0
-		}
-		complete_effect = {
-			custom_effect_tooltip = "增加1点公共开支"
-			effect_tooltip = {
-				add_dynamic_modifier = {
-					modifier = DOH_fake_add_gonggongkaizhi
-				}
-			}
-			add_to_variable = {
-				var:DOH_gonggongkaizhi = 1
-			}
-			DOH_mofifier_effect = yes
-			if = {
-				limit = { has_completed_focus = DOH_renminwansui }
-				add_popularity = {
-					ideology = communism
-					popularity = DOH_zhichiduchengfa_effect
-				}
-			}
-			if = {
-				limit = { has_completed_focus = DOH_yinruwaizi }
-				add_popularity = {
-					ideology = democratic
-					popularity = DOH_zhichiduchengfa_effect
-				}
-			}
-			if = {
-				limit = { has_completed_focus = DOH_yixianwansui }
-				add_popularity = {
-					ideology = fascism
-					popularity = DOH_zhichiduchengfa_effect
-				}
-			}
-		}
-	}
-	DOH_decision_rm_gonggongkaizhi = {
-		icon = xingdong
-		ai_will_do = {
-			factor = 0
-		}
-		visible = {
-			OR = {
-				is_debug = yes
-				AND = {
-					check_variable = {
-						var:DOH_gonggongkaizhi > 0
-					}
-					has_completed_focus = DOH_shehuibaozhang
-				}
-			}
-		}
-		cost = 10
-		
-		complete_effect = {
-			custom_effect_tooltip = "减少1点公共开支"
-			effect_tooltip = {
-				remove_dynamic_modifier = {
-					modifier = DOH_fake_add_gonggongkaizhi
-				}
-			}
-			add_to_variable = {
-				var:DOH_gonggongkaizhi = -1
-			}
-			DOH_mofifier_effect = yes
-			if = {
-				limit = { has_completed_focus = DOH_renminwansui }
-				add_popularity = {
-					ideology = communism
-					popularity = DOH_zhichiduchengfa_effect
-				}
-			}
-			if = {
-				limit = { has_completed_focus = DOH_yinruwaizi }
-				add_popularity = {
-					ideology = democratic
-					popularity = DOH_zhichiduchengfa_effect
-				}
-			}
-			if = {
-				limit = { has_completed_focus = DOH_yixianwansui }
-				add_popularity = {
-					ideology = fascism
-					popularity = DOH_zhichiduchengfa_effect
-				}
-			}
-		}
-	}
-	DOH_decision_add_keyanjinfei = {
-		icon = xingdong
-		ai_will_do = {
-			factor = 0
-		}
-		visible = {
-			OR = {
-				is_debug = yes
-				has_completed_focus = DOH_rencaiyinjin
-			}
-		}
-		cost = 10
-		available = {
-			num_of_civilian_factories_available_for_projects > 0
-		}
-		complete_effect = {
-			custom_effect_tooltip = "增加1点额外科研经费"
-			effect_tooltip = {
-				add_dynamic_modifier = {
-					modifier = DOH_fake_add_keyanjinfen
-				}
-			}
-			add_to_variable = {
-				var:DOH_keyanjinfei = 1
-			}
-			DOH_mofifier_effect = yes
-			if = {
-				limit = { has_completed_focus = DOH_renminwansui }
-				add_popularity = {
-					ideology = communism
-					popularity = DOH_zhichiduchengfa_effect
-				}
-			}
-			if = {
-				limit = { has_completed_focus = DOH_yinruwaizi }
-				add_popularity = {
-					ideology = democratic
-					popularity = DOH_zhichiduchengfa_effect
-				}
-			}
-			if = {
-				limit = { has_completed_focus = DOH_yixianwansui }
-				add_popularity = {
-					ideology = fascism
-					popularity = DOH_zhichiduchengfa_effect
-				}
-			}
-		}
-	}
-	DOH_decision_rm_keyanjinfei = {
-		icon = xingdong
-		ai_will_do = {
-			factor = 0
-		}
-		visible = {
-			OR = {
-				is_debug = yes
-				AND = {
-					check_variable = {
-						var:DOH_keyanjinfei > 0
-					}
-					has_completed_focus = DOH_rencaiyinjin
-				}
-			}
-		}
-		cost = 10
-		
-		complete_effect = {
-			custom_effect_tooltip = "减少1点额外科研经费"
-			effect_tooltip = {
-				remove_dynamic_modifier = {
-					modifier = DOH_fake_add_keyanjinfen
-				}
-			}
-			add_to_variable = {
-				var:DOH_keyanjinfei = -1
-			}
-			DOH_mofifier_effect = yes
-			if = {
-				limit = { has_completed_focus = DOH_renminwansui }
-				add_popularity = {
-					ideology = communism
-					popularity = DOH_zhichiduchengfa_effect
-				}
-			}
-			if = {
-				limit = { has_completed_focus = DOH_yinruwaizi }
-				add_popularity = {
-					ideology = democratic
-					popularity = DOH_zhichiduchengfa_effect
-				}
-			}
-			if = {
-				limit = { has_completed_focus = DOH_yixianwansui }
-				add_popularity = {
-					ideology = fascism
-					popularity = DOH_zhichiduchengfa_effect
-				}
-			}
-		}
-	}
-	DOH_decision_add_junshijinfei = {
-		icon = xingdong
-		ai_will_do = {
-			factor = 0
+			always = yes
 		}
 		available = {
-			num_of_civilian_factories_available_for_projects > 0
+			always = no
 		}
-		visible = {
-			OR = {
-				is_debug = yes
-				has_completed_focus = DOH_jinjigaige
-			}
-		}
-		cost = 10
-		
 		complete_effect = {
-			custom_effect_tooltip = "增加1点额外军事经费"
-			effect_tooltip = {
-				add_dynamic_modifier = {
-					modifier = DOH_fake_add_junshijinfei
-				}
-			}
-			add_to_variable = {
-				var:DOH_junshijinfei = 1
-			}
-			DOH_mofifier_effect = yes
-			if = {
-				limit = { has_completed_focus = DOH_renminwansui }
-				add_popularity = {
-					ideology = communism
-					popularity = DOH_zhichiduchengfa_effect
-				}
-			}
-			if = {
-				limit = { has_completed_focus = DOH_yinruwaizi }
-				add_popularity = {
-					ideology = democratic
-					popularity = DOH_zhichiduchengfa_effect
-				}
-			}
-			if = {
-				limit = { has_completed_focus = DOH_yixianwansui }
-				add_popularity = {
-					ideology = fascism
-					popularity = DOH_zhichiduchengfa_effect
-				}
-			}
-		}
-	}
-	DOH_decision_rm_junshijinfei = {
-		icon = xingdong
-		ai_will_do = {
-			factor = 0
-		}
-		visible = {
-			OR = {
-				is_debug = yes
-				AND = {
-					check_variable = {
-						var:DOH_junshijinfei > 0
-					}
-					has_completed_focus = DOH_jinjigaige
-				}
-			}
-		}
-		cost = 10
-		
-		complete_effect = {
-			custom_effect_tooltip = "减少1点额外军事经费"
-			effect_tooltip = {
-				remove_dynamic_modifier = {
-					modifier = DOH_fake_add_junshijinfei
-				}
-			}
-			add_to_variable = {
-				var:DOH_junshijinfei = -1
-			}
-			DOH_mofifier_effect = yes
-			if = {
-				limit = { has_completed_focus = DOH_renminwansui }
-				add_popularity = {
-					ideology = communism
-					popularity = DOH_zhichiduchengfa_effect
-				}
-			}
-			if = {
-				limit = { has_completed_focus = DOH_yinruwaizi }
-				add_popularity = {
-					ideology = democratic
-					popularity = DOH_zhichiduchengfa_effect
-				}
-			}
-			if = {
-				limit = { has_completed_focus = DOH_yixianwansui }
-				add_popularity = {
-					ideology = fascism
-					popularity = DOH_zhichiduchengfa_effect
-				}
-			}
-		}
-	}
-	DOH_decision_add_shichang = {
-		icon = xingdong
-		ai_will_do = {
-			factor = 0
-		}
-		visible = {
-			OR = {
-				is_debug = yes
-				AND = {
-					check_variable = {
-						var:DOH_shichang < 15
-					}
-					has_completed_focus = DOH_shichanghuanjishu
-				}
-			}
-		}
-		cost = 10
-		
-		complete_effect = {
-			custom_effect_tooltip = "增加1点市场开放程度"
-			effect_tooltip = {
-				add_dynamic_modifier = {
-					modifier = DOH_fake_add_shichangkaifang
-				}
-			}
-			add_to_variable = {
-				var:DOH_shichang = 1
-			}
-			DOH_mofifier_effect = yes
-			if = {
-				limit = { has_completed_focus = DOH_renminwansui }
-				add_popularity = {
-					ideology = communism
-					popularity = DOH_zhichiduchengfa_effect
-				}
-			}
-			if = {
-				limit = { has_completed_focus = DOH_yinruwaizi }
-				add_popularity = {
-					ideology = democratic
-					popularity = DOH_zhichiduchengfa_effect
-				}
-			}
-			if = {
-				limit = { has_completed_focus = DOH_yixianwansui }
-				add_popularity = {
-					ideology = fascism
-					popularity = DOH_zhichiduchengfa_effect
-				}
-			}
-		}
-	}
-	DOH_decision_rm_shichang = {
-		icon = xingdong
-		ai_will_do = {
-			factor = 0
-		}
-		visible = {
-			OR = {
-				is_debug = yes
-				AND = {
-					check_variable = {
-						var:DOH_shichang > 0
-					}
-					has_completed_focus = DOH_shichanghuanjishu
-				}
-			}
-		}
-		cost = 10
-		
-		complete_effect = {
-			custom_effect_tooltip = "减少1点市场开放程度"
-			effect_tooltip = {
-				remove_dynamic_modifier = {
-					modifier = DOH_fake_add_shichangkaifang
-				}
-			}
-			add_to_variable = {
-				var:DOH_shichang = -1
-			}
-			DOH_mofifier_effect = yes
-			if = {
-				limit = { has_completed_focus = DOH_renminwansui }
-				add_popularity = {
-					ideology = communism
-					popularity = DOH_zhichiduchengfa_effect
-				}
-			}
-			if = {
-				limit = { has_completed_focus = DOH_yinruwaizi }
-				add_popularity = {
-					ideology = democratic
-					popularity = DOH_zhichiduchengfa_effect
-				}
-			}
-			if = {
-				limit = { has_completed_focus = DOH_yixianwansui }
-				add_popularity = {
-					ideology = fascism
-					popularity = DOH_zhichiduchengfa_effect
-				}
+			add_dynamic_modifier = {
+				modifier = DOH_donghuangshiwu_idea
 			}
 		}
 	}
@@ -880,154 +388,6 @@ DOH_decision_category = {
 	# 		}
 	# 	}
 	# }
-	DOH_debug_1 = {
-		icon = xingdong
-		cost = 0
-		ai_will_do = {
-			factor = 0
-		}
-		visible = {
-			is_debug = yes
-			is_ai = no
-		}
-		complete_effect = {
-			add_dynamic_modifier = {
-				modifier = DOH_donghuangshiwu_idea
-			}
-		}
-	}
-	DOH_debug_2 = {
-		icon = xingdong
-		cost = 0
-		ai_will_do = {
-			factor = 0
-		}
-		visible = {
-			is_debug = yes
-			is_ai = no
-		}
-		complete_effect = {
-			every_owned_state = {
-				add_building_construction = {
-					type = nuclear_reactor
-					level = 1
-				}
-			}
-		}
-	}
-	DOH_debug_3 = {
-		icon = xingdong
-		cost = 0
-		ai_will_do = {
-			factor = 0
-		}
-		visible = {
-			is_debug = yes
-			is_ai = no
-		}
-		complete_effect = {
-			DOH = {
-				annex_country = {
-					target = XSM
-				}
-				annex_country = {
-					target = SHX
-				}
-				annex_country = {
-					target = TIB
-				}
-				annex_country = {
-					target = SIK
-				}
-				annex_country = {
-					target = YUN
-				}
-				annex_country = {
-					target = GXC
-				}
-				transfer_state = 609
-				transfer_state = 611
-				transfer_state = 610
-				transfer_state = 612
-				transfer_state = 715
-				transfer_state = 716
-				transfer_state = 745
-				transfer_state = 328
-				transfer_state = 717
-				transfer_state = 714
-				transfer_state = 761
-				transfer_state = 527
-				transfer_state = 525
-			}
-		}
-	}
-	DOH_debug_4 = {
-		icon = xingdong
-		cost = 0
-		ai_will_do = {
-			factor = 0
-		}
-		visible = {
-			is_debug = yes
-			is_ai = no
-		}
-		complete_effect = {
-			complete_national_focus = DOH_dulizizhudejungong
-			complete_national_focus = DOH_donghuangdeshidai
-			complete_national_focus = DOH_nanhaidezhuren
-			complete_national_focus = DOH_heijinsansheng
-			complete_national_focus = DOH_sichouzhilu
-			complete_national_focus = DOH_qianniandidu
-			complete_national_focus = DOH_dashanghai
-			complete_national_focus = DOH_tianfuzhiguo
-			complete_national_focus = DOH_ninghaixiaxiyang
-		}
-	}
-	DOH_debug_5 = {
-		icon = xingdong
-		cost = 0
-		ai_will_do = {
-			factor = 0
-		}
-		visible = {
-			is_debug = yes
-			is_ai = no
-		}
-		complete_effect = {
-			complete_national_focus = DOH_donghuanggongyetixi
-			add_offsite_building = { type = industrial_complex level = 500 }
-		}
-	}
-	DOH_debug_6 = {
-		icon = xingdong
-		cost = 0
-		ai_will_do = {
-			factor = 0
-		}
-		visible = {
-			is_debug = yes
-			is_ai = no
-		}
-		complete_effect = {
-			clr_country_flag = DOH_gongyeguihua_doing
-		}
-	}
-	DOH_debug_7 = {
-		icon = xingdong
-		cost = 0
-		ai_will_do = {
-			factor = 0
-		}
-		visible = {
-			is_debug = yes
-			is_ai = no
-		}
-		complete_effect = {
-			set_technology = {
-				doh_civ_tech = 1
-			}
-		}
-	}
 	DOH_gongyehua_visable = {
 		icon = xingdong
 		cost = 0
@@ -1684,4 +1044,466 @@ DOH_industry_decision_category = {
 	# 		}
 	# 	}
 	# }
+}
+
+DOH_decision_debug_category = {
+	DOH_decision_add_touzi = {
+		icon = xingdong
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			OR = {
+				is_debug = yes
+				has_completed_focus = DOH_jinjigaige
+			}
+		}
+		cost = 10
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+		}
+		complete_effect = {
+			custom_effect_tooltip = "增加1点投资"
+			effect_tooltip = {
+				add_dynamic_modifier = {
+					modifier = DOH_fake_add_touzi
+				}
+			}
+			add_to_variable = {
+				var:DOH_touzi = 1
+			}
+			DOH_mofifier_effect = yes
+			DOH_zhichilvchengfa_effect = yes
+		}
+	}
+	DOH_decision_rm_touzi = {
+		icon = xingdong
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			OR = {
+				is_debug = yes
+				AND = {
+					check_variable = {
+						var:DOH_touzi > 0
+					}
+					has_completed_focus = DOH_jinjigaige
+				}
+			}
+		}
+		cost = 10
+		
+		complete_effect = {
+			custom_effect_tooltip = "减少1点投资"
+			effect_tooltip = {
+				remove_dynamic_modifier = {
+					modifier = DOH_fake_add_touzi
+				}
+			}
+			add_to_variable = {
+				var:DOH_touzi = -1
+			}
+			DOH_mofifier_effect = yes
+			DOH_zhichilvchengfa_effect = yes
+		}
+	}
+	DOH_decision_add_gonggongkaizhi = {
+		icon = xingdong
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			OR = {
+				is_debug = yes
+				has_completed_focus = DOH_shehuibaozhang
+			}
+		}
+		cost = 10
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+		}
+		complete_effect = {
+			custom_effect_tooltip = "增加1点公共开支"
+			effect_tooltip = {
+				add_dynamic_modifier = {
+					modifier = DOH_fake_add_gonggongkaizhi
+				}
+			}
+			add_to_variable = {
+				var:DOH_gonggongkaizhi = 1
+			}
+			DOH_mofifier_effect = yes
+			DOH_zhichilvchengfa_effect = yes
+		}
+	}
+	DOH_decision_rm_gonggongkaizhi = {
+		icon = xingdong
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			OR = {
+				is_debug = yes
+				AND = {
+					check_variable = {
+						var:DOH_gonggongkaizhi > 0
+					}
+					has_completed_focus = DOH_shehuibaozhang
+				}
+			}
+		}
+		cost = 10
+		
+		complete_effect = {
+			custom_effect_tooltip = "减少1点公共开支"
+			effect_tooltip = {
+				remove_dynamic_modifier = {
+					modifier = DOH_fake_add_gonggongkaizhi
+				}
+			}
+			add_to_variable = {
+				var:DOH_gonggongkaizhi = -1
+			}
+			DOH_mofifier_effect = yes
+			DOH_zhichilvchengfa_effect = yes
+		}
+	}
+	DOH_decision_add_keyanjinfei = {
+		icon = xingdong
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			OR = {
+				is_debug = yes
+				has_completed_focus = DOH_rencaiyinjin
+			}
+		}
+		cost = 10
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+		}
+		complete_effect = {
+			custom_effect_tooltip = "增加1点额外科研经费"
+			effect_tooltip = {
+				add_dynamic_modifier = {
+					modifier = DOH_fake_add_keyanjinfen
+				}
+			}
+			add_to_variable = {
+				var:DOH_keyanjinfei = 1
+			}
+			DOH_mofifier_effect = yes
+			DOH_zhichilvchengfa_effect = yes
+		}
+	}
+	DOH_decision_rm_keyanjinfei = {
+		icon = xingdong
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			OR = {
+				is_debug = yes
+				AND = {
+					check_variable = {
+						var:DOH_keyanjinfei > 0
+					}
+					has_completed_focus = DOH_rencaiyinjin
+				}
+			}
+		}
+		cost = 10
+		
+		complete_effect = {
+			custom_effect_tooltip = "减少1点额外科研经费"
+			effect_tooltip = {
+				remove_dynamic_modifier = {
+					modifier = DOH_fake_add_keyanjinfen
+				}
+			}
+			add_to_variable = {
+				var:DOH_keyanjinfei = -1
+			}
+			DOH_mofifier_effect = yes
+			DOH_zhichilvchengfa_effect = yes
+		}
+	}
+	DOH_decision_add_junshijinfei = {
+		icon = xingdong
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+		}
+		visible = {
+			OR = {
+				is_debug = yes
+				has_completed_focus = DOH_jinjigaige
+			}
+		}
+		cost = 10
+		
+		complete_effect = {
+			custom_effect_tooltip = "增加1点额外军事经费"
+			effect_tooltip = {
+				add_dynamic_modifier = {
+					modifier = DOH_fake_add_junshijinfei
+				}
+			}
+			add_to_variable = {
+				var:DOH_junshijinfei = 1
+			}
+			DOH_mofifier_effect = yes
+			DOH_zhichilvchengfa_effect = yes
+		}
+	}
+	DOH_decision_rm_junshijinfei = {
+		icon = xingdong
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			OR = {
+				is_debug = yes
+				AND = {
+					check_variable = {
+						var:DOH_junshijinfei > 0
+					}
+					has_completed_focus = DOH_jinjigaige
+				}
+			}
+		}
+		cost = 10
+		
+		complete_effect = {
+			custom_effect_tooltip = "减少1点额外军事经费"
+			effect_tooltip = {
+				remove_dynamic_modifier = {
+					modifier = DOH_fake_add_junshijinfei
+				}
+			}
+			add_to_variable = {
+				var:DOH_junshijinfei = -1
+			}
+			DOH_mofifier_effect = yes
+			DOH_zhichilvchengfa_effect = yes
+		}
+	}
+	DOH_decision_add_shichang = {
+		icon = xingdong
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			OR = {
+				is_debug = yes
+				AND = {
+					check_variable = {
+						var:DOH_shichang < 15
+					}
+					has_completed_focus = DOH_shichanghuanjishu
+				}
+			}
+		}
+		cost = 10
+		
+		complete_effect = {
+			custom_effect_tooltip = "增加1点市场开放程度"
+			effect_tooltip = {
+				add_dynamic_modifier = {
+					modifier = DOH_fake_add_shichangkaifang
+				}
+			}
+			add_to_variable = {
+				var:DOH_shichang = 1
+			}
+			DOH_mofifier_effect = yes
+			DOH_zhichilvchengfa_effect = yes
+		}
+	}
+	DOH_decision_rm_shichang = {
+		icon = xingdong
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			OR = {
+				is_debug = yes
+				AND = {
+					check_variable = {
+						var:DOH_shichang > 0
+					}
+					has_completed_focus = DOH_shichanghuanjishu
+				}
+			}
+		}
+		cost = 10
+		
+		complete_effect = {
+			custom_effect_tooltip = "减少1点市场开放程度"
+			effect_tooltip = {
+				remove_dynamic_modifier = {
+					modifier = DOH_fake_add_shichangkaifang
+				}
+			}
+			add_to_variable = {
+				var:DOH_shichang = -1
+			}
+			DOH_mofifier_effect = yes
+			DOH_zhichilvchengfa_effect = yes
+		}
+	}
+
+	DOH_debug_1 = {
+		icon = xingdong
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			is_debug = yes
+			is_ai = no
+		}
+		complete_effect = {
+			add_dynamic_modifier = {
+				modifier = DOH_donghuangshiwu_idea
+			}
+		}
+	}
+	DOH_debug_2 = {
+		icon = xingdong
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			is_debug = yes
+			is_ai = no
+		}
+		complete_effect = {
+			every_owned_state = {
+				add_building_construction = {
+					type = nuclear_reactor
+					level = 1
+				}
+			}
+		}
+	}
+	DOH_debug_3 = {
+		icon = xingdong
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			is_debug = yes
+			is_ai = no
+		}
+		complete_effect = {
+			DOH = {
+				annex_country = {
+					target = XSM
+				}
+				annex_country = {
+					target = SHX
+				}
+				annex_country = {
+					target = TIB
+				}
+				annex_country = {
+					target = SIK
+				}
+				annex_country = {
+					target = YUN
+				}
+				annex_country = {
+					target = GXC
+				}
+				transfer_state = 609
+				transfer_state = 611
+				transfer_state = 610
+				transfer_state = 612
+				transfer_state = 715
+				transfer_state = 716
+				transfer_state = 745
+				transfer_state = 328
+				transfer_state = 717
+				transfer_state = 714
+				transfer_state = 761
+				transfer_state = 527
+				transfer_state = 525
+			}
+		}
+	}
+	DOH_debug_4 = {
+		icon = xingdong
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			is_debug = yes
+			is_ai = no
+		}
+		complete_effect = {
+			complete_national_focus = DOH_dulizizhudejungong
+			complete_national_focus = DOH_donghuangdeshidai
+			complete_national_focus = DOH_nanhaidezhuren
+			complete_national_focus = DOH_heijinsansheng
+			complete_national_focus = DOH_sichouzhilu
+			complete_national_focus = DOH_qianniandidu
+			complete_national_focus = DOH_dashanghai
+			complete_national_focus = DOH_tianfuzhiguo
+			complete_national_focus = DOH_ninghaixiaxiyang
+		}
+	}
+	DOH_debug_5 = {
+		icon = xingdong
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			is_debug = yes
+			is_ai = no
+		}
+		complete_effect = {
+			complete_national_focus = DOH_donghuanggongyetixi
+			add_offsite_building = { type = industrial_complex level = 500 }
+		}
+	}
+	DOH_debug_6 = {
+		icon = xingdong
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			is_debug = yes
+			is_ai = no
+		}
+		complete_effect = {
+			clr_country_flag = DOH_gongyeguihua_doing
+		}
+	}
+	DOH_debug_7 = {
+		icon = xingdong
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			is_debug = yes
+			is_ai = no
+		}
+		complete_effect = {
+			set_technology = {
+				doh_civ_tech = 1
+			}
+		}
+	}
+
 }

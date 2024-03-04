@@ -224,3 +224,27 @@ DOH_mofifier_effect = {
 	# 	}
 	# }
 }
+
+DOH_zhichilvchengfa_effect = {
+	if = {
+		limit = { has_completed_focus = DOH_renminwansui }
+		add_popularity = {
+			ideology = communism
+			popularity = DOH_zhichiduchengfa_effect
+		}
+	}
+	if = {
+		limit = { has_completed_focus = DOH_yinruwaizi }
+		add_popularity = {
+			ideology = democratic
+			popularity = DOH_zhichiduchengfa_effect
+		}
+	}
+	if = {
+		limit = { has_completed_focus = DOH_yixianwansui }
+		add_popularity = {
+			ideology = fascism
+			popularity = DOH_zhichiduchengfa_effect
+		}
+	}
+}

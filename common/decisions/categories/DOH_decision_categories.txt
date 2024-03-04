@@ -13,6 +13,21 @@ DOH_decision_category = {
 		
 	}
 }
+DOH_decision_debug_category = {
+	icon = category_gre_faction_management
+	#picture = GFX_focus_chi_one_china_policy
+	priority = 998
+	visible = {
+		tag = DOH
+		is_debug = yes
+	}
+	allowed = {
+		tag = DOH
+	}
+	available = {
+		
+	}
+}
 DOH_industry_decision_category = {
 	icon = category_gre_faction_management
 	picture = GFX_focus_chi_one_china_policy
