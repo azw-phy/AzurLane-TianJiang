@@ -1,7 +1,7 @@
 guiTypes = {
 	containerWindowType = {
 		name = "az_doh_gui_decision_window"
-		position = { x=0 y=0 }
+		position = { x=-10 y=0 }
 		size = { width=510 height=660 }
 		containerWindowType = {
 			name = "az_doh_tesejinjixitong"
