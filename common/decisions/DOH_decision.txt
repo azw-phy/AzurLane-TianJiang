@@ -650,13 +650,13 @@ DOH_industry_decision_category = {
 		cost = 10
 		available = {
 			has_equipment = {
-				doh_civ_equipment_1 > 719
+				doh_civ_equipment_1 > 71
 			}
 		}
 		complete_effect = {
 			add_equipment_to_stockpile = {
 				type = doh_civ_equipment_1
-				amount = -720
+				amount = -72
 			}
 			add_offsite_building = {
 				type = arms_factory
@@ -682,13 +682,13 @@ DOH_industry_decision_category = {
 		cost = 10
 		available = {
 			has_equipment = {
-				doh_civ_equipment_1 > 1079
+				doh_civ_equipment_1 > 107
 			}
 		}
 		complete_effect = {
 			add_equipment_to_stockpile = {
 				type = doh_civ_equipment_1
-				amount = -1080
+				amount = -108
 			}
 			add_offsite_building = {
 				type = industrial_complex
@@ -714,13 +714,13 @@ DOH_industry_decision_category = {
 		cost = 10
 		available = {
 			has_equipment = {
-				doh_civ_equipment_1 > 639
+				doh_civ_equipment_1 > 63
 			}
 		}
 		complete_effect = {
 			add_equipment_to_stockpile = {
 				type = doh_civ_equipment_1
-				amount = -640
+				amount = -64
 			}
 			add_offsite_building = {
 				type = dockyard
@@ -746,13 +746,13 @@ DOH_industry_decision_category = {
 		cost = 10
 		available = {
 			has_equipment = {
-				doh_civ_equipment_1 > 999
+				doh_civ_equipment_1 > 99
 			}
 		}
 		complete_effect = {
 			add_equipment_to_stockpile = {
 				type = doh_civ_equipment_1
-				amount = -1000
+				amount = -100
 			}
 			add_cic = 10000
 			add_timed_idea = {

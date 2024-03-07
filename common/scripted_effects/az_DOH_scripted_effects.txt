@@ -161,14 +161,14 @@ DOH_mofifier_effect = {
 			temp_var:az_doh_clr_equ = var:num_equipment@doh_civ_equipment_1
 		}
 		divide_temp_variable = {
-			temp_var:az_doh_clr_equ = 1800
+			temp_var:az_doh_clr_equ = 180
 		}
 		round_temp_variable = temp_var:az_doh_clr_equ
 		set_temp_variable = {
 			temp_var:az_doh_factroies_add = temp_var:az_doh_clr_equ
 		}
 		multiply_temp_variable = {
-			temp_var:az_doh_clr_equ = -1800
+			temp_var:az_doh_clr_equ = -180
 		}
 		add_equipment_to_stockpile = {
 			type = doh_civ_equipment_1

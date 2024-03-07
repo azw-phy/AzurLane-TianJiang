@@ -28,9 +28,9 @@ equipments = {
 		picture = GFX_doh_civ_equipment_medium
 		priority = 10
 		reliability = 1
-		build_cost_ic = 10
+		build_cost_ic = 100
 		resources = {
-			steel = 2
+			steel = 20
 		}
 		can_be_lend_leased = {
 			always = yes

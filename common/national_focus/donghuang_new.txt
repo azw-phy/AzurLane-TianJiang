@@ -1856,6 +1856,7 @@ focus_tree = {
         }
 		available = {
 			OR = {
+				date > 1943.1.1
 				AND = {
 					date > 1937.12.1
 					OR = {
@@ -2892,7 +2893,13 @@ focus_tree = {
 			NOT = {
 				country_exists = DH1
 			}
-			date > 1942.1.1
+			OR = {
+				date > 1942.1.1
+				has_subject = CHY
+				NOT = {
+					country_exists = CHY
+				}
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -2928,7 +2935,13 @@ focus_tree = {
 			#has_completed_focus = DOH_weishejunfa
 			has_completed_focus = DOH_donghuangdeshidai
 			country_exists = DH1
-			date > 1942.1.1
+			OR = {
+				date > 1942.1.1
+				has_subject = CHY
+				NOT = {
+					country_exists = CHY
+				}
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -4658,7 +4671,7 @@ focus_tree = {
 		available = {
 			num_of_factories > 1000
 		}
-		cost = 1
+		cost = 5
 		x = 0
 		y = 2
 		completion_reward = {
@@ -4682,7 +4695,7 @@ focus_tree = {
 		available = {
 			has_completed_focus = DOH_liangdanyixing
 		}
-		cost = 1
+		cost = 3
 		x = 0
 		y = 2
 		completion_reward = {
@@ -4701,7 +4714,7 @@ focus_tree = {
 			always = no
 			num_of_factories > 1600
 		}
-		cost = 1
+		cost = 5
 		x = -5
 		y = 2
 		completion_reward = {
@@ -4724,7 +4737,7 @@ focus_tree = {
 			}
 			always = no
 		}
-		cost = 1
+		cost = 3
 		x = 0
 		y = 2
 		completion_reward = {

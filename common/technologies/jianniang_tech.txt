@@ -223,6 +223,10 @@ technologies = {
 		}
 		command_shipgirl = {
 			supply_consumption = -0.016
+			battalion_mult = {
+				category = category_shipgirl
+				max_organisation = 0.10
+			}
 		}
 		shipgirl_brigade_quzhu = {
 			supply_consumption = -0.06
@@ -1122,6 +1126,10 @@ technologies = {
 			combat_width = -1
 			recon = 1
 			default_morale = 0.5
+			battalion_mult = {
+				category = category_shipgirl
+				default_morale = 0.1
+			}
 		}
 		
 		coordination_bonus = 0.02
@@ -1374,6 +1382,10 @@ technologies = {
 			combat_width = -1
 			recon = 1
 			default_morale = 0.5
+			battalion_mult = {
+				category = category_shipgirl
+				defense = 0.1
+			}
 		}
 		
 		coordination_bonus = 0.02

@@ -51,7 +51,7 @@ az_DOH_railway_organization = {
 		token = DOH_wuzhuangyunshuchuan_trait
 		name = DOH_wuzhuangyunshuchuan_trait
 		position = { x = 1 y = 0 }
-		icon = GFX_generic_mio_trait_icon_unique
+		icon = GFX_generic_mio_trait_icon_lg_attack
 		limit_to_equipment_type = {
 			convoy
 		}
@@ -73,7 +73,7 @@ az_DOH_railway_organization = {
 		parent = {
 			traits = { DOH_wuzhuangyunshuchuan_trait }
 		}
-		icon = GFX_generic_mio_trait_icon_unique
+		icon = GFX_generic_mio_trait_icon_build_cost_ic
 		relative_position_id = DOH_wuzhuangyunshuchuan_trait
 		position = { x = 0 y = 1}
 		limit_to_equipment_type = {
@@ -86,7 +86,7 @@ az_DOH_railway_organization = {
 	trait = {
 		token = DOH_minyonggongye_trait_1
 		name = DOH_minyonggongye_trait_1
-		icon = GFX_generic_mio_trait_icon_unique
+		icon = GFX_generic_mio_trait_icon_production_capacity
 		position = { x = 3 y = 0 }
 		limit_to_equipment_type = {
 			doh_civ_equipment
@@ -102,7 +102,7 @@ az_DOH_railway_organization = {
 	trait = {
 		token = DOH_minyonggongye_trait_2
 		name = DOH_minyonggongye_trait_2
-		icon = GFX_generic_mio_trait_icon_unique
+		icon = GFX_generic_mio_trait_icon_resources
 		position = { x = 5 y = 0 }
 		limit_to_equipment_type = {
 			doh_civ_equipment
@@ -117,7 +117,7 @@ az_DOH_railway_organization = {
 	trait = {
 		token = DOH_zhiyuanzhuangbei_trait
 		name = DOH_zhiyuanzhuangbei_trait
-		icon = GFX_generic_mio_trait_icon_unique
+		icon = GFX_generic_mio_trait_icon_build_cost_ic
 		position = { x = 4 y = 1 }
 		limit_to_equipment_type = {
 			support_equipment
@@ -141,7 +141,7 @@ az_DOH_railway_organization = {
 		token = DOH_train_speed_1
 		name = DOH_train_speed_1
 		position = { x = 7 y = 0 }
-		icon = GFX_generic_mio_trait_icon_unique
+		icon = GFX_generic_mio_trait_icon_efficiency_gain
 		limit_to_equipment_type = {
 			train_equipment
 			railway_gun_equipment
@@ -170,7 +170,7 @@ az_DOH_railway_organization = {
 		token = DOH_train_speed_2
 		name = DOH_train_speed_2
 		position = { x = 0 y = 1 }
-		icon = GFX_generic_mio_trait_icon_unique
+		icon = GFX_generic_mio_trait_icon_efficiency_gain
 		parent = {
 			traits = {
 				DOH_train_speed_1
@@ -204,7 +204,7 @@ az_DOH_railway_organization = {
 		token = DOH_train_speed_3
 		name = DOH_train_speed_3
 		position = { x = 0 y = 1 }
-		icon = GFX_generic_mio_trait_icon_unique
+		icon = GFX_generic_mio_trait_icon_efficiency_gain
 		relative_position_id = DOH_train_speed_2
 		limit_to_equipment_type = {
 			train_equipment
@@ -238,7 +238,7 @@ az_DOH_railway_organization = {
 		token = DOH_train_speed_4
 		name = DOH_train_speed_4
 		position = { x = 0 y = 1 }
-		icon = GFX_generic_mio_trait_icon_unique
+		icon = GFX_generic_mio_trait_icon_efficiency_gain
 		relative_position_id = DOH_train_speed_3
 		limit_to_equipment_type = {
 			train_equipment

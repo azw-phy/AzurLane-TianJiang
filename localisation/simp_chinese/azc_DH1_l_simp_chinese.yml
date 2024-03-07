@@ -235,7 +235,7 @@
  DOH_chongyingdechaogong_desc: "重樱又一次回想起了那个牺牲无数遣煌使也要到达的东煌..."
  DOH_buzhanerqurenzhibing: "不战而屈人之兵"
  DOH_buzhanerqurenzhibing_desc: "军事实力的极大增强可以让我们好好和邻居谈谈历史上的边界问题。"
- doh_fanshu: "东煌藩属国"
+ doh_fanshu: "藩属国"
  #事件
  DH1_event.999.t: "是否成立东煌远征军"
  DH1_event.999.d: "我们在西南的远征军正在等候[DOH.Getleader]的指示。"
