@@ -16,7 +16,7 @@ DOH_decision_category = {
 DOH_decision_debug_category = {
 	icon = category_gre_faction_management
 	#picture = GFX_focus_chi_one_china_policy
-	priority = 998
+	priority = 997
 	visible = {
 		tag = DOH
 		is_debug = yes
@@ -57,6 +57,45 @@ DOH_industry_decision_category = {
 			# 	doh_civ_naval_equipment_1 > 1
 			# }
 		}
+	}
+	available = {
+		
+	}
+}
+DOH_duiwaitouzi_decision_category = {
+	icon = category_gre_faction_management
+	priority = 998
+	visible = {
+		tag = DOH
+		OR = {
+			has_completed_focus = DOH_junmingronghe_duiwaishuchu
+			is_debug = yes
+		}
+	}
+	allowed = {
+
+	}
+	available = {
+		
+	}
+}
+
+DOH_chaogong_decision_category = {
+	icon = category_gre_faction_management
+	priority = 998
+	visible = {
+		OR = {
+			tag = DOH
+			AND = {
+				has_autonomy_state = doh_fanshu
+				DOH = {
+					has_completed_focus = DOH_chongyingdechaogong
+				}
+			}
+		}
+	}
+	allowed = {
+
 	}
 	available = {
 		

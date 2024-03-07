@@ -639,7 +639,7 @@ DOH_industry_decision_category = {
 	DOH_civ_to_arm_industry_decision = {
 		icon = xingdong
 		ai_will_do = {
-			factor = 0
+			factor = 100
 		}
 		visible = {
 			OR = {
@@ -671,7 +671,7 @@ DOH_industry_decision_category = {
 	DOH_civ_to_com_industry_decision = {
 		icon = xingdong
 		ai_will_do = {
-			factor = 0
+			factor = 100
 		}
 		visible = {
 			OR = {
@@ -703,7 +703,7 @@ DOH_industry_decision_category = {
 	DOH_civ_to_naval_industry_decision = {
 		icon = xingdong
 		ai_will_do = {
-			factor = 0
+			factor = 90
 		}
 		visible = {
 			OR = {
@@ -1463,6 +1463,7 @@ DOH_decision_debug_category = {
 			complete_national_focus = DOH_rencaiyinjin
 			complete_national_focus = DOH_donghuanggongyetixi
 			complete_national_focus = DOH_shichanghuanjishu
+			complete_national_focus = DOH_junmingronghe_duiwaishuchu
 		}
 	}
 	DOH_debug_5 = {
@@ -1510,5 +1511,81 @@ DOH_decision_debug_category = {
 			}
 		}
 	}
+}
 
+DOH_duiwaitouzi_decision_category = {
+	DOH_shuchu_civ = {
+		icon = xingdong
+		cost = 100
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			tag = DOH
+			has_completed_focus = DOH_junmingronghe_duiwaishuchu
+			NOT = {
+				has_country_flag = DOH_shuchu_civ_doing_flag
+			}
+			FROM = {
+				NOT = {
+					has_country_flag = DOH_shuchu_civ_target_flag
+				}
+			}
+		}
+		allowed = {
+			
+		}
+		target_trigger = {
+			any_country = {
+				NOT = {
+					is_ally_with = DOH
+				}
+			}
+		}
+		complete_effect = {
+			FROM = {
+				set_country_flag = DOH_shuchu_civ_target_flag
+				
+			}
+			ROOT = {
+				set_country_flag = DOH_shuchu_civ_doing_flag
+			}
+		}
+	}
+	DOH_shuchu_civ_stop = {
+		icon = xingdong
+		cost = 100
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			tag = DOH
+			has_country_flag = DOH_shuchu_civ_doing_flag
+			FROM = {
+				has_country_flag = DOH_shuchu_civ_target_flag
+			}
+		}
+		allowed = {
+			
+		}
+		target_trigger = {
+			any_country = {
+				NOT = {
+					is_ally_with = DOH
+				}
+				#has_country_flag = DOH_shuchu_civ_target_flag
+			}
+		}
+		complete_effect = {
+			FROM = {
+				clr_country_flag = DOH_shuchu_civ_target_flag
+				add_dynamic_modifier = {
+					modifier = az_DOH_shuchu_target_modifier
+				}
+			}
+			ROOT = {
+				clr_country_flag = DOH_shuchu_civ_doing_flag
+			}
+		}
+	}
 }
