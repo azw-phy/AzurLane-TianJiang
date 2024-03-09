@@ -30,7 +30,7 @@ DOH_decision_debug_category = {
 }
 DOH_industry_decision_category = {
 	icon = category_gre_faction_management
-	picture = GFX_focus_chi_one_china_policy
+	picture = GFX_doh_civ_equipment_medium
 	priority = 999
 	visible = {
 		OR = {
