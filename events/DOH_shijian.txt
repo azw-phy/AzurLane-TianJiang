@@ -983,63 +983,115 @@ country_event = {
 	desc = DOH_loong_event.2002.d
 	is_triggered_only = yes
 	option = {
-		name = DOH_loong_event.2002.a
-		ai_chance = {
-			factor = 0
-		}
-		if = {
-			limit = {
-				country_exists = DH1
-			}
-			DOH = {
-				set_autonomy = {
-					target = PREV
-					autonomy_state = doh_fanshu
-				}
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					country_exists = DH1
-				}
-			}
-			DOH = {
-				puppet = PREV
-			}
-		}
-		DOH = {
-			DOH_neibufenqi_jianqin_effect = yes
-		}
-		PREV = {
-			clr_country_flag = DOH_shuchu_civ_target_flag
-			remove_dynamic_modifier = {
-				modifier = az_DOH_shuchu_target_modifier
-				scope = DOH
-			}
-		}
-		d_DOH_self_duiwaishuchu_init = yes
-	}
-	option = {
 		name = DOH_loong_event.2002.b
 		ai_chance = {
-			factor = 9
+			base = 10
+			modifier = {
+				strength_ratio = {
+					tag = DOH
+					ratio > 3
+				}
+				add = 1000
+			}
 		}
 		declare_war_on = {
 			target = DOH
 			type = annex_everything
 		}
-		DOH = {
-			DOH_neibufenqi_jianqin_effect = yes
+		hidden_effect = {
+			DOH = {
+				country_event = DOH_loong_event.2003
+			}
+			PREV = {
+				clr_country_flag = DOH_shuchu_civ_target_flag
+				remove_dynamic_modifier = {
+					modifier = az_DOH_shuchu_target_modifier
+					scope = DOH
+				}
+			}
+			d_DOH_self_duiwaishuchu_init = yes
 		}
-		PREV = {
-			clr_country_flag = DOH_shuchu_civ_target_flag
-			remove_dynamic_modifier = {
-				modifier = az_DOH_shuchu_target_modifier
-				scope = DOH
+	}
+	option = {
+		name = DOH_loong_event.2002.a
+		ai_chance = {
+			base = 5
+			modifier = {
+				naval_strength_ratio = {
+					tag = DOH
+					ratio < 0.3
+				}
+				add = 5
+			}
+			modifier = {
+				DOH = {
+					has_completed_focus = DOH_chaogongzhidu
+				}
+				add = 5
+			}
+			modifier = {
+				naval_strength_ratio = {
+					tag = DOH
+					ratio < 1
+				}
+				add = 5
+			}
+			modifier = {
+				strength_ratio = {
+					tag = DOH
+					ratio < 0.33
+				}
+				add = 10
 			}
 		}
-		d_DOH_self_duiwaishuchu_init = yes
+		effect_tooltip = {
+			DOH = {
+				puppet = PREV
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					country_exists = DH1
+				}
+				DOH = {
+					set_autonomy = {
+						target = PREV
+						autonomy_state = doh_fanshu
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						country_exists = DH1
+					}
+				}
+				DOH = {
+					puppet = PREV
+				}
+			}
+			PREV = {
+				clr_country_flag = DOH_shuchu_civ_target_flag
+				remove_dynamic_modifier = {
+					modifier = az_DOH_shuchu_target_modifier
+					scope = DOH
+				}
+			}
+			d_DOH_self_duiwaishuchu_init = yes
+		}
+	}
+}
+country_event = {
+	id = DOH_loong_event.2003
+	title = DOH_loong_event.2003.t
+	desc = DOH_loong_event.2003.d
+	is_triggered_only = yes
+	option = {
+		name = DOH_loong_event.2003.a
+		ai_chance = {
+			base = 10
+		}
 	}
 }
 # country_event = {

@@ -3392,11 +3392,12 @@ focus_tree = {
 		}
 
 		available = {
-			
+			always = no
 		}
 
 		completion_reward = {
 			custom_effect_tooltip = DOH_chaogongtixi_tooltip
+			custom_effect_tooltip = "（还没做完）"
 		}
 	}
 	focus = {
@@ -4877,6 +4878,7 @@ focus_tree = {
 				has_completed_focus = DOH_ziguyilai
 				has_completed_focus = DOH_chaogongzhidu
 			}
+			always = no
 		}
 		prerequisite = {
 			focus = DOH_junmingronghe

@@ -1648,7 +1648,9 @@ DOH_duiwaitouzi_decision_category = {
 				clr_country_flag = DOH_shuchu_civ_doing_flag
 				DOH_neibufenqi_jiazhong_effect = yes
 			}
-			d_DOH_self_duiwaishuchu_init = yes
+			hidden_effect = {
+				d_DOH_self_duiwaishuchu_init = yes
+			}
 		}
 	}
 
@@ -1690,8 +1692,8 @@ DOH_duiwaitouzi_decision_category = {
 					id = DOH_loong_event.2002
 					days = 2
 				}
-				
 			}
+			DOH_neibufenqi_jianqin_effect = yes
 		}
 	}
 
