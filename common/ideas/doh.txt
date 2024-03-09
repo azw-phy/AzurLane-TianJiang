@@ -1,4 +1,30 @@
 ideas = {
+	economy = {
+		law = yes
+		DOH_gongtongfuyu_economy = {
+			picture = civilian_economy
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_expected_value = 0.15
+				production_speed_arms_factory_factor = 0.3
+				production_speed_industrial_complex_factor = 0.3
+				conversion_cost_civ_to_mil_factor= -0.9
+				conversion_cost_mil_to_civ_factor = -0.9
+				fuel_gain_factor = 0.4
+				production_factory_start_efficiency_factor = 0.15
+			}
+
+			allowed_to_remove = {
+				always = no
+			}
+			
+			cancel_if_invalid = no
+		}
+	}
 	hidden_ideas = {
 		DOH_stop_cic = {
 			modifier = {
@@ -50,7 +76,6 @@ ideas = {
 		DOH_dongfeng_idea_0 = {
 			picture = rockets_DOH
 			modifier = {
-				rocket_attack_factor = 0.2
 				static_anti_air_hit_chance_factor = 0.5
 				static_anti_air_damage_factor = 0.5
 			}
@@ -74,7 +99,7 @@ ideas = {
 		DOH_dongfeng_idea_1 = {
 			picture = rockets_DOH
 			modifier = {
-				rocket_attack_factor = 2
+				air_power_projection_factor = 0.1
 				static_anti_air_hit_chance_factor = 1
 				static_anti_air_damage_factor = 1
 			}
@@ -243,7 +268,7 @@ ideas = {
 			}
 
 			modifier = {
-				stability_weekly = 0.005
+				#stability_weekly = 0.005
 				war_support_weekly = 0.005
 				#drift_defence_factor = 1
 				political_power_factor = 0.15
@@ -875,36 +900,85 @@ ideas = {
 				monthly_population = 0.25
 			}
 		}
-		DOH_yyhj = {
-			picture = eng_steady_as_she_goes
-			allowed_civil_war = {
-				always = yes
-			}
-			modifier = {
-				navy_max_range_factor = 0.25
-				navy_org_factor = 0.20
-			}
-		}
-		DOH_ysjd = {
+		DOH_hailufuhe_idea_0 = {
 			picture = generic_coastal_navy
 			allowed_civil_war = {
 				always = yes
 			}
-			# equipment_bonus = {
-			# 	convoy = {
-			# 		build_cost_ic = -0.25
-			# 		instant = yes
-			# 		maximum_speed = 0.20
-			# 		surface_visibility = -0.25
-			# 		lg_attack = 1
-			# 		anti_air_attack = 1
-			# 	}
-			# }
 			modifier = {
+				
+			}
+		}
+		DOH_hailufuhe_idea_1 = {
+			picture = generic_coastal_navy
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				convoy_escort_efficiency = 0.1
 				air_escort_efficiency = 0.1
 				convoy_retreat_speed = 0.2
 			}
 		}
+		DOH_hailufuhe_idea_2 = {
+			picture = generic_coastal_navy
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				air_escort_efficiency = 0.1
+				convoy_escort_efficiency = 0.1
+				convoy_retreat_speed = 0.2
+				navy_max_range_factor = 0.25
+				navy_org_factor = 0.20
+				navy_fuel_consumption_factor = -0.1
+			}
+		}
+		DOH_hailufuhe_idea_3 = {
+			picture = generic_coastal_navy
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				air_escort_efficiency = 0.1
+				convoy_escort_efficiency = 0.1
+				convoy_retreat_speed = 0.2
+				navy_max_range_factor = 0.25
+				navy_org_factor = 0.20
+				navy_fuel_consumption_factor = -0.1
+				navy_visibility = -0.1
+			}
+		}
+		# DOH_yyhj = {
+		# 	picture = eng_steady_as_she_goes
+		# 	allowed_civil_war = {
+		# 		always = yes
+		# 	}
+		# 	modifier = {
+		# 		navy_max_range_factor = 0.25
+		# 		navy_org_factor = 0.20
+		# 	}
+		# }
+		# DOH_ysjd = {
+		# 	picture = generic_coastal_navy
+		# 	allowed_civil_war = {
+		# 		always = yes
+		# 	}
+		# 	# equipment_bonus = {
+		# 	# 	convoy = {
+		# 	# 		build_cost_ic = -0.25
+		# 	# 		instant = yes
+		# 	# 		maximum_speed = 0.20
+		# 	# 		surface_visibility = -0.25
+		# 	# 		lg_attack = 1
+		# 	# 		anti_air_attack = 1
+		# 	# 	}
+		# 	# }
+		# 	modifier = {
+		# 		air_escort_efficiency = 0.1
+		# 		convoy_retreat_speed = 0.2
+		# 	}
+		# }
 		DOH_dhzcc = {
 			picture = newport_news_shipbuilding
 			allowed_civil_war = {
@@ -948,6 +1022,15 @@ ideas = {
 			modifier = {
 				research_speed_factor = 0.16
 				political_power_factor = 0.12
+				command_power_gain = 1
+			}
+			research_bonus = {
+				armor = 0.1
+				infantry_weapons = 0.1
+				artillery = 0.1
+				motorized_equipment = 0.1
+				air_equipment = 0.1
+				naval_equipment = 0.1
 			}
 		}
 		DOH_nbjs = {

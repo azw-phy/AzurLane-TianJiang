@@ -1,9 +1,9 @@
 on_actions = {
 	on_startup = {
 		effect = {
-			597 = {
-				set_state_flag = DOH_guocehejueyikaifa
-			}
+			# 597 = {
+			# 	set_state_flag = DOH_guocehejueyikaifa
+			# }
 			DOH = {
 				set_variable = {
 					var = DOH_touzi
@@ -96,8 +96,24 @@ on_actions = {
 	on_weekly = {
 		effect = {
 			DOH_mofifier_effect = yes
+			if = {
+				limit = {
+					DOH = {
+						has_country_flag = DOH_shuchu_civ_doing_flag
+					}
+				}
+				if = {
+					limit = {
+						DOH = {
+							has_country_flag = DOH_auto_shuchu_civ
+						}
+					}
+					d_DOH_auto_shuchu_effect = yes
+				}
+				DOH_duiwaishuchu_effect = yes
+			}
 		}
-	}
+	}	
 	on_monthly = {
 		effect = {
 			if = {

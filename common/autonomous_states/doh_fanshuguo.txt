@@ -21,8 +21,6 @@ autonomy_state = {
         faction_trade_opinion_factor = 1
 		opinion_gain_monthly_same_ideology_factor = 0.2
 
-		cic_to_overlord_factor = 0.1
-		mic_to_overlord_factor = 0.1
 	}
 	
 	ai_subject_wants_higher = {
@@ -36,7 +34,12 @@ autonomy_state = {
 	allowed = {
 		OR = {
 			OVERLORD = { original_tag = DOH }
-			has_autonomy_state = doh_fanshu
+			AND = {
+				DOH = {
+					has_completed_focus = DOH_cijichaogongzhongxin
+				}
+				has_autonomy_state = doh_fanshu
+			}
 		}
 	}
 

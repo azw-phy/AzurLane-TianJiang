@@ -119,3 +119,8 @@ DOH_guomuyixian = {
 # 	icon = GFX_decision_xingdong2
 # 	industrial_capacity_dockyard = FROM.nciv_to_ship_dynamic_pre_day
 # }
+az_DOH_shuchu_target_modifier = {
+	icon = GFX_idea_DOH_xdh
+	cic_to_target_factor = var:shuchu_factor_to_doh
+	mic_to_target_factor = var:shuchu_factor_to_doh
+}

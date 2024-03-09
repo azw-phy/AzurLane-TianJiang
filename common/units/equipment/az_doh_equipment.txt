@@ -32,6 +32,10 @@ equipments = {
 		resources = {
 			steel = 20
 		}
+		can_be_produced = {
+			tag = DOH
+		}
+		can_license = yes
 		can_be_lend_leased = {
 			always = yes
 		}

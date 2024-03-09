@@ -647,7 +647,7 @@ DOH_industry_decision_category = {
 				has_completed_focus = DOH_jinjigaige
 			}
 		}
-		cost = 10
+		cost = 0
 		available = {
 			has_equipment = {
 				doh_civ_equipment_1 > 71
@@ -679,7 +679,7 @@ DOH_industry_decision_category = {
 				has_completed_focus = DOH_jinjigaige
 			}
 		}
-		cost = 10
+		cost = 0
 		available = {
 			has_equipment = {
 				doh_civ_equipment_1 > 107
@@ -711,7 +711,7 @@ DOH_industry_decision_category = {
 				has_completed_focus = DOH_jinjigaige
 			}
 		}
-		cost = 10
+		cost = 0
 		available = {
 			has_equipment = {
 				doh_civ_equipment_1 > 63
@@ -743,7 +743,7 @@ DOH_industry_decision_category = {
 				has_completed_focus = DOH_jinjigaige
 			}
 		}
-		cost = 10
+		cost = 0
 		available = {
 			has_equipment = {
 				doh_civ_equipment_1 > 99
@@ -773,7 +773,7 @@ DOH_industry_decision_category = {
 	# 			has_completed_focus = DOH_jinjigaige
 	# 		}
 	# 	}
-	# 	cost = 10
+	# 	cost = 0
 	# 	available = {
 	# 		has_equipment = {
 	# 			doh_civ_naval_equipment_1 > 63
@@ -805,7 +805,7 @@ DOH_industry_decision_category = {
 	# 			has_completed_focus = DOH_jinjigaige
 	# 		}
 	# 	}
-	# 	cost = 10
+	# 	cost = 0
 	# 	available = {
 	# 		has_equipment = {
 	# 			doh_civ_naval_equipment_1 > 99
@@ -834,7 +834,7 @@ DOH_industry_decision_category = {
 	# 			has_completed_focus = DOH_jinjigaige
 	# 		}
 	# 	}
-	# 	cost = 10
+	# 	cost = 0
 	# 	available = {
 	# 		has_equipment = {
 	# 			doh_civ_naval_equipment_1 > 69
@@ -867,7 +867,7 @@ DOH_industry_decision_category = {
 	# 			has_completed_focus = DOH_jinjigaige
 	# 		}
 	# 	}
-	# 	cost = 10
+	# 	cost = 0
 	# 	available = {
 	# 		has_equipment = {
 	# 			doh_civ_naval_equipment_1 > 1599
@@ -897,7 +897,7 @@ DOH_industry_decision_category = {
 				}
 			}
 		}
-		cost = 10
+		cost = 0
 		available = {
 			has_equipment = {
 				doh_civ_equipment_1 > 0
@@ -921,7 +921,7 @@ DOH_industry_decision_category = {
 				}
 			}
 		}
-		cost = 10
+		cost = 0
 		available = {
 			has_country_flag = DOH_auto_conv_com_arm
 		}
@@ -941,7 +941,7 @@ DOH_industry_decision_category = {
 	# 			has_completed_focus = DOH_jinjigaige
 	# 		}
 	# 	}
-	# 	cost = 10
+	# 	cost = 0
 	# 	available = {
 			
 	# 	}
@@ -967,7 +967,7 @@ DOH_industry_decision_category = {
 	# 			}
 	# 		}
 	# 	}
-	# 	cost = 10
+	# 	cost = 0
 	# 	available = {
 	# 		OR = {
 	# 			has_rule = can_access_market
@@ -991,7 +991,7 @@ DOH_industry_decision_category = {
 	# 			has_country_flag = DOH_auto_conv_cic_civ
 	# 		}
 	# 	}
-	# 	cost = 10
+	# 	cost = 0
 	# 	available = {
 	# 		has_country_flag = DOH_auto_conv_cic_civ
 	# 	}
@@ -1005,7 +1005,7 @@ DOH_industry_decision_category = {
 	# 	ai_will_do = {
 	# 		factor = 0
 	# 	}
-	# 	cost = 10
+	# 	cost = 0
 	# 	visible = {
 	# 		OR = {
 	# 			is_debug = yes
@@ -1464,6 +1464,13 @@ DOH_decision_debug_category = {
 			complete_national_focus = DOH_donghuanggongyetixi
 			complete_national_focus = DOH_shichanghuanjishu
 			complete_national_focus = DOH_junmingronghe_duiwaishuchu
+			complete_national_focus = DOH_hongsedengta
+			complete_national_focus = DOH_junmingronghe
+			add_political_power = 4000
+			add_equipment_to_stockpile = {
+				type = doh_civ_equipment_1
+				amount = 10000
+			}
 		}
 	}
 	DOH_debug_5 = {
@@ -1514,6 +1521,38 @@ DOH_decision_debug_category = {
 }
 
 DOH_duiwaitouzi_decision_category = {
+	DOH_shuchu_civ_visiable = {
+		icon = xingdong
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			NOT = {
+				has_country_flag = DOH_shuchu_civ_visiable
+			}
+			has_completed_focus = DOH_junmingronghe_duiwaishuchu
+		}
+		complete_effect = {
+			set_country_flag = DOH_shuchu_civ_visiable
+		}
+	}
+	DOH_shuchu_civ_dis_visiable = {
+		icon = xingdong
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			has_country_flag = DOH_shuchu_civ_visiable
+			NOT = {
+				has_country_flag = DOH_shuchu_civ_doing_flag
+			}
+		}
+		complete_effect = {
+			clr_country_flag = DOH_shuchu_civ_visiable
+		}
+	}
 	DOH_shuchu_civ = {
 		icon = xingdong
 		cost = 100
@@ -1522,13 +1561,20 @@ DOH_duiwaitouzi_decision_category = {
 		}
 		visible = {
 			tag = DOH
+			has_country_flag = DOH_shuchu_civ_visiable
 			has_completed_focus = DOH_junmingronghe_duiwaishuchu
 			NOT = {
 				has_country_flag = DOH_shuchu_civ_doing_flag
 			}
 			FROM = {
 				NOT = {
+					has_war_with = DOH
+				}
+				NOT = {
 					has_country_flag = DOH_shuchu_civ_target_flag
+				}
+				NOT = {
+					is_ally_with = DOH
 				}
 			}
 		}
@@ -1545,10 +1591,19 @@ DOH_duiwaitouzi_decision_category = {
 		complete_effect = {
 			FROM = {
 				set_country_flag = DOH_shuchu_civ_target_flag
-				
+				add_dynamic_modifier = {
+					modifier = az_DOH_shuchu_target_modifier
+					scope = DOH
+				}
 			}
-			ROOT = {
+			DOH = {
 				set_country_flag = DOH_shuchu_civ_doing_flag
+				set_variable = {
+					var:DOH_has_shuchu_civ = 0
+				}
+			}
+			set_variable = {
+				DOH_shuchu_civ_target_tag = FROM
 			}
 		}
 	}
@@ -1568,6 +1623,11 @@ DOH_duiwaitouzi_decision_category = {
 		allowed = {
 			
 		}
+		available = {
+			NOT = {
+				has_country_flag = DOH_auto_shuchu_civ
+			}
+		}
 		target_trigger = {
 			any_country = {
 				NOT = {
@@ -1579,13 +1639,158 @@ DOH_duiwaitouzi_decision_category = {
 		complete_effect = {
 			FROM = {
 				clr_country_flag = DOH_shuchu_civ_target_flag
-				add_dynamic_modifier = {
+				remove_dynamic_modifier = {
 					modifier = az_DOH_shuchu_target_modifier
+					scope = DOH
 				}
 			}
-			ROOT = {
+			DOH = {
 				clr_country_flag = DOH_shuchu_civ_doing_flag
+				DOH_neibufenqi_jiazhong_effect = yes
+			}
+			d_DOH_self_duiwaishuchu_init = yes
+		}
+	}
+
+	DOH_shuchu_yaoqiu = {
+		icon = xingdong
+		cost = 100
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			tag = DOH
+			has_country_flag = DOH_shuchu_civ_doing_flag
+			FROM = {
+				has_country_flag = DOH_shuchu_civ_target_flag
+			}
+		}
+		allowed = {
+			
+		}
+		available = {
+			custom_trigger_tooltip = {
+				check_variable = {
+					var:shuchu_factor > 0.6
+				}
+				tooltip = "在目标国经济中的投资占据支配地位"
+			}
+		}
+		target_trigger = {
+			any_country = {
+				NOT = {
+					is_ally_with = DOH
+				}
+				#has_country_flag = DOH_shuchu_civ_target_flag
+			}
+		}
+		complete_effect = {
+			FROM = {
+				country_event = {
+					id = DOH_loong_event.2002
+					days = 2
+				}
+				
 			}
 		}
 	}
+
+	shuchu_100_civ = {
+		icon = xingdong
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		target_trigger = {
+			any_country = {
+				NOT = {
+					is_ally_with = DOH
+				}
+				#has_country_flag = DOH_shuchu_civ_target_flag
+			}
+		}
+		visible = {
+			has_country_flag = DOH_shuchu_civ_doing_flag
+			FROM = {
+				has_country_flag = DOH_shuchu_civ_target_flag
+			}
+			NOT = {
+				has_country_flag = DOH_auto_shuchu_civ
+			}
+		}
+		available = {
+			has_equipment = {
+				doh_civ_equipment_1 > 99
+			}
+		}
+		complete_effect = {
+			send_equipment = {
+				type = doh_civ_equipment_1
+				amount = 100
+				target = FROM
+			}
+		}
+	}
+	shuchu_civ_auto = {
+		icon = xingdong
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 300
+		target_trigger = {
+			any_country = {
+				NOT = {
+					is_ally_with = DOH
+				}
+				#has_country_flag = DOH_shuchu_civ_target_flag
+			}
+		}
+		visible = {
+			has_country_flag = DOH_shuchu_civ_doing_flag
+			FROM = {
+				has_country_flag = DOH_shuchu_civ_target_flag
+			}
+			NOT = {
+				has_country_flag = DOH_auto_shuchu_civ
+			}
+		}
+		available = {
+			
+		}
+		complete_effect = {
+			set_country_flag = DOH_auto_shuchu_civ
+		}
+	}
+	shuchu_civ_auto_stop = {
+		icon = xingdong
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 300
+		target_trigger = {
+			any_country = {
+				NOT = {
+					is_ally_with = DOH
+				}
+				#has_country_flag = DOH_shuchu_civ_target_flag
+			}
+		}
+		visible = {
+			has_country_flag = DOH_shuchu_civ_doing_flag
+			FROM = {
+				has_country_flag = DOH_shuchu_civ_target_flag
+			}
+			has_country_flag = DOH_auto_shuchu_civ
+		}
+		available = {
+			
+		}
+		complete_effect = {
+			clr_country_flag = DOH_auto_shuchu_civ
+			DOH_duiwaishuchu_effect = yes
+		}
+	}
+}
+DOH_xianjinjianniangdebifenggang_decision_category = {
+
 }
