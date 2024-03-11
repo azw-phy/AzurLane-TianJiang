@@ -94,17 +94,17 @@ DOH_chaogong_decision_category = {
 	}
 }
 
-DOH_xianjinjianniangdebifenggang_decision_category = {
-	icon = category_gre_faction_management
-	priority = 996
-	visible = {
-		tag = DOH
-		has_completed_focus = DOH_hongsedengta
-	}
-	allowed = {
+# DOH_xianjinjianniangdebifenggang_decision_category = {
+# 	icon = category_gre_faction_management
+# 	priority = 996
+# 	visible = {
+# 		tag = DOH
+# 		has_completed_focus = DOH_hongsedengta
+# 	}
+# 	allowed = {
 		
-	}
-	available = {
+# 	}
+# 	available = {
 		
-	}
-}
+# 	}
+# }

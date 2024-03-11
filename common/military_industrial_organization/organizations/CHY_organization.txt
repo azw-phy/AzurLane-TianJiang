@@ -113,7 +113,7 @@ CHY_kure_naval_arsenal_organization = {
 	add_trait = {  
 		token = bulizaochuanchang_1
 		name = bulizaochuanchang_1
-		icon = GFX_idea_BLI_zaochuanchang1
+		icon = GFX_BLI_zaochuanchang_mio_icon_1
 		special_trait_background = yes
 
 		position = { x=8 y=4 }  
@@ -147,7 +147,7 @@ CHY_kure_naval_arsenal_organization = {
 	add_trait = {
 		token = bulizaochuanchang_2
 		name = bulizaochuanchang_2
-		icon = GFX_idea_BLI_zaochuanchang2
+		icon = GFX_BLI_zaochuanchang_mio_icon_2
 		special_trait_background = yes
 
 		position = { x=9 y=4 }  
@@ -216,7 +216,7 @@ CHY_yokosuka_naval_arsenal_organization = {
 	add_trait = {  
 		token = bulizaochuanchang_1
 		name = bulizaochuanchang_1
-		icon = GFX_idea_BLI_zaochuanchang1
+		icon = GFX_BLI_zaochuanchang_mio_icon_1
 		special_trait_background = yes
 
 		position = { x=8 y=4 }  
@@ -250,7 +250,7 @@ CHY_yokosuka_naval_arsenal_organization = {
 	add_trait = {
 		token = bulizaochuanchang_2
 		name = bulizaochuanchang_2
-		icon = GFX_idea_BLI_zaochuanchang2
+		icon = GFX_BLI_zaochuanchang_mio_icon_2
 		special_trait_background = yes
 
 		position = { x=9 y=4 }  
@@ -320,7 +320,7 @@ CHY_maizuru_naval_arsenal_organization = {
 	add_trait = {  
 		token = bulizaochuanchang_1
 		name = bulizaochuanchang_1
-		icon = GFX_idea_BLI_zaochuanchang1
+		icon = GFX_BLI_zaochuanchang_mio_icon_1
 		special_trait_background = yes
 
 		position = { x=8 y=4 }  
@@ -354,7 +354,7 @@ CHY_maizuru_naval_arsenal_organization = {
 	add_trait = {
 		token = bulizaochuanchang_2
 		name = bulizaochuanchang_2
-		icon = GFX_idea_BLI_zaochuanchang2
+		icon = GFX_BLI_zaochuanchang_mio_icon_2
 		special_trait_background = yes
 
 		position = { x=9 y=4 }  
@@ -423,7 +423,7 @@ CHY_sasebo_naval_arsenal_organization = {
 	add_trait = {  
 		token = bulizaochuanchang_1
 		name = bulizaochuanchang_1
-		icon = GFX_idea_BLI_zaochuanchang1
+		icon = GFX_BLI_zaochuanchang_mio_icon_1
 		special_trait_background = yes
 
 		position = { x=8 y=4 }  
@@ -457,7 +457,7 @@ CHY_sasebo_naval_arsenal_organization = {
 	add_trait = {
 		token = bulizaochuanchang_2
 		name = bulizaochuanchang_2
-		icon = GFX_idea_BLI_zaochuanchang2
+		icon = GFX_BLI_zaochuanchang_mio_icon_2
 		special_trait_background = yes
 
 		position = { x=9 y=4 }  
@@ -786,10 +786,10 @@ CHY_osaka_army_arsenal_artillery_organization = {
 	include = generic_artillery_organization
 	icon = GFX_idea_osaka_army_arsenal
 	allowed = {	
-		OR = {
+#		OR = {
 		tag = CHY
-		tag = DOH
-		}
+		# tag = DOH
+		# }
 	}
 	available = {
 		owner = {

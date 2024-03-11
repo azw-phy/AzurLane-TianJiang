@@ -348,6 +348,12 @@ DOH_neibufenqi_jianqin_effect = {
 	}
 	custom_effect_tooltip = DOH_neibufenqi_jianqin_effect_tooltip
 }
+DOH_neibufenqi_jianqin_few_effect = {
+	multiply_variable = {
+		var:DOH_zhichiduchengfa = 0.9
+	}
+	custom_effect_tooltip = DOH_neibufenqi_jianqin_few_effect_tooltip
+}
 DOH_neibufenqi_jiazhong_effect = {
 	multiply_variable = {
 		var:DOH_zhichiduchengfa = 2.50

@@ -466,6 +466,7 @@ DOH_decision_category = {
 			FROM = {
 				set_state_category = rural
 			}
+			DOH_neibufenqi_jianqin_few_effect = yes
 		}
 	}
 	DOH_gongyehua_1 = {
@@ -511,6 +512,7 @@ DOH_decision_category = {
 			FROM = {
 				set_state_category = town
 			}
+			DOH_neibufenqi_jianqin_few_effect = yes
 		}
 	}
 	DOH_gongyehua_2 = {
@@ -556,6 +558,7 @@ DOH_decision_category = {
 			FROM = {
 				set_state_category = large_town
 			}
+			DOH_neibufenqi_jianqin_few_effect = yes
 		}
 	}
 	DOH_gongyehua_3 = {
@@ -601,6 +604,7 @@ DOH_decision_category = {
 			FROM = {
 				set_state_category = city
 			}
+			DOH_neibufenqi_jianqin_few_effect = yes
 		}
 	}
 	DOH_feitianmeng_zhunbei = {
@@ -632,8 +636,57 @@ DOH_decision_category = {
 			set_country_flag = DOH_feitianmeng_flag
 			add_research_slot = 2
 			custom_effect_tooltip = "运载火箭研制成功"
+			custom_effect_tooltip = DOH_neibufenqi_jianqin_effect_tooltip
 		}
 	}
+	DOH_BFL_bifenggang_decision = {
+		icon = xingdong
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			OR = {
+				is_debug = yes
+				AND = {
+					has_completed_focus = DOH_hongsedengta
+					has_government = communism
+				}
+			}
+		}
+		available = {
+			OR = {
+				BFL = {
+					NOT = {
+						has_government = communism
+					}
+				}
+				NOT = {
+					country_exists = BFL
+				}
+			}
+		}
+		cost = 300
+		days_remove = 21
+		remove_effect = {
+			custom_effect_tooltip = "（原）北联的五位革命舰娘将来到东煌暂避。"
+			BFL_sayousi = {
+				set_nationality = DOH
+			}
+			BFL_afuleer = {
+				set_nationality = DOH
+			}
+			BFL_shuixingjinian = {
+				set_nationality = DOH
+			}
+			BFL_kalangshitade = {
+				set_nationality = DOH
+			}
+			BFL_luoxiya = {
+				set_nationality = DOH
+			}
+		}
+	}
+	#DOH_BFL_bifenggang_gaobie_decision
 }
 DOH_industry_decision_category = {
 	DOH_civ_to_arm_industry_decision = {
@@ -1793,6 +1846,7 @@ DOH_duiwaitouzi_decision_category = {
 		}
 	}
 }
-DOH_xianjinjianniangdebifenggang_decision_category = {
+# DOH_xianjinjianniangdebifenggang_decision_category = {
+# 	DOH_xianjinjianniangdebifenggang_decision
 
-}
+# }

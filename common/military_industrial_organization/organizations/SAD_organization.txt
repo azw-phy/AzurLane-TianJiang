@@ -108,7 +108,7 @@ SAD_crda_organization = {
 	add_trait = {  
 		token = bulizaochuanchang_1
 		name = bulizaochuanchang_1
-		icon = GFX_idea_BLI_zaochuanchang1
+		icon = GFX_BLI_zaochuanchang_mio_icon_1
 		special_trait_background = yes
 
 		position = { x=8 y=4 }  
@@ -142,7 +142,7 @@ SAD_crda_organization = {
 	add_trait = {
 		token = bulizaochuanchang_2
 		name = bulizaochuanchang_2
-		icon = GFX_idea_BLI_zaochuanchang2
+		icon = GFX_BLI_zaochuanchang_mio_icon_2
 		special_trait_background = yes
 
 		position = { x=9 y=4 }  
@@ -209,7 +209,7 @@ SAD_cantiere_oto_organization = {
 	add_trait = {  
 		token = bulizaochuanchang_1
 		name = bulizaochuanchang_1
-		icon = GFX_idea_BLI_zaochuanchang1
+		icon = GFX_BLI_zaochuanchang_mio_icon_1
 		special_trait_background = yes
 
 		position = { x=8 y=4 }  
@@ -240,7 +240,7 @@ SAD_cantiere_oto_organization = {
 	add_trait = {  
 		token = bulizaochuanchang_2
 		name = bulizaochuanchang_2
-		icon = GFX_idea_BLI_zaochuanchang2
+		icon = GFX_BLI_zaochuanchang_mio_icon_2
 		special_trait_background = yes
 
 		position = { x=9 y=4 }  
@@ -328,7 +328,7 @@ SAD_navalmeccanica_organization = {
 	add_trait = {  
 		token = bulizaochuanchang_1
 		name = bulizaochuanchang_1
-		icon = GFX_idea_BLI_zaochuanchang1
+		icon = GFX_BLI_zaochuanchang_mio_icon_1
 		special_trait_background = yes
 
 		position = { x=8 y=4 }  
@@ -362,7 +362,7 @@ SAD_navalmeccanica_organization = {
 	add_trait = {
 		token = bulizaochuanchang_2
 		name = bulizaochuanchang_2
-		icon = GFX_idea_BLI_zaochuanchang2
+		icon = GFX_BLI_zaochuanchang_mio_icon_2
 		special_trait_background = yes
 
 		position = { x=9 y=4 }  
@@ -429,7 +429,7 @@ SAD_cantiere_navale_di_ancona_organization = {
 	add_trait = {  
 		token = bulizaochuanchang_1
 		name = bulizaochuanchang_1
-		icon = GFX_idea_BLI_zaochuanchang1
+		icon = GFX_BLI_zaochuanchang_mio_icon_1
 		special_trait_background = yes
 
 		position = { x=8 y=4 }  
@@ -463,7 +463,7 @@ SAD_cantiere_navale_di_ancona_organization = {
 	add_trait = {
 		token = bulizaochuanchang_2
 		name = bulizaochuanchang_2
-		icon = GFX_idea_BLI_zaochuanchang2
+		icon = GFX_BLI_zaochuanchang_mio_icon_2
 		special_trait_background = yes
 
 		position = { x=9 y=4 }  
@@ -530,7 +530,7 @@ SAD_cantieri_navali_tosi_organization = {
 	add_trait = {  
 		token = bulizaochuanchang_1
 		name = bulizaochuanchang_1
-		icon = GFX_idea_BLI_zaochuanchang1
+		icon = GFX_BLI_zaochuanchang_mio_icon_1
 		special_trait_background = yes
 
 		position = { x=8 y=4 }  
@@ -564,7 +564,7 @@ SAD_cantieri_navali_tosi_organization = {
 	add_trait = {
 		token = bulizaochuanchang_2
 		name = bulizaochuanchang_2
-		icon = GFX_idea_BLI_zaochuanchang2
+		icon = GFX_BLI_zaochuanchang_mio_icon_2
 		special_trait_background = yes
 
 		position = { x=9 y=4 }  

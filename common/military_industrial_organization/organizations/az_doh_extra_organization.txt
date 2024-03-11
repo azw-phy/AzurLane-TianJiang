@@ -9,6 +9,7 @@ az_DOH_railway_organization = {
 	equipment_type = {
 		doh_civ_equipment
 		convoy
+		transport_plane_equipment
 		train_equipment
 		railway_gun_equipment
 		az_equipment_liechepao
@@ -20,15 +21,19 @@ az_DOH_railway_organization = {
 	}
 	tree_header_text = {
 		text = DOH_donghuangyunshuchuandui_title
-		x = 1
+		x = 0
 	}
 	tree_header_text = {
 		text = DOH_donghuangminyonggongye_title
-		x = 4
+		x = 2
+	}
+	tree_header_text = {
+		text = DOH_donghuangshengfei
+		x = 6
 	}
 	tree_header_text = {
 		text = DOH_donghuangzhongche_title
-		x = 7
+		x = 9
 	}
 	initial_trait = {
 		token = DOH_train_init
@@ -50,7 +55,7 @@ az_DOH_railway_organization = {
 	trait = {
 		token = DOH_wuzhuangyunshuchuan_trait
 		name = DOH_wuzhuangyunshuchuan_trait
-		position = { x = 1 y = 0 }
+		position = { x = 0 y = 0 }
 		icon = GFX_generic_mio_trait_icon_lg_attack
 		limit_to_equipment_type = {
 			convoy
@@ -87,11 +92,14 @@ az_DOH_railway_organization = {
 		token = DOH_minyonggongye_trait_1
 		name = DOH_minyonggongye_trait_1
 		icon = GFX_generic_mio_trait_icon_production_capacity
-		position = { x = 3 y = 0 }
+		position = { x = 1 y = 0 }
 		limit_to_equipment_type = {
 			doh_civ_equipment
 		}
 		available = {
+			DOH = {
+				has_completed_focus = DOH_junmingronghe_jishugaijing
+			}
 			has_mio_size > 25
 		}
 		production_bonus = {
@@ -103,11 +111,14 @@ az_DOH_railway_organization = {
 		token = DOH_minyonggongye_trait_2
 		name = DOH_minyonggongye_trait_2
 		icon = GFX_generic_mio_trait_icon_resources
-		position = { x = 5 y = 0 }
+		position = { x = 3 y = 0 }
 		limit_to_equipment_type = {
 			doh_civ_equipment
 		}
 		available = {
+			DOH = {
+				has_completed_focus = DOH_junmingronghe_jishugaijing
+			}
 			has_mio_size > 35
 		}
 		production_bonus = {
@@ -118,7 +129,7 @@ az_DOH_railway_organization = {
 		token = DOH_zhiyuanzhuangbei_trait
 		name = DOH_zhiyuanzhuangbei_trait
 		icon = GFX_generic_mio_trait_icon_build_cost_ic
-		position = { x = 4 y = 1 }
+		position = { x = 2 y = 1 }
 		limit_to_equipment_type = {
 			support_equipment
 		}
@@ -137,10 +148,272 @@ az_DOH_railway_organization = {
 			production_resource_need_factor = -1
 		}
 	}
+
+	trait = {
+		token = DOH_cic_plane_A_1
+		name = DOH_cic_plane_A
+		position = { x = 5 y = 0 }
+		icon = GFX_generic_mio_trait_icon_naval_range
+		limit_to_equipment_type = {
+			transport_plane_equipment
+		}
+		mutually_exclusive = {
+			DOH_cic_plane_B_1
+		}
+		available = {
+			DOH = {
+				has_completed_focus = DOH_tieyuan
+			}
+		}
+		equipment_bonus = {
+			air_range = 0.1
+		}
+	}
+	trait = {
+		token = DOH_cic_plane_B_1
+		name = DOH_cic_plane_B
+		position = { x = 7 y = 0 }
+		mutually_exclusive = {
+			DOH_cic_plane_A_2
+		}
+		icon = GFX_generic_mio_trait_icon_air_agility
+		limit_to_equipment_type = {
+			transport_plane_equipment
+		}
+		available = {
+			DOH = {
+				has_completed_focus = DOH_tieyuan
+			}
+		}
+		equipment_bonus = {
+			air_defence = 0.1
+		}
+	}
+
+	trait = {
+		token = DOH_cic_plane_A_2
+		name = DOH_cic_plane_A
+		position = { x = 5 y = 1 }
+		icon = GFX_generic_mio_trait_icon_naval_range
+		limit_to_equipment_type = {
+			transport_plane_equipment
+		}
+		parent = {
+			traits = {
+				DOH_cic_plane_A_1
+				DOH_cic_plane_B_1
+			}
+		}
+		mutually_exclusive = {
+			DOH_cic_plane_B_2
+		}
+		available = {
+			DOH = {
+				num_of_factories > 800
+			}
+			has_mio_size > 75
+		}
+		equipment_bonus = {
+			air_range = 0.1
+		}
+	}
+	trait = {
+		token = DOH_cic_plane_B_2
+		name = DOH_cic_plane_B
+		position = { x = 7 y = 1 }
+		mutually_exclusive = {
+			DOH_cic_plane_A_2
+		}
+		icon = GFX_generic_mio_trait_icon_air_agility
+		limit_to_equipment_type = {
+			transport_plane_equipment
+		}
+		parent = {
+			traits = {
+				DOH_cic_plane_A_1
+				DOH_cic_plane_B_1
+			}
+		}
+		available = {
+			DOH = {
+				num_of_factories > 800
+			}
+			has_mio_size > 75
+		}
+		equipment_bonus = {
+			air_defence = 0.1
+		}
+	}
+	
+	trait = {
+		token = DOH_cic_plane_A_3
+		name = DOH_cic_plane_A
+		position = { x = 5 y = 2 }
+		icon = GFX_generic_mio_trait_icon_naval_range
+		limit_to_equipment_type = {
+			transport_plane_equipment
+		}
+		parent = {
+			traits = {
+				DOH_cic_plane_A_2
+				DOH_cic_plane_B_2
+			}
+		}
+		mutually_exclusive = {
+			DOH_cic_plane_B_3
+		}
+		available = {
+			DOH = {
+				num_of_factories > 1000
+			}
+			has_mio_size > 105
+		}
+		equipment_bonus = {
+			air_range = 0.1
+		}
+	}
+	trait = {
+		token = DOH_cic_plane_B_3
+		name = DOH_cic_plane_B
+		position = { x = 7 y = 2 }
+		mutually_exclusive = {
+			DOH_cic_plane_A_3
+		}
+		icon = GFX_generic_mio_trait_icon_air_agility
+		limit_to_equipment_type = {
+			transport_plane_equipment
+		}
+		parent = {
+			traits = {
+				DOH_cic_plane_A_2
+				DOH_cic_plane_B_2
+			}
+		}
+		available = {
+			DOH = {
+				num_of_factories > 1000
+			}
+			has_mio_size > 105
+		}
+		equipment_bonus = {
+			air_defence = 0.1
+		}
+	}
+
+	trait = {
+		token = DOH_cic_plane_A_4
+		name = DOH_cic_plane_A
+		position = { x = 5 y = 3 }
+		icon = GFX_generic_mio_trait_icon_naval_range
+		limit_to_equipment_type = {
+			transport_plane_equipment
+		}
+		parent = {
+			traits = {
+				DOH_cic_plane_A_3
+				DOH_cic_plane_B_3
+			}
+		}
+		mutually_exclusive = {
+			DOH_cic_plane_B_4
+		}
+		available = {
+			DOH = {
+				num_of_factories > 1600
+			}
+			has_mio_size > 135
+		}
+		equipment_bonus = {
+			air_range = 0.1
+		}
+	}
+	trait = {
+		token = DOH_cic_plane_B_4
+		name = DOH_cic_plane_B
+		position = { x = 7 y = 3 }
+		mutually_exclusive = {
+			DOH_cic_plane_A_4
+		}
+		icon = GFX_generic_mio_trait_icon_air_agility
+		limit_to_equipment_type = {
+			transport_plane_equipment
+		}
+		parent = {
+			traits = {
+				DOH_cic_plane_A_3
+				DOH_cic_plane_B_3
+			}
+		}
+		available = {
+			DOH = {
+				num_of_factories > 1600
+			}
+			has_mio_size > 135
+		}
+		equipment_bonus = {
+			air_defence = 0.1
+		}
+	}
+	trait = {
+		token = DOH_cic_plane_A_5
+		name = DOH_cic_plane_A
+		position = { x = 5 y = 4 }
+		icon = GFX_generic_mio_trait_icon_naval_range
+		limit_to_equipment_type = {
+			transport_plane_equipment
+		}
+		parent = {
+			traits = {
+				DOH_cic_plane_A_4
+				DOH_cic_plane_B_4
+			}
+		}
+		mutually_exclusive = {
+			DOH_cic_plane_B_5
+		}
+		available = {
+			DOH = {
+				has_tech = jet_engines
+				has_completed_focus = DOH_guangronghemengxiangdeyuanzheng
+			}
+		}
+		equipment_bonus = {
+			air_range = 0.4
+		}
+	}
+
+	trait = {
+		token = DOH_cic_plane_B_5
+		name = DOH_cic_plane_B
+		position = { x = 7 y = 4 }
+		mutually_exclusive = {
+			DOH_cic_plane_A_5
+		}
+		icon = GFX_generic_mio_trait_icon_air_agility
+		limit_to_equipment_type = {
+			transport_plane_equipment
+		}
+		available = {
+			DOH = {
+				has_tech = jet_engines
+				has_completed_focus = DOH_guangronghemengxiangdeyuanzheng
+			}
+		}
+		parent = {
+			traits = {
+				DOH_cic_plane_A_4
+				DOH_cic_plane_B_4
+			}
+		}
+		equipment_bonus = {
+			air_defence = 0.4
+		}
+	}
+
 	trait = {
 		token = DOH_train_speed_1
 		name = DOH_train_speed_1
-		position = { x = 7 y = 0 }
+		position = { x = 9 y = 0 }
 		icon = GFX_generic_mio_trait_icon_efficiency_gain
 		limit_to_equipment_type = {
 			train_equipment
