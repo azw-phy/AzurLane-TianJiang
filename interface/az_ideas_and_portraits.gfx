@@ -89,6 +89,34 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_BYG_huayuanbaby.png"
 	}
 	spriteType = {
+		name = "idea_masaiqu"
+		texturefile = "gfx/interface/ideas/idea_masaiqu.png"
+	}
+	spriteType = {
+		name = "idea_huoli"
+		texturefile = "gfx/interface/ideas/idea_huoli.png"
+	}
+	spriteType = {
+		name = "idea_kuersike"
+		texturefile = "gfx/interface/ideas/idea_kuersike.png"
+	}
+	spriteType = {
+		name = "idea_fuluosiluofu"
+		texturefile = "gfx/interface/ideas/idea_fuluosiluofu.png"
+	}
+	spriteType = {
+		name = "idea_xiongmeng"
+		texturefile = "gfx/interface/ideas/idea_xiongmeng.png"
+	}
+	spriteType = {
+		name = "idea_boertawa"
+		texturefile = "gfx/interface/ideas/idea_boertawa.png"
+	}
+	spriteType = {
+		name = "idea_saiwasituoboer"
+		texturefile = "gfx/interface/ideas/idea_saiwasituoboer.png"
+	}
+	spriteType = {
 		name = "GFX_idea_beilaluosi"
 		texturefile = "gfx/interface/ideas/idea_beilaluosi.png"
 	}

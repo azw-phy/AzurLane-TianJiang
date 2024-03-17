@@ -210,7 +210,9 @@
 		x = 0
 		y = 1
 		cost = 7
-
+		available = {
+			not = { has_country_flag = BFL_zzpianzhidu_on }
+		}
 		ai_will_do = {
 			factor = 10
 		}
@@ -650,6 +652,7 @@
 			factor = 11
 		}
 		available = {
+			not = { has_country_flag = BFL_zzpianzhidu_on }
 			has_war = yes
 			has_war_support > 1.8
 		}
@@ -1143,6 +1146,7 @@
 		x = 0
 		y = 1
 		available = {
+			not = { has_country_flag = BFL_zzpianzhidu_on }
 			OR = { 
 			num_of_military_factories > 150
 			hidden_trigger = {
@@ -1365,6 +1369,7 @@
 		
 		cost = 8
 		available = {
+			not = { has_country_flag = BFL_zzpianzhidu_on }
 			or = {
 			has_idea = BFL_zhengzhihuajundui3
 			has_idea = BFL_zhengzhihuajundui2
@@ -1467,7 +1472,9 @@
 		y = 1
 		
 		cost = 7
-
+		available = {
+			not = { has_country_flag = BFL_zzpianzhidu_on }
+		}
 		ai_will_do = {
 			factor = 5
 		}
@@ -2304,6 +2311,7 @@
 		}
 		cost = 5
 		available = {
+			not = { has_country_flag = BFL_zzpianzhidu_on }
 			threat > 0.4
 		}
 		ai_will_do = {
@@ -2427,6 +2435,7 @@
 		}
 		cost = 5
 		available = {
+			not = { has_country_flag = BFL_zzpianzhidu_on }
 			threat > 0.3
 		}
 		ai_will_do = {
@@ -2864,6 +2873,7 @@
 			has_global_flag = MOD_azurlane_tianjiangjianniang
 		}
 		available = {
+			not = { has_country_flag = BFL_zzpianzhidu_on }
 			or = {
 			threat > 0.3
 			has_army_manpower = {
@@ -3544,6 +3554,7 @@
 		relative_position_id = BFL_cezhongduidizhiyuan
 		cost = 10
 		available = {
+			not = { has_country_flag = BFL_zzpianzhidu_on }
 			or = {
             is_ai = yes
 			has_air_experience > 499
@@ -3680,6 +3691,9 @@
 		allow_branch = {
 			has_global_flag = MOD_azurlane_tianjiangjianniang
 		}
+		available = {
+			not = { has_country_flag = BFL_zzpianzhidu_on }
+		}
 		ai_will_do = {
 			factor = 3
 		}
@@ -3764,6 +3778,7 @@
 			has_global_flag = MOD_azurlane_tianjiangjianniang
 		}
 		available = {
+			
 			not = { has_completed_focus = BFL_14 }
 			has_government = communism
 			not = { has_war_with = HUJ }
@@ -3822,6 +3837,9 @@
 		cost = 5
 		allow_branch = {
 			has_global_flag = MOD_azurlane_tianjiangjianniang
+		}
+		available = {
+			
 		}
 		ai_will_do = {
 			factor = 100
@@ -3887,6 +3905,9 @@
 		allow_branch = {
 			has_global_flag = MOD_azurlane_tianjiangjianniang
 		}
+		available = {
+			not = { has_country_flag = BFL_zzpianzhidu_on }
+		}
 		ai_will_do = {
 			factor = 100
 		}
@@ -3915,6 +3936,9 @@
 		cost = 5
 		allow_branch = {
 			has_global_flag = MOD_azurlane_tianjiangjianniang
+		}
+		available = {
+			not = { has_country_flag = BFL_zzpianzhidu_on }
 		}
 		ai_will_do = {
 			factor = 2
@@ -4056,6 +4080,7 @@
 		allow_branch = {
 			has_global_flag = MOD_azurlane_tianjiangjianniang
 		}
+		search_filters = {FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
 		ai_will_do = {
 			factor = 60
 		}
@@ -4193,7 +4218,20 @@
 		prerequisite = { focus = BFL_17 }
 		prerequisite = { focus = BFL_18 }
 		relative_position_id = BFL_17
+		continue_if_invalid = yes
 		cost = 6
+		search_filters = {FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
+		available = {
+			has_country_flag = BFL_zzpianzhidu_on 
+			custom_trigger_tooltip = {
+			tooltip = BFL_pianzhidudiyu25
+			check_variable = {
+			var = yuw_qstcgl
+			value = 25
+			compare = less_than_or_equals
+			}
+			}
+		}
 		allow_branch = {
 			has_global_flag = MOD_azurlane_tianjiangjianniang
 		}
@@ -4311,6 +4349,8 @@
 		prerequisite = { focus = BFL_23 }
 		relative_position_id = BFL_22
 		cost = 6
+		search_filters = {FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
+		continue_if_invalid = yes
 		allow_branch = {
 			has_global_flag = MOD_azurlane_tianjiangjianniang
 		}
@@ -4318,7 +4358,16 @@
 			set_country_flag = SOV_paranoia_do_not_cancel_focus_flag #This focus cannot be canceled
 		}
 		available = {
+			has_country_flag = BFL_zzpianzhidu_on 
 			not = { has_idea = BFL_dasaochudeyingxing }
+			custom_trigger_tooltip = {
+			tooltip = BFL_pianzhidudiyu25
+			check_variable = {
+			var = yuw_qstcgl
+			value = 25
+			compare = less_than_or_equals
+			}
+			}
 		}
 		bypass = {
 			has_country_flag = BFL_dqxchaoshi_2
@@ -4345,6 +4394,12 @@
 		allow_branch = {
 			has_global_flag = MOD_azurlane_tianjiangjianniang
 		}
+		available = {
+			has_country_leader = {
+			character = BFL_luoxiya
+			ruling_only = yes
+			}
+		}
 		ai_will_do = {
 			factor = 50
 		}
@@ -4370,6 +4425,12 @@
 		allow_branch = {
 			has_global_flag = MOD_azurlane_tianjiangjianniang
 		}
+		available = {
+			has_country_leader = {
+			character = BFL_luoxiya
+			ruling_only = yes
+			}
+		}
 		ai_will_do = {
 			factor = 50
 		}
@@ -4393,6 +4454,9 @@
 		allow_branch = {
 			has_global_flag = MOD_azurlane_tianjiangjianniang
 		}
+		available = {
+			not = { has_country_flag = BFL_zzpianzhidu_on }
+		}
 		ai_will_do = {
 			factor = 100
 		}
@@ -4415,11 +4479,22 @@
 		prerequisite = { focus = BFL_25 focus = BFL_26 }
 		relative_position_id = BFL_25
 		cost = 6
+		search_filters = {FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
+		continue_if_invalid = yes
 		allow_branch = {
 			has_global_flag = MOD_azurlane_tianjiangjianniang
 		}
 		available = {
+			has_country_flag = BFL_zzpianzhidu_on 
 			not = { has_idea = BFL_dasaochudeyingxing }
+			custom_trigger_tooltip = {
+			tooltip = BFL_pianzhidudiyu19
+			check_variable = {
+			var = yuw_qstcgl
+			value = 19
+			compare = less_than_or_equals
+			}
+			}
 		}
 		select_effect = {
 			set_country_flag = SOV_paranoia_do_not_cancel_focus_flag #This focus cannot be canceled
@@ -4443,6 +4518,9 @@
 		cost = 5
 		allow_branch = {
 			has_global_flag = MOD_azurlane_tianjiangjianniang
+		}
+		available = {
+			not = { has_country_flag = BFL_zzpianzhidu_on }
 		}
 		ai_will_do = {
 			factor = 100
@@ -4472,6 +4550,12 @@
 		allow_branch = {
 			has_global_flag = MOD_azurlane_tianjiangjianniang
 		}
+		available = {
+			has_country_leader = {
+			character = BFL_luoxiya
+			ruling_only = yes
+			}
+		}
 		ai_will_do = {
 			factor = 100
 		}
@@ -4493,6 +4577,12 @@
 		allow_branch = {
 			has_global_flag = MOD_azurlane_tianjiangjianniang
 		}
+		available = {
+			has_country_leader = {
+			character = BFL_luoxiya
+			ruling_only = yes
+			}
+		}
 		ai_will_do = {
 			factor = 100
 		}
@@ -4511,6 +4601,12 @@
 		cost = 5
 		allow_branch = {
 			has_global_flag = MOD_azurlane_tianjiangjianniang
+		}
+		available = {
+			has_country_leader = {
+			character = BFL_luoxiya
+			ruling_only = yes
+			}
 		}
 		ai_will_do = {
 			factor = 100

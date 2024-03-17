@@ -217,7 +217,7 @@ recruit_character = YUW_buqu
 recruit_character = YUW_fuxu
 recruit_character = YUW_rangbaer_kelongren
 recruit_character = YUW_fulandeer
-
+recruit_character = YUW_masaiqu
 
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }

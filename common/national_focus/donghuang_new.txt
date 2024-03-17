@@ -22,7 +22,7 @@ focus_tree = {
 		relative_position_id = DOH_zhengyankaishijie
         x = 0
         y = 1
-        cost = 7
+        cost = 3
 		prerequisite = {
 			focus = DOH_zhengyankaishijie
 		}
@@ -40,7 +40,7 @@ focus_tree = {
         icon = GFX_goal_generic_navy_doctrines_tactics
         x = -1
         y = 1
-        cost = 3
+        cost = 2
         relative_position_id = DOH_chenglikeyanzu
         ai_will_do = {
             factor = 5
@@ -71,7 +71,7 @@ focus_tree = {
         icon = GFX_goal_rhineland
         x = 1
         y = 1
-        cost = 3
+        cost = 2
         relative_position_id = DOH_chenglikeyanzu
         ai_will_do = {
             factor = 5
@@ -111,7 +111,7 @@ focus_tree = {
         icon = GFX_goal_continuous_repairments
         x = 3
         y = 1
-        cost = 3
+        cost = 2
         relative_position_id = DOH_chenglikeyanzu
         ai_will_do = {
             factor = 5
@@ -144,7 +144,7 @@ focus_tree = {
         icon = GFX_goal_generic_navy_carrier
         x = -3
         y = 1
-        cost = 3
+        cost = 2
 
         ai_will_do = {
             factor = 5
@@ -172,7 +172,7 @@ focus_tree = {
 	focus = {
 		id = DOH_chijiaoyisheng
 		icon = GFX_focus_prc_infiltration
-		cost = 5
+		cost = 2
 		relative_position_id = DOH_chenglikeyanzu
 		prerequisite = {
 			focus = DOH_chenglikeyanzu
@@ -202,7 +202,7 @@ focus_tree = {
 	focus = {
 		id = DOH_dashijiyoujizhan
 		icon = GFX_focus_SWI_establish_pro_helvetia
-		cost = 5
+		cost = 2
 		relative_position_id = DOH_chenglikeyanzu
 		prerequisite = {
 			focus = DOH_chenglikeyanzu
@@ -241,7 +241,7 @@ focus_tree = {
         icon = GFX_focus_xiaochicheng
         x = 0
         y = 2
-        cost = 5
+        cost = 3
 
         ai_will_do = {
             factor = 5
@@ -266,7 +266,7 @@ focus_tree = {
         icon = GFX_focus_nvzaoshen
         x = 0
         y = 2
-        cost = 5
+        cost = 3
         relative_position_id = DOH_xuexibaiying
         ai_will_do = {
             factor = 5
@@ -292,7 +292,7 @@ focus_tree = {
         icon = GFX_goal_generic_scientific_exchange
         x = 0
         y = 3
-        cost = 7
+        cost = 6
         prerequisite = { focus = DOH_xuexichongying }
         prerequisite = { focus = DOH_xuexihuangjia }
         prerequisite = { focus = DOH_xuexitiexue }
@@ -313,7 +313,7 @@ focus_tree = {
         icon = GFX_focus_generic_combined_arms
         x = 0
         y = 2
-        cost = 10
+        cost = 3
         prerequisite = { focus = DOH_dongfangdexiaoxuesheng }
         relative_position_id = DOH_dongfangdexiaoxuesheng
         ai_will_do = {
@@ -333,10 +333,10 @@ focus_tree = {
     }
     focus = {
         id = DOH_junshigaige
-        icon = GFX_focus_chi_army_reform
+        icon = GFX_focus_RAJ_lions_of_the_great_war
         x = -3
         y = 1
-        cost = 4
+        cost = 3
         relative_position_id = DOH_dongfangdexiaoxuesheng
         ai_will_do = {
             factor = 3
@@ -354,7 +354,7 @@ focus_tree = {
 		relative_position_id = DOH_dongfangdexiaoxuesheng
 		x = 3
 		y = 1
-		cost = 4
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
@@ -439,7 +439,7 @@ focus_tree = {
 		relative_position_id = DOH_xianjingjishuyanfa
 		x = 0
 		y = 1
-		cost = 7
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
@@ -552,7 +552,7 @@ focus_tree = {
         icon = GFX_focus_usa_tank_destroyer_doctrine
         x = -1
         y = 1
-        cost = 4
+        cost = 3
         prerequisite = { focus = DOH_junshigaige }
         relative_position_id = DOH_junshigaige
         ai_will_do = {
@@ -587,7 +587,7 @@ focus_tree = {
         icon = GFX_focus_lujunsilingtiba
         x = 0
         y = 1
-        cost = 4
+        cost = 3
         prerequisite = { focus = DOH_xuanxuezhaohuanshu }
         relative_position_id = DOH_xuanxuezhaohuanshu
         ai_will_do = {
@@ -719,10 +719,10 @@ focus_tree = {
     }
     focus = {
         id = DOH_jingbingqiangjiang
-        icon = GFX_focus_generic_full_employment
+        icon = GFX_goal_generic_axis_build_infantry
         x = 0
         y = 1
-        cost = 5
+        cost = 3
         prerequisite = { focus = DOH_dulizizhudejungong }
         relative_position_id = DOH_dulizizhudejungong
         ai_will_do = {
@@ -761,7 +761,7 @@ focus_tree = {
         y = 1
         relative_position_id = DOH_lujunxinlilun
         prerequisite = { focus = DOH_lujunxinlilun }
-        cost = 5
+        cost = 3
 
         ai_will_do = {
             factor = 3
@@ -783,7 +783,7 @@ focus_tree = {
 	focus = {
 		id = DOH_special_force
 		icon = GFX_goal_generic_special_forces
-		cost = 4
+		cost = 3
 		x = 0
 		y = 1
 		relative_position_id = DOH_liluntupo
@@ -887,7 +887,7 @@ focus_tree = {
         icon = GFX_goal_generic_navy_battleship
         x = 1
         y = 1
-        cost = 5
+        cost = 3
         prerequisite = { focus = DOH_haijunjianshe }
         relative_position_id = DOH_haijunjianshe
         ai_will_do = {
@@ -987,7 +987,7 @@ focus_tree = {
         icon = GFX_focus_generic_multi_role_aircraft
         x = -1
         y = 1
-        cost = 5
+        cost = 3
         prerequisite = { focus = DOH_tieyuan }
         relative_position_id = DOH_tieyuan
         ai_will_do = {
@@ -1058,7 +1058,7 @@ focus_tree = {
 	focus = {
 		id = DOH_lishidejingcheng
 		icon = GFX_goal_generic_national_unity
-		cost = 10
+		cost = 3
 		relative_position_id = DOH_zhengyankaishijie
 		x = -3
 		y = 1
@@ -1072,7 +1072,7 @@ focus_tree = {
 	focus = {
 		id = DOH_gerendefendou
 		icon = GFX_goal_generic_demand_territory
-		cost = 10
+		cost = 3
 		relative_position_id = DOH_zhengyankaishijie
 		x = 3
 		y = 1
@@ -1102,7 +1102,7 @@ focus_tree = {
         prerequisite = { focus = DOH_zhengyankaishijie }
         
     
-        cost = 7
+        cost = 4
 
         ai_will_do = {
             factor = 0
@@ -1151,7 +1151,7 @@ focus_tree = {
         prerequisite = { focus = DOH_shiyichangji }
         relative_position_id = DOH_shiyichangji
         mutually_exclusive = { focus = DOH_guguozhihui }
-        cost = 7
+        cost = 2
 
         ai_will_do = {
             factor = 10
@@ -1170,7 +1170,7 @@ focus_tree = {
         #prerequisite = { focus = DOH_zhengyankaishijie }
         relative_position_id = DOH_xuexizhilv
         mutually_exclusive = { focus = DOH_yuhuangjiajiaoliu }
-        cost = 7
+        cost = 5
 
         ai_will_do = {
             factor = 10
@@ -1194,7 +1194,7 @@ focus_tree = {
         y = 2
         prerequisite = { focus = DOH_yubeilianjiaoliu }
         relative_position_id = DOH_yubeilianjiaoliu
-        cost = 7
+        cost = 6
 
         ai_will_do = {
             factor = 10
@@ -1321,7 +1321,7 @@ focus_tree = {
 
         prerequisite = { focus = DOH_yubeilianjiaoliu }
         relative_position_id = DOH_yubeilianjiaoliu
-        cost = 10
+        cost = 6
 
         ai_will_do = {
             factor = 10
@@ -1337,12 +1337,12 @@ focus_tree = {
     }
 	focus = {
 		id = DOH_quanfangmianhezuo
-		icon = GFX_focus_SWE_refuge_for_revolutionaries
-		x = -1
+		icon = GFX_goal_generic_improve_relations
+		x = -2
 		y = 1
 		prerequisite = { focus = DOH_xindonghuang }
 		relative_position_id = DOH_xindonghuang
-		cost = 7
+		cost = 3
 		available = {
 			OR = {
 				has_idea = DOH_dfgg4
@@ -1374,11 +1374,11 @@ focus_tree = {
 	focus = {
 		id = DOH_xingjiandaxue
 		icon = GFX_focus_NOR_moscows_education_centers
-		x = -1
+		x = 0
 		y = 1
 		prerequisite = { focus = DOH_quanfangmianhezuo }
 		relative_position_id = DOH_quanfangmianhezuo
-		cost = 7
+		cost = 3
 
 		ai_will_do = {
 			factor = 10
@@ -1407,7 +1407,7 @@ focus_tree = {
         prerequisite = { focus = DOH_shiyichangji }
         relative_position_id = DOH_shiyichangji
         mutually_exclusive = { focus = DOH_xuexizhilv }
-        cost = 7
+        cost = 2
 
         ai_will_do = {
             factor = 0
@@ -1433,7 +1433,8 @@ focus_tree = {
             }
         }
 
-        completion_reward = {
+        completion_reward = {    
+            DOH_dongfangguguo_dengji = yes
             add_political_power = 200
             
         }
@@ -1446,7 +1447,7 @@ focus_tree = {
         prerequisite = { focus = DOH_xuexizhilv }
         relative_position_id = DOH_xuexizhilv
         mutually_exclusive = { focus = DOH_yubeilianjiaoliu }
-        cost = 7
+        cost = 5
 
         ai_will_do = {
             factor = 10
@@ -1470,7 +1471,7 @@ focus_tree = {
         y = 1
         prerequisite = { focus = DOH_yuhuangjiajiaoliu }
         relative_position_id = DOH_yuhuangjiajiaoliu
-        cost = 10
+        cost = 6
 
         ai_will_do = {
             factor = 10
@@ -1492,7 +1493,7 @@ focus_tree = {
         y = 2
         prerequisite = { focus = DOH_yuhuangjiajiaoliu }
         relative_position_id = DOH_yuhuangjiajiaoliu
-        cost = 7
+        cost = 6
 
         ai_will_do = {
             factor = 10
@@ -1508,7 +1509,7 @@ focus_tree = {
         icon = GFX_goal_generic_demand_territory
         x = 0
         y = 1
-        cost = 5
+        cost = 3
         relative_position_id = DOH_guguozhihui
         prerequisite = { focus = DOH_guguozhihui }
 
@@ -1541,7 +1542,7 @@ focus_tree = {
         icon = GFX_focus_generic_little_entente
         x = -2
         y = 1
-        cost = 5
+        cost = 4
         relative_position_id = DOH_kuodayixianquanli
         prerequisite = { focus = DOH_kuodayixianquanli }
 
@@ -1564,7 +1565,7 @@ focus_tree = {
         icon = GFX_focus_generic_little_entente
         x = 2
         y = 1
-        cost = 5
+        cost = 4
         relative_position_id = DOH_kuodayixianquanli
         prerequisite = { focus = DOH_kuodayixianquanli }
 
@@ -1585,7 +1586,7 @@ focus_tree = {
         icon = GFX_goal_generic_scientific_exchange
         x = 0
         y = 1
-        cost = 5
+        cost = 7
         relative_position_id = DOH_kuodayixianquanli
         prerequisite = { focus = DOH_kuodayixianquanli }
 
@@ -1621,6 +1622,7 @@ focus_tree = {
         }
 
         completion_reward = {    
+            DOH_dongfangguguo_dengji = yes
             add_ideas = DOH_xdh
         }
     }
@@ -1663,7 +1665,7 @@ focus_tree = {
 	focus = {
 		id = DOH_nvhuangdexunyou
 		icon = GFX_focus_yixian
-		x = 1
+		x = 2
 		y = 1
 		prerequisite = { focus = DOH_yixianwansui }
 		relative_position_id = DOH_yixianwansui
@@ -1696,7 +1698,7 @@ focus_tree = {
 	focus = {
 		id = DOH_zhongxijiehe
 		icon = GFX_focus_generic_monarchy_2
-		x = 1
+		x = 0
 		y = 1
 		prerequisite = { focus = DOH_nvhuangdexunyou }
 		relative_position_id = DOH_nvhuangdexunyou
@@ -1823,7 +1825,6 @@ focus_tree = {
 			set_rule = {
 				can_create_factions = yes
 			}
-            DOH_dongfangguguo_dengji = yes
 			add_political_power = 300
 			add_stability = -1
 			add_dynamic_modifier = {
@@ -1834,7 +1835,7 @@ focus_tree = {
     focus = {
         id = DOH_tongyizhanxian
         icon = GFX_focus_generic_improve_the_administration
-        cost = 5
+        cost = 7
         prerequisite = { focus = DOH_dongfangliming }
         relative_position_id = DOH_dongfangliming
         x = 0
@@ -1946,7 +1947,7 @@ focus_tree = {
     focus = {
         id = DOH_heqinghaiyan
         icon = GFX_goal_generic_national_unity
-        cost = 5
+        cost = 7
         prerequisite = { focus = DOH_heqishengcai }
         relative_position_id = DOH_heqishengcai
         x = 0
@@ -2024,7 +2025,7 @@ focus_tree = {
         y = 1
         prerequisite = { focus = DOH_dongfangliming }
         relative_position_id = DOH_dongfangliming
-        cost = 5
+        cost = 7
         ai_will_do = {
             factor = 10
         }
@@ -2078,7 +2079,7 @@ focus_tree = {
         y = 2
         prerequisite = { focus = DOH_shichanghuanjishu focus = DOH_ziligengsheng }
         relative_position_id = DOH_jinjigaige
-        cost = 7
+        cost = 10
         ai_will_do = {
             factor = 10
         }
@@ -2110,7 +2111,7 @@ focus_tree = {
 	focus = {
         id = DOH_jiansheguojia
         icon = GFX_focus_generic_hydroelectric_energy
-        cost = 5
+        cost = 7
         prerequisite = { focus = DOH_xiandaihuazhimeng }
         relative_position_id = DOH_xiandaihuazhimeng
         x = 1
@@ -2254,7 +2255,6 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			add_ideas = DOH_gongtongfuyu_economy
-			DOH_neibufenqi_jianqin_few_effect = yes
 		}
 	}
 	focus = {
@@ -2716,13 +2716,11 @@ focus_tree = {
 	focus = {
 		id = DOH_shenrujinxiu
 		icon = GFX_focus_generic_infiltration
-		x = 0
-		y = 2
+		x = 1
+		y = 1
 		prerequisite = {
-			focus = DOH_donghuangyikedaxue
-		}
-		prerequisite = {
-			focus = DOH_kuangyedaxue
+			focus = DOH_gaodengxuefu
+			focus = DOH_donghuangdeshidai
 		}
 		relative_position_id = DOH_gaodengxuefu
 		cost = 3
@@ -2760,15 +2758,10 @@ focus_tree = {
 	focus = {
 		id = DOH_minzhikaiqi
 		icon = GFX_focus_generic_military_academy
-		x = -3
+		x = 0
 		y = 2
-		prerequisite = {
-			focus = DOH_gaodengxuefu
-		}
-		prerequisite = {
-			focus = DOH_gongtongfuyu
-			focus = DOH_xianchuyiqie
-		}
+		prerequisite = { focus = DOH_donghuangyikedaxue }
+		prerequisite = { focus = DOH_shenrujinxiu }
 		relative_position_id = DOH_gaodengxuefu
 		cost = 2
 		available = {
@@ -2779,8 +2772,7 @@ focus_tree = {
 		}
 
 		
-		completion_reward = {
-			DOH_neibufenqi_jianqin_few_effect = yes
+		completion_reward = {	
 			swap_ideas = {
 				remove_idea = DOH_zzyf
 				add_idea = DOH_mzkq
@@ -2789,7 +2781,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DOH_donghuangyikedaxue
-		icon = GFX_focus_generic_field_hostpital
+		icon = GFX_focus_generic_population_growth
 		cost = 3
 		x = -1
 		y = 1
@@ -2829,11 +2821,10 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = DOH_gaodengxuefu
-			focus = DOH_donghuangdeshidai
 		}
 		relative_position_id = DOH_gaodengxuefu
-		x = 1
-		y = 1
+		x = -3
+		y = 2
 		completion_reward = {
 			add_resource = {
 				type = chromium
@@ -2867,7 +2858,7 @@ focus_tree = {
 		icon = GFX_goal_generic_scientific_exchange
 		cost = 5
 		x = 0
-		y = 4
+		y = 2
 		prerequisite = {
 			focus = DOH_kuangyedaxue
 		}
@@ -2880,7 +2871,7 @@ focus_tree = {
 		available = {
 			always = no
 		}
-		relative_position_id = DOH_gaodengxuefu
+		relative_position_id = DOH_minzhikaiqi
 		completion_reward = {
 			custom_effect_tooltip = "（还没做完）"			
 		}
@@ -4080,7 +4071,7 @@ focus_tree = {
 		prerequisite = { focus = DOH_jiansheguojia }
 		relative_position_id = DOH_nanhaiziyuankaifa
 		
-		cost = 4
+		cost = 3
 
 		ai_will_do = {
 			factor = 10
@@ -4263,7 +4254,7 @@ focus_tree = {
 		prerequisite = { focus = DOH_zaochuanjishugexin }
 			relative_position_id = DOH_huanxingjulong
 		
-		cost = 4
+		cost = 3
 
 		ai_will_do = {
 			factor = 5

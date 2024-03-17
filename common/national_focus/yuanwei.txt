@@ -19,7 +19,7 @@ focus_tree = {
 		icon = GFX_focus_luoxiya2
 		x = -10
 		y = 0
-		cost = 5
+		cost = 1
 		mutually_exclusive = { focus = YUW_zhengfugaige focus = YUW_zhidugeming focus = YUW_jiuguoxingdong focus = YUW_tiqianxuanju focus = YUW_shenshengshiming }
 		relative_position_id = YUW_zhengfugaige
 		available = {

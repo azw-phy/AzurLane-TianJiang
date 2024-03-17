@@ -68,7 +68,7 @@ TIX_attackyuw_state = {
 	enable = { 
 		always = yes
 	}
-	icon = GFX_modifiers_BFL_invaders_must_die
+	icon = GFX_modifiers_generic_military_plans
 	army_attack_factor = 0.3
 	army_defence_factor = 0.3
 }
@@ -77,7 +77,7 @@ TIX_attackbfl_state = {
 	enable = { 
 		always = yes
 	}
-	icon = GFX_modifiers_BFL_invaders_must_die
+	icon = GFX_modifiers_generic_military_plans
 	army_attack_factor = 0.4
 	army_defence_factor = 0.4
 	breakthrough_factor = 0.5

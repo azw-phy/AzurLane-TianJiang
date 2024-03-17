@@ -175,8 +175,47 @@ leader_traits = {
 		breakthrough_factor = 0.15
 		attrition = -0.1
 	}
-
-
+	#变革的指导论
+	trait_psh_biangedezhidaolun = { 
+		random = no
+		experience_gain_army = 0.3
+		army_core_attack_factor = 0.1
+		army_core_defence_factor = 0.1
+		army_org_factor = 0.05
+		army_morale_factor = 0.1
+	}
+	#雪原孤狼
+	trait_psh_xueyuangulang = { 
+		random = no
+		recon_factor = 0.25
+		org_loss_when_moving = -0.1
+		army_attack_factor = 0.05
+		army_armor_attack_factor = 0.15
+	}
+	#寒冬将至
+	trait_psh_handongjiangzhi= { 
+		random = no
+		max_planning = 0.1
+		experience_loss_factor = -0.15
+		army_core_defence_factor = 0.2
+	}
+	#如沐暖阳
+	trait_psh_rumunuanyang= { 
+		random = no
+		stability_factor = 0.1
+		stability_weekly = 0.005
+		political_power_cost = -0.35
+		communism_drift = 0.25
+		drift_defence_factor = 0.5
+	}
+	#奏响自由赞歌
+	trait_psh_zanxiangziyouzange= { 
+		random = no
+		experience_loss_factor = 0.15
+		army_core_attack_factor = 0.2
+		army_core_defence_factor = 0.2
+		resistance_target_on_our_occupied_states = 0.35
+	}
 
 
 

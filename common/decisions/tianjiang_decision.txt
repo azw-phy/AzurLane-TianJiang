@@ -1,4 +1,114 @@
 BFL_fanduipaiyinmou = {
+	BFL_pianzhidu_aizuobi = {
+		icon = SOV_the_military_conspiracy
+		fire_only_once = yes
+		priority = 0
+		visible = {
+			has_country_flag = BFL_zzpianzhidu_on
+			is_ai = yes
+		}
+		available = {
+			has_country_flag = BFL_zzpianzhidu_on
+			is_ai = yes
+		}
+		ai_will_do = {
+			factor = 10000
+		}
+		complete_effect = {
+			custom_effect_tooltip = BFL_zzpianzhidu_fu10
+			add_to_variable = {
+			var = az_pianzhidu
+			value = -999
+			}
+		}
+	}
+	BFL_qingsaozhengzhibumen = {
+		icon = SOV_the_military_conspiracy
+		priority = 500
+		cost = 150
+		visible = {
+			has_country_flag = BFL_zzpianzhidu_on
+		}
+		available = {
+			has_country_flag = BFL_zzpianzhidu_on
+		}
+		days_remove = 90
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_stability = -0.15
+		}
+		remove_effect = {
+			custom_effect_tooltip = BFL_zzpianzhidu_fu10
+			add_to_variable = {
+			var = az_pianzhidu
+			value = -8
+			}
+			add_political_power = 50
+			add_stability = 0.05
+			add_popularity = { ideology = democratic popularity = -0.01 }
+			add_popularity = { ideology = fascism popularity = -0.01 }
+			add_popularity = { ideology = neutrality popularity = -0.01 }
+		}
+	}
+	BFL_qingsaojundui = {
+		icon = SOV_the_military_conspiracy
+		priority = 499
+		cost = 75
+		visible = {
+			has_country_flag = BFL_zzpianzhidu_on
+		}
+		available = {
+			has_country_flag = BFL_zzpianzhidu_on
+		}
+		days_remove = 90
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_war_support = -0.1
+		}
+		remove_effect = {
+			custom_effect_tooltip = BFL_zzpianzhidu_fu10
+			add_to_variable = {
+			var = az_pianzhidu
+			value = -8
+			}
+			add_political_power = 25
+			add_stability = 0.05
+			army_experience = -25
+			air_experience = -25
+			navy_experience = -25
+		}
+	}
+	BFL_qingsaoyanjiubumen = {
+		icon = SOV_the_military_conspiracy
+		priority = 497
+		cost = 100
+		visible = {
+			has_country_flag = BFL_zzpianzhidu_on
+		}
+		available = {
+			has_country_flag = BFL_zzpianzhidu_on
+		}
+		days_remove = 90
+		ai_will_do = {
+			factor = 0
+		}
+		modifier = {
+			research_speed_factor = -0.025
+		}
+		remove_effect = {
+			custom_effect_tooltip = BFL_zzpianzhidu_fu10
+			add_to_variable = {
+			var = az_pianzhidu
+			value = -8
+			}
+			add_political_power = 25
+			add_stability = 0.05
+		}
+	}
 	BFL_yinmoujituandexingdong = {
 		icon = SOV_the_workers_dictatorship
 		priority = 100
@@ -15,6 +125,7 @@ BFL_fanduipaiyinmou = {
 		days_mission_timeout = 180
 		timeout_effect = {
 			custom_effect_tooltip = BFL_yinmoujituandexingdong_tt
+			activate_mission = BFL_yinmoujituandexingdong
 			hidden_effect = {
 			add_political_power = -50
 			add_popularity = { ideology = democratic popularity = 0.03 }
@@ -38,6 +149,11 @@ BFL_fanduipaiyinmou = {
 		days_mission_timeout = 365
 		timeout_effect = {
 			custom_effect_tooltip = BFL_diyicidaqingxi_time_tt
+			custom_effect_tooltip = BFL_zzpianzhidu_fu10
+			add_to_variable = {
+			var = az_pianzhidu
+			value = -30
+			}
 			activate_mission = BFL_diercidaqingxi_time
 			set_country_flag = BFL_dqxchaoshi_1
 			add_political_power = -500
@@ -63,6 +179,11 @@ BFL_fanduipaiyinmou = {
 		days_mission_timeout = 365
 		timeout_effect = {
 			custom_effect_tooltip = BFL_diercidaqingxi_time_tt
+			custom_effect_tooltip = BFL_zzpianzhidu_fu10
+			add_to_variable = {
+			var = az_pianzhidu
+			value = -30
+			}
 			set_country_flag = BFL_dqxchaoshi_2
 			add_political_power = -500
 			add_war_support = -0.5
@@ -70,7 +191,65 @@ BFL_fanduipaiyinmou = {
 			add_popularity = { ideology = communism popularity = 0.3 }
 		}
 	}
-
+	BFL_xiaoqingsao_time = {
+		icon = SOV_the_military_conspiracy
+		priority = 10
+		is_good = no
+		activation	= {
+			always = no
+		}
+		complete_effect = {
+			add_stability = 0.1
+			add_war_support = 0.1
+		}
+		available = {
+			has_completed_focus = BFL_28
+		}
+		days_mission_timeout = 120
+		timeout_effect = {
+			custom_effect_tooltip = BFL_zzpianzhidu_fu10
+			add_to_variable = {
+			var = az_pianzhidu
+			value = -2
+			}
+			add_political_power = -25
+			add_war_support = -0.035
+			add_stability = -0.035
+			add_popularity = { ideology = communism popularity = 0.025 }
+			activate_mission = BFL_xiaoqingsao_time
+		}
+	}
+	BFL_pianzhiduzengzhang = {
+		icon = SOV_the_stalin_constitution
+		priority = 0
+		is_good = no
+		activation	= {
+			always = no
+		}
+		complete_effect = {
+			custom_effect_tooltip = BFL_zzpianzhidu_yichu
+			add_to_variable = {
+			var = az_pianzhidu
+			value = -999
+			}
+		}
+		available = {
+			has_completed_focus = BFL_28
+		}
+		days_mission_timeout = 60
+		timeout_effect = {
+			custom_effect_tooltip = BFL_zzpianzhidu_10
+			add_to_variable = {
+			var = az_pianzhidu
+			value = 5
+			}
+			#add_political_power = -10
+			#add_war_support = -0.025
+			#add_stability = -0.025
+			#add_popularity = { ideology = communism popularity = 0.02 }
+			activate_mission = BFL_pianzhiduzengzhang
+		}
+	}
 
 }
 
@@ -138,6 +317,7 @@ BFL_neiwu = {
 	BFL_qdahongjun = {
 		icon = AL_tank_BFL
 		available = {
+			not = { has_country_flag = BFL_zzpianzhidu_on }
 			has_country_flag = bflgaige2
 			has_completed_focus = BFL_zongshenzuozhan
 			or = {
@@ -158,7 +338,7 @@ BFL_neiwu = {
 			factor = 1
 			modifier = {
 			or = {
-			date > 1940.12.1
+			date > 1940.10.15
 			TIX = { is_ai = no }
 			YUW = { is_ai = no }
 			}
@@ -240,6 +420,7 @@ BFL_neiwu = {
 	BFL_gyexiandaihua3 = {
 		icon = AL_gongye_BFL
 		available = {
+			not = { has_country_flag = BFL_zzpianzhidu_on }
 			not = { has_idea = BFL_swjq }
 			or = {
 			is_ai = yes
@@ -993,6 +1174,7 @@ TIX_neiwu = {
 	TIX_lbxjhua = {
 		icon = hongsegantan
 		available = {
+			has_completed_focus = TIX_chenglihansijituan
 			custom_trigger_tooltip = {
 			tooltip = hansizhaiquan_rengzaiyunzuo
 			or = {
@@ -1095,7 +1277,7 @@ TIX_neiwu = {
 			is_ai = no
 		}
 		available = {
-			has_completed_focus = TIX_chongjiangongye
+			has_completed_focus = TIX_tiexuedehansi
 			or = {
 			has_completed_focus = TIX_tiexuededaolu
 			has_completed_focus = TIX_hexiexintiexue
@@ -1164,6 +1346,7 @@ TIX_neiwu = {
 		icon = generic_merge_plant_tank
 		available = {
 			has_completed_focus = TIX_huanxingfeitelie
+			has_completed_focus = TIX_chenglihansijituan
 			has_idea = TIX_hszq
 		}
 		ai_will_do = {
@@ -2144,7 +2327,7 @@ YUW_fangong = {
 		ai_will_do = {
 			factor = 0
 			modifier = {
-			date > 1942.3.1
+			date > 1942.6.1
 			add = 100
 			}
 		}
@@ -2199,7 +2382,7 @@ YUW_fangong = {
 		ai_will_do = {
 			factor = 0
 			modifier = {
-			date > 1942.2.1
+			date > 1942.3.1
 			add = 100
 			}
 		}
@@ -2305,6 +2488,12 @@ YUW_fangong = {
 			YUW_buqu = {
 				set_nationality = YUW
 			}
+			YUW_fulandeer = {
+				set_nationality = YUW
+			}
+			YUW_masaiqu = {
+				set_nationality = YUW
+			}
 			}
 			SAD = {
 			YUW_rangbaer = {
@@ -2338,6 +2527,12 @@ YUW_fangong = {
 				set_nationality = YUW
 			}
 			YUW_buqu = {
+				set_nationality = YUW
+			}
+			YUW_fulandeer = {
+				set_nationality = YUW
+			}
+			YUW_masaiqu = {
 				set_nationality = YUW
 			}
 			}

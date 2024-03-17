@@ -930,11 +930,59 @@ characters={
 				}
 			}
 			traits = { zhanlie_army }
+			skill = 5
+			attack_skill = 6
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	YUW_masaiqu = {
+		name = YUW_masaiqu
+		portraits={
+			army = {
+				large="gfx/leaders/YUW/masaiqu.png"
+				small="gfx/interface/ideas/idea_masaiqu.png"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = masaiqu
+			allowed = {
+				
+			}
+			available = {
+				or = {
+				tag = YUW
+				tag = WEX
+				has_war_with = TIX
+				}
+			}
+			on_add = {
+				
+			}
+			traits = {
+				trait_psh_zanxiangziyouzange 
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		corps_commander = {
+			visible = { 
+				NOT = { has_character_flag = xiujia_doing } 
+				OR = {
+					NOT = { tag = TAN }
+					is_ai = no
+				}
+			}
+			traits = { trait_cautious infantry_officer organizer xunyang_army  }
 			skill = 4
 			attack_skill = 4
 			defense_skill = 3
-			planning_skill = 4
-			logistics_skill = 3
+			planning_skill = 6
+			logistics_skill = 2
 		}
 	}
 }

@@ -17,7 +17,7 @@ guiTypes = {
 				maxHeight = 60
 				format = center
 				fixedsize=yes
-				pdx_tooltip = doh_dianshu_warning
+				pdx_tooltip = "az_doh_touzi_text_tt"
 			}
 		}
 		containerWindowType = {

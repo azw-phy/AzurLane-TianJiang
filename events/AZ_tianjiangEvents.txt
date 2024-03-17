@@ -2956,7 +2956,7 @@ country_event = {
 			autonomy_state = autonomy_integrated_puppet
 		}
 		}
-		set_province_name = { id = 6332 name = "萨悠丝格勒" }
+		set_province_name = { id = 6332 name = "萨悠斯格勒" }
 		BYG = {
 		set_autonomy = {
 			target = GER
@@ -8904,13 +8904,21 @@ country_event = {
 
 country_event = {
 	id = az_tianjiang.243
-	title = "萨悠丝退居二线"
+	title = "萨悠斯退居二线"
 	desc = az_tianjiang.243.d
 	picture = GFX_aze_txluoen2
 	is_triggered_only = yes
 	option = {
 		name = "恭喜罗西亚同志！"
 		activate_mission = BFL_yinmoujituandexingdong
+		set_country_flag = BFL_zzpianzhidu_on
+		custom_effect_tooltip = BFL_zzpianzhidu_on_tip
+		add_to_variable = {
+			var = az_pianzhidu
+			value = 10
+		}
+		custom_effect_tooltip = BFL_zzpianzhidu_10
+		activate_mission = BFL_pianzhiduzengzhang
 		BFL_luoxiya = {
 			add_country_leader_role = {
 				country_leader = {
@@ -8922,6 +8930,9 @@ country_event = {
 				}
 				promote_leader = yes
 				}
+		}
+		hidden_effect = {
+		country_event = { id = az_tianjiang.248 days = 60 }
 		}
 		ai_chance = {
 			factor = 100
@@ -8938,6 +8949,12 @@ country_event = {
 	option = {
 		name = "新名单，新名单"
 		activate_mission = BFL_diyicidaqingxi_time
+		activate_mission = BFL_xiaoqingsao_time
+		add_to_variable = {
+			var = az_pianzhidu
+			value = -10
+		}
+		custom_effect_tooltip = BFL_zzpianzhidu_fu10
 		ai_chance = {
 			factor = 100
 		}
@@ -8961,6 +8978,11 @@ country_event = {
 			add =  cm
 		}
 		add_timed_idea = { idea = BFL_dasaochudeyingxing days = 180 }
+		add_to_variable = {
+			var = az_pianzhidu
+			value = -20
+		}
+		custom_effect_tooltip = BFL_zzpianzhidu_fu10
 		ai_chance = {
 			factor = 100
 		}
@@ -8984,6 +9006,11 @@ country_event = {
 		add_to_variable = { BFL_the_politburo_mobilization_speed = 0.25 }
 		custom_effect_tooltip = BFL_246_tt
 		add_timed_idea = { idea = BFL_dasaochudeyingxing days = 180 }
+		add_to_variable = {
+			var = az_pianzhidu
+			value = -20
+		}
+		custom_effect_tooltip = BFL_zzpianzhidu_fu10
 		ai_chance = {
 			factor = 100
 		}
@@ -8993,15 +9020,130 @@ country_event = {
 country_event = {
 	id = az_tianjiang.247
 	title = "第三次北联大扫除"
-	desc = "我们成功逮捕了阴谋集团的核心舰娘：阿尔汉格尔斯克，听说她还有一位同伙，但萨悠丝却示意罗西亚及时收手。目前阿尔汉格尔斯克已被送去进行思想改造。"
+	desc = "我们成功逮捕了阴谋集团的核心舰娘：阿尔汉格尔斯克，听说她还有一位同伙，但萨悠斯却示意罗西亚及时收手。目前阿尔汉格尔斯克已被送去进行思想改造。"
 	picture = GFX_aze_txluoen2
 	is_triggered_only = yes
 	option = {
 		name = "总之，我们不用再担心会被背后捅刀了"
+		clr_country_flag = BFL_zzpianzhidu_on 
 		add_political_power = 300
 		add_stability = 0.3
 		add_war_support = 0.3
 		add_timed_idea = { idea = BFL_dasaochudeyingxing days = 180 }
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = az_tianjiang.248
+	title = "作风问题"
+	desc = "萨悠斯自从退居二线后穿着就愈发随性————她穿的越来越露了！作为北联舰娘中的老大姐，萨悠斯甚至毫无自知。这种小资穿搭风格严重影响了我们北联舰娘的风气，罗西亚有理由怀疑大家对团结主义的信仰正在动摇！"
+	picture = GFX_aze_txluoen2
+	is_triggered_only = yes
+	option = {
+		name = "萨悠斯同志，你为什么会变成这样？"
+		add_stability = 0.1
+		custom_effect_tooltip = BFL_zzpianzhidu_10
+		add_to_variable = {
+			var = az_pianzhidu
+			value = 10
+		}
+		hidden_effect = {
+		country_event = { id = az_tianjiang.249 days = 90 }
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = az_tianjiang.249
+	title = "怀疑一切！"
+	desc = "任何人都有可能是反动分子，不能相信任何人！罗西亚要求全国进行反间谍教育，并把上述标语放置在显眼处，全国蛮啾都必须随时警戒。"
+	picture = GFX_aze_txluoen2
+	is_triggered_only = yes
+	option = {
+		name = "特别时期，特别手段"
+		add_stability = 0.1
+		custom_effect_tooltip = BFL_zzpianzhidu_10
+		add_to_variable = {
+			var = az_pianzhidu
+			value = 10
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = az_tianjiang.250
+	title = "突发清扫行动！"
+	desc = "罗西亚认为反动分子无处不在，她的精神始终处在十分紧绷的状态，一场突发清扫行动发生了。"
+	picture = GFX_aze_txluoen2
+	trigger = {
+		check_variable = {
+			var = az_pianzhidu
+			value = 24
+			compare = greater_than_or_equals
+		}
+		tag = BFL
+		has_government = communism
+		is_ai = no
+		not = { has_country_flag = BFL_tufaqingsao_on }
+		has_country_flag = BFL_zzpianzhidu_on
+	}
+	option = {
+		name = "又有一批黄鸡要遭殃了"
+		add_political_power = -50
+		add_stability = -0.1
+		add_war_support = -0.1
+		add_to_variable = {
+			var = az_pianzhidu
+			value = -4
+		}
+		custom_effect_tooltip = BFL_zzpianzhidu_fu10
+		set_country_flag = {
+			flag = BFL_tufaqingsao_on
+			days = 90
+			value = 1
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = az_tianjiang.251
+	title = "陷入癫狂"
+	desc = "“到底还有多少反动分子！有多少舰娘反对团结主义？又有多少蛮啾是白鹰间谍？”"
+	picture = GFX_aze_txluoen2
+	fire_only_once = yes
+	trigger = {
+		check_variable = {
+			var = az_pianzhidu
+			value = 49
+			compare = greater_than_or_equals
+		}
+		tag = BFL
+		has_government = communism
+		is_ai = no
+		has_country_flag = `
+	}
+	option = {
+		name = "她疯了..."
+		add_political_power = -999
+		add_stability = -0.9
+		add_war_support = -0.9
+		add_to_variable = {
+			var = az_pianzhidu
+			value = -50
+		}
+		custom_effect_tooltip = BFL_zzpianzhidu_fu10
 		ai_chance = {
 			factor = 100
 		}

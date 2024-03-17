@@ -3279,7 +3279,9 @@
 		}
 
 		available = {
+			is_puppet = no
 			OR = {
+				date > 1940.1.1
 			    NOT = { country_exists = DOH }
 			    DOH = { has_capitulated = yes }
 			    DOH = { is_subject_of = CHY }
@@ -3345,7 +3347,9 @@
 		x = 0
 		y = 1
 		cost = 5
-
+		available = {
+			is_puppet = no
+		}
 		ai_will_do = {
 			factor = 35
 		}
@@ -3370,7 +3374,9 @@
 		x = 2
 		y = 1
 		cost = 4
-
+		available = {
+			is_puppet = no
+		}
 		ai_will_do = {
 			factor = 35
 		}

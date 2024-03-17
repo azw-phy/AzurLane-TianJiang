@@ -3201,26 +3201,3 @@ country_event = {
 		ROOT = { activate_decision = mf_mofangjichuang }
 	}
 }
-country_event = {
-	id = azevent.666
-	title = azevent.666.t
-	desc = azevent.666.d
-	picture = GFX_aze_zaixianwendang
-	trigger = {
-		NOT = { has_country_flag = zaixianwendangtip }
-	}
-	immediate = {
-		set_country_flag = zaixianwendangtip
-	}
-	mean_time_to_happen = {
-		days = 40
-	}
-	option = {
-		name = azevent.666.a
-		add_political_power = 1
-	}
-	option = {
-		name = azevent.666.b
-		add_war_support = 0.001
-	}
-}

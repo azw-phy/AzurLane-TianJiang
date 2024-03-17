@@ -632,18 +632,18 @@ focus = {
 		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 4
 					instant_build = yes
 				}
 			}
 			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -876,7 +876,7 @@ focus = {
 		y = 1
 		prerequisite = { focus = TIX_chenglihansijituan }
 		relative_position_id = TIX_chenglihansijituan
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 5
@@ -894,7 +894,7 @@ focus = {
 		y = 1
 		prerequisite = { focus = TIX_chenglihansijituan }
 		relative_position_id = TIX_chenglihansijituan
-		cost = 7
+		cost = 3
 
 		ai_will_do = {
 			factor = 5
@@ -917,7 +917,7 @@ focus = {
 		prerequisite = { focus = TIX_jituanshengchanbu }
 		prerequisite = { focus = TIX_jituanwaimaobu }
 		relative_position_id = TIX_jituanshengchanbu
-		cost = 7
+		cost = 5
 
 		ai_will_do = {
 			factor = 5
@@ -996,7 +996,7 @@ focus = {
 		y = 1
 		prerequisite = { focus = TIX_pingweijian }
 		relative_position_id = TIX_pingweijian
-		cost = 7
+		cost = 5
 
 		ai_will_do = {
 			factor = 5
@@ -1115,7 +1115,7 @@ focus = {
 		y = 1
 		prerequisite = { focus = TIX_qianting }
 		relative_position_id = TIX_qianting
-		cost = 7
+		cost = 5
 
 		ai_will_do = {
 			factor = 5
@@ -1144,7 +1144,7 @@ focus = {
 		prerequisite = { focus = TIX_zhulijian }
 		prerequisite = { focus = TIX_hangmu }
 		relative_position_id = TIX_qianting
-		cost = 15
+		cost = 10
 
 		ai_will_do = {
 			factor = 5
@@ -4528,10 +4528,10 @@ focus = {
 		relative_position_id = TIX_tiexuededaolu
 		prerequisite = { focus = TIX_tiexuededaolu }
 
-		cost = 5
+		cost = 2
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 
 
