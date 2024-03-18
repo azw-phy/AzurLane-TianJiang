@@ -2,7 +2,7 @@ ideas = {
 	economy = {
 		law = yes
 		DOH_gongtongfuyu_economy = {
-			picture = civilian_economy
+			picture = DOH_economy
 			allowed = {
 				always = no
 			}
@@ -25,6 +25,43 @@ ideas = {
 			cancel_if_invalid = no
 		}
 	}
+	trade_laws = { 
+		law = yes
+		DOH_teseshichangjinji = {
+			picture = new_economic_policy
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			rule = {
+				can_access_market = yes
+			}
+			modifier = {
+				min_export = 0.1
+				local_resources_factor = 0.3
+				
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.05
+
+				civilian_intel_to_others = 10.0
+				navy_intel_to_others = 5
+				cic_construction_boost = 0.35
+				convoy_escort_efficiency = 0.3
+				attrition = -0.1
+				
+				#license_subject_master_purchase_cost = -1
+			}
+
+			allowed_to_remove = {
+				always = no
+			}
+			
+			cancel_if_invalid = no
+		}
+	}
+	
 	hidden_ideas = {
 		DOH_stop_cic = {
 			modifier = {
@@ -199,14 +236,14 @@ ideas = {
 			}
 		}
 		DOH_ziligengsheng_idea = {
-			picture = GFX_idea_DOH_xdh
+			picture = closed_economy
 			modifier = {
 				min_export = -0.4
 				political_power_factor = 0.25
 			}
 		}
 		DOH_tongyizhanxian_c_idea = {
-			picture = GFX_idea_DOH_xdh
+			picture = home_of_revolution
 			modifier = {
 				communism_drift = 0.03
 				democratic_drift = -0.01
@@ -216,7 +253,7 @@ ideas = {
 			}
 		}
 		DOH_tongyizhanxian_d_idea = {
-			picture = GFX_idea_DOH_xdh
+			picture = generic_democratic_drift_bonus
 			modifier = {
 				communism_drift = -0.01
 				democratic_drift = 0.03
@@ -226,7 +263,7 @@ ideas = {
 			}
 		}
 		DOH_tongyizhanxian_f_idea = {
-			picture = GFX_idea_DOH_xdh
+			picture = ast_abandon_the_westminster_system_fascism
 			modifier = {
 				communism_drift = -0.01
 				democratic_drift = -0.01
@@ -918,6 +955,7 @@ ideas = {
 				convoy_escort_efficiency = 0.1
 				air_escort_efficiency = 0.1
 				convoy_retreat_speed = 0.2
+				transport_capacity = -0.5
 			}
 		}
 		DOH_hailufuhe_idea_2 = {
@@ -930,6 +968,7 @@ ideas = {
 				convoy_escort_efficiency = 0.1
 				convoy_retreat_speed = 0.2
 				navy_max_range_factor = 0.25
+				transport_capacity = -0.5
 				navy_org_factor = 0.20
 				navy_fuel_consumption_factor = -0.1
 			}
@@ -944,6 +983,7 @@ ideas = {
 				convoy_escort_efficiency = 0.1
 				convoy_retreat_speed = 0.2
 				navy_max_range_factor = 0.25
+				transport_capacity = -0.5
 				navy_org_factor = 0.20
 				navy_fuel_consumption_factor = -0.1
 				navy_visibility = -0.1

@@ -342,6 +342,93 @@ d_DOH_self_duiwaishuchu_init = {
 	}
 }
 
+doh_kexueyuan_effect = {
+	set_variable = {
+		shared_speed_factor = DOH.num_subjects
+	}
+	multiply_variable = {
+		shared_speed_factor = 0.08
+	}
+	every_country = {
+		if = {
+			limit = {
+				OR = {
+					is_subject_of = DOH
+					tag = DOH
+				}
+				NOT = {
+					has_dynamic_modifier = {
+						modifier = az_doh_kexueyuan_modifier
+					}
+				}
+			}
+			add_dynamic_modifier = {
+				modifier = az_doh_kexueyuan_modifier
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					OR = {
+						is_subject_of = DOH
+						tag = DOH
+					}
+				}
+				has_dynamic_modifier = {
+					modifier = az_doh_kexueyuan_modifier
+				}
+			}
+			remove_dynamic_modifier = {
+				modifier = az_doh_kexueyuan_modifier
+			}
+		}
+	}
+}
+
+# d_DOH_fanshu_add_effect = {
+# 	every_country = {
+# 		limit = {
+# 			has_autonomy_state = doh_fanshu
+# 		}
+# 		set_variable = {
+# 			THIS.zizhichengdu = THIS.autonomy_ratio
+# 		}
+# 		multiply_variable = {
+# 			THIS.zizhichengdu = -1
+# 		}
+# 		add_to_variable = {
+# 			THIS.zizhichengdu = 1
+# 		}
+# 		multiply_variable = {
+# 			THIS.zizhichengdu = 0.3
+# 		}
+# 		add_dynamic_modifier = {
+# 			modifier = az_doh_fanshu_modifier
+# 			scope = THIS.overlord
+# 		}
+# 	}
+# }
+# d_DOH_fanshu_refresh_effect = {
+# 	every_country = {
+# 		limit = {
+# 			has_autonomy_state = doh_fanshu
+# 		}
+# 		set_variable = {
+# 			THIS.zizhichengdu = THIS.autonomy_ratio
+# 		}
+# 		multiply_variable = {
+# 			THIS.zizhichengdu = -1
+# 		}
+# 		add_to_variable = {
+# 			THIS.zizhichengdu = 1
+# 		}
+# 		multiply_variable = {
+# 			THIS.zizhichengdu = 0.3
+# 		}
+# 	}
+# }
+
+
 DOH_neibufenqi_jianqin_effect = {
 	multiply_variable = {
 		var:DOH_zhichiduchengfa = 0.8

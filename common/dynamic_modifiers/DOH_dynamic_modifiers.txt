@@ -124,3 +124,18 @@ az_DOH_shuchu_target_modifier = {
 	cic_to_target_factor = var:shuchu_factor_to_doh
 	mic_to_target_factor = var:shuchu_factor_to_doh
 }
+# az_doh_fanshu_modifier = {
+# 	icon = GFX_idea_DOH_xdh
+# 	cic_to_overlord_factor = var:THIS.autonomy_range
+# 	mic_to_overlord_factor = var:THIS.autonomy_range
+# }
+az_doh_kexueyuan_modifier = {
+	icon = GFX_idea_generic_research_bonus
+	research_speed_factor = shared_speed_factor
+	license_subject_master_purchase_cost = -1
+	naval_hit_chance = 0.15
+	global_building_slots = 1
+	land_night_attack = 0.1
+	navy_submarine_detection_factor = 0.2
+	naval_detection = 0.2
+}

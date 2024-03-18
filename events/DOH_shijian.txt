@@ -1094,6 +1094,85 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = DOH_loong_event.3001
+	title = DOH_loong_event.3001.t
+	desc = DOH_loong_event.3001.d
+	is_triggered_only = yes
+	option = {
+		name = DOH_loong_event.3001.a
+		trigger = {
+			CHY = {
+				has_focus_tree = chongying_new_focus
+				OR = {
+					has_completed_focus = CHY_chichen1
+					is_debug = yes
+				}
+			}
+		}
+		ai_chance = {
+			base = 0
+		}
+
+		custom_effect_tooltip = doh_chongying_focus
+		custom_effect_tooltip = "对重樱进行和平改造。"
+		hidden_effect = {
+			CHY = {
+				uncomplete_national_focus = {
+					focus = CHY_chichen1
+					uncomplete_children = yes
+					refund_political_power = yes
+				}
+				complete_national_focus = CHY_changmen1
+				unlock_national_focus = CHY_hepinshouhuzhe
+			}
+			remove_opinion_modifier = {
+				target = DOH
+				modifier = CHY_dhtiaoxin
+			}
+			remove_opinion_modifier = {
+				target = CHY
+				modifier = CHY_dhtiaoxin
+			}
+			CHY = {
+				complete_national_focus = CHY_duidonghuangyouhao
+				complete_national_focus = CHY_donghuangyouhao
+				unlock_national_focus = CHY_guihuanzhimindi
+				remove_ideas = CHY_kuangredekuozhangzhuyi_buff
+				remove_ideas = CHY_qinlvejihua
+				remove_ideas = chy_wushidaojinshen_buff
+				remove_ideas = CHY_sanyuezhanzhenglun
+				remove_ideas = CHY_dohwar_buff_1
+				remove_ideas = CHY_dohwar_buff_2
+				remove_ideas = CHY_dohwar_buff_3
+			}
+		}
+	}
+	option = {
+		name = DOH_loong_event.3001.b
+
+		ai_chance = {
+			base = 10
+		}
+
+		custom_effect_tooltip = doh_chongying_focus
+		hidden_effect = {
+			remove_opinion_modifier = {
+				target = DOH
+				modifier = CHY_dhtiaoxin
+			}
+			remove_opinion_modifier = {
+				target = CHY
+				modifier = CHY_dhtiaoxin
+			}
+			CHY = {
+				complete_national_focus = CHY_duidonghuangyouhao
+				complete_national_focus = CHY_donghuangyouhao
+				unlock_national_focus = CHY_guihuanzhimindi
+			}
+		}
+	}
+}
 # country_event = {
 # 	id = DOH_loong_event.1003
 # 	hidden = yes

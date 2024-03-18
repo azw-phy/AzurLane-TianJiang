@@ -332,7 +332,7 @@ ideas = {
 		DH1_sahnefront_ns = {
 			name = DH1_sahnefront
 			removal_cost = -1
-			picture = DEN_sahnefront 
+			picture = generic_supply_line 
 
 			cancel = {
 				has_war_with = DH1

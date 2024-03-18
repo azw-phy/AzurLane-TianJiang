@@ -24,6 +24,10 @@
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				date > 1937.1.1
+				add = 100
+			}
 		}
 		available = {
 			
@@ -151,6 +155,10 @@
 		
 		ai_will_do = {
 			factor = 8
+			modifier = {
+				date > 1937.1.1
+				add = 100
+			}
 		}
 		available = {
 			or = {
@@ -2082,7 +2090,7 @@
 			factor = 20
 		}
 		available = {
-			
+			has_completed_focus = DH1_beibeibeiqilexingnang
 		}
 		
 		cancel_if_invalid = yes

@@ -174,7 +174,7 @@ az_DOH_railway_organization = {
 		name = DOH_cic_plane_B
 		position = { x = 7 y = 0 }
 		mutually_exclusive = {
-			DOH_cic_plane_A_2
+			DOH_cic_plane_A_1
 		}
 		icon = GFX_generic_mio_trait_icon_air_agility
 		limit_to_equipment_type = {

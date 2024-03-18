@@ -2032,6 +2032,16 @@ focus_tree = {
 			add_political_power = -50
             custom_effect_tooltip = DOH_jinjigaige_tooltip
 			add_ideas = DOH_ggkf
+			if = {
+				limit = {
+					has_completed_focus = DOH_renminwansui
+				}
+				add_ideas = DOH_teseshichangjinji
+			}
+			custom_effect_tooltip = DOH_jinjigaige_red_tooltip
+			effect_tooltip = {
+				add_ideas = DOH_teseshichangjinji
+			}
         }
     }
 	focus = {
@@ -2248,7 +2258,7 @@ focus_tree = {
 		}
 		available = {
 			has_completed_focus = DOH_renminwansui
-			num_of_factories > 1600
+			num_of_factories > 800
 		}
 		x = 0
 		y = 1
@@ -2674,7 +2684,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DOH_yidaiyilu
-		icon = GFX_fflag_DOH
+		icon = GFX_focus_DOH_yidaiyilu
 		cost = 1
 		x = 0
 		y = 2
@@ -2822,10 +2832,15 @@ focus_tree = {
 		icon = GFX_focus_generic_mining_industry
 		cost = 10
 		available = {
-			has_full_control_of_state = 322
-			has_full_control_of_state = 615
-			has_full_control_of_state = 593
-			has_full_control_of_state = 603
+			# has_full_control_of_state = 322
+			# has_full_control_of_state = 615
+			# has_full_control_of_state = 593
+			# has_full_control_of_state = 603
+			num_of_factories > 800
+			OR = {
+				has_tech = excavation4
+				has_tech = excavation5
+			}
 		}
 		prerequisite = {
 			focus = DOH_gaodengxuefu
@@ -2835,30 +2850,72 @@ focus_tree = {
 		x = 1
 		y = 1
 		completion_reward = {
-			add_resource = {
-				type = chromium
-				amount = 70
-				state = 322
+			# add_resource = {
+			# 	type = chromium
+			# 	amount = 70
+			# 	state = 322
+			# }
+			# add_resource = {
+			# 	type = aluminium
+			# 	amount = 45
+			# 	state = 615
+			# }
+			# add_resource = {
+			# 	type = steel
+			# 	amount = 100
+			# 	state = 615
+			# }
+			# add_resource = {
+			# 	type = tungsten
+			# 	amount = 45
+			# 	state = 593
+			# }
+			# add_resource = {
+			# 	type = aluminium
+			# 	amount = 40
+			# 	state = 603
+			# }
+
+			modify_building_resources = {
+				building = industrial_complex
+				resource = steel
+				amount = 2
 			}
-			add_resource = {
-				type = aluminium
-				amount = 45
-				state = 615
+			modify_building_resources = {
+				building = industrial_complex
+				resource = aluminium
+				amount = 1
 			}
-			add_resource = {
-				type = steel
-				amount = 100
-				state = 615
+			modify_building_resources = {
+				building = industrial_complex
+				resource = tungsten
+				amount = 1
 			}
-			add_resource = {
-				type = tungsten
-				amount = 45
-				state = 593
+			modify_building_resources = {
+				building = industrial_complex
+				resource = chromium
+				amount = 1
 			}
-			add_resource = {
-				type = aluminium
-				amount = 40
-				state = 603
+
+			modify_building_resources = {
+				building = synthetic_refinery
+				resource = steel
+				amount = 10
+			}
+			modify_building_resources = {
+				building = synthetic_refinery
+				resource = aluminium
+				amount = 5
+			}
+			modify_building_resources = {
+				building = synthetic_refinery
+				resource = tungsten
+				amount = 5
+			}
+			modify_building_resources = {
+				building = synthetic_refinery
+				resource = chromium
+				amount = 5
 			}
 		}
 	}
@@ -2878,11 +2935,19 @@ focus_tree = {
 			focus = DOH_qianniandidu
 		}
 		available = {
-			always = no
+			
 		}
 		relative_position_id = DOH_gaodengxuefu
 		completion_reward = {
-			custom_effect_tooltip = "（还没做完）"			
+			custom_effect_tooltip = DOH_donghuangkexueyuan_tooltip
+			hidden_effect = {
+				DOH = {
+					add_dynamic_modifier = {
+						modifier = az_doh_kexueyuan_modifier
+					}
+				}
+				doh_kexueyuan_effect = yes
+			}
 		}
 	}
 	focus = {
@@ -3312,21 +3377,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-            hidden_effect = {
-				remove_opinion_modifier = {
-					target = DOH
-					modifier = CHY_dhtiaoxin
-				}
-				remove_opinion_modifier = {
-					target = CHY
-					modifier = CHY_dhtiaoxin
-				}
-				CHY = {
-					complete_national_focus = CHY_duidonghuangyouhao
-					complete_national_focus = CHY_donghuangyouhao
-				}
-			}
-			custom_effect_tooltip = doh_chongying_focus
+            country_event = DOH_loong_event.3001
+			
 			526 = {
 				add_core_of = DOH
 				remove_core_of = CHY
@@ -3361,6 +3413,7 @@ focus_tree = {
 		prerequisite = {
 			focus = DOH_chaogongzhidu
 		}
+		
 		relative_position_id = DOH_chaogongzhidu
 		x = 2
 		y = 2
@@ -3379,10 +3432,22 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			hidden_effect = {
+				set_autonomy = {
+					target = DH1
+					autonomy_state = autonomy_free
+				}
+			}
 			set_autonomy = {
 				target = DH1
 				autonomy_state = doh_fanshu
 			}
+			434 = {
+					remove_core_of = DH1
+					add_core_of = DOH
+					transfer_state_to = DOH
+					set_state_name = "藏南"
+				}
 			DH1 = {
 				set_cosmetic_tag = DH1_future
 			}
@@ -3467,7 +3532,6 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = DOH_chaogongtixi_tooltip
-			custom_effect_tooltip = "（还没做完）"
 		}
 	}
 	focus = {
@@ -3560,6 +3624,9 @@ focus_tree = {
 			add_state_core = 434
 			add_state_core = 640
 			add_state_core = 288
+			434 = {
+				set_state_name = "藏南"
+			}
 		}
 	}
 	focus = {
@@ -3617,7 +3684,9 @@ focus_tree = {
 		prerequisite = {
 			focus = DOH_special_force
 		}
-		prerequisite = { focus = DOH_special_force }
+		prerequisite = {
+			focus = DOH_nanhaidezhuren
+		}
 		relative_position_id = DOH_special_force
 		available = {
 			num_of_factories > 600

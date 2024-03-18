@@ -112,6 +112,14 @@ on_actions = {
 				}
 				DOH_duiwaishuchu_effect = yes
 			}
+			if = {
+				limit = {
+					DOH = {
+						has_completed_focus = DOH_donghuangkexueyuan
+					}
+				}
+				doh_kexueyuan_effect = yes
+			}
 		}
 	}	
 	on_monthly = {
