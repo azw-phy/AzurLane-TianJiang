@@ -608,6 +608,9 @@ CHY_hepinshouhuzhe_category = {
 			country_exists = FROM 
 		}
 		available = {
+			CHY = {
+				is_subject = no
+			}
 			FROM = { 
 				has_added_tension_amount > 20
 				has_offensive_war = yes

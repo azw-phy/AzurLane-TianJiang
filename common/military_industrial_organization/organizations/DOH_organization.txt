@@ -529,6 +529,9 @@ DOH_jiangnan_shipyard_group_organization = {
 			build_cost_ic = 0.05
 			max_strength = 0.10
 			maximum_speed = 0.10
+			surface_visibility = -0.2
+			carrier_size = 1
+			anti_air_attack = 0.1
       	}
 		production_bonus = {
 			production_capacity_factor = 0.05
@@ -551,6 +554,9 @@ DOH_jiangnan_shipyard_group_organization = {
 			maximum_speed = 0.05
 			reliability = 0.05
 			max_strength = 0.15
+			surface_visibility = -0.2
+			carrier_size = 1
+			anti_air_attack = 0.1
 		}
 		production_bonus = {
 			production_capacity_factor = 0.05
