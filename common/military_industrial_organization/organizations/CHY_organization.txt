@@ -12,10 +12,7 @@ CHY_osaka_army_arsenal_organization = {
 	include = generic_tank_organization
 	icon = GFX_idea_osaka_army_arsenal
 	allowed = {	
-		OR = {
-			tag = CHY
-			tag = DOH
-		}
+		tag = CHY
 	}
 	available = {
 		FROM = {
@@ -505,11 +502,8 @@ CHY_mitsubishi_organization = {
 	include = generic_high_agility_fighter_aircraft_organization
 	icon = GFX_idea_mitsubishi
 	
-	allowed = {	
-		OR = {
+	allowed = {
 		tag = CHY
-		tag = DOH
-		}
 	}
 	available = {
 		owner = {
@@ -566,11 +560,8 @@ CHY_mitsubishi_organization = {
 CHY_aichi_organization = {
 	include = generic_range_focused_aircraft_organization
 	icon = GFX_idea_aichi
-	allowed = {	
-		OR = {
+	allowed = {
 		tag = CHY
-		tag = DOH
-		}
 	}
 	available = {
 		owner = {
@@ -623,11 +614,8 @@ CHY_aichi_organization = {
 CHY_nakajima_organization = {
 	include = generic_heavy_aircraft_organization
 	icon = GFX_idea_nakajima
-	allowed = {	
-		OR = {
+	allowed = {
 		tag = CHY
-		tag = DOH
-		}
 	}
 	available = {
 		owner = {
@@ -680,11 +668,8 @@ CHY_nakajima_organization = {
 CHY_yokosuka_organization = {
 	include = generic_naval_aircraft_organization 
 	icon = GFX_idea_yokosuka
-	allowed = {	
-		OR = {
+	allowed = {
 		tag = CHY
-		tag = DOH
-		}
 	}
 	available = {
 		owner = {
@@ -785,11 +770,8 @@ CHY_tokyo_arsenal_organization = {
 CHY_osaka_army_arsenal_artillery_organization = {
 	include = generic_artillery_organization
 	icon = GFX_idea_osaka_army_arsenal
-	allowed = {	
-#		OR = {
+	allowed = {
 		tag = CHY
-		# tag = DOH
-		# }
 	}
 	available = {
 		owner = {
@@ -842,11 +824,7 @@ CHY_osaka_army_arsenal_artillery_organization = {
 CHY_nissan_organization = {
 	include = generic_motorized_mechanized_organization 
 	icon = GFX_idea_nissan
-	allowed = {	
-		# OR = {
-		# 	tag = CHY
-		# 	tag = DOH
-		# }
+	allowed = {
 		tag = CHY
 	}
 	available = {

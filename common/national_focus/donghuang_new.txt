@@ -788,7 +788,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = DOH_liluntupo
 		available = {
-			
+			has_completed_focus = DOH_dongfangliming
+			NOT = {
+				has_war_with = CHY
+			}
 		}
 		prerequisite = {
 			focus = DOH_xuanxueshijianshe
@@ -800,6 +803,10 @@ focus_tree = {
 			focus = DOH_duidizhiyuan
 		}
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = DOH_ygxl
+				add_idea = DOH_qiansedezhuiyi
+			}
 			add_potential_special_forces_tree = yes
 			add_potential_special_forces_tree = yes
 			add_potential_special_forces_tree = yes
@@ -954,12 +961,15 @@ focus_tree = {
         }
 
         completion_reward = {
-            add_tech_bonus = {
-                name = "铁鸢"
-                bonus = 1.5
-                uses = 2
-                category = air_equipment
-            }
+            # add_tech_bonus = {
+            #     name = "铁鸢"
+            #     bonus = 1.5
+            #     uses = 2
+            #     category = air_equipment
+            # }
+			set_technology = {
+				advanced_small_airframe = 1
+			}
         }
     }
 	focus = {
@@ -1001,24 +1011,28 @@ focus_tree = {
                 limit = {
                     has_dlc = "By Blood Alone"
                 }
-                add_tech_bonus = {
-                name = "铁鸢"
-                bonus = 1
-                uses = 1
-                category = light_air
-                }
-                add_tech_bonus = {
-                name = "铁鸢"
-                bonus = 1
-                uses = 1
-                category = medium_air
-                }
-                add_tech_bonus = {
-                name = "铁鸢"
-                bonus = 1
-                uses = 2
-                category = plane_modules_tech
-                }
+                # add_tech_bonus = {
+                # name = "铁鸢"
+                # bonus = 1
+                # uses = 1
+                # category = light_air
+                # }
+                # add_tech_bonus = {
+                # name = "铁鸢"
+                # bonus = 1
+                # uses = 1
+                # category = medium_air
+                # }
+                # add_tech_bonus = {
+                # name = "铁鸢"
+                # bonus = 1
+                # uses = 2
+                # category = plane_modules_tech
+                # }
+				set_technology = {
+					advanced_medium_airframe = 1
+					advanced_large_airframe = 1
+				}
             }
             if = {
                 limit = {
@@ -1621,7 +1635,20 @@ focus_tree = {
         }
 
         completion_reward = {    
-            add_ideas = DOH_xdh
+            if = {
+				limit = {
+					DOH = {
+						has_completed_focus = DOH_renminwansui
+					}
+				}
+				swap_ideas = {
+					remove_idea = DOH_rmws
+					add_idea = DOH_xdh_people
+				}
+			}
+			else = {
+				add_ideas = DOH_xdh
+			}
         }
     }
     focus = {
@@ -2197,6 +2224,7 @@ focus_tree = {
         completion_reward = {
 			add_ideas = DOH_dhgytx
 			custom_effect_tooltip = DOH_donghuanggongyetixi_tooltip
+			custom_effect_tooltip = az_DOH_railway_organization_enable_tooltip
 			DOH_dongfangguguo_dengji = yes
 			hidden_effect = {
 				set_victory_points = {

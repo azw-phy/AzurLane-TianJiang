@@ -8,6 +8,66 @@
 
  ####################
 
+DOH_shanghai_tank = {
+	include = generic_tank_organization
+	icon = GFX_idea_osaka_army_arsenal
+	allowed = {
+		tag = DOH
+	}
+	available = {
+		OR = {
+			DOH = {
+				is_ally_with = CHY
+			}
+			DOH = {
+				is_ally_with = BFL
+			}
+			DOH = {
+				is_ally_with = TIX
+			}
+			DOH = {
+				has_completed_focus = DOH_dashanghai
+			}
+		}
+	}
+	add_trait = {
+		token = jishugaijing
+		name = jishugaijing
+		icon = GFX_generic_mio_trait_icon_unique
+		special_trait_background = yes
+
+		position = { x=8 y=0 }  
+
+		available = {
+			FROM = { 
+				OR = {
+					has_completed_focus =  CHY_gongyejituan 
+					OR = {
+						is_ally_with = CHY
+						has_country_flag = chy_jungongyuanzhu_flag
+					}
+				}
+			}
+		}
+		
+		equipment_bonus = {
+			reliability = 0.05
+			maximum_speed = 0.05
+      	}
+
+		production_bonus = {
+			production_resource_need_factor = -0.25
+			production_capacity_factor = 0.05
+			production_efficiency_gain_factor = 0.05
+			production_efficiency_cap_factor = 0.05
+		}
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.15
+		}
+	}
+}
+
  DOH_baotoudiyijixiechang_organization = {
 	include = generic_tank_refurbishment_plant_organization
 	icon = GFX_idea_generic_tank_manufacturer_3
@@ -46,7 +106,7 @@
 			reliability = 0.15
       	}
 		production_bonus = {
-			production_resource_need_factor = -0.3
+			production_resource_need_factor = -0.5
 		}
 	}
 }
@@ -66,6 +126,30 @@ TIX_DOH_tank_designer_organization = {
 				has_completed_focus = DOH_yixianwansui
 			}
 		}
+	}
+	add_trait = {
+		token = jishugaijing
+		name = jishugaijing
+		icon = GFX_generic_mio_trait_icon_unique
+		special_trait_background = yes
+
+		position = { x=6 y=0 }  
+
+		available = {
+			FROM = { 
+				OR = {
+					has_completed_focus =  CHY_gongyejituan 
+					OR = {
+						is_ally_with = CHY
+						has_country_flag = chy_jungongyuanzhu_flag
+					}
+				}
+			}
+		}
+		
+		equipment_bonus = {
+			reliability = 0.15
+      	}
 	}
 }
 
@@ -173,7 +257,7 @@ DOH_dalianzaochuan_organization = {
 		equipment_bonus = {
 			build_cost_ic = -0.05
 			reliability = 0.15
-			max_strength = 0.15
+			max_strength = 0.2
 			surface_visibility = -0.1
       	}
 	}
@@ -187,15 +271,16 @@ DOH_dalianzaochuan_organization = {
 
 		available = {
 			FROM = {
-				num_of_naval_factories > 90
+				num_of_naval_factories > 85
 				has_tech = keyantech_daodan
 			}
 		}
 		
 		equipment_bonus = {
-			naval_light_gun_hit_chance_factor = 0.2
-			naval_heavy_gun_hit_chance_factor = 0.2
-			surface_visibility = -0.5
+			naval_light_gun_hit_chance_factor = 0.3
+			naval_heavy_gun_hit_chance_factor = 0.3
+			surface_visibility = -0.3
+			night_penalty = -0.3
       	}
 	}
 
@@ -234,7 +319,7 @@ DOH_hudong_organization = {
 			}
 		}
 		equipment_bonus = {
-			build_cost_ic = 0.10
+			#build_cost_ic = 0.10
 			maximum_speed = 0.05
 			reliability = 0.05
 			max_strength = 0.25
@@ -386,7 +471,10 @@ DOH_wuchangzaochuanchang_organization = {
 			build_cost_ic = 0.10
 			reliability = 0.15
 			max_strength = 0.25
+			maximum_speed = 0.1
 			sub_visibility = -0.15
+			naval_torpedo_hit_chance_factor = 0.15
+			torpedo_attack = 0.15
       	}
 		production_bonus = {
 			production_capacity_factor = 0.05
@@ -402,7 +490,7 @@ DOH_wuchangzaochuanchang_organization = {
 
 		available = {
 			FROM = {
-				num_of_naval_factories > 120
+				num_of_naval_factories > 85
 			}
 		}
 		equipment_bonus = {
@@ -410,6 +498,8 @@ DOH_wuchangzaochuanchang_organization = {
 			reliability = 0.15
 			surface_visibility = -0.15
 			build_cost_ic = 0.05
+			naval_torpedo_hit_chance_factor = 0.15
+			torpedo_attack = 0.15
 		}
 		production_bonus = {
 			production_capacity_factor = 0.10
@@ -532,7 +622,8 @@ DOH_jiangnan_shipyard_group_organization = {
 			surface_visibility = -0.2
 			carrier_size = 1
 			anti_air_attack = 0.1
-      	}
+			night_penalty = -0.3
+		}
 		production_bonus = {
 			production_capacity_factor = 0.05
 		}
@@ -547,7 +638,7 @@ DOH_jiangnan_shipyard_group_organization = {
 
 		available = {
 			FROM = {
-				num_of_naval_factories > 120
+				num_of_naval_factories > 85
 			}
 		}
 		equipment_bonus = {
@@ -661,8 +752,9 @@ DOH_dagu_shipyard_organization = {
 			}
 		}
 		equipment_bonus = {
-			build_cost_ic = 0.10
+			build_cost_ic = 0.05
 			reliability = 0.15
+			maximum_speed = 0.2
 			surface_visibility = -0.1
 			surface_detection = 0.1
       	}
@@ -677,12 +769,12 @@ DOH_dagu_shipyard_organization = {
 
 		available = {
 			FROM = {
-				num_of_naval_factories > 120
+				num_of_naval_factories > 85
 			}
 		}
 		equipment_bonus = {
-			build_cost_ic = 0.2
-			maximum_speed = 0.15
+			build_cost_ic = 0.05
+			maximum_speed = 0.2
 			reliability = 0.15
 			surface_visibility = -0.2
 			surface_detection = 0.2
@@ -1200,7 +1292,7 @@ DOH_hanyan_arsenal_organization = {
 	add_trait = {
 		token = DOH_infantry_mio_jishugaijing_1
 		name = jishugaijing
-		icon = GFX_generic_mio_trait_icon_unique
+		icon = GFX_generic_mio_department_icon_infantry_quality
 		position = {
 			x = 6
 			y = 3
@@ -1224,7 +1316,7 @@ DOH_hanyan_arsenal_organization = {
 	add_trait = {
 		token = DOH_infantry_mio_jishugaijing_2
 		name = jishugaijing
-		icon = GFX_generic_mio_trait_icon_unique
+		icon = GFX_generic_mio_department_icon_infantry_line_efficiency
 		relative_position_id = DOH_infantry_mio_jishugaijing_1
 		position = {
 			x = 1
@@ -1245,9 +1337,42 @@ DOH_hanyan_arsenal_organization = {
 			production_efficiency_gain_factor = 0.05
 		}
 	}
+	add_trait = {
+		token = DOH_infantry_mio_jishugaijing_3
+		name = "轻步兵的巅峰"
+		icon = GFX_generic_mio_trait_icon_unique
+		relative_position_id = DOH_infantry_mio_jishugaijing_1
+		position = {
+			x = 0
+			y = 1
+		}
+		parent = {
+			traits = {
+				DOH_infantry_mio_jishugaijing_1
+			}
+		}
+		available = {
+			DOH = {
+				num_researched_technologies > 150
+				has_completed_focus = DOH_donghuangdeshidai
+				num_of_factories > 800
+			}
+		}
+		equipment_bonus = {
+			build_cost_ic = 1
+			reliability_factor = 0.1
+			fuel_capacity = 1
+			fuel_consumption = -0.05
+			ap_attack = 1
+			supply_consumption = -0.05
+			recon = 0.5
+			entrenchment = 1
+			hardness = 0.1
+		}
+	}
 }
 DOH_mukden_arsenal_organization = {
-	include = generic_infantry_equipment_organization
+	include = DOH_hanyan_arsenal_organization
 	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
 	allowed = {
 				tag = DOH
@@ -1259,54 +1384,6 @@ DOH_mukden_arsenal_organization = {
 				has_completed_focus = DOH_xindonghuang
 				has_completed_focus = DOH_yixianwansui
 			}
-		}
-	}
-	add_trait = {
-		token = DOH_infantry_mio_jishugaijing_1
-		name = jishugaijing
-		icon = GFX_generic_mio_trait_icon_unique
-		position = {
-			x = 6
-			y = 3
-		}
-		available = {
-			DOH = {
-				num_of_factories > 500
-			}
-		}
-		equipment_bonus = {
-			soft_attack = 0.10
-			hard_attack = 0.10
-			ap_attack = 1
-			defense = 0.05
-			build_cost_ic = 0.05
-		}
-		mutually_exclusive = {
-			DOH_infantry_mio_jishugaijing_2
-		}
-	}
-	add_trait = {
-		token = DOH_infantry_mio_jishugaijing_2
-		name = jishugaijing
-		icon = GFX_generic_mio_trait_icon_unique
-		relative_position_id = DOH_infantry_mio_jishugaijing_1
-		position = {
-			x = 1
-			y = 0
-		}
-		available = {
-			DOH = {
-				num_of_factories > 500
-			}
-		}
-		mutually_exclusive = {
-			DOH_infantry_mio_jishugaijing_1
-		}
-		production_bonus = {
-			production_cost_factor = -0.03
-			production_conversion_speed_factor = 0.3
-			production_efficiency_cap_factor = 0.10
-			production_efficiency_gain_factor = 0.05
 		}
 	}
 }

@@ -4,16 +4,18 @@ az_DOH_railway_organization = {
 		tag = DOH
 	}
 	available = {
-		
+		DOH = {
+			has_completed_focus = DOH_donghuanggongyetixi
+		}
 	}
 	equipment_type = {
-		doh_civ_equipment
-		convoy
 		transport_plane_equipment
 		train_equipment
 		railway_gun_equipment
 		az_equipment_liechepao
 		support_equipment
+		doh_civ_equipment
+		convoy
 	}
 	research_bonus = 0.30
 	research_categories = {
@@ -148,6 +150,59 @@ az_DOH_railway_organization = {
 			production_resource_need_factor = -1
 		}
 	}
+
+	# trait = {
+	# 	token = DOH_zhiyuanzhuangbei_less_cost_trait
+	# 	name = DOH_zhiyuanzhuangbei_trait
+	# 	icon = GFX_generic_mio_trait_icon_build_cost_ic
+	# 	relative_position_id = DOH_zhiyuanzhuangbei_trait
+	# 	position = { x = 1 y = 1 }
+	# 	limit_to_equipment_type = {
+	# 		support_equipment
+	# 	}
+	# 	mutually_exclusive = {
+	# 		DOH_zhiyuanzhuangbei_baozhanghouqin_trait
+	# 	}
+	# 	parent = {
+	# 		traits = {
+	# 			DOH_zhiyuanzhuangbei_trait
+	# 		}
+	# 	}
+	# 	available = {
+	# 		has_mio_size > 65
+	# 	}
+	# 	production_bonus = {
+	# 		production_cost_factor = -0.1
+	# 		production_resource_need_factor = -1
+	# 	}
+	# }
+	# trait = {
+	# 	token = DOH_zhiyuanzhuangbei_baozhanghouqin_trait
+	# 	name = DOH_zhiyuanzhuangbei_baozhanghouqin_trait
+	# 	icon = GFX_generic_mio_trait_icon_build_cost_ic
+	# 	relative_position_id = DOH_zhiyuanzhuangbei_trait
+	# 	position = { x = -1 y = 1 }
+	# 	limit_to_equipment_type = {
+	# 		support_equipment
+	# 	}
+	# 	parent = {
+	# 		traits = {
+	# 			DOH_zhiyuanzhuangbei_trait
+	# 		}
+	# 	}
+	# 	mutually_exclusive = {
+	# 		DOH_zhiyuanzhuangbei_less_cost_trait
+	# 	}
+	# 	available = {
+	# 		has_mio_size > 65
+	# 	}
+	# 	equipment_bonus = {
+	# 		build_cost_ic = 0.5
+	# 		recon = 1
+	# 		entrenchment = 1
+	# 		reliability_factor = 0.2
+	# 	}
+	# }
 
 	trait = {
 		token = DOH_cic_plane_A_1

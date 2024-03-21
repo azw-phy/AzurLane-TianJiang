@@ -347,7 +347,9 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+			cancel = {
+				has_war = no
+			}
 			modifier = {
 				defensive_war_stability_factor = 0.2
 				war_support_factor = 0.1
@@ -359,7 +361,9 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+			cancel = {
+				has_war = no
+			}
 			modifier = {
 				defensive_war_stability_factor = 0.3
 				army_core_defence_factor = 0.05
@@ -372,7 +376,9 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+			cancel = {
+				has_war = no
+			}
 			modifier = {
 				defensive_war_stability_factor = 0.4
 				army_core_defence_factor = 0.1
@@ -385,7 +391,9 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+			cancel = {
+				has_war = no
+			}
 			modifier = {
 				defensive_war_stability_factor = 0.5
 				army_core_defence_factor = 0.2
@@ -400,7 +408,9 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+			cancel = {
+				has_war = no
+			}
 			modifier = {
 				defensive_war_stability_factor = 0.6
 				army_core_attack_factor = 0.1
@@ -419,7 +429,9 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+			cancel = {
+				has_war = no
+			}
 			modifier = {
 				defensive_war_stability_factor = 0.8
 				army_core_attack_factor = 1
@@ -437,7 +449,9 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+			cancel = {
+				has_war = no
+			}
 			modifier = {
 				defensive_war_stability_factor = 1
 				army_core_attack_factor =1
@@ -449,6 +463,24 @@ ideas = {
 				war_support_factor = 1.5
 			}
 		}
+		DOH_qiansedezhuiyi = {
+			picture = DOH_guomuyixian
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				local_org_regain = 0.5
+				army_org_factor = 0.75
+				army_attack_factor = 0.1
+				army_defence_factor = 0.15
+				army_core_attack_factor = 0.5
+				army_core_defence_factor = 1
+				defensive_war_stability_factor = 2
+				experience_gain_army_unit_factor = 0.2
+				experience_loss_factor = -0.25
+			}
+		}
+		
 		DOH_fffb = {
 			picture = generic_army_war_college
 
@@ -770,6 +802,24 @@ ideas = {
 				always = yes
 			}
 			modifier = {
+				research_speed_factor = 0.15
+				surrender_limit = 0.1
+				opinion_gain_monthly_factor = 0.35
+				army_attack_factor = 0.2
+				army_defence_factor = 0.2
+			}
+		}
+		DOH_xdh_people = {
+			picture = DOH_xdh
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = 0.3
+				army_org_factor = 0.15
+				conscription = 0.025
+				production_speed_buildings_factor = 0.15
 				research_speed_factor = 0.15
 				surrender_limit = 0.1
 				opinion_gain_monthly_factor = 0.35

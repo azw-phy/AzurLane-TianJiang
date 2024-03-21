@@ -30,7 +30,7 @@ equipments = {
 		reliability = 1
 		build_cost_ic = 100
 		resources = {
-			steel = 20
+			steel = 8
 		}
 		can_be_produced = {
 			tag = DOH

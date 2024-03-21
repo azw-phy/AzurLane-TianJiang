@@ -1571,6 +1571,23 @@ DOH_decision_debug_category = {
 			}
 		}
 	}
+
+	# DOH_debug_8 = {
+	# 	icon = xingdong
+	# 	cost = 0
+	# 	ai_will_do = {
+	# 		factor = 0
+	# 	}
+	# 	visible = {
+	# 		is_debug = yes
+	# 		is_ai = no
+	# 	}
+	# 	complete_effect = {
+	# 		mio:az_DOH_railway_organization = {
+	# 			complete_mio_trait = DOH_zhiyuanzhuangbei_baozhanghouqin_trait
+	# 		}
+	# 	}
+	# }
 }
 
 DOH_duiwaitouzi_decision_category = {
