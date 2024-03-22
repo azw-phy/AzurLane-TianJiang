@@ -187,6 +187,61 @@ DOH_mofifier_effect = {
 			days = 10
 		}
 	}
+	#东煌矿业大学
+	if = {
+		limit = {
+			DOH = {
+				has_completed_focus = DOH_kuangyedaxue
+			}
+		}
+		set_variable = {
+			var:DOH_minyonggongchang_counter_1 = 0
+		}
+		if = {
+			limit = {
+				DOH = {
+					all_owned_state = {
+						if = {
+							limit = {
+								industrial_complex > 0
+							}
+							add_to_temp_variable = {
+								DOH_civ_counter = building_level@industrial_complex
+							}
+						}
+					}
+				}
+			}
+			set_variable = {
+				var:DOH_minyonggongchang_counter_1 = DOH_civ_counter
+			}
+		}
+
+		set_variable = {
+			var:DOH_hechenglianyouchang_counter_5 = 0
+		}
+		if = {
+			limit = {
+				DOH = {
+					all_owned_state = {
+						if = {
+							limit = {
+								synthetic_refinery > 0
+							}
+							add_to_temp_variable = { DOH_sr_counter = building_level@synthetic_refinery }
+							add_to_temp_variable = { DOH_sr_counter = building_level@synthetic_refinery }
+							add_to_temp_variable = { DOH_sr_counter = building_level@synthetic_refinery }
+							add_to_temp_variable = { DOH_sr_counter = building_level@synthetic_refinery }
+							add_to_temp_variable = { DOH_sr_counter = building_level@synthetic_refinery }
+						}
+					}
+				}
+			}
+			set_variable = {
+				var:DOH_hechenglianyouchang_counter_5 = DOH_sr_counter
+			}
+		}
+	}
 
 	# if = {
 	# 	limit = {

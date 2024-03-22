@@ -669,20 +669,56 @@ DOH_decision_category = {
 		days_remove = 21
 		remove_effect = {
 			custom_effect_tooltip = "（原）北联的五位革命舰娘将来到东煌暂避。"
-			BFL_sayousi = {
-				set_nationality = DOH
+			TIX = {
+				BFL_sayousi = {
+					set_nationality = DOH
+				}
+				BFL_afuleer = {
+					set_nationality = DOH
+				}
+				BFL_shuixingjinian = {
+					set_nationality = DOH
+				}
+				BFL_kalangshitade = {
+					set_nationality = DOH
+				}
+				BFL_luoxiya = {
+					set_nationality = DOH
+				}
 			}
-			BFL_afuleer = {
-				set_nationality = DOH
+			BFL = {
+				BFL_sayousi = {
+					set_nationality = DOH
+				}
+				BFL_afuleer = {
+					set_nationality = DOH
+				}
+				BFL_shuixingjinian = {
+					set_nationality = DOH
+				}
+				BFL_kalangshitade = {
+					set_nationality = DOH
+				}
+				BFL_luoxiya = {
+					set_nationality = DOH
+				}
 			}
-			BFL_shuixingjinian = {
-				set_nationality = DOH
-			}
-			BFL_kalangshitade = {
-				set_nationality = DOH
-			}
-			BFL_luoxiya = {
-				set_nationality = DOH
+			CHY = {
+				BFL_sayousi = {
+					set_nationality = DOH
+				}
+				BFL_afuleer = {
+					set_nationality = DOH
+				}
+				BFL_shuixingjinian = {
+					set_nationality = DOH
+				}
+				BFL_kalangshitade = {
+					set_nationality = DOH
+				}
+				BFL_luoxiya = {
+					set_nationality = DOH
+				}
 			}
 		}
 	}

@@ -581,6 +581,7 @@ az_DOH_railway_organization = {
 		available = {
 			DOH = {
 				num_of_factories > 1600
+				has_completed_focus = DOH_donghuangdeshidai
 			}
 			has_mio_size > 135
 		}
@@ -592,7 +593,10 @@ az_DOH_railway_organization = {
 		on_complete = {
 			DOH = {
 				remove_ideas = DOH_donghuangzhongche_idea_3
-				add_ideas = DOH_donghuangzhongche_idea_4
+				swap_ideas = {
+					remove_idea = DOH_dhgytx_1
+					add_idea = DOH_dhgytx_2
+				}
 			}
 		}
 	}

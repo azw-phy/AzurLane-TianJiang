@@ -49,6 +49,50 @@ DOH_fake_add_touzi = {
 	local_resources_factor = 0.04
 	cic_construction_boost = 0.04
 }
+DOH_donghuangkuangyedaxue = {
+	icon = GFX_idea_DOH_xdh
+    enable = { always = yes }
+	country_resource_steel = var:DOH_minyonggongchang_counter_1
+	country_resource_steel = var:DOH_minyonggongchang_counter_1
+	country_resource_aluminium = var:DOH_minyonggongchang_counter_1
+	country_resource_tungsten = var:DOH_minyonggongchang_counter_1
+	country_resource_chromium = var:DOH_minyonggongchang_counter_1
+
+	country_resource_steel = var:DOH_hechenglianyouchang_counter_5
+	country_resource_steel = var:DOH_hechenglianyouchang_counter_5
+	country_resource_aluminium = var:DOH_hechenglianyouchang_counter_5
+	country_resource_tungsten = var:DOH_hechenglianyouchang_counter_5
+	country_resource_chromium = var:DOH_hechenglianyouchang_counter_5
+
+}
+DOH_kejiaotixi = {
+	icon = GFX_idea_jap_supremacy_of_will
+    enable = { always = yes }
+	experience_gain_army = 0.15
+	experience_gain_navy = 0.15
+	experience_gain_air = 0.15
+	war_support_factor = 0.3
+	research_speed_factor = 0.21
+	training_time_army_factor = -0.2
+	political_power_factor = 0.12
+	command_power_gain = 1
+
+	monthly_population = 0.010
+	experience_loss_factor = -0.50
+
+	country_resource_steel = var:DOH_minyonggongchang_counter_1
+	country_resource_steel = var:DOH_minyonggongchang_counter_1
+	country_resource_aluminium = var:DOH_minyonggongchang_counter_1
+	country_resource_tungsten = var:DOH_minyonggongchang_counter_1
+	country_resource_chromium = var:DOH_minyonggongchang_counter_1
+
+	country_resource_steel = var:DOH_hechenglianyouchang_counter_5
+	country_resource_steel = var:DOH_hechenglianyouchang_counter_5
+	country_resource_aluminium = var:DOH_hechenglianyouchang_counter_5
+	country_resource_tungsten = var:DOH_hechenglianyouchang_counter_5
+	country_resource_chromium = var:DOH_hechenglianyouchang_counter_5
+
+}
 DOH_fake_add_gonggongkaizhi = {
 	icon = GFX_idea_DOH_xdh
     enable = { always = yes }

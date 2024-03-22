@@ -638,7 +638,23 @@ focus_tree = {
         }
 
         completion_reward = {
-            add_ideas = DOH_txjszd
+            if = {
+				limit = {
+					has_completed_focus = DOH_hailufuhe
+				}
+				swap_ideas = {
+					remove_idea = DOH_qiansedezhuiyi
+					add_idea = DOH_qiansedezhuiyi_1
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = DOH_hailufuhe
+					}
+				}
+				add_ideas = DOH_txjszd
+			}
             effect_tooltip = {
 				create_corps_commander = {
 					name = "科隆"
@@ -2352,7 +2368,22 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = DOH_hailufuhe_idea_0
+			swap_ideas = {
+				remove_idea = DOH_dhgytx
+				add_idea = DOH_dhgytx_1
+			}
+			remove_ideas = DOH_dhzcc
 			#custom_effect_tooltip = DOH_hailufuhe_tooltip
+			if = {
+				limit = {
+					has_completed_focus = DOH_tiexueguwen
+				}
+				remove_ideas = DOH_txjszd
+				swap_ideas = {
+					remove_idea = DOH_qiansedezhuiyi
+					add_idea = DOH_qiansedezhuiyi_1
+				}
+			}
 		}
 	}
 	focus = {
@@ -2903,47 +2934,53 @@ focus_tree = {
 			# 	amount = 40
 			# 	state = 603
 			# }
-
-			modify_building_resources = {
-				building = industrial_complex
-				resource = steel
-				amount = 2
+			effect_tooltip = {
+				modify_building_resources = {
+					building = industrial_complex
+					resource = steel
+					amount = 2
+				}
+				modify_building_resources = {
+					building = industrial_complex
+					resource = aluminium
+					amount = 1
+				}
+				modify_building_resources = {
+					building = industrial_complex
+					resource = tungsten
+					amount = 1
+				}
+				modify_building_resources = {
+					building = industrial_complex
+					resource = chromium
+					amount = 1
+				}
+	
+				modify_building_resources = {
+					building = synthetic_refinery
+					resource = steel
+					amount = 10
+				}
+				modify_building_resources = {
+					building = synthetic_refinery
+					resource = aluminium
+					amount = 5
+				}
+				modify_building_resources = {
+					building = synthetic_refinery
+					resource = tungsten
+					amount = 5
+				}
+				modify_building_resources = {
+					building = synthetic_refinery
+					resource = chromium
+					amount = 5
+				}
 			}
-			modify_building_resources = {
-				building = industrial_complex
-				resource = aluminium
-				amount = 1
-			}
-			modify_building_resources = {
-				building = industrial_complex
-				resource = tungsten
-				amount = 1
-			}
-			modify_building_resources = {
-				building = industrial_complex
-				resource = chromium
-				amount = 1
-			}
-
-			modify_building_resources = {
-				building = synthetic_refinery
-				resource = steel
-				amount = 10
-			}
-			modify_building_resources = {
-				building = synthetic_refinery
-				resource = aluminium
-				amount = 5
-			}
-			modify_building_resources = {
-				building = synthetic_refinery
-				resource = tungsten
-				amount = 5
-			}
-			modify_building_resources = {
-				building = synthetic_refinery
-				resource = chromium
-				amount = 5
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = DOH_donghuangkuangyedaxue
+				}
 			}
 		}
 	}
@@ -2954,7 +2991,7 @@ focus_tree = {
 		x = 0
 		y = 4
 		prerequisite = {
-			focus = DOH_kuangyedaxue
+			focus = DOH_shenrujinxiu
 		}
 		prerequisite = {
 			focus = DOH_minzhikaiqi
@@ -2963,10 +3000,24 @@ focus_tree = {
 			focus = DOH_qianniandidu
 		}
 		available = {
-			
+			OR = {
+				has_idea = DOH_dhzztx
+			}
 		}
 		relative_position_id = DOH_gaodengxuefu
 		completion_reward = {
+			custom_effect_tooltip = DOH_donghuangkexueyuan_tooltip_0
+			hidden_effect = {
+				remove_ideas = DOH_mzkq
+				remove_ideas = DOH_dhzztx
+				remove_ideas = DOH_donghuangyikedaxue_idea
+				remove_dynamic_modifier = {
+					modifier = DOH_donghuangkuangyedaxue
+				}
+				add_dynamic_modifier = {
+					modifier = DOH_kejiaotixi
+				}
+			}
 			custom_effect_tooltip = DOH_donghuangkexueyuan_tooltip
 			hidden_effect = {
 				DOH = {
@@ -2992,6 +3043,11 @@ focus_tree = {
 		# }
 		available = {
 			num_of_factories > 2600
+			OR = {
+				has_completed_focus = DOH_baochiweishe
+				has_completed_focus = DOH_jijikuozhang
+			}
+			has_completed_focus = DOH_wanguolaichao
 		}
 		ai_will_do = {
 			factor = 15
@@ -3000,8 +3056,28 @@ focus_tree = {
 		
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = DOH_ggkf
+				remove_idea = DOH_ggkf_1
 				add_idea = DOH_fsfz
+			}
+			if = {
+				limit = {
+					has_completed_focus = DOH_baochiweishe
+				}
+				remove_ideas = DOH_jdws
+				swap_ideas = {
+					remove_idea = DOH_tcsg
+					add_idea = DOH_tcsg_jdws
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = DOH_jijikuozhang
+				}
+				remove_ideas = DOH_wlzs
+				swap_ideas = {
+					remove_idea = DOH_tcsg
+					add_idea = DOH_tcsg_wlzs
+				}
 			}
 		}
 	}
@@ -3718,7 +3794,11 @@ focus_tree = {
 			num_of_factories > 600
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = DOH_ggkf
+				add_idea = DOH_ggkf_1
+			}
+			remove_ideas = DOH_nbjs
 			614 = {
 				set_state_category = large_city
 			}
