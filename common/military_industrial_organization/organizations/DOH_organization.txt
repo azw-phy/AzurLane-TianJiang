@@ -17,13 +17,22 @@ DOH_shanghai_tank = {
 	available = {
 		OR = {
 			DOH = {
-				is_ally_with = CHY
+				OR = {
+					is_ally_with = CHY
+					has_country_flag = chy_jungongyuanzhu_flag
+				}
 			}
 			DOH = {
-				is_ally_with = BFL
+				OR = {
+					is_ally_with = BFL
+					has_completed_focus = DOH_quanfangmianhezuo
+				}
 			}
 			DOH = {
-				is_ally_with = TIX
+				OR = {
+					is_ally_with = TIX
+					has_completed_focus = DOH_tiexueguwen
+				}
 			}
 			DOH = {
 				has_completed_focus = DOH_dashanghai
@@ -107,51 +116,53 @@ DOH_shanghai_tank = {
       	}
 		production_bonus = {
 			production_resource_need_factor = -0.5
+			production_cost_factor = -0.05
+			production_efficiency_cap_factor = 0.1
 		}
 	}
 }
 
-TIX_DOH_tank_designer_organization = {
-	include = generic_heavy_tank_organization
-	icon = GFX_idea_porsche
-	allowed = {	
-		tag = DOH
-	}
-	available = {
-		owner = {
-			has_completed_focus = DOH_xuexitiexue
-			has_completed_focus = DOH_tiexueguwen
-			OR = {
-				has_completed_focus = DOH_xindonghuang
-				has_completed_focus = DOH_yixianwansui
-			}
-		}
-	}
-	add_trait = {
-		token = jishugaijing
-		name = jishugaijing
-		icon = GFX_generic_mio_trait_icon_unique
-		special_trait_background = yes
+# TIX_DOH_tank_designer_organization = {
+# 	include = generic_heavy_tank_organization
+# 	icon = GFX_idea_porsche
+# 	allowed = {	
+# 		tag = DOH
+# 	}
+# 	available = {
+# 		owner = {
+# 			has_completed_focus = DOH_xuexitiexue
+# 			has_completed_focus = DOH_tiexueguwen
+# 			OR = {
+# 				has_completed_focus = DOH_xindonghuang
+# 				has_completed_focus = DOH_yixianwansui
+# 			}
+# 		}
+# 	}
+# 	add_trait = {
+# 		token = jishugaijing
+# 		name = jishugaijing
+# 		icon = GFX_generic_mio_trait_icon_unique
+# 		special_trait_background = yes
 
-		position = { x=6 y=0 }  
+# 		position = { x=6 y=0 }  
 
-		available = {
-			FROM = { 
-				OR = {
-					has_completed_focus =  CHY_gongyejituan 
-					OR = {
-						is_ally_with = CHY
-						has_country_flag = chy_jungongyuanzhu_flag
-					}
-				}
-			}
-		}
+# 		available = {
+# 			FROM = { 
+# 				OR = {
+# 					has_completed_focus =  CHY_gongyejituan 
+# 					OR = {
+# 						is_ally_with = CHY
+# 						has_country_flag = chy_jungongyuanzhu_flag
+# 					}
+# 				}
+# 			}
+# 		}
 		
-		equipment_bonus = {
-			reliability = 0.15
-      	}
-	}
-}
+# 		equipment_bonus = {
+# 			reliability = 0.15
+#       	}
+# 	}
+# }
 
 #####################
 
@@ -478,6 +489,11 @@ DOH_wuchangzaochuanchang_organization = {
       	}
 		production_bonus = {
 			production_capacity_factor = 0.05
+		}
+		on_complete = {
+			ROOT = {
+				add_mio_size = 10
+			}
 		}
 	}
 	add_trait = {
@@ -873,10 +889,13 @@ DOH_camco_medium_organization = {
 		tag = DOH
 	}
 	available = {
-		owner = { OR = {
+		owner = {
+			OR = {
 				has_completed_focus = DOH_xindonghuang
-				has_completed_focus = DOH_yixianwansui
-			} }
+				has_completed_focus = DOH_yixianwansui		
+			}
+			has_completed_focus = DOH_duidizhiyuan
+		}
 	}
 }
 DOH_camco_fighter_organization = {
@@ -886,10 +905,13 @@ DOH_camco_fighter_organization = {
 		tag = DOH
 	}
 	available = {
-		owner = { OR = {
+		owner = {
+			OR = {
 				has_completed_focus = DOH_xindonghuang
-				has_completed_focus = DOH_yixianwansui
-			} }
+				has_completed_focus = DOH_yixianwansui		
+			}
+			has_completed_focus = DOH_tieyuan
+		}
 	}
 }
 DOH_camco_cas_organization = {
@@ -899,13 +921,35 @@ DOH_camco_cas_organization = {
 		tag = DOH
 	}
 	available = {
-		owner = { OR = {
+		owner = {
+			OR = {
 				has_completed_focus = DOH_xindonghuang
-				has_completed_focus = DOH_yixianwansui
-			} }
+				has_completed_focus = DOH_yixianwansui		
+			}
+			has_completed_focus = DOH_duidizhiyuan
+		}
 	}
 }
-
+DOH_camco_heavy_organization = {
+	include = generic_heavy_aircraft_organization
+	icon = GFX_idea_CHI_camco
+	allowed = {	
+		tag = DOH
+	}
+	available = {
+		owner = {
+			OR = {
+				has_completed_focus = DOH_xindonghuang
+				has_completed_focus = DOH_yixianwansui		
+			}
+			has_completed_focus = DOH_duidizhiyuan
+			OR = {
+				has_idea = DOH_dfgg4
+				has_idea = DOH_dfgg5
+			}
+		}
+	}
+}
 ################################### 
 
 #   #  ##  ### ### ###  ### ### #   

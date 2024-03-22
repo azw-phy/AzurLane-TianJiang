@@ -2075,11 +2075,13 @@ focus_tree = {
 			add_political_power = -50
             custom_effect_tooltip = DOH_jinjigaige_tooltip
 			add_ideas = DOH_ggkf
-			if = {
-				limit = {
-					has_completed_focus = DOH_renminwansui
+			hidden_effect = {
+				if = {
+					limit = {
+						has_completed_focus = DOH_renminwansui
+					}
+					add_ideas = DOH_teseshichangjinji
 				}
-				add_ideas = DOH_teseshichangjinji
 			}
 			custom_effect_tooltip = DOH_jinjigaige_red_tooltip
 			effect_tooltip = {
@@ -2612,9 +2614,7 @@ focus_tree = {
 			focus = DOH_junmingronghe_jishugaijing
 		}
 		completion_reward = {
-			743 = {
-				set_state_category = megalopolis
-			}
+			
 			swap_ideas = {
 				remove_idea = DOH_hailufuhe_idea_0
 				add_idea = DOH_hailufuhe_idea_1
@@ -2804,7 +2804,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 6
 		}
-
+		bypass = {
+			has_completed_focus = DOH_yixianwansui
+		}
 		
 		completion_reward = {	
 			add_timed_idea = {
@@ -3002,20 +3004,39 @@ focus_tree = {
 		available = {
 			OR = {
 				has_idea = DOH_dhzztx
+				has_completed_focus = DOH_yixianwansui
 			}
 		}
 		relative_position_id = DOH_gaodengxuefu
 		completion_reward = {
 			custom_effect_tooltip = DOH_donghuangkexueyuan_tooltip_0
 			hidden_effect = {
-				remove_ideas = DOH_mzkq
-				remove_ideas = DOH_dhzztx
-				remove_ideas = DOH_donghuangyikedaxue_idea
-				remove_dynamic_modifier = {
-					modifier = DOH_donghuangkuangyedaxue
+				if = {
+					limit = {
+						has_idea = DOH_dhzztx
+					}
+					remove_ideas = DOH_mzkq
+					remove_ideas = DOH_dhzztx
+					remove_ideas = DOH_donghuangyikedaxue_idea
+					remove_dynamic_modifier = {
+						modifier = DOH_donghuangkuangyedaxue
+					}
+					add_dynamic_modifier = {
+						modifier = DOH_kejiaotixi
+					}
 				}
-				add_dynamic_modifier = {
-					modifier = DOH_kejiaotixi
+				if = {
+					limit = {
+						has_completed_focus = DOH_yixianwansui
+					}
+					remove_ideas = DOH_mzkq
+					remove_ideas = DOH_donghuangyikedaxue_idea
+					remove_dynamic_modifier = {
+						modifier = DOH_donghuangkuangyedaxue
+					}
+					add_dynamic_modifier = {
+						modifier = DOH_kejiaotixi_black
+					}
 				}
 			}
 			custom_effect_tooltip = DOH_donghuangkexueyuan_tooltip
@@ -4445,7 +4466,7 @@ focus_tree = {
 		}
 
 		completion_reward = {	
-			
+			DOH_neibufenqi_jianqin_effect = yes
 			add_stability = 0.25
 			add_war_support = 0.1
 			add_political_power = 150
