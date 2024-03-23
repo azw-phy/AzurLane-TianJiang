@@ -3626,7 +3626,7 @@
 			trigger = {
 				has_global_flag = MOD_azurlane_sairenzhizai
 			}
-			x = -6
+			x = -2
 		}
 
 		#search_filters = { FOCUS_FILTER_STABILITY }

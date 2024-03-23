@@ -5451,7 +5451,9 @@ country_event = {
 		name = getzhg_event.1004.a
 		ai_chance = {
 			factor = 5
-		} 
+		}
+		unlock_decision_tooltip = jiaoyuluolijianniang
+		set_country_flag = jiaoyuluolijianniang_get
 		create_corps_commander = {
 			name = luoli_huangjiafangzhou
 			gfx = "GFX_leader_luoli_huangjiafangzhou"

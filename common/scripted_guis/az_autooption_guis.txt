@@ -61,6 +61,12 @@ scripted_gui = {
 			az_autooption_5_off_btn_click = { 
 				clr_country_flag = az_autooption_mofangjichuang_on
 			}
+			az_autooption_6_on_btn_click = { 
+				set_country_flag = az_autooption_mofangzaochuan_on
+			}
+			az_autooption_6_off_btn_click = { 
+				clr_country_flag = az_autooption_mofangzaochuan_on
+			}
 		}
 		triggers = {
 			az_autooption_1_on_btn_visible = {
@@ -92,6 +98,12 @@ scripted_gui = {
 			}
 			az_autooption_5_off_btn_visible = {
 				has_country_flag = az_autooption_mofangjichuang_on
+			}
+			az_autooption_6_on_btn_visible = {
+				NOT = { has_country_flag = az_autooption_mofangzaochuan_on }
+			}
+			az_autooption_6_off_btn_visible = {
+				has_country_flag = az_autooption_mofangzaochuan_on
 			}
 		}
 	}

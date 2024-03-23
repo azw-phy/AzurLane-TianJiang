@@ -1872,6 +1872,7 @@ xingdong_category = {
 				var = xzmf_sl
 				value = -2
 			}
+			set_country_flag = { flag = mf_mofangjianzaojianchuan_doing value = 1 days = 180 }
 		}
 		remove_effect = {
 			hidden_effect = { scoped_sound_effect = AZ_wancheng_sound }
@@ -2056,6 +2057,29 @@ xingdong_category = {
 		}
 	}
 	
-	
+	jiaoyuluolijianniang = {
+		icon = xiuxi
+		priority = 10
+		available = {
+			any_character = {
+				has_trait = luoli
+				NOT = { has_trait = xuexixunsu }
+			}
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 1
+		}
+		visible = {
+			has_country_flag = jiaoyuluolijianniang_get
+			
+		}
+		complete_effect = { 
+			every_character = {
+				limit = { has_trait = luoli }
+				add_unit_leader_trait = xuexixunsu
+			}
+		}
+	}
 
 }

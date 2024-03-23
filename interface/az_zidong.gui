@@ -189,5 +189,35 @@ guiTypes = {
 			clicksound = decisions_ui_button
 			frame = 2
 		}
+		instantTextboxType = {
+			name = "az_autooption_6_txt"
+			orientation = UPPER_LEFT
+			position = { x = 10 y = 170 }  
+			font = "hoi_20b"
+			text = "az_autooption_6_txt"
+			maxWidth = 180
+			maxHeight = 40
+			format = left
+			fixedsize=yes
+			pdx_tooltip = "az_autooption_6_tt"
+		}
+		buttonType = {
+			name = "az_autooption_6_on_btn"
+			orientation = UPPER_LEFT
+			position = { x = 180 y = 170 }  
+			quadTextureSprite = "GFX_checkbox_small4"
+			pdx_tooltip = "az_autooption_on_btn_tt"
+			clicksound = decisions_ui_button
+			frame = 1
+		}
+		buttonType = {
+			name = "az_autooption_6_off_btn"
+			orientation = UPPER_LEFT
+			position = { x = 180 y = 170 }  
+			quadTextureSprite = "GFX_checkbox_small4"
+			pdx_tooltip = "az_autooption_off_btn_tt"
+			clicksound = decisions_ui_button
+			frame = 2
+		}
 	} 
 }

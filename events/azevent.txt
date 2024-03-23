@@ -3201,3 +3201,23 @@ country_event = {
 		ROOT = { activate_decision = mf_mofangjichuang }
 	}
 }
+country_event = {
+	id = azevent.108
+	hidden = yes
+	trigger = {
+		AND = {
+			has_country_flag = az_autooption_mofangzaochuan_on
+			NOT = { has_country_flag = mf_mofangjianzaojianchuan_doing }
+			check_variable = {
+				xzmf_sl > 2
+			}
+		}
+	}
+	immediate = {
+		ROOT = { 
+			activate_decision = mf_mofangjianzaojianchuan
+			
+		}
+	}
+}
+
