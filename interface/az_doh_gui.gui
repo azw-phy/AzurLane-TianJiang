@@ -2,7 +2,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "az_doh_gui_decision_window"
 		position = { x=-10 y=0 }
-		size = { width=510 height=660 }
+		size = { width=510 height=720 }
 		containerWindowType = {
 			name = "az_doh_tesejinjixitong"
 			position = { x=0 y=0 }
@@ -302,8 +302,64 @@ guiTypes = {
 		}
 
 		containerWindowType = {
-			name = "az_doh_decision_zongjikaizhi"
+			name = "az_doh_decision_gexinshengchanli"
 			position = { x=0 y=360 }
+			size = { width=510 height=60 }
+			instantTextboxType = {
+				name = "az_doh_gexinshengchanli"
+				orientation = UPPER_LEFT
+				position = { x = 105 y = 0 }
+				font = "hoi_20b"
+				text = "az_doh_gexinshengchanli_text"
+				maxWidth = 300
+				maxHeight = 60
+				format = center
+				fixedsize=yes
+				pdx_tooltip = "az_doh_gexinshengchanli_text_tt"
+			}
+			buttonType = {
+				name = "az_doh_gui_gexinshengchanli_add_one"
+				position = { x = 410 y = 0 }
+				quadTextureSprite ="GFX_add_one" 
+				buttonFont = "vic_18"
+				#buttonText = "az_doh_gui_button1_text"
+				pdx_tooltip = "az_doh_gui_gexinshengchanli_add_one_tooltip"
+				pdx_disabled_tooltip = az_doh_gui_gexinshengchanli_add_one_tooltip_disabled
+				clicksound = click_default
+			}
+			buttonType = {
+				name = "az_doh_gui_gexinshengchanli_add_5"
+				position = { x = 460 y = 0 }
+				quadTextureSprite ="GFX_add_5" 
+				buttonFont = "vic_18"
+				#buttonText = "az_doh_gui_button1_text"
+				pdx_tooltip = "az_doh_gui_gexinshengchanli_add_one_tooltip"
+				pdx_disabled_tooltip = az_doh_gui_gexinshengchanli_add_one_tooltip_disabled
+				clicksound = click_default
+			}
+			buttonType = {
+				name = "az_doh_gui_gexinshengchanli_subtract_one"
+				position = { x = 100 y = 0 }
+				quadTextureSprite ="GFX_subtract_one" 
+				buttonFont = "vic_18"
+				#buttonText = "az_doh_gui_button2_text"
+				pdx_tooltip = "az_doh_gui_gexinshengchanli_subtract_one_tooltip"
+				clicksound = click_default
+			}
+			buttonType = {
+				name = "az_doh_gui_gexinshengchanli_subtract_5"
+				position = { x = 50 y = 0 }
+				quadTextureSprite ="GFX_subtract_5" 
+				buttonFont = "vic_18"
+				#buttonText = "az_doh_gui_button2_text"
+				pdx_tooltip = "az_doh_gui_gexinshengchanli_subtract_one_tooltip"
+				clicksound = click_default
+			}
+		}
+
+		containerWindowType = {
+			name = "az_doh_decision_zongjikaizhi"
+			position = { x=0 y=420 }
 			size = { width=510 height=60 }
 			instantTextboxType = {
 				name = "az_doh_zongjikaizhi"
@@ -334,7 +390,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "az_doh_decision_guimoxiaoyin"
-			position = { x=0 y=420 }
+			position = { x=0 y=480 }
 			size = { width=510 height=60 }
 			instantTextboxType = {
 				name = "az_doh_guimoxiaoyin"
@@ -365,7 +421,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "az_doh_decision_hegongye"
-			position = { x=0 y=480 }
+			position = { x=0 y=540 }
 			size = { width=510 height=60 }
 			
 			iconType = {
@@ -392,7 +448,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "az_doh_tongyizhanxian_t"
-			position = { x=0 y=540 }
+			position = { x=0 y=600 }
 			size = { width=510 height=60 }
 			instantTextboxType = {
 				name = "az_doh_tongyizhanxian_title"
@@ -410,7 +466,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "az_doh_zhichiduchengfa"
-			position = { x=0 y=600 }
+			position = { x=0 y=660 }
 			size = { width=510 height=60 }
 			instantTextboxType = {
 				name = "az_doh_zhichiduchengfa"

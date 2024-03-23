@@ -2835,8 +2835,6 @@ focus_tree = {
 		y = 2
 		prerequisite = {
 			focus = DOH_gaodengxuefu
-		}
-		prerequisite = {
 			focus = DOH_gongtongfuyu
 			focus = DOH_xianchuyiqie
 		}
@@ -3100,6 +3098,7 @@ focus_tree = {
 					add_idea = DOH_tcsg_wlzs
 				}
 			}
+			custom_effect_tooltip = DOH_guangronghemengxiangdeyuanzheng_tooltip
 		}
 	}
 	focus = {

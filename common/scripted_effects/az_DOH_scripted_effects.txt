@@ -75,6 +75,25 @@ DOH_mofifier_effect = {
 				value = -0.018
 			}
 		}
+		# 革新生产力
+		set_variable = {
+			DOH_keyansudu_all = 0
+		}
+		if = {
+			limit = {
+				has_completed_focus = DOH_guangronghemengxiangdeyuanzheng
+			}
+			DOH_gexinshengchanli_effect = yes
+		}
+		multiply_variable = {
+			DOH_keyansudu_all = 0.2
+		}
+		add_to_variable = {
+			DOH_keyansudu_all = 1
+		}
+		divide_variable = {
+			DOH_xiaofeipingyinxiang_factor = DOH_keyansudu_all
+		}
 	}
 	if = {
 		limit = {
@@ -501,4 +520,27 @@ DOH_neibufenqi_jiazhong_effect = {
 		var:DOH_zhichiduchengfa = 2.50
 	}
 	custom_effect_tooltip = DOH_neibufenqi_jiazhong_effect_tooltip
+}
+
+DOH_gexinshengchanli_effect = {
+	DOH = {
+		set_variable = {
+			DOH_keyansudu_single = modifier@research_speed_factor
+		}
+		set_variable = {
+			DOH_keyancao_all = amount_research_slots
+		}
+		add_to_variable = {
+			DOH_keyancao_all = DOH_gexinshengchanli			
+		}
+		divide_variable = {
+			DOH_keyansudu_single = DOH_keyancao_all
+		}
+		set_variable = {
+			DOH_keyansudu_all = DOH_keyansudu_single
+		}
+		multiply_variable = {
+			DOH_keyansudu_all = DOH_gexinshengchanli
+		}
+	}
 }

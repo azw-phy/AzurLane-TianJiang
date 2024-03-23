@@ -53,10 +53,16 @@ scripted_gui = {
 			az_doh_gui_keyanjinfei_add_one_click_enabled = {
 				has_completed_focus = DOH_rencaiyinjin
 				num_of_civilian_factories_available_for_projects > 5
+				check_variable = {
+					var:DOH_keyanjinfei < 30
+				}
 			}
 			az_doh_gui_keyanjinfei_add_5_click_enabled = {
 				has_completed_focus = DOH_rencaiyinjin
 				num_of_civilian_factories_available_for_projects > 15
+				check_variable = {
+					var:DOH_keyanjinfei < 26
+				}
 			}
 			az_doh_gui_keyanjinfei_subtract_one_click_enabled = {
 				has_completed_focus = DOH_rencaiyinjin
@@ -115,6 +121,32 @@ scripted_gui = {
 				has_completed_focus = DOH_shichanghuanjishu
 				check_variable = {
 					var:DOH_shichang > 4
+				}
+			}
+
+			az_doh_gui_gexinshengchanli_subtract_one_click_enabled = {
+				has_completed_focus = DOH_guangronghemengxiangdeyuanzheng
+				check_variable = {
+					var:DOH_gexinshengchanli > 0
+				}
+			}
+			az_doh_gui_gexinshengchanli_subtract_5_click_enabled = {
+				has_completed_focus = DOH_guangronghemengxiangdeyuanzheng
+				check_variable = {
+					var:DOH_shichang > 4
+				}
+			}
+
+			az_doh_gui_gexinshengchanli_add_one_click_enabled = {
+				has_completed_focus = DOH_guangronghemengxiangdeyuanzheng
+				DOH = {
+					amount_research_slots > 1
+				}
+			}
+			az_doh_gui_gexinshengchanli_add_5_click_enabled = {
+				has_completed_focus = DOH_guangronghemengxiangdeyuanzheng
+				DOH = {
+					amount_research_slots > 6
 				}
 			}
 		}
@@ -295,6 +327,55 @@ scripted_gui = {
 			az_doh_gui_shichang_subtract_5_click = {
 				add_to_variable = {
 					var:DOH_shichang = -5
+				}
+				DOH_mofifier_effect = yes
+				DOH_zhichilvchengfa_effect = yes
+				DOH_zhichilvchengfa_effect = yes
+				DOH_zhichilvchengfa_effect = yes
+				DOH_zhichilvchengfa_effect = yes
+				DOH_zhichilvchengfa_effect = yes
+			}
+
+			az_doh_gui_gexinshengchanli_add_one_click = {
+				add_to_variable = {
+					var:DOH_gexinshengchanli = 1
+				}
+				DOH = {
+					add_research_slot = -1
+				}
+				DOH_mofifier_effect = yes
+				DOH_zhichilvchengfa_effect = yes
+			}
+			az_doh_gui_gexinshengchanli_add_5_click = {
+				add_to_variable = {
+					var:DOH_gexinshengchanli = 5
+				}
+				DOH = {
+					add_research_slot = -5
+				}
+				DOH_mofifier_effect = yes
+				DOH_zhichilvchengfa_effect = yes
+				DOH_zhichilvchengfa_effect = yes
+				DOH_zhichilvchengfa_effect = yes
+				DOH_zhichilvchengfa_effect = yes
+				DOH_zhichilvchengfa_effect = yes
+			}
+			az_doh_gui_gexinshengchanli_subtract_one_click = {
+				add_to_variable = {
+					var:DOH_gexinshengchanli = -1
+				}
+				DOH = {
+					add_research_slot = 1
+				}
+				DOH_mofifier_effect = yes
+				DOH_zhichilvchengfa_effect = yes
+			}
+			az_doh_gui_gexinshengchanli_subtract_5_click = {
+				add_to_variable = {
+					var:DOH_gexinshengchanli = -5
+				}
+				DOH = {
+					add_research_slot = 5
 				}
 				DOH_mofifier_effect = yes
 				DOH_zhichilvchengfa_effect = yes

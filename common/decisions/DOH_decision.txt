@@ -622,6 +622,7 @@ DOH_decision_category = {
 			756 = {
 				rocket_site > 0
 			}
+			amount_research_slots > 2
 		}
 		cost = 500
 		days_remove = 300
@@ -1336,7 +1337,7 @@ DOH_decision_debug_category = {
 		cost = 10
 		
 		complete_effect = {
-			custom_effect_tooltip = "增加1点额外军事经费"
+			custom_effect_tooltip = "增加1点额外生产经费"
 			effect_tooltip = {
 				add_dynamic_modifier = {
 					modifier = DOH_fake_add_junshijinfei
@@ -1368,7 +1369,7 @@ DOH_decision_debug_category = {
 		cost = 10
 		
 		complete_effect = {
-			custom_effect_tooltip = "减少1点额外军事经费"
+			custom_effect_tooltip = "减少1点额外生产经费"
 			effect_tooltip = {
 				remove_dynamic_modifier = {
 					modifier = DOH_fake_add_junshijinfei

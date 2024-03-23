@@ -28,12 +28,12 @@ on_actions = {
 				set_variable = {
 					var = DOH_junshijinfei
 					value = 0
-					tooltip = "额外军事经费"
+					tooltip = "额外生产经费"
 				}
 				set_variable = {
 					var = DOH_junshijinfei_effect
 					value = 0
-					tooltip = "额外军事经费影响"
+					tooltip = "额外生产经费影响"
 				}
 				set_variable = {
 					var = DOH_gonggongkaizhi
@@ -89,6 +89,11 @@ on_actions = {
 					var = extra_xiaofeiping
 					value = 0
 					tooltip = "额外消费品系数修正"
+				}
+				set_variable = {
+					var = DOH_gexinshengchanli
+					value = 0
+					tooltip = "革新生产力"
 				}
 			}
 		}
