@@ -3061,7 +3061,7 @@ focus_tree = {
 		# 	num_of_factories > 1000
 		# }
 		available = {
-			num_of_factories > 2600
+			num_of_factories > 1200
 			OR = {
 				has_completed_focus = DOH_baochiweishe
 				has_completed_focus = DOH_jijikuozhang
