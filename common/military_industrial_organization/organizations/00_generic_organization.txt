@@ -15,7 +15,8 @@ generic_tank_organization = {
 	icon = GFX_idea_generic_tank_manufacturer_1
 
 	allowed = {
-		NOT = { OR = { tag = GER tag = BFL tag = HUJ tag = SAD tag = TIX tag = BYG tag = CHY tag = YUW tag = DOH tag = BLI tag = SIR tag = SR1 tag = SR2 tag = SR3 tag = SR4 tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CZE tag = ROM } }
+		NOT = { tag = BFL tag = HUJ tag = SAD tag = TIX tag = BYG tag = CHY tag = YUW tag = DOH tag = BLI tag = SIR tag = SR1 tag = SR2 tag = SR3 tag = SR4 }
+		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CZE tag = ROM } }
 		NOT = {
 			AND = {
 				tag = POL
@@ -2231,7 +2232,8 @@ generic_escort_ship_organization = {
 	icon = GFX_idea_generic_naval_manufacturer_1
 
 	allowed = {
-		NOT = { OR = { tag = GER tag = BFL tag = HUJ tag = SAD tag = TIX tag = BYG tag = CHY tag = YUW tag = DOH tag = BLI tag = SIR tag = SR1 tag = SR2 tag = SR3 tag = SR4 tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CAN tag = SWE tag = HUN tag = CZE tag = ROM tag = YUG tag = POR tag = GRE tag = TUR tag = LAT tag = EST } }
+		NOT = { tag = BFL tag = HUJ tag = SAD tag = TIX tag = BYG tag = CHY tag = YUW tag = DOH tag = BLI tag = SIR tag = SR1 tag = SR2 tag = SR3 tag = SR4 }
+		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CAN tag = SWE tag = HUN tag = CZE tag = ROM tag = YUG tag = POR tag = GRE tag = TUR tag = LAT tag = EST } }
 		NOT = { OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD } }
 		NOT = {
 			AND = {
@@ -4060,7 +4062,8 @@ generic_general_aircraft_organization = {
 	icon = GFX_idea_generic_air_manufacturer_1
 
 	allowed = {
-		NOT = { OR = { tag = GER tag = BFL tag = HUJ tag = SAD tag = TIX tag = BYG tag = CHY tag = YUW tag = DOH tag = BLI tag = SIR tag = SR1 tag = SR2 tag = SR3 tag = SR4 tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CAN tag = YUG tag = ROM tag = CZE tag = HUN tag = CHI tag = MAN tag = HOL tag = BUL tag = GRE tag = TUR tag = LAT tag = LIT } }
+		NOT = { tag = BFL tag = HUJ tag = SAD tag = TIX tag = BYG tag = CHY tag = YUW tag = DOH tag = BLI tag = SIR tag = SR1 tag = SR2 tag = SR3 tag = SR4 }
+		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CAN tag = YUG tag = ROM tag = CZE tag = HUN tag = CHI tag = MAN tag = HOL tag = BUL tag = GRE tag = TUR tag = LAT tag = LIT } }
 		NOT = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD }
 		NOT = {
 			AND = {
@@ -7844,7 +7847,8 @@ generic_motorized_mechanized_organization = {
 	icon = GFX_idea_generic_motorized_equipment_manufacturer_3
 
 	allowed = {
-		NOT = { OR = { tag = GER tag = BFL tag = HUJ tag = SAD tag = TIX tag = BYG tag = CHY tag = YUW tag = DOH tag = BLI tag = SIR tag = SR1 tag = SR2 tag = SR3 tag = SR4 tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CZE tag = ROM tag = MEX } }
+		NOT = { tag = BFL tag = HUJ tag = SAD tag = TIX tag = BYG tag = CHY tag = YUW tag = DOH tag = BLI tag = SIR tag = SR1 tag = SR2 tag = SR3 tag = SR4 }
+		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CZE tag = ROM tag = MEX } }
 		NOT = {
 			AND = {
 				tag = POL
