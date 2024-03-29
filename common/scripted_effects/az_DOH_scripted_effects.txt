@@ -237,7 +237,7 @@ DOH_mofifier_effect = {
 		}
 
 		set_variable = {
-			var:DOH_hechenglianyouchang_counter_5 = 0
+			var:DOH_hechenglianyouchang_counter_2 = 0
 		}
 		if = {
 			limit = {
@@ -249,15 +249,12 @@ DOH_mofifier_effect = {
 							}
 							add_to_temp_variable = { DOH_sr_counter = building_level@synthetic_refinery }
 							add_to_temp_variable = { DOH_sr_counter = building_level@synthetic_refinery }
-							add_to_temp_variable = { DOH_sr_counter = building_level@synthetic_refinery }
-							add_to_temp_variable = { DOH_sr_counter = building_level@synthetic_refinery }
-							add_to_temp_variable = { DOH_sr_counter = building_level@synthetic_refinery }
 						}
 					}
 				}
 			}
 			set_variable = {
-				var:DOH_hechenglianyouchang_counter_5 = DOH_sr_counter
+				var:DOH_hechenglianyouchang_counter_2 = DOH_sr_counter
 			}
 		}
 	}

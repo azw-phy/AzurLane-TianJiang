@@ -53,16 +53,12 @@ DOH_donghuangkuangyedaxue = {
 	icon = GFX_idea_DOH_xdh
     enable = { always = yes }
 	country_resource_steel = var:DOH_minyonggongchang_counter_1
-	country_resource_steel = var:DOH_minyonggongchang_counter_1
-	country_resource_aluminium = var:DOH_minyonggongchang_counter_1
-	country_resource_tungsten = var:DOH_minyonggongchang_counter_1
-	country_resource_chromium = var:DOH_minyonggongchang_counter_1
 
-	country_resource_steel = var:DOH_hechenglianyouchang_counter_5
-	country_resource_steel = var:DOH_hechenglianyouchang_counter_5
-	country_resource_aluminium = var:DOH_hechenglianyouchang_counter_5
-	country_resource_tungsten = var:DOH_hechenglianyouchang_counter_5
-	country_resource_chromium = var:DOH_hechenglianyouchang_counter_5
+	country_resource_steel = var:DOH_hechenglianyouchang_counter_2
+	country_resource_steel = var:DOH_hechenglianyouchang_counter_2
+	country_resource_aluminium = var:DOH_hechenglianyouchang_counter_2
+	country_resource_tungsten = var:DOH_hechenglianyouchang_counter_2
+	country_resource_chromium = var:DOH_hechenglianyouchang_counter_2
 
 }
 DOH_kejiaotixi = {
@@ -81,17 +77,12 @@ DOH_kejiaotixi = {
 	experience_loss_factor = -0.50
 
 	country_resource_steel = var:DOH_minyonggongchang_counter_1
-	country_resource_steel = var:DOH_minyonggongchang_counter_1
-	country_resource_aluminium = var:DOH_minyonggongchang_counter_1
-	country_resource_tungsten = var:DOH_minyonggongchang_counter_1
-	country_resource_chromium = var:DOH_minyonggongchang_counter_1
 
-	country_resource_steel = var:DOH_hechenglianyouchang_counter_5
-	country_resource_steel = var:DOH_hechenglianyouchang_counter_5
-	country_resource_aluminium = var:DOH_hechenglianyouchang_counter_5
-	country_resource_tungsten = var:DOH_hechenglianyouchang_counter_5
-	country_resource_chromium = var:DOH_hechenglianyouchang_counter_5
-
+	country_resource_steel = var:DOH_hechenglianyouchang_counter_2
+	country_resource_steel = var:DOH_hechenglianyouchang_counter_2
+	country_resource_aluminium = var:DOH_hechenglianyouchang_counter_2
+	country_resource_tungsten = var:DOH_hechenglianyouchang_counter_2
+	country_resource_chromium = var:DOH_hechenglianyouchang_counter_2
 }
 
 DOH_kejiaotixi_black = {
@@ -105,17 +96,12 @@ DOH_kejiaotixi_black = {
 	experience_loss_factor = -0.50
 
 	country_resource_steel = var:DOH_minyonggongchang_counter_1
-	country_resource_steel = var:DOH_minyonggongchang_counter_1
-	country_resource_aluminium = var:DOH_minyonggongchang_counter_1
-	country_resource_tungsten = var:DOH_minyonggongchang_counter_1
-	country_resource_chromium = var:DOH_minyonggongchang_counter_1
 
-	country_resource_steel = var:DOH_hechenglianyouchang_counter_5
-	country_resource_steel = var:DOH_hechenglianyouchang_counter_5
-	country_resource_aluminium = var:DOH_hechenglianyouchang_counter_5
-	country_resource_tungsten = var:DOH_hechenglianyouchang_counter_5
-	country_resource_chromium = var:DOH_hechenglianyouchang_counter_5
-
+	country_resource_steel = var:DOH_hechenglianyouchang_counter_2
+	country_resource_steel = var:DOH_hechenglianyouchang_counter_2
+	country_resource_aluminium = var:DOH_hechenglianyouchang_counter_2
+	country_resource_tungsten = var:DOH_hechenglianyouchang_counter_2
+	country_resource_chromium = var:DOH_hechenglianyouchang_counter_2
 }
 
 DOH_fake_add_gonggongkaizhi = {

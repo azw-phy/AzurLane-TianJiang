@@ -366,6 +366,11 @@ DOH_jiangnan_shipyard_group_organization = {
 	allowed = {	
 		tag = DOH
 	}
+	available = {
+		DOH = {
+			controls_state = 613
+		}
+	}
 	add_trait = {  
 		token = jishujiaoliu_hengxuhe
 		name = jishujiaoliu_hengxuhe
@@ -397,7 +402,7 @@ DOH_jiangnan_shipyard_group_organization = {
 	}
 	add_trait = {
 		token = jishugaijing
-		name = jishugaijing
+		name = "整修江南制造局"
 		icon = GFX_generic_mio_trait_icon_unique
 		special_trait_background = yes
 

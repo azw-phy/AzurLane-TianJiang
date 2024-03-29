@@ -2938,43 +2938,28 @@ focus_tree = {
 				modify_building_resources = {
 					building = industrial_complex
 					resource = steel
-					amount = 2
-				}
-				modify_building_resources = {
-					building = industrial_complex
-					resource = aluminium
-					amount = 1
-				}
-				modify_building_resources = {
-					building = industrial_complex
-					resource = tungsten
-					amount = 1
-				}
-				modify_building_resources = {
-					building = industrial_complex
-					resource = chromium
 					amount = 1
 				}
 	
 				modify_building_resources = {
 					building = synthetic_refinery
 					resource = steel
-					amount = 10
+					amount = 4
 				}
 				modify_building_resources = {
 					building = synthetic_refinery
 					resource = aluminium
-					amount = 5
+					amount = 2
 				}
 				modify_building_resources = {
 					building = synthetic_refinery
 					resource = tungsten
-					amount = 5
+					amount = 2
 				}
 				modify_building_resources = {
 					building = synthetic_refinery
 					resource = chromium
-					amount = 5
+					amount = 2
 				}
 			}
 			hidden_effect = {
