@@ -64,6 +64,16 @@ generic_tank_organization = {
 				has_dlc = "Arms Against Tyranny"
 			}
 		}
+		NOT = {
+			AND = {
+				OR = {
+					original_tag = BRA 
+					original_tag = CHL
+					original_tag = ARG
+				}
+				has_dlc = "Trial of Allegiance"
+			}
+		}
 	}
 
 	equipment_type = { mio_cat_eq_all_light_tank mio_cat_eq_all_medium_tank }
@@ -1599,7 +1609,74 @@ generic_task_force_ship_organization = {
 			max_strength = 0.05
 		}
 	}
+	trait = {  
+		token = bulizaochuanchang_1
+		name = bulizaochuanchang_1
+		icon = GFX_BLI_zaochuanchang_mio_icon_1
+		special_trait_background = yes
 
+		position = { x=8 y=4 }  
+
+		available = {
+			FROM = { OR = { tag = BLI has_country_flag =  buligongyi1_get } }
+		}
+		
+		equipment_bonus = {
+			reliability = 0.08 
+			armor_value = 0.05
+			maximum_speed = 0.03
+			naval_range = 0.1
+      	}
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
+				add_mio_size = 1
+			}
+			FROM = {
+				navy_experience = 200
+			}
+		}
+	}
+
+	trait = {
+		token = bulizaochuanchang_2
+		name = bulizaochuanchang_2
+		icon = GFX_BLI_zaochuanchang_mio_icon_2
+		special_trait_background = yes
+
+		position = { x=9 y=4 }  
+
+		available = {
+			FROM = { OR = { tag = BLI has_country_flag =  buligongyi2_get } }
+		}
+		
+		equipment_bonus = {
+			lg_attack = 0.15
+			hg_attack = 0.2
+			carrier_size = 1
+			torpedo_attack = 0.15
+			build_cost_ic = -0.1
+  	    }
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
+				add_mio_size = 1
+			}
+			FROM = {
+				navy_experience = 200
+			}
+		}
+	}
 	trait = {
 		token = generic_mio_trait_long_range_cruising
 		name = generic_mio_trait_long_range_cruising
@@ -1852,6 +1929,75 @@ generic_battle_line_ship_organization = {
 		}
 		production_bonus = {
 			production_capacity_factor = 0.05
+		}
+	}
+
+	trait = {  
+		token = bulizaochuanchang_1
+		name = bulizaochuanchang_1
+		icon = GFX_BLI_zaochuanchang_mio_icon_1
+		special_trait_background = yes
+
+		position = { x=8 y=4 }  
+
+		available = {
+			FROM = { OR = { tag = BLI has_country_flag =  buligongyi1_get } }
+		}
+		
+		equipment_bonus = {
+			reliability = 0.08 
+			armor_value = 0.05
+			maximum_speed = 0.03
+			naval_range = 0.1
+      	}
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
+				add_mio_size = 1
+			}
+			FROM = {
+				navy_experience = 200
+			}
+		}
+	}
+
+	trait = {
+		token = bulizaochuanchang_2
+		name = bulizaochuanchang_2
+		icon = GFX_BLI_zaochuanchang_mio_icon_2
+		special_trait_background = yes
+
+		position = { x=9 y=4 }  
+
+		available = {
+			FROM = { OR = { tag = BLI has_country_flag =  buligongyi2_get } }
+		}
+		
+		equipment_bonus = {
+			lg_attack = 0.15
+			hg_attack = 0.2
+			carrier_size = 1
+			torpedo_attack = 0.15
+			build_cost_ic = -0.1
+  	    }
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
+				add_mio_size = 1
+			}
+			FROM = {
+				navy_experience = 200
+			}
 		}
 	}
 
@@ -2138,6 +2284,16 @@ generic_escort_ship_organization = {
 				has_dlc = "Arms Against Tyranny"
 			}
 		}
+		NOT = {
+			AND = {
+				OR = {
+					original_tag = BRA 
+					original_tag = CHL
+					original_tag = ARG
+				}
+				has_dlc = "Trial of Allegiance"
+			}
+		}
 	}
 
 	equipment_type = {
@@ -2165,6 +2321,75 @@ generic_escort_ship_organization = {
 		}
 		production_bonus = {
 			production_capacity_factor = 0.05
+		}
+	}
+
+	trait = {  
+		token = bulizaochuanchang_1
+		name = bulizaochuanchang_1
+		icon = GFX_BLI_zaochuanchang_mio_icon_1
+		special_trait_background = yes
+
+		position = { x=8 y=4 }  
+
+		available = {
+			FROM = { OR = { tag = BLI has_country_flag =  buligongyi1_get } }
+		}
+		
+		equipment_bonus = {
+			reliability = 0.08 
+			armor_value = 0.05
+			maximum_speed = 0.03
+			naval_range = 0.1
+      	}
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
+				add_mio_size = 1
+			}
+			FROM = {
+				navy_experience = 200
+			}
+		}
+	}
+
+	trait = {
+		token = bulizaochuanchang_2
+		name = bulizaochuanchang_2
+		icon = GFX_BLI_zaochuanchang_mio_icon_2
+		special_trait_background = yes
+
+		position = { x=9 y=4 }  
+
+		available = {
+			FROM = { OR = { tag = BLI has_country_flag =  buligongyi2_get } }
+		}
+		
+		equipment_bonus = {
+			lg_attack = 0.15
+			hg_attack = 0.2
+			carrier_size = 1
+			torpedo_attack = 0.15
+			build_cost_ic = -0.1
+  	    }
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
+				add_mio_size = 1
+			}
+			FROM = {
+				navy_experience = 200
+			}
 		}
 	}
 
@@ -2383,7 +2608,74 @@ generic_raider_ship_organization = {
 			surface_visibility = -0.05
 		}
 	}
+	trait = {  
+		token = bulizaochuanchang_1
+		name = bulizaochuanchang_1
+		icon = GFX_BLI_zaochuanchang_mio_icon_1
+		special_trait_background = yes
 
+		position = { x=8 y=4 }  
+
+		available = {
+			FROM = { OR = { tag = BLI has_country_flag =  buligongyi1_get } }
+		}
+		
+		equipment_bonus = {
+			reliability = 0.08 
+			armor_value = 0.05
+			maximum_speed = 0.03
+			naval_range = 0.1
+      	}
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
+				add_mio_size = 1
+			}
+			FROM = {
+				navy_experience = 200
+			}
+		}
+	}
+
+	trait = {
+		token = bulizaochuanchang_2
+		name = bulizaochuanchang_2
+		icon = GFX_BLI_zaochuanchang_mio_icon_2
+		special_trait_background = yes
+
+		position = { x=9 y=4 }  
+
+		available = {
+			FROM = { OR = { tag = BLI has_country_flag =  buligongyi2_get } }
+		}
+		
+		equipment_bonus = {
+			lg_attack = 0.15
+			hg_attack = 0.2
+			carrier_size = 1
+			torpedo_attack = 0.15
+			build_cost_ic = -0.1
+  	    }
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
+				add_mio_size = 1
+			}
+			FROM = {
+				navy_experience = 200
+			}
+		}
+	}
 	trait = {
 		token = generic_mio_trait_long_range_raiding
 		name = generic_mio_trait_long_range_raiding
@@ -2678,7 +2970,74 @@ generic_submarine_organization = {
 			sub_visibility = -0.05
 		}
 	}
+	trait = {  
+		token = bulizaochuanchang_1
+		name = bulizaochuanchang_1
+		icon = GFX_BLI_zaochuanchang_mio_icon_1
+		special_trait_background = yes
 
+		position = { x=8 y=4 }  
+
+		available = {
+			FROM = { OR = { tag = BLI has_country_flag =  buligongyi1_get } }
+		}
+		
+		equipment_bonus = {
+			reliability = 0.08 
+			armor_value = 0.05
+			maximum_speed = 0.03
+			naval_range = 0.1
+      	}
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
+				add_mio_size = 1
+			}
+			FROM = {
+				navy_experience = 200
+			}
+		}
+	}
+
+	trait = {
+		token = bulizaochuanchang_2
+		name = bulizaochuanchang_2
+		icon = GFX_BLI_zaochuanchang_mio_icon_2
+		special_trait_background = yes
+
+		position = { x=9 y=4 }  
+
+		available = {
+			FROM = { OR = { tag = BLI has_country_flag =  buligongyi2_get } }
+		}
+		
+		equipment_bonus = {
+			lg_attack = 0.15
+			hg_attack = 0.2
+			carrier_size = 1
+			torpedo_attack = 0.15
+			build_cost_ic = -0.1
+  	    }
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
+				add_mio_size = 1
+			}
+			FROM = {
+				navy_experience = 200
+			}
+		}
+	}
 	trait = {
 		token = generic_mio_trait_long_range_raiding
 		name = generic_mio_trait_long_range_raiding
@@ -3013,6 +3372,75 @@ generic_black_sea_fleet_organization = {
 		}
 	}
 
+	trait = {  
+		token = bulizaochuanchang_1
+		name = bulizaochuanchang_1
+		icon = GFX_BLI_zaochuanchang_mio_icon_1
+		special_trait_background = yes
+
+		position = { x=8 y=4 }  
+
+		available = {
+			FROM = { OR = { tag = BLI has_country_flag =  buligongyi1_get } }
+		}
+		
+		equipment_bonus = {
+			reliability = 0.08 
+			armor_value = 0.05
+			maximum_speed = 0.03
+			naval_range = 0.1
+      	}
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
+				add_mio_size = 1
+			}
+			FROM = {
+				navy_experience = 200
+			}
+		}
+	}
+
+	trait = {
+		token = bulizaochuanchang_2
+		name = bulizaochuanchang_2
+		icon = GFX_BLI_zaochuanchang_mio_icon_2
+		special_trait_background = yes
+
+		position = { x=9 y=4 }  
+
+		available = {
+			FROM = { OR = { tag = BLI has_country_flag =  buligongyi2_get } }
+		}
+		
+		equipment_bonus = {
+			lg_attack = 0.15
+			hg_attack = 0.2
+			carrier_size = 1
+			torpedo_attack = 0.15
+			build_cost_ic = -0.1
+  	    }
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
+				add_mio_size = 1
+			}
+			FROM = {
+				navy_experience = 200
+			}
+		}
+	}
+
 	trait = {
 		token = generic_mio_trait_submarine_hunters_black_sea
 		name = generic_mio_trait_submarine_hunters_black_sea
@@ -3317,7 +3745,74 @@ generic_refurbishment_repair_organization = {
 			military_industrial_organization_research_bonus = 0.01
 		}
 	}
+	trait = {  
+		token = bulizaochuanchang_1
+		name = bulizaochuanchang_1
+		icon = GFX_BLI_zaochuanchang_mio_icon_1
+		special_trait_background = yes
 
+		position = { x=4 y=4 }  
+
+		available = {
+			FROM = { OR = { tag = BLI has_country_flag =  buligongyi1_get } }
+		}
+		
+		equipment_bonus = {
+			reliability = 0.08 
+			armor_value = 0.05
+			maximum_speed = 0.03
+			naval_range = 0.1
+      	}
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
+				add_mio_size = 1
+			}
+			FROM = {
+				navy_experience = 200
+			}
+		}
+	}
+
+	trait = {
+		token = bulizaochuanchang_2
+		name = bulizaochuanchang_2
+		icon = GFX_BLI_zaochuanchang_mio_icon_2
+		special_trait_background = yes
+
+		position = { x=5 y=4 }  
+
+		available = {
+			FROM = { OR = { tag = BLI has_country_flag =  buligongyi2_get } }
+		}
+		
+		equipment_bonus = {
+			lg_attack = 0.15
+			hg_attack = 0.2
+			carrier_size = 1
+			torpedo_attack = 0.15
+			build_cost_ic = -0.1
+  	    }
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
+				add_mio_size = 1
+			}
+			FROM = {
+				navy_experience = 200
+			}
+		}
+	}
 	trait = {
 		token = generic_mio_trait_heavy_armored_hull
 		name = generic_mio_trait_heavy_armored_hull
@@ -3578,6 +4073,12 @@ generic_general_aircraft_organization = {
 		}
 		NOT = {
 			AND = {
+				OR = { tag = AST tag = RAJ }
+				has_dlc = "Together for Victory"
+			}
+		}
+		NOT = {
+			AND = {
 				OR = { tag = PRC tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
 				has_dlc = "Waking the Tiger"
 			}
@@ -3604,6 +4105,16 @@ generic_general_aircraft_organization = {
 			AND = {
 				OR = { original_tag = FIN tag = NOR tag = DEN  tag = SWE }
 				has_dlc = "Arms Against Tyranny"
+			}
+		}
+		NOT = {
+			AND = {
+				OR = {
+					original_tag = BRA 
+					original_tag = CHL
+					original_tag = ARG
+				} 
+				has_dlc = "Trial of Allegiance"
 			}
 		}
 	}
@@ -3881,9 +4392,14 @@ generic_light_aircraft_organization = {
 
 	equipment_type = {
 		mio_cat_eq_only_light_fighter
+		small_plane_cas_airframe
+		cv_small_plane_cas_airframe
 	}
 
-	research_categories = {	mio_cat_all_light_fighter_and_modules }
+	research_categories = {	
+		mio_cat_all_light_fighter_and_modules 
+		mio_cat_all_cas_and_modules 
+	}
 	
 	tree_header_text = {
 		text = mio_header_production
@@ -6324,7 +6840,7 @@ generic_artillery_organization = {
 	icon = GFX_idea_generic_artillery_manufacturer_2
 
 	allowed = {
-		NOT = { OR = { tag = GER tag = BFL tag = HUJ tag = SAD tag = TIX tag = BYG tag = CHY tag = YUW tag = DOH tag = BLI tag = SIR tag = SR1 tag = SR2 tag = SR3 tag = SR4 tag = ENG tag = SOV tag = FRA tag = ITA tag = USA tag = JAP tag = BEL tag = CZE tag = ROM tag = MEX } }
+		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = USA tag = JAP tag = CZE tag = ROM tag = MEX } }
 		NOT = {
 			AND = {
 				tag = POL
@@ -6336,7 +6852,7 @@ generic_artillery_organization = {
 		}
 		NOT = {
 			AND = {
-				OR = { tag = AST tag = SAF tag = NZL tag = CAN tag = RAJ }
+				tag = RAJ
 				has_dlc = "Together for Victory"
 			}
 		}
@@ -6383,6 +6899,16 @@ generic_artillery_organization = {
 			AND = {
 				OR = { original_tag = FIN tag = NOR tag = DEN tag = SWE }
 				has_dlc = "Arms Against Tyranny"
+			}
+		}
+		NOT = {
+			AND = {
+				OR = {
+					original_tag = BRA 
+					original_tag = CHL
+					original_tag = ARG
+				}
+				has_dlc = "Trial of Allegiance"
 			}
 		}
 	}
@@ -6683,7 +7209,6 @@ generic_artillery_organization = {
 			defense = 0.1
 		}
 	}
-
 }
 
 	
@@ -6695,7 +7220,7 @@ generic_infantry_equipment_organization = {
 	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
 
 	allowed = {
-		NOT = { OR = { tag = GER tag = BFL tag = HUJ tag = SAD tag = TIX tag = BYG tag = CHY tag = YUW tag = DOH tag = BLI tag = SIR tag = SR1 tag = SR2 tag = SR3 tag = SR4 tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CZE tag = HUN tag = YUG tag = ROM tag = MEX tag = TUR tag = EST } }
+		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CZE tag = HUN tag = YUG tag = ROM tag = MEX tag = TUR tag = EST } }
 		NOT = {
 			AND = {
 				tag = POL
@@ -6707,7 +7232,7 @@ generic_infantry_equipment_organization = {
 		}
 		NOT = {
 			AND = {
-				OR = { tag = AST tag = SAF tag = NZL tag = CAN tag = RAJ }
+				OR = { tag = AST tag = CAN tag = RAJ }
 				has_dlc = "Together for Victory"
 			}
 		}
@@ -6754,6 +7279,16 @@ generic_infantry_equipment_organization = {
 			AND = {
 				OR = { original_tag = FIN tag = NOR tag = DEN tag = SWE }
 				has_dlc = "Arms Against Tyranny"
+			}
+		}
+		NOT = {
+			AND = {
+				OR = {
+					original_tag = BRA 
+					original_tag = CHL
+					original_tag = ARG
+				}
+				has_dlc = "Trial of Allegiance"
 			}
 		}
 	}
@@ -7030,7 +7565,6 @@ generic_infantry_equipment_organization = {
 
 		}
 	}
-
 }
 
 
@@ -7322,6 +7856,12 @@ generic_motorized_mechanized_organization = {
 		}
 		NOT = {
 			AND = {
+				tag = NZL
+				has_dlc = "Together for Victory"
+			}
+		}
+		NOT = {
+			AND = {
 				OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
 				has_dlc = "Waking the Tiger"
 			}
@@ -7360,6 +7900,16 @@ generic_motorized_mechanized_organization = {
 			AND = {
 				OR = { original_tag = FIN tag = NOR tag = DEN tag = SWE }
 				has_dlc = "Arms Against Tyranny"
+			}
+		}
+		NOT = {
+			AND = {
+				OR = {
+					original_tag = BRA 
+					original_tag = CHL
+					original_tag = ARG
+				}
+				has_dlc = "Trial of Allegiance"
 			}
 		}
 	}
