@@ -3443,6 +3443,9 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = DOH_rishenzhidi
 		}
+		bypass = {
+			has_subject = CHY
+		}
 		available = {
 			num_of_factories > 1600
 			has_collaboration = {
@@ -4537,7 +4540,9 @@ focus_tree = {
 		available_if_capitulated = no
 
 
-
+		bypass = {
+			has_subject = CHY
+		}
 		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			add_timed_idea = { idea = DOH_dfcy days = 900 } 
@@ -4558,7 +4563,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
+		bypass = {
+			has_subject = CHY
+		}
 		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -4635,7 +4642,9 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		bypass = {
+			has_subject = CHY
+		}
 
 
 		#search_filters = { FOCUS_FILTER_STABILITY }

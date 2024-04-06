@@ -3375,6 +3375,7 @@ focus_tree = {
 			or = {
 			not = {has_completed_focus = YUW_zhidugeming}
 			has_government = neutrality
+			has_global_flag = MOD_azurlane_sairenzhizai
 			}
 		}
 		bypass = {
