@@ -81,6 +81,74 @@ CHY_kure_naval_arsenal_organization = {
 		tag = CHY
 	}
 	add_trait = {  
+		token = bulizaochuanchang_1
+		name = bulizaochuanchang_1
+		icon = GFX_BLI_zaochuanchang_mio_icon_1
+		special_trait_background = yes
+
+		position = { x=8 y=4 }  
+
+		available = {
+			FROM = { OR = { tag = BLI has_country_flag =  buligongyi1_get } }
+		}
+		
+		equipment_bonus = {
+			reliability = 0.08 
+			armor_value = 0.05
+			maximum_speed = 0.03
+			naval_range = 0.1
+      	}
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
+				add_mio_size = 1
+			}
+			FROM = {
+				navy_experience = 200
+			}
+		}
+	}
+
+	add_trait = {
+		token = bulizaochuanchang_2
+		name = bulizaochuanchang_2
+		icon = GFX_BLI_zaochuanchang_mio_icon_2
+		special_trait_background = yes
+
+		position = { x=9 y=4 }  
+
+		available = {
+			FROM = { OR = { tag = BLI has_country_flag =  buligongyi2_get } }
+		}
+		
+		equipment_bonus = {
+			lg_attack = 0.15
+			hg_attack = 0.2
+			carrier_size = 1
+			torpedo_attack = 0.15
+			build_cost_ic = -0.1
+  	    }
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
+				add_mio_size = 1
+			}
+			FROM = {
+				navy_experience = 200
+			}
+		}
+	}
+	add_trait = {  
 		token = gongyejituan
 		name = gongyejituan
 		icon = GFX_generic_mio_department_icon_facilities
@@ -114,6 +182,74 @@ CHY_yokosuka_naval_arsenal_organization = {
 	icon = GFX_idea_yokosuka_naval_arsenal
 	allowed = {
 		tag = CHY
+	}
+	add_trait = {  
+		token = bulizaochuanchang_1
+		name = bulizaochuanchang_1
+		icon = GFX_BLI_zaochuanchang_mio_icon_1
+		special_trait_background = yes
+
+		position = { x=8 y=4 }  
+
+		available = {
+			FROM = { OR = { tag = BLI has_country_flag =  buligongyi1_get } }
+		}
+		
+		equipment_bonus = {
+			reliability = 0.08 
+			armor_value = 0.05
+			maximum_speed = 0.03
+			naval_range = 0.1
+      	}
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
+				add_mio_size = 1
+			}
+			FROM = {
+				navy_experience = 200
+			}
+		}
+	}
+
+	add_trait = {
+		token = bulizaochuanchang_2
+		name = bulizaochuanchang_2
+		icon = GFX_BLI_zaochuanchang_mio_icon_2
+		special_trait_background = yes
+
+		position = { x=9 y=4 }  
+
+		available = {
+			FROM = { OR = { tag = BLI has_country_flag =  buligongyi2_get } }
+		}
+		
+		equipment_bonus = {
+			lg_attack = 0.15
+			hg_attack = 0.2
+			carrier_size = 1
+			torpedo_attack = 0.15
+			build_cost_ic = -0.1
+  	    }
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
+				add_mio_size = 1
+			}
+			FROM = {
+				navy_experience = 200
+			}
+		}
 	}
 	add_trait = {  
 		token = gongyejituan
@@ -152,6 +288,74 @@ CHY_maizuru_naval_arsenal_organization = {
 		tag = CHY
 	}
 	add_trait = {  
+		token = bulizaochuanchang_1
+		name = bulizaochuanchang_1
+		icon = GFX_BLI_zaochuanchang_mio_icon_1
+		special_trait_background = yes
+
+		position = { x=8 y=4 }  
+
+		available = {
+			FROM = { OR = { tag = BLI has_country_flag =  buligongyi1_get } }
+		}
+		
+		equipment_bonus = {
+			reliability = 0.08 
+			armor_value = 0.05
+			maximum_speed = 0.03
+			naval_range = 0.1
+      	}
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
+				add_mio_size = 1
+			}
+			FROM = {
+				navy_experience = 200
+			}
+		}
+	}
+
+	add_trait = {
+		token = bulizaochuanchang_2
+		name = bulizaochuanchang_2
+		icon = GFX_BLI_zaochuanchang_mio_icon_2
+		special_trait_background = yes
+
+		position = { x=9 y=4 }  
+
+		available = {
+			FROM = { OR = { tag = BLI has_country_flag =  buligongyi2_get } }
+		}
+		
+		equipment_bonus = {
+			lg_attack = 0.15
+			hg_attack = 0.2
+			carrier_size = 1
+			torpedo_attack = 0.15
+			build_cost_ic = -0.1
+  	    }
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
+				add_mio_size = 1
+			}
+			FROM = {
+				navy_experience = 200
+			}
+		}
+	}
+	add_trait = {  
 		token = gongyejituan
 		name = gongyejituan
 		icon = GFX_generic_mio_department_icon_facilities
@@ -185,6 +389,74 @@ CHY_sasebo_naval_arsenal_organization = {
 	icon = GFX_idea_sasebo_naval_arsenal
 	allowed = {
 		tag = CHY
+	}
+	add_trait = {  
+		token = bulizaochuanchang_1
+		name = bulizaochuanchang_1
+		icon = GFX_BLI_zaochuanchang_mio_icon_1
+		special_trait_background = yes
+
+		position = { x=8 y=4 }  
+
+		available = {
+			FROM = { OR = { tag = BLI has_country_flag =  buligongyi1_get } }
+		}
+		
+		equipment_bonus = {
+			reliability = 0.08 
+			armor_value = 0.05
+			maximum_speed = 0.03
+			naval_range = 0.1
+      	}
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
+				add_mio_size = 1
+			}
+			FROM = {
+				navy_experience = 200
+			}
+		}
+	}
+
+	add_trait = {
+		token = bulizaochuanchang_2
+		name = bulizaochuanchang_2
+		icon = GFX_BLI_zaochuanchang_mio_icon_2
+		special_trait_background = yes
+
+		position = { x=9 y=4 }  
+
+		available = {
+			FROM = { OR = { tag = BLI has_country_flag =  buligongyi2_get } }
+		}
+		
+		equipment_bonus = {
+			lg_attack = 0.15
+			hg_attack = 0.2
+			carrier_size = 1
+			torpedo_attack = 0.15
+			build_cost_ic = -0.1
+  	    }
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
+				add_mio_size = 1
+			}
+			FROM = {
+				navy_experience = 200
+			}
+		}
 	}
 	add_trait = {  
 		token = gongyejituan

@@ -120,7 +120,74 @@ HUJ_harland_wolff_organization = {
 			naval_weather_penalty_factor = -0.1
 		}
 	}
+	add_trait = {  
+		token = bulizaochuanchang_1
+		name = bulizaochuanchang_1
+		icon = GFX_BLI_zaochuanchang_mio_icon_1
+		special_trait_background = yes
 
+		position = { x=8 y=4 }  
+
+		available = {
+			FROM = { OR = { tag = BLI has_country_flag =  buligongyi1_get } }
+		}
+		
+		equipment_bonus = {
+			reliability = 0.08 
+			armor_value = 0.05
+			maximum_speed = 0.03
+			naval_range = 0.1
+      	}
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
+				add_mio_size = 1
+			}
+			FROM = {
+				navy_experience = 200
+			}
+		}
+	}
+
+	add_trait = {
+		token = bulizaochuanchang_2
+		name = bulizaochuanchang_2
+		icon = GFX_BLI_zaochuanchang_mio_icon_2
+		special_trait_background = yes
+
+		position = { x=9 y=4 }  
+
+		available = {
+			FROM = { OR = { tag = BLI has_country_flag =  buligongyi2_get } }
+		}
+		
+		equipment_bonus = {
+			lg_attack = 0.15
+			hg_attack = 0.2
+			carrier_size = 1
+			torpedo_attack = 0.15
+			build_cost_ic = -0.1
+  	    }
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
+				add_mio_size = 1
+			}
+			FROM = {
+				navy_experience = 200
+			}
+		}
+	}
 	add_trait = { 
 		token = HUJ_generic_mio_trait_semi_armor_piercing_shells
 		name = HUJ_generic_mio_trait_semi_armor_piercing_shells
@@ -146,7 +213,74 @@ HUJ_cammell_laird_organization = {
 	allowed = {	
 		tag = HUJ
 	}
+	add_trait = {  
+		token = bulizaochuanchang_1
+		name = bulizaochuanchang_1
+		icon = GFX_BLI_zaochuanchang_mio_icon_1
+		special_trait_background = yes
 
+		position = { x=8 y=4 }  
+
+		available = {
+			FROM = { OR = { tag = BLI has_country_flag =  buligongyi1_get } }
+		}
+		
+		equipment_bonus = {
+			reliability = 0.08 
+			armor_value = 0.05
+			maximum_speed = 0.03
+			naval_range = 0.1
+      	}
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
+				add_mio_size = 1
+			}
+			FROM = {
+				navy_experience = 200
+			}
+		}
+	}
+
+	add_trait = {
+		token = bulizaochuanchang_2
+		name = bulizaochuanchang_2
+		icon = GFX_BLI_zaochuanchang_mio_icon_2
+		special_trait_background = yes
+
+		position = { x=9 y=4 }  
+
+		available = {
+			FROM = { OR = { tag = BLI has_country_flag =  buligongyi2_get } }
+		}
+		
+		equipment_bonus = {
+			lg_attack = 0.15
+			hg_attack = 0.2
+			carrier_size = 1
+			torpedo_attack = 0.15
+			build_cost_ic = -0.1
+  	    }
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
+				add_mio_size = 1
+			}
+			FROM = {
+				navy_experience = 200
+			}
+		}
+	}
 	override_trait = {
 		token = generic_mio_trait_advanced_armor_design
 
@@ -197,7 +331,74 @@ HUJ_yarrow_shipbuilders_organization = {
 	allowed = {	
 		tag = HUJ 
 	}
+	add_trait = {  
+		token = bulizaochuanchang_1
+		name = bulizaochuanchang_1
+		icon = GFX_BLI_zaochuanchang_mio_icon_1
+		special_trait_background = yes
 
+		position = { x=8 y=4 }  
+
+		available = {
+			FROM = { OR = { tag = BLI has_country_flag =  buligongyi1_get } }
+		}
+		
+		equipment_bonus = {
+			reliability = 0.08 
+			armor_value = 0.05
+			maximum_speed = 0.03
+			naval_range = 0.1
+      	}
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
+				add_mio_size = 1
+			}
+			FROM = {
+				navy_experience = 200
+			}
+		}
+	}
+
+	add_trait = {
+		token = bulizaochuanchang_2
+		name = bulizaochuanchang_2
+		icon = GFX_BLI_zaochuanchang_mio_icon_2
+		special_trait_background = yes
+
+		position = { x=9 y=4 }  
+
+		available = {
+			FROM = { OR = { tag = BLI has_country_flag =  buligongyi2_get } }
+		}
+		
+		equipment_bonus = {
+			lg_attack = 0.15
+			hg_attack = 0.2
+			carrier_size = 1
+			torpedo_attack = 0.15
+			build_cost_ic = -0.1
+  	    }
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
+				add_mio_size = 1
+			}
+			FROM = {
+				navy_experience = 200
+			}
+		}
+	}
 }
 
 HUJ_john_brown_organization = {
@@ -207,7 +408,74 @@ HUJ_john_brown_organization = {
 	allowed = {	
 		tag = HUJ
 	}
+	add_trait = {  
+		token = bulizaochuanchang_1
+		name = bulizaochuanchang_1
+		icon = GFX_BLI_zaochuanchang_mio_icon_1
+		special_trait_background = yes
 
+		position = { x=8 y=4 }  
+
+		available = {
+			FROM = { OR = { tag = BLI has_country_flag =  buligongyi1_get } }
+		}
+		
+		equipment_bonus = {
+			reliability = 0.08 
+			armor_value = 0.05
+			maximum_speed = 0.03
+			naval_range = 0.1
+      	}
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
+				add_mio_size = 1
+			}
+			FROM = {
+				navy_experience = 200
+			}
+		}
+	}
+
+	add_trait = {
+		token = bulizaochuanchang_2
+		name = bulizaochuanchang_2
+		icon = GFX_BLI_zaochuanchang_mio_icon_2
+		special_trait_background = yes
+
+		position = { x=9 y=4 }  
+
+		available = {
+			FROM = { OR = { tag = BLI has_country_flag =  buligongyi2_get } }
+		}
+		
+		equipment_bonus = {
+			lg_attack = 0.15
+			hg_attack = 0.2
+			carrier_size = 1
+			torpedo_attack = 0.15
+			build_cost_ic = -0.1
+  	    }
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
+				add_mio_size = 1
+			}
+			FROM = {
+				navy_experience = 200
+			}
+		}
+	}
 }
 
 

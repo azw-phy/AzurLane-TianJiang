@@ -1566,7 +1566,6 @@ generic_tank_refurbishment_plant_organization = {
 
 
 
-# GENERIC TANK MANUFACTURERS
 
 #TASK FORCE MANUFACTURER - Based on Harland & Wolff (ENG)
 generic_task_force_ship_organization = {
@@ -1610,74 +1609,7 @@ generic_task_force_ship_organization = {
 			max_strength = 0.05
 		}
 	}
-	trait = {  
-		token = bulizaochuanchang_1
-		name = bulizaochuanchang_1
-		icon = GFX_BLI_zaochuanchang_mio_icon_1
-		special_trait_background = yes
 
-		position = { x=8 y=4 }  
-
-		available = {
-			FROM = { OR = { tag = BLI has_country_flag =  buligongyi1_get } }
-		}
-		
-		equipment_bonus = {
-			reliability = 0.08 
-			armor_value = 0.05
-			maximum_speed = 0.03
-			naval_range = 0.1
-      	}
-		production_bonus = {
-			production_resource_need_factor = -0.55
-		}
-		organization_modifier = {
-			military_industrial_organization_funds_gain = 0.35
-		}
-		on_complete = {
-			ROOT = {
-				add_mio_size = 1
-			}
-			FROM = {
-				navy_experience = 200
-			}
-		}
-	}
-
-	trait = {
-		token = bulizaochuanchang_2
-		name = bulizaochuanchang_2
-		icon = GFX_BLI_zaochuanchang_mio_icon_2
-		special_trait_background = yes
-
-		position = { x=9 y=4 }  
-
-		available = {
-			FROM = { OR = { tag = BLI has_country_flag =  buligongyi2_get } }
-		}
-		
-		equipment_bonus = {
-			lg_attack = 0.15
-			hg_attack = 0.2
-			carrier_size = 1
-			torpedo_attack = 0.15
-			build_cost_ic = -0.1
-  	    }
-		production_bonus = {
-			production_resource_need_factor = -0.55
-		}
-		organization_modifier = {
-			military_industrial_organization_funds_gain = 0.35
-		}
-		on_complete = {
-			ROOT = {
-				add_mio_size = 1
-			}
-			FROM = {
-				navy_experience = 200
-			}
-		}
-	}
 	trait = {
 		token = generic_mio_trait_long_range_cruising
 		name = generic_mio_trait_long_range_cruising
@@ -1930,75 +1862,6 @@ generic_battle_line_ship_organization = {
 		}
 		production_bonus = {
 			production_capacity_factor = 0.05
-		}
-	}
-
-	trait = {  
-		token = bulizaochuanchang_1
-		name = bulizaochuanchang_1
-		icon = GFX_BLI_zaochuanchang_mio_icon_1
-		special_trait_background = yes
-
-		position = { x=8 y=4 }  
-
-		available = {
-			FROM = { OR = { tag = BLI has_country_flag =  buligongyi1_get } }
-		}
-		
-		equipment_bonus = {
-			reliability = 0.08 
-			armor_value = 0.05
-			maximum_speed = 0.03
-			naval_range = 0.1
-      	}
-		production_bonus = {
-			production_resource_need_factor = -0.55
-		}
-		organization_modifier = {
-			military_industrial_organization_funds_gain = 0.35
-		}
-		on_complete = {
-			ROOT = {
-				add_mio_size = 1
-			}
-			FROM = {
-				navy_experience = 200
-			}
-		}
-	}
-
-	trait = {
-		token = bulizaochuanchang_2
-		name = bulizaochuanchang_2
-		icon = GFX_BLI_zaochuanchang_mio_icon_2
-		special_trait_background = yes
-
-		position = { x=9 y=4 }  
-
-		available = {
-			FROM = { OR = { tag = BLI has_country_flag =  buligongyi2_get } }
-		}
-		
-		equipment_bonus = {
-			lg_attack = 0.15
-			hg_attack = 0.2
-			carrier_size = 1
-			torpedo_attack = 0.15
-			build_cost_ic = -0.1
-  	    }
-		production_bonus = {
-			production_resource_need_factor = -0.55
-		}
-		organization_modifier = {
-			military_industrial_organization_funds_gain = 0.35
-		}
-		on_complete = {
-			ROOT = {
-				add_mio_size = 1
-			}
-			FROM = {
-				navy_experience = 200
-			}
 		}
 	}
 
@@ -2326,74 +2189,6 @@ generic_escort_ship_organization = {
 		}
 	}
 
-	trait = {  
-		token = bulizaochuanchang_1
-		name = bulizaochuanchang_1
-		icon = GFX_BLI_zaochuanchang_mio_icon_1
-		special_trait_background = yes
-
-		position = { x=8 y=4 }  
-
-		available = {
-			FROM = { OR = { tag = BLI has_country_flag =  buligongyi1_get } }
-		}
-		
-		equipment_bonus = {
-			reliability = 0.08 
-			armor_value = 0.05
-			maximum_speed = 0.03
-			naval_range = 0.1
-      	}
-		production_bonus = {
-			production_resource_need_factor = -0.55
-		}
-		organization_modifier = {
-			military_industrial_organization_funds_gain = 0.35
-		}
-		on_complete = {
-			ROOT = {
-				add_mio_size = 1
-			}
-			FROM = {
-				navy_experience = 200
-			}
-		}
-	}
-
-	trait = {
-		token = bulizaochuanchang_2
-		name = bulizaochuanchang_2
-		icon = GFX_BLI_zaochuanchang_mio_icon_2
-		special_trait_background = yes
-
-		position = { x=9 y=4 }  
-
-		available = {
-			FROM = { OR = { tag = BLI has_country_flag =  buligongyi2_get } }
-		}
-		
-		equipment_bonus = {
-			lg_attack = 0.15
-			hg_attack = 0.2
-			carrier_size = 1
-			torpedo_attack = 0.15
-			build_cost_ic = -0.1
-  	    }
-		production_bonus = {
-			production_resource_need_factor = -0.55
-		}
-		organization_modifier = {
-			military_industrial_organization_funds_gain = 0.35
-		}
-		on_complete = {
-			ROOT = {
-				add_mio_size = 1
-			}
-			FROM = {
-				navy_experience = 200
-			}
-		}
-	}
 
 	trait = {
 		token = generic_mio_trait_submarine_hunters
@@ -2610,74 +2405,7 @@ generic_raider_ship_organization = {
 			surface_visibility = -0.05
 		}
 	}
-	trait = {  
-		token = bulizaochuanchang_1
-		name = bulizaochuanchang_1
-		icon = GFX_BLI_zaochuanchang_mio_icon_1
-		special_trait_background = yes
 
-		position = { x=8 y=4 }  
-
-		available = {
-			FROM = { OR = { tag = BLI has_country_flag =  buligongyi1_get } }
-		}
-		
-		equipment_bonus = {
-			reliability = 0.08 
-			armor_value = 0.05
-			maximum_speed = 0.03
-			naval_range = 0.1
-      	}
-		production_bonus = {
-			production_resource_need_factor = -0.55
-		}
-		organization_modifier = {
-			military_industrial_organization_funds_gain = 0.35
-		}
-		on_complete = {
-			ROOT = {
-				add_mio_size = 1
-			}
-			FROM = {
-				navy_experience = 200
-			}
-		}
-	}
-
-	trait = {
-		token = bulizaochuanchang_2
-		name = bulizaochuanchang_2
-		icon = GFX_BLI_zaochuanchang_mio_icon_2
-		special_trait_background = yes
-
-		position = { x=9 y=4 }  
-
-		available = {
-			FROM = { OR = { tag = BLI has_country_flag =  buligongyi2_get } }
-		}
-		
-		equipment_bonus = {
-			lg_attack = 0.15
-			hg_attack = 0.2
-			carrier_size = 1
-			torpedo_attack = 0.15
-			build_cost_ic = -0.1
-  	    }
-		production_bonus = {
-			production_resource_need_factor = -0.55
-		}
-		organization_modifier = {
-			military_industrial_organization_funds_gain = 0.35
-		}
-		on_complete = {
-			ROOT = {
-				add_mio_size = 1
-			}
-			FROM = {
-				navy_experience = 200
-			}
-		}
-	}
 	trait = {
 		token = generic_mio_trait_long_range_raiding
 		name = generic_mio_trait_long_range_raiding
@@ -2972,74 +2700,7 @@ generic_submarine_organization = {
 			sub_visibility = -0.05
 		}
 	}
-	trait = {  
-		token = bulizaochuanchang_1
-		name = bulizaochuanchang_1
-		icon = GFX_BLI_zaochuanchang_mio_icon_1
-		special_trait_background = yes
-
-		position = { x=8 y=4 }  
-
-		available = {
-			FROM = { OR = { tag = BLI has_country_flag =  buligongyi1_get } }
-		}
-		
-		equipment_bonus = {
-			reliability = 0.08 
-			armor_value = 0.05
-			maximum_speed = 0.03
-			naval_range = 0.1
-      	}
-		production_bonus = {
-			production_resource_need_factor = -0.55
-		}
-		organization_modifier = {
-			military_industrial_organization_funds_gain = 0.35
-		}
-		on_complete = {
-			ROOT = {
-				add_mio_size = 1
-			}
-			FROM = {
-				navy_experience = 200
-			}
-		}
-	}
-
-	trait = {
-		token = bulizaochuanchang_2
-		name = bulizaochuanchang_2
-		icon = GFX_BLI_zaochuanchang_mio_icon_2
-		special_trait_background = yes
-
-		position = { x=9 y=4 }  
-
-		available = {
-			FROM = { OR = { tag = BLI has_country_flag =  buligongyi2_get } }
-		}
-		
-		equipment_bonus = {
-			lg_attack = 0.15
-			hg_attack = 0.2
-			carrier_size = 1
-			torpedo_attack = 0.15
-			build_cost_ic = -0.1
-  	    }
-		production_bonus = {
-			production_resource_need_factor = -0.55
-		}
-		organization_modifier = {
-			military_industrial_organization_funds_gain = 0.35
-		}
-		on_complete = {
-			ROOT = {
-				add_mio_size = 1
-			}
-			FROM = {
-				navy_experience = 200
-			}
-		}
-	}
+	
 	trait = {
 		token = generic_mio_trait_long_range_raiding
 		name = generic_mio_trait_long_range_raiding
@@ -3374,75 +3035,6 @@ generic_black_sea_fleet_organization = {
 		}
 	}
 
-	trait = {  
-		token = bulizaochuanchang_1
-		name = bulizaochuanchang_1
-		icon = GFX_BLI_zaochuanchang_mio_icon_1
-		special_trait_background = yes
-
-		position = { x=8 y=4 }  
-
-		available = {
-			FROM = { OR = { tag = BLI has_country_flag =  buligongyi1_get } }
-		}
-		
-		equipment_bonus = {
-			reliability = 0.08 
-			armor_value = 0.05
-			maximum_speed = 0.03
-			naval_range = 0.1
-      	}
-		production_bonus = {
-			production_resource_need_factor = -0.55
-		}
-		organization_modifier = {
-			military_industrial_organization_funds_gain = 0.35
-		}
-		on_complete = {
-			ROOT = {
-				add_mio_size = 1
-			}
-			FROM = {
-				navy_experience = 200
-			}
-		}
-	}
-
-	trait = {
-		token = bulizaochuanchang_2
-		name = bulizaochuanchang_2
-		icon = GFX_BLI_zaochuanchang_mio_icon_2
-		special_trait_background = yes
-
-		position = { x=9 y=4 }  
-
-		available = {
-			FROM = { OR = { tag = BLI has_country_flag =  buligongyi2_get } }
-		}
-		
-		equipment_bonus = {
-			lg_attack = 0.15
-			hg_attack = 0.2
-			carrier_size = 1
-			torpedo_attack = 0.15
-			build_cost_ic = -0.1
-  	    }
-		production_bonus = {
-			production_resource_need_factor = -0.55
-		}
-		organization_modifier = {
-			military_industrial_organization_funds_gain = 0.35
-		}
-		on_complete = {
-			ROOT = {
-				add_mio_size = 1
-			}
-			FROM = {
-				navy_experience = 200
-			}
-		}
-	}
-
 	trait = {
 		token = generic_mio_trait_submarine_hunters_black_sea
 		name = generic_mio_trait_submarine_hunters_black_sea
@@ -3747,74 +3339,7 @@ generic_refurbishment_repair_organization = {
 			military_industrial_organization_research_bonus = 0.01
 		}
 	}
-	trait = {  
-		token = bulizaochuanchang_1
-		name = bulizaochuanchang_1
-		icon = GFX_BLI_zaochuanchang_mio_icon_1
-		special_trait_background = yes
 
-		position = { x=4 y=4 }  
-
-		available = {
-			FROM = { OR = { tag = BLI has_country_flag =  buligongyi1_get } }
-		}
-		
-		equipment_bonus = {
-			reliability = 0.08 
-			armor_value = 0.05
-			maximum_speed = 0.03
-			naval_range = 0.1
-      	}
-		production_bonus = {
-			production_resource_need_factor = -0.55
-		}
-		organization_modifier = {
-			military_industrial_organization_funds_gain = 0.35
-		}
-		on_complete = {
-			ROOT = {
-				add_mio_size = 1
-			}
-			FROM = {
-				navy_experience = 200
-			}
-		}
-	}
-
-	trait = {
-		token = bulizaochuanchang_2
-		name = bulizaochuanchang_2
-		icon = GFX_BLI_zaochuanchang_mio_icon_2
-		special_trait_background = yes
-
-		position = { x=5 y=4 }  
-
-		available = {
-			FROM = { OR = { tag = BLI has_country_flag =  buligongyi2_get } }
-		}
-		
-		equipment_bonus = {
-			lg_attack = 0.15
-			hg_attack = 0.2
-			carrier_size = 1
-			torpedo_attack = 0.15
-			build_cost_ic = -0.1
-  	    }
-		production_bonus = {
-			production_resource_need_factor = -0.55
-		}
-		organization_modifier = {
-			military_industrial_organization_funds_gain = 0.35
-		}
-		on_complete = {
-			ROOT = {
-				add_mio_size = 1
-			}
-			FROM = {
-				navy_experience = 200
-			}
-		}
-	}
 	trait = {
 		token = generic_mio_trait_heavy_armored_hull
 		name = generic_mio_trait_heavy_armored_hull

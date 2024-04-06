@@ -312,7 +312,74 @@ BFL_nevskoye_design_bureau_organization = {
 	allowed = {	
 		tag = BFL 
 	}
-	
+	add_trait = {  
+		token = bulizaochuanchang_1
+		name = bulizaochuanchang_1
+		icon = GFX_BLI_zaochuanchang_mio_icon_1
+		special_trait_background = yes
+
+		position = { x=8 y=4 }  
+
+		available = {
+			FROM = { OR = { tag = BLI has_country_flag =  buligongyi1_get } }
+		}
+		
+		equipment_bonus = {
+			reliability = 0.08 
+			armor_value = 0.05
+			maximum_speed = 0.03
+			naval_range = 0.1
+      	}
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
+				add_mio_size = 1
+			}
+			FROM = {
+				navy_experience = 200
+			}
+		}
+	}
+
+	add_trait = {
+		token = bulizaochuanchang_2
+		name = bulizaochuanchang_2
+		icon = GFX_BLI_zaochuanchang_mio_icon_2
+		special_trait_background = yes
+
+		position = { x=9 y=4 }  
+
+		available = {
+			FROM = { OR = { tag = BLI has_country_flag =  buligongyi2_get } }
+		}
+		
+		equipment_bonus = {
+			lg_attack = 0.15
+			hg_attack = 0.2
+			carrier_size = 1
+			torpedo_attack = 0.15
+			build_cost_ic = -0.1
+  	    }
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
+				add_mio_size = 1
+			}
+			FROM = {
+				navy_experience = 200
+			}
+		}
+	}
 	add_trait = { #MTG version
 		token = BFL_nevskoye_design_bureau_organization_up
 		name = BFL_nevskoye_design_bureau_up
@@ -356,7 +423,74 @@ BFL_rubin_design_bureau_organization = {
 	allowed = {	
 		tag = BFL 
 	}
+	add_trait = {  
+		token = bulizaochuanchang_1
+		name = bulizaochuanchang_1
+		icon = GFX_BLI_zaochuanchang_mio_icon_1
+		special_trait_background = yes
 
+		position = { x=8 y=4 }  
+
+		available = {
+			FROM = { OR = { tag = BLI has_country_flag =  buligongyi1_get } }
+		}
+		
+		equipment_bonus = {
+			reliability = 0.08 
+			armor_value = 0.05
+			maximum_speed = 0.03
+			naval_range = 0.1
+      	}
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
+				add_mio_size = 1
+			}
+			FROM = {
+				navy_experience = 200
+			}
+		}
+	}
+
+	add_trait = {
+		token = bulizaochuanchang_2
+		name = bulizaochuanchang_2
+		icon = GFX_BLI_zaochuanchang_mio_icon_2
+		special_trait_background = yes
+
+		position = { x=9 y=4 }  
+
+		available = {
+			FROM = { OR = { tag = BLI has_country_flag =  buligongyi2_get } }
+		}
+		
+		equipment_bonus = {
+			lg_attack = 0.15
+			hg_attack = 0.2
+			carrier_size = 1
+			torpedo_attack = 0.15
+			build_cost_ic = -0.1
+  	    }
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
+				add_mio_size = 1
+			}
+			FROM = {
+				navy_experience = 200
+			}
+		}
+	}
 	add_trait = { #MTG version
 		token = BFL_rubin_design_bureau_organization_up
 		name = BFL_rubin_design_bureau_up
@@ -396,7 +530,74 @@ BFL_rubin_design_bureau_organization = {
 BFL_black_sea_shipyard_organization = {
 	include = generic_black_sea_fleet_organization
 	icon = GFX_idea_SOV_black_sea_shipyard
-	
+	add_trait = {  
+		token = bulizaochuanchang_1
+		name = bulizaochuanchang_1
+		icon = GFX_BLI_zaochuanchang_mio_icon_1
+		special_trait_background = yes
+
+		position = { x=8 y=4 }  
+
+		available = {
+			FROM = { OR = { tag = BLI has_country_flag =  buligongyi1_get } }
+		}
+		
+		equipment_bonus = {
+			reliability = 0.08 
+			armor_value = 0.05
+			maximum_speed = 0.03
+			naval_range = 0.1
+      	}
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
+				add_mio_size = 1
+			}
+			FROM = {
+				navy_experience = 200
+			}
+		}
+	}
+
+	add_trait = {
+		token = bulizaochuanchang_2
+		name = bulizaochuanchang_2
+		icon = GFX_BLI_zaochuanchang_mio_icon_2
+		special_trait_background = yes
+
+		position = { x=9 y=4 }  
+
+		available = {
+			FROM = { OR = { tag = BLI has_country_flag =  buligongyi2_get } }
+		}
+		
+		equipment_bonus = {
+			lg_attack = 0.15
+			hg_attack = 0.2
+			carrier_size = 1
+			torpedo_attack = 0.15
+			build_cost_ic = -0.1
+  	    }
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
+				add_mio_size = 1
+			}
+			FROM = {
+				navy_experience = 200
+			}
+		}
+	}
 	allowed = {	
 		tag = BFL 
 	}
@@ -468,7 +669,74 @@ BFL_black_sea_shipyard_organization = {
 BFL_sevastopol_marine_plant_organization = {
 	include = generic_refurbishment_repair_organization
 	icon = GFX_idea_SOV_sevastopol_marine_plant
-	
+	add_trait = {  
+		token = bulizaochuanchang_1
+		name = bulizaochuanchang_1
+		icon = GFX_BLI_zaochuanchang_mio_icon_1
+		special_trait_background = yes
+
+		position = { x=4 y=4 }  
+
+		available = {
+			FROM = { OR = { tag = BLI has_country_flag =  buligongyi1_get } }
+		}
+		
+		equipment_bonus = {
+			reliability = 0.08 
+			armor_value = 0.05
+			maximum_speed = 0.03
+			naval_range = 0.1
+      	}
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
+				add_mio_size = 1
+			}
+			FROM = {
+				navy_experience = 200
+			}
+		}
+	}
+
+	add_trait = {
+		token = bulizaochuanchang_2
+		name = bulizaochuanchang_2
+		icon = GFX_BLI_zaochuanchang_mio_icon_2
+		special_trait_background = yes
+
+		position = { x=5 y=4 }  
+
+		available = {
+			FROM = { OR = { tag = BLI has_country_flag =  buligongyi2_get } }
+		}
+		
+		equipment_bonus = {
+			lg_attack = 0.15
+			hg_attack = 0.2
+			carrier_size = 1
+			torpedo_attack = 0.15
+			build_cost_ic = -0.1
+  	    }
+		production_bonus = {
+			production_resource_need_factor = -0.55
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.35
+		}
+		on_complete = {
+			ROOT = {
+				add_mio_size = 1
+			}
+			FROM = {
+				navy_experience = 200
+			}
+		}
+	}
 	allowed = {	
 		original_tag = BFL
 	}
