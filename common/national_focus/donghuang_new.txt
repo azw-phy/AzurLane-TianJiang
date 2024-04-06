@@ -3408,6 +3408,9 @@ focus_tree = {
 			focus = DOH_ziguyilai
 			focus = DOH_chaogongzhidu
 		}
+		bypass = {
+			has_subject = CHY
+		}
 		mutually_exclusive = {
 			focus = DOH_yaoqiuchenfu
 		}
