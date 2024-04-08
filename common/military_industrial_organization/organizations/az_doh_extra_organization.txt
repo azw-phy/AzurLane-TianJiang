@@ -102,7 +102,7 @@ az_DOH_railway_organization = {
 			DOH = {
 				has_completed_focus = DOH_junmingronghe_jishugaijing
 			}
-			has_mio_size > 25
+			
 		}
 		production_bonus = {
 			production_cost_factor = -0.05
@@ -121,7 +121,7 @@ az_DOH_railway_organization = {
 			DOH = {
 				has_completed_focus = DOH_junmingronghe_jishugaijing
 			}
-			has_mio_size > 35
+			
 		}
 		production_bonus = {
 			production_resource_need_factor = -0.75
@@ -143,7 +143,7 @@ az_DOH_railway_organization = {
 			num_parents_needed = 2
 		}
 		available = {
-			has_mio_size > 45
+			
 		}
 		production_bonus = {
 			production_cost_factor = -0.1
@@ -169,7 +169,7 @@ az_DOH_railway_organization = {
 	# 		}
 	# 	}
 	# 	available = {
-	# 		has_mio_size > 65
+	# 		
 	# 	}
 	# 	production_bonus = {
 	# 		production_cost_factor = -0.1
@@ -194,7 +194,7 @@ az_DOH_railway_organization = {
 	# 		DOH_zhiyuanzhuangbei_less_cost_trait
 	# 	}
 	# 	available = {
-	# 		has_mio_size > 65
+	# 		
 	# 	}
 	# 	equipment_bonus = {
 	# 		build_cost_ic = 0.5
@@ -266,7 +266,7 @@ az_DOH_railway_organization = {
 			DOH = {
 				num_of_factories > 800
 			}
-			has_mio_size > 75
+			
 		}
 		equipment_bonus = {
 			air_range = 0.1
@@ -293,7 +293,7 @@ az_DOH_railway_organization = {
 			DOH = {
 				num_of_factories > 800
 			}
-			has_mio_size > 75
+			
 		}
 		equipment_bonus = {
 			air_defence = 0.1
@@ -321,7 +321,7 @@ az_DOH_railway_organization = {
 			DOH = {
 				num_of_factories > 1000
 			}
-			has_mio_size > 105
+			
 		}
 		equipment_bonus = {
 			air_range = 0.1
@@ -348,7 +348,7 @@ az_DOH_railway_organization = {
 			DOH = {
 				num_of_factories > 1000
 			}
-			has_mio_size > 105
+			
 		}
 		equipment_bonus = {
 			air_defence = 0.1
@@ -376,7 +376,7 @@ az_DOH_railway_organization = {
 			DOH = {
 				num_of_factories > 1600
 			}
-			has_mio_size > 135
+			
 		}
 		equipment_bonus = {
 			air_range = 0.1
@@ -403,7 +403,7 @@ az_DOH_railway_organization = {
 			DOH = {
 				num_of_factories > 1600
 			}
-			has_mio_size > 135
+			
 		}
 		equipment_bonus = {
 			air_defence = 0.1
@@ -480,7 +480,7 @@ az_DOH_railway_organization = {
 				num_of_factories > 600
 				has_completed_focus = DOH_tiedaogongye
 			}
-			has_mio_size > 45
+			
 		}
 		equipment_bonus = {
 			maximum_speed = 1.5
@@ -514,7 +514,7 @@ az_DOH_railway_organization = {
 			DOH = {
 				num_of_factories > 800
 			}
-			has_mio_size > 75
+			
 		}
 		equipment_bonus = {
 			maximum_speed = 1
@@ -548,7 +548,7 @@ az_DOH_railway_organization = {
 			DOH = {
 				num_of_factories > 1000
 			}
-			has_mio_size > 105
+			
 		}
 		equipment_bonus = {
 			maximum_speed = 2
@@ -583,7 +583,7 @@ az_DOH_railway_organization = {
 				num_of_factories > 1600
 				has_completed_focus = DOH_hailufuhe
 			}
-			has_mio_size > 135
+			
 		}
 		equipment_bonus = {
 			maximum_speed = 3
