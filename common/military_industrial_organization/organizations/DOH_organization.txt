@@ -1139,7 +1139,7 @@ DOH_hanyan_arsenal_organization = {
 			ap_attack = 1
 			soft_attack = 0.15
 			hard_attack = 0.3
-			defense = 0.3
+			defense = 0.1
 			breakthrough = 0.3
 		}
 	}

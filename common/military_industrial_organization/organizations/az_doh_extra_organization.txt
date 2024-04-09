@@ -63,7 +63,7 @@ az_DOH_railway_organization = {
 			convoy
 		}
 		equipment_bonus = {
-			maximum_speed = 0.20
+			naval_speed = 0.20
 			surface_visibility = -0.25
 			lg_attack = 1
 			anti_air_attack = 1
