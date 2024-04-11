@@ -935,6 +935,32 @@ DOH_taiyuan_arsenal_organization = {
 		generic_mio_trait_advanced_anti_air_targeting
 		generic_mio_trait_advanced_trajectory_calculations
 	}
+	add_trait = {  
+		token = jishugaijing
+		name = jishugaijing
+		icon = GFX_generic_mio_trait_icon_unique
+		special_trait_background = yes
+
+		position = { x=9 y=0 }  
+
+		available = {
+			FROM = {
+				OR = {
+					is_ally_with = CHY
+					has_country_flag = chy_jungongyuanzhu_flag
+				}
+			}
+		}
+		
+		equipment_bonus = {
+			soft_attack = 0.05
+			hard_attack = 0.05
+			reliability = 0.1
+		}
+		production_bonus = {
+			production_resource_need_factor = -0.3
+		}
+	}
 	add_trait = {
 		token = generic_mio_trait_improved_direct_fire_targeting
 		name = generic_mio_trait_improved_direct_fire_targeting
