@@ -16,6 +16,42 @@ TIX_porsche_organization = {
 	allowed = {	
 		tag = TIX 
 	}
+	
+	add_trait = { 
+		token = TIX_mio_tiexuezhuangjiagongzao
+		name = TIX_mio_tiexuezhuangjiagongzao
+		icon = GFX_generic_mio_department_icon_tank_heavy_tank_technology
+		special_trait_background = yes
+
+		position = { x=-1 y=1 }  
+		relative_position_id = generic_mio_trait_wide_tracks
+
+		visible = {
+			FROM = { original_tag = TIX }
+		}
+
+		available = { #Two FROM blocs to provide two different check marks in the UI
+			FROM = {
+				has_completed_focus = TIX_fazhanzhuangjia
+			}
+		}
+		
+		equipment_bonus = {
+			soft_attack = 0.05
+			hard_attack = 0.05
+			armor_value = 0.05
+			maximum_speed = 0.05
+			reliability = 0.15
+			breakthrough = 0.05
+		}
+		production_bonus = {
+			production_cost_factor = 0.1
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	
 }
 
 TIX_henschel_organization = {
@@ -25,6 +61,76 @@ TIX_henschel_organization = {
 	allowed = {	
 		tag = TIX 
 	}
+	
+	add_trait = { 
+		token = TIX_mio_tiexuezhuangjiagongzao_2
+		name = TIX_mio_tiexuezhuangjiagongzao
+		icon = GFX_generic_mio_department_icon_tank_heavy_tank_technology
+		special_trait_background = yes
+
+		position = { x=1 y=1 }  
+		relative_position_id = generic_mio_armor_hardening_process
+
+		visible = {
+			FROM = { original_tag = TIX }
+		}
+
+		available = { #Two FROM blocs to provide two different check marks in the UI
+			FROM = {
+				has_completed_focus = TIX_fazhanzhuangjia
+			}
+		}
+		
+		equipment_bonus = {
+			soft_attack = 0.05
+			hard_attack = 0.05
+			armor_value = 0.05
+			maximum_speed = 0.05
+			reliability = 0.15
+			breakthrough = 0.05
+		}
+		production_bonus = {
+			production_cost_factor = 0.1
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	
+	add_trait = { 
+		token = TIX_mio_danbingchaoshikongzhuangzhi
+		name = TIX_mio_danbingchaoshikongzhuangzhi
+		icon = GFX_generic_mio_department_icon_tank_heavy_tank_quality
+		special_trait_background = yes
+
+		position = { x=0 y=1 }  
+		relative_position_id = TIX_mio_tiexuezhuangjiagongzao_2
+
+		visible = {
+			FROM = { original_tag = TIX }
+		}
+
+		available = { #Two FROM blocs to provide two different check marks in the UI
+			FROM = {
+				or = {
+				has_completed_focus = TIX_sairenjiehe
+				has_completed_focus = TIX_wanquansairen
+				}
+			}
+		}
+		
+		equipment_bonus = {
+			armor_value = 0.15
+			maximum_speed = 0.5
+			reliability = -0.1
+		}
+		production_bonus = {
+			production_cost_factor = 0.25
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
 }
 
 TIX_man_organization = {
@@ -33,6 +139,41 @@ TIX_man_organization = {
 	
 	allowed = {	
 	    tag = TIX 
+	}
+	
+	add_trait = { 
+		token = TIX_mio_tiexuezhuangjiagongzao_3
+		name = TIX_mio_tiexuezhuangjiagongzao
+		icon = GFX_generic_mio_department_icon_tank_heavy_tank_technology
+		special_trait_background = yes
+
+		position = { x=0 y=2 }  
+		relative_position_id = generic_mio_trait_improved_suspension
+
+		visible = {
+			FROM = { original_tag = TIX }
+		}
+
+		available = { #Two FROM blocs to provide two different check marks in the UI
+			FROM = {
+				has_completed_focus = TIX_fazhanzhuangjia
+			}
+		}
+		
+		equipment_bonus = {
+			soft_attack = 0.05
+			hard_attack = 0.05
+			armor_value = 0.05
+			maximum_speed = 0.05
+			reliability = 0.15
+			breakthrough = 0.05
+		}
+		production_bonus = {
+			production_cost_factor = 0.1
+		}
+		ai_will_do = {
+			base = 100
+		}
 	}
 }
 
@@ -106,6 +247,41 @@ TIX_daimler_benz_organization = {
 				factor = 1.5
 				date > 1937.1.1
 			}
+		}
+	}
+	
+	add_trait = { 
+		token = TIX_mio_tiexuezhuangjiagongzao_4
+		name = TIX_mio_tiexuezhuangjiagongzao
+		icon = GFX_generic_mio_department_icon_tank_heavy_tank_technology
+		special_trait_background = yes
+
+		position = { x=0 y=1 }  
+		relative_position_id = TIX_mio_trait_multilayer_armour
+
+		visible = {
+			FROM = { original_tag = TIX }
+		}
+
+		available = { #Two FROM blocs to provide two different check marks in the UI
+			FROM = {
+				has_completed_focus = TIX_fazhanzhuangjia
+			}
+		}
+		
+		equipment_bonus = {
+			soft_attack = 0.05
+			hard_attack = 0.05
+			armor_value = 0.05
+			maximum_speed = 0.05
+			reliability = 0.15
+			breakthrough = 0.05
+		}
+		production_bonus = {
+			production_cost_factor = 0.1
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 }
@@ -415,6 +591,37 @@ TIX_mauser_organization = {
 	
 	allowed = {	 
 		tag = TIX 
+	}
+	add_trait = { 
+		token = TIX_mio_guanglengwuqi
+		name = TIX_mio_guanglengwuqi
+		icon = GFX_generic_mio_department_icon_infantry_quality
+		special_trait_background = yes
+
+		position = { x=-1 y=1 }  
+		relative_position_id = generic_mio_trait_drum_pattern_sights
+
+		visible = {
+			FROM = { original_tag = TIX }
+		}
+
+		available = { #Two FROM blocs to provide two different check marks in the UI
+			FROM = {
+				has_completed_focus = TIX_tiexuebubingban
+			}
+		}
+		
+		equipment_bonus = {
+			soft_attack = 0.15
+			hard_attack = 0.05
+			breakthrough = 0.15
+		}
+		production_bonus = {
+			production_cost_factor = 0.1
+		}
+		ai_will_do = {
+			base = 100
+		}
 	}
 }
 

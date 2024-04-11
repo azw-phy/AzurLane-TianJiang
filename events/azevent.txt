@@ -3042,6 +3042,26 @@ country_event = {
 	}
 }
 country_event = {
+	id = azevent.10101 
+	title = azevent.10101.t
+	desc = azevent.10101.d
+	picture = GFX_aze_kan
+	trigger = {
+		check_variable = { wz_sl > 1200000 }
+	}
+	immediate = {
+
+	}
+	option = {
+		name = azevent.10101.a
+		set_variable = {
+			wz_sl = 1
+		}
+		add_stability = 0.5
+		add_war_support = 0.5
+	}
+}
+country_event = {
 	id = azevent.102 
 	title = azevent.102.t
 	desc = azevent.102.d

@@ -471,6 +471,7 @@ focus = {
 		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			guojishengyu_down_5 = yes
+			custom_effect_tooltip = TIX_jiesuochaoshikong_tips
 			add_ideas = TIX_txznbq
 			set_technology = { keyantech_TIX_siren = 1 }
 			division_template = {
@@ -507,6 +508,7 @@ focus = {
 		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			guojishengyu_down_10 = yes
+			custom_effect_tooltip = TIX_jiesuochaoshikong_tips
 			add_ideas = TIX_srbq
 			hidden_effect = {
 				news_event = aznews.10
@@ -1164,7 +1166,7 @@ focus = {
 			add_doctrine_cost_reduction = {
 				name = "铁血新海军"
 				cost_reduction = 0.25
-				uses = 3
+				uses = 6
 				category = naval_doctrine
 			}
 			remove_ideas = TIX_lrdhj
@@ -1193,7 +1195,7 @@ focus = {
 
 		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			add_timed_idea = { idea = TIX_zjh days = 500 }
+			add_ideas = TIX_zjh
 		}
 	}
 	focus = {
@@ -1449,7 +1451,7 @@ focus = {
 			add_tech_bonus = {
 				name = "发展步兵"
 				bonus = 1.5
-				uses = 1
+				uses = 2
 				category = infantry_weapons
 			}
 		}
@@ -1714,6 +1716,7 @@ focus = {
 
 		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
+			custom_effect_tooltip = TIX_jiesuoguangleng_tips
 			add_ideas = TIX_txsbbb
 		}
 	}
@@ -1769,6 +1772,7 @@ focus = {
 
 		#search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
+			custom_effect_tooltip = TIX_zhuangjiagongzao_tip
 			add_tech_bonus = {
 				name = "铁血装甲"
 				bonus = 1.5
