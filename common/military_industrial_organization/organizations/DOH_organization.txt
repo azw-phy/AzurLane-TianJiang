@@ -936,7 +936,7 @@ DOH_taiyuan_arsenal_organization = {
 		generic_mio_trait_advanced_trajectory_calculations
 	}
 	add_trait = {
-		token = generic_mio_trait_improved_direct_fire_targeting
+		token = generic_mio_trait_improved_direct_fire_targeting_1
 		name = generic_mio_trait_improved_direct_fire_targeting
 		icon = GFX_generic_mio_department_icon_anti_tank
 
@@ -964,7 +964,7 @@ DOH_taiyuan_arsenal_organization = {
 	}
 
 	add_trait = {
-		token = generic_mio_trait_advanced_anti_air_targeting
+		token = generic_mio_trait_advanced_anti_air_targeting_1
 		name = generic_mio_trait_advanced_anti_air_targeting
 		icon = GFX_generic_mio_department_icon_anti_air
 
@@ -992,7 +992,7 @@ DOH_taiyuan_arsenal_organization = {
 	}
 
 	add_trait = {
-		token = generic_mio_trait_advanced_trajectory_calculations
+		token = generic_mio_trait_advanced_trajectory_calculations_1
 		name = generic_mio_trait_advanced_trajectory_calculations
 		icon = GFX_generic_mio_department_icon_artillery
 
@@ -1011,6 +1011,32 @@ DOH_taiyuan_arsenal_organization = {
 		equipment_bonus = {
 			hard_attack = 1
 			breakthrough = 0.05
+		}
+	}
+	add_trait = {  
+		token = jishugaijing
+		name = jishugaijing
+		icon = GFX_generic_mio_trait_icon_unique
+		special_trait_background = yes
+
+		position = { x=9 y=0 }  
+
+		available = {
+			FROM = {
+				OR = {
+					is_ally_with = CHY
+					has_country_flag = chy_jungongyuanzhu_flag
+				}
+			}
+		}
+		
+		equipment_bonus = {
+			soft_attack = 0.05
+			hard_attack = 0.05
+			reliability = 0.1
+		}
+		production_bonus = {
+			production_resource_need_factor = -0.3
 		}
 	}
 }

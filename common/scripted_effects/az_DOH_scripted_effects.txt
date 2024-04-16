@@ -38,7 +38,7 @@ DOH_mofifier_effect = {
 	set_variable = {
 		var:DOH_zhichiduchengfa_effect = DOH_zhichiduchengfa
 	}
-	multiply_variable = { var:DOH_zhichiduchengfa_effect = 0.01 }
+	multiply_variable = { var:DOH_zhichiduchengfa_effect = -0.01 }
 	if = {
 		limit = {
 			DOH = {
@@ -297,27 +297,31 @@ DOH_mofifier_effect = {
 }
 
 DOH_zhichilvchengfa_effect = {
-	if = {
-		limit = { has_completed_focus = DOH_renminwansui }
-		add_popularity = {
-			ideology = communism
-			popularity = DOH_zhichiduchengfa_effect
-		}
+	add_popularity = {
+		ideology = neutrality
+		popularity = DOH_zhichiduchengfa_effect
 	}
-	if = {
-		limit = { has_completed_focus = DOH_yinruwaizi }
-		add_popularity = {
-			ideology = democratic
-			popularity = DOH_zhichiduchengfa_effect
-		}
-	}
-	if = {
-		limit = { has_completed_focus = DOH_yixianwansui }
-		add_popularity = {
-			ideology = fascism
-			popularity = DOH_zhichiduchengfa_effect
-		}
-	}
+	# if = {
+	# 	limit = { has_completed_focus = DOH_renminwansui }
+	# 	add_popularity = {
+	# 		ideology = communism
+	# 		popularity = DOH_zhichiduchengfa_effect
+	# 	}
+	# }
+	# if = {
+	# 	limit = { has_completed_focus = DOH_yinruwaizi }
+	# 	add_popularity = {
+	# 		ideology = democratic
+	# 		popularity = DOH_zhichiduchengfa_effect
+	# 	}
+	# }
+	# if = {
+	# 	limit = { has_completed_focus = DOH_yixianwansui }
+	# 	add_popularity = {
+	# 		ideology = fascism
+	# 		popularity = DOH_zhichiduchengfa_effect
+	# 	}
+	# }
 }
 
 DOH_duiwaishuchu_effect = {
