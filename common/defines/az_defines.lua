@@ -39,6 +39,10 @@ NDefines.NAI.PLAN_ACTIVATION_SUPERIORITY_AGGRO = 1.6						--这个数值越大AI
 NDefines.NAI.MIN_PLAN_VALUE_TO_MICRO_INACTIVE = 0.8						--AI将不考虑计划未被激活并且评估低于此数值的计划
 NDefines.NAI.ATTACK_HEAVILY_DEFENDED_LIMIT = 2.1							--AI不会对防御严密的战线发动攻击，除非他们认为自己拥有这种优势（1.0=100%）
 NDefines.NAI.RESEARCH_BONUS_FACTOR = 5.0									-- AI会优先研发有科技加成的科技
+NDefines.NMilitary.FIELD_EXPERIENCE_MAX_PER_DAY = 3.0				-- 你每天可以获得的最多xp
+NDefines.NGame.GAME_SPEED_SECONDS = { 1.0, 0.2, 0.1, 0.05, 0.0 }			--提速，必须是5的倍数
+NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 0.1								--特种部队基础上限
+NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 48								--特种部队基础下限营
 	
 	
 	

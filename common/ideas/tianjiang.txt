@@ -1123,9 +1123,9 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag = BFL
-				attack_bonus_against = 1
-				defense_bonus_against = 1
-				breakthrough_bonus_against = 0.3
+				attack_bonus_against = 0.7
+				defense_bonus_against = 0.7
+				breakthrough_bonus_against = 0.1
 			}
 		}
 		CHY_rimuxishan = {
